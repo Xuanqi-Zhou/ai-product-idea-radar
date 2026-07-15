@@ -24,112 +24,140 @@
     ]
   },
   "digest": {
-    "summary": "今天的候选主要集中在若干可直接落地的 AI 产品方向，适合作为后续产品机会池持续跟踪。",
+    "summary": "本期简报覆盖 AI 开发者工具、内容创作、工作流自动化、办公效率及垂直行业五个方向。围绕「让 AI 真正跑通生产流程」这条线，各方向都出现从单点能力向完整系统收敛的趋势，开箱即用的全栈能力与本地可控的私有化部署正在成为共同目标。",
     "sections": [
       {
-        "title": "AI 开发者工具",
-        "summary": "今天这一方向出现了持续信号，代表项目集中在可直接使用的 AI 产品形态。",
+        "title": "AI 开发者工具链：从辅助编码到工程化交付",
+        "summary": "开发者工具正在从单一的代码补全向覆盖规范定义、多代理协作、可观测分析的全链路平台演进。亮点是将 AI 原生进了研发管理闭环，让开发团队可以用同一套工具完成规划、编码、监控和回溯。",
         "items": [
           {
-            "title": "calesthio/OpenMontage",
+            "title": "OpenMontage",
             "url": "https://github.com/calesthio/OpenMontage",
-            "author": "calesthio"
+            "author": "calesthio",
+            "description": "将 AI 编程助手扩展为完整的视频制作工作室，内置 12 条流水线、52 个工具和 500+ agent 技能。",
+            "significance": "首次用 agent 串联起视频生产的全流程，让编码助手直接输出可交付的视频内容，大幅压缩从脚本到成片的工程链路。"
           },
           {
-            "title": "PostHog/posthog",
+            "title": "PostHog",
             "url": "https://github.com/PostHog/posthog",
-            "author": "PostHog"
+            "author": "PostHog",
+            "description": "集产品分析、会话回放、特性标记、实验系统和 AI 产品助手的全栈开发平台。",
+            "significance": "把 AI 问询直接嵌入数据分析与功能发布流程，团队不需要在多套工具间切换就能获得从埋点数据到代码修复建议的连贯体验。"
           },
           {
-            "title": "iOfficeAI/AionUi",
-            "url": "https://github.com/iOfficeAI/AionUi",
-            "author": "iOfficeAI"
+            "title": "OpenSpec",
+            "url": "https://github.com/Fission-AI/OpenSpec",
+            "author": "Fission-AI",
+            "description": "为 AI 编程助手提供规范驱动开发框架，用结构化 spec 文件替代自然语言提示。",
+            "significance": "将「感觉式编程」规约到可复现的工程方法，降低 agent 在复杂项目中的不确定性，适合需要持续维护的团队级项目。"
           }
         ]
       },
       {
-        "title": "AI 内容创作",
-        "summary": "今天这一方向出现了持续信号，代表项目集中在可直接使用的 AI 产品形态。",
+        "title": "AI 内容生产：将创意流水线化",
+        "summary": "内容创作走向全栈工具化，不再停留在单次生成，而是覆盖选题、分镜、配音、发布的一站式产线。亮点是多家项目开始把「发布到平台」作为最后一环集成进来，直接缩短从内容到发布的距离。",
         "items": [
           {
-            "title": "HBAI-Ltd/Toonflow-app",
+            "title": "Toonflow",
             "url": "https://github.com/HBAI-Ltd/Toonflow-app",
-            "author": "HBAI-Ltd"
+            "author": "HBAI-Ltd",
+            "description": "将小说或剧本转化为分镜和动画短剧的跨平台桌面工具，集成了编剧、角色生成和视频合成。",
+            "significance": "用开放模型替代闭源管线，让短剧创作者在本地低成本完成从文本到成片的批量生产，适合强时效性的内容农场场景。"
           },
           {
-            "title": "Narcooo/inkos",
+            "title": "inkos",
             "url": "https://github.com/Narcooo/inkos",
-            "author": "Narcooo"
+            "author": "Narcooo",
+            "description": "面向小说、剧本、互动游戏和 IP 衍生内容的故事创作 Agent。",
+            "significance": "把叙事 AI 从单纯续写升级为多形态 IP 内容生成器，可以同时输出小说章节、剧本片段和游戏对白，适配网文和轻量游戏团队。"
           },
           {
-            "title": "BetaStreetOmnis/xhs_ai_publisher",
+            "title": "xhs_ai_publisher",
             "url": "https://github.com/BetaStreetOmnis/xhs_ai_publisher",
-            "author": "BetaStreetOmnis"
+            "author": "BetaStreetOmnis",
+            "description": "小红书图文自动生成并发布工具，附带桌面 UI 和 API 服务，支持登录态复用。",
+            "significance": "打通了内容生成到平台分发的最后一步，创作者只需监测效果，日常重复发布动作完全自动化，对矩阵号运营有实际降本效果。"
           }
         ]
       },
       {
-        "title": "AI 工作流自动化",
-        "summary": "今天这一方向出现了持续信号，代表项目集中在可直接使用的 AI 产品形态。",
+        "title": "AI 工作流自动化：从浏览器到专业工具的操作替代",
+        "summary": "工作流自动化的焦点转向把 AI 植入已有的专业软件和日常操作环境，而非另起独立流程。亮点是低成本利用现有账号订阅实现自动化，无需额外 API 成本。",
         "items": [
           {
-            "title": "nanobrowser/nanobrowser",
+            "title": "nanobrowser",
             "url": "https://github.com/nanobrowser/nanobrowser",
-            "author": "nanobrowser"
+            "author": "nanobrowser",
+            "description": "多 Agent Web 自动化 Chrome 插件，可用自有 API Key 运行，对标 OpenAI Operator。",
+            "significance": "将浏览器变成本地智能操作器，开发者可以编排多 agent 协同完成数据采集、表单填写等跨站点复杂任务，无平台锁定。"
           },
           {
-            "title": "tradesdontlie/tradingview-mcp",
-            "url": "https://github.com/tradesdontlie/tradingview-mcp",
-            "author": "tradesdontlie"
-          },
-          {
-            "title": "ATH-MaaS/ComfyUI-Copilot",
+            "title": "ComfyUI-Copilot",
             "url": "https://github.com/ATH-MaaS/ComfyUI-Copilot",
-            "author": "ATH-MaaS"
+            "author": "ATH-MaaS",
+            "description": "ComfyUI 的 AI 辅助节点，用自然语言交互驱动工作流编辑、参数调节和节点安装。",
+            "significance": "降低了视觉创作工作流的技术门槛，美术人员可以通过对话直接调整管线，而不必理解节点图内部逻辑。"
+          },
+          {
+            "title": "tradingview-mcp",
+            "url": "https://github.com/tradesdontlie/tradingview-mcp",
+            "author": "tradesdontlie",
+            "description": "将 Claude Code 接入 TradingView 桌面端，实现图表分析的辅助自动化。",
+            "significance": "让定量分析者在熟悉的图表软件内获得编程级自动化能力，策略回测和截图标注等日常操作可以直接由 agent 执行。"
           }
         ]
       },
       {
-        "title": "AI 办公效率",
-        "summary": "今天这一方向出现了持续信号，代表项目集中在可直接使用的 AI 产品形态。",
+        "title": "AI 办公效率：本地优先的个人系统",
+        "summary": "个人效率工具集体转向离线化和多模态融合，强调完全本地运行和零数据外泄。亮点是用 whisper + 本地模型构建无云办公闭环，用户在陌生网络环境也能完整作业。",
         "items": [
           {
-            "title": "mhss1/MyBrain",
-            "url": "https://github.com/mhss1/MyBrain",
-            "author": "mhss1"
-          },
-          {
-            "title": "benmaster82/writher",
+            "title": "writher",
             "url": "https://github.com/benmaster82/writher",
-            "author": "benmaster82"
+            "author": "benmaster82",
+            "description": "Windows 端完全离线的语音听写与 AI 助理，支持笔记、待办和提醒管理。",
+            "significance": "用 faster-whisper + Ollama + SQLite 纯本地栈实现从语音输入到任务管理的闭环，适合重视数据主权的内容工作者。"
           },
           {
-            "title": "bgheneti/Amazing-Marvin-MCP",
+            "title": "MyBrain",
+            "url": "https://github.com/mhss1/MyBrain",
+            "author": "mhss1",
+            "description": "融合任务、笔记、日历、日记和书签的安卓效率应用，内建 Gemini 和 GPT 对话。",
+            "significance": "将 AI 助理直接驻留在个人知识库和日程表上，用户可以在整理笔记的同时让模型提炼下一步行动项。"
+          },
+          {
+            "title": "Amazing-Marvin-MCP",
             "url": "https://github.com/bgheneti/Amazing-Marvin-MCP",
-            "author": "bgheneti"
+            "author": "bgheneti",
+            "description": "通过 MCP 协议将 Amazing Marvin 任务和项目数据暴露给 Claude、Cursor 等 AI 助手。",
+            "significance": "让第三方 AI 编码或对话工具直接操作个人的任务列表，实现了已有生产力方法与新 agent 入口的无缝衔接。"
           }
         ]
       },
       {
-        "title": "垂直行业 AI 工具",
-        "summary": "今天这一方向出现了持续信号，代表项目集中在可直接使用的 AI 产品形态。",
+        "title": "垂直行业 AI 工具：医疗场景的轻量探索",
+        "summary": "医疗领域出现将病历对话和健康内容交付结合的轻量 agent 应用，偏向原型验证。亮点是保持前端交互简洁，把重心放在可靠的内容交付和工作流测试上。",
         "items": [
           {
-            "title": "jinm29/ai-healthcare-app",
+            "title": "ai-healthcare-app",
             "url": "https://github.com/jinm29/ai-healthcare-app",
-            "author": "jinm29"
+            "author": "jinm29",
+            "description": "将医疗记录与 AI 辅助对话结合的医疗 agent 应用。",
+            "significance": "以对话为界面统一呈现病历信息，降低患者理解门槛，为后续远程问诊工具提供了可定制的开源基座。"
           },
           {
-            "title": "Don-Uwe/ai-healthcare-agent-app",
+            "title": "ai-healthcare-agent-app",
             "url": "https://github.com/Don-Uwe/ai-healthcare-agent-app",
-            "author": "Don-Uwe"
+            "author": "Don-Uwe",
+            "description": "带有集中化测试和构建流程的健康内容交付 agent 应用。",
+            "significance": "强调可测试性和持续交付，确保健康类信息在系统更新后依然可靠，这一工程化思路在合规敏感场景下很有参考价值。"
           }
         ]
       }
     ],
     "insight": {
-      "idea": "一个把多来源 AI 产品趋势自动聚合并输出可执行机会地图的产品导航站。",
-      "mvp": "先做 GitHub-only 版本：每天抓取、筛选、归档，并生成主题摘要与一个新 idea。"
+      "idea": "将本地 AI 工作流自动化能力打包成面向特定岗位的「操作机器人模板市场」，例如提供给运营人员的 rednote 发布 agent、给交易员的 TradingView 分析 agent，降低配置门槛并共享最佳流程。",
+      "mvp": "基于 nanobrowser 或类似浏览器自动化框架，构建一个可导入导出的「岗位工作流」JSON 配置库，首批上线 TradingView 盘后分析、小红书定时发布、飞书文档同步三个 workflow 模板，并提供一键安装运行。"
     }
   },
   "items": [
@@ -141,9 +169,9 @@
       "url": "https://github.com/calesthio/OpenMontage",
       "author": "calesthio",
       "created_at": "2026-03-29T15:23:22Z",
-      "updated_at": "2026-07-15T09:18:08Z",
+      "updated_at": "2026-07-15T09:51:09Z",
       "metrics": {
-        "stars": 38722,
+        "stars": 38732,
         "forks": 4698,
         "issues": 175
       },
@@ -191,11 +219,11 @@
       "url": "https://github.com/PostHog/posthog",
       "author": "PostHog",
       "created_at": "2020-01-23T22:46:58Z",
-      "updated_at": "2026-07-15T09:20:23Z",
+      "updated_at": "2026-07-15T09:47:05Z",
       "metrics": {
-        "stars": 35540,
+        "stars": 35539,
         "forks": 2970,
-        "issues": 4728
+        "issues": 4733
       },
       "tags": [
         "ab-testing",
@@ -288,10 +316,10 @@
       "url": "https://github.com/Fission-AI/OpenSpec",
       "author": "Fission-AI",
       "created_at": "2025-08-05T10:37:45Z",
-      "updated_at": "2026-07-15T09:20:45Z",
+      "updated_at": "2026-07-15T09:50:19Z",
       "metrics": {
-        "stars": 60967,
-        "forks": 4229,
+        "stars": 60974,
+        "forks": 4230,
         "issues": 465
       },
       "tags": [
@@ -369,10 +397,10 @@
       "url": "https://github.com/HBAI-Ltd/Toonflow-app",
       "author": "HBAI-Ltd",
       "created_at": "2026-01-29T10:25:45Z",
-      "updated_at": "2026-07-15T09:07:23Z",
+      "updated_at": "2026-07-15T09:28:04Z",
       "metrics": {
-        "stars": 11511,
-        "forks": 2131,
+        "stars": 11510,
+        "forks": 2130,
         "issues": 1
       },
       "tags": [
@@ -418,9 +446,9 @@
       "url": "https://github.com/nanobrowser/nanobrowser",
       "author": "nanobrowser",
       "created_at": "2024-12-31T08:11:27Z",
-      "updated_at": "2026-07-15T08:56:15Z",
+      "updated_at": "2026-07-15T09:40:34Z",
       "metrics": {
-        "stars": 13466,
+        "stars": 13467,
         "forks": 1413,
         "issues": 69
       },
@@ -469,10 +497,10 @@
       "url": "https://github.com/chenhg5/cc-connect",
       "author": "chenhg5",
       "created_at": "2026-02-28T02:39:39Z",
-      "updated_at": "2026-07-15T09:19:12Z",
+      "updated_at": "2026-07-15T09:44:50Z",
       "metrics": {
-        "stars": 14010,
-        "forks": 1336,
+        "stars": 14013,
+        "forks": 1337,
         "issues": 487
       },
       "tags": [],
@@ -645,9 +673,9 @@
       "url": "https://github.com/iflow-ai/iflow-cli",
       "author": "iflow-ai",
       "created_at": "2025-07-27T02:38:21Z",
-      "updated_at": "2026-07-15T01:21:22Z",
+      "updated_at": "2026-07-15T09:35:14Z",
       "metrics": {
-        "stars": 5110,
+        "stars": 5111,
         "forks": 418,
         "issues": 84
       },
@@ -713,9 +741,9 @@
       "url": "https://github.com/mhss1/MyBrain",
       "author": "mhss1",
       "created_at": "2022-05-11T17:06:31Z",
-      "updated_at": "2026-07-15T08:56:34Z",
+      "updated_at": "2026-07-15T09:26:46Z",
       "metrics": {
-        "stars": 2043,
+        "stars": 2042,
         "forks": 167,
         "issues": 103
       },
@@ -761,9 +789,9 @@
       "url": "https://github.com/ErlichLiu/DeepClaude",
       "author": "ErlichLiu",
       "created_at": "2025-02-01T11:04:17Z",
-      "updated_at": "2026-07-15T01:58:40Z",
+      "updated_at": "2026-07-15T09:27:22Z",
       "metrics": {
-        "stars": 2935,
+        "stars": 2934,
         "forks": 498,
         "issues": 24
       },
@@ -958,9 +986,9 @@
       "url": "https://github.com/wellingfeng/UltraGameStudio",
       "author": "wellingfeng",
       "created_at": "2026-05-30T08:20:36Z",
-      "updated_at": "2026-07-15T07:28:50Z",
+      "updated_at": "2026-07-15T09:51:33Z",
       "metrics": {
-        "stars": 258,
+        "stars": 259,
         "forks": 28,
         "issues": 0
       },
@@ -993,7 +1021,7 @@
       "fork": false,
       "archived": false,
       "language": "TypeScript",
-      "score": 49.4,
+      "score": 49.5,
       "summary": "UltraGameStudio - AI coding agent for game development: engine workflows, gameplay code, and asset generation."
     },
     {
@@ -1072,57 +1100,16 @@
     {
       "source_platform": "GitHub",
       "source_type": "repository",
-      "title": "linmy666/madcop",
-      "summary_raw": "MadCop — local-first AI agent desktop workstation (v0.9). Multi-model chat, tool-use, MCP servers, 12 workflow modes, knowledge base, AI design tool, persistent workspace.",
-      "url": "https://github.com/linmy666/madcop",
-      "author": "linmy666",
-      "created_at": "2026-06-23T17:47:25Z",
-      "updated_at": "2026-07-15T02:27:27Z",
-      "metrics": {
-        "stars": 102,
-        "forks": 4,
-        "issues": 0
-      },
-      "tags": [
-        "ai-agent",
-        "desktop-app",
-        "electron",
-        "llm",
-        "local-first",
-        "mcp",
-        "python",
-        "typescript",
-        "vue",
-        "workflow-automation"
-      ],
-      "matched_interest": [
-        "ai-workflow-automation"
-      ],
-      "matched_interest_name": "AI 工作流自动化",
-      "interest_tags": [
-        "automation",
-        "agent",
-        "orchestration"
-      ],
-      "fork": false,
-      "archived": false,
-      "language": "TypeScript",
-      "score": 45.6,
-      "summary": "MadCop — local-first AI agent desktop workstation (v0.9). Multi-model chat, tool-use, MCP servers, 12 workflow modes, knowledge base, AI design tool, persistent workspace."
-    },
-    {
-      "source_platform": "GitHub",
-      "source_type": "repository",
       "title": "OpenHands/agent-canvas",
       "summary_raw": "OpenHands Agent Canvas is a Open Source AI coding platform. Start locally, connect your tools, and automate workflows.",
       "url": "https://github.com/OpenHands/agent-canvas",
       "author": "OpenHands",
       "created_at": "2026-04-24T01:31:56Z",
-      "updated_at": "2026-07-15T06:48:50Z",
+      "updated_at": "2026-07-15T09:41:02Z",
       "metrics": {
         "stars": 187,
         "forks": 82,
-        "issues": 423
+        "issues": 422
       },
       "tags": [],
       "matched_interest": [
@@ -1295,7 +1282,7 @@
       "url": "https://github.com/proliferate-ai/proliferate",
       "author": "proliferate-ai",
       "created_at": "2026-04-30T23:54:35Z",
-      "updated_at": "2026-07-15T09:15:43Z",
+      "updated_at": "2026-07-15T09:36:26Z",
       "metrics": {
         "stars": 152,
         "forks": 35,
