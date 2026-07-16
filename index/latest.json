@@ -24,140 +24,39 @@
     ]
   },
   "digest": {
-    "summary": "今天的候选主要集中在若干可直接落地的 AI 产品方向，适合作为后续产品机会池持续跟踪。",
+    "summary": "本期简报从多模型编码协作、全链条视频内容生成、专业软件自动化代理，以及医疗垂直对话四个方向，梳理近期值得重点关注的开源 AI 产品动向。",
     "sections": [
       {
-        "title": "AI 开发者工具",
-        "summary": "这一方向今天主要体现为更明确的产品化落地：项目不再停留在模型演示，而是直接面向具体工作流与用户场景。",
+        "title": "多模型编码 Agent 的即时协作网络",
+        "summary": "这类产品不再把 AI 编程看作单一 IDE 内的补全会话，而是把 Claude Code、Gemini CLI、Codex 等不同 CLI 代理接入消息平台或统一工作面板，让开发者随时随地，通过日常聊天工具分配任务并获取代码反馈。它与内容生成或通用自动化的根本区别在于，它解决的是编码行为本身的“对话与组织”问题——让人可以按任务粒度调度多个编码大脑，而不是被锁在一个编辑器里。今天最突出的能力组合是：多模型同时驻留一个频道、消息即命令、以及可迁移的上下文工程策略。",
         "items": [
           {
-            "title": "calesthio/OpenMontage",
-            "url": "https://github.com/calesthio/OpenMontage",
-            "author": "calesthio",
-            "description": "World's first open-source, agentic video production system. 12 pipelines, 52 tools, 500+ agent skills. Turn your AI coding assistant into a full video production studio.",
-            "significance": "项目热度已较高，说明这一方向不只是概念验证，而是已经有明显的社区需求与复用价值。"
-          },
-          {
-            "title": "PostHog/posthog",
-            "url": "https://github.com/PostHog/posthog",
-            "author": "PostHog",
-            "description": "🦔 PostHog is an all-in-one developer platform for building successful products. We offer product analytics, web analytics, session replay, error tracking, feature flags, experimentation, surveys, data warehouse, a CDP, and an AI product assistant to help debug your code, ship features faster, and keep all your usage and customer data in one stack.",
-            "significance": "项目热度已较高，说明这一方向不只是概念验证，而是已经有明显的社区需求与复用价值。"
-          },
-          {
-            "title": "iOfficeAI/AionUi",
+            "title": "AionUi",
             "url": "https://github.com/iOfficeAI/AionUi",
             "author": "iOfficeAI",
-            "description": "Free, local, open-source 24/7 Cowork app for OpenClaw, Hermes Agent, Claude Code, Codex, OpenCode, Gemini CLI and 20+ more CLI | Customize your assistants | Star if you like it!",
-            "significance": "项目热度已较高，说明这一方向不只是概念验证，而是已经有明显的社区需求与复用价值。"
-          }
-        ]
-      },
-      {
-        "title": "AI 内容创作",
-        "summary": "这一方向今天主要体现为更明确的产品化落地：项目不再停留在模型演示，而是直接面向具体工作流与用户场景。",
-        "items": [
-          {
-            "title": "HBAI-Ltd/Toonflow-app",
-            "url": "https://github.com/HBAI-Ltd/Toonflow-app",
-            "author": "HBAI-Ltd",
-            "description": "Toonflow 是开源一站式 AI 短剧创作工具，将小说、剧本快速转化为动画短剧。集成 AI 编剧、智能分镜、角色与视频生成，跨平台桌面端轻量部署，助力创作者低成本批量产出视觉内容。Toonflow is an open-source AI tool that turns stories and scripts into animated short dramas. Features AI scriptwriting, storyboarding, character and video generation. A cross-platform desktop app for efficient content creation.",
-            "significance": "项目热度已较高，说明这一方向不只是概念验证，而是已经有明显的社区需求与复用价值。"
+            "description": "本地、开源的 24/7 Cowork 应用，将 OpenClaw、Claude Code、Codex、Gemini CLI 等 20+ 个 CLI 代理接入统一 Web UI，支持定制助手与持续会话。",
+            "significance": "首次为大量命令行编码代理提供了 Web 原生的工作间，让不同模型得以在同一界面中并行工作，消除了反复切换终端的操作摩擦。"
           },
           {
-            "title": "Narcooo/inkos",
-            "url": "https://github.com/Narcooo/inkos",
-            "author": "Narcooo",
-            "description": "Story Creation AI Agent for novel, scripts, translation, interactive games, and IP content",
-            "significance": "项目热度已较高，说明这一方向不只是概念验证，而是已经有明显的社区需求与复用价值。"
+            "title": "cc-connect",
+            "url": "https://github.com/chenhg5/cc-connect",
+            "author": "chenhg5",
+            "description": "把本地 Claude Code、Cursor、Gemini CLI 等 AI 编码代理桥接到飞书、钉钉、Slack、微信工作等消息平台，无需公网 IP 即可从任何地方与开发助手对话。",
+            "significance": "将 AI 编码助手彻底移出开发工具边界，使之进入团队已有的通讯流，编码行为变成一种可异步、可移动的消息式协作。"
           },
           {
-            "title": "BetaStreetOmnis/xhs_ai_publisher",
-            "url": "https://github.com/BetaStreetOmnis/xhs_ai_publisher",
-            "author": "BetaStreetOmnis",
-            "description": "AI-powered Xiaohongshu/Rednote content creation and publishing tool with PyQt desktop UI, FastAPI service, login-state reuse, preview publish, and automated browser workflows.",
-            "significance": "项目已有较强社区反馈，说明该场景具备一定产品化验证基础。"
-          }
-        ]
-      },
-      {
-        "title": "AI 工作流自动化",
-        "summary": "这一方向今天主要体现为更明确的产品化落地：项目不再停留在模型演示，而是直接面向具体工作流与用户场景。",
-        "items": [
-          {
-            "title": "nanobrowser/nanobrowser",
-            "url": "https://github.com/nanobrowser/nanobrowser",
-            "author": "nanobrowser",
-            "description": "Open-Source Chrome extension for AI-powered web automation. Run multi-agent workflows using your own LLM API key. Alternative to OpenAI Operator.",
-            "significance": "项目热度已较高，说明这一方向不只是概念验证，而是已经有明显的社区需求与复用价值。"
-          },
-          {
-            "title": "tradesdontlie/tradingview-mcp",
-            "url": "https://github.com/tradesdontlie/tradingview-mcp",
-            "author": "tradesdontlie",
-            "description": "AI-assisted TradingView chart analysis — connect Claude Code to your TradingView Desktop for personal workflow automation",
-            "significance": "项目已有较强社区反馈，说明该场景具备一定产品化验证基础。"
-          },
-          {
-            "title": "ATH-MaaS/ComfyUI-Copilot",
-            "url": "https://github.com/ATH-MaaS/ComfyUI-Copilot",
-            "author": "ATH-MaaS",
-            "description": "An AI-powered custom node for ComfyUI designed to enhance workflow automation and provide intelligent assistance",
-            "significance": "项目热度已较高，说明这一方向不只是概念验证，而是已经有明显的社区需求与复用价值。"
-          }
-        ]
-      },
-      {
-        "title": "AI 办公效率",
-        "summary": "这一方向今天主要体现为更明确的产品化落地：项目不再停留在模型演示，而是直接面向具体工作流与用户场景。",
-        "items": [
-          {
-            "title": "mhss1/MyBrain",
-            "url": "https://github.com/mhss1/MyBrain",
-            "author": "mhss1",
-            "description": "All-in-one productivity app and AI assistant with Tasks, Notes, Calendar, Diary and Bookmarks.",
-            "significance": "项目已有较强社区反馈，说明该场景具备一定产品化验证基础。"
-          },
-          {
-            "title": "benmaster82/writher",
-            "url": "https://github.com/benmaster82/writher",
-            "author": "benmaster82",
-            "description": "🎙️ Offline voice productivity for Windows - dictate text into any app and control a local AI assistant by voice. Manages notes, to-do lists, appointments & reminders. 100% local: faster-whisper + Ollama + SQLite. No cloud, no telemetry. Free and open source alternative to Wispr Flow",
-            "significance": "该项目贴近“ai-assistent、dictation、dictation-apps、dictations、good-first-issue、hacktoberfest、help-wanted、local-llm、notes、notes-app、ollama、ollama-python、productivity、python、reminders、speech-to-text、voice-assistant、whisper、windows”等标签场景，体现了更明确的细分产品定位。"
-          },
-          {
-            "title": "bgheneti/Amazing-Marvin-MCP",
-            "url": "https://github.com/bgheneti/Amazing-Marvin-MCP",
-            "author": "bgheneti",
-            "description": "Model Context Provider for Amazing Marvin productivity app - Access your tasks, projects, and categories in AI assistants",
-            "significance": "该项目贴近“ai-assistant、amazing、amazing-marvin、automation、claude、context-provider、cursor、llm、marvin、mcp、model-context-protocol、productivity、python、task-management、todo”等标签场景，体现了更明确的细分产品定位。"
-          }
-        ]
-      },
-      {
-        "title": "垂直行业 AI 工具",
-        "summary": "这一方向今天主要体现为更明确的产品化落地：项目不再停留在模型演示，而是直接面向具体工作流与用户场景。",
-        "items": [
-          {
-            "title": "jinm29/ai-healthcare-app",
-            "url": "https://github.com/jinm29/ai-healthcare-app",
-            "author": "jinm29",
-            "description": ":four_leaf_clover: Healthcare AI agent app that combines medical records with AI-assisted conversations",
-            "significance": "分叉数较高，说明它更像一个可被二次开发和复用的产品基础设施。"
-          },
-          {
-            "title": "Don-Uwe/ai-healthcare-agent-app",
-            "url": "https://github.com/Don-Uwe/ai-healthcare-agent-app",
-            "author": "Don-Uwe",
-            "description": "ai agent healthcare app with centralized testing and build workflows for reliable health-content delivery",
-            "significance": "分叉数较高，说明它更像一个可被二次开发和复用的产品基础设施。"
+            "title": "context-engineering-intro",
+            "url": "https://github.com/coleam00/context-engineering-intro",
+            "author": "coleam00",
+            "description": "一套围绕 Claude Code 构建的可复用上下文工程策略与文件模板，旨在让任意 AI 编码助手在复杂任务中保持目标一致、减少幻觉。",
+            "significance": "将“上下文工程”固化为可分发和可演进的实操体系，使开发者面对多文件、长任务时能获得可靠的指令回路，而非仅靠提示词技巧。"
           }
         ]
       }
     ],
     "insight": {
-      "idea": "一个把多来源 AI 产品趋势自动聚合并输出可执行机会地图的产品导航站。",
-      "mvp": "先做 GitHub-only 版本：每天抓取、筛选、归档，并生成主题摘要与一个新 idea。"
+      "idea": "",
+      "mvp": ""
     },
     "_meta": {
       "source": "llm_tags"
@@ -175,10 +74,10 @@
       "url": "https://github.com/calesthio/OpenMontage",
       "author": "calesthio",
       "created_at": "2026-03-29T15:23:22Z",
-      "updated_at": "2026-07-16T05:56:23Z",
+      "updated_at": "2026-07-16T06:54:53Z",
       "metrics": {
-        "stars": 39037,
-        "forks": 4726,
+        "stars": 39059,
+        "forks": 4730,
         "issues": 179
       },
       "tags": [
@@ -225,10 +124,10 @@
       "url": "https://github.com/PostHog/posthog",
       "author": "PostHog",
       "created_at": "2020-01-23T22:46:58Z",
-      "updated_at": "2026-07-16T05:57:53Z",
+      "updated_at": "2026-07-16T06:42:53Z",
       "metrics": {
-        "stars": 35569,
-        "forks": 2977,
+        "stars": 35572,
+        "forks": 2978,
         "issues": 4848
       },
       "tags": [
@@ -271,11 +170,11 @@
       "url": "https://github.com/iOfficeAI/AionUi",
       "author": "iOfficeAI",
       "created_at": "2025-08-07T10:29:51Z",
-      "updated_at": "2026-07-16T05:40:18Z",
+      "updated_at": "2026-07-16T06:52:12Z",
       "metrics": {
-        "stars": 30154,
+        "stars": 30160,
         "forks": 3023,
-        "issues": 679
+        "issues": 680
       },
       "tags": [
         "acp",
@@ -322,9 +221,9 @@
       "url": "https://github.com/Fission-AI/OpenSpec",
       "author": "Fission-AI",
       "created_at": "2025-08-05T10:37:45Z",
-      "updated_at": "2026-07-16T05:56:37Z",
+      "updated_at": "2026-07-16T06:54:25Z",
       "metrics": {
-        "stars": 61101,
+        "stars": 61115,
         "forks": 4237,
         "issues": 476
       },
@@ -403,10 +302,10 @@
       "url": "https://github.com/HBAI-Ltd/Toonflow-app",
       "author": "HBAI-Ltd",
       "created_at": "2026-01-29T10:25:45Z",
-      "updated_at": "2026-07-16T05:50:08Z",
+      "updated_at": "2026-07-16T06:47:18Z",
       "metrics": {
-        "stars": 11541,
-        "forks": 2134,
+        "stars": 11545,
+        "forks": 2135,
         "issues": 1
       },
       "tags": [
@@ -503,9 +402,9 @@
       "url": "https://github.com/chenhg5/cc-connect",
       "author": "chenhg5",
       "created_at": "2026-02-28T02:39:39Z",
-      "updated_at": "2026-07-16T05:57:22Z",
+      "updated_at": "2026-07-16T06:55:16Z",
       "metrics": {
-        "stars": 14040,
+        "stars": 14043,
         "forks": 1343,
         "issues": 490
       },
@@ -563,9 +462,9 @@
       "url": "https://github.com/tradesdontlie/tradingview-mcp",
       "author": "tradesdontlie",
       "created_at": "2026-03-29T14:39:25Z",
-      "updated_at": "2026-07-16T05:46:13Z",
+      "updated_at": "2026-07-16T06:45:29Z",
       "metrics": {
-        "stars": 4409,
+        "stars": 4411,
         "forks": 2091,
         "issues": 116
       },
@@ -593,9 +492,9 @@
       "url": "https://github.com/Narcooo/inkos",
       "author": "Narcooo",
       "created_at": "2026-03-12T02:12:54Z",
-      "updated_at": "2026-07-16T04:57:15Z",
+      "updated_at": "2026-07-16T06:25:40Z",
       "metrics": {
-        "stars": 8005,
+        "stars": 8006,
         "forks": 1488,
         "issues": 205
       },
@@ -709,9 +608,9 @@
       "url": "https://github.com/BetaStreetOmnis/xhs_ai_publisher",
       "author": "BetaStreetOmnis",
       "created_at": "2024-11-10T08:48:20Z",
-      "updated_at": "2026-07-15T13:27:34Z",
+      "updated_at": "2026-07-16T06:13:22Z",
       "metrics": {
-        "stars": 2029,
+        "stars": 2030,
         "forks": 297,
         "issues": 7
       },
@@ -821,6 +720,57 @@
       "language": "Python",
       "score": 60.2,
       "summary": "Unleash Next-Level AI! 🚀 💻 Code Generation: DeepSeek r1 + Claude 3.7 Sonnet - Unparalleled Performance! 📝 Content Creation: DeepSeek r1 + Gemini 2.5 Pro - Superior Quality! 🔌 OpenAI-Compatible. 🌊 Streaming & Non-Streaming Support. ✨ Experience the Future of AI – Today! Click to Try Now! ✨"
+    },
+    {
+      "source_platform": "GitHub",
+      "source_type": "repository",
+      "title": "zhnt/loushang",
+      "summary_raw": "AI-native agent harness for coding workflows by python: multi-model LLM orchestration, stateful sessions, tool governance,   traceable delivery, and provider routing for GPT, Claude, DeepSeek, Qwen, Kimi, GLM, and MiniMax.",
+      "url": "https://github.com/zhnt/loushang",
+      "author": "zhnt",
+      "created_at": "2026-05-29T17:25:11Z",
+      "updated_at": "2026-07-16T06:23:47Z",
+      "metrics": {
+        "stars": 688,
+        "forks": 123,
+        "issues": 24
+      },
+      "tags": [
+        "agent",
+        "agent-harness",
+        "agentic",
+        "ai",
+        "chatgpt",
+        "claude",
+        "claude-code",
+        "codex",
+        "coding",
+        "deepseek",
+        "dynamic-workflows",
+        "glm",
+        "harness",
+        "kimi",
+        "minimax",
+        "parallel-agents",
+        "python",
+        "skills",
+        "vibe-coding",
+        "workflow"
+      ],
+      "matched_interest": [
+        "ai-workflow-automation"
+      ],
+      "matched_interest_name": "AI 工作流自动化",
+      "interest_tags": [
+        "automation",
+        "agent",
+        "orchestration"
+      ],
+      "fork": false,
+      "archived": false,
+      "language": "Python",
+      "score": 56.8,
+      "summary": "AI-native agent harness for coding workflows by python: multi-model LLM orchestration, stateful sessions, tool governance, traceable delivery, and provider routing for GPT, Claude, DeepSeek, Qwen, Kimi, GLM, and MiniMax."
     },
     {
       "source_platform": "GitHub",
@@ -1063,9 +1013,9 @@
       "url": "https://github.com/WenyuChiou/ai-research-skills",
       "author": "WenyuChiou",
       "created_at": "2026-04-25T17:46:37Z",
-      "updated_at": "2026-07-16T05:45:55Z",
+      "updated_at": "2026-07-16T06:32:50Z",
       "metrics": {
-        "stars": 156,
+        "stars": 157,
         "forks": 11,
         "issues": 1
       },
@@ -1261,11 +1211,11 @@
       "url": "https://github.com/proliferate-ai/proliferate",
       "author": "proliferate-ai",
       "created_at": "2026-04-30T23:54:35Z",
-      "updated_at": "2026-07-16T06:01:35Z",
+      "updated_at": "2026-07-16T06:40:55Z",
       "metrics": {
         "stars": 153,
         "forks": 35,
-        "issues": 79
+        "issues": 77
       },
       "tags": [],
       "matched_interest": [
