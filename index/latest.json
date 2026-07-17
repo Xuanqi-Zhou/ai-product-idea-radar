@@ -1,283 +1,109 @@
 {
   "version": 1,
   "source": "smoke-once",
-  "generated_at": "2026-07-17T02:11:19.749Z",
+  "generated_at": "2026-07-17T02:23:37.136Z",
   "date_key": "2026-07-17",
   "date_title": "2026年07月17日",
   "config": {
     "interests": [
       {
-        "id": "ai-dev-tools",
-        "name": "AI 开发者工具"
-      },
-      {
         "id": "ai-workflow-automation",
-        "name": "AI 工作流自动化"
+        "name": "自动化工作流"
       },
       {
-        "id": "ai-content-creation",
-        "name": "AI 内容创作"
+        "id": "ai-pet",
+        "name": "AI宠物"
       },
       {
-        "id": "ai-office-productivity",
-        "name": "AI 办公效率"
+        "id": "ai-learning-tools",
+        "name": "AI学习工具"
       },
       {
-        "id": "vertical-ai-tools",
-        "name": "垂直行业 AI 工具"
+        "id": "agent-mail",
+        "name": "Agent Mail"
       }
     ]
   },
   "digest": {
-    "summary": "今天的领域进展集中在 AI 工作流自动化与 AI 内容创作两大方向。工作流侧，开源平台加速融合多智能体、MCP 协议与浏览器自动化；内容侧，从短剧生成到多模型协作工具，正在显著降低视频叙事与故事生产的门槛。",
+    "summary": "今天的主要方向集中在：将大模型能力与日常工具深度绑定的自动化工作流、把智能体引入邮箱的Agent Mail，以及将AI融入陪伴体验的桌面/实体机器人宠物。",
     "sections": [
       {
-        "title": "AI 工作流自动化",
-        "summary": "可视化编排与多智能体协同成为主流，开发者可通过自托管平台接入数百项集成与 MCP 服务器，轻松构建 AI 驱动的自动化 Web 任务。",
+        "title": "自动化工作流",
+        "summary": "以浏览器和低代码平台为载体，让用户只需配置API、导入模板或连接现有工具，就能驱动多智能体自动完成网页操控、金融图表分析等任务，大幅降低“亲手盯屏”的成本。",
         "items": [
           {
-            "title": "n8n",
-            "url": "https://github.com/n8n-io/n8n",
-            "author": "n8n-io",
-            "description": "提供可视化与代码混合方式的 AI 增强工作流自动化，支持自托管或云部署，内置超过 400 个集成节点。",
-            "significance": "将原生 AI 能力融入低代码自动化，显著缩短从构思到部署的路径。"
-          },
-          {
-            "title": "activepieces",
-            "url": "https://github.com/activepieces/activepieces",
-            "author": "activepieces",
-            "description": "围绕 AI Agents 和 MCP 协议构建自动化，内置约 400 个 MCP 服务器，让智能体直接调用大量工具与数据源。",
-            "significance": "率先大规模集成 MCP 生态，把智能体融入日常业务流程成为即插即用体验。"
-          },
-          {
-            "title": "nanobrowser",
+            "title": "nanobrowser/nanobrowser",
             "url": "https://github.com/nanobrowser/nanobrowser",
             "author": "nanobrowser",
-            "description": "开源 Chrome 扩展，让用户使用自有 LLM API 密钥运行多智能体网页自动化工作流，定位为 OpenAI Operator 的替代方案。",
-            "significance": "将复杂的浏览器自动化交给多智能体协作，在隐私可控的前提下大幅降低网页操作的门槛。"
+            "description": "开源的Chrome扩展，让用户用自有LLM API密钥运行多智能体网页自动化工作流，定位为OpenAI Operator的替代方案。",
+            "significance": "把浏览器的操控能力直接交给用户部署的模型，实现完全本地化的智能体工作流，无需依赖官方客户端。"
+          },
+          {
+            "title": "wassupjay/n8n-free-templates",
+            "url": "https://github.com/wassupjay/n8n-free-templates",
+            "author": "wassupjay",
+            "description": "提供超过200个即用型n8n自动化模板，将传统流程与向量数据库、嵌入、LLM等现代AI技术栈结合。",
+            "significance": "通过海量可直接导入JSON激活的工作流，让原型验证和生产部署几乎零门槛。"
+          },
+          {
+            "title": "tradesdontlie/tradingview-mcp",
+            "url": "https://github.com/tradesdontlie/tradingview-mcp",
+            "author": "tradesdontlie",
+            "description": "连接Claude Code与用户桌面端TradingView，让AI辅助图表分析并自动化个人交易工作流。",
+            "significance": "将专业金融工具的分析界面变成大模型可读、可操作的节点，把AI辅助带到个人化交易场景。"
           }
         ]
       },
       {
-        "title": "AI 内容创作",
-        "summary": "从长文本到可与观众互动的视频短剧，一站式生成工具兴起，多模型协同进一步提升了代码与故事内容的质量。",
+        "title": "Agent Mail",
+        "summary": "把AI代理内嵌进邮件客户端或营销技能包中，让收件箱不再只是阅读界面，而是可由智能体自动处理、审核并执行营销任务的运营中心。",
         "items": [
           {
-            "title": "Toonflow",
-            "url": "https://github.com/HBAI-Ltd/Toonflow-app",
-            "author": "HBAI-Ltd",
-            "description": "一站式 AI 短剧创作工具，可自动将小说、剧本转为动画短剧，集成 AI 编剧、智能分镜、角色与视频生成。",
-            "significance": "把“文本到成片”的创作链压缩为一款桌面应用，低成本批量产出视觉内容成为可能。"
+            "title": "cloudflare/agentic-inbox",
+            "url": "https://github.com/cloudflare/agentic-inbox",
+            "author": "cloudflare",
+            "description": "完全运行在Cloudflare Workers上的自托管邮件客户端，内置AI代理，可直接处理邮件任务。",
+            "significance": "将智能体直接部署在边缘邮件服务器上，实现隐私友好、零维护的智能收件箱。"
           },
           {
-            "title": "inkos",
-            "url": "https://github.com/Narcooo/inkos",
-            "author": "Narcooo",
-            "description": "面向故事创作的 AI Agent，支持长篇小说、剧本、翻译、互动游戏和 IP 内容生成，覆盖叙事全流程。",
-            "significance": "打破单一文本形式，让同一套创意可复用产出多种互动内容形态。"
+            "title": "aaron-he-zhu/aaron-marketing-skills",
+            "url": "https://github.com/aaron-he-zhu/aaron-marketing-skills",
+            "author": "aaron-he-zhu",
+            "description": "为Claude Code等AI代理提供了120项营销技能和8个审核指令，覆盖SEO、付费广告、邮件营销、产品发布等全链路。",
+            "significance": "用一套共享契约和审核门控（如CORE-EEAT、ROAS等），让AI像专业营销团队一样执行和自查。"
+          }
+        ]
+      },
+      {
+        "title": "AI宠物",
+        "summary": "将AI陪伴从虚拟聊天转向可感知的像素桌面伙伴与可编程四足机器人，让用户在工作或学习中直接“看见”智能体在身旁工作或互动。",
+        "items": [
+          {
+            "title": "rullerzhou-afk/clawd-on-desk",
+            "url": "https://github.com/rullerzhou-afk/clawd-on-desk",
+            "author": "rullerzhou-afk",
+            "description": "一只像素风格的桌面宠物，能实时监视Claude Code、Cursor等AI编程代理的运行状态，让用户不必一直盯着屏幕。",
+            "significance": "用轻量、可视化的方式反馈后台AI活动，将智能体工作状态变成有情感陪伴感的桌面存在。"
           },
           {
-            "title": "DeepClaude",
-            "url": "https://github.com/ErlichLiu/DeepClaude",
-            "author": "ErlichLiu",
-            "description": "将 DeepSeek r1 与 Claude 3.7 Sonnet 组合用于代码生成，将 DeepSeek r1 与 Gemini 2.5 Pro 组合用于内容创作，提供兼容 OpenAI 的流式与非流式接口。",
-            "significance": "用“路由式”多模型架构，让不同推理与生成能力在特定任务上发挥最大优势。"
+            "title": "PetoiCamp/OpenCat-Quadruped-Robot",
+            "url": "https://github.com/PetoiCamp/OpenCat-Quadruped-Robot",
+            "author": "PetoiCamp",
+            "description": "开源的四足机器人框架，可用于仿生波士顿动力风格的机器宠物，面向STEM教育、AI增强应用和研究。",
+            "significance": "将AI实体化到可编程的运动机体上，让开发者和学习者能在真实物理世界中实验智能体行为。"
           }
         ]
       }
     ],
     "insight": {
-      "idea": "一个上传小说梗概即可自动生成分镜脚本、为关键角色匹配声优并输出具有动态转场效果的短剧预览平台。",
-      "mvp": "网页应用：用户粘贴故事摘要后，AI 编剧生成多幕剧情与对白，分镜引擎输出关键帧描述，并调取卡通风格视频生成接口合成 60 秒短剧片段。"
+      "idea": "一款浏览器插件，用本地大模型自动归类并起草邮件回复，用户确认后一键发送，所有处理在本地完成。",
+      "mvp": "构建一个Chrome扩展，监听Gmail页面，利用WebLLM获取邮件摘要并生成草稿，写入回复框供用户编辑发送，不经过第三方服务器。"
     },
     "_meta": {
       "source": "llm_tags"
     }
   },
   "items": [
-    {
-      "source_platform": "GitHub",
-      "source_type": "repository",
-      "title": "n8n-io/n8n",
-      "repo_name": "n8n",
-      "summary_raw": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
-      "url": "https://github.com/n8n-io/n8n",
-      "author": "n8n-io",
-      "created_at": "2019-06-22T09:24:21Z",
-      "updated_at": "2026-07-17T01:59:00Z",
-      "language": "TypeScript",
-      "tags": [
-        "ai",
-        "apis",
-        "automation",
-        "cli",
-        "data-flow",
-        "development",
-        "integration-framework",
-        "integrations",
-        "ipaas",
-        "low-code",
-        "low-code-platform",
-        "mcp",
-        "mcp-client",
-        "mcp-server",
-        "n8n",
-        "no-code",
-        "self-hosted",
-        "typescript",
-        "workflow",
-        "workflow-automation"
-      ],
-      "metrics": {
-        "stars": 196728,
-        "forks": 59383,
-        "issues": 1375
-      },
-      "archived": false,
-      "fork": false,
-      "matched_interest": [
-        "ai-workflow-automation"
-      ],
-      "matched_interest_name": "AI 工作流自动化",
-      "interest_description": "关注能替代人工重复流程、连接多步骤任务、具备 agent 或自动执行能力的产品。",
-      "include_signals": [
-        "automation",
-        "agent workflow",
-        "task orchestration",
-        "multi-step execution"
-      ],
-      "exclude_signals": [
-        "api wrapper",
-        "sdk",
-        "template"
-      ],
-      "interest_tags": [
-        "automation",
-        "agent",
-        "orchestration"
-      ],
-      "score": 95,
-      "summary": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations."
-    },
-    {
-      "source_platform": "GitHub",
-      "source_type": "repository",
-      "title": "activepieces/activepieces",
-      "repo_name": "activepieces",
-      "summary_raw": "AI Agents & MCPs & AI Workflow Automation • (~400 MCP servers for AI agents) • AI Automation / AI Agent with MCPs • AI Workflows & AI Agents • MCPs for AI Agents",
-      "url": "https://github.com/activepieces/activepieces",
-      "author": "activepieces",
-      "created_at": "2022-12-03T02:52:46Z",
-      "updated_at": "2026-07-17T01:51:39Z",
-      "language": "TypeScript",
-      "tags": [
-        "ai-agent",
-        "ai-agent-tools",
-        "ai-agents",
-        "ai-agents-framework",
-        "mcp",
-        "mcp-server",
-        "mcp-tools",
-        "mcps",
-        "n8n-alternative",
-        "no-code-automation",
-        "workflow",
-        "workflow-automation",
-        "workflows"
-      ],
-      "metrics": {
-        "stars": 23294,
-        "forks": 3925,
-        "issues": 451
-      },
-      "archived": false,
-      "fork": false,
-      "matched_interest": [
-        "ai-workflow-automation"
-      ],
-      "matched_interest_name": "AI 工作流自动化",
-      "interest_description": "关注能替代人工重复流程、连接多步骤任务、具备 agent 或自动执行能力的产品。",
-      "include_signals": [
-        "automation",
-        "agent workflow",
-        "task orchestration",
-        "multi-step execution"
-      ],
-      "exclude_signals": [
-        "api wrapper",
-        "sdk",
-        "template"
-      ],
-      "interest_tags": [
-        "automation",
-        "agent",
-        "orchestration"
-      ],
-      "score": 83.6,
-      "summary": "AI Agents & MCPs & AI Workflow Automation • (~400 MCP servers for AI agents) • AI Automation / AI Agent with MCPs • AI Workflows & AI Agents • MCPs for AI Agents"
-    },
-    {
-      "source_platform": "GitHub",
-      "source_type": "repository",
-      "title": "HBAI-Ltd/Toonflow-app",
-      "repo_name": "Toonflow-app",
-      "summary_raw": "Toonflow 是开源一站式 AI 短剧创作工具，将小说、剧本快速转化为动画短剧。集成 AI 编剧、智能分镜、角色与视频生成，跨平台桌面端轻量部署，助力创作者低成本批量产出视觉内容。Toonflow is an open-source AI tool that turns stories and scripts into animated short dramas. Features AI scriptwriting, storyboarding, character and video generation. A cross-platform desktop app for efficient content creation.",
-      "url": "https://github.com/HBAI-Ltd/Toonflow-app",
-      "author": "HBAI-Ltd",
-      "created_at": "2026-01-29T10:25:45Z",
-      "updated_at": "2026-07-17T01:44:02Z",
-      "language": "TypeScript",
-      "tags": [
-        "ai",
-        "ai-content-creation",
-        "ai-tool",
-        "ai-video-generation",
-        "automation",
-        "content-generation",
-        "desktop-app",
-        "electron",
-        "generative-ai",
-        "image-generation",
-        "llm",
-        "nodejs",
-        "shorts",
-        "text-to-video",
-        "typescript",
-        "video-generation",
-        "vite",
-        "vue3"
-      ],
-      "metrics": {
-        "stars": 11564,
-        "forks": 2139,
-        "issues": 1
-      },
-      "archived": false,
-      "fork": false,
-      "matched_interest": [
-        "ai-content-creation"
-      ],
-      "matched_interest_name": "AI 内容创作",
-      "interest_description": "关注内容生成、短视频、社媒创作、营销素材生产等直接面向创作者的 AI 产品。",
-      "include_signals": [
-        "content creation",
-        "social media",
-        "video generation",
-        "creator tools"
-      ],
-      "exclude_signals": [
-        "stock assets",
-        "course",
-        "prompt pack"
-      ],
-      "interest_tags": [
-        "creator",
-        "content",
-        "marketing"
-      ],
-      "score": 83.2,
-      "summary": "Toonflow 是开源一站式 AI 短剧创作工具，将小说、剧本快速转化为动画短剧。集成 AI 编剧、智能分镜、角色与视频生成，跨平台桌面端轻量部署，助力创作者低成本批量产出视觉内容。Toonflow is an open-source AI tool that turns stories and scripts into animated short dramas. Features AI scriptwriting, storyboarding, character and video generation. A cross-platform desktop app for efficient content creation."
-    },
     {
       "source_platform": "GitHub",
       "source_type": "repository",
@@ -321,23 +147,27 @@
       "matched_interest": [
         "ai-workflow-automation"
       ],
-      "matched_interest_name": "AI 工作流自动化",
-      "interest_description": "关注能替代人工重复流程、连接多步骤任务、具备 agent 或自动执行能力的产品。",
+      "matched_interest_name": "自动化工作流",
+      "interest_description": "关注能替代人工重复流程、连接多步骤任务、具备 agent 或自动执行能力的 AI 产品， 强调真正可落地的自动化链路，而不是纯框架或纯协议层项目。",
       "include_signals": [
-        "automation",
+        "workflow automation",
         "agent workflow",
+        "browser automation",
         "task orchestration",
-        "multi-step execution"
+        "multi-step execution",
+        "autonomous workflow"
       ],
       "exclude_signals": [
-        "api wrapper",
         "sdk",
-        "template"
+        "framework",
+        "boilerplate",
+        "tutorial",
+        "prompt collection"
       ],
       "interest_tags": [
+        "workflow",
         "automation",
-        "agent",
-        "orchestration"
+        "agent"
       ],
       "score": 82.2,
       "summary": "Open-Source Chrome extension for AI-powered web automation. Run multi-agent workflows using your own LLM API key. Alternative to OpenAI Operator."
@@ -345,57 +175,226 @@
     {
       "source_platform": "GitHub",
       "source_type": "repository",
-      "title": "Narcooo/inkos",
-      "repo_name": "inkos",
-      "summary_raw": "Story Creation AI Agent for novel, scripts, translation, interactive games, and IP content",
-      "url": "https://github.com/Narcooo/inkos",
-      "author": "Narcooo",
-      "created_at": "2026-03-12T02:12:54Z",
-      "updated_at": "2026-07-17T02:04:15Z",
+      "title": "cloudflare/agentic-inbox",
+      "repo_name": "agentic-inbox",
+      "summary_raw": "A self-hosted email client with an AI agent, running entirely on Cloudflare Workers",
+      "url": "https://github.com/cloudflare/agentic-inbox",
+      "author": "cloudflare",
+      "created_at": "2026-04-10T00:26:27Z",
+      "updated_at": "2026-07-17T02:04:50Z",
       "language": "TypeScript",
-      "tags": [
-        "ai",
-        "ai-agent",
-        "ai-game",
-        "ai-writing",
-        "chinese-novel",
-        "creative-writing-ai",
-        "generative-ai",
-        "novel-ai",
-        "novel-generation",
-        "short-drama",
-        "storyboard"
-      ],
+      "tags": [],
       "metrics": {
-        "stars": 8031,
-        "forks": 1490,
-        "issues": 205
+        "stars": 6378,
+        "forks": 803,
+        "issues": 40
       },
       "archived": false,
       "fork": false,
       "matched_interest": [
-        "ai-content-creation"
+        "agent-mail"
       ],
-      "matched_interest_name": "AI 内容创作",
-      "interest_description": "关注内容生成、短视频、社媒创作、营销素材生产等直接面向创作者的 AI 产品。",
+      "matched_interest_name": "Agent Mail",
+      "interest_description": "关注 AI 邮件代理、自动收发邮件、邮件分诊、邮件总结、邮件行动执行等产品， 强调邮件是 agent 的主要工作入口，而不是普通写邮件助手。",
       "include_signals": [
-        "content creation",
-        "social media",
-        "video generation",
-        "creator tools"
+        "email agent",
+        "inbox automation",
+        "mail assistant",
+        "autonomous email",
+        "email workflow",
+        "inbox copilot"
       ],
       "exclude_signals": [
-        "stock assets",
-        "course",
-        "prompt pack"
+        "smtp library",
+        "email template",
+        "newsletter tool",
+        "crm integration sdk"
       ],
       "interest_tags": [
-        "creator",
-        "content",
-        "marketing"
+        "email",
+        "inbox",
+        "agent"
       ],
-      "score": 79.1,
-      "summary": "Story Creation AI Agent for novel, scripts, translation, interactive games, and IP content"
+      "score": 78.5,
+      "summary": "A self-hosted email client with an AI agent, running entirely on Cloudflare Workers"
+    },
+    {
+      "source_platform": "GitHub",
+      "source_type": "repository",
+      "title": "rullerzhou-afk/clawd-on-desk",
+      "repo_name": "clawd-on-desk",
+      "summary_raw": "A pixel desktop pet that watches Claude Code, Codex, Cursor & other AI coding agents — so you don't have to.",
+      "url": "https://github.com/rullerzhou-afk/clawd-on-desk",
+      "author": "rullerzhou-afk",
+      "created_at": "2026-03-18T09:04:20Z",
+      "updated_at": "2026-07-17T01:48:16Z",
+      "language": "JavaScript",
+      "tags": [
+        "claude-code",
+        "codex",
+        "copilot",
+        "cursor",
+        "desktop-pet",
+        "electron",
+        "gemini",
+        "pixel-art",
+        "svg-animation"
+      ],
+      "metrics": {
+        "stars": 5416,
+        "forks": 539,
+        "issues": 131
+      },
+      "archived": false,
+      "fork": false,
+      "matched_interest": [
+        "ai-pet"
+      ],
+      "matched_interest_name": "AI宠物",
+      "interest_description": "关注陪伴型 AI 宠物、桌宠、情感互动宠物、养成式虚拟角色等产品， 强调可直接交互和持续陪伴体验，而不是单次聊天机器人。",
+      "include_signals": [
+        "ai pet",
+        "virtual pet",
+        "desktop pet",
+        "companion agent",
+        "emotional companion",
+        "pet game"
+      ],
+      "exclude_signals": [
+        "asset pack",
+        "model weight",
+        "roleplay prompt",
+        "tutorial"
+      ],
+      "interest_tags": [
+        "pet",
+        "companion",
+        "entertainment"
+      ],
+      "score": 75.6,
+      "summary": "A pixel desktop pet that watches Claude Code, Codex, Cursor & other AI coding agents — so you don't have to."
+    },
+    {
+      "source_platform": "GitHub",
+      "source_type": "repository",
+      "title": "PetoiCamp/OpenCat-Quadruped-Robot",
+      "repo_name": "OpenCat-Quadruped-Robot",
+      "summary_raw": "An open source quadruped robot pet framework for developing Boston Dynamics-style four-legged robots that are perfect for STEM, coding & robotics education, IoT robotics applications, AI-enhanced robotics application services, research, and DIY robotics kit development.",
+      "url": "https://github.com/PetoiCamp/OpenCat-Quadruped-Robot",
+      "author": "PetoiCamp",
+      "created_at": "2021-01-03T15:42:00Z",
+      "updated_at": "2026-07-15T15:55:57Z",
+      "language": "C++",
+      "tags": [
+        "ai",
+        "arduino",
+        "block-coding",
+        "education",
+        "iot",
+        "legged-robot",
+        "quadruped",
+        "quadruped-robot-gaits",
+        "raspberry-pi",
+        "robot-cat",
+        "robot-dog",
+        "robot-kit",
+        "robot-pet",
+        "robotics",
+        "robotics-education",
+        "simulation",
+        "stem",
+        "visual-programming",
+        "walking"
+      ],
+      "metrics": {
+        "stars": 4943,
+        "forks": 581,
+        "issues": 5
+      },
+      "archived": false,
+      "fork": false,
+      "matched_interest": [
+        "ai-pet"
+      ],
+      "matched_interest_name": "AI宠物",
+      "interest_description": "关注陪伴型 AI 宠物、桌宠、情感互动宠物、养成式虚拟角色等产品， 强调可直接交互和持续陪伴体验，而不是单次聊天机器人。",
+      "include_signals": [
+        "ai pet",
+        "virtual pet",
+        "desktop pet",
+        "companion agent",
+        "emotional companion",
+        "pet game"
+      ],
+      "exclude_signals": [
+        "asset pack",
+        "model weight",
+        "roleplay prompt",
+        "tutorial"
+      ],
+      "interest_tags": [
+        "pet",
+        "companion",
+        "entertainment"
+      ],
+      "score": 75.1,
+      "summary": "An open source quadruped robot pet framework for developing Boston Dynamics-style four-legged robots that are perfect for STEM, coding & robotics education, IoT robotics applications, AI-enhanced robotics application services, research, and DIY robotics kit development."
+    },
+    {
+      "source_platform": "GitHub",
+      "source_type": "repository",
+      "title": "wassupjay/n8n-free-templates",
+      "repo_name": "n8n-free-templates",
+      "summary_raw": "A curated set of 200+ plug-and-play n8n workflows that fuse classic automation with today’s AI stack—vector DBs, embeddings, and LLMs. Import any JSON, add your creds, hit Activate, and you’re live. Built to demo, prototype, or drop straight into production.",
+      "url": "https://github.com/wassupjay/n8n-free-templates",
+      "author": "wassupjay",
+      "created_at": "2025-05-19T05:03:45Z",
+      "updated_at": "2026-07-16T21:06:06Z",
+      "language": "",
+      "tags": [
+        "automation",
+        "automation-templates",
+        "integration",
+        "n8n",
+        "n8n-autom",
+        "n8n-template",
+        "no-code-ai",
+        "no-code-automation"
+      ],
+      "metrics": {
+        "stars": 5949,
+        "forks": 1599,
+        "issues": 8
+      },
+      "archived": false,
+      "fork": false,
+      "matched_interest": [
+        "ai-workflow-automation"
+      ],
+      "matched_interest_name": "自动化工作流",
+      "interest_description": "关注能替代人工重复流程、连接多步骤任务、具备 agent 或自动执行能力的 AI 产品， 强调真正可落地的自动化链路，而不是纯框架或纯协议层项目。",
+      "include_signals": [
+        "workflow automation",
+        "agent workflow",
+        "browser automation",
+        "task orchestration",
+        "multi-step execution",
+        "autonomous workflow"
+      ],
+      "exclude_signals": [
+        "sdk",
+        "framework",
+        "boilerplate",
+        "tutorial",
+        "prompt collection"
+      ],
+      "interest_tags": [
+        "workflow",
+        "automation",
+        "agent"
+      ],
+      "score": 74.4,
+      "summary": "A curated set of 200+ plug-and-play n8n workflows that fuse classic automation with today’s AI stack—vector DBs, embeddings, and LLMs. Import any JSON, add your creds, hit Activate, and you’re live. Built to demo, prototype, or drop straight into production."
     },
     {
       "source_platform": "GitHub",
@@ -419,23 +418,27 @@
       "matched_interest": [
         "ai-workflow-automation"
       ],
-      "matched_interest_name": "AI 工作流自动化",
-      "interest_description": "关注能替代人工重复流程、连接多步骤任务、具备 agent 或自动执行能力的产品。",
+      "matched_interest_name": "自动化工作流",
+      "interest_description": "关注能替代人工重复流程、连接多步骤任务、具备 agent 或自动执行能力的 AI 产品， 强调真正可落地的自动化链路，而不是纯框架或纯协议层项目。",
       "include_signals": [
-        "automation",
+        "workflow automation",
         "agent workflow",
+        "browser automation",
         "task orchestration",
-        "multi-step execution"
+        "multi-step execution",
+        "autonomous workflow"
       ],
       "exclude_signals": [
-        "api wrapper",
         "sdk",
-        "template"
+        "framework",
+        "boilerplate",
+        "tutorial",
+        "prompt collection"
       ],
       "interest_tags": [
+        "workflow",
         "automation",
-        "agent",
-        "orchestration"
+        "agent"
       ],
       "score": 74.4,
       "summary": "AI-assisted TradingView chart analysis — connect Claude Code to your TradingView Desktop for personal workflow automation"
@@ -476,23 +479,27 @@
       "matched_interest": [
         "ai-workflow-automation"
       ],
-      "matched_interest_name": "AI 工作流自动化",
-      "interest_description": "关注能替代人工重复流程、连接多步骤任务、具备 agent 或自动执行能力的产品。",
+      "matched_interest_name": "自动化工作流",
+      "interest_description": "关注能替代人工重复流程、连接多步骤任务、具备 agent 或自动执行能力的 AI 产品， 强调真正可落地的自动化链路，而不是纯框架或纯协议层项目。",
       "include_signals": [
-        "automation",
+        "workflow automation",
         "agent workflow",
+        "browser automation",
         "task orchestration",
-        "multi-step execution"
+        "multi-step execution",
+        "autonomous workflow"
       ],
       "exclude_signals": [
-        "api wrapper",
         "sdk",
-        "template"
+        "framework",
+        "boilerplate",
+        "tutorial",
+        "prompt collection"
       ],
       "interest_tags": [
+        "workflow",
         "automation",
-        "agent",
-        "orchestration"
+        "agent"
       ],
       "score": 73.6,
       "summary": "An AI-powered custom node for ComfyUI designed to enhance workflow automation and provide intelligent assistance"
@@ -506,11 +513,11 @@
       "url": "https://github.com/iflow-ai/iflow-cli",
       "author": "iflow-ai",
       "created_at": "2025-07-27T02:38:21Z",
-      "updated_at": "2026-07-16T21:30:34Z",
+      "updated_at": "2026-07-17T02:11:49Z",
       "language": "Shell",
       "tags": [],
       "metrics": {
-        "stars": 5111,
+        "stars": 5110,
         "forks": 418,
         "issues": 84
       },
@@ -519,23 +526,27 @@
       "matched_interest": [
         "ai-workflow-automation"
       ],
-      "matched_interest_name": "AI 工作流自动化",
-      "interest_description": "关注能替代人工重复流程、连接多步骤任务、具备 agent 或自动执行能力的产品。",
+      "matched_interest_name": "自动化工作流",
+      "interest_description": "关注能替代人工重复流程、连接多步骤任务、具备 agent 或自动执行能力的 AI 产品， 强调真正可落地的自动化链路，而不是纯框架或纯协议层项目。",
       "include_signals": [
-        "automation",
+        "workflow automation",
         "agent workflow",
+        "browser automation",
         "task orchestration",
-        "multi-step execution"
+        "multi-step execution",
+        "autonomous workflow"
       ],
       "exclude_signals": [
-        "api wrapper",
         "sdk",
-        "template"
+        "framework",
+        "boilerplate",
+        "tutorial",
+        "prompt collection"
       ],
       "interest_tags": [
+        "workflow",
         "automation",
-        "agent",
-        "orchestration"
+        "agent"
       ],
       "score": 73.5,
       "summary": "iFlow cli is a comprehensive command-line intelligence that embeds in your terminal, analyzes your repositories, does coding tasks, interprets your needs across contexts, and boosts efficiency by performing tasks from simple file operations to complex workflow automation."
@@ -543,101 +554,137 @@
     {
       "source_platform": "GitHub",
       "source_type": "repository",
-      "title": "ErlichLiu/DeepClaude",
-      "repo_name": "DeepClaude",
-      "summary_raw": "Unleash Next-Level AI! 🚀 💻 Code Generation: DeepSeek r1 + Claude 3.7 Sonnet - Unparalleled Performance! 📝 Content Creation: DeepSeek r1 + Gemini 2.5 Pro - Superior Quality! 🔌 OpenAI-Compatible. 🌊 Streaming & Non-Streaming Support. ✨ Experience the Future of AI – Today! Click to Try Now! ✨",
-      "url": "https://github.com/ErlichLiu/DeepClaude",
-      "author": "ErlichLiu",
-      "created_at": "2025-02-01T11:04:17Z",
-      "updated_at": "2026-07-16T19:38:15Z",
-      "language": "Python",
+      "title": "zhu1090093659/deepseek-pp",
+      "repo_name": "deepseek-pp",
+      "summary_raw": "DeepSeek Web browser extension: AI agent workspace with MCP tools, memory, Skills, automation, web search, and conversation export.",
+      "url": "https://github.com/zhu1090093659/deepseek-pp",
+      "author": "zhu1090093659",
+      "created_at": "2026-04-27T06:40:29Z",
+      "updated_at": "2026-07-16T17:12:27Z",
+      "language": "TypeScript",
       "tags": [
-        "ai",
-        "claude-3-7-sonnet",
+        "agentic-ai",
+        "ai-agent",
+        "ai-memory",
+        "automation",
+        "browser-extension",
+        "chrome-extension",
+        "conversation-export",
         "deepseek",
-        "gemini"
+        "deepseek-ai",
+        "edge-extension",
+        "firefox-extension",
+        "mcp",
+        "model-context-protocol",
+        "native-messaging",
+        "officecli",
+        "react",
+        "tool-calling",
+        "typescript",
+        "web-search",
+        "wxt"
       ],
       "metrics": {
-        "stars": 2936,
-        "forks": 498,
-        "issues": 24
+        "stars": 1277,
+        "forks": 166,
+        "issues": 4
       },
       "archived": false,
       "fork": false,
       "matched_interest": [
-        "ai-content-creation"
+        "ai-workflow-automation"
       ],
-      "matched_interest_name": "AI 内容创作",
-      "interest_description": "关注内容生成、短视频、社媒创作、营销素材生产等直接面向创作者的 AI 产品。",
+      "matched_interest_name": "自动化工作流",
+      "interest_description": "关注能替代人工重复流程、连接多步骤任务、具备 agent 或自动执行能力的 AI 产品， 强调真正可落地的自动化链路，而不是纯框架或纯协议层项目。",
       "include_signals": [
-        "content creation",
-        "social media",
-        "video generation",
-        "creator tools"
+        "workflow automation",
+        "agent workflow",
+        "browser automation",
+        "task orchestration",
+        "multi-step execution",
+        "autonomous workflow"
       ],
       "exclude_signals": [
-        "stock assets",
-        "course",
-        "prompt pack"
+        "sdk",
+        "framework",
+        "boilerplate",
+        "tutorial",
+        "prompt collection"
       ],
       "interest_tags": [
-        "creator",
-        "content",
-        "marketing"
+        "workflow",
+        "automation",
+        "agent"
       ],
-      "score": 71.8,
-      "summary": "Unleash Next-Level AI! 🚀 💻 Code Generation: DeepSeek r1 + Claude 3.7 Sonnet - Unparalleled Performance! 📝 Content Creation: DeepSeek r1 + Gemini 2.5 Pro - Superior Quality! 🔌 OpenAI-Compatible. 🌊 Streaming & Non-Streaming Support. ✨ Experience the Future of AI – Today! Click to Try Now! ✨"
+      "score": 72.5,
+      "summary": "DeepSeek Web browser extension: AI agent workspace with MCP tools, memory, Skills, automation, web search, and conversation export."
     },
     {
       "source_platform": "GitHub",
       "source_type": "repository",
-      "title": "BetaStreetOmnis/xhs_ai_publisher",
-      "repo_name": "xhs_ai_publisher",
-      "summary_raw": "AI-powered Xiaohongshu/Rednote content creation and publishing tool with PyQt desktop UI, FastAPI service, login-state reuse, preview publish, and automated browser workflows.",
-      "url": "https://github.com/BetaStreetOmnis/xhs_ai_publisher",
-      "author": "BetaStreetOmnis",
-      "created_at": "2024-11-10T08:48:20Z",
-      "updated_at": "2026-07-16T06:13:22Z",
+      "title": "aaron-he-zhu/aaron-marketing-skills",
+      "repo_name": "aaron-marketing-skills",
+      "summary_raw": "120 marketing skills + 8 commands for Claude Code & AI agents across 7 disciplines — SEO/GEO, influencer, paid ads, email, product launch, organic social & brand narrative — on one shared contract, with 8 auditor gates: CORE-EEAT · CITE · STAR · ROAS · SEND · RAMP · ECHO · TALE.",
+      "url": "https://github.com/aaron-he-zhu/aaron-marketing-skills",
+      "author": "aaron-he-zhu",
+      "created_at": "2025-12-18T03:35:29Z",
+      "updated_at": "2026-07-16T20:04:41Z",
       "language": "Python",
       "tags": [
-        "ai",
-        "automation",
-        "fastapi",
-        "playwright",
-        "pyqt5",
-        "rednote",
-        "xiaohongshu"
+        "agent-skills",
+        "brand-messaging",
+        "brand-narrative",
+        "claude-code",
+        "claude-skills",
+        "content-optimization",
+        "creator-marketing",
+        "email-marketing",
+        "generative-engine-optimization",
+        "geo",
+        "influencer-marketing",
+        "marketing",
+        "marketing-automation",
+        "organic-social",
+        "paid-advertising",
+        "product-hunt",
+        "product-launch",
+        "roas",
+        "seo",
+        "social-media-marketing"
       ],
       "metrics": {
-        "stars": 2030,
-        "forks": 297,
-        "issues": 7
+        "stars": 2400,
+        "forks": 329,
+        "issues": 0
       },
       "archived": false,
       "fork": false,
       "matched_interest": [
-        "ai-content-creation"
+        "agent-mail"
       ],
-      "matched_interest_name": "AI 内容创作",
-      "interest_description": "关注内容生成、短视频、社媒创作、营销素材生产等直接面向创作者的 AI 产品。",
+      "matched_interest_name": "Agent Mail",
+      "interest_description": "关注 AI 邮件代理、自动收发邮件、邮件分诊、邮件总结、邮件行动执行等产品， 强调邮件是 agent 的主要工作入口，而不是普通写邮件助手。",
       "include_signals": [
-        "content creation",
-        "social media",
-        "video generation",
-        "creator tools"
+        "email agent",
+        "inbox automation",
+        "mail assistant",
+        "autonomous email",
+        "email workflow",
+        "inbox copilot"
       ],
       "exclude_signals": [
-        "stock assets",
-        "course",
-        "prompt pack"
+        "smtp library",
+        "email template",
+        "newsletter tool",
+        "crm integration sdk"
       ],
       "interest_tags": [
-        "creator",
-        "content",
-        "marketing"
+        "email",
+        "inbox",
+        "agent"
       ],
-      "score": 69,
-      "summary": "AI-powered Xiaohongshu/Rednote content creation and publishing tool with PyQt desktop UI, FastAPI service, login-state reuse, preview publish, and automated browser workflows."
+      "score": 71.6,
+      "summary": "120 marketing skills + 8 commands for Claude Code & AI agents across 7 disciplines — SEO/GEO, influencer, paid ads, email, product launch, organic social & brand narrative — on one shared contract, with 8 auditor gates: CORE-EEAT · CITE · STAR · ROAS · SEND · RAMP · ECHO · TALE."
     }
   ],
   "warnings": [
