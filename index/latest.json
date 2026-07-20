@@ -24,93 +24,93 @@
     ]
   },
   "digest": {
-    "summary": "本周的 AI 产品创新围绕三个鲜明方向展开：一是将软件工程的规范前移，用 Spec 和上下文工程重新定义人与 AI 的协作边界；二是把内容创作变成可编排的生产线，剧本、分镜、生成一步到位；三是让 AI 代理真正钻入浏览器、终端和图形工具，用自动化取代重复操作。每个方向的共同特点都是“去掉中间环节”，让使用者直接对产出负责。",
+    "summary": "这次扫库看到一批 AI 工具在三个方向上各自扎得非常深：一类把软件工程本身拆成可被 AI 理解的规格和上下文，让编码助手从“补全”变成“落地执行”；另一类把内容生产链路压成一条流水线，从文本到视频全包，并且开始直接对接发布渠道；第三类不再满足于对话窗口，而是把 LLM 当成一种“操作系统的遥控器”，直接驱动桌面软件和浏览器完成真实任务。",
     "sections": [
       {
-        "title": "从补全到规范：AI 正在重写软件构建的入口",
-        "summary": "这些项目做的不是代码补全，而是把软件“长什么样”的共识提前到编码之前。它们共同在让 AI 理解意图的方式从“猜下一行”变成“读完整规范”，并且把编码代理接入聊天软件，使开发行为不再被 IDE 束缚。相比其他主题专注产出的内容或自动化操作，这里争夺的是人机协作中“谁来定义正确性”的主导权。今天最突出的能力组合是：结构化需求描述 + 上下文工程方法论 + 多通道触发编码代理。",
+        "title": "编程范式转移：从补全到规格驱动与远程协同",
+        "summary": "这些项目集中解决 AI 编码助手从“建议”到“交付”之间的断层。它们围绕软件开发生命周期，把需求规格、上下文工程、本地部署、多代理协同和远程接入串成完整链条。与内容生成或通用自动化不同，这里的核心是对代码仓库状态的精确理解和可重复的工程决策。当前最突出的能力组合是规格先行 + 自托管执行 + 任意地点调度。",
         "items": [
           {
-            "title": "Fission-AI/OpenSpec",
+            "title": "OpenSpec",
             "url": "https://github.com/Fission-AI/OpenSpec",
             "author": "Fission-AI",
-            "description": "将软件需求直接转化为规范驱动的开发流程，让 AI 编码助手依据 PRD 级别的描述生成代码。",
-            "significance": "把“写代码”变成“写规格”，从根本上降低了需求到实现的翻译误差，让 AI 的输出可预测、可审查。"
+            "description": "将规格驱动开发（SDD）固化为 AI 编码助手可直接消费的流程，强制模型先理解完整规格再生成代码。",
+            "significance": "把“规格”从文档变成可执行约束，减少 AI 自由发散带来的返工，让非技术角色的需求也能成为准确的工程指令。"
           },
           {
-            "title": "coleam00/context-engineering-intro",
-            "url": "https://github.com/coleam00/context-engineering-intro",
-            "author": "coleam00",
-            "description": "提出一套系统化的上下文工程方法，教导开发者如何为 Claude Code 等 AI 助手构建精确的项目上下文。",
-            "significance": "不是工具而是一套可控的思维模型，它把提示词的偶然技巧转化为可复现的工程实践，是让编码代理稳定产出的底层语法。"
+            "title": "Tabby",
+            "url": "https://github.com/TabbyML/tabby",
+            "author": "TabbyML",
+            "description": "完全自托管的 AI 编码助手，可脱离云端独立运行，覆盖代码补全与对话。",
+            "significance": "满足严格数据主权的团队将 LLM 编码能力引入内网，同时保持与 IDE 的深度集成，是私有化开发基础设施的关键组件。"
           },
           {
-            "title": "chenhg5/cc-connect",
+            "title": "cc-connect",
             "url": "https://github.com/chenhg5/cc-connect",
             "author": "chenhg5",
-            "description": "将本地 AI 编码代理（如 Claude Code、Cursor、Gemini CLI）桥接到飞书、Slack、微信等多个即时通讯平台。",
-            "significance": "让开发者从聊天窗口直接指挥编码代理，把开发动作融入日常对话流，解决了“必须守在终端前”的时空限制。"
+            "description": "将本地运行的 Claude Code、Cursor 等代理桥接到飞书、钉钉、微信等即时通讯工具，无需公网 IP。",
+            "significance": "把 AI 编码代理从终端解放出来，让开发者在移动端或聊天窗口直接下达开发任务、审查进度，远程协作的门槛被大幅降低。"
           }
         ]
       },
       {
-        "title": "全自动内容车间：从一行想法到一条视频",
-        "summary": "这类产品把内容生产拆解成可串联的 AI 工序，覆盖编剧、角色、分镜、画面生成、配音剪辑的完整链条。它们的共性是用代理调度多个模型完成连续决策，而非生成孤立的素材片段。与软件开发工具不同，这里的用户是创作者，他们不再操作时间轴或画布，而是输入故事大纲和风格要求。今天最突出的能力组合是：角色一致性保持 + 多工序代理编排 + 视频/动画直接输出。",
+        "title": "内容生产闭环：从创意到多模态成品直达发布",
+        "summary": "这些项目把原本分散的脚本写作、分镜、图像生成、语音合成、视频合成和平台发布焊成一体。它们不是“辅助写作”，而是把整个生产流水线压缩，让用户以最少的手动干预得到可直接传播的作品。与编程工具和办公效率工具相比，这类产品的验收标准不是代码或任务完成度，而是最终媒体的可发布质量。当前最强组合是视频管线 + 角色一致性 + 一键多渠道分发。",
         "items": [
           {
-            "title": "calesthio/OpenMontage",
+            "title": "OpenMontage",
             "url": "https://github.com/calesthio/OpenMontage",
             "author": "calesthio",
-            "description": "一个开源的多代理视频生产系统，包含 12 条流水线、52 个工具和 500 余项代理技能，可将 AI 编程助手变成完整视频工作室。",
-            "significance": "首次将视频制作抽象为可编程的代理流水线，让视频生产从手动操作变成代码可调用的工业流程。"
+            "description": "开源智能视频生产系统，内置 12 条制片管线、52 个工具与 500 余项代理技能，可将 AI 编码助手变为完整视频工作室。",
+            "significance": "首次把视频制作全流程以可编程代理方式开源，允许开发者用 Claude Code 等现有工具直接调度音视频合成，改变了视频生产工具的封闭生态。"
           },
           {
-            "title": "HBAI-Ltd/Toonflow-app",
+            "title": "Toonflow",
             "url": "https://github.com/HBAI-Ltd/Toonflow-app",
             "author": "HBAI-Ltd",
-            "description": "开源一站式 AI 短剧创作工具，集成 AI 编剧、智能分镜、角色与视频生成，支持跨平台桌面端轻量部署。",
-            "significance": "专门为短剧场景优化了角色与画面的一致性，将小说到动画的转化压缩为单一桌面应用内的连续操作。"
+            "description": "一站式 AI 短剧创作桌面应用，输入小说或剧本自动生成分镜、角色并合成动画短剧。",
+            "significance": "在单机桌面端跑通 AI 编剧、智能分镜、角色与视频生成，极大降低短剧试错成本，让个人创作者具备小型工作室的产能。"
           },
           {
-            "title": "Narcooo/inkos",
-            "url": "https://github.com/Narcooo/inkos",
-            "author": "Narcooo",
-            "description": "面向小说、剧本、翻译和互动游戏的 AI 创作代理，可管理故事生成、翻译和 IP 内容开发。",
-            "significance": "不只是文本生成，而是把故事创作做成可互动的代理系统，为长篇叙事和游戏脚本提供连续的世界观管理。"
+            "title": "xhs_ai_publisher",
+            "url": "https://github.com/BetaStreetOmnis/xhs_ai_publisher",
+            "author": "BetaStreetOmnis",
+            "description": "小红书全流程 AI 内容创作与发布工具，集成桌面界面、AI 生成和浏览器自动化发布。",
+            "significance": "从文案到配图再到平台发布全部自动化，复用了登录态和预览机制，把内容营销的“生产-合规-分发”压缩为单键操作。"
           }
         ]
       },
       {
-        "title": "钻进现场的工具代理：终端、浏览器与图形工作台的自动化",
-        "summary": "这些项目把 AI 代理塞进开发者、设计师每天操作的具体工具中——Chrome 浏览器、终端命令行、ComfyUI 节点面板。它们共同做的事情是理解界面状态并代替人手完成多步骤操作，而不是提供建议或对话。与规范驱动的开发工具和内容生产线相比，这里追求的是对既有工具生态的直接操控，最独特之处在于“用 AI 模拟人的操作路径”。今天最突出的能力组合是：DOM/界面感知 + 多步骤任务规划 + 本地环境无缝集成。",
+        "title": "代理即操作：让 LLM 直接驾驶你的工具",
+        "summary": "这批项目不再依赖对话界面或专用编辑器，而是让 AI 直接控制现有软件和 Web 应用。它们把浏览器、ComfyUI 节点图、TradingView 图表这些原本需要人手工操作的界面变成 AI 代理的操纵对象。与编程工具不同，这里的对象不是代码仓库，而是图形界面和工作流；与内容生产不同，它们不生成媒体，而是完成交易分析、图像工作流修改等操作性任务。当前最突出的能力是屏幕级交互代理 + 专业工具的内核操控。",
         "items": [
           {
-            "title": "nanobrowser/nanobrowser",
+            "title": "nanobrowser",
             "url": "https://github.com/nanobrowser/nanobrowser",
             "author": "nanobrowser",
-            "description": "开源的 Chrome 扩展，可运行多代理工作流实现网页自动化，替代 OpenAI Operator。",
-            "significance": "让用户用自己的 API 密钥驱动浏览器代理，既保持数据隐私，又能编排复杂网页操作，实现自主信息采集和任务执行。"
+            "description": "开源 Chrome 扩展，使用自己 API 密钥运行多代理工作流，自动完成网页操作任务。",
+            "significance": "以浏览器扩展形态实现 OpenAI Operator 的替代方案，用户无需依赖封闭平台即可构建私有的网页自动化代理集群。"
           },
           {
-            "title": "ATH-MaaS/ComfyUI-Copilot",
+            "title": "ComfyUI-Copilot",
             "url": "https://github.com/ATH-MaaS/ComfyUI-Copilot",
             "author": "ATH-MaaS",
-            "description": "为 ComfyUI 节点工作流引入 AI 驱动的自动化辅助，可智能生成和优化图形工作流。",
-            "significance": "将“搭节点”这种高度依赖经验的操作变成对话式指令，让 AI 直接操控 ComfyUI 的图形化流水线，显著降低高质量图像生成的门槛。"
+            "description": "为 ComfyUI 定制的 AI 节点，支持自然语言驱动工作流编辑、生成与智能协助。",
+            "significance": "首次将 LLM 代理深度植入节点式图像生成工具的内部逻辑，用户直接说话就能修改管线、安装节点，极大降低了图像工作流的操作门槛。"
           },
           {
-            "title": "iflow-ai/iflow-cli",
-            "url": "https://github.com/iflow-ai/iflow-cli",
-            "author": "iflow-ai",
-            "description": "嵌入终端的命令行智能助手，可分析代码仓库、执行编码任务，并在不同上下文之间解释用户需求。",
-            "significance": "把终端从被动命令接收器变成持续理解项目状态的智能环境，使开发者能用自然语言直接驱动从文件操作到复杂工作流的执行。"
+            "title": "tradingview-mcp",
+            "url": "https://github.com/tradesdontlie/tradingview-mcp",
+            "author": "tradesdontlie",
+            "description": "将 Claude Code 连接到 TradingView 桌面端，实现 AI 辅助图表分析与个人工作流自动化。",
+            "significance": ""
           }
         ]
       }
     ],
     "insight": {
-      "idea": "做一个面向抖音/TikTok带货创作者的“商品变视频”桌面工具：用户粘贴商品链接，AI 自动抓取卖点、生成口播脚本和分镜描述，调用数字人形象合成讲解视频，并支持一键发布到短视频平台。",
-      "mvp": "用 Electron 构建桌面客户端，内置商品链接解析器，接大模型生成脚本，集成一个开源的数字人驱动方案（如 MuseTalk）和 TTS，首版仅需完成“链接→脚本→带数字人口播的视频”并导出 MP4。"
+      "idea": "",
+      "mvp": ""
     },
     "_meta": {
       "source": "llm_tags"
@@ -128,10 +128,10 @@
       "url": "https://github.com/calesthio/OpenMontage",
       "author": "calesthio",
       "created_at": "2026-03-29T15:23:22Z",
-      "updated_at": "2026-07-17T10:02:58Z",
+      "updated_at": "2026-07-20T02:32:08Z",
       "metrics": {
-        "stars": 39398,
-        "forks": 4659,
+        "stars": 40170,
+        "forks": 4758,
         "issues": 182
       },
       "tags": [
@@ -167,7 +167,7 @@
       "fork": false,
       "archived": false,
       "language": "Python",
-      "score": 82.3,
+      "score": 82.4,
       "summary": "World's first open-source, agentic video production system. 12 pipelines, 52 tools, 500+ agent skills. Turn your AI coding assistant into a full video production studio."
     },
     {
@@ -178,11 +178,11 @@
       "url": "https://github.com/iOfficeAI/AionUi",
       "author": "iOfficeAI",
       "created_at": "2025-08-07T10:29:51Z",
-      "updated_at": "2026-07-17T09:47:37Z",
+      "updated_at": "2026-07-20T02:28:48Z",
       "metrics": {
-        "stars": 30293,
-        "forks": 3033,
-        "issues": 687
+        "stars": 30461,
+        "forks": 3050,
+        "issues": 690
       },
       "tags": [
         "acp",
@@ -218,7 +218,7 @@
       "fork": false,
       "archived": false,
       "language": "TypeScript",
-      "score": 80.2,
+      "score": 80.3,
       "summary": "Free, local, open-source 24/7 Cowork app for OpenClaw, Hermes Agent, Claude Code, Codex, OpenCode, Gemini CLI and 20+ more CLI | Customize your assistants | Star if you like it!"
     },
     {
@@ -229,11 +229,11 @@
       "url": "https://github.com/Fission-AI/OpenSpec",
       "author": "Fission-AI",
       "created_at": "2025-08-05T10:37:45Z",
-      "updated_at": "2026-07-17T10:05:37Z",
+      "updated_at": "2026-07-20T02:25:26Z",
       "metrics": {
-        "stars": 61312,
-        "forks": 4249,
-        "issues": 476
+        "stars": 61616,
+        "forks": 4271,
+        "issues": 443
       },
       "tags": [
         "ai",
@@ -270,10 +270,10 @@
       "url": "https://github.com/TabbyML/tabby",
       "author": "TabbyML",
       "created_at": "2023-03-16T09:18:01Z",
-      "updated_at": "2026-07-17T06:12:43Z",
+      "updated_at": "2026-07-20T01:49:02Z",
       "metrics": {
-        "stars": 33712,
-        "forks": 1774,
+        "stars": 33766,
+        "forks": 1777,
         "issues": 328
       },
       "tags": [
@@ -310,11 +310,11 @@
       "url": "https://github.com/HBAI-Ltd/Toonflow-app",
       "author": "HBAI-Ltd",
       "created_at": "2026-01-29T10:25:45Z",
-      "updated_at": "2026-07-17T10:05:07Z",
+      "updated_at": "2026-07-20T02:37:48Z",
       "metrics": {
-        "stars": 11577,
-        "forks": 2140,
-        "issues": 2
+        "stars": 11669,
+        "forks": 2158,
+        "issues": 6
       },
       "tags": [
         "ai",
@@ -359,11 +359,11 @@
       "url": "https://github.com/nanobrowser/nanobrowser",
       "author": "nanobrowser",
       "created_at": "2024-12-31T08:11:27Z",
-      "updated_at": "2026-07-17T06:05:11Z",
+      "updated_at": "2026-07-20T02:10:17Z",
       "metrics": {
-        "stars": 13473,
-        "forks": 1413,
-        "issues": 69
+        "stars": 13482,
+        "forks": 1417,
+        "issues": 70
       },
       "tags": [
         "agent",
@@ -399,7 +399,7 @@
       "fork": false,
       "archived": false,
       "language": "TypeScript",
-      "score": 77,
+      "score": 77.1,
       "summary": "Open-Source Chrome extension for AI-powered web automation. Run multi-agent workflows using your own LLM API key. Alternative to OpenAI Operator."
     },
     {
@@ -410,11 +410,11 @@
       "url": "https://github.com/chenhg5/cc-connect",
       "author": "chenhg5",
       "created_at": "2026-02-28T02:39:39Z",
-      "updated_at": "2026-07-17T10:05:49Z",
+      "updated_at": "2026-07-20T02:22:15Z",
       "metrics": {
-        "stars": 14097,
-        "forks": 1349,
-        "issues": 498
+        "stars": 14179,
+        "forks": 1363,
+        "issues": 502
       },
       "tags": [],
       "matched_interest": [
@@ -429,7 +429,7 @@
       "fork": false,
       "archived": false,
       "language": "Go",
-      "score": 75.1,
+      "score": 75.2,
       "summary": "Bridge local AI coding agents (Claude Code, Cursor, Gemini CLI, Codex) to messaging platforms (Feishu/Lark, DingTalk, Slack, Telegram, Discord, LINE, WeChat Work). Chat with your AI dev assistant from anywhere — no public IP required for most platforms."
     },
     {
@@ -440,10 +440,10 @@
       "url": "https://github.com/coleam00/context-engineering-intro",
       "author": "coleam00",
       "created_at": "2025-07-02T11:54:47Z",
-      "updated_at": "2026-07-17T06:07:37Z",
+      "updated_at": "2026-07-19T17:53:37Z",
       "metrics": {
-        "stars": 13711,
-        "forks": 2726,
+        "stars": 13719,
+        "forks": 2727,
         "issues": 33
       },
       "tags": [],
@@ -459,7 +459,7 @@
       "fork": false,
       "archived": false,
       "language": "Python",
-      "score": 74.5,
+      "score": 74.6,
       "summary": "Context engineering is the new vibe coding - it's the way to actually make AI coding assistants work. Claude Code is the best for this so that's what this repo is centered around, but you can apply this strategy with any AI coding assistant!"
     },
     {
@@ -470,10 +470,10 @@
       "url": "https://github.com/sweepai/sweep",
       "author": "sweepai",
       "created_at": "2023-06-14T10:08:07Z",
-      "updated_at": "2026-07-16T03:11:23Z",
+      "updated_at": "2026-07-20T01:56:21Z",
       "metrics": {
-        "stars": 7701,
-        "forks": 463,
+        "stars": 7703,
+        "forks": 464,
         "issues": 752
       },
       "tags": [
@@ -510,11 +510,11 @@
       "url": "https://github.com/tradesdontlie/tradingview-mcp",
       "author": "tradesdontlie",
       "created_at": "2026-03-29T14:39:25Z",
-      "updated_at": "2026-07-17T07:35:45Z",
+      "updated_at": "2026-07-20T02:33:06Z",
       "metrics": {
-        "stars": 4429,
-        "forks": 2102,
-        "issues": 119
+        "stars": 4488,
+        "forks": 2135,
+        "issues": 129
       },
       "tags": [],
       "matched_interest": [
@@ -529,7 +529,7 @@
       "fork": false,
       "archived": false,
       "language": "JavaScript",
-      "score": 69.1,
+      "score": 69.2,
       "summary": "AI-assisted TradingView chart analysis — connect Claude Code to your TradingView Desktop for personal workflow automation"
     },
     {
@@ -540,11 +540,11 @@
       "url": "https://github.com/Narcooo/inkos",
       "author": "Narcooo",
       "created_at": "2026-03-12T02:12:54Z",
-      "updated_at": "2026-07-17T09:38:39Z",
+      "updated_at": "2026-07-20T02:31:54Z",
       "metrics": {
-        "stars": 8043,
-        "forks": 1492,
-        "issues": 206
+        "stars": 8103,
+        "forks": 1500,
+        "issues": 207
       },
       "tags": [
         "ai",
@@ -571,7 +571,7 @@
       "fork": false,
       "archived": false,
       "language": "TypeScript",
-      "score": 68.9,
+      "score": 69,
       "summary": "Story Creation AI Agent for novel, scripts, translation, interactive games, and IP content"
     },
     {
@@ -582,10 +582,10 @@
       "url": "https://github.com/ATH-MaaS/ComfyUI-Copilot",
       "author": "ATH-MaaS",
       "created_at": "2025-02-14T09:02:28Z",
-      "updated_at": "2026-07-15T20:23:27Z",
+      "updated_at": "2026-07-20T01:11:41Z",
       "metrics": {
-        "stars": 5375,
-        "forks": 351,
+        "stars": 5381,
+        "forks": 353,
         "issues": 50
       },
       "tags": [
@@ -615,7 +615,7 @@
       "fork": false,
       "archived": false,
       "language": "TypeScript",
-      "score": 68,
+      "score": 68.1,
       "summary": "An AI-powered custom node for ComfyUI designed to enhance workflow automation and provide intelligent assistance"
     },
     {
@@ -626,9 +626,9 @@
       "url": "https://github.com/iflow-ai/iflow-cli",
       "author": "iflow-ai",
       "created_at": "2025-07-27T02:38:21Z",
-      "updated_at": "2026-07-17T02:11:49Z",
+      "updated_at": "2026-07-17T17:26:18Z",
       "metrics": {
-        "stars": 5110,
+        "stars": 5112,
         "forks": 418,
         "issues": 84
       },
@@ -656,9 +656,9 @@
       "url": "https://github.com/BetaStreetOmnis/xhs_ai_publisher",
       "author": "BetaStreetOmnis",
       "created_at": "2024-11-10T08:48:20Z",
-      "updated_at": "2026-07-16T06:13:22Z",
+      "updated_at": "2026-07-19T07:03:18Z",
       "metrics": {
-        "stars": 2030,
+        "stars": 2029,
         "forks": 297,
         "issues": 7
       },
@@ -694,11 +694,11 @@
       "url": "https://github.com/mhss1/MyBrain",
       "author": "mhss1",
       "created_at": "2022-05-11T17:06:31Z",
-      "updated_at": "2026-07-17T09:46:59Z",
+      "updated_at": "2026-07-19T05:09:54Z",
       "metrics": {
-        "stars": 2089,
-        "forks": 172,
-        "issues": 103
+        "stars": 2105,
+        "forks": 175,
+        "issues": 104
       },
       "tags": [
         "android",
@@ -731,7 +731,7 @@
       "fork": false,
       "archived": false,
       "language": "Kotlin",
-      "score": 62.4,
+      "score": 62.5,
       "summary": "All-in-one productivity app and AI assistant with Tasks, Notes, Calendar, Diary and Bookmarks."
     },
     {
@@ -742,9 +742,9 @@
       "url": "https://github.com/ErlichLiu/DeepClaude",
       "author": "ErlichLiu",
       "created_at": "2025-02-01T11:04:17Z",
-      "updated_at": "2026-07-17T09:40:44Z",
+      "updated_at": "2026-07-19T12:33:45Z",
       "metrics": {
-        "stars": 2937,
+        "stars": 2938,
         "forks": 497,
         "issues": 24
       },
@@ -772,23 +772,38 @@
     {
       "source_platform": "GitHub",
       "source_type": "repository",
-      "title": "alfredxw/denova",
-      "summary_raw": "An AI creative platform for novel writing and AI generated RPG, with built-in support for AI agents, Skills, subagent workflows, automations, image generation, and version control. 一个面向小说创作与 AI 角色扮演游戏的 AI 创作平台，内置支持 AI Agents、Skills、Subagent Workflows、Automations、图像自动生成与项目版本管理等核心能力",
-      "url": "https://github.com/alfredxw/denova",
-      "author": "alfredxw",
-      "created_at": "2026-05-19T09:56:12Z",
-      "updated_at": "2026-07-17T09:41:10Z",
+      "title": "zhnt/loushang",
+      "summary_raw": "AI-native agent harness for coding workflows by python: multi-model LLM orchestration, stateful sessions, tool governance,   traceable delivery, and provider routing for GPT, Claude, DeepSeek, Qwen, Kimi, GLM, and MiniMax.",
+      "url": "https://github.com/zhnt/loushang",
+      "author": "zhnt",
+      "created_at": "2026-05-29T17:25:11Z",
+      "updated_at": "2026-07-20T01:42:12Z",
       "metrics": {
-        "stars": 490,
-        "forks": 85,
-        "issues": 4
+        "stars": 744,
+        "forks": 135,
+        "issues": 24
       },
       "tags": [
         "agent",
-        "ai-agents",
-        "ai-tools",
-        "ide",
-        "novel"
+        "agent-harness",
+        "agentic",
+        "ai",
+        "chatgpt",
+        "claude",
+        "claude-code",
+        "codex",
+        "coding",
+        "deepseek",
+        "dynamic-workflows",
+        "glm",
+        "harness",
+        "kimi",
+        "minimax",
+        "parallel-agents",
+        "python",
+        "skills",
+        "vibe-coding",
+        "workflow"
       ],
       "matched_interest": [
         "ai-workflow-automation"
@@ -801,9 +816,9 @@
       ],
       "fork": false,
       "archived": false,
-      "language": "Go",
-      "score": 58.6,
-      "summary": "An AI creative platform for novel writing and AI generated RPG, with built-in support for AI agents, Skills, subagent workflows, automations, image generation, and version control. 一个面向小说创作与 AI 角色扮演游戏的 AI 创作平台，内置支持 AI Agents、Skills、Subagent Workflows、Automations、图像自动生成与项目版本管理等核心能力"
+      "language": "Python",
+      "score": 57.4,
+      "summary": "AI-native agent harness for coding workflows by python: multi-model LLM orchestration, stateful sessions, tool governance, traceable delivery, and provider routing for GPT, Claude, DeepSeek, Qwen, Kimi, GLM, and MiniMax."
     },
     {
       "source_platform": "GitHub",
@@ -850,9 +865,9 @@
       "url": "https://github.com/Don-Uwe/ai-healthcare-agent-app",
       "author": "Don-Uwe",
       "created_at": "2026-06-24T14:37:29Z",
-      "updated_at": "2026-07-14T08:11:41Z",
+      "updated_at": "2026-07-19T08:58:55Z",
       "metrics": {
-        "stars": 132,
+        "stars": 133,
         "forks": 1055,
         "issues": 14
       },
@@ -887,9 +902,9 @@
       "url": "https://github.com/otahina/PowerPoint-Generator-Python-Project",
       "author": "otahina",
       "created_at": "2023-07-13T23:43:49Z",
-      "updated_at": "2026-07-13T05:22:33Z",
+      "updated_at": "2026-07-19T09:14:19Z",
       "metrics": {
-        "stars": 407,
+        "stars": 405,
         "forks": 138,
         "issues": 4
       },
@@ -929,11 +944,11 @@
       "url": "https://github.com/ashbuilds/payload-ai",
       "author": "ashbuilds",
       "created_at": "2024-07-17T00:26:53Z",
-      "updated_at": "2026-07-16T19:19:27Z",
+      "updated_at": "2026-07-18T13:06:39Z",
       "metrics": {
-        "stars": 525,
+        "stars": 524,
         "forks": 63,
-        "issues": 5
+        "issues": 6
       },
       "tags": [
         "ai",
@@ -970,49 +985,6 @@
     {
       "source_platform": "GitHub",
       "source_type": "repository",
-      "title": "narumiruna/pi-extensions",
-      "summary_raw": "Independently installable Pi Coding Agent extensions for AI coding workflows: LSP diagnostics/code actions for TypeScript, JavaScript, Python and more,  Chrome DevTools automation, Firecrawl web scraping, Google GenAI/Gemini grounding, Codex tools, statuslines, subagents, and S3/R2 sync.",
-      "url": "https://github.com/narumiruna/pi-extensions",
-      "author": "narumiruna",
-      "created_at": "2026-05-07T13:59:45Z",
-      "updated_at": "2026-07-17T07:48:43Z",
-      "metrics": {
-        "stars": 162,
-        "forks": 25,
-        "issues": 1
-      },
-      "tags": [
-        "ai-agents",
-        "codex",
-        "codex-cli",
-        "coding-agent",
-        "google-genai",
-        "nodejs",
-        "npm-package",
-        "pi",
-        "pi-coding-agent",
-        "pi-extensions",
-        "statusline",
-        "typescript"
-      ],
-      "matched_interest": [
-        "ai-workflow-automation"
-      ],
-      "matched_interest_name": "AI 工作流自动化",
-      "interest_tags": [
-        "automation",
-        "agent",
-        "orchestration"
-      ],
-      "fork": false,
-      "archived": false,
-      "language": "TypeScript",
-      "score": 49.2,
-      "summary": "Independently installable Pi Coding Agent extensions for AI coding workflows: LSP diagnostics/code actions for TypeScript, JavaScript, Python and more, Chrome DevTools automation, Firecrawl web scraping, Google GenAI/Gemini grounding, Codex tools, statuslines, subagents, and S3/R2 sync."
-    },
-    {
-      "source_platform": "GitHub",
-      "source_type": "repository",
       "title": "nicekate/AI-ContentCraft",
       "summary_raw": "AI ContentCraft is an all-in-one content creation suite that helps creators generate stories, podcast scripts, and multimedia content using AI-powered text generation, speech synthesis, and image generation capabilities.",
       "url": "https://github.com/nicekate/AI-ContentCraft",
@@ -1043,57 +1015,16 @@
     {
       "source_platform": "GitHub",
       "source_type": "repository",
-      "title": "linmy666/madcop",
-      "summary_raw": "MadCop — local-first AI agent desktop workstation (v0.9). Multi-model chat, tool-use, MCP servers, 12 workflow modes, knowledge base, AI design tool, persistent workspace.",
-      "url": "https://github.com/linmy666/madcop",
-      "author": "linmy666",
-      "created_at": "2026-06-23T17:47:25Z",
-      "updated_at": "2026-07-17T10:03:33Z",
+      "title": "proliferate-ai/proliferate",
+      "summary_raw": "The open-source AI IDE for Claude Code, Codex, OpenCode, and more. Run agents in parallel, locally or in the cloud, and build reusable workflows.",
+      "url": "https://github.com/proliferate-ai/proliferate",
+      "author": "proliferate-ai",
+      "created_at": "2026-04-30T23:54:35Z",
+      "updated_at": "2026-07-20T01:11:06Z",
       "metrics": {
-        "stars": 102,
-        "forks": 4,
-        "issues": 0
-      },
-      "tags": [
-        "ai-agent",
-        "desktop-app",
-        "electron",
-        "llm",
-        "local-first",
-        "mcp",
-        "python",
-        "typescript",
-        "vue",
-        "workflow-automation"
-      ],
-      "matched_interest": [
-        "ai-workflow-automation"
-      ],
-      "matched_interest_name": "AI 工作流自动化",
-      "interest_tags": [
-        "automation",
-        "agent",
-        "orchestration"
-      ],
-      "fork": false,
-      "archived": false,
-      "language": "Python",
-      "score": 45.6,
-      "summary": "MadCop — local-first AI agent desktop workstation (v0.9). Multi-model chat, tool-use, MCP servers, 12 workflow modes, knowledge base, AI design tool, persistent workspace."
-    },
-    {
-      "source_platform": "GitHub",
-      "source_type": "repository",
-      "title": "OpenHands/agent-canvas",
-      "summary_raw": "OpenHands Agent Canvas is a Open Source AI coding platform. Start locally, connect your tools, and automate workflows.",
-      "url": "https://github.com/OpenHands/agent-canvas",
-      "author": "OpenHands",
-      "created_at": "2026-04-24T01:31:56Z",
-      "updated_at": "2026-07-17T07:38:44Z",
-      "metrics": {
-        "stars": 196,
-        "forks": 88,
-        "issues": 428
+        "stars": 157,
+        "forks": 37,
+        "issues": 10
       },
       "tags": [],
       "matched_interest": [
@@ -1108,8 +1039,125 @@
       "fork": false,
       "archived": false,
       "language": "TypeScript",
-      "score": 44.7,
+      "score": 45.9,
+      "summary": "The open-source AI IDE for Claude Code, Codex, OpenCode, and more. Run agents in parallel, locally or in the cloud, and build reusable workflows."
+    },
+    {
+      "source_platform": "GitHub",
+      "source_type": "repository",
+      "title": "OpenHands/agent-canvas",
+      "summary_raw": "OpenHands Agent Canvas is a Open Source AI coding platform. Start locally, connect your tools, and automate workflows.",
+      "url": "https://github.com/OpenHands/agent-canvas",
+      "author": "OpenHands",
+      "created_at": "2026-04-24T01:31:56Z",
+      "updated_at": "2026-07-19T19:32:49Z",
+      "metrics": {
+        "stars": 201,
+        "forks": 94,
+        "issues": 442
+      },
+      "tags": [],
+      "matched_interest": [
+        "ai-workflow-automation"
+      ],
+      "matched_interest_name": "AI 工作流自动化",
+      "interest_tags": [
+        "automation",
+        "agent",
+        "orchestration"
+      ],
+      "fork": false,
+      "archived": false,
+      "language": "TypeScript",
+      "score": 44.9,
       "summary": "OpenHands Agent Canvas is a Open Source AI coding platform. Start locally, connect your tools, and automate workflows."
+    },
+    {
+      "source_platform": "GitHub",
+      "source_type": "repository",
+      "title": "RayFernando1337/rayfernando-skills",
+      "summary_raw": "Ray Fernando's collection of Skill files for AI coding agents. First up: running-bug-review-board, a real-user QA workflow with a Bug Review Board (BRB) feedback loop.",
+      "url": "https://github.com/RayFernando1337/rayfernando-skills",
+      "author": "RayFernando1337",
+      "created_at": "2026-05-27T00:22:46Z",
+      "updated_at": "2026-07-19T23:38:01Z",
+      "metrics": {
+        "stars": 113,
+        "forks": 20,
+        "issues": 0
+      },
+      "tags": [
+        "ai-agents",
+        "bug-review-board",
+        "claude-code",
+        "claude-skills",
+        "codex",
+        "cursor",
+        "manual-testing",
+        "qa",
+        "real-user-testing",
+        "skills",
+        "skills-files"
+      ],
+      "matched_interest": [
+        "ai-workflow-automation"
+      ],
+      "matched_interest_name": "AI 工作流自动化",
+      "interest_tags": [
+        "automation",
+        "agent",
+        "orchestration"
+      ],
+      "fork": false,
+      "archived": false,
+      "language": "Python",
+      "score": 43.2,
+      "summary": "Ray Fernando's collection of Skill files for AI coding agents. First up: running-bug-review-board, a real-user QA workflow with a Bug Review Board (BRB) feedback loop."
+    },
+    {
+      "source_platform": "GitHub",
+      "source_type": "repository",
+      "title": "RaulMandujano/evano-studio",
+      "summary_raw": "Evano Studio is an open-source local AI desktop app for agents, automation, knowledge, and productivity.",
+      "url": "https://github.com/RaulMandujano/evano-studio",
+      "author": "RaulMandujano",
+      "created_at": "2026-06-10T20:12:02Z",
+      "updated_at": "2026-07-18T08:50:04Z",
+      "metrics": {
+        "stars": 54,
+        "forks": 13,
+        "issues": 0
+      },
+      "tags": [
+        "ai",
+        "ai-agents",
+        "automation",
+        "comfyui",
+        "desktop-app",
+        "free-ai-agent",
+        "gemma4",
+        "gemma4-e4b",
+        "ia",
+        "ia-agentes",
+        "local-ai",
+        "ollama",
+        "openclaw-agent-ia",
+        "rag"
+      ],
+      "matched_interest": [
+        "ai-office-productivity"
+      ],
+      "matched_interest_name": "AI 办公效率",
+      "interest_tags": [
+        "productivity",
+        "office",
+        "knowledge"
+      ],
+      "fork": false,
+      "archived": false,
+      "language": "Python",
+      "score": 43.1,
+      "summary": "Evano Studio is an open-source local AI desktop app for agents, automation, knowledge, and productivity."
     },
     {
       "source_platform": "GitHub",
@@ -1119,11 +1167,11 @@
       "url": "https://github.com/benmaster82/writher",
       "author": "benmaster82",
       "created_at": "2026-02-24T13:47:20Z",
-      "updated_at": "2026-07-16T13:53:06Z",
+      "updated_at": "2026-07-19T19:43:46Z",
       "metrics": {
-        "stars": 72,
+        "stars": 74,
         "forks": 16,
-        "issues": 4
+        "issues": 2
       },
       "tags": [
         "ai-assistent",
@@ -1158,24 +1206,45 @@
       "fork": false,
       "archived": false,
       "language": "Python",
-      "score": 42.8,
+      "score": 42.9,
       "summary": "🎙️ Offline voice productivity for Windows - dictate text into any app and control a local AI assistant by voice. Manages notes, to-do lists, appointments & reminders. 100% local: faster-whisper + Ollama + SQLite. No cloud, no telemetry. Free and open source alternative to Wispr Flow"
     },
     {
       "source_platform": "GitHub",
       "source_type": "repository",
-      "title": "proliferate-ai/proliferate",
-      "summary_raw": "The open-source AI IDE for Claude Code, Codex, OpenCode, and more. Run agents in parallel, locally or in the cloud, and build reusable workflows.",
-      "url": "https://github.com/proliferate-ai/proliferate",
-      "author": "proliferate-ai",
-      "created_at": "2026-04-30T23:54:35Z",
-      "updated_at": "2026-07-17T09:40:24Z",
+      "title": "artokun/comfyui-mcp-panel",
+      "summary_raw": "The local-first sidebar AI agent for ComfyUI — runs on your own Claude OR ChatGPT subscription (no API keys, no extra LLM costs). Drives your live graph: edits, workflows & installs in natural language. The panel UI for comfyui-mcp, the agent-native control plane for ComfyUI.",
+      "url": "https://github.com/artokun/comfyui-mcp-panel",
+      "author": "artokun",
+      "created_at": "2026-06-12T18:48:45Z",
+      "updated_at": "2026-07-19T21:55:45Z",
       "metrics": {
-        "stars": 154,
-        "forks": 36,
-        "issues": 24
+        "stars": 54,
+        "forks": 10,
+        "issues": 2
       },
-      "tags": [],
+      "tags": [
+        "ai-agent",
+        "ai-assistant",
+        "autonomous",
+        "chatgpt",
+        "claude-code",
+        "claude-plugin",
+        "codex",
+        "comfyui",
+        "comfyui-agent",
+        "comfyui-custom-node",
+        "comfyui-extension",
+        "comfyui-mcp",
+        "copilot",
+        "gpt-5",
+        "image-generation",
+        "litegraph",
+        "local-first",
+        "mcp",
+        "natural-language",
+        "sidebar"
+      ],
       "matched_interest": [
         "ai-workflow-automation"
       ],
@@ -1187,9 +1256,9 @@
       ],
       "fork": false,
       "archived": false,
-      "language": "TypeScript",
-      "score": 41.7,
-      "summary": "The open-source AI IDE for Claude Code, Codex, OpenCode, and more. Run agents in parallel, locally or in the cloud, and build reusable workflows."
+      "language": "JavaScript",
+      "score": 40.6,
+      "summary": "The local-first sidebar AI agent for ComfyUI — runs on your own Claude OR ChatGPT subscription (no API keys, no extra LLM costs). Drives your live graph: edits, workflows & installs in natural language. The panel UI for comfyui-mcp, the agent-native control plane for ComfyUI."
     },
     {
       "source_platform": "GitHub",
@@ -1271,6 +1340,6 @@
   "publish_path": "generated/ai-product-idea-radar-repo",
   "github_base_url": "https://github.com/Xuanqi-Zhou/ai-product-idea-radar",
   "github_push_url": "https://github.com/Xuanqi-Zhou/ai-product-idea-radar.git",
-  "date_key": "2026-07-17",
-  "date_title": "2026年07月17日"
+  "date_key": "2026-07-20",
+  "date_title": "2026年07月20日"
 }

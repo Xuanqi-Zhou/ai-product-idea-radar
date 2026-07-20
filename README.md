@@ -2,8 +2,8 @@
 
 ## 导航
 
-- 最新简报：[`briefings/2026-07-17.md`](briefings/2026-07-17.md)
-- 每日项目列表：[`ideas/2026-07-17.md`](ideas/2026-07-17.md)
+- 最新简报：[`briefings/2026-07-20.md`](briefings/2026-07-20.md)
+- 每日项目列表：[`ideas/2026-07-20.md`](ideas/2026-07-20.md)
 - 简报归档：`briefings/`
 - 项目归档：`ideas/`
 - 最新索引：`index/latest.json`
