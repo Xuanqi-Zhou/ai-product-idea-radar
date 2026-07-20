@@ -1,9 +1,14 @@
-# AI 产品 Idea Radar
+# AI Product Idea Radar
 
-## 导航
+公开归档 AI 产品方向、每日简报与入选项目清单。
 
-- 最新简报：[`briefings/2026-07-20.md`](briefings/2026-07-20.md)
-- 每日项目列表：[`ideas/2026-07-20.md`](ideas/2026-07-20.md)
-- 简报归档：`briefings/`
-- 项目归档：`ideas/`
-- 最新索引：`index/latest.json`
+## 最新内容
+
+- [最新简报](./briefings/2026-07-20.md)
+- [最新项目清单](./ideas/2026-07-20.md)
+
+## 目录
+
+- `briefings/`：每日简报
+- `ideas/`：每日入选项目清单
+- `index/latest.json`：机器可读最新结果
