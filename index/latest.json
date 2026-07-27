@@ -1,7 +1,7 @@
 {
   "version": "v4",
-  "source": "AI-idea-rader V4",
-  "generated_at": "2026-07-27T10:58:25",
+  "source": "AI-idea-rader V4.2",
+  "generated_at": "2026-07-27T18:44:05",
   "date_key": "2026-07-27",
   "date_title": "2026年07月27日",
   "briefing_path": "briefings/2026-07-27.md",
@@ -19,10 +19,10 @@
         "url": "https://github.com/bojieli/ai-agent-book",
         "author": "bojieli",
         "created_at": "2025-09-09T02:41:44Z",
-        "updated_at": "2026-07-27T02:22:30Z",
-        "pushed_at": "2026-07-27T01:37:39Z",
-        "stars": 21110,
-        "forks": 2098,
+        "updated_at": "2026-07-27T10:06:13Z",
+        "pushed_at": "2026-07-27T07:18:35Z",
+        "stars": 22099,
+        "forks": 2214,
         "language": "Python",
         "topics": [
           "agent",
@@ -64,9 +64,10 @@
         "why": "GitHub Trending 周榜显示本周新增热度约 15909；已有较强社区验证",
         "mechanism": "可迁移的机制在于把模型从单次回答升级成持续协作代理，强调上下文记忆与多步执行。",
         "band": "持续升温",
-        "core_highlight": "本书通过可编译文稿与配套代码，系统还原了将大模型从单次问答升级为具备上下文记忆、多步执行能力的 Agent 的全过程，填补了从原理到落地之间的工程鸿沟。",
-        "reuse_direction": "可迁移的核心机制是将模型调用包装为有状态、可编排的 Agent 循环，尤其侧重于记忆刷新与分步任务链的协作模式，可直接嵌入开发者工具或知识型应用中。",
-        "minimal_mvp": "用户输入一个需多步完成的研发任务（如“帮我排查这个日志异常”），系统以 Agent 循环方式依次调用大模型、维护短期记忆、执行工具命令并汇总结果；第一版限定单个 Agent、纯文本工具链，不上多 Agent 协作与长期记忆。",
+        "source": "GitHub",
+        "core_highlight": "该项目是当前极少数将 AI Agent 从理论到工程全流程开源拆解的资源，一周内获超 1.5 万星，说明开发者对可落地的 Agent 设计知识存在强烈渴求。",
+        "reuse_direction": "可复用的是其将 Agent 视为“持续协作代理”而非单次问答的设计范式，核心机制在于上下文记忆与多步执行链的工程组织方式，能直接迁移到代码助手或任务自动化工具中。",
+        "minimal_mvp": "用户输入一个需多步完成的任务描述（如“分析这份数据并给出结论”），系统基于书中的 Agent 架构输出带记忆的多步执行计划和阶段性结果，第一版仅支持单 Agent、预设工具集和文本上下文。",
         "copy_generation_source": "openai"
       },
       {
@@ -77,10 +78,10 @@
         "url": "https://github.com/koala73/worldmonitor",
         "author": "koala73",
         "created_at": "2026-01-08T17:26:06Z",
-        "updated_at": "2026-07-27T02:22:20Z",
-        "pushed_at": "2026-07-26T22:32:21Z",
-        "stars": 74830,
-        "forks": 11238,
+        "updated_at": "2026-07-27T10:06:26Z",
+        "pushed_at": "2026-07-27T10:06:41Z",
+        "stars": 75078,
+        "forks": 11271,
         "language": "TypeScript",
         "topics": [
           "agent",
@@ -117,9 +118,10 @@
         "why": "GitHub Trending 周榜显示本周新增热度约 12615；已有较强社区验证",
         "mechanism": "可迁移的机制在于把模型从单次回答升级成持续协作代理，强调上下文记忆与多步执行。",
         "band": "持续升温",
-        "core_highlight": "项目将大模型从单轮问答升级为具备上下文记忆与多步执行能力的持续协作代理，并集成 MCP 协议接入多源数据，形成面向地缘政治的实时态势感知底座。",
-        "reuse_direction": "可迁移的是“代理+工具”的持续协作形态：通过 MCP Server 把外部数据源标准化接入，再由代理按观测需求多步编排、记忆上下文，输出结构化情报流。",
-        "minimal_mvp": "用户输入一个监控主题（如某区域冲突）和关注维度，系统自动拉取预设的三类公开数据（新闻、航运、社交），每日生成包含事件摘要与风险提示的 Markdown 简报；第一版不做实时预警和多轮对话。",
+        "source": "GitHub",
+        "core_highlight": "它用持续协作代理替代单次问答，把新闻聚合、地缘监控和基础设施追踪闭环成一张动态态势图，是开源界向 Palantir 形态靠拢的一次高热度尝试。",
+        "reuse_direction": "可复用的核心是将模型升级为带有上下文记忆的长运行代理，持续从多类信源采集、清洗、关联事件并输出阶段简报，而非一次性总结。",
+        "minimal_mvp": "用户输入一组地缘关键词与关注区域；系统基于单信源（如GDELT）执行定时拉取、去重、上下文关联，输出每日态势简报与异常告警；第一版不引入多模态，不设置前端地图，Agent 只在服务端循环，不处理跨事件因果推理。",
         "copy_generation_source": "openai"
       },
       {
@@ -130,10 +132,10 @@
         "url": "https://github.com/diegosouzapw/OmniRoute",
         "author": "diegosouzapw",
         "created_at": "2026-02-13T12:38:31Z",
-        "updated_at": "2026-07-27T02:21:40Z",
-        "pushed_at": "2026-07-27T00:29:45Z",
-        "stars": 31124,
-        "forks": 4042,
+        "updated_at": "2026-07-27T10:06:31Z",
+        "pushed_at": "2026-07-27T03:23:43Z",
+        "stars": 31546,
+        "forks": 4080,
         "language": "TypeScript",
         "topics": [
           "a2a",
@@ -182,9 +184,10 @@
         "why": "项目仍处在较新的验证窗口；GitHub Trending 周榜显示本周新增热度约 10912；已有较强社区验证",
         "mechanism": "可迁移的机制在于以桌面工作台承接复杂任务，把模型能力包装成稳定可交付的软件入口。",
         "band": "持续升温",
-        "core_highlight": "在 MIT 许可下聚合 290+ 家模型商并提供配额感知自动降级与高达 95% 的 token 压缩，是当前开源 AI 网关中兼具开发者友好和极致降本的通用入口。",
-        "reuse_direction": "以下载即用的桌面工作台形态，把多模型动态路由、压缩与本地配置封装成一个可交付的软件入口，可迁移至任何需要统一管理多条 AI 付费线路的开发者工具中。",
-        "minimal_mvp": "用户输入：单条自然语言指令和所持有的 API 密钥；系统输出：自动选择当前可用且成本最低的模型返回文本结果，并显示本次节省的 token 数量和备选模型；第一版仅支持单轮文本补全，不含流式输出、多模态和上下文压缩。",
+        "source": "GitHub",
+        "core_highlight": "OmniRoute 以单一端点统一了 290+ 模型供应商和 500+ 模型，并提供配额感知的自动回退与最高 95% 的 token 压缩，把碎片化的 AI 调用变成一条高可用、低成本的开发管线，近期一周斩获 1 万+ star 证明了开发者对这类“模型路由器”的强需求。",
+        "reuse_direction": "其“智能网关 + 桌面工作台”的形态可迁移：将多模型调度、配额感知 fallback 和压缩逻辑打包成一个对开发者透明的本地入口，任何需要对接多个大模型的工作流或 IDE 插件，都可复用这套调度与流控机制，而不是再写一遍模型切换和冗余的 token 消耗逻辑。",
+        "minimal_mvp": "最小切入点是一个本地 CLI 网关，用户用标准 OpenAI Chat Completions 格式发起请求，系统自动轮询 Groq、DeepSeek 两家免费模型并在失败时切换，返回最终响应及实际消耗 token 数；第一版边界仅限于这两个免费后端、不做 token 压缩，仅通过环境变量注入密钥，确保 1 小时内可跑通一个可用的无人值守模型 fallback 回路。",
         "copy_generation_source": "openai"
       },
       {
@@ -195,10 +198,10 @@
         "url": "https://github.com/stablyai/orca",
         "author": "stablyai",
         "created_at": "2026-03-17T03:28:57Z",
-        "updated_at": "2026-07-27T02:20:17Z",
-        "pushed_at": "2026-07-27T02:14:38Z",
-        "stars": 29834,
-        "forks": 2117,
+        "updated_at": "2026-07-27T10:05:26Z",
+        "pushed_at": "2026-07-27T10:06:41Z",
+        "stars": 30269,
+        "forks": 2139,
         "language": "TypeScript",
         "topics": [
           "ade",
@@ -245,198 +248,307 @@
         "why": "项目仍处在较新的验证窗口；GitHub Trending 周榜显示本周新增热度约 7392；已有较强社区验证",
         "mechanism": "可迁移的机制在于以桌面工作台承接复杂任务，把模型能力包装成稳定可交付的软件入口。",
         "band": "持续升温",
-        "core_highlight": "Orca 的独到之处在于把“自备 API 密钥的多个编码代理”整合为统一的桌面工作台，实现真正的并行代理编队执行，而不是只停留在聊天层的多模型对比。",
-        "reuse_direction": "可迁移的是其“工作台即编排层”的形态：将碎片化的智能体命令行动作抽象成可监控、可并行的桌面任务面板，适合复用到任何需要在本地统一调度多个 AI 能力的场景。",
-        "minimal_mvp": "用户输入一个多步骤开发需求（如“用 Python 写爬虫并生成 CSV 报告”），系统在桌面面板上同时启动预置的 Claude Code 和 Codex 代理并行执行，最终展示两份代码和运行结果——第一版仅支持文本型任务，代理固定为两种，不含自定义工具或跨会话记忆。",
+        "source": "GitHub",
+        "core_highlight": "7 天狂揽 7.3k star，因为它第一个把并行 AI 编程 Agent 的编排做成独立桌面环境，并支持使用自有订阅运行任意编码 Agent，直击开发者不愿被单一工具和额外 API 费用锁定的痛点。",
+        "reuse_direction": "可复用的是“本地客户端 + 多 Agent 调度”的产品形态：将模型能力封装为稳定的软件入口，让用户无需关心后端模型切换，通过统一工作台管理和并行执行多个编码任务，这种形态可移植到其他需要多智能体协同的专业工具领域。",
+        "minimal_mvp": "用户输入一个包含服务端、Web 前端和数据库迁移三个子任务的项目描述；系统并行调用三个独立的编码 Agent 分别生成对应代码，在统一界面流式输出各自的进度和产物；第一版边界：仅支持 macOS 桌面客户端，Agent 类型限定为 Claude Code 和 Cursor Agent，不包含 Agent 间的相互通信与合并冲突解决。",
         "copy_generation_source": "openai"
       },
       {
-        "repo_id": 1173848034,
-        "title": "oblien/openship",
-        "repo_name": "openship",
-        "summary": "Self-hosted deployment platform",
-        "url": "https://github.com/oblien/openship",
-        "author": "oblien",
-        "created_at": "2026-03-05T20:16:56Z",
-        "updated_at": "2026-07-27T02:22:24Z",
-        "pushed_at": "2026-07-26T22:34:41Z",
-        "stars": 8745,
-        "forks": 701,
-        "language": "TypeScript",
+        "id": "1197378",
+        "title": "Fluree AI",
+        "name": "Fluree AI",
+        "repo_name": "fluree-ai",
+        "summary": "Give every AI agent trusted context",
+        "description": "Fluree AI gives every app and AI agent the same trusted context from your company data. Ask questions and get cited, verifiable answers from one live data layer, with permissions checked on every request. Instead of rebuilding prompts or relying on RAG guesses, Fluree queries structured data directly and connects to MCP-ready agents, dashboards, and apps in minutes.",
+        "url": "https://www.producthunt.com/products/fluree?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai-idea-radar-v4-2+%28ID%3A+294543%29",
+        "website_url": "https://www.producthunt.com/r/Y6SGXQZUGTMKAT?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai-idea-radar-v4-2+%28ID%3A+294543%29",
         "topics": [
-          "agents",
-          "ai",
-          "deployments",
-          "self-hosted"
+          "Developer Tools",
+          "Artificial Intelligence",
+          "Data"
         ],
-        "is_archived": false,
-        "is_fork": false,
-        "query": "trending:weekly",
-        "bucket": "trending_weekly",
-        "stars_7d": 5844,
-        "stars_30d": null,
-        "stars_7d_is_lower_bound": false,
-        "stars_30d_is_lower_bound": false,
-        "sampled_recent_stars": 5844,
-        "momentum_available": true,
-        "momentum_source": "trending_weekly",
-        "trending_sources": [
-          "typescript"
+        "topic_slugs": [
+          "developer-tools",
+          "artificial-intelligence",
+          "data"
         ],
-        "trending_rank": 16,
-        "interest_tags": [],
-        "score": 242.45,
-        "why": "项目仍处在较新的验证窗口；GitHub Trending 周榜显示本周新增热度约 5844；已有较强社区验证",
+        "makers": [
+          "[REDACTED]",
+          "Kevin Doubleday"
+        ],
+        "votes_count": 342,
+        "comments_count": 77,
+        "featured_at": "2026-07-24T07:01:00Z",
+        "created_at": "2026-07-24T07:01:00Z",
+        "top_comments": [
+          "<p>Hey Product Hunt — Brian here, CEO of Fluree.<br><br><strong>The backstory:</strong>we spent years building governed, verifiable graph data infrastructure for enterprises — provenance, permissions, cryptographic audit trails, the unglamorous stuff.<br><br>Then LLMs arrived, and suddenly the <em>entire world </em>had our problem: AI that's brilliant at language and terrible with data. Hallucinated numbers. Context that resets every conversation. Five tools, five silos, five versions of the truth.<br><br><strong>Fluree AI is our answer: an intelligence layer that sits under everything you build.</strong><br>Here's the flow:<br><br><strong>Throw everything at it. </strong>CSVs, databases, docs, SaaS exports. Fluree classifies your data and connects the dots automatically — the graph builds itself.<br><br><strong>Plug in any AI. </strong>Claude, OpenAI, Gemini, Ollama — any MCP-speaking agent reasons over the same graph. No tools yet? Ours is built in.<br><br><strong>Get answers you can prove.</strong>Responses are structured queries against the graph, not generated guesses — so every answer is cited, permissioned, and reproducible. If the data is correct, the output is correct.<br><br><strong>Build unlimited interfaces on one foundation. </strong>This is the part that changes how you work: ask a question, then say \"make that a dashboard,\" then \"turn it into an app my team can use,\" then \"deploy an agent that watches this.\" Chats, dashboards, apps, and agents all read from — and write back to — the <em>same </em>governed graph. You stop rebuilding context in every tool. It compounds instead.<br><br>Most software starts from the UI and traps your data underneath it. We think the future starts with the right data + context — and then any interface you want becomes cheap to build and safe to trust.<br><br><strong>Getting started takes ~2 minutes: </strong>sign up free, drop in a dataset (messy is fine — that's the point), and ask your first question. No demo call, no sales gate.<br><br>I'll be in the comments all day with our engineering team. Ask us anything — and if you think \"cited, verifiable answers\" sounds too good, please come try to break it. Genuinely. That's the fun part.</p>",
+          "<p>The \"single source of truth\" vision resonates with anyone who's managed multiple disconnected databases. Hope this gets the attention it deserves.</p>",
+          "<p>One of the biggest AI challenges today is reliable context, and Fluree seems to be addressing it head-on. Excited to see how developers build on this.</p>"
+        ],
+        "source": "Product Hunt",
+        "product_shape_score": 10.0,
+        "launch_heat_score": 13.0,
+        "interest_tags": [
+          "开发者工具"
+        ],
+        "domain_tags": [
+          "企业数据",
+          "AI基础设施"
+        ],
+        "tool_tags": [
+          "数据层",
+          "知识库"
+        ],
+        "mechanism_tags": [
+          "可信上下文",
+          "结构化查询",
+          "权限验证"
+        ],
+        "author": "[REDACTED] / Kevin Doubleday",
+        "score": 48.85,
+        "why": "Product Hunt 当前获得 342 票、77 条评论；仍处在近期新品验证窗口；产品形态已经比较完整",
+        "band": "爆发新品",
         "mechanism": "可迁移的机制在于把模型从单次回答升级成持续协作代理，强调上下文记忆与多步执行。",
-        "band": "持续升温",
-        "core_highlight": "将 AI 模型从一次性回答升级为持续协作的部署代理，可记住上下文并自动执行多步骤操作，在自托管场景中实现接近真人的操作助手体验。",
-        "reuse_direction": "持续代理与上下文记忆的机制可迁移到自动化运维、代码审查等需分步执行、跨轮次保持状态的工作流中，让 AI 承担持久化执行角色。",
-        "minimal_mvp": "用户输入一句部署需求（如“把这个目录下的静态网站部署到我的服务器”），系统根据上下文分析项目、生成构建与推送命令并逐步执行，每步返回执行结果。第一版仅支持单容器应用部署，不处理数据库、多服务编排与灰度发布。",
+        "routing_confidence": 0.0,
+        "routing_interest": "",
+        "routing_reason": "Fluree AI is a foundational data layer providing trusted context to any AI agent, not a vertical application for a specific interest like legal, supply chain, or education. It is a generic platform akin to a company knowledge base, thus should not be forced into a specific observation interest.",
+        "core_highlight": "Fluree AI 在 Product Hunt 上获 342 票、77 条讨论，因为它不在模型层内卷，而是直接解决 AI 代理“记不住、不可信”的问题，把一次性回答变成可多步执行的持续协作。",
+        "reuse_direction": "可迁移的是它将代理从单轮问答升级为“带可信上下文的持续协作”机制，即上下文记忆持久化 + 多步执行编排。",
+        "minimal_mvp": "用户输入一个需要多步完成的任务描述（如“整理上周团队进度并生成摘要”），系统作为代理记录每一步的输入输出与依赖，最终交付可追溯的执行结果；第一版仅支持单会话线性步骤，不接入外部 API 工具。",
         "copy_generation_source": "openai"
       },
       {
-        "repo_id": 1212503250,
-        "title": "citrolabs/ego-lite",
-        "repo_name": "ego-lite",
-        "summary": "The fastest browser for AI agents to run web automation, built for sharing your logged-in browser state with your AI agents, like Codex or Claude Code, without disturbing you. Zero cost, zero config.",
-        "url": "https://github.com/citrolabs/ego-lite",
-        "author": "citrolabs",
-        "created_at": "2026-04-16T12:51:09Z",
-        "updated_at": "2026-07-27T02:22:21Z",
-        "pushed_at": "2026-07-26T11:41:18Z",
-        "stars": 4662,
-        "forks": 229,
-        "language": "JavaScript",
+        "id": "1198621",
+        "title": "Second Brain for Mac and Windows",
+        "name": "Second Brain for Mac and Windows",
+        "repo_name": "second-brain-for-mac-and-windows",
+        "summary": "Your AI memory, everywhere you work",
+        "description": "The Second Brain desktop app gets you running in five minutes. No terminal. No git. Just download, set a password, and sign into Cloudflare. Then the real magic starts. Persistent memory across every AI tool you use. Recall that just got a lot smarter. Surfaces the right memory, not just the newest one. A knowledge graph that builds itself. Your data in your own Cloudflare account, not ours. Mac and Windows. You asked for the app. You asked for better recall. We shipped both.",
+        "url": "https://www.producthunt.com/products/second-brain-cloudflare?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai-idea-radar-v4-2+%28ID%3A+294543%29",
+        "website_url": "https://www.producthunt.com/r/6JNYYPRQZ2R2PT?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai-idea-radar-v4-2+%28ID%3A+294543%29",
         "topics": [
-          "agent-skills",
-          "ai-agent",
-          "browser",
-          "skills",
-          "skills-sh"
+          "Productivity",
+          "Developer Tools",
+          "Artificial Intelligence",
+          "GitHub"
         ],
-        "is_archived": false,
-        "is_fork": false,
-        "query": "trending:weekly",
-        "bucket": "trending_weekly",
-        "stars_7d": 3666,
-        "stars_30d": null,
-        "stars_7d_is_lower_bound": false,
-        "stars_30d_is_lower_bound": false,
-        "sampled_recent_stars": 3666,
-        "momentum_available": true,
-        "momentum_source": "trending_weekly",
-        "trending_sources": [
-          "javascript"
+        "topic_slugs": [
+          "productivity",
+          "developer-tools",
+          "artificial-intelligence",
+          "github"
         ],
-        "trending_rank": 4,
+        "makers": [
+          "Rahil Pirani"
+        ],
+        "votes_count": 285,
+        "comments_count": 45,
+        "featured_at": "2026-07-25T07:01:00Z",
+        "created_at": "2026-07-25T07:01:00Z",
+        "top_comments": [
+          "<p>During our v2 launch, you asked for an easier way. Some mentioned being uncomfortable with git. Others flagged the terminal as a barrier. We listened.</p><p></p><p><strong>This is the Second Brain desktop app and it exists because of your feedback.</strong></p><p></p><p>Unlike other memory tools, nothing lives on our servers. Your memories are in your Cloudflare account from day one. We literally can't access them.</p><p></p><p>Here's what we built: Download. Choose a password. Sign in to Cloudflare (or create a free account if you don't have one, we walk you through it). Five minutes later, your Second Brain is provisioned and running on your machine. No terminal. No git. No technical knowledge required.</p><p></p><p>You get the full v2 experience, recall-by-meaning, the knowledge graph, all of it, running in a native app on Mac or Windows, pre-authenticated and ready to connect to Claude, Cursor, ChatGPT, and your other tools via MCP.</p><p></p><p>This is what community-driven product development looks like. Thank you for helping us build this. Now come try it, share your thoughts, and let us know what you think.</p>",
+          "<p><a href=\"https://www.producthunt.com/@rahilpirani\" data-node-type=\"mention\" data-mention-type=\"user\" data-mention-id=\"rahilpirani\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">@rahilpirani</a> congrats on the launch - very impressive and the \"starting over\" is a real issue. Why do you think the LLMs force a start over - does it have to do with token usage?</p>",
+          "How does it handle large conversation context? Will it clear the older conversation context or it preserves it forever?"
+        ],
+        "source": "Product Hunt",
+        "product_shape_score": 9.0,
+        "launch_heat_score": 13.0,
         "interest_tags": [
           "开发者工具",
-          "工作流自动化",
-          "浏览器自动化"
+          "桌面工作台",
+          "知识检索/RAG"
         ],
-        "score": 240.0407,
-        "why": "项目仍处在较新的验证窗口；GitHub Trending 周榜显示本周新增热度约 3666；已有较强社区验证",
-        "mechanism": "可迁移的机制在于把 AI 能力直接嵌入浏览器操作层，而不是只停留在聊天入口。",
-        "band": "持续升温",
-        "core_highlight": "把 AI 代理的执行能力直接植入浏览器内核操作层，让代理在隔离环境中复用你的登录态，既不影响你正常使用，又避免了传统远程控制方案的高延迟与配置成本。",
-        "reuse_direction": "可迁移的是“宿主内嵌代理”模式：不把 AI 作为外部聊天入口，而是让它直接操控宿主应用（如浏览器、桌面、IDE）的操作层，通过状态快照共享而非远程注入来实现低干扰的自动化。",
-        "minimal_mvp": "用户输入一个任务指令（如“在购物车页面点击结算”）+ 当前页面截图，系统输出操作后的 DOM 变化和页面更新截图；第一版仅支持单标签页内的点击、输入和简单导航，忽略跨域、多标签和动态登录态刷新。",
+        "domain_tags": [
+          "Productivity",
+          "Developer Tools",
+          "Artificial Intelligence"
+        ],
+        "tool_tags": [
+          "desktop app",
+          "knowledge graph",
+          "AI memory"
+        ],
+        "mechanism_tags": [
+          "persistent memory",
+          "recall",
+          "Cloudflare"
+        ],
+        "author": "Rahil Pirani",
+        "score": 46.913,
+        "why": "Product Hunt 当前获得 285 票、45 条评论；仍处在近期新品验证窗口；产品形态已经比较完整",
+        "band": "爆发新品",
+        "mechanism": "可迁移的机制在于把通用模型能力封装进具体产品形态，让用户按任务而不是按模型来消费能力。",
+        "routing_confidence": 0.1,
+        "routing_interest": "",
+        "routing_reason": "该产品是一个通用的AI记忆桌面应用，为所有AI工具提供持续记忆和知识图谱，不服务任何垂直领域的核心任务，属于底层平台/工具，因此不匹配任何兴趣点。",
+        "core_highlight": "它把通用 AI 记忆和检索能力直接嵌入 Mac 与 Windows 的桌面工作流，让用户在不切换环境的情况下跨应用调取和关联知识，解决了“到处记却找不到”的落地痛点。",
+        "reuse_direction": "可迁移的是“按任务封装模型能力”的产品设定：不直接暴露模型参数或对话窗，而是用具体任务入口（如快速回忆、关联上下文）消费 AI，这种形态可以迁移到文档协作、客服知识库等场景。",
+        "minimal_mvp": "用户通过全局快捷键唤出搜索条，输入自然语言问题（如“上周讨论的技术方案要点”）；系统输出基于本地文本文件和最近聊天记录的摘要卡片与原文片段引用。第一版仅索引纯文本和近 7 天活动，不处理图片、PDF、音视频或团队共享内容。",
         "copy_generation_source": "openai"
       }
     ],
     "interest_sections": [
       {
-        "title": "邮件自动化工具",
-        "summary": "这一组信号主要来自 xiaohongshu、GitHub，外贸业务员正从手工优化邮件标题的避坑技巧转向寻找自动化工具，同时AI代理在邮件协调层已出现产品化尝试。",
+        "title": "法律 AI 工作流",
+        "summary": "这一组信号主要来自zhihu、GitHub，核心观察是法律公开数据让模型训练成本降低，用户期待AI能接手合同审查中的重复劳动以解决律师资源不足与耗时问题。",
         "items": [
           {
             "title": "需求",
-            "paragraph": "外贸销售在回复客户邮件时，急需确保开发信不落入垃圾邮箱并能提升真实回复率。",
+            "paragraph": "用户需要AI代替人工完成合同审查中大量繁琐、重复的检查工作，让起草和跟踪更省时。",
             "source": "social",
-            "url": "https://www.xiaohongshu.com/search_result/67e1e7a9000000001b026a31?xsec_token=ABCsHLlAWgONDYpIjwzXo9XSlt8XWKo_D59oR1IxTZWtc=&xsec_source= ｜ https://www.xiaohongshu.com/search_result/69f2c424000000001f000f92?xsec_token=ABtD23cI121fgf41MEpr4AyWBagujdfx4oN7EbNLSdtIY=&xsec_source="
+            "url": "https://www.zhihu.com/question/606923806/answer/3392966630 ｜ https://zhuanlan.zhihu.com/p/702780746"
           },
           {
             "title": "现状",
-            "paragraph": "目前多数外贸人依赖手工修改邮件标题（如添加“RE: 客户名+产品名”）来绕过垃圾过滤器，同时在小红书帖下密集求推荐现成的邮件工具。",
+            "paragraph": "当前大家主要使用如幂律智能、Ironclad等专用AI合同工具，并讨论如何利用免费公开的法律条文和判例训练审查模型。",
             "source": "social",
-            "url": "https://www.xiaohongshu.com/search_result/67e1e7a9000000001b026a31?xsec_token=ABCsHLlAWgONDYpIjwzXo9XSlt8XWKo_D59oR1IxTZWtc=&xsec_source= ｜ https://www.xiaohongshu.com/search_result/69f2c424000000001f000f92?xsec_token=ABtD23cI121fgf41MEpr4AyWBagujdfx4oN7EbNLSdtIY=&xsec_source="
+            "url": "https://www.zhihu.com/question/606923806/answer/3392966630 ｜ https://zhuanlan.zhihu.com/p/702780746"
           },
           {
             "title": "方向跟踪",
-            "paragraph": "结合用户在标题技巧上的手工操作与GitHub上出现的AI代理邮件框架，可关注能自动优化邮件标题并智能调度投递策略的AI邮件助手。",
+            "paragraph": "值得跟踪基于公开法律数据自训练的AI合同审查模型，进一步降低中小企业与个人获取低成本法务服务的门槛。",
             "source": "synthesis",
-            "url": "https://www.xiaohongshu.com/search_result/67e1e7a9000000001b026a31?xsec_token=ABCsHLlAWgONDYpIjwzXo9XSlt8XWKo_D59oR1IxTZWtc=&xsec_source= ｜ https://www.xiaohongshu.com/search_result/69f2c424000000001f000f92?xsec_token=ABtD23cI121fgf41MEpr4AyWBagujdfx4oN7EbNLSdtIY=&xsec_source="
+            "url": "https://www.zhihu.com/question/606923806/answer/3392966630 ｜ https://zhuanlan.zhihu.com/p/702780746"
           },
           {
-            "title": "larksuite/cli",
-            "paragraph": "GitHub 产品方向｜GitHub 上的 `larksuite/cli` 提供了 The official Lark/Feishu CLI tool, maintained by the larksuite team — built for humans and AI Agents. Covers core business domains including Messenger, Docs, Base, Sheets, Calendar, Mail, Tasks, Meetings, and more, with 200+ commands and 20+ AI Agent Skills.，说明这个方向正在把通用模型能力压进更明确的岗位或任务入口。",
+            "title": "HeShen-1/AI-Powered-LegalComplianceAssistant",
+            "paragraph": "GitHub 产品方向｜GitHub 上的 `HeShen-1/AI-Powered-LegalComplianceAssistant` 提供了 本项目是一个集自动化审查、智能化问答、专业化报告生成于一体的 AI 法律服务平台，旨在帮助中小企业和律师事务所提高合同审查效率，降低法律风险。平台通过先进的 AI 技术，实现了对法律文本的深度理解和分析，为用户提供精准、高效的法律合规支持。，说明这个方向正在把通用模型能力压进更明确的岗位或任务入口。",
             "source": "GitHub",
-            "url": "https://github.com/larksuite/cli",
+            "url": "https://github.com/HeShen-1/AI-Powered-LegalComplianceAssistant",
             "signal_label": "GitHub 产品方向",
-            "stars": 15847,
-            "match_score": 12,
+            "stars": 39,
+            "match_score": 15,
             "matched_terms": [
-              "mail"
+              "法律",
+              "合同审查"
             ],
             "interest_tags": [
-              "开发者工具",
-              "效率办公"
+              "法律科技"
             ],
-            "product_shape_score": 4.0,
-            "created_at": "2026-03-25T07:13:30Z",
-            "pushed_at": "2026-07-26T14:26:34Z",
-            "core_highlight": "它把飞书套件能力拆成 200+ 命令和 20+ 个 AI Agent 技能，让人类和 AI 用同一套 CLI 入口完成跨域操作，是把通用模型压进办公岗位入口的样本。",
-            "reuse_direction": "可迁移的是对办公多领域 API 的原子化命令封装与 Agent 技能定义方式，适合构建面向协作、文档等垂直场景的 ChatOps 或 AI 工作入口。",
-            "minimal_mvp": "用户输入一条自然指令“检查最近 3 天有没有人在文档里 @ 我”，系统输出“有/无”及相关文档链接和评论摘要；第一版只读飞书文档评论和 @ 数据，不做写操作和跨应用编排。",
+            "product_shape_score": 2.0,
+            "created_at": "2025-09-28T13:05:31Z",
+            "pushed_at": "2026-03-09T11:47:06Z",
+            "core_highlight": "该项目将通用大模型能力收敛为“审查-问答-报告”的闭环工作流，直接面向中小企业的合同合规岗位，比单纯调用 API 更接近可用的生产力工具。",
+            "reuse_direction": "其“多模块串联、专业报告作为交付物”的产品形态可迁移到其他垂直领域的文档审核场景，例如招投标文件或数据隐私合规审查。",
+            "minimal_mvp": "用户上传一份 PDF 合同，系统自动高亮风险条款并提供修改建议；第一版仅处理常见的劳动合同，不内置问答交互和完整报告生成。",
             "copy_generation_source": "openai"
           },
           {
-            "title": "Dicklesworthstone/mcp_agent_mail",
-            "paragraph": "GitHub 产品方向｜GitHub 上的 `Dicklesworthstone/mcp_agent_mail` 提供了 Asynchronous coordination layer for AI coding agents: identities, inboxes, searchable threads, and advisory file leases over FastMCP + Git + SQLite，说明这个方向正在把通用模型能力压进更明确的岗位或任务入口。",
+            "title": "abaiar/-LexAI",
+            "paragraph": "GitHub 产品方向｜GitHub 上的 `abaiar/-LexAI` 提供了 小理智法 AI 是一款基于大语言模型（LLM）的智能法律咨询平台，集成了法律咨询、合同审查、文书生成、合同起草、合同对比、智能校对、法律文书解读等多项 AI 法律服务。系统采用 LangChain Agent 架构，结合得理法律数据库 API 实现案例检索与法规检索，为用户提供专业、准确、有据可查的法律分析与建议。，说明这个方向正在把通用模型能力压进更明确的岗位或任务入口。",
             "source": "GitHub",
-            "url": "https://github.com/Dicklesworthstone/mcp_agent_mail",
+            "url": "https://github.com/abaiar/-LexAI",
             "signal_label": "GitHub 产品方向",
-            "stars": 2044,
-            "match_score": 11,
+            "stars": 24,
+            "match_score": 15,
             "matched_terms": [
-              "mail"
+              "法律",
+              "合同审查"
             ],
             "interest_tags": [
-              "开发者工具",
-              "知识检索/RAG",
-              "效率办公"
+              "法律 AI 工作流"
             ],
-            "product_shape_score": 4.0,
-            "created_at": "2025-10-23T03:42:36Z",
-            "pushed_at": "2026-07-20T03:07:44Z",
-            "core_highlight": "在 MCP 协议上为 AI 编程代理实现了具备身份、收件箱和可检索线索的异步协作层，用 Git 存证消息并用 SQLite 做检索，把多代理协调变得可追溯、可审计。",
-            "reuse_direction": "可迁移的是“以 Git 仓库为消息总线、文件租约防冲突”的代理间异步通信模式，适用于需要多智能体协作且要求操作留痕的本地工具链。",
-            "minimal_mvp": "用户输入两个代理角色与协作任务描述；系统基于本地 Git 仓库提供消息收件箱和简单文件锁检查，输出代理间的消息线索与被修改的文件列表；第一版仅支持一对一的文本消息传递、文件独占写锁，不处理锁冲突的自动化协商。",
+            "product_shape_score": 2.0,
+            "created_at": "2026-04-03T12:03:00Z",
+            "pushed_at": "2026-06-09T13:08:29Z",
+            "core_highlight": "将法律咨询、合同审查等多项服务收敛进一个 LangChain Agent 工作流，并接入了得理法律数据库实现有据可查的检索，是把大模型压进法律垂直场景的务实组装案例。",
+            "reuse_direction": "其“Agent 调度多任务子能力 + 领域数据库 API 工具调用”的结构，可直接迁移到金融合规、医疗问诊等需要专业知识检索与多步骤推理的行业应用中。",
+            "minimal_mvp": "用户输入一份劳动合同文本，系统输出标注了薪资、竞业限制等高风险条款的段落级风险提示及对应法条依据；第一版仅处理中文劳动合同、锁定劳动法领域、不做条款改写。",
+            "copy_generation_source": "openai"
+          }
+        ]
+      },
+      {
+        "title": "AI 应用场景 / 数据",
+        "summary": "这一组信号主要来自 social、GitHub。 当前更明确的需求是把高频重复动作沉淀成标准流程。 现有解法多依赖模板、工作流和垂直工具组合，整体仍偏零散。 可继续跟踪把零散经验收敛成稳定可复用的产品工作台。",
+        "items": [
+          {
+            "title": "需求",
+            "paragraph": "当前更明确的需求是把高频重复动作沉淀成标准流程。",
+            "source": "social",
+            "url": "https://zhuanlan.zhihu.com/p/20468570 ｜ https://www.zhihu.com/question/460427762/answer/1895672636"
+          },
+          {
+            "title": "现状",
+            "paragraph": "现有解法多依赖模板、工作流和垂直工具组合，整体仍偏零散。",
+            "source": "social",
+            "url": "https://zhuanlan.zhihu.com/p/20468570 ｜ https://www.zhihu.com/question/460427762/answer/1895672636"
+          },
+          {
+            "title": "方向跟踪",
+            "paragraph": "可继续跟踪把零散经验收敛成稳定可复用的产品工作台。",
+            "source": "synthesis",
+            "url": "https://zhuanlan.zhihu.com/p/20468570 ｜ https://www.zhihu.com/question/460427762/answer/1895672636"
+          },
+          {
+            "title": "liu463805737-collab/Phoenix-Agent-Java",
+            "paragraph": "GitHub 产品方向｜GitHub 上的 `liu463805737-collab/Phoenix-Agent-Java` 提供了 基于 Spring AI Alibaba 2.0 的企业级 Agent 平台，专注数据智能分析场景。内置多 Agent 协作机制，支持自然语言驱动的数据查询、多源异构数据汇总与 BI 报表自动生成。平台提供工具调用、记忆管理与流程编排，可对接各类数据库及数仓，实现从数据探索、异常检测到洞察输出的全链路自动化。具备可扩展插件体系和监控运维能力，适用于经营分析、运营报表、决策支持等业务，显著降低数据分析 Agent 开发门槛，提升数据价值交付效率。，说明这个方向正在把通用模型能力压进更明确的岗位或任务入口。",
+            "source": "GitHub",
+            "url": "https://github.com/liu463805737-collab/Phoenix-Agent-Java",
+            "signal_label": "GitHub 产品方向",
+            "stars": 12,
+            "match_score": 9,
+            "matched_terms": [
+              "场景"
+            ],
+            "interest_tags": [
+              "供应链分析 Agent",
+              "企业自动化工作流"
+            ],
+            "product_shape_score": 2.0,
+            "created_at": "2026-07-11T07:20:25Z",
+            "pushed_at": "2026-07-27T00:39:37Z",
+            "core_highlight": "它把自然语言直接转化为跨源数据查询与BI报表，并用多Agent协作将探索、检测到洞察输出串联成自动化链路，把数据分析岗的典型工作流做成了可部署的代理。",
+            "reuse_direction": "其“意图解析→多Agent任务分解→工具调用与记忆管理”的机制可迁移到其他需要多步骤、跨系统协调的垂直分析场景（如供应链异常排查、运营策略自动生成）。",
+            "minimal_mvp": "用户输入一句自然语言问题（如“过去7天各渠道转化率趋势”），系统输出为带图表和简要解读的BI看板；第一版只对接单数据源，支持预置的聚合、对比与趋势三类查询模板，不做跨库关联或自定义复杂指标。",
+            "copy_generation_source": "openai"
+          },
+          {
+            "title": "nmxiaowei/avue",
+            "paragraph": "GitHub 相关产品｜GitHub 上的 `nmxiaowei/avue` 提供了 Avue.js2.0是基于现有的element-ui库进行的二次封装，简化一些繁琐的操作，核心理念为数据驱动视图,主要的组件库针对table表格和form表单场景，同时衍生出更多企业常用的组件，达到高复用，容易维护和扩展的框架，同时内置了丰富了数据展示组件，让开发变得更加容易，说明这个方向已经出现可以继续拆解的产品雏形。",
+            "source": "GitHub",
+            "url": "https://github.com/nmxiaowei/avue",
+            "signal_label": "GitHub 相关产品",
+            "stars": 2301,
+            "match_score": 4,
+            "matched_terms": [
+              "场景"
+            ],
+            "interest_tags": [
+              "开发者工具"
+            ],
+            "product_shape_score": 0.0,
+            "created_at": "2018-02-17T12:31:52Z",
+            "pushed_at": "2026-07-09T13:15:13Z",
+            "core_highlight": "该项目通过数据驱动视图的方式对 Element UI 进行二次封装，将高频使用的表格与表单开发模式固化为可复用的组件，降低了中后台系统的重复编码成本。",
+            "reuse_direction": "可迁移其「配置式渲染」机制：用 JSON 结构描述列定义、校验规则与交互行为，自动生成交互完备的表格和表单，适合在同类 UI 库上复现。",
+            "minimal_mvp": "用户输入一组字段的 JSON 配置（名称、类型、是否必填），系统实时渲染出一个可交互的表单；第一版仅支持文本、数字、单选框三种控件，并能将提交数据以只读表格展示，暂不处理多步表单、联动逻辑与自定义校验。",
             "copy_generation_source": "openai"
           }
         ]
       },
       {
         "title": "教育 AI 辅导",
-        "summary": "这一组信号主要来自 xiaohongshu、GitHub，核心观察是教师端AI需求正从备课、授课延伸到批改和评估，但工具高度分散且基本入口模糊，同时极客侧已出现苏格拉底式教学和教学评估脚本等专用尝试。",
+        "summary": "这一组信号主要来自 zhihu、GitHub，核心观察是教师对备课减负有刚性需求，当前解法以多重单点AI工具组合为主，尚未出现集成文档理解、课件生成与互动教学设计的一站式产品。",
         "items": [
           {
             "title": "需求",
-            "paragraph": "教师需要把教材内容一键生成可直接用于课堂的PPT和讲解视频，并自动处理教案编写、课堂流程排布和作业批改。",
+            "paragraph": "教师需要把长文档、教材章节快速提炼为可直接使用的教案大纲、PPT课件和批量期末评语，以减少机械性备课耗时。",
             "source": "social",
-            "url": "https://www.xiaohongshu.com/search_result/68d88c1a000000001202ed47?xsec_token=ABKesJTxtDYowYitOT0Y3nPBpBfmRwjmGzrpPc3eoM6PU=&xsec_source= ｜ https://www.xiaohongshu.com/search_result/6895d48800000000050070a9?xsec_token=ABiWCehX4i2yqnkOtr5CHAKGLBAxjgDiKHwnvgUVXqmcI=&xsec_source="
+            "url": "https://zhuanlan.zhihu.com/p/700559546 ｜ https://www.zhihu.com/question/553695426/answer/2674627371"
           },
           {
             "title": "现状",
-            "paragraph": "教师群体目前通过小红书上的工具清单贴片式拼凑多个AI应用，讨论焦点集中在如何找到工具、区分App与网页入口。",
+            "paragraph": "目前教师群体主要采用组合工具链的方式，用AI阅读总结工具（如包阅AI）处理长文档、用Gamma将Word文案自动生成PPT、用ChatGPT对话撰写教案，多为单点功能拼接。",
             "source": "social",
-            "url": "https://www.xiaohongshu.com/search_result/68d88c1a000000001202ed47?xsec_token=ABKesJTxtDYowYitOT0Y3nPBpBfmRwjmGzrpPc3eoM6PU=&xsec_source= ｜ https://www.xiaohongshu.com/search_result/6895d48800000000050070a9?xsec_token=ABiWCehX4i2yqnkOtr5CHAKGLBAxjgDiKHwnvgUVXqmcI=&xsec_source="
+            "url": "https://zhuanlan.zhihu.com/p/700559546 ｜ https://www.zhihu.com/question/553695426/answer/2674627371"
           },
           {
             "title": "方向跟踪",
-            "paragraph": "从命令行苏格拉底式教学工具到教学评估一键脚本，产品方向正走向将AI嵌入特定教学交互和行政评估的微型工具。",
+            "paragraph": "值得跟踪把苏格拉底式提问机制嵌入备课工具，实现以问题驱动生成教学对话和互动设计，并探索教学行政任务（如评教）的一键自动化。",
             "source": "synthesis",
-            "url": "https://www.xiaohongshu.com/search_result/68d88c1a000000001202ed47?xsec_token=ABKesJTxtDYowYitOT0Y3nPBpBfmRwjmGzrpPc3eoM6PU=&xsec_source= ｜ https://www.xiaohongshu.com/search_result/6895d48800000000050070a9?xsec_token=ABiWCehX4i2yqnkOtr5CHAKGLBAxjgDiKHwnvgUVXqmcI=&xsec_source="
+            "url": "https://zhuanlan.zhihu.com/p/700559546 ｜ https://www.zhihu.com/question/553695426/answer/2674627371"
           },
           {
             "title": "Haaaiawd/Socrate",
@@ -457,9 +569,9 @@
             "product_shape_score": 2.0,
             "created_at": "2025-10-29T14:11:25Z",
             "pushed_at": "2025-11-11T01:44:27Z",
-            "core_highlight": "将通用大模型的能力压缩进苏格拉底提问范式的 CLI 工具，让开发者通过被追问而非听讲来检验理解，形式比通用聊天更聚焦于认知自查。",
-            "reuse_direction": "内置“只提问、不直接给答案”的对话状态机与提问策略模板，可直接迁移到客服培训、面试模拟或诊断式用户引导场景。",
-            "minimal_mvp": "用户输入一个需要理解的技术概念（如“闭包”），系统以 CLI 连续反问的方式促使用户用自己的话解释，首版只处理计算机科学基础概念的 5 轮追问链，不接知识库，不评价对错，仅输出提问序列并记录回答。",
+            "core_highlight": "将通用大模型的能力收束进一个只追问不直接讲课的 CLI 工具里，用苏格拉底式对话把 AI 从答案生成器变成思考教练，这在教育工具里切口极轻却体验差异明显。",
+            "reuse_direction": "可迁移的是它“禁止直接给答案，必须用引导式提问推进”的对话协议，这种模式能复用到以理解而非信息检索为目的的客服引导、需求澄清或诊断式对话产品中。",
+            "minimal_mvp": "用户在终端输入一个待理解的概念（如“闭包”），系统返回一个紧贴概念的反问而不是解释，第一版仅维持一个提问-回答的单轮循环和单主题对话上下文，不接入文档检索和答案兜底。",
             "copy_generation_source": "openai"
           },
           {
@@ -477,80 +589,9 @@
             "product_shape_score": 2.0,
             "created_at": "2025-06-09T03:07:54Z",
             "pushed_at": "2025-06-09T03:54:58Z",
-            "core_highlight": "该项目把 Copilot 生成的代码直接落地为吉林大学教学评估的可用脚本，验证了通用模型在特定教务场景下“能跑”的边界，比原型更真、比产品更糙，却恰好踩中了 AI 编码从炫技到任务入口的过渡节点。",
-            "reuse_direction": "可迁移的是“通用模型+固定流程脚本”的微产品形态：用自然语言描述一套重复性表单操作，生成一键完成脚本，复用思路在于把任何高频、标准化、低决策的后台填报流程都封装成此类可执行文件。",
-            "minimal_mvp": "做一个仅支持单一教务系统、单一评估模板的网页工具：用户粘贴登录Cookie和学期代码，系统返回评估完成的截图或状态列表；第一版只处理评分题（跳过主观填空），不做账号管理，不保存任何数据，确保一次粘贴、一次执行。",
-            "copy_generation_source": "openai"
-          }
-        ]
-      },
-      {
-        "title": "企业自动化工作流",
-        "summary": "这一组信号主要来自 social、GitHub。 当前更明确的需求是把高频重复动作沉淀成标准流程。 现有解法多依赖模板、工作流和垂直工具组合，整体仍偏零散。 可继续跟踪把零散经验收敛成稳定可复用的产品工作台。",
-        "items": [
-          {
-            "title": "需求",
-            "paragraph": "当前更明确的需求是把高频重复动作沉淀成标准流程。",
-            "source": "social",
-            "url": "https://www.xiaohongshu.com/search_result/6a33ab91000000001102cb27?xsec_token=ABFpW1BFiKNBCiwKrwLXYWAJJpuP8ReOhgRH_jXeppNbQ=&xsec_source= ｜ https://www.xiaohongshu.com/search_result/6a4b614f0000000011011c10?xsec_token=AB8ym_3VIRBT-XwyoWvFfVe3Nt-sc_UVnRxY0wkc8uiA4=&xsec_source="
-          },
-          {
-            "title": "现状",
-            "paragraph": "现有解法多依赖模板、工作流和垂直工具组合，整体仍偏零散。",
-            "source": "social",
-            "url": "https://www.xiaohongshu.com/search_result/6a33ab91000000001102cb27?xsec_token=ABFpW1BFiKNBCiwKrwLXYWAJJpuP8ReOhgRH_jXeppNbQ=&xsec_source= ｜ https://www.xiaohongshu.com/search_result/6a4b614f0000000011011c10?xsec_token=AB8ym_3VIRBT-XwyoWvFfVe3Nt-sc_UVnRxY0wkc8uiA4=&xsec_source="
-          },
-          {
-            "title": "方向跟踪",
-            "paragraph": "可继续跟踪把零散经验收敛成稳定可复用的产品工作台。",
-            "source": "synthesis",
-            "url": "https://www.xiaohongshu.com/search_result/6a33ab91000000001102cb27?xsec_token=ABFpW1BFiKNBCiwKrwLXYWAJJpuP8ReOhgRH_jXeppNbQ=&xsec_source= ｜ https://www.xiaohongshu.com/search_result/6a4b614f0000000011011c10?xsec_token=AB8ym_3VIRBT-XwyoWvFfVe3Nt-sc_UVnRxY0wkc8uiA4=&xsec_source="
-          },
-          {
-            "title": "liu463805737-collab/Phoenix-Agent-Java",
-            "paragraph": "GitHub 产品方向｜GitHub 上的 `liu463805737-collab/Phoenix-Agent-Java` 提供了 基于 Spring AI Alibaba 2.0 的企业级 Agent 平台，专注数据智能分析场景。内置多 Agent 协作机制，支持自然语言驱动的数据查询、多源异构数据汇总与 BI 报表自动生成。平台提供工具调用、记忆管理与流程编排，可对接各类数据库及数仓，实现从数据探索、异常检测到洞察输出的全链路自动化。具备可扩展插件体系和监控运维能力，适用于经营分析、运营报表、决策支持等业务，显著降低数据分析 Agent 开发门槛，提升数据价值交付效率。，说明这个方向正在把通用模型能力压进更明确的岗位或任务入口。",
-            "source": "GitHub",
-            "url": "https://github.com/liu463805737-collab/Phoenix-Agent-Java",
-            "signal_label": "GitHub 产品方向",
-            "stars": 12,
-            "match_score": 13,
-            "matched_terms": [
-              "企业",
-              "流程"
-            ],
-            "interest_tags": [
-              "供应链分析 Agent",
-              "企业自动化工作流"
-            ],
-            "product_shape_score": 2.0,
-            "created_at": "2026-07-11T07:20:25Z",
-            "pushed_at": "2026-07-27T00:39:37Z",
-            "core_highlight": "该项目把 Spring AI Alibaba 2.0 的 Agent 能力直接压进数据分析岗位，不是框架玩具，而是内置多 Agent 协作、记忆与工具编排的企业级分析平台。",
-            "reuse_direction": "可迁移的是“自然语言问题 → 多源数据自动汇总 → BI 报表产出”的 Agent 编排机制，尤其是其对接数据库/数仓的工具调用链与记忆管理。",
-            "minimal_mvp": "用户输入“上个月各区域销售额同比变化”，系统自动查询单数据源（如 MySQL）、按预设模板生成可视化报表并输出结论摘要；第一版仅打通一条数据管道，不做跨源汇总和异常检测，Agent 协作退化为单 Agent 串行工具调用。",
-            "copy_generation_source": "openai"
-          },
-          {
-            "title": "wuruiwurui/OpenAgentFlow",
-            "paragraph": "GitHub 工作流解法｜GitHub 上的 `wuruiwurui/OpenAgentFlow` 提供了 Java AI Agent, Spring Boot 3, Vue3, RAG, Tool Calling, MCP, LLM, OpenAI-compatible, Milvus, MySQL, Redis, Workflow, Trace, Evaluation, Cost Governance. OpenAgentFlow-Java 是开源 Java AI Agent 工作流平台，核心链路自研，支持智能体编排、知识库问答、文档切片、向量检索、工具调用、MCP 接入、可视化工作流、运行追踪、模型评测、Token 统计、成本治理和企业级二次开发。，说明这个方向已经开始把人工分析或执行步骤压缩成可复用流程。",
-            "source": "GitHub",
-            "url": "https://github.com/wuruiwurui/OpenAgentFlow",
-            "signal_label": "GitHub 工作流解法",
-            "stars": 18,
-            "match_score": 10,
-            "matched_terms": [
-              "企业"
-            ],
-            "interest_tags": [
-              "工作流自动化",
-              "知识检索/RAG"
-            ],
-            "product_shape_score": 10.0,
-            "created_at": "2026-06-23T03:52:05Z",
-            "pushed_at": "2026-07-24T07:56:34Z",
-            "core_highlight": "该项目将智能体编排、RAG、工具调用与成本治理等AI工作流能力整合为可二次开发的Java平台，展示了自研工作流引擎在企业级AI应用中的完整落地实践。",
-            "reuse_direction": "可迁移的是其“可视化工作流编排 + 模型评测与Token成本统计”的产品形态，适合需要精细管控AI链路与开销的业务系统直接参考。",
-            "minimal_mvp": "用户输入自然语言问题，系统基于预设的文档切片和Milvus向量检索返回 RAG 答案，并统计该次调用的Token消耗；第一版边界限定为单轮问答，不包含多步骤编排、工具调用及MCP接入。",
+            "core_highlight": "一个完全由 Copilot 生成的脚本，能在真实的高校评教系统里跑通，说明 AI 辅助开发已从 Demo 走进具体、琐碎的机构任务，低门槛到可复制。",
+            "reuse_direction": "将通用模型能力封装为面向特定机构流程（如评教、填表）的自动化脚本，这种“自然语言需求→可运行代码”的交付形态，可直接迁移到其他高校或企业内周期性、规则固定的重复填报任务上。",
+            "minimal_mvp": "用户输入学号、密码并选择评教模板（如全优）；系统自动登录选课平台，逐项完成所有课程的教学评估；第一版仅适配吉林大学2025年6月评教界面，不做验证码识别与跨校适配。",
             "copy_generation_source": "openai"
           }
         ]
@@ -558,14 +599,19 @@
     ],
     "source_diagnostics": {
       "github_high_potential": {
-        "generated_at": "2026-07-27T02:22:56Z",
+        "generated_at": "2026-07-27T10:07:08Z",
         "momentum_source": "trending_weekly",
         "selected_count": 20
       },
+      "product_hunt_high_potential": {
+        "generated_at": "2026-07-27T10:34:49Z",
+        "selected_count": 8,
+        "source": "product_hunt_featured_ranked_pool"
+      },
       "observation": {
-        "generated_at": "2026-07-27T02:56:08Z",
+        "generated_at": "2026-07-27T10:41:05Z",
         "section_count": 3,
-        "rule_source": "social_plus_dynamic_github"
+        "rule_source": "social_plus_product_sources"
       }
     }
   },
@@ -578,10 +624,10 @@
       "url": "https://github.com/bojieli/ai-agent-book",
       "author": "bojieli",
       "created_at": "2025-09-09T02:41:44Z",
-      "updated_at": "2026-07-27T02:22:30Z",
-      "pushed_at": "2026-07-27T01:37:39Z",
-      "stars": 21110,
-      "forks": 2098,
+      "updated_at": "2026-07-27T10:06:13Z",
+      "pushed_at": "2026-07-27T07:18:35Z",
+      "stars": 22099,
+      "forks": 2214,
       "language": "Python",
       "topics": [
         "agent",
@@ -623,9 +669,10 @@
       "why": "GitHub Trending 周榜显示本周新增热度约 15909；已有较强社区验证",
       "mechanism": "可迁移的机制在于把模型从单次回答升级成持续协作代理，强调上下文记忆与多步执行。",
       "band": "持续升温",
-      "core_highlight": "本书通过可编译文稿与配套代码，系统还原了将大模型从单次问答升级为具备上下文记忆、多步执行能力的 Agent 的全过程，填补了从原理到落地之间的工程鸿沟。",
-      "reuse_direction": "可迁移的核心机制是将模型调用包装为有状态、可编排的 Agent 循环，尤其侧重于记忆刷新与分步任务链的协作模式，可直接嵌入开发者工具或知识型应用中。",
-      "minimal_mvp": "用户输入一个需多步完成的研发任务（如“帮我排查这个日志异常”），系统以 Agent 循环方式依次调用大模型、维护短期记忆、执行工具命令并汇总结果；第一版限定单个 Agent、纯文本工具链，不上多 Agent 协作与长期记忆。",
+      "source": "GitHub",
+      "core_highlight": "该项目是当前极少数将 AI Agent 从理论到工程全流程开源拆解的资源，一周内获超 1.5 万星，说明开发者对可落地的 Agent 设计知识存在强烈渴求。",
+      "reuse_direction": "可复用的是其将 Agent 视为“持续协作代理”而非单次问答的设计范式，核心机制在于上下文记忆与多步执行链的工程组织方式，能直接迁移到代码助手或任务自动化工具中。",
+      "minimal_mvp": "用户输入一个需多步完成的任务描述（如“分析这份数据并给出结论”），系统基于书中的 Agent 架构输出带记忆的多步执行计划和阶段性结果，第一版仅支持单 Agent、预设工具集和文本上下文。",
       "copy_generation_source": "openai"
     },
     {
@@ -636,10 +683,10 @@
       "url": "https://github.com/koala73/worldmonitor",
       "author": "koala73",
       "created_at": "2026-01-08T17:26:06Z",
-      "updated_at": "2026-07-27T02:22:20Z",
-      "pushed_at": "2026-07-26T22:32:21Z",
-      "stars": 74830,
-      "forks": 11238,
+      "updated_at": "2026-07-27T10:06:26Z",
+      "pushed_at": "2026-07-27T10:06:41Z",
+      "stars": 75078,
+      "forks": 11271,
       "language": "TypeScript",
       "topics": [
         "agent",
@@ -676,9 +723,10 @@
       "why": "GitHub Trending 周榜显示本周新增热度约 12615；已有较强社区验证",
       "mechanism": "可迁移的机制在于把模型从单次回答升级成持续协作代理，强调上下文记忆与多步执行。",
       "band": "持续升温",
-      "core_highlight": "项目将大模型从单轮问答升级为具备上下文记忆与多步执行能力的持续协作代理，并集成 MCP 协议接入多源数据，形成面向地缘政治的实时态势感知底座。",
-      "reuse_direction": "可迁移的是“代理+工具”的持续协作形态：通过 MCP Server 把外部数据源标准化接入，再由代理按观测需求多步编排、记忆上下文，输出结构化情报流。",
-      "minimal_mvp": "用户输入一个监控主题（如某区域冲突）和关注维度，系统自动拉取预设的三类公开数据（新闻、航运、社交），每日生成包含事件摘要与风险提示的 Markdown 简报；第一版不做实时预警和多轮对话。",
+      "source": "GitHub",
+      "core_highlight": "它用持续协作代理替代单次问答，把新闻聚合、地缘监控和基础设施追踪闭环成一张动态态势图，是开源界向 Palantir 形态靠拢的一次高热度尝试。",
+      "reuse_direction": "可复用的核心是将模型升级为带有上下文记忆的长运行代理，持续从多类信源采集、清洗、关联事件并输出阶段简报，而非一次性总结。",
+      "minimal_mvp": "用户输入一组地缘关键词与关注区域；系统基于单信源（如GDELT）执行定时拉取、去重、上下文关联，输出每日态势简报与异常告警；第一版不引入多模态，不设置前端地图，Agent 只在服务端循环，不处理跨事件因果推理。",
       "copy_generation_source": "openai"
     },
     {
@@ -689,10 +737,10 @@
       "url": "https://github.com/diegosouzapw/OmniRoute",
       "author": "diegosouzapw",
       "created_at": "2026-02-13T12:38:31Z",
-      "updated_at": "2026-07-27T02:21:40Z",
-      "pushed_at": "2026-07-27T00:29:45Z",
-      "stars": 31124,
-      "forks": 4042,
+      "updated_at": "2026-07-27T10:06:31Z",
+      "pushed_at": "2026-07-27T03:23:43Z",
+      "stars": 31546,
+      "forks": 4080,
       "language": "TypeScript",
       "topics": [
         "a2a",
@@ -741,9 +789,10 @@
       "why": "项目仍处在较新的验证窗口；GitHub Trending 周榜显示本周新增热度约 10912；已有较强社区验证",
       "mechanism": "可迁移的机制在于以桌面工作台承接复杂任务，把模型能力包装成稳定可交付的软件入口。",
       "band": "持续升温",
-      "core_highlight": "在 MIT 许可下聚合 290+ 家模型商并提供配额感知自动降级与高达 95% 的 token 压缩，是当前开源 AI 网关中兼具开发者友好和极致降本的通用入口。",
-      "reuse_direction": "以下载即用的桌面工作台形态，把多模型动态路由、压缩与本地配置封装成一个可交付的软件入口，可迁移至任何需要统一管理多条 AI 付费线路的开发者工具中。",
-      "minimal_mvp": "用户输入：单条自然语言指令和所持有的 API 密钥；系统输出：自动选择当前可用且成本最低的模型返回文本结果，并显示本次节省的 token 数量和备选模型；第一版仅支持单轮文本补全，不含流式输出、多模态和上下文压缩。",
+      "source": "GitHub",
+      "core_highlight": "OmniRoute 以单一端点统一了 290+ 模型供应商和 500+ 模型，并提供配额感知的自动回退与最高 95% 的 token 压缩，把碎片化的 AI 调用变成一条高可用、低成本的开发管线，近期一周斩获 1 万+ star 证明了开发者对这类“模型路由器”的强需求。",
+      "reuse_direction": "其“智能网关 + 桌面工作台”的形态可迁移：将多模型调度、配额感知 fallback 和压缩逻辑打包成一个对开发者透明的本地入口，任何需要对接多个大模型的工作流或 IDE 插件，都可复用这套调度与流控机制，而不是再写一遍模型切换和冗余的 token 消耗逻辑。",
+      "minimal_mvp": "最小切入点是一个本地 CLI 网关，用户用标准 OpenAI Chat Completions 格式发起请求，系统自动轮询 Groq、DeepSeek 两家免费模型并在失败时切换，返回最终响应及实际消耗 token 数；第一版边界仅限于这两个免费后端、不做 token 压缩，仅通过环境变量注入密钥，确保 1 小时内可跑通一个可用的无人值守模型 fallback 回路。",
       "copy_generation_source": "openai"
     },
     {
@@ -754,10 +803,10 @@
       "url": "https://github.com/stablyai/orca",
       "author": "stablyai",
       "created_at": "2026-03-17T03:28:57Z",
-      "updated_at": "2026-07-27T02:20:17Z",
-      "pushed_at": "2026-07-27T02:14:38Z",
-      "stars": 29834,
-      "forks": 2117,
+      "updated_at": "2026-07-27T10:05:26Z",
+      "pushed_at": "2026-07-27T10:06:41Z",
+      "stars": 30269,
+      "forks": 2139,
       "language": "TypeScript",
       "topics": [
         "ade",
@@ -804,198 +853,307 @@
       "why": "项目仍处在较新的验证窗口；GitHub Trending 周榜显示本周新增热度约 7392；已有较强社区验证",
       "mechanism": "可迁移的机制在于以桌面工作台承接复杂任务，把模型能力包装成稳定可交付的软件入口。",
       "band": "持续升温",
-      "core_highlight": "Orca 的独到之处在于把“自备 API 密钥的多个编码代理”整合为统一的桌面工作台，实现真正的并行代理编队执行，而不是只停留在聊天层的多模型对比。",
-      "reuse_direction": "可迁移的是其“工作台即编排层”的形态：将碎片化的智能体命令行动作抽象成可监控、可并行的桌面任务面板，适合复用到任何需要在本地统一调度多个 AI 能力的场景。",
-      "minimal_mvp": "用户输入一个多步骤开发需求（如“用 Python 写爬虫并生成 CSV 报告”），系统在桌面面板上同时启动预置的 Claude Code 和 Codex 代理并行执行，最终展示两份代码和运行结果——第一版仅支持文本型任务，代理固定为两种，不含自定义工具或跨会话记忆。",
+      "source": "GitHub",
+      "core_highlight": "7 天狂揽 7.3k star，因为它第一个把并行 AI 编程 Agent 的编排做成独立桌面环境，并支持使用自有订阅运行任意编码 Agent，直击开发者不愿被单一工具和额外 API 费用锁定的痛点。",
+      "reuse_direction": "可复用的是“本地客户端 + 多 Agent 调度”的产品形态：将模型能力封装为稳定的软件入口，让用户无需关心后端模型切换，通过统一工作台管理和并行执行多个编码任务，这种形态可移植到其他需要多智能体协同的专业工具领域。",
+      "minimal_mvp": "用户输入一个包含服务端、Web 前端和数据库迁移三个子任务的项目描述；系统并行调用三个独立的编码 Agent 分别生成对应代码，在统一界面流式输出各自的进度和产物；第一版边界：仅支持 macOS 桌面客户端，Agent 类型限定为 Claude Code 和 Cursor Agent，不包含 Agent 间的相互通信与合并冲突解决。",
       "copy_generation_source": "openai"
     },
     {
-      "repo_id": 1173848034,
-      "title": "oblien/openship",
-      "repo_name": "openship",
-      "summary": "Self-hosted deployment platform",
-      "url": "https://github.com/oblien/openship",
-      "author": "oblien",
-      "created_at": "2026-03-05T20:16:56Z",
-      "updated_at": "2026-07-27T02:22:24Z",
-      "pushed_at": "2026-07-26T22:34:41Z",
-      "stars": 8745,
-      "forks": 701,
-      "language": "TypeScript",
+      "id": "1197378",
+      "title": "Fluree AI",
+      "name": "Fluree AI",
+      "repo_name": "fluree-ai",
+      "summary": "Give every AI agent trusted context",
+      "description": "Fluree AI gives every app and AI agent the same trusted context from your company data. Ask questions and get cited, verifiable answers from one live data layer, with permissions checked on every request. Instead of rebuilding prompts or relying on RAG guesses, Fluree queries structured data directly and connects to MCP-ready agents, dashboards, and apps in minutes.",
+      "url": "https://www.producthunt.com/products/fluree?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai-idea-radar-v4-2+%28ID%3A+294543%29",
+      "website_url": "https://www.producthunt.com/r/Y6SGXQZUGTMKAT?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai-idea-radar-v4-2+%28ID%3A+294543%29",
       "topics": [
-        "agents",
-        "ai",
-        "deployments",
-        "self-hosted"
+        "Developer Tools",
+        "Artificial Intelligence",
+        "Data"
       ],
-      "is_archived": false,
-      "is_fork": false,
-      "query": "trending:weekly",
-      "bucket": "trending_weekly",
-      "stars_7d": 5844,
-      "stars_30d": null,
-      "stars_7d_is_lower_bound": false,
-      "stars_30d_is_lower_bound": false,
-      "sampled_recent_stars": 5844,
-      "momentum_available": true,
-      "momentum_source": "trending_weekly",
-      "trending_sources": [
-        "typescript"
+      "topic_slugs": [
+        "developer-tools",
+        "artificial-intelligence",
+        "data"
       ],
-      "trending_rank": 16,
-      "interest_tags": [],
-      "score": 242.45,
-      "why": "项目仍处在较新的验证窗口；GitHub Trending 周榜显示本周新增热度约 5844；已有较强社区验证",
+      "makers": [
+        "[REDACTED]",
+        "Kevin Doubleday"
+      ],
+      "votes_count": 342,
+      "comments_count": 77,
+      "featured_at": "2026-07-24T07:01:00Z",
+      "created_at": "2026-07-24T07:01:00Z",
+      "top_comments": [
+        "<p>Hey Product Hunt — Brian here, CEO of Fluree.<br><br><strong>The backstory:</strong>we spent years building governed, verifiable graph data infrastructure for enterprises — provenance, permissions, cryptographic audit trails, the unglamorous stuff.<br><br>Then LLMs arrived, and suddenly the <em>entire world </em>had our problem: AI that's brilliant at language and terrible with data. Hallucinated numbers. Context that resets every conversation. Five tools, five silos, five versions of the truth.<br><br><strong>Fluree AI is our answer: an intelligence layer that sits under everything you build.</strong><br>Here's the flow:<br><br><strong>Throw everything at it. </strong>CSVs, databases, docs, SaaS exports. Fluree classifies your data and connects the dots automatically — the graph builds itself.<br><br><strong>Plug in any AI. </strong>Claude, OpenAI, Gemini, Ollama — any MCP-speaking agent reasons over the same graph. No tools yet? Ours is built in.<br><br><strong>Get answers you can prove.</strong>Responses are structured queries against the graph, not generated guesses — so every answer is cited, permissioned, and reproducible. If the data is correct, the output is correct.<br><br><strong>Build unlimited interfaces on one foundation. </strong>This is the part that changes how you work: ask a question, then say \"make that a dashboard,\" then \"turn it into an app my team can use,\" then \"deploy an agent that watches this.\" Chats, dashboards, apps, and agents all read from — and write back to — the <em>same </em>governed graph. You stop rebuilding context in every tool. It compounds instead.<br><br>Most software starts from the UI and traps your data underneath it. We think the future starts with the right data + context — and then any interface you want becomes cheap to build and safe to trust.<br><br><strong>Getting started takes ~2 minutes: </strong>sign up free, drop in a dataset (messy is fine — that's the point), and ask your first question. No demo call, no sales gate.<br><br>I'll be in the comments all day with our engineering team. Ask us anything — and if you think \"cited, verifiable answers\" sounds too good, please come try to break it. Genuinely. That's the fun part.</p>",
+        "<p>The \"single source of truth\" vision resonates with anyone who's managed multiple disconnected databases. Hope this gets the attention it deserves.</p>",
+        "<p>One of the biggest AI challenges today is reliable context, and Fluree seems to be addressing it head-on. Excited to see how developers build on this.</p>"
+      ],
+      "source": "Product Hunt",
+      "product_shape_score": 10.0,
+      "launch_heat_score": 13.0,
+      "interest_tags": [
+        "开发者工具"
+      ],
+      "domain_tags": [
+        "企业数据",
+        "AI基础设施"
+      ],
+      "tool_tags": [
+        "数据层",
+        "知识库"
+      ],
+      "mechanism_tags": [
+        "可信上下文",
+        "结构化查询",
+        "权限验证"
+      ],
+      "author": "[REDACTED] / Kevin Doubleday",
+      "score": 48.85,
+      "why": "Product Hunt 当前获得 342 票、77 条评论；仍处在近期新品验证窗口；产品形态已经比较完整",
+      "band": "爆发新品",
       "mechanism": "可迁移的机制在于把模型从单次回答升级成持续协作代理，强调上下文记忆与多步执行。",
-      "band": "持续升温",
-      "core_highlight": "将 AI 模型从一次性回答升级为持续协作的部署代理，可记住上下文并自动执行多步骤操作，在自托管场景中实现接近真人的操作助手体验。",
-      "reuse_direction": "持续代理与上下文记忆的机制可迁移到自动化运维、代码审查等需分步执行、跨轮次保持状态的工作流中，让 AI 承担持久化执行角色。",
-      "minimal_mvp": "用户输入一句部署需求（如“把这个目录下的静态网站部署到我的服务器”），系统根据上下文分析项目、生成构建与推送命令并逐步执行，每步返回执行结果。第一版仅支持单容器应用部署，不处理数据库、多服务编排与灰度发布。",
+      "routing_confidence": 0.0,
+      "routing_interest": "",
+      "routing_reason": "Fluree AI is a foundational data layer providing trusted context to any AI agent, not a vertical application for a specific interest like legal, supply chain, or education. It is a generic platform akin to a company knowledge base, thus should not be forced into a specific observation interest.",
+      "core_highlight": "Fluree AI 在 Product Hunt 上获 342 票、77 条讨论，因为它不在模型层内卷，而是直接解决 AI 代理“记不住、不可信”的问题，把一次性回答变成可多步执行的持续协作。",
+      "reuse_direction": "可迁移的是它将代理从单轮问答升级为“带可信上下文的持续协作”机制，即上下文记忆持久化 + 多步执行编排。",
+      "minimal_mvp": "用户输入一个需要多步完成的任务描述（如“整理上周团队进度并生成摘要”），系统作为代理记录每一步的输入输出与依赖，最终交付可追溯的执行结果；第一版仅支持单会话线性步骤，不接入外部 API 工具。",
       "copy_generation_source": "openai"
     },
     {
-      "repo_id": 1212503250,
-      "title": "citrolabs/ego-lite",
-      "repo_name": "ego-lite",
-      "summary": "The fastest browser for AI agents to run web automation, built for sharing your logged-in browser state with your AI agents, like Codex or Claude Code, without disturbing you. Zero cost, zero config.",
-      "url": "https://github.com/citrolabs/ego-lite",
-      "author": "citrolabs",
-      "created_at": "2026-04-16T12:51:09Z",
-      "updated_at": "2026-07-27T02:22:21Z",
-      "pushed_at": "2026-07-26T11:41:18Z",
-      "stars": 4662,
-      "forks": 229,
-      "language": "JavaScript",
+      "id": "1198621",
+      "title": "Second Brain for Mac and Windows",
+      "name": "Second Brain for Mac and Windows",
+      "repo_name": "second-brain-for-mac-and-windows",
+      "summary": "Your AI memory, everywhere you work",
+      "description": "The Second Brain desktop app gets you running in five minutes. No terminal. No git. Just download, set a password, and sign into Cloudflare. Then the real magic starts. Persistent memory across every AI tool you use. Recall that just got a lot smarter. Surfaces the right memory, not just the newest one. A knowledge graph that builds itself. Your data in your own Cloudflare account, not ours. Mac and Windows. You asked for the app. You asked for better recall. We shipped both.",
+      "url": "https://www.producthunt.com/products/second-brain-cloudflare?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai-idea-radar-v4-2+%28ID%3A+294543%29",
+      "website_url": "https://www.producthunt.com/r/6JNYYPRQZ2R2PT?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai-idea-radar-v4-2+%28ID%3A+294543%29",
       "topics": [
-        "agent-skills",
-        "ai-agent",
-        "browser",
-        "skills",
-        "skills-sh"
+        "Productivity",
+        "Developer Tools",
+        "Artificial Intelligence",
+        "GitHub"
       ],
-      "is_archived": false,
-      "is_fork": false,
-      "query": "trending:weekly",
-      "bucket": "trending_weekly",
-      "stars_7d": 3666,
-      "stars_30d": null,
-      "stars_7d_is_lower_bound": false,
-      "stars_30d_is_lower_bound": false,
-      "sampled_recent_stars": 3666,
-      "momentum_available": true,
-      "momentum_source": "trending_weekly",
-      "trending_sources": [
-        "javascript"
+      "topic_slugs": [
+        "productivity",
+        "developer-tools",
+        "artificial-intelligence",
+        "github"
       ],
-      "trending_rank": 4,
+      "makers": [
+        "Rahil Pirani"
+      ],
+      "votes_count": 285,
+      "comments_count": 45,
+      "featured_at": "2026-07-25T07:01:00Z",
+      "created_at": "2026-07-25T07:01:00Z",
+      "top_comments": [
+        "<p>During our v2 launch, you asked for an easier way. Some mentioned being uncomfortable with git. Others flagged the terminal as a barrier. We listened.</p><p></p><p><strong>This is the Second Brain desktop app and it exists because of your feedback.</strong></p><p></p><p>Unlike other memory tools, nothing lives on our servers. Your memories are in your Cloudflare account from day one. We literally can't access them.</p><p></p><p>Here's what we built: Download. Choose a password. Sign in to Cloudflare (or create a free account if you don't have one, we walk you through it). Five minutes later, your Second Brain is provisioned and running on your machine. No terminal. No git. No technical knowledge required.</p><p></p><p>You get the full v2 experience, recall-by-meaning, the knowledge graph, all of it, running in a native app on Mac or Windows, pre-authenticated and ready to connect to Claude, Cursor, ChatGPT, and your other tools via MCP.</p><p></p><p>This is what community-driven product development looks like. Thank you for helping us build this. Now come try it, share your thoughts, and let us know what you think.</p>",
+        "<p><a href=\"https://www.producthunt.com/@rahilpirani\" data-node-type=\"mention\" data-mention-type=\"user\" data-mention-id=\"rahilpirani\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">@rahilpirani</a> congrats on the launch - very impressive and the \"starting over\" is a real issue. Why do you think the LLMs force a start over - does it have to do with token usage?</p>",
+        "How does it handle large conversation context? Will it clear the older conversation context or it preserves it forever?"
+      ],
+      "source": "Product Hunt",
+      "product_shape_score": 9.0,
+      "launch_heat_score": 13.0,
       "interest_tags": [
         "开发者工具",
-        "工作流自动化",
-        "浏览器自动化"
+        "桌面工作台",
+        "知识检索/RAG"
       ],
-      "score": 240.0407,
-      "why": "项目仍处在较新的验证窗口；GitHub Trending 周榜显示本周新增热度约 3666；已有较强社区验证",
-      "mechanism": "可迁移的机制在于把 AI 能力直接嵌入浏览器操作层，而不是只停留在聊天入口。",
-      "band": "持续升温",
-      "core_highlight": "把 AI 代理的执行能力直接植入浏览器内核操作层，让代理在隔离环境中复用你的登录态，既不影响你正常使用，又避免了传统远程控制方案的高延迟与配置成本。",
-      "reuse_direction": "可迁移的是“宿主内嵌代理”模式：不把 AI 作为外部聊天入口，而是让它直接操控宿主应用（如浏览器、桌面、IDE）的操作层，通过状态快照共享而非远程注入来实现低干扰的自动化。",
-      "minimal_mvp": "用户输入一个任务指令（如“在购物车页面点击结算”）+ 当前页面截图，系统输出操作后的 DOM 变化和页面更新截图；第一版仅支持单标签页内的点击、输入和简单导航，忽略跨域、多标签和动态登录态刷新。",
+      "domain_tags": [
+        "Productivity",
+        "Developer Tools",
+        "Artificial Intelligence"
+      ],
+      "tool_tags": [
+        "desktop app",
+        "knowledge graph",
+        "AI memory"
+      ],
+      "mechanism_tags": [
+        "persistent memory",
+        "recall",
+        "Cloudflare"
+      ],
+      "author": "Rahil Pirani",
+      "score": 46.913,
+      "why": "Product Hunt 当前获得 285 票、45 条评论；仍处在近期新品验证窗口；产品形态已经比较完整",
+      "band": "爆发新品",
+      "mechanism": "可迁移的机制在于把通用模型能力封装进具体产品形态，让用户按任务而不是按模型来消费能力。",
+      "routing_confidence": 0.1,
+      "routing_interest": "",
+      "routing_reason": "该产品是一个通用的AI记忆桌面应用，为所有AI工具提供持续记忆和知识图谱，不服务任何垂直领域的核心任务，属于底层平台/工具，因此不匹配任何兴趣点。",
+      "core_highlight": "它把通用 AI 记忆和检索能力直接嵌入 Mac 与 Windows 的桌面工作流，让用户在不切换环境的情况下跨应用调取和关联知识，解决了“到处记却找不到”的落地痛点。",
+      "reuse_direction": "可迁移的是“按任务封装模型能力”的产品设定：不直接暴露模型参数或对话窗，而是用具体任务入口（如快速回忆、关联上下文）消费 AI，这种形态可以迁移到文档协作、客服知识库等场景。",
+      "minimal_mvp": "用户通过全局快捷键唤出搜索条，输入自然语言问题（如“上周讨论的技术方案要点”）；系统输出基于本地文本文件和最近聊天记录的摘要卡片与原文片段引用。第一版仅索引纯文本和近 7 天活动，不处理图片、PDF、音视频或团队共享内容。",
       "copy_generation_source": "openai"
     }
   ],
   "interest_sections": [
     {
-      "title": "邮件自动化工具",
-      "summary": "这一组信号主要来自 xiaohongshu、GitHub，外贸业务员正从手工优化邮件标题的避坑技巧转向寻找自动化工具，同时AI代理在邮件协调层已出现产品化尝试。",
+      "title": "法律 AI 工作流",
+      "summary": "这一组信号主要来自zhihu、GitHub，核心观察是法律公开数据让模型训练成本降低，用户期待AI能接手合同审查中的重复劳动以解决律师资源不足与耗时问题。",
       "items": [
         {
           "title": "需求",
-          "paragraph": "外贸销售在回复客户邮件时，急需确保开发信不落入垃圾邮箱并能提升真实回复率。",
+          "paragraph": "用户需要AI代替人工完成合同审查中大量繁琐、重复的检查工作，让起草和跟踪更省时。",
           "source": "social",
-          "url": "https://www.xiaohongshu.com/search_result/67e1e7a9000000001b026a31?xsec_token=ABCsHLlAWgONDYpIjwzXo9XSlt8XWKo_D59oR1IxTZWtc=&xsec_source= ｜ https://www.xiaohongshu.com/search_result/69f2c424000000001f000f92?xsec_token=ABtD23cI121fgf41MEpr4AyWBagujdfx4oN7EbNLSdtIY=&xsec_source="
+          "url": "https://www.zhihu.com/question/606923806/answer/3392966630 ｜ https://zhuanlan.zhihu.com/p/702780746"
         },
         {
           "title": "现状",
-          "paragraph": "目前多数外贸人依赖手工修改邮件标题（如添加“RE: 客户名+产品名”）来绕过垃圾过滤器，同时在小红书帖下密集求推荐现成的邮件工具。",
+          "paragraph": "当前大家主要使用如幂律智能、Ironclad等专用AI合同工具，并讨论如何利用免费公开的法律条文和判例训练审查模型。",
           "source": "social",
-          "url": "https://www.xiaohongshu.com/search_result/67e1e7a9000000001b026a31?xsec_token=ABCsHLlAWgONDYpIjwzXo9XSlt8XWKo_D59oR1IxTZWtc=&xsec_source= ｜ https://www.xiaohongshu.com/search_result/69f2c424000000001f000f92?xsec_token=ABtD23cI121fgf41MEpr4AyWBagujdfx4oN7EbNLSdtIY=&xsec_source="
+          "url": "https://www.zhihu.com/question/606923806/answer/3392966630 ｜ https://zhuanlan.zhihu.com/p/702780746"
         },
         {
           "title": "方向跟踪",
-          "paragraph": "结合用户在标题技巧上的手工操作与GitHub上出现的AI代理邮件框架，可关注能自动优化邮件标题并智能调度投递策略的AI邮件助手。",
+          "paragraph": "值得跟踪基于公开法律数据自训练的AI合同审查模型，进一步降低中小企业与个人获取低成本法务服务的门槛。",
           "source": "synthesis",
-          "url": "https://www.xiaohongshu.com/search_result/67e1e7a9000000001b026a31?xsec_token=ABCsHLlAWgONDYpIjwzXo9XSlt8XWKo_D59oR1IxTZWtc=&xsec_source= ｜ https://www.xiaohongshu.com/search_result/69f2c424000000001f000f92?xsec_token=ABtD23cI121fgf41MEpr4AyWBagujdfx4oN7EbNLSdtIY=&xsec_source="
+          "url": "https://www.zhihu.com/question/606923806/answer/3392966630 ｜ https://zhuanlan.zhihu.com/p/702780746"
         },
         {
-          "title": "larksuite/cli",
-          "paragraph": "GitHub 产品方向｜GitHub 上的 `larksuite/cli` 提供了 The official Lark/Feishu CLI tool, maintained by the larksuite team — built for humans and AI Agents. Covers core business domains including Messenger, Docs, Base, Sheets, Calendar, Mail, Tasks, Meetings, and more, with 200+ commands and 20+ AI Agent Skills.，说明这个方向正在把通用模型能力压进更明确的岗位或任务入口。",
+          "title": "HeShen-1/AI-Powered-LegalComplianceAssistant",
+          "paragraph": "GitHub 产品方向｜GitHub 上的 `HeShen-1/AI-Powered-LegalComplianceAssistant` 提供了 本项目是一个集自动化审查、智能化问答、专业化报告生成于一体的 AI 法律服务平台，旨在帮助中小企业和律师事务所提高合同审查效率，降低法律风险。平台通过先进的 AI 技术，实现了对法律文本的深度理解和分析，为用户提供精准、高效的法律合规支持。，说明这个方向正在把通用模型能力压进更明确的岗位或任务入口。",
           "source": "GitHub",
-          "url": "https://github.com/larksuite/cli",
+          "url": "https://github.com/HeShen-1/AI-Powered-LegalComplianceAssistant",
           "signal_label": "GitHub 产品方向",
-          "stars": 15847,
-          "match_score": 12,
+          "stars": 39,
+          "match_score": 15,
           "matched_terms": [
-            "mail"
+            "法律",
+            "合同审查"
           ],
           "interest_tags": [
-            "开发者工具",
-            "效率办公"
+            "法律科技"
           ],
-          "product_shape_score": 4.0,
-          "created_at": "2026-03-25T07:13:30Z",
-          "pushed_at": "2026-07-26T14:26:34Z",
-          "core_highlight": "它把飞书套件能力拆成 200+ 命令和 20+ 个 AI Agent 技能，让人类和 AI 用同一套 CLI 入口完成跨域操作，是把通用模型压进办公岗位入口的样本。",
-          "reuse_direction": "可迁移的是对办公多领域 API 的原子化命令封装与 Agent 技能定义方式，适合构建面向协作、文档等垂直场景的 ChatOps 或 AI 工作入口。",
-          "minimal_mvp": "用户输入一条自然指令“检查最近 3 天有没有人在文档里 @ 我”，系统输出“有/无”及相关文档链接和评论摘要；第一版只读飞书文档评论和 @ 数据，不做写操作和跨应用编排。",
+          "product_shape_score": 2.0,
+          "created_at": "2025-09-28T13:05:31Z",
+          "pushed_at": "2026-03-09T11:47:06Z",
+          "core_highlight": "该项目将通用大模型能力收敛为“审查-问答-报告”的闭环工作流，直接面向中小企业的合同合规岗位，比单纯调用 API 更接近可用的生产力工具。",
+          "reuse_direction": "其“多模块串联、专业报告作为交付物”的产品形态可迁移到其他垂直领域的文档审核场景，例如招投标文件或数据隐私合规审查。",
+          "minimal_mvp": "用户上传一份 PDF 合同，系统自动高亮风险条款并提供修改建议；第一版仅处理常见的劳动合同，不内置问答交互和完整报告生成。",
           "copy_generation_source": "openai"
         },
         {
-          "title": "Dicklesworthstone/mcp_agent_mail",
-          "paragraph": "GitHub 产品方向｜GitHub 上的 `Dicklesworthstone/mcp_agent_mail` 提供了 Asynchronous coordination layer for AI coding agents: identities, inboxes, searchable threads, and advisory file leases over FastMCP + Git + SQLite，说明这个方向正在把通用模型能力压进更明确的岗位或任务入口。",
+          "title": "abaiar/-LexAI",
+          "paragraph": "GitHub 产品方向｜GitHub 上的 `abaiar/-LexAI` 提供了 小理智法 AI 是一款基于大语言模型（LLM）的智能法律咨询平台，集成了法律咨询、合同审查、文书生成、合同起草、合同对比、智能校对、法律文书解读等多项 AI 法律服务。系统采用 LangChain Agent 架构，结合得理法律数据库 API 实现案例检索与法规检索，为用户提供专业、准确、有据可查的法律分析与建议。，说明这个方向正在把通用模型能力压进更明确的岗位或任务入口。",
           "source": "GitHub",
-          "url": "https://github.com/Dicklesworthstone/mcp_agent_mail",
+          "url": "https://github.com/abaiar/-LexAI",
           "signal_label": "GitHub 产品方向",
-          "stars": 2044,
-          "match_score": 11,
+          "stars": 24,
+          "match_score": 15,
           "matched_terms": [
-            "mail"
+            "法律",
+            "合同审查"
           ],
           "interest_tags": [
-            "开发者工具",
-            "知识检索/RAG",
-            "效率办公"
+            "法律 AI 工作流"
           ],
-          "product_shape_score": 4.0,
-          "created_at": "2025-10-23T03:42:36Z",
-          "pushed_at": "2026-07-20T03:07:44Z",
-          "core_highlight": "在 MCP 协议上为 AI 编程代理实现了具备身份、收件箱和可检索线索的异步协作层，用 Git 存证消息并用 SQLite 做检索，把多代理协调变得可追溯、可审计。",
-          "reuse_direction": "可迁移的是“以 Git 仓库为消息总线、文件租约防冲突”的代理间异步通信模式，适用于需要多智能体协作且要求操作留痕的本地工具链。",
-          "minimal_mvp": "用户输入两个代理角色与协作任务描述；系统基于本地 Git 仓库提供消息收件箱和简单文件锁检查，输出代理间的消息线索与被修改的文件列表；第一版仅支持一对一的文本消息传递、文件独占写锁，不处理锁冲突的自动化协商。",
+          "product_shape_score": 2.0,
+          "created_at": "2026-04-03T12:03:00Z",
+          "pushed_at": "2026-06-09T13:08:29Z",
+          "core_highlight": "将法律咨询、合同审查等多项服务收敛进一个 LangChain Agent 工作流，并接入了得理法律数据库实现有据可查的检索，是把大模型压进法律垂直场景的务实组装案例。",
+          "reuse_direction": "其“Agent 调度多任务子能力 + 领域数据库 API 工具调用”的结构，可直接迁移到金融合规、医疗问诊等需要专业知识检索与多步骤推理的行业应用中。",
+          "minimal_mvp": "用户输入一份劳动合同文本，系统输出标注了薪资、竞业限制等高风险条款的段落级风险提示及对应法条依据；第一版仅处理中文劳动合同、锁定劳动法领域、不做条款改写。",
+          "copy_generation_source": "openai"
+        }
+      ]
+    },
+    {
+      "title": "AI 应用场景 / 数据",
+      "summary": "这一组信号主要来自 social、GitHub。 当前更明确的需求是把高频重复动作沉淀成标准流程。 现有解法多依赖模板、工作流和垂直工具组合，整体仍偏零散。 可继续跟踪把零散经验收敛成稳定可复用的产品工作台。",
+      "items": [
+        {
+          "title": "需求",
+          "paragraph": "当前更明确的需求是把高频重复动作沉淀成标准流程。",
+          "source": "social",
+          "url": "https://zhuanlan.zhihu.com/p/20468570 ｜ https://www.zhihu.com/question/460427762/answer/1895672636"
+        },
+        {
+          "title": "现状",
+          "paragraph": "现有解法多依赖模板、工作流和垂直工具组合，整体仍偏零散。",
+          "source": "social",
+          "url": "https://zhuanlan.zhihu.com/p/20468570 ｜ https://www.zhihu.com/question/460427762/answer/1895672636"
+        },
+        {
+          "title": "方向跟踪",
+          "paragraph": "可继续跟踪把零散经验收敛成稳定可复用的产品工作台。",
+          "source": "synthesis",
+          "url": "https://zhuanlan.zhihu.com/p/20468570 ｜ https://www.zhihu.com/question/460427762/answer/1895672636"
+        },
+        {
+          "title": "liu463805737-collab/Phoenix-Agent-Java",
+          "paragraph": "GitHub 产品方向｜GitHub 上的 `liu463805737-collab/Phoenix-Agent-Java` 提供了 基于 Spring AI Alibaba 2.0 的企业级 Agent 平台，专注数据智能分析场景。内置多 Agent 协作机制，支持自然语言驱动的数据查询、多源异构数据汇总与 BI 报表自动生成。平台提供工具调用、记忆管理与流程编排，可对接各类数据库及数仓，实现从数据探索、异常检测到洞察输出的全链路自动化。具备可扩展插件体系和监控运维能力，适用于经营分析、运营报表、决策支持等业务，显著降低数据分析 Agent 开发门槛，提升数据价值交付效率。，说明这个方向正在把通用模型能力压进更明确的岗位或任务入口。",
+          "source": "GitHub",
+          "url": "https://github.com/liu463805737-collab/Phoenix-Agent-Java",
+          "signal_label": "GitHub 产品方向",
+          "stars": 12,
+          "match_score": 9,
+          "matched_terms": [
+            "场景"
+          ],
+          "interest_tags": [
+            "供应链分析 Agent",
+            "企业自动化工作流"
+          ],
+          "product_shape_score": 2.0,
+          "created_at": "2026-07-11T07:20:25Z",
+          "pushed_at": "2026-07-27T00:39:37Z",
+          "core_highlight": "它把自然语言直接转化为跨源数据查询与BI报表，并用多Agent协作将探索、检测到洞察输出串联成自动化链路，把数据分析岗的典型工作流做成了可部署的代理。",
+          "reuse_direction": "其“意图解析→多Agent任务分解→工具调用与记忆管理”的机制可迁移到其他需要多步骤、跨系统协调的垂直分析场景（如供应链异常排查、运营策略自动生成）。",
+          "minimal_mvp": "用户输入一句自然语言问题（如“过去7天各渠道转化率趋势”），系统输出为带图表和简要解读的BI看板；第一版只对接单数据源，支持预置的聚合、对比与趋势三类查询模板，不做跨库关联或自定义复杂指标。",
+          "copy_generation_source": "openai"
+        },
+        {
+          "title": "nmxiaowei/avue",
+          "paragraph": "GitHub 相关产品｜GitHub 上的 `nmxiaowei/avue` 提供了 Avue.js2.0是基于现有的element-ui库进行的二次封装，简化一些繁琐的操作，核心理念为数据驱动视图,主要的组件库针对table表格和form表单场景，同时衍生出更多企业常用的组件，达到高复用，容易维护和扩展的框架，同时内置了丰富了数据展示组件，让开发变得更加容易，说明这个方向已经出现可以继续拆解的产品雏形。",
+          "source": "GitHub",
+          "url": "https://github.com/nmxiaowei/avue",
+          "signal_label": "GitHub 相关产品",
+          "stars": 2301,
+          "match_score": 4,
+          "matched_terms": [
+            "场景"
+          ],
+          "interest_tags": [
+            "开发者工具"
+          ],
+          "product_shape_score": 0.0,
+          "created_at": "2018-02-17T12:31:52Z",
+          "pushed_at": "2026-07-09T13:15:13Z",
+          "core_highlight": "该项目通过数据驱动视图的方式对 Element UI 进行二次封装，将高频使用的表格与表单开发模式固化为可复用的组件，降低了中后台系统的重复编码成本。",
+          "reuse_direction": "可迁移其「配置式渲染」机制：用 JSON 结构描述列定义、校验规则与交互行为，自动生成交互完备的表格和表单，适合在同类 UI 库上复现。",
+          "minimal_mvp": "用户输入一组字段的 JSON 配置（名称、类型、是否必填），系统实时渲染出一个可交互的表单；第一版仅支持文本、数字、单选框三种控件，并能将提交数据以只读表格展示，暂不处理多步表单、联动逻辑与自定义校验。",
           "copy_generation_source": "openai"
         }
       ]
     },
     {
       "title": "教育 AI 辅导",
-      "summary": "这一组信号主要来自 xiaohongshu、GitHub，核心观察是教师端AI需求正从备课、授课延伸到批改和评估，但工具高度分散且基本入口模糊，同时极客侧已出现苏格拉底式教学和教学评估脚本等专用尝试。",
+      "summary": "这一组信号主要来自 zhihu、GitHub，核心观察是教师对备课减负有刚性需求，当前解法以多重单点AI工具组合为主，尚未出现集成文档理解、课件生成与互动教学设计的一站式产品。",
       "items": [
         {
           "title": "需求",
-          "paragraph": "教师需要把教材内容一键生成可直接用于课堂的PPT和讲解视频，并自动处理教案编写、课堂流程排布和作业批改。",
+          "paragraph": "教师需要把长文档、教材章节快速提炼为可直接使用的教案大纲、PPT课件和批量期末评语，以减少机械性备课耗时。",
           "source": "social",
-          "url": "https://www.xiaohongshu.com/search_result/68d88c1a000000001202ed47?xsec_token=ABKesJTxtDYowYitOT0Y3nPBpBfmRwjmGzrpPc3eoM6PU=&xsec_source= ｜ https://www.xiaohongshu.com/search_result/6895d48800000000050070a9?xsec_token=ABiWCehX4i2yqnkOtr5CHAKGLBAxjgDiKHwnvgUVXqmcI=&xsec_source="
+          "url": "https://zhuanlan.zhihu.com/p/700559546 ｜ https://www.zhihu.com/question/553695426/answer/2674627371"
         },
         {
           "title": "现状",
-          "paragraph": "教师群体目前通过小红书上的工具清单贴片式拼凑多个AI应用，讨论焦点集中在如何找到工具、区分App与网页入口。",
+          "paragraph": "目前教师群体主要采用组合工具链的方式，用AI阅读总结工具（如包阅AI）处理长文档、用Gamma将Word文案自动生成PPT、用ChatGPT对话撰写教案，多为单点功能拼接。",
           "source": "social",
-          "url": "https://www.xiaohongshu.com/search_result/68d88c1a000000001202ed47?xsec_token=ABKesJTxtDYowYitOT0Y3nPBpBfmRwjmGzrpPc3eoM6PU=&xsec_source= ｜ https://www.xiaohongshu.com/search_result/6895d48800000000050070a9?xsec_token=ABiWCehX4i2yqnkOtr5CHAKGLBAxjgDiKHwnvgUVXqmcI=&xsec_source="
+          "url": "https://zhuanlan.zhihu.com/p/700559546 ｜ https://www.zhihu.com/question/553695426/answer/2674627371"
         },
         {
           "title": "方向跟踪",
-          "paragraph": "从命令行苏格拉底式教学工具到教学评估一键脚本，产品方向正走向将AI嵌入特定教学交互和行政评估的微型工具。",
+          "paragraph": "值得跟踪把苏格拉底式提问机制嵌入备课工具，实现以问题驱动生成教学对话和互动设计，并探索教学行政任务（如评教）的一键自动化。",
           "source": "synthesis",
-          "url": "https://www.xiaohongshu.com/search_result/68d88c1a000000001202ed47?xsec_token=ABKesJTxtDYowYitOT0Y3nPBpBfmRwjmGzrpPc3eoM6PU=&xsec_source= ｜ https://www.xiaohongshu.com/search_result/6895d48800000000050070a9?xsec_token=ABiWCehX4i2yqnkOtr5CHAKGLBAxjgDiKHwnvgUVXqmcI=&xsec_source="
+          "url": "https://zhuanlan.zhihu.com/p/700559546 ｜ https://www.zhihu.com/question/553695426/answer/2674627371"
         },
         {
           "title": "Haaaiawd/Socrate",
@@ -1016,9 +1174,9 @@
           "product_shape_score": 2.0,
           "created_at": "2025-10-29T14:11:25Z",
           "pushed_at": "2025-11-11T01:44:27Z",
-          "core_highlight": "将通用大模型的能力压缩进苏格拉底提问范式的 CLI 工具，让开发者通过被追问而非听讲来检验理解，形式比通用聊天更聚焦于认知自查。",
-          "reuse_direction": "内置“只提问、不直接给答案”的对话状态机与提问策略模板，可直接迁移到客服培训、面试模拟或诊断式用户引导场景。",
-          "minimal_mvp": "用户输入一个需要理解的技术概念（如“闭包”），系统以 CLI 连续反问的方式促使用户用自己的话解释，首版只处理计算机科学基础概念的 5 轮追问链，不接知识库，不评价对错，仅输出提问序列并记录回答。",
+          "core_highlight": "将通用大模型的能力收束进一个只追问不直接讲课的 CLI 工具里，用苏格拉底式对话把 AI 从答案生成器变成思考教练，这在教育工具里切口极轻却体验差异明显。",
+          "reuse_direction": "可迁移的是它“禁止直接给答案，必须用引导式提问推进”的对话协议，这种模式能复用到以理解而非信息检索为目的的客服引导、需求澄清或诊断式对话产品中。",
+          "minimal_mvp": "用户在终端输入一个待理解的概念（如“闭包”），系统返回一个紧贴概念的反问而不是解释，第一版仅维持一个提问-回答的单轮循环和单主题对话上下文，不接入文档检索和答案兜底。",
           "copy_generation_source": "openai"
         },
         {
@@ -1036,80 +1194,9 @@
           "product_shape_score": 2.0,
           "created_at": "2025-06-09T03:07:54Z",
           "pushed_at": "2025-06-09T03:54:58Z",
-          "core_highlight": "该项目把 Copilot 生成的代码直接落地为吉林大学教学评估的可用脚本，验证了通用模型在特定教务场景下“能跑”的边界，比原型更真、比产品更糙，却恰好踩中了 AI 编码从炫技到任务入口的过渡节点。",
-          "reuse_direction": "可迁移的是“通用模型+固定流程脚本”的微产品形态：用自然语言描述一套重复性表单操作，生成一键完成脚本，复用思路在于把任何高频、标准化、低决策的后台填报流程都封装成此类可执行文件。",
-          "minimal_mvp": "做一个仅支持单一教务系统、单一评估模板的网页工具：用户粘贴登录Cookie和学期代码，系统返回评估完成的截图或状态列表；第一版只处理评分题（跳过主观填空），不做账号管理，不保存任何数据，确保一次粘贴、一次执行。",
-          "copy_generation_source": "openai"
-        }
-      ]
-    },
-    {
-      "title": "企业自动化工作流",
-      "summary": "这一组信号主要来自 social、GitHub。 当前更明确的需求是把高频重复动作沉淀成标准流程。 现有解法多依赖模板、工作流和垂直工具组合，整体仍偏零散。 可继续跟踪把零散经验收敛成稳定可复用的产品工作台。",
-      "items": [
-        {
-          "title": "需求",
-          "paragraph": "当前更明确的需求是把高频重复动作沉淀成标准流程。",
-          "source": "social",
-          "url": "https://www.xiaohongshu.com/search_result/6a33ab91000000001102cb27?xsec_token=ABFpW1BFiKNBCiwKrwLXYWAJJpuP8ReOhgRH_jXeppNbQ=&xsec_source= ｜ https://www.xiaohongshu.com/search_result/6a4b614f0000000011011c10?xsec_token=AB8ym_3VIRBT-XwyoWvFfVe3Nt-sc_UVnRxY0wkc8uiA4=&xsec_source="
-        },
-        {
-          "title": "现状",
-          "paragraph": "现有解法多依赖模板、工作流和垂直工具组合，整体仍偏零散。",
-          "source": "social",
-          "url": "https://www.xiaohongshu.com/search_result/6a33ab91000000001102cb27?xsec_token=ABFpW1BFiKNBCiwKrwLXYWAJJpuP8ReOhgRH_jXeppNbQ=&xsec_source= ｜ https://www.xiaohongshu.com/search_result/6a4b614f0000000011011c10?xsec_token=AB8ym_3VIRBT-XwyoWvFfVe3Nt-sc_UVnRxY0wkc8uiA4=&xsec_source="
-        },
-        {
-          "title": "方向跟踪",
-          "paragraph": "可继续跟踪把零散经验收敛成稳定可复用的产品工作台。",
-          "source": "synthesis",
-          "url": "https://www.xiaohongshu.com/search_result/6a33ab91000000001102cb27?xsec_token=ABFpW1BFiKNBCiwKrwLXYWAJJpuP8ReOhgRH_jXeppNbQ=&xsec_source= ｜ https://www.xiaohongshu.com/search_result/6a4b614f0000000011011c10?xsec_token=AB8ym_3VIRBT-XwyoWvFfVe3Nt-sc_UVnRxY0wkc8uiA4=&xsec_source="
-        },
-        {
-          "title": "liu463805737-collab/Phoenix-Agent-Java",
-          "paragraph": "GitHub 产品方向｜GitHub 上的 `liu463805737-collab/Phoenix-Agent-Java` 提供了 基于 Spring AI Alibaba 2.0 的企业级 Agent 平台，专注数据智能分析场景。内置多 Agent 协作机制，支持自然语言驱动的数据查询、多源异构数据汇总与 BI 报表自动生成。平台提供工具调用、记忆管理与流程编排，可对接各类数据库及数仓，实现从数据探索、异常检测到洞察输出的全链路自动化。具备可扩展插件体系和监控运维能力，适用于经营分析、运营报表、决策支持等业务，显著降低数据分析 Agent 开发门槛，提升数据价值交付效率。，说明这个方向正在把通用模型能力压进更明确的岗位或任务入口。",
-          "source": "GitHub",
-          "url": "https://github.com/liu463805737-collab/Phoenix-Agent-Java",
-          "signal_label": "GitHub 产品方向",
-          "stars": 12,
-          "match_score": 13,
-          "matched_terms": [
-            "企业",
-            "流程"
-          ],
-          "interest_tags": [
-            "供应链分析 Agent",
-            "企业自动化工作流"
-          ],
-          "product_shape_score": 2.0,
-          "created_at": "2026-07-11T07:20:25Z",
-          "pushed_at": "2026-07-27T00:39:37Z",
-          "core_highlight": "该项目把 Spring AI Alibaba 2.0 的 Agent 能力直接压进数据分析岗位，不是框架玩具，而是内置多 Agent 协作、记忆与工具编排的企业级分析平台。",
-          "reuse_direction": "可迁移的是“自然语言问题 → 多源数据自动汇总 → BI 报表产出”的 Agent 编排机制，尤其是其对接数据库/数仓的工具调用链与记忆管理。",
-          "minimal_mvp": "用户输入“上个月各区域销售额同比变化”，系统自动查询单数据源（如 MySQL）、按预设模板生成可视化报表并输出结论摘要；第一版仅打通一条数据管道，不做跨源汇总和异常检测，Agent 协作退化为单 Agent 串行工具调用。",
-          "copy_generation_source": "openai"
-        },
-        {
-          "title": "wuruiwurui/OpenAgentFlow",
-          "paragraph": "GitHub 工作流解法｜GitHub 上的 `wuruiwurui/OpenAgentFlow` 提供了 Java AI Agent, Spring Boot 3, Vue3, RAG, Tool Calling, MCP, LLM, OpenAI-compatible, Milvus, MySQL, Redis, Workflow, Trace, Evaluation, Cost Governance. OpenAgentFlow-Java 是开源 Java AI Agent 工作流平台，核心链路自研，支持智能体编排、知识库问答、文档切片、向量检索、工具调用、MCP 接入、可视化工作流、运行追踪、模型评测、Token 统计、成本治理和企业级二次开发。，说明这个方向已经开始把人工分析或执行步骤压缩成可复用流程。",
-          "source": "GitHub",
-          "url": "https://github.com/wuruiwurui/OpenAgentFlow",
-          "signal_label": "GitHub 工作流解法",
-          "stars": 18,
-          "match_score": 10,
-          "matched_terms": [
-            "企业"
-          ],
-          "interest_tags": [
-            "工作流自动化",
-            "知识检索/RAG"
-          ],
-          "product_shape_score": 10.0,
-          "created_at": "2026-06-23T03:52:05Z",
-          "pushed_at": "2026-07-24T07:56:34Z",
-          "core_highlight": "该项目将智能体编排、RAG、工具调用与成本治理等AI工作流能力整合为可二次开发的Java平台，展示了自研工作流引擎在企业级AI应用中的完整落地实践。",
-          "reuse_direction": "可迁移的是其“可视化工作流编排 + 模型评测与Token成本统计”的产品形态，适合需要精细管控AI链路与开销的业务系统直接参考。",
-          "minimal_mvp": "用户输入自然语言问题，系统基于预设的文档切片和Milvus向量检索返回 RAG 答案，并统计该次调用的Token消耗；第一版边界限定为单轮问答，不包含多步骤编排、工具调用及MCP接入。",
+          "core_highlight": "一个完全由 Copilot 生成的脚本，能在真实的高校评教系统里跑通，说明 AI 辅助开发已从 Demo 走进具体、琐碎的机构任务，低门槛到可复制。",
+          "reuse_direction": "将通用模型能力封装为面向特定机构流程（如评教、填表）的自动化脚本，这种“自然语言需求→可运行代码”的交付形态，可直接迁移到其他高校或企业内周期性、规则固定的重复填报任务上。",
+          "minimal_mvp": "用户输入学号、密码并选择评教模板（如全优）；系统自动登录选课平台，逐项完成所有课程的教学评估；第一版仅适配吉林大学2025年6月评教界面，不做验证码识别与跨校适配。",
           "copy_generation_source": "openai"
         }
       ]
@@ -1118,10 +1205,10 @@
   "repo_url": "https://github.com/Xuanqi-Zhou/ai-product-idea-radar",
   "h5": {
     "enabled": true,
-    "entry_url": "http://devbox.xuanqi-zhou.devbox.in.chaitin.net:8088/briefings/2026-07-27/",
+    "entry_url": "http://devbox.xuanqi-zhou.devbox.in.chaitin.net:8089/briefings/2026-07-27",
     "site_base_path": "/",
-    "public_base_url": "http://devbox.xuanqi-zhou.devbox.in.chaitin.net:8088",
+    "public_base_url": "http://devbox.xuanqi-zhou.devbox.in.chaitin.net:8089",
     "deployed_to": "",
-    "generated_output": "/Users/zhouxuanqi/agent-compose-runtime/ai-app-idea-radar-v4/AI-idea-rader V4/site-dist"
+    "generated_output": "/Users/zhouxuanqi/agent-compose-runtime/ai-app-idea-radar-v4-2/AI-idea-rader V4.1/site-dist"
   }
 }
