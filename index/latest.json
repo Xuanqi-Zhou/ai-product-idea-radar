@@ -1,229 +1,16 @@
 {
-  "version": "v4",
-  "source": "AI-idea-rader V4.2",
-  "generated_at": "2026-07-30T10:52:42",
-  "date_key": "2026-07-30",
-  "date_title": "2026年07月30日",
-  "briefing_path": "briefings/2026-07-30.md",
-  "ideas_path": "ideas/2026-07-30.md",
+  "version": "v5.1",
+  "source": "AI-idea-rader V5.1",
+  "generated_at": "2026-07-31T10:54:33",
+  "date_key": "2026-07-31",
+  "date_title": "2026年07月31日",
+  "briefing_path": "briefings/2026-07-31.md",
+  "ideas_path": "ideas/2026-07-31.md",
   "briefing": {
     "version": "v5",
-    "date_key": "2026-07-30",
-    "date_title": "2026年07月30日",
-    "high_potential_items": [
-      {
-        "title": "ayghri/i-have-adhd",
-        "full_name": "ayghri/i-have-adhd",
-        "url": "https://github.com/ayghri/i-have-adhd",
-        "source_type": "github",
-        "source_layer": "discovery",
-        "repo_id": 1238120057,
-        "owner": "ayghri",
-        "name": "i-have-adhd",
-        "summary": "A skill for your coding agent to stop it from burying the answer. ADHD-friendly output.",
-        "interest_tags": [
-          "开发者工具",
-          "效率办公"
-        ],
-        "domain_tags": [],
-        "tool_tags": [],
-        "mechanism_tags": [],
-        "highlight_one_liner": "编程代理直给答案，不埋藏",
-        "highlight_keywords": [
-          "编程代理",
-          "答案前置",
-          "ADHD友好",
-          "防信息淹没"
-        ],
-        "reuse_direction": "将 AI 编程代理的输出重构成以最终答案为先导、支持一键收起推理过程的结构，降低注意力碎片化带来的信息检索成本。",
-        "minimal_mvp": "为 Claude Code 添加一个 skill，使代理回复时优先展示解决方案摘要，并将详细步骤默认折叠。",
-        "selection_reason": "项目仍处在较新的验证窗口；GitHub Trending 周榜显示本周新增热度约 5544；已有较强社区验证",
-        "is_revisit": false,
-        "revisit_reason": "",
-        "score": 238.65,
-        "rank_score": 95.44,
-        "stars_total": 13578,
-        "stars_7d": 5544,
-        "stars_30d": null,
-        "forks_total": 717,
-        "watchers_total": null,
-        "created_at": "2026-05-13T20:42:06Z",
-        "pushed_at": "2026-07-28T17:41:32Z",
-        "updated_at": "2026-07-30T02:45:54Z",
-        "topics": [
-          "adhd",
-          "claude-",
-          "claude-code-plugin",
-          "claude-skills",
-          "developer-tools",
-          "productivity"
-        ],
-        "copy_generation_source": "openai_v5",
-        "copy_prompt_version": "openai_compact_v4"
-      },
-      {
-        "title": "alibaba/open-code-review",
-        "full_name": "alibaba/open-code-review",
-        "url": "https://github.com/alibaba/open-code-review",
-        "source_type": "github",
-        "source_layer": "discovery",
-        "repo_id": 1241960226,
-        "owner": "alibaba",
-        "name": "open-code-review",
-        "summary": "Open-source & free — Battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in fine-tuned ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
-        "interest_tags": [
-          "工作流自动化"
-        ],
-        "domain_tags": [],
-        "tool_tags": [],
-        "mechanism_tags": [],
-        "highlight_one_liner": "产线级规则+LLM Agent混判，直接落行级评论",
-        "highlight_keywords": [
-          "产线验证规则集",
-          "管道+智能体混合架构",
-          "行级精准评论",
-          "开箱即用安全规则"
-        ],
-        "reuse_direction": "做代码审查助手时，通过内置经过实战打磨的安全规则引擎先行硬过滤，再用LLM处理复杂语义，能在成本和精度之间找到更可靠的平衡。",
-        "minimal_mvp": "先用内置的NPE、线程安全、XSS、SQL注入规则对Java项目做一次全量扫描，生成行级评论作为首版。",
-        "selection_reason": "项目仍处在较新的验证窗口；GitHub Trending 周榜显示本周新增热度约 4875；已有较强社区验证",
-        "is_revisit": false,
-        "revisit_reason": "",
-        "score": 243.05,
-        "rank_score": 88.75,
-        "stars_total": 16094,
-        "stars_7d": 4875,
-        "stars_30d": null,
-        "forks_total": 1084,
-        "watchers_total": null,
-        "created_at": "2026-05-18T02:16:36Z",
-        "pushed_at": "2026-07-29T20:35:52Z",
-        "updated_at": "2026-07-30T02:45:50Z",
-        "topics": [
-          "agent",
-          "agent-skills",
-          "code-review",
-          "code-review-assistant",
-          "harness",
-          "repository-level-context"
-        ],
-        "copy_generation_source": "openai_v5",
-        "copy_prompt_version": "openai_compact_v4"
-      },
-      {
-        "title": "citrolabs/ego-lite",
-        "full_name": "citrolabs/ego-lite",
-        "url": "https://github.com/citrolabs/ego-lite",
-        "source_type": "github",
-        "source_layer": "discovery",
-        "repo_id": 1212503250,
-        "owner": "citrolabs",
-        "name": "ego-lite",
-        "summary": "The fastest browser for AI agents to run browser automation, built for sharing your logged-in browser state with your AI agents, like Codex or Claude Code, without disturbing you. Zero cost, zero config.",
-        "interest_tags": [
-          "开发者工具",
-          "工作流自动化",
-          "浏览器自动化"
-        ],
-        "domain_tags": [],
-        "tool_tags": [],
-        "mechanism_tags": [],
-        "highlight_one_liner": "共享登录态，零配置AI代驾",
-        "highlight_keywords": [
-          "浏览器状态共享",
-          "零配置",
-          "AI代理不打扰",
-          "登录态直通"
-        ],
-        "reuse_direction": "最值得借鉴的方向是：用一个极薄的适配层，把用户已登录的真实浏览器会话直接映射给AI代理执行自动化操作，全程无感、不用重复登录，也不打断用户当前的浏览。",
-        "minimal_mvp": "第一版先做一个浏览器扩展，能把当前标签页的登录状态快照给到Claude Code或Codex这类代理，让它在一个隔离的沙箱里执行点击、填表等动作，但不影响用户正在看的页面。",
-        "selection_reason": "项目仍处在较新的验证窗口；GitHub Trending 周榜显示本周新增热度约 4863；已有较强社区验证",
-        "is_revisit": false,
-        "revisit_reason": "",
-        "score": 244.6317,
-        "rank_score": 88.63,
-        "stars_total": 6065,
-        "stars_7d": 4863,
-        "stars_30d": null,
-        "forks_total": 303,
-        "watchers_total": null,
-        "created_at": "2026-04-16T12:51:09Z",
-        "pushed_at": "2026-07-29T12:17:20Z",
-        "updated_at": "2026-07-30T02:42:40Z",
-        "topics": [
-          "agent-skills",
-          "ai-agent",
-          "automation",
-          "browser",
-          "browser-automation",
-          "claude-code",
-          "codex",
-          "hermes-agent",
-          "skills",
-          "skills-sh"
-        ],
-        "copy_generation_source": "openai_v5",
-        "copy_prompt_version": "openai_compact_v4"
-      },
-      {
-        "title": "RyanCodrai/turbovec",
-        "full_name": "ryancodrai/turbovec",
-        "url": "https://github.com/RyanCodrai/turbovec",
-        "source_type": "github",
-        "source_layer": "discovery",
-        "repo_id": 1192555574,
-        "owner": "ryancodrai",
-        "name": "turbovec",
-        "summary": "A vector index built on TurboQuant, written in Rust with Python bindings",
-        "interest_tags": [
-          "知识检索/RAG"
-        ],
-        "domain_tags": [],
-        "tool_tags": [],
-        "mechanism_tags": [],
-        "highlight_one_liner": "TurboQuant驱动的极速量化向量索引",
-        "highlight_keywords": [
-          "TurboQuant",
-          "量化压缩",
-          "SIMD加速",
-          "Python绑定"
-        ],
-        "reuse_direction": "在为大规模嵌入检索构建内存敏感、延迟低的服务时，可以借鉴其基于TurboQuant的量化索引设计，用Rust核心加Python包的方式兼顾压缩率和检索速度。",
-        "minimal_mvp": "提供一个Python包，内部调用Rust实现的TurboQuant索引，支持把任意向量数组写入索引并执行近似最近邻查询，返回距离最小的top-k结果。",
-        "selection_reason": "项目仍处在较新的验证窗口；GitHub Trending 周榜显示本周新增热度约 810；已有较强社区验证",
-        "is_revisit": false,
-        "revisit_reason": "",
-        "score": 235.85,
-        "rank_score": 48.1,
-        "stars_total": 14501,
-        "stars_7d": 810,
-        "stars_30d": null,
-        "forks_total": 1284,
-        "watchers_total": null,
-        "created_at": "2026-03-26T10:32:44Z",
-        "pushed_at": "2026-07-30T02:38:37Z",
-        "updated_at": "2026-07-30T02:28:18Z",
-        "topics": [
-          "ann",
-          "avx512",
-          "embedding",
-          "embeddings",
-          "faiss",
-          "nearest-neighbor",
-          "neon",
-          "python",
-          "quant",
-          "quantization",
-          "rag",
-          "rust",
-          "simd",
-          "turboquant",
-          "vector-search"
-        ],
-        "copy_generation_source": "openai_v5",
-        "copy_prompt_version": "openai_compact_v4"
-      }
-    ],
+    "date_key": "2026-07-31",
+    "date_title": "2026年07月31日",
+    "high_potential_items": [],
     "high_potential_layers": [
       {
         "key": "dev_tool",
@@ -248,28 +35,27 @@
             "domain_tags": [],
             "tool_tags": [],
             "mechanism_tags": [],
-            "highlight_one_liner": "编程代理直给答案，不埋藏",
+            "highlight_one_liner": "AI 编程助手先出答案，别藏",
             "highlight_keywords": [
-              "编程代理",
-              "答案前置",
-              "ADHD友好",
-              "防信息淹没"
+              "直给答案",
+              "编码代理技能",
+              "ADHD 友好输出"
             ],
-            "reuse_direction": "将 AI 编程代理的输出重构成以最终答案为先导、支持一键收起推理过程的结构，降低注意力碎片化带来的信息检索成本。",
-            "minimal_mvp": "为 Claude Code 添加一个 skill，使代理回复时优先展示解决方案摘要，并将详细步骤默认折叠。",
+            "reuse_direction": "面向无法长时间集中注意力的开发者，让 AI 编码助手默认采用“结论前置、细节后置”的输出结构，避免关键代码或决策被推理过程淹没。",
+            "minimal_mvp": "为 Claude Code 做一个 skill，强制它每次回复时，先在消息顶部用代码块给出最直接的实现方案，再提供解释说明。",
             "selection_reason": "项目仍处在较新的验证窗口；GitHub Trending 周榜显示本周新增热度约 5544；已有较强社区验证",
             "is_revisit": false,
             "revisit_reason": "",
             "score": 238.65,
             "rank_score": 95.44,
-            "stars_total": 13578,
+            "stars_total": 13795,
             "stars_7d": 5544,
             "stars_30d": null,
-            "forks_total": 717,
+            "forks_total": 734,
             "watchers_total": null,
             "created_at": "2026-05-13T20:42:06Z",
             "pushed_at": "2026-07-28T17:41:32Z",
-            "updated_at": "2026-07-30T02:45:54Z",
+            "updated_at": "2026-07-30T09:04:52Z",
             "topics": [
               "adhd",
               "claude-",
@@ -282,45 +68,55 @@
             "copy_prompt_version": "openai_compact_v4"
           },
           {
-            "title": "oblien/openship",
-            "full_name": "oblien/openship",
-            "url": "https://github.com/oblien/openship",
+            "title": "citrolabs/ego-lite",
+            "full_name": "citrolabs/ego-lite",
+            "url": "https://github.com/citrolabs/ego-lite",
             "source_type": "github",
             "source_layer": "discovery",
-            "repo_id": 1173848034,
-            "owner": "oblien",
-            "name": "openship",
-            "summary": "Self-hosted deployment platform",
-            "interest_tags": [],
+            "repo_id": 1212503250,
+            "owner": "citrolabs",
+            "name": "ego-lite",
+            "summary": "The fastest browser for AI agents to run browser automation, built for sharing your logged-in browser state with your AI agents, like Codex or Claude Code, without disturbing you. Zero cost, zero config.",
+            "interest_tags": [
+              "开发者工具",
+              "工作流自动化",
+              "浏览器自动化"
+            ],
             "domain_tags": [],
             "tool_tags": [],
             "mechanism_tags": [],
-            "highlight_one_liner": "7天狂揽5.8k星的自托管AI部署",
+            "highlight_one_liner": "不打扰你的AI代理浏览器",
             "highlight_keywords": [
-              "自托管AI",
-              "智能体部署",
-              "私有服务器"
+              "共享登录态",
+              "免打扰",
+              "零配置"
             ],
-            "reuse_direction": "把AI智能体的自托管一键部署能力，以独立模块的形式嵌入到开发者工具链或AI编排平台中。",
-            "minimal_mvp": "先做一个通过输入仓库地址，在用户自己的机器上自动构建并跑起AI代理Web服务的最简流程。",
-            "selection_reason": "项目仍处在较新的验证窗口；GitHub Trending 周榜显示本周新增热度约 2743；已有较强社区验证",
+            "reuse_direction": "面向AI代理的浏览器自动化可借鉴‘隐身共享登录态’方案，将用户认证状态安全注入独立浏览器实例，实现代理操作不争抢焦点、不打断用户正常使用。",
+            "minimal_mvp": "打包一个Chromium内核，启动时自动读取用户现有浏览器Profile以获取登录态，并开放DevTools协议端口供AI代理操控。",
+            "selection_reason": "项目仍处在较新的验证窗口；GitHub Trending 周榜显示本周新增热度约 4863；已有较强社区验证",
             "is_revisit": false,
             "revisit_reason": "",
-            "score": 242.45,
-            "rank_score": 67.43,
-            "stars_total": 9761,
-            "stars_7d": 2743,
+            "score": 244.6362,
+            "rank_score": 88.63,
+            "stars_total": 6210,
+            "stars_7d": 4863,
             "stars_30d": null,
-            "forks_total": 772,
+            "forks_total": 305,
             "watchers_total": null,
-            "created_at": "2026-03-05T20:16:56Z",
-            "pushed_at": "2026-07-30T02:16:16Z",
-            "updated_at": "2026-07-30T02:47:19Z",
+            "created_at": "2026-04-16T12:51:09Z",
+            "pushed_at": "2026-07-30T08:50:12Z",
+            "updated_at": "2026-07-30T09:02:24Z",
             "topics": [
-              "agents",
-              "ai",
-              "deployments",
-              "self-hosted"
+              "agent-skills",
+              "ai-agent",
+              "automation",
+              "browser",
+              "browser-automation",
+              "claude-code",
+              "codex",
+              "hermes-agent",
+              "skills",
+              "skills-sh"
             ],
             "copy_generation_source": "openai_v5",
             "copy_prompt_version": "openai_compact_v4"
@@ -344,7 +140,7 @@
             "knowledge_intro_seed": "系统讲解 AI Agent 的设计原理、上下文工程、记忆机制与多 Agent 协作，并配有整书内容、PDF 与按章代码。",
             "knowledge_priority": 130,
             "knowledge_source": "knowledge_hub_config",
-            "knowledge_intro": "覆盖 AI Agent 的设计原理、上下文工程、记忆机制与多 Agent 协作的系统性学习入口，适合构建从单 Agent 到多 Agent 系统的基础认知体系，并配有全书内容、PDF 与章节代码"
+            "knowledge_intro": "本开源书系统覆盖 AI Agent 的设计原理、上下文工程、记忆机制与多 Agent 协作，适合补足从单体推理到协作式智能体的完整知识链条"
           },
           {
             "title": "Codex 橙皮书",
@@ -356,34 +152,7 @@
             "knowledge_intro_seed": "围绕 Codex 的使用方法、工作流组织与实战案例做成系统教程，适合作为 AI 编程与 agent 开发的连续学习入口。",
             "knowledge_priority": 126,
             "knowledge_source": "knowledge_hub_config",
-            "knowledge_intro": "一本系统整理的 Codex 实战手册，覆盖从基础用法、工作流组织到真实场景案例的连续学习路径，适合需要补齐 AI 编程与 agent 开发全套方法的学习者"
-          },
-          {
-            "title": "教育 AI 辅导",
-            "url": "https://zhuanlan.zhihu.com/p/700559546",
-            "source_label": "社媒 / 知乎",
-            "summary": "这一组信号主要来自 zhihu，教师在备课上的核心诉求是把阅读材料、制作课件和写教案等任务交给AI，但现有方案仍是多个单点工具拼凑，缺少能适应课程高频变化的一体化备课产品。",
-            "knowledge_type": "理念",
-            "knowledge_one_liner": "这一组信号主要来自 zhihu，教师在备课上的核心诉求是把阅读材料、制作课件和写教案等任务交给AI，但现有方案仍是多个单点工具拼凑，缺少能适应课程高频变化的一体化备课产品。",
-            "knowledge_summary": "这一组信号主要来自 zhihu，教师在备课上的核心诉求是把阅读材料、制作课件和写教案等任务交给AI，但现有方案仍是多个单点工具拼凑，缺少能适应课程高频变化的一体化备课产品。",
-            "knowledge_keywords": [
-              "教育 AI 辅导",
-              "这一组信号主要来自",
-              "zhihu",
-              "教师在备课上的核心诉求是"
-            ],
-            "knowledge_significance": "可以跟踪的方向是：面向课程内容常换的教师，提供能一键从教材摘要生成对应课件和教案、并保留可复用的备课记忆的智能适配工具。",
-            "knowledge_reason": "可以跟踪的方向是：面向课程内容常换的教师，提供能一键从教材摘要生成对应课件和教案、并保留可复用的备课记忆的智能适配工具。",
-            "knowledge_takeaway": "可以跟踪的方向是：面向课程内容常换的教师，提供能一键从教材摘要生成对应课件和教案、并保留可复用的备课记忆的智能适配工具。",
-            "knowledge_intro_seed": "这一组信号主要来自 zhihu，教师在备课上的核心诉求是把阅读材料、制作课件和写教案等任务交给AI，但现有方案仍是多个单点工具拼凑，缺少能适应课程高频变化的一体化备课产品",
-            "interest_tags": [
-              "教育 AI 辅导"
-            ],
-            "knowledge_priority": 95,
-            "knowledge_source": "observation",
-            "knowledge_label": "Plus",
-            "knowledge_variant": "plus",
-            "knowledge_intro": "这份补充阅读从知乎信号中提炼出教师用 AI 处理阅读材料、课件与教案的真实诉求，并揭示了当前单点工具拼凑、缺乏一体化备课产品的现状，适合补足教育 AI 在教学准备环节工程化落地的需求认知"
+            "knowledge_intro": "围绕 Codex 的使用方法、工作流组织与实战案例展开，适合系统性补足 AI 编程与 agent 开发的实践知识"
           }
         ],
         "groups": []
@@ -395,161 +164,90 @@
         "empty_text": "今日暂无新增产品型对象。",
         "items": [
           {
-            "title": "alibaba/open-code-review",
-            "full_name": "alibaba/open-code-review",
-            "url": "https://github.com/alibaba/open-code-review",
-            "source_type": "high_potential",
-            "source_layer": "discovery",
-            "repo_id": 1241960226,
-            "owner": "alibaba",
-            "name": "open-code-review",
-            "summary": "Open-source & free — Battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in fine-tuned ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
-            "interest_tags": [
-              "工作流自动化"
+            "title": "cso1z/Feishu-MCP",
+            "url": "https://github.com/cso1z/Feishu-MCP",
+            "website_url": "",
+            "summary": "",
+            "description": "",
+            "source_label": "GitHub",
+            "heat_line": "🌟715",
+            "tags": [
+              "AI 任务管理",
+              "开发者工具"
             ],
-            "domain_tags": [],
+            "interest_tags": [
+              "AI 任务管理",
+              "开发者工具"
+            ],
             "tool_tags": [],
             "mechanism_tags": [],
-            "highlight_one_liner": "产线级规则+LLM Agent混判，直接落行级评论",
+            "highlight_one_liner": "Feishu / Lark 飞书文档与任务管理工具，支持 MCP 服务器和 CLI + Skill 两种使用方式，可无缝集成 Cursor、Claude Code、Cline 等 AI 编码工具",
+            "reuse_direction": "把「AI 任务管理 / 开发者工具」封装成更明确的岗位或任务入口",
+            "minimal_mvp": "先围绕“社媒里反复出现的卡点是管理混乱又爱甩锅的领导，本质上不是在管理项目，而是在转移不确定性”做单任务 MVP，优先打通输入、执行和结果回传",
+            "source_type": "observation_product",
             "highlight_keywords": [
-              "产线验证规则集",
-              "管道+智能体混合架构",
-              "行级精准评论",
-              "开箱即用安全规则"
-            ],
-            "reuse_direction": "做代码审查助手时，通过内置经过实战打磨的安全规则引擎先行硬过滤，再用LLM处理复杂语义，能在成本和精度之间找到更可靠的平衡。",
-            "minimal_mvp": "先用内置的NPE、线程安全、XSS、SQL注入规则对Java项目做一次全量扫描，生成行级评论作为首版。",
-            "selection_reason": "项目仍处在较新的验证窗口；GitHub Trending 周榜显示本周新增热度约 4875；已有较强社区验证",
-            "is_revisit": false,
-            "revisit_reason": "",
-            "score": 243.05,
-            "rank_score": 88.75,
-            "stars_total": 16094,
-            "stars_7d": 4875,
-            "stars_30d": null,
-            "forks_total": 1084,
-            "watchers_total": null,
-            "created_at": "2026-05-18T02:16:36Z",
-            "pushed_at": "2026-07-29T20:35:52Z",
-            "updated_at": "2026-07-30T02:45:50Z",
-            "topics": [
-              "agent",
-              "agent-skills",
-              "code-review",
-              "code-review-assistant",
-              "harness",
-              "repository-level-context"
-            ],
-            "copy_generation_source": "openai_v5",
-            "copy_prompt_version": "openai_compact_v4",
-            "source_label": "GitHub",
-            "heat_line": ""
+              "AI 任务管理",
+              "开发者工具"
+            ]
           },
           {
-            "title": "RyanCodrai/turbovec",
-            "full_name": "ryancodrai/turbovec",
-            "url": "https://github.com/RyanCodrai/turbovec",
-            "source_type": "high_potential",
-            "source_layer": "discovery",
-            "repo_id": 1192555574,
-            "owner": "ryancodrai",
-            "name": "turbovec",
-            "summary": "A vector index built on TurboQuant, written in Rust with Python bindings",
-            "interest_tags": [
-              "知识检索/RAG"
+            "title": "liangdabiao/langgraph_multi-agent-rag-customer-support",
+            "url": "https://github.com/liangdabiao/langgraph_multi-agent-rag-customer-support",
+            "website_url": "",
+            "summary": "",
+            "description": "",
+            "source_label": "GitHub",
+            "heat_line": "🌟280",
+            "tags": [
+              "智能旅行助手",
+              "知识检索/RAG",
+              "多 Agent 协作"
             ],
-            "domain_tags": [],
+            "interest_tags": [
+              "智能旅行助手",
+              "知识检索/RAG",
+              "多 Agent 协作"
+            ],
             "tool_tags": [],
             "mechanism_tags": [],
-            "highlight_one_liner": "TurboQuant驱动的极速量化向量索引",
+            "highlight_one_liner": "本项目实现了一个基于多智能体（Multi-Agent）和检索增强生成（Retrieval-Augmented Generation, RAG）技术的客户支持系统。它利用 Python、LangChain 和 LangGraph 构建了一个能够处理各种旅行相关查询的对话式 AI，包括航班预订、租车、酒店预订和行程推荐。还有对接了woocommerce商城进行商",
+            "reuse_direction": "把「智能旅行助手 / 知识检索/RAG」封装成更明确的岗位或任务入口",
+            "minimal_mvp": "先围绕“社媒里反复出现的卡点是🏝️风景方面，日本景点风光比较吃天气，此次比较幸运在镰仓看到了初雪的富士山P10，但城崎海岸P13-P14却下大雨，所以没看到也没关系，尽量提前观察天气情况来计划行程”做单任务 MVP，优先打通输入、执行和结果回传",
+            "source_type": "observation_product",
             "highlight_keywords": [
-              "TurboQuant",
-              "量化压缩",
-              "SIMD加速",
-              "Python绑定"
-            ],
-            "reuse_direction": "在为大规模嵌入检索构建内存敏感、延迟低的服务时，可以借鉴其基于TurboQuant的量化索引设计，用Rust核心加Python包的方式兼顾压缩率和检索速度。",
-            "minimal_mvp": "提供一个Python包，内部调用Rust实现的TurboQuant索引，支持把任意向量数组写入索引并执行近似最近邻查询，返回距离最小的top-k结果。",
-            "selection_reason": "项目仍处在较新的验证窗口；GitHub Trending 周榜显示本周新增热度约 810；已有较强社区验证",
-            "is_revisit": false,
-            "revisit_reason": "",
-            "score": 235.85,
-            "rank_score": 48.1,
-            "stars_total": 14501,
-            "stars_7d": 810,
-            "stars_30d": null,
-            "forks_total": 1284,
-            "watchers_total": null,
-            "created_at": "2026-03-26T10:32:44Z",
-            "pushed_at": "2026-07-30T02:38:37Z",
-            "updated_at": "2026-07-30T02:28:18Z",
-            "topics": [
-              "ann",
-              "avx512",
-              "embedding",
-              "embeddings",
-              "faiss",
-              "nearest-neighbor",
-              "neon",
-              "python",
-              "quant",
-              "quantization",
-              "rag",
-              "rust",
-              "simd",
-              "turboquant",
-              "vector-search"
-            ],
-            "copy_generation_source": "openai_v5",
-            "copy_prompt_version": "openai_compact_v4",
-            "source_label": "GitHub",
-            "heat_line": ""
+              "智能旅行助手",
+              "知识检索/RAG",
+              "多 Agent 协作"
+            ]
           },
           {
-            "title": "Lev8",
-            "url": "https://www.producthunt.com/products/lev8?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai-idea-radar-v4-2+%28ID%3A+294543%29",
-            "website_url": "https://www.producthunt.com/r/IITOSI26P6BQTV?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai-idea-radar-v4-2+%28ID%3A+294543%29",
-            "summary": "Find, research, and reach the right people",
-            "description": "Chat with Lev8, the fastest way to find and reach your target people and companies, powered by live web search via parallel AI agents across every corner of the internet. Enrich CSVs with waterfall lookups, monitor intent signals, and send personalized multi-channel messages, all running automatically.",
-            "source_label": "Product Hunt",
-            "heat_line": "▲656｜💬137",
+            "title": "Dicklesworthstone/mcp_agent_mail",
+            "url": "https://github.com/Dicklesworthstone/mcp_agent_mail",
+            "website_url": "",
+            "summary": "",
+            "description": "",
+            "source_label": "GitHub",
+            "heat_line": "🌟2051",
             "tags": [
               "邮件自动化工具",
-              "工作流自动化",
-              "知识检索/RAG",
-              "销售",
-              "营销自动化",
-              "外联agent"
+              "开发者工具",
+              "知识检索/RAG"
             ],
             "interest_tags": [
               "邮件自动化工具",
-              "工作流自动化",
-              "知识检索/RAG",
-              "销售",
-              "营销自动化",
-              "外联agent"
+              "开发者工具",
+              "知识检索/RAG"
             ],
-            "tool_tags": [
-              "外联agent",
-              "线索发现工具",
-              "多渠道触达"
-            ],
-            "mechanism_tags": [
-              "并行AI代理",
-              "意图信号监控",
-              "实时网络搜索"
-            ],
-            "highlight_one_liner": "Chat with Lev8, the fastest way to find and reach your target people and companies, powered by live web search via parallel AI agents across every corner of the internet. Enrich CS",
-            "reuse_direction": "优先复用「并行AI代理 / 意图信号监控」这条能力链，把 邮件自动化工具 做成单任务工具入口",
-            "minimal_mvp": "先围绕“外贸销售需要将客户不回复后的跟进步骤自动化，让系统按报价、催单、新品通知等阶段自动发送邮件，而不是手动逐封编写”做单任务 MVP，优先打通输入、执行和结果回传",
+            "tool_tags": [],
+            "mechanism_tags": [],
+            "highlight_one_liner": "Asynchronous coordination layer for AI coding agents: identities, inboxes, searchable threads, and advisory file leases over FastMCP + Git + SQLite",
+            "reuse_direction": "把「邮件自动化工具 / 开发者工具」封装成更明确的岗位或任务入口",
+            "minimal_mvp": "先围绕“社媒里反复出现的卡点是🔥 救命！”做单任务 MVP，优先打通输入、执行和结果回传",
             "source_type": "observation_product",
             "highlight_keywords": [
               "邮件自动化工具",
-              "工作流自动化",
-              "知识检索/RAG",
-              "销售",
-              "营销自动化",
-              "外联agent"
+              "开发者工具",
+              "知识检索/RAG"
             ]
           }
         ],
@@ -561,115 +259,61 @@
             "empty_text": "今日暂无新增热门样本。",
             "items": [
               {
-                "title": "alibaba/open-code-review",
-                "full_name": "alibaba/open-code-review",
-                "url": "https://github.com/alibaba/open-code-review",
-                "source_type": "high_potential",
-                "source_layer": "discovery",
-                "repo_id": 1241960226,
-                "owner": "alibaba",
-                "name": "open-code-review",
-                "summary": "Open-source & free — Battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in fine-tuned ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
-                "interest_tags": [
-                  "工作流自动化"
+                "title": "cso1z/Feishu-MCP",
+                "url": "https://github.com/cso1z/Feishu-MCP",
+                "website_url": "",
+                "summary": "",
+                "description": "",
+                "source_label": "GitHub",
+                "heat_line": "🌟715",
+                "tags": [
+                  "AI 任务管理",
+                  "开发者工具"
                 ],
-                "domain_tags": [],
+                "interest_tags": [
+                  "AI 任务管理",
+                  "开发者工具"
+                ],
                 "tool_tags": [],
                 "mechanism_tags": [],
-                "highlight_one_liner": "产线级规则+LLM Agent混判，直接落行级评论",
+                "highlight_one_liner": "Feishu / Lark 飞书文档与任务管理工具，支持 MCP 服务器和 CLI + Skill 两种使用方式，可无缝集成 Cursor、Claude Code、Cline 等 AI 编码工具",
+                "reuse_direction": "把「AI 任务管理 / 开发者工具」封装成更明确的岗位或任务入口",
+                "minimal_mvp": "先围绕“社媒里反复出现的卡点是管理混乱又爱甩锅的领导，本质上不是在管理项目，而是在转移不确定性”做单任务 MVP，优先打通输入、执行和结果回传",
+                "source_type": "observation_product",
                 "highlight_keywords": [
-                  "产线验证规则集",
-                  "管道+智能体混合架构",
-                  "行级精准评论",
-                  "开箱即用安全规则"
-                ],
-                "reuse_direction": "做代码审查助手时，通过内置经过实战打磨的安全规则引擎先行硬过滤，再用LLM处理复杂语义，能在成本和精度之间找到更可靠的平衡。",
-                "minimal_mvp": "先用内置的NPE、线程安全、XSS、SQL注入规则对Java项目做一次全量扫描，生成行级评论作为首版。",
-                "selection_reason": "项目仍处在较新的验证窗口；GitHub Trending 周榜显示本周新增热度约 4875；已有较强社区验证",
-                "is_revisit": false,
-                "revisit_reason": "",
-                "score": 243.05,
-                "rank_score": 88.75,
-                "stars_total": 16094,
-                "stars_7d": 4875,
-                "stars_30d": null,
-                "forks_total": 1084,
-                "watchers_total": null,
-                "created_at": "2026-05-18T02:16:36Z",
-                "pushed_at": "2026-07-29T20:35:52Z",
-                "updated_at": "2026-07-30T02:45:50Z",
-                "topics": [
-                  "agent",
-                  "agent-skills",
-                  "code-review",
-                  "code-review-assistant",
-                  "harness",
-                  "repository-level-context"
-                ],
-                "copy_generation_source": "openai_v5",
-                "copy_prompt_version": "openai_compact_v4",
-                "source_label": "GitHub",
-                "heat_line": ""
+                  "AI 任务管理",
+                  "开发者工具"
+                ]
               },
               {
-                "title": "RyanCodrai/turbovec",
-                "full_name": "ryancodrai/turbovec",
-                "url": "https://github.com/RyanCodrai/turbovec",
-                "source_type": "high_potential",
-                "source_layer": "discovery",
-                "repo_id": 1192555574,
-                "owner": "ryancodrai",
-                "name": "turbovec",
-                "summary": "A vector index built on TurboQuant, written in Rust with Python bindings",
-                "interest_tags": [
-                  "知识检索/RAG"
+                "title": "liangdabiao/langgraph_multi-agent-rag-customer-support",
+                "url": "https://github.com/liangdabiao/langgraph_multi-agent-rag-customer-support",
+                "website_url": "",
+                "summary": "",
+                "description": "",
+                "source_label": "GitHub",
+                "heat_line": "🌟280",
+                "tags": [
+                  "智能旅行助手",
+                  "知识检索/RAG",
+                  "多 Agent 协作"
                 ],
-                "domain_tags": [],
+                "interest_tags": [
+                  "智能旅行助手",
+                  "知识检索/RAG",
+                  "多 Agent 协作"
+                ],
                 "tool_tags": [],
                 "mechanism_tags": [],
-                "highlight_one_liner": "TurboQuant驱动的极速量化向量索引",
+                "highlight_one_liner": "本项目实现了一个基于多智能体（Multi-Agent）和检索增强生成（Retrieval-Augmented Generation, RAG）技术的客户支持系统。它利用 Python、LangChain 和 LangGraph 构建了一个能够处理各种旅行相关查询的对话式 AI，包括航班预订、租车、酒店预订和行程推荐。还有对接了woocommerce商城进行商",
+                "reuse_direction": "把「智能旅行助手 / 知识检索/RAG」封装成更明确的岗位或任务入口",
+                "minimal_mvp": "先围绕“社媒里反复出现的卡点是🏝️风景方面，日本景点风光比较吃天气，此次比较幸运在镰仓看到了初雪的富士山P10，但城崎海岸P13-P14却下大雨，所以没看到也没关系，尽量提前观察天气情况来计划行程”做单任务 MVP，优先打通输入、执行和结果回传",
+                "source_type": "observation_product",
                 "highlight_keywords": [
-                  "TurboQuant",
-                  "量化压缩",
-                  "SIMD加速",
-                  "Python绑定"
-                ],
-                "reuse_direction": "在为大规模嵌入检索构建内存敏感、延迟低的服务时，可以借鉴其基于TurboQuant的量化索引设计，用Rust核心加Python包的方式兼顾压缩率和检索速度。",
-                "minimal_mvp": "提供一个Python包，内部调用Rust实现的TurboQuant索引，支持把任意向量数组写入索引并执行近似最近邻查询，返回距离最小的top-k结果。",
-                "selection_reason": "项目仍处在较新的验证窗口；GitHub Trending 周榜显示本周新增热度约 810；已有较强社区验证",
-                "is_revisit": false,
-                "revisit_reason": "",
-                "score": 235.85,
-                "rank_score": 48.1,
-                "stars_total": 14501,
-                "stars_7d": 810,
-                "stars_30d": null,
-                "forks_total": 1284,
-                "watchers_total": null,
-                "created_at": "2026-03-26T10:32:44Z",
-                "pushed_at": "2026-07-30T02:38:37Z",
-                "updated_at": "2026-07-30T02:28:18Z",
-                "topics": [
-                  "ann",
-                  "avx512",
-                  "embedding",
-                  "embeddings",
-                  "faiss",
-                  "nearest-neighbor",
-                  "neon",
-                  "python",
-                  "quant",
-                  "quantization",
-                  "rag",
-                  "rust",
-                  "simd",
-                  "turboquant",
-                  "vector-search"
-                ],
-                "copy_generation_source": "openai_v5",
-                "copy_prompt_version": "openai_compact_v4",
-                "source_label": "GitHub",
-                "heat_line": ""
+                  "智能旅行助手",
+                  "知识检索/RAG",
+                  "多 Agent 协作"
+                ]
               }
             ]
           },
@@ -680,50 +324,33 @@
             "empty_text": "今日暂无新增潜力样本。",
             "items": [
               {
-                "title": "Lev8",
-                "url": "https://www.producthunt.com/products/lev8?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai-idea-radar-v4-2+%28ID%3A+294543%29",
-                "website_url": "https://www.producthunt.com/r/IITOSI26P6BQTV?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai-idea-radar-v4-2+%28ID%3A+294543%29",
-                "summary": "Find, research, and reach the right people",
-                "description": "Chat with Lev8, the fastest way to find and reach your target people and companies, powered by live web search via parallel AI agents across every corner of the internet. Enrich CSVs with waterfall lookups, monitor intent signals, and send personalized multi-channel messages, all running automatically.",
-                "source_label": "Product Hunt",
-                "heat_line": "▲656｜💬137",
+                "title": "Dicklesworthstone/mcp_agent_mail",
+                "url": "https://github.com/Dicklesworthstone/mcp_agent_mail",
+                "website_url": "",
+                "summary": "",
+                "description": "",
+                "source_label": "GitHub",
+                "heat_line": "🌟2051",
                 "tags": [
                   "邮件自动化工具",
-                  "工作流自动化",
-                  "知识检索/RAG",
-                  "销售",
-                  "营销自动化",
-                  "外联agent"
+                  "开发者工具",
+                  "知识检索/RAG"
                 ],
                 "interest_tags": [
                   "邮件自动化工具",
-                  "工作流自动化",
-                  "知识检索/RAG",
-                  "销售",
-                  "营销自动化",
-                  "外联agent"
+                  "开发者工具",
+                  "知识检索/RAG"
                 ],
-                "tool_tags": [
-                  "外联agent",
-                  "线索发现工具",
-                  "多渠道触达"
-                ],
-                "mechanism_tags": [
-                  "并行AI代理",
-                  "意图信号监控",
-                  "实时网络搜索"
-                ],
-                "highlight_one_liner": "Chat with Lev8, the fastest way to find and reach your target people and companies, powered by live web search via parallel AI agents across every corner of the internet. Enrich CS",
-                "reuse_direction": "优先复用「并行AI代理 / 意图信号监控」这条能力链，把 邮件自动化工具 做成单任务工具入口",
-                "minimal_mvp": "先围绕“外贸销售需要将客户不回复后的跟进步骤自动化，让系统按报价、催单、新品通知等阶段自动发送邮件，而不是手动逐封编写”做单任务 MVP，优先打通输入、执行和结果回传",
+                "tool_tags": [],
+                "mechanism_tags": [],
+                "highlight_one_liner": "Asynchronous coordination layer for AI coding agents: identities, inboxes, searchable threads, and advisory file leases over FastMCP + Git + SQLite",
+                "reuse_direction": "把「邮件自动化工具 / 开发者工具」封装成更明确的岗位或任务入口",
+                "minimal_mvp": "先围绕“社媒里反复出现的卡点是🔥 救命！”做单任务 MVP，优先打通输入、执行和结果回传",
                 "source_type": "observation_product",
                 "highlight_keywords": [
                   "邮件自动化工具",
-                  "工作流自动化",
-                  "知识检索/RAG",
-                  "销售",
-                  "营销自动化",
-                  "外联agent"
+                  "开发者工具",
+                  "知识检索/RAG"
                 ]
               }
             ]
@@ -734,12 +361,12 @@
     "idea_items": [
       {
         "title": "AI 应用场景 / 数据",
-        "need_line": "产品经理需要一套可落地的具体方法来梳理业务全场景，明确角色、单据与完整流程，避免陷入空泛的“个人体验”和缺失技术细节的方法论",
-        "status_line": "目前大家依赖作者总结的通用流程模板，并在讨论中反复区分标准化产品与定制化产品的梳理方式，强调先确定产品类型再通过访谈输出业务流程。",
-        "direction_line": "可以围绕“需求梳理助手”方向跟踪，即能根据产品类型自动引导产品经理拆解角色、单据和流程，并生成结构化业务场景清单的工具。",
+        "need_line": "社媒里反复出现的卡点是」的问题下，总会有人苦口婆心的说：其实，产品经理不需要懂 xxx，只需要 xxx 就行了…… 这有点像如果你想知道「电影导演需要懂写剧本吗？",
+        "status_line": "现阶段大家多用产品经理核心工作流程 > 发布时间: 编辑于 2026-07-17 09:40・陕西 > 原文链接: --- 每个人、每个团队都可以有自己做产品的方法，不需要也不可能完全一样，我们总结了一个做产品的流程，为了尽量通用，保留了每一个「可能」需要的环节，也就是说，实际工作中，未必每次都需要完整覆盖流程…来推进。",
+        "direction_line": "可继续跟踪把产品经理核心工作流程 > 发布时间: 编辑于 2026-07-17 09:40・陕西 > 原文链接: --- 每个人、每个团队都可以有自己做产品的方法，不需要也不可能完全一样，我们总结了一个做产品的流程，为了尽量通用，保留了每一个「可能」需要的环节，也就是说，实际工作中，未必每次都需要完整覆盖流程…做成稳定入口。",
         "source_urls": [
           "https://zhuanlan.zhihu.com/p/20468570",
-          "https://www.zhihu.com/question/460427762/answer/1895672636"
+          "https://www.xiaohongshu.com/search_result/69d3558a000000001d01b0c8?xsec_token=ABOV3T5anbZAC7RyArapm4BIDjaVkAQE4gsjckEbEPpbM=&xsec_source="
         ],
         "source_platforms": [],
         "tags": [
@@ -748,12 +375,12 @@
       },
       {
         "title": "教育 AI 辅导",
-        "need_line": "新手教师急需将备课中的长文档阅读总结、PPT课件生成和教案撰写等环节自动化，以摆脱因课程频繁变动带来的重复性手动劳动",
-        "status_line": "目前老师们主要通过组合使用包阅AI做文档摘要与思维导图、Gamma将Word生成PPT大纲、以及ChatGPT整理教案，来拼凑出一套备课流程。",
-        "direction_line": "可以跟踪的方向是：面向课程内容常换的教师，提供能一键从教材摘要生成对应课件和教案、并保留可复用的备课记忆的智能适配工具。",
+        "need_line": "社媒里反复出现的卡点是5款教师AI工具，从此新手老师备课不求人 > 发布时间: 发布于 2024-05-29 18:16・上海 > 原文链接: --- 我有一些教师朋友经常跟我吐槽，说备课是件让他们非常头疼的事情，想让我推荐一些适合教师用的工具，尝试了20几款AI以后选出来这5个，如果你也是一名新手教师，那下面这5个A…",
+        "status_line": "现阶段大家多用读材料用包阅AI 包阅AI是一款专业的 阅读总结类工具 ，它能够一键总结200页内的文档概要，同时免费生成思维导图，这对于阅读超长资料非常有帮助来推进。",
+        "direction_line": "可继续跟踪把5款教师AI工具，从此新手老师备课不求人 > 发布时间: 发布于 2024-05-29 18:16・上海 > 原文链接: --- 我有一些教师朋友经常跟我吐槽，说备课是件让他们非常头疼的事情，想让我推荐一些适合教师用的工具，尝试了20几款AI以后选出来这5个，如果你也是一名新手教师，那下面这5个A…做成稳定入口。",
         "source_urls": [
           "https://zhuanlan.zhihu.com/p/700559546",
-          "https://www.zhihu.com/question/2024229280444347640/answer/2038139058388456850"
+          "https://www.xiaohongshu.com/search_result/6a4916d5000000000f01e19d?xsec_token=ABik6Fkiq2hiuCk57L1MvKLN1ajJr7zgwJePod3kTSKxw=&xsec_source="
         ],
         "source_platforms": [],
         "tags": [
@@ -762,12 +389,12 @@
       },
       {
         "title": "语言 AI 陪练",
-        "need_line": "用户需要一种能持续逼自己开口、针对连续表达能力给出即时反馈的练习方式，而不是只盯阅读和单词",
-        "status_line": "多数人仍停滞在归因和传统音标、朗读的 workaround 上，讨论集中在指出“重阅读轻口语”的普遍病灶，尚未出现成熟解法。",
-        "direction_line": "重点跟踪能模拟高频真实对话并纠正发音流畅度的 AI 陪练产品，把“开口难”直接转化为可度量的练习闭环。",
+        "need_line": "社媒里反复出现的卡点是今天，跟大家分享一个开源免费的工具： Enjoy ，专门帮大家解决口语练习中的各种问题",
+        "status_line": "现阶段大家多用AI 跟读训练，像有个私人教练在身边 首先来看看它的 AI 跟读功能，能够一边读一边评分，连哪个音节发音错了都能指出来来推进。",
+        "direction_line": "可继续跟踪把除此之外，我们还可以上传自己喜欢的美剧或外语视频进行口语练习做成稳定入口。",
         "source_urls": [
           "https://www.zhihu.com/question/641065475/answer/3415615067",
-          "https://www.zhihu.com/question/641065475/answer/2054519112303486147"
+          "https://zhuanlan.zhihu.com/p/2003831453235036734"
         ],
         "source_platforms": [],
         "tags": [
@@ -778,48 +405,48 @@
     "interest_sections": [
       {
         "title": "AI 应用场景 / 数据",
-        "summary": "这一组信号主要来自zhihu，核心观察是产品经理在需求梳理时普遍缺乏结合技术细节的实操方法，对能系统化拆解B端业务场景的工具需求明确。",
+        "summary": "这一组信号主要来自 zhihu、xiaohongshu；社媒里反复出现的卡点是」的问题下，总会有人苦口婆心的说：其实，产品经理不需要懂 xxx，只需要 xxx 就行了…… 这有点像如果你想知道「电影导演需要懂写剧本吗？ 现阶段大家多用产品经理核心工作流程 > 发布时间: 编辑于 2026-07-17 09:40・陕西 > 原文链接: --- 每个人、每个团队都可以有自己做产品的方法，不需要也不可能完全一样，我们总结了一个做产品的流程，为了尽量通用，保留了每一个「可能」需要的环节，也就是说，实际工作中，未必每次都需要完整覆盖流程…来推进 可继续跟踪把产品经理核心工作流程 > 发布时间: 编辑于 2026-07-17 09:40・陕西 > 原文链接: --- 每个人、每个团队都可以有自己做产品的方法，不需要也不可能完全一样，我们总结了一个做产品的流程，为了尽量通用，保留了每一个「可能」需要的环节，也就是说，实际工作中，未必每次都需要完整覆盖流程…做成稳定入口。",
         "items": [
           {
             "title": "需求",
-            "paragraph": "产品经理需要一套可落地的具体方法来梳理业务全场景，明确角色、单据与完整流程，避免陷入空泛的“个人体验”和缺失技术细节的方法论",
+            "paragraph": "社媒里反复出现的卡点是」的问题下，总会有人苦口婆心的说：其实，产品经理不需要懂 xxx，只需要 xxx 就行了…… 这有点像如果你想知道「电影导演需要懂写剧本吗？",
             "source": "social",
-            "url": "https://zhuanlan.zhihu.com/p/20468570 ｜ https://www.zhihu.com/question/460427762/answer/1895672636",
+            "url": "https://zhuanlan.zhihu.com/p/20468570 ｜ https://www.xiaohongshu.com/search_result/69d3558a000000001d01b0c8?xsec_token=ABOV3T5anbZAC7RyArapm4BIDjaVkAQE4gsjckEbEPpbM=&xsec_source=",
             "source_labels": [
               "社媒",
-              "知乎"
+              "小红书"
             ],
             "source_url_list": [
               "https://zhuanlan.zhihu.com/p/20468570",
-              "https://www.zhihu.com/question/460427762/answer/1895672636"
+              "https://www.xiaohongshu.com/search_result/69d3558a000000001d01b0c8?xsec_token=ABOV3T5anbZAC7RyArapm4BIDjaVkAQE4gsjckEbEPpbM=&xsec_source="
             ]
           },
           {
             "title": "现状",
-            "paragraph": "目前大家依赖作者总结的通用流程模板，并在讨论中反复区分标准化产品与定制化产品的梳理方式，强调先确定产品类型再通过访谈输出业务流程。",
+            "paragraph": "现阶段大家多用产品经理核心工作流程 > 发布时间: 编辑于 2026-07-17 09:40・陕西 > 原文链接: --- 每个人、每个团队都可以有自己做产品的方法，不需要也不可能完全一样，我们总结了一个做产品的流程，为了尽量通用，保留了每一个「可能」需要的环节，也就是说，实际工作中，未必每次都需要完整覆盖流程…来推进。",
             "source": "social",
-            "url": "https://zhuanlan.zhihu.com/p/20468570 ｜ https://www.zhihu.com/question/460427762/answer/1895672636",
+            "url": "https://zhuanlan.zhihu.com/p/20468570 ｜ https://www.xiaohongshu.com/search_result/69d3558a000000001d01b0c8?xsec_token=ABOV3T5anbZAC7RyArapm4BIDjaVkAQE4gsjckEbEPpbM=&xsec_source=",
             "source_labels": [
               "社媒",
-              "知乎"
+              "小红书"
             ],
             "source_url_list": [
               "https://zhuanlan.zhihu.com/p/20468570",
-              "https://www.zhihu.com/question/460427762/answer/1895672636"
+              "https://www.xiaohongshu.com/search_result/69d3558a000000001d01b0c8?xsec_token=ABOV3T5anbZAC7RyArapm4BIDjaVkAQE4gsjckEbEPpbM=&xsec_source="
             ]
           },
           {
             "title": "方向跟踪",
-            "paragraph": "可以围绕“需求梳理助手”方向跟踪，即能根据产品类型自动引导产品经理拆解角色、单据和流程，并生成结构化业务场景清单的工具。",
+            "paragraph": "可继续跟踪把产品经理核心工作流程 > 发布时间: 编辑于 2026-07-17 09:40・陕西 > 原文链接: --- 每个人、每个团队都可以有自己做产品的方法，不需要也不可能完全一样，我们总结了一个做产品的流程，为了尽量通用，保留了每一个「可能」需要的环节，也就是说，实际工作中，未必每次都需要完整覆盖流程…做成稳定入口。",
             "source": "synthesis",
-            "url": "https://zhuanlan.zhihu.com/p/20468570 ｜ https://www.zhihu.com/question/460427762/answer/1895672636",
+            "url": "https://zhuanlan.zhihu.com/p/20468570 ｜ https://www.xiaohongshu.com/search_result/69d3558a000000001d01b0c8?xsec_token=ABOV3T5anbZAC7RyArapm4BIDjaVkAQE4gsjckEbEPpbM=&xsec_source=",
             "source_labels": [
               "社媒",
-              "知乎"
+              "小红书"
             ],
             "source_url_list": [
               "https://zhuanlan.zhihu.com/p/20468570",
-              "https://www.zhihu.com/question/460427762/answer/1895672636"
+              "https://www.xiaohongshu.com/search_result/69d3558a000000001d01b0c8?xsec_token=ABOV3T5anbZAC7RyArapm4BIDjaVkAQE4gsjckEbEPpbM=&xsec_source="
             ]
           }
         ],
@@ -827,48 +454,48 @@
       },
       {
         "title": "教育 AI 辅导",
-        "summary": "这一组信号主要来自 zhihu，教师在备课上的核心诉求是把阅读材料、制作课件和写教案等任务交给AI，但现有方案仍是多个单点工具拼凑，缺少能适应课程高频变化的一体化备课产品。",
+        "summary": "这一组信号主要来自 zhihu、xiaohongshu；社媒里反复出现的卡点是5款教师AI工具，从此新手老师备课不求人 > 发布时间: 发布于 2024-05-29 18:16・上海 > 原文链接: --- 我有一些教师朋友经常跟我吐槽，说备课是件让他们非常头疼的事情，想让我推荐一些适合教师用的工具，尝试了20几款AI以后选出来这5个，如果你也是一名新手教师，那下面这5个A… 现阶段大家多用读材料用包阅AI 包阅AI是一款专业的 阅读总结类工具 ，它能够一键总结200页内的文档概要，同时免费生成思维导图，这对于阅读超长资料非常有帮助来推进 可继续跟踪把5款教师AI工具，从此新手老师备课不求人 > 发布时间: 发布于 2024-05-29 18:16・上海 > 原文链接: --- 我有一些教师朋友经常跟我吐槽，说备课是件让他们非常头疼的事情，想让我推荐一些适合教师用的工具，尝试了20几款AI以后选出来这5个，如果你也是一名新手教师，那下面这5个A…做成稳定入口。",
         "items": [
           {
             "title": "需求",
-            "paragraph": "新手教师急需将备课中的长文档阅读总结、PPT课件生成和教案撰写等环节自动化，以摆脱因课程频繁变动带来的重复性手动劳动",
+            "paragraph": "社媒里反复出现的卡点是5款教师AI工具，从此新手老师备课不求人 > 发布时间: 发布于 2024-05-29 18:16・上海 > 原文链接: --- 我有一些教师朋友经常跟我吐槽，说备课是件让他们非常头疼的事情，想让我推荐一些适合教师用的工具，尝试了20几款AI以后选出来这5个，如果你也是一名新手教师，那下面这5个A…",
             "source": "social",
-            "url": "https://zhuanlan.zhihu.com/p/700559546 ｜ https://www.zhihu.com/question/2024229280444347640/answer/2038139058388456850",
+            "url": "https://zhuanlan.zhihu.com/p/700559546 ｜ https://www.xiaohongshu.com/search_result/6a4916d5000000000f01e19d?xsec_token=ABik6Fkiq2hiuCk57L1MvKLN1ajJr7zgwJePod3kTSKxw=&xsec_source=",
             "source_labels": [
               "社媒",
-              "知乎"
+              "小红书"
             ],
             "source_url_list": [
               "https://zhuanlan.zhihu.com/p/700559546",
-              "https://www.zhihu.com/question/2024229280444347640/answer/2038139058388456850"
+              "https://www.xiaohongshu.com/search_result/6a4916d5000000000f01e19d?xsec_token=ABik6Fkiq2hiuCk57L1MvKLN1ajJr7zgwJePod3kTSKxw=&xsec_source="
             ]
           },
           {
             "title": "现状",
-            "paragraph": "目前老师们主要通过组合使用包阅AI做文档摘要与思维导图、Gamma将Word生成PPT大纲、以及ChatGPT整理教案，来拼凑出一套备课流程。",
+            "paragraph": "现阶段大家多用读材料用包阅AI 包阅AI是一款专业的 阅读总结类工具 ，它能够一键总结200页内的文档概要，同时免费生成思维导图，这对于阅读超长资料非常有帮助来推进。",
             "source": "social",
-            "url": "https://zhuanlan.zhihu.com/p/700559546 ｜ https://www.zhihu.com/question/2024229280444347640/answer/2038139058388456850",
+            "url": "https://zhuanlan.zhihu.com/p/700559546 ｜ https://www.xiaohongshu.com/search_result/6a4916d5000000000f01e19d?xsec_token=ABik6Fkiq2hiuCk57L1MvKLN1ajJr7zgwJePod3kTSKxw=&xsec_source=",
             "source_labels": [
               "社媒",
-              "知乎"
+              "小红书"
             ],
             "source_url_list": [
               "https://zhuanlan.zhihu.com/p/700559546",
-              "https://www.zhihu.com/question/2024229280444347640/answer/2038139058388456850"
+              "https://www.xiaohongshu.com/search_result/6a4916d5000000000f01e19d?xsec_token=ABik6Fkiq2hiuCk57L1MvKLN1ajJr7zgwJePod3kTSKxw=&xsec_source="
             ]
           },
           {
             "title": "方向跟踪",
-            "paragraph": "可以跟踪的方向是：面向课程内容常换的教师，提供能一键从教材摘要生成对应课件和教案、并保留可复用的备课记忆的智能适配工具。",
+            "paragraph": "可继续跟踪把5款教师AI工具，从此新手老师备课不求人 > 发布时间: 发布于 2024-05-29 18:16・上海 > 原文链接: --- 我有一些教师朋友经常跟我吐槽，说备课是件让他们非常头疼的事情，想让我推荐一些适合教师用的工具，尝试了20几款AI以后选出来这5个，如果你也是一名新手教师，那下面这5个A…做成稳定入口。",
             "source": "synthesis",
-            "url": "https://zhuanlan.zhihu.com/p/700559546 ｜ https://www.zhihu.com/question/2024229280444347640/answer/2038139058388456850",
+            "url": "https://zhuanlan.zhihu.com/p/700559546 ｜ https://www.xiaohongshu.com/search_result/6a4916d5000000000f01e19d?xsec_token=ABik6Fkiq2hiuCk57L1MvKLN1ajJr7zgwJePod3kTSKxw=&xsec_source=",
             "source_labels": [
               "社媒",
-              "知乎"
+              "小红书"
             ],
             "source_url_list": [
               "https://zhuanlan.zhihu.com/p/700559546",
-              "https://www.zhihu.com/question/2024229280444347640/answer/2038139058388456850"
+              "https://www.xiaohongshu.com/search_result/6a4916d5000000000f01e19d?xsec_token=ABik6Fkiq2hiuCk57L1MvKLN1ajJr7zgwJePod3kTSKxw=&xsec_source="
             ]
           }
         ],
@@ -876,139 +503,119 @@
       },
       {
         "title": "语言 AI 陪练",
-        "summary": "这一组信号主要来自 zhihu，核心观察是：学了很多年英语却无法流利说一段话，甚至教师都中招，根源在于学习路径长期跳过口语实战，造成严重断层。",
+        "summary": "这一组信号主要来自 zhihu；社媒里反复出现的卡点是今天，跟大家分享一个开源免费的工具： Enjoy ，专门帮大家解决口语练习中的各种问题 现阶段大家多用AI 跟读训练，像有个私人教练在身边 首先来看看它的 AI 跟读功能，能够一边读一边评分，连哪个音节发音错了都能指出来来推进 可继续跟踪把除此之外，我们还可以上传自己喜欢的美剧或外语视频进行口语练习做成稳定入口。",
         "items": [
           {
             "title": "需求",
-            "paragraph": "用户需要一种能持续逼自己开口、针对连续表达能力给出即时反馈的练习方式，而不是只盯阅读和单词",
+            "paragraph": "社媒里反复出现的卡点是今天，跟大家分享一个开源免费的工具： Enjoy ，专门帮大家解决口语练习中的各种问题",
             "source": "social",
-            "url": "https://www.zhihu.com/question/641065475/answer/3415615067 ｜ https://www.zhihu.com/question/641065475/answer/2054519112303486147",
+            "url": "https://www.zhihu.com/question/641065475/answer/3415615067 ｜ https://zhuanlan.zhihu.com/p/2003831453235036734",
             "source_labels": [
-              "知乎"
+              "知乎",
+              "社媒"
             ],
             "source_url_list": [
               "https://www.zhihu.com/question/641065475/answer/3415615067",
-              "https://www.zhihu.com/question/641065475/answer/2054519112303486147"
+              "https://zhuanlan.zhihu.com/p/2003831453235036734"
             ]
           },
           {
             "title": "现状",
-            "paragraph": "多数人仍停滞在归因和传统音标、朗读的 workaround 上，讨论集中在指出“重阅读轻口语”的普遍病灶，尚未出现成熟解法。",
+            "paragraph": "现阶段大家多用AI 跟读训练，像有个私人教练在身边 首先来看看它的 AI 跟读功能，能够一边读一边评分，连哪个音节发音错了都能指出来来推进。",
             "source": "social",
-            "url": "https://www.zhihu.com/question/641065475/answer/3415615067 ｜ https://www.zhihu.com/question/641065475/answer/2054519112303486147",
+            "url": "https://www.zhihu.com/question/641065475/answer/3415615067 ｜ https://zhuanlan.zhihu.com/p/2003831453235036734",
             "source_labels": [
-              "知乎"
+              "知乎",
+              "社媒"
             ],
             "source_url_list": [
               "https://www.zhihu.com/question/641065475/answer/3415615067",
-              "https://www.zhihu.com/question/641065475/answer/2054519112303486147"
+              "https://zhuanlan.zhihu.com/p/2003831453235036734"
             ]
           },
           {
             "title": "方向跟踪",
-            "paragraph": "重点跟踪能模拟高频真实对话并纠正发音流畅度的 AI 陪练产品，把“开口难”直接转化为可度量的练习闭环。",
+            "paragraph": "可继续跟踪把除此之外，我们还可以上传自己喜欢的美剧或外语视频进行口语练习做成稳定入口。",
             "source": "synthesis",
-            "url": "https://www.zhihu.com/question/641065475/answer/3415615067 ｜ https://www.zhihu.com/question/641065475/answer/2054519112303486147",
+            "url": "https://www.zhihu.com/question/641065475/answer/3415615067 ｜ https://zhuanlan.zhihu.com/p/2003831453235036734",
             "source_labels": [
-              "知乎"
+              "知乎",
+              "社媒"
             ],
             "source_url_list": [
               "https://www.zhihu.com/question/641065475/answer/3415615067",
-              "https://www.zhihu.com/question/641065475/answer/2054519112303486147"
+              "https://zhuanlan.zhihu.com/p/2003831453235036734"
             ]
           }
         ],
         "product_items": []
       },
       {
-        "title": "法律 AI 工作流",
-        "summary": "这一组信号主要来自 zhihu、GitHub，核心观察是合同审查中“厘清背景”比“条文审阅”更耗时且易被外行低估，正推动能自动串联交易背景与法律数据库的AI审查助手发展。",
+        "title": "简历优化助手",
+        "summary": "这一组信号主要来自 xiaohongshu、GitHub；社媒里反复出现的卡点是我不会写简历，都是丢给deepseek写的，在学校做过好几个实训，有一些能用大白话说出具体做了什么，有一些因为间隔时间太长记不起来具体做了什么，所以简历上的数据什么的都是编的 现阶段大家多用是我的简历，投了一个星期了，都是已读不回，是不是简历写得太垃圾了来推进 可继续跟踪把我会根据不同的岗位jd让deepseek改项目经历和个人优势，但是这样改了也没有用好像做成稳定入口。",
         "items": [
           {
             "title": "需求",
-            "paragraph": "律师在正式审查前需花大量时间沟通交易背景，用户急需一个能在审查初期就自动梳理背景信息并定位关键风险条款的工具",
+            "paragraph": "社媒里反复出现的卡点是我不会写简历，都是丢给deepseek写的，在学校做过好几个实训，有一些能用大白话说出具体做了什么，有一些因为间隔时间太长记不起来具体做了什么，所以简历上的数据什么的都是编的",
             "source": "social",
-            "url": "https://zhuanlan.zhihu.com/p/702780746 ｜ https://www.zhihu.com/question/530439453/answer/2471635526",
+            "url": "https://www.xiaohongshu.com/search_result/6a5f61f8000000000f03eae1?xsec_token=ABVIGraUoKuGYqH4-dUL1o2SQFckqkJ70x-qUInPVTUgE=&xsec_source= ｜ https://www.xiaohongshu.com/search_result/69f6261c000000001e00c82b?xsec_token=ABQF-oxFyJVnAdmL6TXH5m4QXtPDlLQDHOlyj_06_x22M=&xsec_source=",
             "source_labels": [
-              "社媒",
-              "知乎"
+              "小红书"
             ],
             "source_url_list": [
-              "https://zhuanlan.zhihu.com/p/702780746",
-              "https://www.zhihu.com/question/530439453/answer/2471635526"
+              "https://www.xiaohongshu.com/search_result/6a5f61f8000000000f03eae1?xsec_token=ABVIGraUoKuGYqH4-dUL1o2SQFckqkJ70x-qUInPVTUgE=&xsec_source=",
+              "https://www.xiaohongshu.com/search_result/69f6261c000000001e00c82b?xsec_token=ABQF-oxFyJVnAdmL6TXH5m4QXtPDlLQDHOlyj_06_x22M=&xsec_source="
             ]
           },
           {
             "title": "现状",
-            "paragraph": "目前大量非专业人士仍直接套用网上漏洞模板，而律师依赖反复与客户确认交易模式来启动审查，社区讨论集中在用AI平台自动提取合同风险并生成专业报告。",
+            "paragraph": "现阶段大家多用是我的简历，投了一个星期了，都是已读不回，是不是简历写得太垃圾了来推进。",
             "source": "social",
-            "url": "https://zhuanlan.zhihu.com/p/702780746 ｜ https://www.zhihu.com/question/530439453/answer/2471635526",
+            "url": "https://www.xiaohongshu.com/search_result/6a5f61f8000000000f03eae1?xsec_token=ABVIGraUoKuGYqH4-dUL1o2SQFckqkJ70x-qUInPVTUgE=&xsec_source= ｜ https://www.xiaohongshu.com/search_result/69f6261c000000001e00c82b?xsec_token=ABQF-oxFyJVnAdmL6TXH5m4QXtPDlLQDHOlyj_06_x22M=&xsec_source=",
             "source_labels": [
-              "社媒",
-              "知乎"
+              "小红书"
             ],
             "source_url_list": [
-              "https://zhuanlan.zhihu.com/p/702780746",
-              "https://www.zhihu.com/question/530439453/answer/2471635526"
+              "https://www.xiaohongshu.com/search_result/6a5f61f8000000000f03eae1?xsec_token=ABVIGraUoKuGYqH4-dUL1o2SQFckqkJ70x-qUInPVTUgE=&xsec_source=",
+              "https://www.xiaohongshu.com/search_result/69f6261c000000001e00c82b?xsec_token=ABQF-oxFyJVnAdmL6TXH5m4QXtPDlLQDHOlyj_06_x22M=&xsec_source="
             ]
           },
           {
             "title": "方向跟踪",
-            "paragraph": "值得跟踪将合同审查重构为问答式交互流程，让AI通过主动提问厘清交易背景后，实时比对法律数据库生成风险提示的产品方向。",
+            "paragraph": "可继续跟踪把我会根据不同的岗位jd让deepseek改项目经历和个人优势，但是这样改了也没有用好像做成稳定入口。",
             "source": "synthesis",
-            "url": "https://zhuanlan.zhihu.com/p/702780746 ｜ https://www.zhihu.com/question/530439453/answer/2471635526",
+            "url": "https://www.xiaohongshu.com/search_result/6a5f61f8000000000f03eae1?xsec_token=ABVIGraUoKuGYqH4-dUL1o2SQFckqkJ70x-qUInPVTUgE=&xsec_source= ｜ https://www.xiaohongshu.com/search_result/69f6261c000000001e00c82b?xsec_token=ABQF-oxFyJVnAdmL6TXH5m4QXtPDlLQDHOlyj_06_x22M=&xsec_source=",
             "source_labels": [
-              "社媒",
-              "知乎"
+              "小红书"
             ],
             "source_url_list": [
-              "https://zhuanlan.zhihu.com/p/702780746",
-              "https://www.zhihu.com/question/530439453/answer/2471635526"
+              "https://www.xiaohongshu.com/search_result/6a5f61f8000000000f03eae1?xsec_token=ABVIGraUoKuGYqH4-dUL1o2SQFckqkJ70x-qUInPVTUgE=&xsec_source=",
+              "https://www.xiaohongshu.com/search_result/69f6261c000000001e00c82b?xsec_token=ABQF-oxFyJVnAdmL6TXH5m4QXtPDlLQDHOlyj_06_x22M=&xsec_source="
             ]
           }
         ],
         "product_items": [
           {
-            "title": "HeShen-1/AI-Powered-LegalComplianceAssistant",
-            "url": "https://github.com/HeShen-1/AI-Powered-LegalComplianceAssistant",
+            "title": "Me106y/MirrorView",
+            "url": "https://github.com/Me106y/MirrorView",
             "website_url": "",
             "summary": "",
             "description": "",
             "source_label": "GitHub",
-            "heat_line": "🌟39",
+            "heat_line": "🌟11",
             "tags": [
-              "法律 AI 工作流",
-              "法律科技"
+              "简历优化助手",
+              "AI 面试官"
             ],
             "interest_tags": [
-              "法律 AI 工作流",
-              "法律科技"
+              "简历优化助手",
+              "AI 面试官"
             ],
             "tool_tags": [],
             "mechanism_tags": [],
-            "highlight_one_liner": "本项目是一个集自动化审查、智能化问答、专业化报告生成于一体的 AI 法律服务平台，旨在帮助中小企业和律师事务所提高合同审查效率，降低法律风险。平台通过先进的 AI 技术，实现了对法律文本的深度理解和分析，为用户提供精准、高效的法律合规支持。",
-            "reuse_direction": "把「法律 AI 工作流 / 法律科技」封装成更明确的岗位或任务入口",
-            "minimal_mvp": "先围绕“律师在正式审查前需花大量时间沟通交易背景，用户急需一个能在审查初期就自动梳理背景信息并定位关键风险条款的工具”做单任务 MVP，优先打通输入、执行和结果回传"
-          },
-          {
-            "title": "abaiar/-LexAI",
-            "url": "https://github.com/abaiar/-LexAI",
-            "website_url": "",
-            "summary": "",
-            "description": "",
-            "source_label": "GitHub",
-            "heat_line": "🌟24",
-            "tags": [
-              "法律 AI 工作流"
-            ],
-            "interest_tags": [
-              "法律 AI 工作流"
-            ],
-            "tool_tags": [],
-            "mechanism_tags": [],
-            "highlight_one_liner": "小理智法 AI 是一款基于大语言模型（LLM）的智能法律咨询平台，集成了法律咨询、合同审查、文书生成、合同起草、合同对比、智能校对、法律文书解读等多项 AI 法律服务。系统采用 LangChain Agent 架构，结合得理法律数据库 API 实现案例检索与法规检索，为用户提供专业、准确、有据可查的法律分析与建议。",
-            "reuse_direction": "把「法律 AI 工作流」封装成更明确的岗位或任务入口",
-            "minimal_mvp": "先围绕“律师在正式审查前需花大量时间沟通交易背景，用户急需一个能在审查初期就自动梳理背景信息并定位关键风险条款的工具”做单任务 MVP，优先打通输入、执行和结果回传"
+            "highlight_one_liner": "MirrorView 是一款面向求职训练场景的 AI 应用平台，围绕“简历优化—岗位匹配—模拟面试—复盘改进”构建端到端闭环。系统基于大模型 Agent 实现个性化追问、实时多轮面试和结构化评估输出，并通过语音交互、实时视频旁听与导师协作机制提升训练真实性与反馈效率。平台采用 PyQt + Streamlit 双端协同与 Flask 服务化架构，支持能力模块",
+            "reuse_direction": "把「简历优化助手 / AI 面试官」封装成更明确的岗位或任务入口",
+            "minimal_mvp": "先围绕“社媒里反复出现的卡点是我不会写简历，都是丢给deepseek写的，在学校做过好几个实训，有一些能用大白话说出具体做了什么，有一些因为间隔时间太长记不起来具体做了什么，所以简历上的数据什么的都是编的”做单任务 MVP，优先打通输入、执行和结果回传"
           }
         ]
       }
@@ -1022,7 +629,7 @@
         "published_at": "2026-07-22T05:30:00Z",
         "event_type": "api_tool_launch",
         "raw_summary": "Introducing OpenAI Presence, a proven enterprise AI agent platform that helps organizations deploy trusted voice and chat agents for customer and internal workflows.",
-        "summary": "OpenAI 发布企业级 AI 代理平台 OpenAI Presence，可部署语音和聊天代理至客户服务与内部工作流。",
+        "summary": "OpenAI 发布了企业级AI代理平台 Presence，支持部署语音和聊天代理用于客户和内部工作流。",
         "impact_points": [
           "OpenAI 开放新 API / 工具后，开发者可以直接把上游能力接入现有工作流。",
           "这类更新会优先影响 Agent 与工作流型应用的执行方式和稳定性。"
@@ -1044,39 +651,7 @@
           "Product"
         ],
         "impact_score": 83,
-        "age_days": 8,
-        "summary_generation_source": "openai_v5",
-        "summary_prompt_version": "vendor_summary_zh_v3"
-      },
-      {
-        "title": "Introducing Claude Sonnet 5",
-        "url": "https://www.anthropic.com/news/claude-sonnet-5",
-        "source_name": "Anthropic News",
-        "source_url": "https://www.anthropic.com/news",
-        "published_at": "2026-06-30T00:00:00Z",
-        "event_type": "model_launch",
-        "raw_summary": "Sonnet 5 delivers frontier performance across coding, agents, and professional work at scale.",
-        "summary": "Anthropic 发布 Claude Sonnet 5 模型，在编码、智能体及大规模专业工作场景中提供前沿性能。",
-        "impact_points": [
-          "Anthropic / Claude 发布新模型后，相关应用的能力上限和产品包装空间会立刻变化。",
-          "这类更新会优先影响 Agent 与工作流型应用的执行方式和稳定性。"
-        ],
-        "watch_items": [
-          "关注新模型是否真的在关键场景里带来更稳定的结果与更好的成本结构。",
-          "关注它是否能减少多步任务中的人工接管频率。"
-        ],
-        "vendor_tags": [
-          "Anthropic",
-          "Claude"
-        ],
-        "mechanism_tags": [
-          "Agent"
-        ],
-        "categories": [
-          "Product"
-        ],
-        "impact_score": 78,
-        "age_days": 30,
+        "age_days": 9,
         "summary_generation_source": "openai_v5",
         "summary_prompt_version": "vendor_summary_zh_v3"
       },
@@ -1088,7 +663,7 @@
         "published_at": "2026-07-21T00:00:00Z",
         "event_type": "api_tool_launch",
         "raw_summary": "Tunix is Google’s new JAX-native post-training library designed to eliminate TPU idling bottlenecks when training multi-turn, tool-using LLM reasoning agents. It maximizes hardware throughput by combining highly concurrent, asynchronous rollouts with a decoupled producer-consumer pipeline, ensuring the trainer is constantly fed even while agents wait on network I/O or environment steps. Additionally, Tunix provides plug-and-play abstractions and continuous macro-level profiling, allowing developers to easily integrate custom open-source environments and optimize complex distributed workflows without massive code rewrites.",
-        "summary": "Google发布JAX原生后训练库Tunix，通过异步并发rollout和解耦的生产者-消费者管道消除多轮工具调用LLM推理智能体训练中的TPU闲置瓶颈。",
+        "summary": "Google 发布 JAX 原生后训练库 Tunix，通过异步并发推演和解耦的生产者-消费者流水线消除 TPU 闲置瓶颈，提升多轮工具使用型 LLM 推理代理的训练吞吐量。",
         "impact_points": [
           "Google / Gemini 开放新 API / 工具后，开发者可以直接把上游能力接入现有工作流。",
           "这类更新会优先影响 Agent 与工作流型应用的执行方式和稳定性。"
@@ -1107,7 +682,7 @@
         ],
         "categories": [],
         "impact_score": 70,
-        "age_days": 9,
+        "age_days": 10,
         "summary_generation_source": "openai_v5",
         "summary_prompt_version": "vendor_summary_zh_v3"
       },
@@ -1119,7 +694,7 @@
         "published_at": "2026-07-16T00:00:00Z",
         "event_type": "capability_upgrade",
         "raw_summary": "Kimi K3 is the world's first open 3T-class model — frontier performance across coding, knowledge work, and reasoning, with native multimodality and 1M context.",
-        "summary": "月之暗面发布Kimi K3，该模型为全球首个开源3T参数级模型，具备编码、知识工作与推理的前沿性能，支持原生多模态及100万token上下文。",
+        "summary": "月之暗面发布开源模型Kimi K3，参数量达3万亿，是全球首个3T级开源模型，支持原生多模态和100万token上下文。",
         "impact_points": [
           "月之暗面 / Kimi 对关键能力的升级可能改变某类产品的可行交互方式。",
           "多模态能力增强后，内容生成、理解和输入方式会有新的产品机会。"
@@ -1139,7 +714,7 @@
           "Research"
         ],
         "impact_score": 54,
-        "age_days": 14,
+        "age_days": 15,
         "summary_generation_source": "openai_v5",
         "summary_prompt_version": "vendor_summary_zh_v3"
       },
@@ -1151,7 +726,7 @@
         "published_at": "2026-07-28T00:00:00Z",
         "event_type": "official_update",
         "raw_summary": "云治理中心Landing Zone与云SSO重磅发布，助力企业构建多账号云环境治理框架。",
-        "summary": "百度智能云发布云治理中心Landing Zone和云SSO，用于企业构建多账号云环境治理框架。",
+        "summary": "百度智能云正式发布云治理中心Landing Zone与云SSO，提供企业级多账号云环境治理框架。",
         "impact_points": [
           "百度智能云：云治理中心Landing Zone与云SSO重磅发布 对上游模型 / 平台能力边界有直接影响，值得进入产品判断视野。"
         ],
@@ -1167,47 +742,47 @@
           "Product"
         ],
         "impact_score": 36,
-        "age_days": 2,
+        "age_days": 3,
         "summary_generation_source": "openai_v5",
         "summary_prompt_version": "vendor_summary_zh_v3"
       }
     ],
     "source_diagnostics": {
       "high_potential": {
-        "discovery_candidate_count": 17,
+        "discovery_candidate_count": 14,
         "revisit_candidate_count": 0,
-        "deduped_candidate_count": 17,
+        "deduped_candidate_count": 14,
         "duplicates_removed": 0,
-        "selected_count": 4,
-        "discovery_selected_count": 7,
+        "selected_count": 0,
+        "discovery_selected_count": 5,
         "revisit_selected_count": 0,
-        "blocked_by_cluster_count": 10,
+        "blocked_by_cluster_count": 9,
         "max_items": 12,
         "max_revisit_items": 0,
         "max_per_interest": 2,
         "max_per_mechanism": 2,
-        "copy_updated_count": 7,
-        "copy_cache_hits": 3,
-        "copy_openai_generated_count": 4,
+        "copy_updated_count": 5,
+        "copy_cache_hits": 0,
+        "copy_openai_generated_count": 5,
         "copy_fallback_count": 0,
         "copy_prompt_version": "openai_compact_v4",
-        "history_blocked_count": 3,
+        "history_blocked_count": 5,
         "in_run_duplicate_count": 0,
         "revisit_history_bypass_count": 0,
         "layer_counts": {
           "dev_tool": 2,
-          "knowledge": 3,
+          "knowledge": 2,
           "product": 3
         }
       },
       "observation": {
         "social_signal_count": 30,
-        "github_interest_count": 8,
-        "product_hunt_interest_count": 2,
-        "rule_source": "social_sections_plus_refreshed_product_items",
-        "product_hunt_history_blocked_count": 0,
+        "github_interest_count": 9,
+        "product_hunt_interest_count": 1,
+        "rule_source": "social_plus_product_sources",
+        "product_hunt_history_blocked_count": 1,
         "product_card_duplicate_count": 0,
-        "product_card_count": 2,
+        "product_card_count": 1,
         "idea_count": 3
       },
       "vendor_news": {
@@ -1258,7 +833,7 @@
             "fetch_url": "https://www.minimaxi.com/news",
             "parser": "minimax_news_html",
             "ok": true,
-            "candidate_count": 2,
+            "candidate_count": 1,
             "error": ""
           },
           {
@@ -1294,278 +869,66 @@
             "error": ""
           }
         ],
-        "candidate_count": 15,
-        "selected_count": 5,
+        "candidate_count": 11,
+        "selected_count": 4,
         "max_age_days": 30,
         "max_items": 8,
         "max_per_vendor": 1,
-        "summary_cache_hits": 5,
+        "summary_cache_hits": 4,
         "summary_openai_generated_count": 0,
         "summary_fallback_count": 0,
         "summary_prompt_version": "vendor_summary_zh_v3",
         "empty_allowed": true
-      }
+      },
+      "product_hunt_blocked_key_count": 15
     }
   },
-  "high_potential_items": [
-    {
-      "title": "ayghri/i-have-adhd",
-      "full_name": "ayghri/i-have-adhd",
-      "url": "https://github.com/ayghri/i-have-adhd",
-      "source_type": "github",
-      "source_layer": "discovery",
-      "repo_id": 1238120057,
-      "owner": "ayghri",
-      "name": "i-have-adhd",
-      "summary": "A skill for your coding agent to stop it from burying the answer. ADHD-friendly output.",
-      "interest_tags": [
-        "开发者工具",
-        "效率办公"
-      ],
-      "domain_tags": [],
-      "tool_tags": [],
-      "mechanism_tags": [],
-      "highlight_one_liner": "编程代理直给答案，不埋藏",
-      "highlight_keywords": [
-        "编程代理",
-        "答案前置",
-        "ADHD友好",
-        "防信息淹没"
-      ],
-      "reuse_direction": "将 AI 编程代理的输出重构成以最终答案为先导、支持一键收起推理过程的结构，降低注意力碎片化带来的信息检索成本。",
-      "minimal_mvp": "为 Claude Code 添加一个 skill，使代理回复时优先展示解决方案摘要，并将详细步骤默认折叠。",
-      "selection_reason": "项目仍处在较新的验证窗口；GitHub Trending 周榜显示本周新增热度约 5544；已有较强社区验证",
-      "is_revisit": false,
-      "revisit_reason": "",
-      "score": 238.65,
-      "rank_score": 95.44,
-      "stars_total": 13578,
-      "stars_7d": 5544,
-      "stars_30d": null,
-      "forks_total": 717,
-      "watchers_total": null,
-      "created_at": "2026-05-13T20:42:06Z",
-      "pushed_at": "2026-07-28T17:41:32Z",
-      "updated_at": "2026-07-30T02:45:54Z",
-      "topics": [
-        "adhd",
-        "claude-",
-        "claude-code-plugin",
-        "claude-skills",
-        "developer-tools",
-        "productivity"
-      ],
-      "copy_generation_source": "openai_v5",
-      "copy_prompt_version": "openai_compact_v4"
-    },
-    {
-      "title": "alibaba/open-code-review",
-      "full_name": "alibaba/open-code-review",
-      "url": "https://github.com/alibaba/open-code-review",
-      "source_type": "github",
-      "source_layer": "discovery",
-      "repo_id": 1241960226,
-      "owner": "alibaba",
-      "name": "open-code-review",
-      "summary": "Open-source & free — Battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in fine-tuned ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
-      "interest_tags": [
-        "工作流自动化"
-      ],
-      "domain_tags": [],
-      "tool_tags": [],
-      "mechanism_tags": [],
-      "highlight_one_liner": "产线级规则+LLM Agent混判，直接落行级评论",
-      "highlight_keywords": [
-        "产线验证规则集",
-        "管道+智能体混合架构",
-        "行级精准评论",
-        "开箱即用安全规则"
-      ],
-      "reuse_direction": "做代码审查助手时，通过内置经过实战打磨的安全规则引擎先行硬过滤，再用LLM处理复杂语义，能在成本和精度之间找到更可靠的平衡。",
-      "minimal_mvp": "先用内置的NPE、线程安全、XSS、SQL注入规则对Java项目做一次全量扫描，生成行级评论作为首版。",
-      "selection_reason": "项目仍处在较新的验证窗口；GitHub Trending 周榜显示本周新增热度约 4875；已有较强社区验证",
-      "is_revisit": false,
-      "revisit_reason": "",
-      "score": 243.05,
-      "rank_score": 88.75,
-      "stars_total": 16094,
-      "stars_7d": 4875,
-      "stars_30d": null,
-      "forks_total": 1084,
-      "watchers_total": null,
-      "created_at": "2026-05-18T02:16:36Z",
-      "pushed_at": "2026-07-29T20:35:52Z",
-      "updated_at": "2026-07-30T02:45:50Z",
-      "topics": [
-        "agent",
-        "agent-skills",
-        "code-review",
-        "code-review-assistant",
-        "harness",
-        "repository-level-context"
-      ],
-      "copy_generation_source": "openai_v5",
-      "copy_prompt_version": "openai_compact_v4"
-    },
-    {
-      "title": "citrolabs/ego-lite",
-      "full_name": "citrolabs/ego-lite",
-      "url": "https://github.com/citrolabs/ego-lite",
-      "source_type": "github",
-      "source_layer": "discovery",
-      "repo_id": 1212503250,
-      "owner": "citrolabs",
-      "name": "ego-lite",
-      "summary": "The fastest browser for AI agents to run browser automation, built for sharing your logged-in browser state with your AI agents, like Codex or Claude Code, without disturbing you. Zero cost, zero config.",
-      "interest_tags": [
-        "开发者工具",
-        "工作流自动化",
-        "浏览器自动化"
-      ],
-      "domain_tags": [],
-      "tool_tags": [],
-      "mechanism_tags": [],
-      "highlight_one_liner": "共享登录态，零配置AI代驾",
-      "highlight_keywords": [
-        "浏览器状态共享",
-        "零配置",
-        "AI代理不打扰",
-        "登录态直通"
-      ],
-      "reuse_direction": "最值得借鉴的方向是：用一个极薄的适配层，把用户已登录的真实浏览器会话直接映射给AI代理执行自动化操作，全程无感、不用重复登录，也不打断用户当前的浏览。",
-      "minimal_mvp": "第一版先做一个浏览器扩展，能把当前标签页的登录状态快照给到Claude Code或Codex这类代理，让它在一个隔离的沙箱里执行点击、填表等动作，但不影响用户正在看的页面。",
-      "selection_reason": "项目仍处在较新的验证窗口；GitHub Trending 周榜显示本周新增热度约 4863；已有较强社区验证",
-      "is_revisit": false,
-      "revisit_reason": "",
-      "score": 244.6317,
-      "rank_score": 88.63,
-      "stars_total": 6065,
-      "stars_7d": 4863,
-      "stars_30d": null,
-      "forks_total": 303,
-      "watchers_total": null,
-      "created_at": "2026-04-16T12:51:09Z",
-      "pushed_at": "2026-07-29T12:17:20Z",
-      "updated_at": "2026-07-30T02:42:40Z",
-      "topics": [
-        "agent-skills",
-        "ai-agent",
-        "automation",
-        "browser",
-        "browser-automation",
-        "claude-code",
-        "codex",
-        "hermes-agent",
-        "skills",
-        "skills-sh"
-      ],
-      "copy_generation_source": "openai_v5",
-      "copy_prompt_version": "openai_compact_v4"
-    },
-    {
-      "title": "RyanCodrai/turbovec",
-      "full_name": "ryancodrai/turbovec",
-      "url": "https://github.com/RyanCodrai/turbovec",
-      "source_type": "github",
-      "source_layer": "discovery",
-      "repo_id": 1192555574,
-      "owner": "ryancodrai",
-      "name": "turbovec",
-      "summary": "A vector index built on TurboQuant, written in Rust with Python bindings",
-      "interest_tags": [
-        "知识检索/RAG"
-      ],
-      "domain_tags": [],
-      "tool_tags": [],
-      "mechanism_tags": [],
-      "highlight_one_liner": "TurboQuant驱动的极速量化向量索引",
-      "highlight_keywords": [
-        "TurboQuant",
-        "量化压缩",
-        "SIMD加速",
-        "Python绑定"
-      ],
-      "reuse_direction": "在为大规模嵌入检索构建内存敏感、延迟低的服务时，可以借鉴其基于TurboQuant的量化索引设计，用Rust核心加Python包的方式兼顾压缩率和检索速度。",
-      "minimal_mvp": "提供一个Python包，内部调用Rust实现的TurboQuant索引，支持把任意向量数组写入索引并执行近似最近邻查询，返回距离最小的top-k结果。",
-      "selection_reason": "项目仍处在较新的验证窗口；GitHub Trending 周榜显示本周新增热度约 810；已有较强社区验证",
-      "is_revisit": false,
-      "revisit_reason": "",
-      "score": 235.85,
-      "rank_score": 48.1,
-      "stars_total": 14501,
-      "stars_7d": 810,
-      "stars_30d": null,
-      "forks_total": 1284,
-      "watchers_total": null,
-      "created_at": "2026-03-26T10:32:44Z",
-      "pushed_at": "2026-07-30T02:38:37Z",
-      "updated_at": "2026-07-30T02:28:18Z",
-      "topics": [
-        "ann",
-        "avx512",
-        "embedding",
-        "embeddings",
-        "faiss",
-        "nearest-neighbor",
-        "neon",
-        "python",
-        "quant",
-        "quantization",
-        "rag",
-        "rust",
-        "simd",
-        "turboquant",
-        "vector-search"
-      ],
-      "copy_generation_source": "openai_v5",
-      "copy_prompt_version": "openai_compact_v4"
-    }
-  ],
+  "high_potential_items": [],
   "interest_sections": [
     {
       "title": "AI 应用场景 / 数据",
-      "summary": "这一组信号主要来自zhihu，核心观察是产品经理在需求梳理时普遍缺乏结合技术细节的实操方法，对能系统化拆解B端业务场景的工具需求明确。",
+      "summary": "这一组信号主要来自 zhihu、xiaohongshu；社媒里反复出现的卡点是」的问题下，总会有人苦口婆心的说：其实，产品经理不需要懂 xxx，只需要 xxx 就行了…… 这有点像如果你想知道「电影导演需要懂写剧本吗？ 现阶段大家多用产品经理核心工作流程 > 发布时间: 编辑于 2026-07-17 09:40・陕西 > 原文链接: --- 每个人、每个团队都可以有自己做产品的方法，不需要也不可能完全一样，我们总结了一个做产品的流程，为了尽量通用，保留了每一个「可能」需要的环节，也就是说，实际工作中，未必每次都需要完整覆盖流程…来推进 可继续跟踪把产品经理核心工作流程 > 发布时间: 编辑于 2026-07-17 09:40・陕西 > 原文链接: --- 每个人、每个团队都可以有自己做产品的方法，不需要也不可能完全一样，我们总结了一个做产品的流程，为了尽量通用，保留了每一个「可能」需要的环节，也就是说，实际工作中，未必每次都需要完整覆盖流程…做成稳定入口。",
       "items": [
         {
           "title": "需求",
-          "paragraph": "产品经理需要一套可落地的具体方法来梳理业务全场景，明确角色、单据与完整流程，避免陷入空泛的“个人体验”和缺失技术细节的方法论",
+          "paragraph": "社媒里反复出现的卡点是」的问题下，总会有人苦口婆心的说：其实，产品经理不需要懂 xxx，只需要 xxx 就行了…… 这有点像如果你想知道「电影导演需要懂写剧本吗？",
           "source": "social",
-          "url": "https://zhuanlan.zhihu.com/p/20468570 ｜ https://www.zhihu.com/question/460427762/answer/1895672636",
+          "url": "https://zhuanlan.zhihu.com/p/20468570 ｜ https://www.xiaohongshu.com/search_result/69d3558a000000001d01b0c8?xsec_token=ABOV3T5anbZAC7RyArapm4BIDjaVkAQE4gsjckEbEPpbM=&xsec_source=",
           "source_labels": [
             "社媒",
-            "知乎"
+            "小红书"
           ],
           "source_url_list": [
             "https://zhuanlan.zhihu.com/p/20468570",
-            "https://www.zhihu.com/question/460427762/answer/1895672636"
+            "https://www.xiaohongshu.com/search_result/69d3558a000000001d01b0c8?xsec_token=ABOV3T5anbZAC7RyArapm4BIDjaVkAQE4gsjckEbEPpbM=&xsec_source="
           ]
         },
         {
           "title": "现状",
-          "paragraph": "目前大家依赖作者总结的通用流程模板，并在讨论中反复区分标准化产品与定制化产品的梳理方式，强调先确定产品类型再通过访谈输出业务流程。",
+          "paragraph": "现阶段大家多用产品经理核心工作流程 > 发布时间: 编辑于 2026-07-17 09:40・陕西 > 原文链接: --- 每个人、每个团队都可以有自己做产品的方法，不需要也不可能完全一样，我们总结了一个做产品的流程，为了尽量通用，保留了每一个「可能」需要的环节，也就是说，实际工作中，未必每次都需要完整覆盖流程…来推进。",
           "source": "social",
-          "url": "https://zhuanlan.zhihu.com/p/20468570 ｜ https://www.zhihu.com/question/460427762/answer/1895672636",
+          "url": "https://zhuanlan.zhihu.com/p/20468570 ｜ https://www.xiaohongshu.com/search_result/69d3558a000000001d01b0c8?xsec_token=ABOV3T5anbZAC7RyArapm4BIDjaVkAQE4gsjckEbEPpbM=&xsec_source=",
           "source_labels": [
             "社媒",
-            "知乎"
+            "小红书"
           ],
           "source_url_list": [
             "https://zhuanlan.zhihu.com/p/20468570",
-            "https://www.zhihu.com/question/460427762/answer/1895672636"
+            "https://www.xiaohongshu.com/search_result/69d3558a000000001d01b0c8?xsec_token=ABOV3T5anbZAC7RyArapm4BIDjaVkAQE4gsjckEbEPpbM=&xsec_source="
           ]
         },
         {
           "title": "方向跟踪",
-          "paragraph": "可以围绕“需求梳理助手”方向跟踪，即能根据产品类型自动引导产品经理拆解角色、单据和流程，并生成结构化业务场景清单的工具。",
+          "paragraph": "可继续跟踪把产品经理核心工作流程 > 发布时间: 编辑于 2026-07-17 09:40・陕西 > 原文链接: --- 每个人、每个团队都可以有自己做产品的方法，不需要也不可能完全一样，我们总结了一个做产品的流程，为了尽量通用，保留了每一个「可能」需要的环节，也就是说，实际工作中，未必每次都需要完整覆盖流程…做成稳定入口。",
           "source": "synthesis",
-          "url": "https://zhuanlan.zhihu.com/p/20468570 ｜ https://www.zhihu.com/question/460427762/answer/1895672636",
+          "url": "https://zhuanlan.zhihu.com/p/20468570 ｜ https://www.xiaohongshu.com/search_result/69d3558a000000001d01b0c8?xsec_token=ABOV3T5anbZAC7RyArapm4BIDjaVkAQE4gsjckEbEPpbM=&xsec_source=",
           "source_labels": [
             "社媒",
-            "知乎"
+            "小红书"
           ],
           "source_url_list": [
             "https://zhuanlan.zhihu.com/p/20468570",
-            "https://www.zhihu.com/question/460427762/answer/1895672636"
+            "https://www.xiaohongshu.com/search_result/69d3558a000000001d01b0c8?xsec_token=ABOV3T5anbZAC7RyArapm4BIDjaVkAQE4gsjckEbEPpbM=&xsec_source="
           ]
         }
       ],
@@ -1573,48 +936,48 @@
     },
     {
       "title": "教育 AI 辅导",
-      "summary": "这一组信号主要来自 zhihu，教师在备课上的核心诉求是把阅读材料、制作课件和写教案等任务交给AI，但现有方案仍是多个单点工具拼凑，缺少能适应课程高频变化的一体化备课产品。",
+      "summary": "这一组信号主要来自 zhihu、xiaohongshu；社媒里反复出现的卡点是5款教师AI工具，从此新手老师备课不求人 > 发布时间: 发布于 2024-05-29 18:16・上海 > 原文链接: --- 我有一些教师朋友经常跟我吐槽，说备课是件让他们非常头疼的事情，想让我推荐一些适合教师用的工具，尝试了20几款AI以后选出来这5个，如果你也是一名新手教师，那下面这5个A… 现阶段大家多用读材料用包阅AI 包阅AI是一款专业的 阅读总结类工具 ，它能够一键总结200页内的文档概要，同时免费生成思维导图，这对于阅读超长资料非常有帮助来推进 可继续跟踪把5款教师AI工具，从此新手老师备课不求人 > 发布时间: 发布于 2024-05-29 18:16・上海 > 原文链接: --- 我有一些教师朋友经常跟我吐槽，说备课是件让他们非常头疼的事情，想让我推荐一些适合教师用的工具，尝试了20几款AI以后选出来这5个，如果你也是一名新手教师，那下面这5个A…做成稳定入口。",
       "items": [
         {
           "title": "需求",
-          "paragraph": "新手教师急需将备课中的长文档阅读总结、PPT课件生成和教案撰写等环节自动化，以摆脱因课程频繁变动带来的重复性手动劳动",
+          "paragraph": "社媒里反复出现的卡点是5款教师AI工具，从此新手老师备课不求人 > 发布时间: 发布于 2024-05-29 18:16・上海 > 原文链接: --- 我有一些教师朋友经常跟我吐槽，说备课是件让他们非常头疼的事情，想让我推荐一些适合教师用的工具，尝试了20几款AI以后选出来这5个，如果你也是一名新手教师，那下面这5个A…",
           "source": "social",
-          "url": "https://zhuanlan.zhihu.com/p/700559546 ｜ https://www.zhihu.com/question/2024229280444347640/answer/2038139058388456850",
+          "url": "https://zhuanlan.zhihu.com/p/700559546 ｜ https://www.xiaohongshu.com/search_result/6a4916d5000000000f01e19d?xsec_token=ABik6Fkiq2hiuCk57L1MvKLN1ajJr7zgwJePod3kTSKxw=&xsec_source=",
           "source_labels": [
             "社媒",
-            "知乎"
+            "小红书"
           ],
           "source_url_list": [
             "https://zhuanlan.zhihu.com/p/700559546",
-            "https://www.zhihu.com/question/2024229280444347640/answer/2038139058388456850"
+            "https://www.xiaohongshu.com/search_result/6a4916d5000000000f01e19d?xsec_token=ABik6Fkiq2hiuCk57L1MvKLN1ajJr7zgwJePod3kTSKxw=&xsec_source="
           ]
         },
         {
           "title": "现状",
-          "paragraph": "目前老师们主要通过组合使用包阅AI做文档摘要与思维导图、Gamma将Word生成PPT大纲、以及ChatGPT整理教案，来拼凑出一套备课流程。",
+          "paragraph": "现阶段大家多用读材料用包阅AI 包阅AI是一款专业的 阅读总结类工具 ，它能够一键总结200页内的文档概要，同时免费生成思维导图，这对于阅读超长资料非常有帮助来推进。",
           "source": "social",
-          "url": "https://zhuanlan.zhihu.com/p/700559546 ｜ https://www.zhihu.com/question/2024229280444347640/answer/2038139058388456850",
+          "url": "https://zhuanlan.zhihu.com/p/700559546 ｜ https://www.xiaohongshu.com/search_result/6a4916d5000000000f01e19d?xsec_token=ABik6Fkiq2hiuCk57L1MvKLN1ajJr7zgwJePod3kTSKxw=&xsec_source=",
           "source_labels": [
             "社媒",
-            "知乎"
+            "小红书"
           ],
           "source_url_list": [
             "https://zhuanlan.zhihu.com/p/700559546",
-            "https://www.zhihu.com/question/2024229280444347640/answer/2038139058388456850"
+            "https://www.xiaohongshu.com/search_result/6a4916d5000000000f01e19d?xsec_token=ABik6Fkiq2hiuCk57L1MvKLN1ajJr7zgwJePod3kTSKxw=&xsec_source="
           ]
         },
         {
           "title": "方向跟踪",
-          "paragraph": "可以跟踪的方向是：面向课程内容常换的教师，提供能一键从教材摘要生成对应课件和教案、并保留可复用的备课记忆的智能适配工具。",
+          "paragraph": "可继续跟踪把5款教师AI工具，从此新手老师备课不求人 > 发布时间: 发布于 2024-05-29 18:16・上海 > 原文链接: --- 我有一些教师朋友经常跟我吐槽，说备课是件让他们非常头疼的事情，想让我推荐一些适合教师用的工具，尝试了20几款AI以后选出来这5个，如果你也是一名新手教师，那下面这5个A…做成稳定入口。",
           "source": "synthesis",
-          "url": "https://zhuanlan.zhihu.com/p/700559546 ｜ https://www.zhihu.com/question/2024229280444347640/answer/2038139058388456850",
+          "url": "https://zhuanlan.zhihu.com/p/700559546 ｜ https://www.xiaohongshu.com/search_result/6a4916d5000000000f01e19d?xsec_token=ABik6Fkiq2hiuCk57L1MvKLN1ajJr7zgwJePod3kTSKxw=&xsec_source=",
           "source_labels": [
             "社媒",
-            "知乎"
+            "小红书"
           ],
           "source_url_list": [
             "https://zhuanlan.zhihu.com/p/700559546",
-            "https://www.zhihu.com/question/2024229280444347640/answer/2038139058388456850"
+            "https://www.xiaohongshu.com/search_result/6a4916d5000000000f01e19d?xsec_token=ABik6Fkiq2hiuCk57L1MvKLN1ajJr7zgwJePod3kTSKxw=&xsec_source="
           ]
         }
       ],
@@ -1622,139 +985,119 @@
     },
     {
       "title": "语言 AI 陪练",
-      "summary": "这一组信号主要来自 zhihu，核心观察是：学了很多年英语却无法流利说一段话，甚至教师都中招，根源在于学习路径长期跳过口语实战，造成严重断层。",
+      "summary": "这一组信号主要来自 zhihu；社媒里反复出现的卡点是今天，跟大家分享一个开源免费的工具： Enjoy ，专门帮大家解决口语练习中的各种问题 现阶段大家多用AI 跟读训练，像有个私人教练在身边 首先来看看它的 AI 跟读功能，能够一边读一边评分，连哪个音节发音错了都能指出来来推进 可继续跟踪把除此之外，我们还可以上传自己喜欢的美剧或外语视频进行口语练习做成稳定入口。",
       "items": [
         {
           "title": "需求",
-          "paragraph": "用户需要一种能持续逼自己开口、针对连续表达能力给出即时反馈的练习方式，而不是只盯阅读和单词",
+          "paragraph": "社媒里反复出现的卡点是今天，跟大家分享一个开源免费的工具： Enjoy ，专门帮大家解决口语练习中的各种问题",
           "source": "social",
-          "url": "https://www.zhihu.com/question/641065475/answer/3415615067 ｜ https://www.zhihu.com/question/641065475/answer/2054519112303486147",
+          "url": "https://www.zhihu.com/question/641065475/answer/3415615067 ｜ https://zhuanlan.zhihu.com/p/2003831453235036734",
           "source_labels": [
-            "知乎"
+            "知乎",
+            "社媒"
           ],
           "source_url_list": [
             "https://www.zhihu.com/question/641065475/answer/3415615067",
-            "https://www.zhihu.com/question/641065475/answer/2054519112303486147"
+            "https://zhuanlan.zhihu.com/p/2003831453235036734"
           ]
         },
         {
           "title": "现状",
-          "paragraph": "多数人仍停滞在归因和传统音标、朗读的 workaround 上，讨论集中在指出“重阅读轻口语”的普遍病灶，尚未出现成熟解法。",
+          "paragraph": "现阶段大家多用AI 跟读训练，像有个私人教练在身边 首先来看看它的 AI 跟读功能，能够一边读一边评分，连哪个音节发音错了都能指出来来推进。",
           "source": "social",
-          "url": "https://www.zhihu.com/question/641065475/answer/3415615067 ｜ https://www.zhihu.com/question/641065475/answer/2054519112303486147",
+          "url": "https://www.zhihu.com/question/641065475/answer/3415615067 ｜ https://zhuanlan.zhihu.com/p/2003831453235036734",
           "source_labels": [
-            "知乎"
+            "知乎",
+            "社媒"
           ],
           "source_url_list": [
             "https://www.zhihu.com/question/641065475/answer/3415615067",
-            "https://www.zhihu.com/question/641065475/answer/2054519112303486147"
+            "https://zhuanlan.zhihu.com/p/2003831453235036734"
           ]
         },
         {
           "title": "方向跟踪",
-          "paragraph": "重点跟踪能模拟高频真实对话并纠正发音流畅度的 AI 陪练产品，把“开口难”直接转化为可度量的练习闭环。",
+          "paragraph": "可继续跟踪把除此之外，我们还可以上传自己喜欢的美剧或外语视频进行口语练习做成稳定入口。",
           "source": "synthesis",
-          "url": "https://www.zhihu.com/question/641065475/answer/3415615067 ｜ https://www.zhihu.com/question/641065475/answer/2054519112303486147",
+          "url": "https://www.zhihu.com/question/641065475/answer/3415615067 ｜ https://zhuanlan.zhihu.com/p/2003831453235036734",
           "source_labels": [
-            "知乎"
+            "知乎",
+            "社媒"
           ],
           "source_url_list": [
             "https://www.zhihu.com/question/641065475/answer/3415615067",
-            "https://www.zhihu.com/question/641065475/answer/2054519112303486147"
+            "https://zhuanlan.zhihu.com/p/2003831453235036734"
           ]
         }
       ],
       "product_items": []
     },
     {
-      "title": "法律 AI 工作流",
-      "summary": "这一组信号主要来自 zhihu、GitHub，核心观察是合同审查中“厘清背景”比“条文审阅”更耗时且易被外行低估，正推动能自动串联交易背景与法律数据库的AI审查助手发展。",
+      "title": "简历优化助手",
+      "summary": "这一组信号主要来自 xiaohongshu、GitHub；社媒里反复出现的卡点是我不会写简历，都是丢给deepseek写的，在学校做过好几个实训，有一些能用大白话说出具体做了什么，有一些因为间隔时间太长记不起来具体做了什么，所以简历上的数据什么的都是编的 现阶段大家多用是我的简历，投了一个星期了，都是已读不回，是不是简历写得太垃圾了来推进 可继续跟踪把我会根据不同的岗位jd让deepseek改项目经历和个人优势，但是这样改了也没有用好像做成稳定入口。",
       "items": [
         {
           "title": "需求",
-          "paragraph": "律师在正式审查前需花大量时间沟通交易背景，用户急需一个能在审查初期就自动梳理背景信息并定位关键风险条款的工具",
+          "paragraph": "社媒里反复出现的卡点是我不会写简历，都是丢给deepseek写的，在学校做过好几个实训，有一些能用大白话说出具体做了什么，有一些因为间隔时间太长记不起来具体做了什么，所以简历上的数据什么的都是编的",
           "source": "social",
-          "url": "https://zhuanlan.zhihu.com/p/702780746 ｜ https://www.zhihu.com/question/530439453/answer/2471635526",
+          "url": "https://www.xiaohongshu.com/search_result/6a5f61f8000000000f03eae1?xsec_token=ABVIGraUoKuGYqH4-dUL1o2SQFckqkJ70x-qUInPVTUgE=&xsec_source= ｜ https://www.xiaohongshu.com/search_result/69f6261c000000001e00c82b?xsec_token=ABQF-oxFyJVnAdmL6TXH5m4QXtPDlLQDHOlyj_06_x22M=&xsec_source=",
           "source_labels": [
-            "社媒",
-            "知乎"
+            "小红书"
           ],
           "source_url_list": [
-            "https://zhuanlan.zhihu.com/p/702780746",
-            "https://www.zhihu.com/question/530439453/answer/2471635526"
+            "https://www.xiaohongshu.com/search_result/6a5f61f8000000000f03eae1?xsec_token=ABVIGraUoKuGYqH4-dUL1o2SQFckqkJ70x-qUInPVTUgE=&xsec_source=",
+            "https://www.xiaohongshu.com/search_result/69f6261c000000001e00c82b?xsec_token=ABQF-oxFyJVnAdmL6TXH5m4QXtPDlLQDHOlyj_06_x22M=&xsec_source="
           ]
         },
         {
           "title": "现状",
-          "paragraph": "目前大量非专业人士仍直接套用网上漏洞模板，而律师依赖反复与客户确认交易模式来启动审查，社区讨论集中在用AI平台自动提取合同风险并生成专业报告。",
+          "paragraph": "现阶段大家多用是我的简历，投了一个星期了，都是已读不回，是不是简历写得太垃圾了来推进。",
           "source": "social",
-          "url": "https://zhuanlan.zhihu.com/p/702780746 ｜ https://www.zhihu.com/question/530439453/answer/2471635526",
+          "url": "https://www.xiaohongshu.com/search_result/6a5f61f8000000000f03eae1?xsec_token=ABVIGraUoKuGYqH4-dUL1o2SQFckqkJ70x-qUInPVTUgE=&xsec_source= ｜ https://www.xiaohongshu.com/search_result/69f6261c000000001e00c82b?xsec_token=ABQF-oxFyJVnAdmL6TXH5m4QXtPDlLQDHOlyj_06_x22M=&xsec_source=",
           "source_labels": [
-            "社媒",
-            "知乎"
+            "小红书"
           ],
           "source_url_list": [
-            "https://zhuanlan.zhihu.com/p/702780746",
-            "https://www.zhihu.com/question/530439453/answer/2471635526"
+            "https://www.xiaohongshu.com/search_result/6a5f61f8000000000f03eae1?xsec_token=ABVIGraUoKuGYqH4-dUL1o2SQFckqkJ70x-qUInPVTUgE=&xsec_source=",
+            "https://www.xiaohongshu.com/search_result/69f6261c000000001e00c82b?xsec_token=ABQF-oxFyJVnAdmL6TXH5m4QXtPDlLQDHOlyj_06_x22M=&xsec_source="
           ]
         },
         {
           "title": "方向跟踪",
-          "paragraph": "值得跟踪将合同审查重构为问答式交互流程，让AI通过主动提问厘清交易背景后，实时比对法律数据库生成风险提示的产品方向。",
+          "paragraph": "可继续跟踪把我会根据不同的岗位jd让deepseek改项目经历和个人优势，但是这样改了也没有用好像做成稳定入口。",
           "source": "synthesis",
-          "url": "https://zhuanlan.zhihu.com/p/702780746 ｜ https://www.zhihu.com/question/530439453/answer/2471635526",
+          "url": "https://www.xiaohongshu.com/search_result/6a5f61f8000000000f03eae1?xsec_token=ABVIGraUoKuGYqH4-dUL1o2SQFckqkJ70x-qUInPVTUgE=&xsec_source= ｜ https://www.xiaohongshu.com/search_result/69f6261c000000001e00c82b?xsec_token=ABQF-oxFyJVnAdmL6TXH5m4QXtPDlLQDHOlyj_06_x22M=&xsec_source=",
           "source_labels": [
-            "社媒",
-            "知乎"
+            "小红书"
           ],
           "source_url_list": [
-            "https://zhuanlan.zhihu.com/p/702780746",
-            "https://www.zhihu.com/question/530439453/answer/2471635526"
+            "https://www.xiaohongshu.com/search_result/6a5f61f8000000000f03eae1?xsec_token=ABVIGraUoKuGYqH4-dUL1o2SQFckqkJ70x-qUInPVTUgE=&xsec_source=",
+            "https://www.xiaohongshu.com/search_result/69f6261c000000001e00c82b?xsec_token=ABQF-oxFyJVnAdmL6TXH5m4QXtPDlLQDHOlyj_06_x22M=&xsec_source="
           ]
         }
       ],
       "product_items": [
         {
-          "title": "HeShen-1/AI-Powered-LegalComplianceAssistant",
-          "url": "https://github.com/HeShen-1/AI-Powered-LegalComplianceAssistant",
+          "title": "Me106y/MirrorView",
+          "url": "https://github.com/Me106y/MirrorView",
           "website_url": "",
           "summary": "",
           "description": "",
           "source_label": "GitHub",
-          "heat_line": "🌟39",
+          "heat_line": "🌟11",
           "tags": [
-            "法律 AI 工作流",
-            "法律科技"
+            "简历优化助手",
+            "AI 面试官"
           ],
           "interest_tags": [
-            "法律 AI 工作流",
-            "法律科技"
+            "简历优化助手",
+            "AI 面试官"
           ],
           "tool_tags": [],
           "mechanism_tags": [],
-          "highlight_one_liner": "本项目是一个集自动化审查、智能化问答、专业化报告生成于一体的 AI 法律服务平台，旨在帮助中小企业和律师事务所提高合同审查效率，降低法律风险。平台通过先进的 AI 技术，实现了对法律文本的深度理解和分析，为用户提供精准、高效的法律合规支持。",
-          "reuse_direction": "把「法律 AI 工作流 / 法律科技」封装成更明确的岗位或任务入口",
-          "minimal_mvp": "先围绕“律师在正式审查前需花大量时间沟通交易背景，用户急需一个能在审查初期就自动梳理背景信息并定位关键风险条款的工具”做单任务 MVP，优先打通输入、执行和结果回传"
-        },
-        {
-          "title": "abaiar/-LexAI",
-          "url": "https://github.com/abaiar/-LexAI",
-          "website_url": "",
-          "summary": "",
-          "description": "",
-          "source_label": "GitHub",
-          "heat_line": "🌟24",
-          "tags": [
-            "法律 AI 工作流"
-          ],
-          "interest_tags": [
-            "法律 AI 工作流"
-          ],
-          "tool_tags": [],
-          "mechanism_tags": [],
-          "highlight_one_liner": "小理智法 AI 是一款基于大语言模型（LLM）的智能法律咨询平台，集成了法律咨询、合同审查、文书生成、合同起草、合同对比、智能校对、法律文书解读等多项 AI 法律服务。系统采用 LangChain Agent 架构，结合得理法律数据库 API 实现案例检索与法规检索，为用户提供专业、准确、有据可查的法律分析与建议。",
-          "reuse_direction": "把「法律 AI 工作流」封装成更明确的岗位或任务入口",
-          "minimal_mvp": "先围绕“律师在正式审查前需花大量时间沟通交易背景，用户急需一个能在审查初期就自动梳理背景信息并定位关键风险条款的工具”做单任务 MVP，优先打通输入、执行和结果回传"
+          "highlight_one_liner": "MirrorView 是一款面向求职训练场景的 AI 应用平台，围绕“简历优化—岗位匹配—模拟面试—复盘改进”构建端到端闭环。系统基于大模型 Agent 实现个性化追问、实时多轮面试和结构化评估输出，并通过语音交互、实时视频旁听与导师协作机制提升训练真实性与反馈效率。平台采用 PyQt + Streamlit 双端协同与 Flask 服务化架构，支持能力模块",
+          "reuse_direction": "把「简历优化助手 / AI 面试官」封装成更明确的岗位或任务入口",
+          "minimal_mvp": "先围绕“社媒里反复出现的卡点是我不会写简历，都是丢给deepseek写的，在学校做过好几个实训，有一些能用大白话说出具体做了什么，有一些因为间隔时间太长记不起来具体做了什么，所以简历上的数据什么的都是编的”做单任务 MVP，优先打通输入、执行和结果回传"
         }
       ]
     }
@@ -1762,7 +1105,7 @@
   "repo_url": "https://github.com/Xuanqi-Zhou/ai-product-idea-radar",
   "h5": {
     "enabled": true,
-    "entry_url": "http://devbox.xuanqi-zhou.devbox.in.chaitin.net:8089/briefings/2026-07-30/",
+    "entry_url": "http://devbox.xuanqi-zhou.devbox.in.chaitin.net:8089/briefings/2026-07-31/",
     "site_base_path": "/",
     "public_base_url": "http://devbox.xuanqi-zhou.devbox.in.chaitin.net:8089",
     "deployed_to": "",
