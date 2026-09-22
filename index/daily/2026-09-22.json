@@ -1,0 +1,2413 @@
+{
+  "version": "current",
+  "source": "AI-idea-rader",
+  "generated_at": "2026-09-22T17:00:07",
+  "date_key": "2026-09-22",
+  "date_title": "2026年09月22日",
+  "briefing_path": "briefings/2026-09-22.md",
+  "ideas_path": "ideas/2026-09-22.md",
+  "briefing": {
+    "version": "v5",
+    "date_key": "2026-09-22",
+    "date_title": "2026年09月22日",
+    "high_potential_items": [
+      {
+        "title": "Sylinko/Everywhere",
+        "full_name": "sylinko/everywhere",
+        "url": "https://github.com/Sylinko/Everywhere",
+        "source_type": "github",
+        "source_layer": "discovery",
+        "repo_id": 971243074,
+        "owner": "sylinko",
+        "name": "everywhere",
+        "summary": "On-screen aware AI assistant for your desktop. Uses current app context, multiple LLMs, and MCP tools to help you act across apps.",
+        "interest_tags": [
+          "桌面工作台",
+          "法律科技"
+        ],
+        "domain_tags": [],
+        "tool_tags": [],
+        "mechanism_tags": [],
+        "highlight_one_liner": "读当前屏幕上下文，跨应用把事做完",
+        "highlight_keywords": [
+          "屏幕感知",
+          "多模型切换",
+          "MCP 工具调用",
+          "跨应用执行"
+        ],
+        "reuse_direction": "做垂直场景助手时，可借鉴它把「当前屏幕内容」当成免输入的隐式上下文，再用 MCP 工具链把模型输出直接落到别的应用里，而不是停在对话框里。",
+        "minimal_mvp": "第一版只做最小闭环：读取当前窗口文本作为上下文，接一个模型，挂一个 MCP 工具，让用户在当前应用里说一句指令就把结果写进目标应用。",
+        "selection_reason": "已有较强社区验证",
+        "is_revisit": false,
+        "revisit_reason": "",
+        "score": 41.25,
+        "rank_score": 26.1875,
+        "stars_total": 6286,
+        "stars_7d": null,
+        "stars_30d": null,
+        "forks_total": 389,
+        "watchers_total": null,
+        "created_at": "2025-04-23T08:19:33Z",
+        "pushed_at": "2026-09-17T12:29:32Z",
+        "updated_at": "2026-09-22T00:04:06Z",
+        "topics": [
+          "ai",
+          "ai-agents",
+          "ai-assistant",
+          "avalonia",
+          "claude",
+          "deepseek",
+          "desktop-app",
+          "flow-state",
+          "gemini",
+          "hermes-agent",
+          "mcp",
+          "on-screen-awareness",
+          "openai",
+          "openclaw",
+          "personal",
+          "skills"
+        ],
+        "semantic_bonus": 10.0,
+        "ai_noise": false,
+        "ai_match_score": 8,
+        "ai_priority": "headline",
+        "ai_rationale": "桌面级屏幕感知 AI 助手，能结合当前应用上下文与 MCP 跨应用执行任务，最贴近 AI 工作流与产品化方向。",
+        "copy_generation_source": "openai",
+        "copy_prompt_version": "openai_compact_v4"
+      },
+      {
+        "title": "browser-act/skills",
+        "full_name": "browser-act/skills",
+        "url": "https://github.com/browser-act/skills",
+        "source_type": "github",
+        "source_layer": "discovery",
+        "repo_id": 1151333143,
+        "owner": "browser-act",
+        "name": "skills",
+        "summary": "Browser automation CLI built for AI agents. Break through anti-bot walls, hand off to humans across platforms when stuck. Parallel multi-task execution, independent multi-session operation, isolated multi-account browsing.",
+        "interest_tags": [
+          "开发者工具",
+          "工作流自动化",
+          "浏览器自动化"
+        ],
+        "domain_tags": [],
+        "tool_tags": [],
+        "mechanism_tags": [],
+        "highlight_one_liner": "反爬穿透、卡住可转人工的多账号浏览器 CLI",
+        "highlight_keywords": [
+          "反爬突破",
+          "卡点转人工",
+          "多账号隔离",
+          "并行多会话"
+        ],
+        "reuse_direction": "把浏览器自动化封装成 agent 可直接调用的 CLI，并在反爬拦截、验证码等卡点处保留人工接管入口，这套「自动跑为主、人工只接手卡点」的分工方式值得做网页抓取与数据提取的 agent 产品借鉴。",
+        "minimal_mvp": "第一版先让一个 agent 会话通过 CLI 打开目标网站并抓取数据，识别到反爬或验证失败时暂停并把当前页面交给人工操作，人工处理完由同一会话继续往下跑。",
+        "selection_reason": "已有较强社区验证",
+        "is_revisit": false,
+        "revisit_reason": "",
+        "score": 28.3376,
+        "rank_score": 37.2506,
+        "stars_total": 5969,
+        "stars_7d": null,
+        "stars_30d": null,
+        "forks_total": 299,
+        "watchers_total": null,
+        "created_at": "2026-02-06T10:35:35Z",
+        "pushed_at": "2026-08-24T14:56:52Z",
+        "updated_at": "2026-09-21T12:38:36Z",
+        "topics": [
+          "agent-infrastructure",
+          "ai-agents",
+          "automation",
+          "claude-cli",
+          "claude-code",
+          "claude-code-skills",
+          "claude-skills",
+          "codex",
+          "codex-cli",
+          "codex-skill",
+          "cursor",
+          "data-extraction",
+          "no-code",
+          "openclaw",
+          "openclaw-cli",
+          "openclaw-skill",
+          "openclaw-skills",
+          "web-data-extraction",
+          "web-scraping",
+          "web-scraping-api"
+        ],
+        "semantic_bonus": 23.0,
+        "ai_noise": false,
+        "ai_match_score": 6,
+        "ai_priority": "medium",
+        "ai_rationale": "为 AI Agent 提供浏览器自动化与反爬、人机交接能力，偏底层工具，可支撑企业自动化但非直接产品方向。",
+        "copy_generation_source": "openai",
+        "copy_prompt_version": "openai_compact_v4"
+      },
+      {
+        "title": "callstack/agent-device",
+        "full_name": "callstack/agent-device",
+        "url": "https://github.com/callstack/agent-device",
+        "source_type": "github",
+        "source_layer": "discovery",
+        "repo_id": 1146193768,
+        "owner": "callstack",
+        "name": "agent-device",
+        "summary": "Mobile app automation and verification for AI coding agents. CLI, MCP server, and typed Node.js API for iOS, Android, HarmonyOS, TV, web, macOS, and Linux.",
+        "interest_tags": [
+          "开发者工具",
+          "工作流自动化",
+          "桌面工作台"
+        ],
+        "domain_tags": [],
+        "tool_tags": [],
+        "mechanism_tags": [],
+        "highlight_one_liner": "让 AI 编码代理亲手操作移动端做验证",
+        "highlight_keywords": [
+          "MCP 移动端操作层",
+          "真机与模拟器",
+          "CLI 加类型化 API"
+        ],
+        "reuse_direction": "值得借鉴的是把 CLI、MCP server 和类型化 Node.js API 打包成同一套设备操作层，让 AI 代理像调用函数一样启动模拟器、装包、点按并断言界面，这个接入形态可迁移到任何需要代理触碰真实设备或浏览器的验证场景。",
+        "minimal_mvp": "第一版只打通一条链路：用 MCP server 暴露启动 iOS 模拟器、安装应用、点按输入、截图断言四类工具，让代理独立跑通一次登录 E2E 并回传失败截图。",
+        "selection_reason": "已有较强社区验证",
+        "is_revisit": false,
+        "revisit_reason": "",
+        "score": 29.6245,
+        "rank_score": 37.4437,
+        "stars_total": 4713,
+        "stars_7d": null,
+        "stars_30d": null,
+        "forks_total": 311,
+        "watchers_total": null,
+        "created_at": "2026-01-30T18:41:54Z",
+        "pushed_at": "2026-09-21T21:05:35Z",
+        "updated_at": "2026-09-22T02:26:09Z",
+        "topics": [
+          "adb",
+          "agentic-ai",
+          "agents",
+          "ai-agents",
+          "android-emulator",
+          "automation",
+          "e2e-testing",
+          "expo",
+          "flutter",
+          "ios-simulator",
+          "mcp",
+          "mobile",
+          "mobile-testing",
+          "performance-optimization",
+          "react-native",
+          "testing",
+          "xcuitest"
+        ],
+        "semantic_bonus": 23.0,
+        "ai_noise": false,
+        "ai_match_score": 6,
+        "ai_priority": "medium",
+        "ai_rationale": "面向 AI 编程代理的移动端自动化验证工具，属于 Agent 基础设施，但与雷达关注的直接应用场景匹配度一般。",
+        "copy_generation_source": "openai",
+        "copy_prompt_version": "openai_compact_v4"
+      }
+    ],
+    "high_potential_layers": [
+      {
+        "key": "dev_tool",
+        "title": "开发工具推荐",
+        "description": "主要服务 builder，能直接用于构建、调试、部署或编排 AI 应用",
+        "empty_text": "今日暂无新增开发工具推荐。",
+        "items": [
+          {
+            "title": "browser-act/skills",
+            "full_name": "browser-act/skills",
+            "url": "https://github.com/browser-act/skills",
+            "source_type": "github",
+            "source_layer": "discovery",
+            "repo_id": 1151333143,
+            "owner": "browser-act",
+            "name": "skills",
+            "summary": "Browser automation CLI built for AI agents. Break through anti-bot walls, hand off to humans across platforms when stuck. Parallel multi-task execution, independent multi-session operation, isolated multi-account browsing.",
+            "interest_tags": [
+              "开发者工具",
+              "工作流自动化",
+              "浏览器自动化"
+            ],
+            "domain_tags": [],
+            "tool_tags": [],
+            "mechanism_tags": [],
+            "highlight_one_liner": "反爬穿透、卡住可转人工的多账号浏览器 CLI",
+            "highlight_keywords": [
+              "反爬突破",
+              "卡点转人工",
+              "多账号隔离",
+              "并行多会话"
+            ],
+            "reuse_direction": "把浏览器自动化封装成 agent 可直接调用的 CLI，并在反爬拦截、验证码等卡点处保留人工接管入口，这套「自动跑为主、人工只接手卡点」的分工方式值得做网页抓取与数据提取的 agent 产品借鉴。",
+            "minimal_mvp": "第一版先让一个 agent 会话通过 CLI 打开目标网站并抓取数据，识别到反爬或验证失败时暂停并把当前页面交给人工操作，人工处理完由同一会话继续往下跑。",
+            "selection_reason": "已有较强社区验证",
+            "is_revisit": false,
+            "revisit_reason": "",
+            "score": 28.3376,
+            "rank_score": 37.2506,
+            "stars_total": "5969",
+            "stars_7d": null,
+            "stars_30d": null,
+            "forks_total": 299,
+            "watchers_total": null,
+            "created_at": "2026-02-06T10:35:35Z",
+            "pushed_at": "2026-08-24T14:56:52Z",
+            "updated_at": "2026-09-21T12:38:36Z",
+            "topics": [
+              "agent-infrastructure",
+              "ai-agents",
+              "automation",
+              "claude-cli",
+              "claude-code",
+              "claude-code-skills",
+              "claude-skills",
+              "codex",
+              "codex-cli",
+              "codex-skill",
+              "cursor",
+              "data-extraction",
+              "no-code",
+              "openclaw",
+              "openclaw-cli",
+              "openclaw-skill",
+              "openclaw-skills",
+              "web-data-extraction",
+              "web-scraping",
+              "web-scraping-api"
+            ],
+            "semantic_bonus": 23.0,
+            "ai_noise": false,
+            "ai_match_score": 6,
+            "ai_priority": "medium",
+            "ai_rationale": "为 AI Agent 提供浏览器自动化与反爬、人机交接能力，偏底层工具，可支撑企业自动化但非直接产品方向。",
+            "copy_generation_source": "openai",
+            "copy_prompt_version": "openai_compact_v4",
+            "source_label": "GitHub",
+            "heat_line": ""
+          },
+          {
+            "title": "callstack/agent-device",
+            "full_name": "callstack/agent-device",
+            "url": "https://github.com/callstack/agent-device",
+            "source_type": "github",
+            "source_layer": "discovery",
+            "repo_id": 1146193768,
+            "owner": "callstack",
+            "name": "agent-device",
+            "summary": "Mobile app automation and verification for AI coding agents. CLI, MCP server, and typed Node.js API for iOS, Android, HarmonyOS, TV, web, macOS, and Linux.",
+            "interest_tags": [
+              "开发者工具",
+              "工作流自动化",
+              "桌面工作台"
+            ],
+            "domain_tags": [],
+            "tool_tags": [],
+            "mechanism_tags": [],
+            "highlight_one_liner": "让 AI 编码代理亲手操作移动端做验证",
+            "highlight_keywords": [
+              "MCP 移动端操作层",
+              "真机与模拟器",
+              "CLI 加类型化 API"
+            ],
+            "reuse_direction": "值得借鉴的是把 CLI、MCP server 和类型化 Node.js API 打包成同一套设备操作层，让 AI 代理像调用函数一样启动模拟器、装包、点按并断言界面，这个接入形态可迁移到任何需要代理触碰真实设备或浏览器的验证场景。",
+            "minimal_mvp": "第一版只打通一条链路：用 MCP server 暴露启动 iOS 模拟器、安装应用、点按输入、截图断言四类工具，让代理独立跑通一次登录 E2E 并回传失败截图。",
+            "selection_reason": "已有较强社区验证",
+            "is_revisit": false,
+            "revisit_reason": "",
+            "score": 29.6245,
+            "rank_score": 37.4437,
+            "stars_total": "4713",
+            "stars_7d": null,
+            "stars_30d": null,
+            "forks_total": 311,
+            "watchers_total": null,
+            "created_at": "2026-01-30T18:41:54Z",
+            "pushed_at": "2026-09-21T21:05:35Z",
+            "updated_at": "2026-09-22T02:26:09Z",
+            "topics": [
+              "adb",
+              "agentic-ai",
+              "agents",
+              "ai-agents",
+              "android-emulator",
+              "automation",
+              "e2e-testing",
+              "expo",
+              "flutter",
+              "ios-simulator",
+              "mcp",
+              "mobile",
+              "mobile-testing",
+              "performance-optimization",
+              "react-native",
+              "testing",
+              "xcuitest"
+            ],
+            "semantic_bonus": 23.0,
+            "ai_noise": false,
+            "ai_match_score": 6,
+            "ai_priority": "medium",
+            "ai_rationale": "面向 AI 编程代理的移动端自动化验证工具，属于 Agent 基础设施，但与雷达关注的直接应用场景匹配度一般。",
+            "copy_generation_source": "openai",
+            "copy_prompt_version": "openai_compact_v4",
+            "source_label": "GitHub",
+            "heat_line": ""
+          },
+          {
+            "id": "1251157",
+            "title": "Arcjet",
+            "name": "Arcjet",
+            "repo_name": "arcjet",
+            "summary": "Secure the AI agents you're building at runtime",
+            "description": "Arcjet is the runtime security platform that ships in your AI code. Detect prompt injection, authorize agent tool calls, redact sensitive data, and block bots and abuse. Real-time security building blocks you call inside your app, before an action happens.",
+            "url": "https://www.producthunt.com/products/arcjet?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai-idea-radar-v4-2+%28ID%3A+294543%29",
+            "website_url": "https://www.producthunt.com/r/7QMMNEZ7CJTVIJ?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai-idea-radar-v4-2+%28ID%3A+294543%29",
+            "topics": [
+              "Developer Tools",
+              "SDK",
+              "Security"
+            ],
+            "topic_slugs": [
+              "developer-tools",
+              "sdk",
+              "security"
+            ],
+            "makers": [
+              "[REDACTED]",
+              "Shane O'Connor"
+            ],
+            "votes_count": 355,
+            "comments_count": 67,
+            "featured_at": "2026-09-21T07:01:00Z",
+            "created_at": "2026-09-21T07:01:00Z",
+            "top_comments": [
+              "<p>Congrats on the laaaunch! :D Honestly, anything that saves us from spending half our dev time building rate limiting and security from scratch is an absolute lifesaver. Super excited to test this out! </p>",
+              "<p><a href=\"https://www.producthunt.com/@davidmytton\" data-node-type=\"mention\" data-mention-type=\"user\" data-mention-id=\"davidmytton\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">@davidmytton</a> &amp; team, congrats on the launch. Lovely product, would def love to see how it grows with time. Best wishes 🫡</p>",
+              "<p>How much latency is introduced by these checks on the request path, particularly for the agent flows which require multiple checks?<br>Btw, Congratulations <a href=\"https://www.producthunt.com/@davidmytton\" data-node-type=\"mention\" data-mention-type=\"user\" data-mention-id=\"davidmytton\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">@davidmytton</a> <a href=\"https://www.producthunt.com/@cassie_arcjet\" data-node-type=\"mention\" data-mention-type=\"user\" data-mention-id=\"cassie_arcjet\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">@cassie_arcjet</a> &amp; Team. 🎊✌️</p>"
+            ],
+            "source": "Product Hunt",
+            "product_shape_score": 5.0,
+            "launch_heat_score": 13.0,
+            "interest_tags": [
+              "开发者工具",
+              "安全工具"
+            ],
+            "domain_tags": [
+              "Security",
+              "Developer Tools"
+            ],
+            "tool_tags": [
+              "SDK"
+            ],
+            "mechanism_tags": [
+              "runtime security",
+              "prompt injection defense",
+              "agent tool authorization"
+            ],
+            "author": "[REDACTED] / Shane O'Connor",
+            "score": 44.6,
+            "why": "Product Hunt 当前获得 355 票、67 条评论；仍处在近期新品验证窗口；产品形态已经比较完整",
+            "band": "爆发新品",
+            "mechanism": "可迁移的机制在于把模型从单次回答升级成持续协作代理，强调上下文记忆与多步执行。",
+            "routing_confidence": 0.12,
+            "routing_interest": "",
+            "routing_reason": "Arcjet 是面向 AI Agent 的运行时安全基础设施/SDK，核心任务是安全防护与滥用拦截，不直接服务任何给定垂直兴趣点的核心任务；属于底层平台，不应硬分配到具体业务场景。",
+            "highlight_one_liner": "AI 代理运行时安全 SDK",
+            "highlight_keywords": [
+              "运行时安全",
+              "提示注入防御",
+              "工具调用授权",
+              "开发者 SDK"
+            ],
+            "reuse_direction": "把安全校验嵌入 AI 代理执行工具的运行时链路，对提示注入和越权工具调用做实时拦截，适合作为构建安全 Agent 基础设施的参考方向。",
+            "minimal_mvp": "第一版先做一个 SDK，在 AI 代理调用工具前拦截请求，判断是否为提示注入并决定放行或阻断。",
+            "copy_generation_source": "openai",
+            "copy_prompt_version": "openai_compact_v4",
+            "source_type": "product_hunt_high_potential",
+            "source_label": "Product Hunt",
+            "stars_total": "355",
+            "heat_line": "🔥PH 355票｜67评"
+          }
+        ],
+        "groups": []
+      },
+      {
+        "key": "knowledge",
+        "title": "知识内容",
+        "description": "主要提供帮助构建知识体系的 Knowledge Hub，主条目优先系统学习资源，特别新的讨论仅作 Plus 补充",
+        "empty_text": "今日暂无新增知识内容。",
+        "items": [
+          {
+            "title": "OpenBook：构建 AI Agent 的 Harness 工程学",
+            "url": "https://dawei008.github.io/openbook/",
+            "summary": "围绕 Harness、编排、任务拆分与运行机制整理 AI Agent 工程方法，适合补工程化视角。",
+            "source_label": "OpenBook",
+            "knowledge_label": "Handbook",
+            "knowledge_variant": "main",
+            "knowledge_intro_seed": "围绕 Harness、编排、任务拆分与运行机制整理 AI Agent 工程方法，适合补工程化视角。",
+            "knowledge_priority": 118,
+            "knowledge_source": "knowledge_hub_config",
+            "knowledge_intro": "这是围绕 Harness、编排、任务拆分与运行机制展开的 AI Agent 工程方法手册，适合从工程化视角系统梳理 Agent 构建流程的学习者"
+          },
+          {
+            "title": "Learn Agent 知识库",
+            "url": "https://learnagent.wiki/",
+            "summary": "汇总 Agent 概念、框架、论文与实战入口，更像持续扩展的学习导航站，适合查漏补缺。",
+            "source_label": "Learn Agent",
+            "knowledge_label": "知识库",
+            "knowledge_variant": "main",
+            "knowledge_intro_seed": "汇总 Agent 概念、框架、论文与实战入口，更像持续扩展的学习导航站，适合查漏补缺。",
+            "knowledge_priority": 114,
+            "knowledge_source": "knowledge_hub_config",
+            "knowledge_intro": "本知识库汇总 Agent 概念、框架、论文与实战入口，是持续扩展的学习导航站，适合系统学习 Agent 时查漏补缺"
+          }
+        ],
+        "groups": []
+      },
+      {
+        "key": "product",
+        "title": "产品形态",
+        "description": "主要服务终端用户或业务操作者，已有明确使用场景与产品闭环",
+        "empty_text": "今日暂无新增产品型对象。",
+        "items": [
+          {
+            "title": "Sylinko/Everywhere",
+            "full_name": "sylinko/everywhere",
+            "url": "https://github.com/Sylinko/Everywhere",
+            "source_type": "high_potential",
+            "source_layer": "discovery",
+            "repo_id": 971243074,
+            "owner": "sylinko",
+            "name": "everywhere",
+            "summary": "On-screen aware AI assistant for your desktop. Uses current app context, multiple LLMs, and MCP tools to help you act across apps.",
+            "interest_tags": [
+              "桌面工作台",
+              "法律科技"
+            ],
+            "domain_tags": [],
+            "tool_tags": [],
+            "mechanism_tags": [],
+            "highlight_one_liner": "读当前屏幕上下文，跨应用把事做完",
+            "highlight_keywords": [
+              "屏幕感知",
+              "多模型切换",
+              "MCP 工具调用",
+              "跨应用执行"
+            ],
+            "reuse_direction": "做垂直场景助手时，可借鉴它把「当前屏幕内容」当成免输入的隐式上下文，再用 MCP 工具链把模型输出直接落到别的应用里，而不是停在对话框里。",
+            "minimal_mvp": "第一版只做最小闭环：读取当前窗口文本作为上下文，接一个模型，挂一个 MCP 工具，让用户在当前应用里说一句指令就把结果写进目标应用。",
+            "selection_reason": "已有较强社区验证",
+            "is_revisit": false,
+            "revisit_reason": "",
+            "score": 41.25,
+            "rank_score": 26.1875,
+            "stars_total": "6286",
+            "stars_7d": null,
+            "stars_30d": null,
+            "forks_total": 389,
+            "watchers_total": null,
+            "created_at": "2025-04-23T08:19:33Z",
+            "pushed_at": "2026-09-17T12:29:32Z",
+            "updated_at": "2026-09-22T00:04:06Z",
+            "topics": [
+              "ai",
+              "ai-agents",
+              "ai-assistant",
+              "avalonia",
+              "claude",
+              "deepseek",
+              "desktop-app",
+              "flow-state",
+              "gemini",
+              "hermes-agent",
+              "mcp",
+              "on-screen-awareness",
+              "openai",
+              "openclaw",
+              "personal",
+              "skills"
+            ],
+            "semantic_bonus": 10.0,
+            "ai_noise": false,
+            "ai_match_score": 8,
+            "ai_priority": "headline",
+            "ai_rationale": "桌面级屏幕感知 AI 助手，能结合当前应用上下文与 MCP 跨应用执行任务，最贴近 AI 工作流与产品化方向。",
+            "copy_generation_source": "openai",
+            "copy_prompt_version": "openai_compact_v4",
+            "source_label": "GitHub",
+            "heat_line": ""
+          },
+          {
+            "id": "1255660",
+            "title": "Sai",
+            "name": "Sai",
+            "repo_name": "sai-5",
+            "summary": "The autonomous computer fleet at your command",
+            "description": "Sai is the world's first robosecretary that works with a fleet of autonomous computers, doing your endless screen work. Each computer navigates software the way you do: reads the screen, clicks the button, types in the form. Trained to interact with the computer interface, Sai automates software even when they lack APIs: legacy desktop apps, internal portals, anything behind a login. Sai supports Windows, macOS and Linux. 73% on OSWorld.",
+            "url": "https://www.producthunt.com/products/simular?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai-idea-radar-v4-2+%28ID%3A+294543%29",
+            "website_url": "https://www.producthunt.com/r/EXXMVNBYWQYZ32?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai-idea-radar-v4-2+%28ID%3A+294543%29",
+            "topics": [
+              "Productivity",
+              "Artificial Intelligence"
+            ],
+            "topic_slugs": [
+              "productivity",
+              "artificial-intelligence"
+            ],
+            "makers": [
+              "[REDACTED]",
+              "Rita L"
+            ],
+            "votes_count": 315,
+            "comments_count": 33,
+            "featured_at": "2026-09-21T07:01:00Z",
+            "created_at": "2026-09-21T07:01:00Z",
+            "top_comments": [
+              "<p>Hey Product Hunt 👋</p><p>I'm Ang and I build Sai at Simular.</p><p></p><p>Sai is the world's first robosecretary that comes together with a fleet of autonomous computers doing your endless screen work. We believe the future of work isn't just one computer — it's many computer.</p><p></p><p>Each computer navigates software the way you do: reads the screen, clicks the button, types in the form. That's the whole point. Because Sai works at the interface layer, it automates things that have no API and never will — legacy desktop apps, internal portals, anything behind a login. Windows, macOS, and Linux. 73% on OSWorld.</p><p></p><p>What that buys you in practice:</p><p></p><p>🖥️ <strong>Real computers, not a chat box.</strong> You hand over a task, it runs it on an actual desktop. Open the workspace any time to watch, or take the mouse back mid-run.</p><p></p><p>🔁 <strong>It learns the route once.</strong> Any finished task can be saved as a skill, scheduled, or triggered by an event — so the tenth run is faster and cheaper than the first.</p><p></p><p>🔒 <strong>Autonomy with a seatbelt.</strong> Tiered approvals, \"trust for this task,\" and encrypted input for passwords and codes — the model never sees plaintext.</p><p></p><p>The agent we actually optimize for is whether it's still useful and affordable the tenth time you ask.</p><p></p><p>Tell us the screen work that eats your week — we'll tell you honestly whether Sai can take it off your hands.</p>",
+              "<p>Congrats on the launch, Simular team! <br><br>How do you guys ensure that all runs are deterministic while still having this \"thinking\" part when, let's say, the form changes and we have to enter another value? Thinking from a perspective where I have to fill out hundreds of website forms almost daily, but those forms are updated monthly.</p>",
+              "<p><a href=\"https://www.producthunt.com/products/simular\" data-node-type=\"mention\" data-mention-type=\"product\" data-mention-id=\"simular\" target=\"_blank\" rel=\"noopener\">@Simular</a> <a href=\"https://www.producthunt.com/@agidude\" data-node-type=\"mention\" data-mention-type=\"user\" data-mention-id=\"agidude\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">@agidude</a> Congrats one the PH launch ! , Does it have human in loop control / fully autonomous ?</p>"
+            ],
+            "source": "Product Hunt",
+            "product_shape_score": 2.0,
+            "launch_heat_score": 13.0,
+            "interest_tags": [
+              "企业自动化工作流",
+              "效率办公"
+            ],
+            "domain_tags": [
+              "企业自动化",
+              "软件自动化",
+              "RPA"
+            ],
+            "tool_tags": [
+              "autonomous computer fleet",
+              "robosecretary",
+              "GUI automation"
+            ],
+            "mechanism_tags": [
+              "screen reading",
+              "click/type interaction",
+              "no-API automation"
+            ],
+            "author": "[REDACTED] / Rita L",
+            "score": 40.188,
+            "why": "Product Hunt 当前获得 315 票、33 条评论；仍处在近期新品验证窗口",
+            "band": "爆发新品",
+            "mechanism": "可迁移的机制在于把通用模型能力封装进具体产品形态，让用户按任务而不是按模型来消费能力。",
+            "routing_confidence": 0.72,
+            "routing_interest": "企业自动化工作流",
+            "routing_reason": "Sai 是计算机操作型代理，通过读屏、点击和输入来自动化无 API 的软件、旧桌面应用与内部门户，直接对应企业自动化工作流中人工在异构系统里重复操作和流程割裂的痛点。它不是垂直行业产品，但核心任务属于企业流程/界面操作自动化。",
+            "highlight_one_liner": "没有 API 也能替你读屏点键的电脑机群",
+            "highlight_keywords": [
+              "自主电脑机群",
+              "读屏代操作",
+              "免 API 自动化",
+              "GUI 点击输入"
+            ],
+            "reuse_direction": "把「读屏—点击—输入」的 GUI 代操作能力做成可并行调度的多机代理，值得迁移到那些没有 API、只能靠人肉点击的老旧企业软件流程里。",
+            "minimal_mvp": "第一版先让一个代理在一台机器上完成一次读屏、点击、输入并跑通某套无 API 老系统的表单操作，然后再复制成多台机器并行处理同一批任务。",
+            "copy_generation_source": "openai",
+            "copy_prompt_version": "openai_compact_v4",
+            "source_type": "product_hunt_high_potential",
+            "source_label": "Product Hunt",
+            "stars_total": "315",
+            "heat_line": "🔥PH 315票｜33评"
+          },
+          {
+            "id": "1162764",
+            "title": "Mantra Timer",
+            "name": "Mantra Timer",
+            "repo_name": "mantra-timer",
+            "summary": "A minimalist mantra meditation timer for iOS.",
+            "description": "Mantra Meditation Timer rejects the bloated tracking of modern wellness apps. Built for self-directed practitioners, this elegant iOS app offers a distraction-free experience with zero data collection. Enjoy core Meditation timers, calming chimes, and mental or physical check-ins completely free. For established pro mantra practitioners, a small one-off payment unlocks advanced stats and deeper customisation. No subscription fatigue, just a beautifully simple tool for profound daily practice.",
+            "url": "https://www.producthunt.com/products/transcendence?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai-idea-radar-v4-2+%28ID%3A+294543%29",
+            "website_url": "https://www.producthunt.com/r/EWJKZOW5DRPD2A?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai-idea-radar-v4-2+%28ID%3A+294543%29",
+            "topics": [
+              "Health & Fitness",
+              "Meditation"
+            ],
+            "topic_slugs": [
+              "health-fitness",
+              "meditation"
+            ],
+            "makers": [
+              "Brent Vardy"
+            ],
+            "votes_count": 190,
+            "comments_count": 15,
+            "featured_at": "2026-09-19T07:01:00Z",
+            "created_at": "2026-09-19T07:01:00Z",
+            "top_comments": [
+              "<p>The Inspiration &amp; Problem:<br><br>I have been practising Transcendental Meditation daily for over 3,700 consecutive days. After over a decade of practice I simply wanted a clean tool to support my daily practice. Instead, I found a wellness market saturated with bloated apps. The official options required intrusive personal background data, others pushed endless guided programmes, and almost all of them demanded a recurring monthly subscription just to sit in silence.<br><br>Mantra Timer was born out of pure frustration. I wanted to build a beautiful, distraction-free timer that treats practitioners with respect—meaning zero data collection and zero notifications shouting for your attention.<br><br>How the Product Evolved:<br><br>Building a software studio at a slower, \"human pace\" while managing a chronic illness (ME) forces you to become hyper-intentional. <br><br>Ditching the Subscription: I originally planned a standard annual subscription tier. But as the studio's anti-rental philosophy solidified, that felt hypocritical. So I completely changed direction. The core app is entirely free, and additional functionality for established practitioners is unlocked via a single, small one-off payment. Buy it once, own it forever.<br><br>I will be hanging out in the comments section and I would love to hear your feedback, your critiques, or your own stories about fighting subscription fatigue!</p>",
+              "<p>Totally love it! Can it work on my Apple Watch?</p>",
+              "<p>Sounds calm , what's the revenue model?</p>"
+            ],
+            "source": "Product Hunt",
+            "product_shape_score": 4.0,
+            "launch_heat_score": 10.475,
+            "interest_tags": [],
+            "domain_tags": [
+              "健康",
+              "冥想"
+            ],
+            "tool_tags": [
+              "iOS 应用",
+              "计时器"
+            ],
+            "mechanism_tags": [
+              "极简",
+              "无数据收集"
+            ],
+            "author": "Brent Vardy",
+            "score": 33.67,
+            "why": "Product Hunt 当前获得 190 票、15 条评论；仍处在近期新品验证窗口；产品形态已经比较完整",
+            "band": "爆发新品",
+            "mechanism": "可迁移的机制在于把通用模型能力封装进具体产品形态，让用户按任务而不是按模型来消费能力。",
+            "routing_confidence": 0.0,
+            "routing_interest": "",
+            "routing_reason": "该产品是 iOS 冥想计时器，核心任务是冥想练习辅助，不服务给定任何垂直 AI 工作流或 Agent 兴趣点；虽含 health/meditation 标签，但与法律、供应链、教育、邮件、宠物、学习、旅行、求职、面试、仓储、任务管理、财务、企业自动化、语言陪练等均无明确核心任务关联。",
+            "highlight_one_liner": "极简咒语冥想计时器，无数据收集",
+            "highlight_keywords": [
+              "咒语冥想",
+              "极简计时",
+              "无数据收集"
+            ],
+            "reuse_direction": "借鉴其极简与无数据收集的思路，为特定冥想方式（如咒语）打造专注的 iOS 计时工具。",
+            "minimal_mvp": "第一版只做 iOS 咒语冥想计时器：设定时长、开始/暂停/结束，且不收集任何用户数据。",
+            "copy_generation_source": "openai",
+            "copy_prompt_version": "openai_compact_v4",
+            "source_type": "product_hunt_high_potential",
+            "source_label": "Product Hunt",
+            "stars_total": "190",
+            "heat_line": "🔥PH 190票｜15评"
+          },
+          {
+            "id": "1253620",
+            "title": "Morsa Signals",
+            "name": "Morsa Signals",
+            "repo_name": "morsa-signals",
+            "summary": "GTM and AI visibility workflows for developer tools",
+            "description": "Morsa Signals gives developer-tool founders and GTM teams practical GTM and SEO/GEO workflows in one place. Find relevant developers for scaled outreach, identify potential first users and early adopters, audit how AI search systems understand your site, and get a first read on competitors worth tracking. Each workflow starts from your actual product and produces a focused, actionable result instead of a generic report or database.",
+            "url": "https://www.producthunt.com/products/morsa-signals?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai-idea-radar-v4-2+%28ID%3A+294543%29",
+            "website_url": "https://www.producthunt.com/r/CT33HQ2HPXSVR4?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai-idea-radar-v4-2+%28ID%3A+294543%29",
+            "topics": [
+              "Marketing",
+              "SEO",
+              "Developer Tools"
+            ],
+            "topic_slugs": [
+              "marketing",
+              "seo",
+              "developer-tools"
+            ],
+            "makers": [
+              "[REDACTED]",
+              "Kate Rusalovich"
+            ],
+            "votes_count": 170,
+            "comments_count": 15,
+            "featured_at": "2026-09-20T07:01:00Z",
+            "created_at": "2026-09-20T07:01:00Z",
+            "top_comments": [
+              "<p>Hey Product Hunt 👋<br></p><p>I’m Sergei, co-founder at Morsa.</p><p><br>We built Morsa Signals around a recurring problem with developer tools: strong products often struggle to reach the right developers, explain their relevance, and become discoverable through search and AI systems.</p><p>Morsa Signals brings together four focused workflows:</p><p><br>🔎 Contact Search<br>Finds relevant developers for teams scaling outreach, explains why each person fits, and suggests a personalized opening angle.<br><a href=\"https://signals.morsa.io/contact-search\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://signals.morsa.io/contact-search</a></p><p><br>🌱 First Users<br>Helps solo and early-stage devtool founders identify potential early adopters for their first outreach conversations.<br><a href=\"https://signals.morsa.io/first-users\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://signals.morsa.io/first-users</a></p><p><br>🤖 AI Visibility Audit<br>Reviews how clearly a devtool website communicates its product to search and AI systems, then generates a ready-to-use prompt for addressing identified gaps.<br><a href=\"https://signals.morsa.io/audit\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://signals.morsa.io/audit</a></p><p><br>📡 Competitor Tracking<br>Provides a first read on relevant competitors and the public signals worth monitoring.<br><a href=\"https://signals.morsa.io/competitor-tracking\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://signals.morsa.io/competitor-tracking</a></p><p><br>Each workflow starts with the actual product, audience, and problem. The goal is a focused, actionable result rather than a generic report or database.</p><p><br>I’d especially value feedback from devtool founders and GTM teams: which problem is most urgent for you, and what would make you trust the result?</p>",
+              "<p>Cool idea. I see you are relying on GitHub data to find relevant developers. You could expand your list by including profiles from launch platforms like Product Hunt, Peerlist and Indie Hackers.</p>",
+              "<p>One additional thought behind Morsa Signals:</p><p>Growing a developer tool rarely comes down to one isolated problem. Some teams need their first users, others need better outreach data, clearer AI visibility, or a better understanding of their competitive space.<br></p><p>We brought these workflows together because they all start from the same context: the actual product, its audience, and the problem it solves.<br></p><p>If you’re building a developer tool, I’d be interested to know which workflow you would use first and what you would need to trust its results.</p>"
+            ],
+            "source": "Product Hunt",
+            "product_shape_score": 4.0,
+            "launch_heat_score": 9.675,
+            "interest_tags": [
+              "开发者工具",
+              "工作流自动化"
+            ],
+            "domain_tags": [
+              "营销",
+              "SEO",
+              "开发者工具"
+            ],
+            "tool_tags": [
+              "GTM workflow",
+              "outreach",
+              "AI visibility audit"
+            ],
+            "mechanism_tags": [
+              "开发者线索发现",
+              "AI 搜索可见性审计",
+              "竞品追踪"
+            ],
+            "author": "[REDACTED] / Kate Rusalovich",
+            "score": 31.91,
+            "why": "Product Hunt 当前获得 170 票、15 条评论；仍处在近期新品验证窗口；产品形态已经比较完整",
+            "band": "爆发新品",
+            "mechanism": "可迁移的机制在于把一连串人工步骤压缩成可复用工作流，再让 AI 接管其中的判断节点。",
+            "routing_confidence": 0.2,
+            "routing_interest": "",
+            "routing_reason": "Morsa Signals 是面向开发者工具的 GTM/SEO/GEO 营销工作流工具，核心任务是外联线索发现、AI 搜索可见性审计和竞品追踪，并不明显服务给定兴趣点中的法律、供应链、教育、邮件自动化、任务管理、企业自动化等垂直核心任务。虽含 outreach 和 workflow 等泛词，但没有明确邮件自动化或企业流程自动化能力，因此不纳入 observation。",
+            "highlight_one_liner": "开发者工具的 GTM 与 AI 可见性审计",
+            "highlight_keywords": [
+              "GTM 工作流",
+              "AI 搜索可见性",
+              "开发者线索发现",
+              "竞品追踪"
+            ],
+            "reuse_direction": "把开发者线索发现、外联触达和 AI 搜索可见性审计串成一条面向开发者工具的获客链路，值得做垂直 GTM 产品的人借鉴其组合方式。",
+            "minimal_mvp": "先只做 AI 可见性审计：输入竞品名和一组目标问题，抓取 AI 回答里品牌是否被提及，输出被漏掉的提问清单，再据此挑一轮外联对象。",
+            "copy_generation_source": "openai",
+            "copy_prompt_version": "openai_compact_v4",
+            "source_type": "product_hunt_high_potential",
+            "source_label": "Product Hunt",
+            "stars_total": "170",
+            "heat_line": "🔥PH 170票｜15评"
+          },
+          {
+            "title": "hiyeshu/trip-map-builder",
+            "url": "https://github.com/hiyeshu/trip-map-builder",
+            "website_url": "",
+            "summary": "",
+            "description": "",
+            "source_label": "GitHub",
+            "heat_line": "🌟229",
+            "stars_total": "229",
+            "tags": [
+              "智能旅行助手",
+              "知识检索/RAG",
+              "研究代理"
+            ],
+            "interest_tags": [
+              "智能旅行助手",
+              "知识检索/RAG",
+              "研究代理"
+            ],
+            "tool_tags": [],
+            "mechanism_tags": [],
+            "highlight_one_liner": "旅行行程规划与小红书交互地图生成",
+            "reuse_direction": "把「智能旅行助手 / 知识检索/RAG」封装成更明确的岗位或任务入口",
+            "minimal_mvp": "先做一个面向 智能旅行助手 的轻量单任务工具",
+            "source_type": "observation_product",
+            "highlight_keywords": [
+              "智能旅行助手",
+              "知识检索/RAG",
+              "研究代理"
+            ]
+          }
+        ],
+        "groups": [
+          {
+            "key": "hot",
+            "title": "热门样本",
+            "description": "来自 GitHub Trending / Product Hunt 等高热度候选，已具备更明显的市场验证。",
+            "empty_text": "今日暂无新增热门样本。",
+            "items": [
+              {
+                "title": "Sylinko/Everywhere",
+                "full_name": "sylinko/everywhere",
+                "url": "https://github.com/Sylinko/Everywhere",
+                "source_type": "high_potential",
+                "source_layer": "discovery",
+                "repo_id": 971243074,
+                "owner": "sylinko",
+                "name": "everywhere",
+                "summary": "On-screen aware AI assistant for your desktop. Uses current app context, multiple LLMs, and MCP tools to help you act across apps.",
+                "interest_tags": [
+                  "桌面工作台",
+                  "法律科技"
+                ],
+                "domain_tags": [],
+                "tool_tags": [],
+                "mechanism_tags": [],
+                "highlight_one_liner": "读当前屏幕上下文，跨应用把事做完",
+                "highlight_keywords": [
+                  "屏幕感知",
+                  "多模型切换",
+                  "MCP 工具调用",
+                  "跨应用执行"
+                ],
+                "reuse_direction": "做垂直场景助手时，可借鉴它把「当前屏幕内容」当成免输入的隐式上下文，再用 MCP 工具链把模型输出直接落到别的应用里，而不是停在对话框里。",
+                "minimal_mvp": "第一版只做最小闭环：读取当前窗口文本作为上下文，接一个模型，挂一个 MCP 工具，让用户在当前应用里说一句指令就把结果写进目标应用。",
+                "selection_reason": "已有较强社区验证",
+                "is_revisit": false,
+                "revisit_reason": "",
+                "score": 41.25,
+                "rank_score": 26.1875,
+                "stars_total": "6286",
+                "stars_7d": null,
+                "stars_30d": null,
+                "forks_total": 389,
+                "watchers_total": null,
+                "created_at": "2025-04-23T08:19:33Z",
+                "pushed_at": "2026-09-17T12:29:32Z",
+                "updated_at": "2026-09-22T00:04:06Z",
+                "topics": [
+                  "ai",
+                  "ai-agents",
+                  "ai-assistant",
+                  "avalonia",
+                  "claude",
+                  "deepseek",
+                  "desktop-app",
+                  "flow-state",
+                  "gemini",
+                  "hermes-agent",
+                  "mcp",
+                  "on-screen-awareness",
+                  "openai",
+                  "openclaw",
+                  "personal",
+                  "skills"
+                ],
+                "semantic_bonus": 10.0,
+                "ai_noise": false,
+                "ai_match_score": 8,
+                "ai_priority": "headline",
+                "ai_rationale": "桌面级屏幕感知 AI 助手，能结合当前应用上下文与 MCP 跨应用执行任务，最贴近 AI 工作流与产品化方向。",
+                "copy_generation_source": "openai",
+                "copy_prompt_version": "openai_compact_v4",
+                "source_label": "GitHub",
+                "heat_line": ""
+              },
+              {
+                "id": "1255660",
+                "title": "Sai",
+                "name": "Sai",
+                "repo_name": "sai-5",
+                "summary": "The autonomous computer fleet at your command",
+                "description": "Sai is the world's first robosecretary that works with a fleet of autonomous computers, doing your endless screen work. Each computer navigates software the way you do: reads the screen, clicks the button, types in the form. Trained to interact with the computer interface, Sai automates software even when they lack APIs: legacy desktop apps, internal portals, anything behind a login. Sai supports Windows, macOS and Linux. 73% on OSWorld.",
+                "url": "https://www.producthunt.com/products/simular?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai-idea-radar-v4-2+%28ID%3A+294543%29",
+                "website_url": "https://www.producthunt.com/r/EXXMVNBYWQYZ32?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai-idea-radar-v4-2+%28ID%3A+294543%29",
+                "topics": [
+                  "Productivity",
+                  "Artificial Intelligence"
+                ],
+                "topic_slugs": [
+                  "productivity",
+                  "artificial-intelligence"
+                ],
+                "makers": [
+                  "[REDACTED]",
+                  "Rita L"
+                ],
+                "votes_count": 315,
+                "comments_count": 33,
+                "featured_at": "2026-09-21T07:01:00Z",
+                "created_at": "2026-09-21T07:01:00Z",
+                "top_comments": [
+                  "<p>Hey Product Hunt 👋</p><p>I'm Ang and I build Sai at Simular.</p><p></p><p>Sai is the world's first robosecretary that comes together with a fleet of autonomous computers doing your endless screen work. We believe the future of work isn't just one computer — it's many computer.</p><p></p><p>Each computer navigates software the way you do: reads the screen, clicks the button, types in the form. That's the whole point. Because Sai works at the interface layer, it automates things that have no API and never will — legacy desktop apps, internal portals, anything behind a login. Windows, macOS, and Linux. 73% on OSWorld.</p><p></p><p>What that buys you in practice:</p><p></p><p>🖥️ <strong>Real computers, not a chat box.</strong> You hand over a task, it runs it on an actual desktop. Open the workspace any time to watch, or take the mouse back mid-run.</p><p></p><p>🔁 <strong>It learns the route once.</strong> Any finished task can be saved as a skill, scheduled, or triggered by an event — so the tenth run is faster and cheaper than the first.</p><p></p><p>🔒 <strong>Autonomy with a seatbelt.</strong> Tiered approvals, \"trust for this task,\" and encrypted input for passwords and codes — the model never sees plaintext.</p><p></p><p>The agent we actually optimize for is whether it's still useful and affordable the tenth time you ask.</p><p></p><p>Tell us the screen work that eats your week — we'll tell you honestly whether Sai can take it off your hands.</p>",
+                  "<p>Congrats on the launch, Simular team! <br><br>How do you guys ensure that all runs are deterministic while still having this \"thinking\" part when, let's say, the form changes and we have to enter another value? Thinking from a perspective where I have to fill out hundreds of website forms almost daily, but those forms are updated monthly.</p>",
+                  "<p><a href=\"https://www.producthunt.com/products/simular\" data-node-type=\"mention\" data-mention-type=\"product\" data-mention-id=\"simular\" target=\"_blank\" rel=\"noopener\">@Simular</a> <a href=\"https://www.producthunt.com/@agidude\" data-node-type=\"mention\" data-mention-type=\"user\" data-mention-id=\"agidude\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">@agidude</a> Congrats one the PH launch ! , Does it have human in loop control / fully autonomous ?</p>"
+                ],
+                "source": "Product Hunt",
+                "product_shape_score": 2.0,
+                "launch_heat_score": 13.0,
+                "interest_tags": [
+                  "企业自动化工作流",
+                  "效率办公"
+                ],
+                "domain_tags": [
+                  "企业自动化",
+                  "软件自动化",
+                  "RPA"
+                ],
+                "tool_tags": [
+                  "autonomous computer fleet",
+                  "robosecretary",
+                  "GUI automation"
+                ],
+                "mechanism_tags": [
+                  "screen reading",
+                  "click/type interaction",
+                  "no-API automation"
+                ],
+                "author": "[REDACTED] / Rita L",
+                "score": 40.188,
+                "why": "Product Hunt 当前获得 315 票、33 条评论；仍处在近期新品验证窗口",
+                "band": "爆发新品",
+                "mechanism": "可迁移的机制在于把通用模型能力封装进具体产品形态，让用户按任务而不是按模型来消费能力。",
+                "routing_confidence": 0.72,
+                "routing_interest": "企业自动化工作流",
+                "routing_reason": "Sai 是计算机操作型代理，通过读屏、点击和输入来自动化无 API 的软件、旧桌面应用与内部门户，直接对应企业自动化工作流中人工在异构系统里重复操作和流程割裂的痛点。它不是垂直行业产品，但核心任务属于企业流程/界面操作自动化。",
+                "highlight_one_liner": "没有 API 也能替你读屏点键的电脑机群",
+                "highlight_keywords": [
+                  "自主电脑机群",
+                  "读屏代操作",
+                  "免 API 自动化",
+                  "GUI 点击输入"
+                ],
+                "reuse_direction": "把「读屏—点击—输入」的 GUI 代操作能力做成可并行调度的多机代理，值得迁移到那些没有 API、只能靠人肉点击的老旧企业软件流程里。",
+                "minimal_mvp": "第一版先让一个代理在一台机器上完成一次读屏、点击、输入并跑通某套无 API 老系统的表单操作，然后再复制成多台机器并行处理同一批任务。",
+                "copy_generation_source": "openai",
+                "copy_prompt_version": "openai_compact_v4",
+                "source_type": "product_hunt_high_potential",
+                "source_label": "Product Hunt",
+                "stars_total": "315",
+                "heat_line": "🔥PH 315票｜33评"
+              },
+              {
+                "id": "1162764",
+                "title": "Mantra Timer",
+                "name": "Mantra Timer",
+                "repo_name": "mantra-timer",
+                "summary": "A minimalist mantra meditation timer for iOS.",
+                "description": "Mantra Meditation Timer rejects the bloated tracking of modern wellness apps. Built for self-directed practitioners, this elegant iOS app offers a distraction-free experience with zero data collection. Enjoy core Meditation timers, calming chimes, and mental or physical check-ins completely free. For established pro mantra practitioners, a small one-off payment unlocks advanced stats and deeper customisation. No subscription fatigue, just a beautifully simple tool for profound daily practice.",
+                "url": "https://www.producthunt.com/products/transcendence?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai-idea-radar-v4-2+%28ID%3A+294543%29",
+                "website_url": "https://www.producthunt.com/r/EWJKZOW5DRPD2A?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai-idea-radar-v4-2+%28ID%3A+294543%29",
+                "topics": [
+                  "Health & Fitness",
+                  "Meditation"
+                ],
+                "topic_slugs": [
+                  "health-fitness",
+                  "meditation"
+                ],
+                "makers": [
+                  "Brent Vardy"
+                ],
+                "votes_count": 190,
+                "comments_count": 15,
+                "featured_at": "2026-09-19T07:01:00Z",
+                "created_at": "2026-09-19T07:01:00Z",
+                "top_comments": [
+                  "<p>The Inspiration &amp; Problem:<br><br>I have been practising Transcendental Meditation daily for over 3,700 consecutive days. After over a decade of practice I simply wanted a clean tool to support my daily practice. Instead, I found a wellness market saturated with bloated apps. The official options required intrusive personal background data, others pushed endless guided programmes, and almost all of them demanded a recurring monthly subscription just to sit in silence.<br><br>Mantra Timer was born out of pure frustration. I wanted to build a beautiful, distraction-free timer that treats practitioners with respect—meaning zero data collection and zero notifications shouting for your attention.<br><br>How the Product Evolved:<br><br>Building a software studio at a slower, \"human pace\" while managing a chronic illness (ME) forces you to become hyper-intentional. <br><br>Ditching the Subscription: I originally planned a standard annual subscription tier. But as the studio's anti-rental philosophy solidified, that felt hypocritical. So I completely changed direction. The core app is entirely free, and additional functionality for established practitioners is unlocked via a single, small one-off payment. Buy it once, own it forever.<br><br>I will be hanging out in the comments section and I would love to hear your feedback, your critiques, or your own stories about fighting subscription fatigue!</p>",
+                  "<p>Totally love it! Can it work on my Apple Watch?</p>",
+                  "<p>Sounds calm , what's the revenue model?</p>"
+                ],
+                "source": "Product Hunt",
+                "product_shape_score": 4.0,
+                "launch_heat_score": 10.475,
+                "interest_tags": [],
+                "domain_tags": [
+                  "健康",
+                  "冥想"
+                ],
+                "tool_tags": [
+                  "iOS 应用",
+                  "计时器"
+                ],
+                "mechanism_tags": [
+                  "极简",
+                  "无数据收集"
+                ],
+                "author": "Brent Vardy",
+                "score": 33.67,
+                "why": "Product Hunt 当前获得 190 票、15 条评论；仍处在近期新品验证窗口；产品形态已经比较完整",
+                "band": "爆发新品",
+                "mechanism": "可迁移的机制在于把通用模型能力封装进具体产品形态，让用户按任务而不是按模型来消费能力。",
+                "routing_confidence": 0.0,
+                "routing_interest": "",
+                "routing_reason": "该产品是 iOS 冥想计时器，核心任务是冥想练习辅助，不服务给定任何垂直 AI 工作流或 Agent 兴趣点；虽含 health/meditation 标签，但与法律、供应链、教育、邮件、宠物、学习、旅行、求职、面试、仓储、任务管理、财务、企业自动化、语言陪练等均无明确核心任务关联。",
+                "highlight_one_liner": "极简咒语冥想计时器，无数据收集",
+                "highlight_keywords": [
+                  "咒语冥想",
+                  "极简计时",
+                  "无数据收集"
+                ],
+                "reuse_direction": "借鉴其极简与无数据收集的思路，为特定冥想方式（如咒语）打造专注的 iOS 计时工具。",
+                "minimal_mvp": "第一版只做 iOS 咒语冥想计时器：设定时长、开始/暂停/结束，且不收集任何用户数据。",
+                "copy_generation_source": "openai",
+                "copy_prompt_version": "openai_compact_v4",
+                "source_type": "product_hunt_high_potential",
+                "source_label": "Product Hunt",
+                "stars_total": "190",
+                "heat_line": "🔥PH 190票｜15评"
+              },
+              {
+                "id": "1253620",
+                "title": "Morsa Signals",
+                "name": "Morsa Signals",
+                "repo_name": "morsa-signals",
+                "summary": "GTM and AI visibility workflows for developer tools",
+                "description": "Morsa Signals gives developer-tool founders and GTM teams practical GTM and SEO/GEO workflows in one place. Find relevant developers for scaled outreach, identify potential first users and early adopters, audit how AI search systems understand your site, and get a first read on competitors worth tracking. Each workflow starts from your actual product and produces a focused, actionable result instead of a generic report or database.",
+                "url": "https://www.producthunt.com/products/morsa-signals?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai-idea-radar-v4-2+%28ID%3A+294543%29",
+                "website_url": "https://www.producthunt.com/r/CT33HQ2HPXSVR4?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai-idea-radar-v4-2+%28ID%3A+294543%29",
+                "topics": [
+                  "Marketing",
+                  "SEO",
+                  "Developer Tools"
+                ],
+                "topic_slugs": [
+                  "marketing",
+                  "seo",
+                  "developer-tools"
+                ],
+                "makers": [
+                  "[REDACTED]",
+                  "Kate Rusalovich"
+                ],
+                "votes_count": 170,
+                "comments_count": 15,
+                "featured_at": "2026-09-20T07:01:00Z",
+                "created_at": "2026-09-20T07:01:00Z",
+                "top_comments": [
+                  "<p>Hey Product Hunt 👋<br></p><p>I’m Sergei, co-founder at Morsa.</p><p><br>We built Morsa Signals around a recurring problem with developer tools: strong products often struggle to reach the right developers, explain their relevance, and become discoverable through search and AI systems.</p><p>Morsa Signals brings together four focused workflows:</p><p><br>🔎 Contact Search<br>Finds relevant developers for teams scaling outreach, explains why each person fits, and suggests a personalized opening angle.<br><a href=\"https://signals.morsa.io/contact-search\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://signals.morsa.io/contact-search</a></p><p><br>🌱 First Users<br>Helps solo and early-stage devtool founders identify potential early adopters for their first outreach conversations.<br><a href=\"https://signals.morsa.io/first-users\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://signals.morsa.io/first-users</a></p><p><br>🤖 AI Visibility Audit<br>Reviews how clearly a devtool website communicates its product to search and AI systems, then generates a ready-to-use prompt for addressing identified gaps.<br><a href=\"https://signals.morsa.io/audit\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://signals.morsa.io/audit</a></p><p><br>📡 Competitor Tracking<br>Provides a first read on relevant competitors and the public signals worth monitoring.<br><a href=\"https://signals.morsa.io/competitor-tracking\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://signals.morsa.io/competitor-tracking</a></p><p><br>Each workflow starts with the actual product, audience, and problem. The goal is a focused, actionable result rather than a generic report or database.</p><p><br>I’d especially value feedback from devtool founders and GTM teams: which problem is most urgent for you, and what would make you trust the result?</p>",
+                  "<p>Cool idea. I see you are relying on GitHub data to find relevant developers. You could expand your list by including profiles from launch platforms like Product Hunt, Peerlist and Indie Hackers.</p>",
+                  "<p>One additional thought behind Morsa Signals:</p><p>Growing a developer tool rarely comes down to one isolated problem. Some teams need their first users, others need better outreach data, clearer AI visibility, or a better understanding of their competitive space.<br></p><p>We brought these workflows together because they all start from the same context: the actual product, its audience, and the problem it solves.<br></p><p>If you’re building a developer tool, I’d be interested to know which workflow you would use first and what you would need to trust its results.</p>"
+                ],
+                "source": "Product Hunt",
+                "product_shape_score": 4.0,
+                "launch_heat_score": 9.675,
+                "interest_tags": [
+                  "开发者工具",
+                  "工作流自动化"
+                ],
+                "domain_tags": [
+                  "营销",
+                  "SEO",
+                  "开发者工具"
+                ],
+                "tool_tags": [
+                  "GTM workflow",
+                  "outreach",
+                  "AI visibility audit"
+                ],
+                "mechanism_tags": [
+                  "开发者线索发现",
+                  "AI 搜索可见性审计",
+                  "竞品追踪"
+                ],
+                "author": "[REDACTED] / Kate Rusalovich",
+                "score": 31.91,
+                "why": "Product Hunt 当前获得 170 票、15 条评论；仍处在近期新品验证窗口；产品形态已经比较完整",
+                "band": "爆发新品",
+                "mechanism": "可迁移的机制在于把一连串人工步骤压缩成可复用工作流，再让 AI 接管其中的判断节点。",
+                "routing_confidence": 0.2,
+                "routing_interest": "",
+                "routing_reason": "Morsa Signals 是面向开发者工具的 GTM/SEO/GEO 营销工作流工具，核心任务是外联线索发现、AI 搜索可见性审计和竞品追踪，并不明显服务给定兴趣点中的法律、供应链、教育、邮件自动化、任务管理、企业自动化等垂直核心任务。虽含 outreach 和 workflow 等泛词，但没有明确邮件自动化或企业流程自动化能力，因此不纳入 observation。",
+                "highlight_one_liner": "开发者工具的 GTM 与 AI 可见性审计",
+                "highlight_keywords": [
+                  "GTM 工作流",
+                  "AI 搜索可见性",
+                  "开发者线索发现",
+                  "竞品追踪"
+                ],
+                "reuse_direction": "把开发者线索发现、外联触达和 AI 搜索可见性审计串成一条面向开发者工具的获客链路，值得做垂直 GTM 产品的人借鉴其组合方式。",
+                "minimal_mvp": "先只做 AI 可见性审计：输入竞品名和一组目标问题，抓取 AI 回答里品牌是否被提及，输出被漏掉的提问清单，再据此挑一轮外联对象。",
+                "copy_generation_source": "openai",
+                "copy_prompt_version": "openai_compact_v4",
+                "source_type": "product_hunt_high_potential",
+                "source_label": "Product Hunt",
+                "stars_total": "170",
+                "heat_line": "🔥PH 170票｜15评"
+              }
+            ]
+          },
+          {
+            "key": "potential",
+            "title": "潜力样本",
+            "description": "来自长尾观察或较早期验证阶段，但方向和切口值得继续跟踪。",
+            "empty_text": "今日暂无新增潜力样本。",
+            "items": [
+              {
+                "title": "hiyeshu/trip-map-builder",
+                "url": "https://github.com/hiyeshu/trip-map-builder",
+                "website_url": "",
+                "summary": "",
+                "description": "",
+                "source_label": "GitHub",
+                "heat_line": "🌟229",
+                "stars_total": "229",
+                "tags": [
+                  "智能旅行助手",
+                  "知识检索/RAG",
+                  "研究代理"
+                ],
+                "interest_tags": [
+                  "智能旅行助手",
+                  "知识检索/RAG",
+                  "研究代理"
+                ],
+                "tool_tags": [],
+                "mechanism_tags": [],
+                "highlight_one_liner": "旅行行程规划与小红书交互地图生成",
+                "reuse_direction": "把「智能旅行助手 / 知识检索/RAG」封装成更明确的岗位或任务入口",
+                "minimal_mvp": "先做一个面向 智能旅行助手 的轻量单任务工具",
+                "source_type": "observation_product",
+                "highlight_keywords": [
+                  "智能旅行助手",
+                  "知识检索/RAG",
+                  "研究代理"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "idea_items": [
+      {
+        "title": "法律 AI 工作流",
+        "need_line": "法务和律师要把合同审查、文书生成这类重复性法律工作交给 AI，但通用模型给出的结论颗粒度太粗，不敢直接采用。",
+        "status_line": "目前多是把通用大模型和 Ironclad、律己 AI、幂律智能等现成工具混用，或用 LangChain Agent 接法律数据库自建流程，讨论焦点仍停留在“AI 能不能审得准”。",
+        "direction_line": "值得跟踪的是把公开法律条文与裁判文书做成可检索底座，让模型针对具体条款输出带引用出处、可逐条核对的判断，而非只给笼统修改建议。",
+        "source_urls": [
+          "https://www.zhihu.com/question/606923806/answer/3392966630",
+          "https://zhuanlan.zhihu.com/p/702780746"
+        ],
+        "source_platforms": [],
+        "tags": [
+          "法律 AI 工作流"
+        ]
+      },
+      {
+        "title": "AI 应用场景 / 数据",
+        "need_line": "在梳理 AI 应用场景时，如何从组织架构、角色权限和子系统业务中快速提炼出完整需求边界，仍是主要痛点。",
+        "status_line": "目前的做法是先判断产品是标准化还是定制化，再照组织架构确定角色、逐个访谈子系统业务，最后按角色权限和界面操作影响补全场景，基本停留在人工访谈加文档整理。",
+        "direction_line": "值得跟踪的方向是让访谈纪要、组织架构和既有系统字段能自动映射成角色—单据—流程—权限的依赖结构，并按标准化与定制化两条路径分别标出需求边界。",
+        "source_urls": [
+          "https://zhuanlan.zhihu.com/p/20468570",
+          "https://www.zhihu.com/question/460427762/answer/1895672636"
+        ],
+        "source_platforms": [],
+        "tags": [
+          "AI 应用场景 / 数据"
+        ]
+      },
+      {
+        "title": "智能旅行助手",
+        "need_line": "用户在规划旅行时，需要把散落在多平台、质量参差的攻略汇总交叉验证，落成可执行的按天行程与地理路线，而不是在多个社区之间反复切换比价。",
+        "status_line": "当前讨论集中在按平台分级筛选攻略——专攻攻略的马蜂窝/穷游、作为种草社区的小红书/知乎/豆瓣、同质化严重的抖音，同时 GitHub 上有 trip-map-builder 用 Agent Skill 把规划、小红书调研和交互式地图串成流程。",
+        "direction_line": "值得跟踪的是把多源攻略的调研、交叉验证和地理信息整合成可编辑的按天行程草稿，并直接输出交互式地图路线，而不是再做一个攻略社区或平台推荐榜。",
+        "source_urls": [
+          "https://zhuanlan.zhihu.com/p/650453155",
+          "https://www.zhihu.com/question/578463082/answer/2851939264"
+        ],
+        "source_platforms": [],
+        "tags": [
+          "智能旅行助手"
+        ]
+      }
+    ],
+    "interest_sections": [
+      {
+        "title": "法律 AI 工作流",
+        "summary": "这一组信号主要来自 zhihu、GitHub，核心观察是法律 AI 的争论点已经从“能不能替代人审合同”下沉到审到什么颗粒度、依据能否被律师复核，而条文与判决公开这一数据条件正被当成可自建工作流的前提。",
+        "items": [
+          {
+            "title": "需求",
+            "paragraph": "",
+            "source": "social",
+            "url": "https://www.zhihu.com/question/606923806/answer/3392966630 ｜ https://zhuanlan.zhihu.com/p/702780746",
+            "source_labels": [
+              "知乎",
+              "社媒"
+            ],
+            "source_url_list": [
+              "https://www.zhihu.com/question/606923806/answer/3392966630",
+              "https://zhuanlan.zhihu.com/p/702780746"
+            ]
+          },
+          {
+            "title": "现状",
+            "paragraph": "现状是通用模型加现成工具混用——有人直接拿 ChatGPT 类模型处理合同，有人上 Ironclad、律己 AI、幂律智能这类已有商业产品做审查和全生命周期管理，GitHub 上也出现用 LangChain Agent 接法律数据库 API 自建咨询、审查、文书生成的项目，讨论仍集中在“AI 能不能审得准”而非具体条款颗粒度。",
+            "source": "social",
+            "url": "https://www.zhihu.com/question/606923806/answer/3392966630 ｜ https://zhuanlan.zhihu.com/p/702780746",
+            "source_labels": [
+              "知乎",
+              "社媒"
+            ],
+            "source_url_list": [
+              "https://www.zhihu.com/question/606923806/answer/3392966630",
+              "https://zhuanlan.zhihu.com/p/702780746"
+            ]
+          },
+          {
+            "title": "方向跟踪",
+            "paragraph": "值得跟踪的是把公开法律条文与裁判文书做成可检索底座，让模型对具体条款输出带引用出处、可逐条核对的判断结果，而不是只给一段笼统的修改建议。",
+            "source": "synthesis",
+            "url": "https://www.zhihu.com/question/606923806/answer/3392966630 ｜ https://zhuanlan.zhihu.com/p/702780746",
+            "source_labels": [
+              "知乎",
+              "社媒"
+            ],
+            "source_url_list": [
+              "https://www.zhihu.com/question/606923806/answer/3392966630",
+              "https://zhuanlan.zhihu.com/p/702780746"
+            ]
+          }
+        ],
+        "product_items": [
+          {
+            "title": "abaiar/-LexAI",
+            "url": "https://github.com/abaiar/-LexAI",
+            "website_url": "",
+            "summary": "",
+            "description": "",
+            "source_label": "GitHub",
+            "heat_line": "🌟31",
+            "stars_total": "31",
+            "tags": [
+              "法律 AI 工作流"
+            ],
+            "interest_tags": [
+              "法律 AI 工作流"
+            ],
+            "tool_tags": [],
+            "mechanism_tags": [],
+            "highlight_one_liner": "LLM 智能法律咨询与文书平台",
+            "reuse_direction": "把「法律 AI 工作流」封装成更明确的岗位或任务入口",
+            "minimal_mvp": "先做一个面向 法律 AI 工作流 的轻量单任务工具"
+          }
+        ]
+      },
+      {
+        "title": "AI 应用场景 / 数据",
+        "summary": "这一组信号主要来自 zhihu，核心观察是B端需求梳理的耗时集中在多组织角色访谈与流程对齐，讨论还停在方法论拆解，没有对应的结构化沉淀手段。",
+        "items": [
+          {
+            "title": "需求",
+            "paragraph": "",
+            "source": "social",
+            "url": "https://zhuanlan.zhihu.com/p/20468570 ｜ https://www.zhihu.com/question/460427762/answer/1895672636",
+            "source_labels": [
+              "社媒",
+              "知乎"
+            ],
+            "source_url_list": [
+              "https://zhuanlan.zhihu.com/p/20468570",
+              "https://www.zhihu.com/question/460427762/answer/1895672636"
+            ]
+          },
+          {
+            "title": "现状",
+            "paragraph": "目前的做法是先判断产品是标准化还是定制化，再照组织架构确定角色、逐个访谈子系统业务，最后按角色权限和界面操作影响补全场景，基本停留在人工访谈加文档整理。",
+            "source": "social",
+            "url": "https://zhuanlan.zhihu.com/p/20468570 ｜ https://www.zhihu.com/question/460427762/answer/1895672636",
+            "source_labels": [
+              "社媒",
+              "知乎"
+            ],
+            "source_url_list": [
+              "https://zhuanlan.zhihu.com/p/20468570",
+              "https://www.zhihu.com/question/460427762/answer/1895672636"
+            ]
+          },
+          {
+            "title": "方向跟踪",
+            "paragraph": "值得跟踪的方向是让访谈纪要、组织架构和既有系统字段能自动映射成角色—单据—流程—权限的依赖结构，并按标准化与定制化两条路径分别标出需求边界。",
+            "source": "synthesis",
+            "url": "https://zhuanlan.zhihu.com/p/20468570 ｜ https://www.zhihu.com/question/460427762/answer/1895672636",
+            "source_labels": [
+              "社媒",
+              "知乎"
+            ],
+            "source_url_list": [
+              "https://zhuanlan.zhihu.com/p/20468570",
+              "https://www.zhihu.com/question/460427762/answer/1895672636"
+            ]
+          }
+        ],
+        "product_items": []
+      },
+      {
+        "title": "智能旅行助手",
+        "summary": "这一组信号主要来自 zhihu、GitHub，核心观察是自由行行程规划仍依赖人工跨平台筛选攻略，而开源侧已出现用 Agent 技能串联调研与地图输出的雏形。",
+        "items": [
+          {
+            "title": "需求",
+            "paragraph": "",
+            "source": "social",
+            "url": "https://zhuanlan.zhihu.com/p/650453155 ｜ https://www.zhihu.com/question/578463082/answer/2851939264",
+            "source_labels": [
+              "社媒",
+              "知乎"
+            ],
+            "source_url_list": [
+              "https://zhuanlan.zhihu.com/p/650453155",
+              "https://www.zhihu.com/question/578463082/answer/2851939264"
+            ]
+          },
+          {
+            "title": "现状",
+            "paragraph": "当前讨论集中在按平台分级筛选攻略——专攻攻略的马蜂窝/穷游、作为种草社区的小红书/知乎/豆瓣、同质化严重的抖音，同时 GitHub 上有 trip-map-builder 用 Agent Skill 把规划、小红书调研和交互式地图串成流程。",
+            "source": "social",
+            "url": "https://zhuanlan.zhihu.com/p/650453155 ｜ https://www.zhihu.com/question/578463082/answer/2851939264",
+            "source_labels": [
+              "社媒",
+              "知乎"
+            ],
+            "source_url_list": [
+              "https://zhuanlan.zhihu.com/p/650453155",
+              "https://www.zhihu.com/question/578463082/answer/2851939264"
+            ]
+          },
+          {
+            "title": "方向跟踪",
+            "paragraph": "值得跟踪的是把多源攻略的调研、交叉验证和地理信息整合成可编辑的按天行程草稿，并直接输出交互式地图路线，而不是再做一个攻略社区或平台推荐榜。",
+            "source": "synthesis",
+            "url": "https://zhuanlan.zhihu.com/p/650453155 ｜ https://www.zhihu.com/question/578463082/answer/2851939264",
+            "source_labels": [
+              "社媒",
+              "知乎"
+            ],
+            "source_url_list": [
+              "https://zhuanlan.zhihu.com/p/650453155",
+              "https://www.zhihu.com/question/578463082/answer/2851939264"
+            ]
+          }
+        ],
+        "product_items": [
+          {
+            "title": "liangdabiao/langgraph_multi-agent-rag-customer-support",
+            "url": "https://github.com/liangdabiao/langgraph_multi-agent-rag-customer-support",
+            "website_url": "",
+            "summary": "",
+            "description": "",
+            "source_label": "GitHub",
+            "heat_line": "🌟326",
+            "stars_total": "326",
+            "tags": [
+              "智能旅行助手",
+              "知识检索/RAG",
+              "多 Agent 协作"
+            ],
+            "interest_tags": [
+              "智能旅行助手",
+              "知识检索/RAG",
+              "多 Agent 协作"
+            ],
+            "tool_tags": [],
+            "mechanism_tags": [],
+            "highlight_one_liner": "多智能体RAG客户支持系统",
+            "reuse_direction": "把「智能旅行助手 / 知识检索/RAG」封装成更明确的岗位或任务入口",
+            "minimal_mvp": "先做一个面向 智能旅行助手 的轻量单任务工具"
+          },
+          {
+            "title": "hiyeshu/trip-map-builder",
+            "url": "https://github.com/hiyeshu/trip-map-builder",
+            "website_url": "",
+            "summary": "",
+            "description": "",
+            "source_label": "GitHub",
+            "heat_line": "🌟229",
+            "stars_total": "229",
+            "tags": [
+              "智能旅行助手",
+              "知识检索/RAG",
+              "研究代理"
+            ],
+            "interest_tags": [
+              "智能旅行助手",
+              "知识检索/RAG",
+              "研究代理"
+            ],
+            "tool_tags": [],
+            "mechanism_tags": [],
+            "highlight_one_liner": "旅行行程规划与小红书交互地图生成",
+            "reuse_direction": "把「智能旅行助手 / 知识检索/RAG」封装成更明确的岗位或任务入口",
+            "minimal_mvp": "先做一个面向 智能旅行助手 的轻量单任务工具"
+          }
+        ]
+      },
+      {
+        "title": "教育 AI 辅导",
+        "summary": "这一组信号主要来自 zhihu，核心是语文老师把备课视为最耗时环节、单节新课常需数小时以上，现有讨论仍以人工硬备和压力倾诉为主，尚未出现针对该链路的 AI 辅助方案。",
+        "items": [
+          {
+            "title": "需求",
+            "paragraph": "语文老师备一节新课常要数小时以上，最明确的需求是让教案撰写和课前预演从零硬备变成可快速修改的初稿",
+            "source": "social",
+            "url": "https://zhuanlan.zhihu.com/p/5875025118 ｜ https://www.zhihu.com/question/462467120/answer/2650103697",
+            "source_labels": [
+              "社媒",
+              "知乎"
+            ],
+            "source_url_list": [
+              "https://zhuanlan.zhihu.com/p/5875025118",
+              "https://www.zhihu.com/question/462467120/answer/2650103697"
+            ]
+          },
+          {
+            "title": "现状",
+            "paragraph": "当前讨论中，老师仍靠提前多轮备课、上课前自己演习并接受备课不充分来硬扛，把耗时主要归因于语文学科特性和教案设计本身。",
+            "source": "social",
+            "url": "https://zhuanlan.zhihu.com/p/5875025118 ｜ https://www.zhihu.com/question/462467120/answer/2650103697",
+            "source_labels": [
+              "社媒",
+              "知乎"
+            ],
+            "source_url_list": [
+              "https://zhuanlan.zhihu.com/p/5875025118",
+              "https://www.zhihu.com/question/462467120/answer/2650103697"
+            ]
+          },
+          {
+            "title": "方向跟踪",
+            "paragraph": "值得跟踪的是面向语文新课备课链路，生成可核查的教案草稿与课前预演问答，让老师把时间花在判断和修改上。",
+            "source": "synthesis",
+            "url": "https://zhuanlan.zhihu.com/p/5875025118 ｜ https://www.zhihu.com/question/462467120/answer/2650103697",
+            "source_labels": [
+              "社媒",
+              "知乎"
+            ],
+            "source_url_list": [
+              "https://zhuanlan.zhihu.com/p/5875025118",
+              "https://www.zhihu.com/question/462467120/answer/2650103697"
+            ]
+          }
+        ],
+        "product_items": []
+      }
+    ],
+    "vendor_news_items": [
+      {
+        "title": "DeepSeek-V4.1-Flash Release ​",
+        "url": "https://api-docs.deepseek.com/updates#deepseek-v41-flash-release",
+        "source_name": "DeepSeek API 更新",
+        "source_url": "https://api-docs.deepseek.com/updates",
+        "published_at": "2026-09-10T00:00:00Z",
+        "event_type": "model_launch",
+        "raw_summary": "Today, we officially release the DeepSeek-V4.1-Flash model.It is the smallest model in our new architecture family, with native multimodal visual understanding.",
+        "summary": "DeepSeek 正式发布 DeepSeek-V4.1-Flash 模型，这是其新架构系列中体量最小的模型，具备原生多模态视觉理解能力。",
+        "impact_points": [
+          "DeepSeek 发布新模型后，相关应用的能力上限和产品包装空间会立刻变化。",
+          "多模态能力增强后，内容生成、理解和输入方式会有新的产品机会。"
+        ],
+        "watch_items": [
+          "关注新模型是否真的在关键场景里带来更稳定的结果与更好的成本结构。",
+          "关注多模态能力是否已经足够稳定到可以进入产品主链路。"
+        ],
+        "vendor_tags": [
+          "DeepSeek"
+        ],
+        "mechanism_tags": [
+          "Multimodal"
+        ],
+        "categories": [
+          "Product",
+          "Release",
+          "API"
+        ],
+        "impact_score": 70,
+        "age_days": 12,
+        "summary_short": "DeepSeek 发布最小多模态模型 V4.1-Flash",
+        "summary_generation_source": "openai",
+        "summary_prompt_version": "vendor_summary_zh_v4"
+      },
+      {
+        "title": "Introducing Amazon SageMaker HyperPod Inference Gateway",
+        "url": "https://aws.amazon.com/blogs/machine-learning/introducing-amazon-sagemaker-hyperpod-inference-gateway/",
+        "source_name": "AWS Machine Learning Blog",
+        "source_url": "https://aws.amazon.com/blogs/machine-learning/",
+        "published_at": "2026-09-18T13:08:34Z",
+        "event_type": "model_launch",
+        "raw_summary": "Amazon SageMaker HyperPod Inference Gateway is a Kubernetes-native, GPU-aware routing add-on for Amazon EKS. It uses real-time GPU signals to send each inference request to the best-suited pod, cutting first-token latency by up to 82% with no changes to your model servers or client applications.",
+        "summary": "AWS 推出 Amazon SageMaker HyperPod Inference Gateway，这是面向 Amazon EKS 的 Kubernetes 原生、感知 GPU 的路由插件，可根据实时 GPU 信号把每个推理请求分发到最合适的 Pod，首 token 延迟最多降低 82%，且无需改动模型服务器或客户端应用。",
+        "impact_points": [
+          "AWS / Bedrock 发布新模型后，相关应用的能力上限和产品包装空间会立刻变化。"
+        ],
+        "watch_items": [
+          "关注新模型是否真的在关键场景里带来更稳定的结果与更好的成本结构。"
+        ],
+        "vendor_tags": [
+          "AWS",
+          "Bedrock"
+        ],
+        "mechanism_tags": [],
+        "categories": [
+          "Amazon SageMaker HyperPod",
+          "Announcements",
+          "Expert (400)"
+        ],
+        "impact_score": 68,
+        "age_days": 4,
+        "summary_short": "AWS 推出 SageMaker HyperPod 推理网关",
+        "summary_generation_source": "openai",
+        "summary_prompt_version": "vendor_summary_zh_v4"
+      },
+      {
+        "title": "Introducing Astra for Law",
+        "url": "https://openai.com/index/astra-for-law",
+        "source_name": "OpenAI News",
+        "source_url": "https://openai.com/news/",
+        "published_at": "2026-09-17T00:00:00Z",
+        "event_type": "api_tool_launch",
+        "raw_summary": "OpenAI for Law brings frontier intelligence for law, custom firm workflows, connected legal data sources, and legal-grade controls for confidential client work.",
+        "summary": "OpenAI 推出面向法律行业的 Astra for Law，提供律所自定义工作流、连接法律数据源，以及用于保密客户事务的法律级管控。",
+        "impact_points": [
+          "OpenAI 开放新 API / 工具后，开发者可以直接把上游能力接入现有工作流。",
+          "这类更新会优先影响 Agent 与工作流型应用的执行方式和稳定性。"
+        ],
+        "watch_items": [
+          "关注新 API / 工具是否附带调用限制、权限门槛或额外工程复杂度。"
+        ],
+        "vendor_tags": [
+          "OpenAI"
+        ],
+        "mechanism_tags": [
+          "Workflow"
+        ],
+        "categories": [
+          "Company"
+        ],
+        "impact_score": 66,
+        "age_days": 5,
+        "summary_short": "OpenAI 推出 Astra for Law 法律产品",
+        "summary_generation_source": "openai",
+        "summary_prompt_version": "vendor_summary_zh_v4"
+      },
+      {
+        "title": "百度智能云：ASC、AgentOS与Cloud Skills中心正式",
+        "url": "https://cloud.baidu.com/news/productNews_a63697ac-33c5-4ba0-bc62-571a9f2b7c75",
+        "source_name": "百度智能云产品动态",
+        "source_url": "https://cloud.baidu.com/news/productNews",
+        "published_at": "2026-09-20T00:00:00Z",
+        "event_type": "capability_upgrade",
+        "raw_summary": "ASC、AgentOS与Cloud Skills中心正式发布，让云上AI应用更安全更高效！",
+        "summary": "百度智能云正式发布 ASC、AgentOS 与 Cloud Skills 中心三项产品。",
+        "impact_points": [
+          "百度 / 千帆 对关键能力的升级可能改变某类产品的可行交互方式。",
+          "这类更新会优先影响 Agent 与工作流型应用的执行方式和稳定性。"
+        ],
+        "watch_items": [
+          "关注它是否能减少多步任务中的人工接管频率。"
+        ],
+        "vendor_tags": [
+          "百度",
+          "千帆"
+        ],
+        "mechanism_tags": [
+          "Agent"
+        ],
+        "categories": [
+          "Product"
+        ],
+        "impact_score": 64,
+        "age_days": 2,
+        "summary_short": "百度智能云发布 AgentOS 与 Cloud Skills 中心",
+        "summary_generation_source": "openai",
+        "summary_prompt_version": "vendor_summary_zh_v4"
+      },
+      {
+        "title": "Google Gen AI SDK v2.24.0 发布",
+        "url": "https://github.com/googleapis/python-genai/releases/tag/v2.24.0",
+        "source_name": "Google Gemini SDK Releases",
+        "source_url": "https://github.com/googleapis/python-genai/releases",
+        "published_at": "2026-09-16T22:11:13Z",
+        "event_type": "api_tool_launch",
+        "raw_summary": "## [2.24.0](https://github.com/googleapis/python-genai/compare/v2.23.0...v2.24.0) (2026-09-16) ### Features * Add credential APIs resource to gaos. ([d301255](https://github.com/googleapis/python-genai/commit/d301255a4d3f6799abd308fb4fb3d76a0a40a6fe)) * Add RetrievalCallStep and RetrievalResultStep to interactions schema and SDKs. ([9052efd](https://github.com/googleapis/python-genai/commit/9052efddccae9f91e699d9b76e0d5a3e032637f5)) * Implement environments files upload and download across Python and TypeScript SDKs ([fc0834d](https://github.com/googleapis/python-genai/commit/fc0834dbb95b8e70023caa5dfff7133e7ceb5a7a)) * Wire credential APIs resource to sdk. ([bf0d457](https://github.com/googleapis/python-genai/commit/bf0d457560c4782c7b07b2bf79348c5249f55307)) ### Bug Fixes * Do not run functions once the automatic function calling budget is spent ([2580638](https://github.com/googleapis/python-genai/commit/2580638558b182b89abcfcb94bf2b164b7f81c7b)) ### Documentation * Update GenAI SDK README files to use gemini-flash-latest ([1feb999](https://github.com/googleapis/python-genai/commit/1feb9991f8c3500e24214b61dabcc63995898dce)) * Update Python Gen AI SDK README for Gemini 3.8 Flash ([b88fded](https://github.com/googleapis/python-genai/commit/b88fded4adda37fcc8d1cc4bf49ef3fc11ecfec4))",
+        "summary": "Google 发布 Gen AI SDK v2.24.0，新增凭证 API 资源、检索步骤字段与 Python/TypeScript 环境的文件上传下载支持。",
+        "impact_points": [
+          "Google / Gemini 开放新 API / 工具后，开发者可以直接把上游能力接入现有工作流。"
+        ],
+        "watch_items": [
+          "关注新 API / 工具是否附带调用限制、权限门槛或额外工程复杂度。"
+        ],
+        "vendor_tags": [
+          "Google",
+          "Gemini"
+        ],
+        "mechanism_tags": [
+          "API"
+        ],
+        "categories": [
+          "Release",
+          "SDK",
+          "API"
+        ],
+        "impact_score": 62,
+        "age_days": 6,
+        "summary_short": "Google Gen AI SDK v2.24.0 新增凭证 API 与环境文件上传下载",
+        "summary_generation_source": "openai",
+        "summary_prompt_version": "vendor_summary_zh_v4"
+      },
+      {
+        "title": "Mistral SDK python - v2.10.1 - 2026-09-15 08:12:32 发布",
+        "url": "https://github.com/mistralai/client-python/releases/tag/v2.10.1",
+        "source_name": "Mistral SDK Releases",
+        "source_url": "https://github.com/mistralai/client-python/releases",
+        "published_at": "2026-09-15T08:12:33Z",
+        "event_type": "api_tool_launch",
+        "raw_summary": "# Generated by Speakeasy CLI ## 2026-09-14 15:02:43 ### API changes Added (8): - managedindexes.create - managedindexes.delete - managedindexes.delete_documents - managedindexes.get - managedindexes.ingest_documents - managedindexes.list - managedindexes.search - managedindexes.update ### Changes Based on: - OpenAPI Doc - Speakeasy CLI 1.796.4 (2.935.1) https://github.com/speakeasy-api/speakeasy ### Generated - [python v2.10.1] . ### Releases - [PyPI v2.10.1] https://pypi.org/project/mistralai/2.10.1 - . ### ⚠️ Breaking changes **Removed fields** - `JudgeDefinition`: `model` and `prompt` removed. Now requires `slug`; optional `mapping: Dict[str, str]`. - `PipelineConfig`, `CreatePipelineConfigRequest`, `UpdatePipelineConfigRequest`: `definition` replaced by required `definitions: List[PipelineConfigDefinition]`. `slug` and `group` removed. `definition_hash` also removed from `PipelineConfig`. - `ListPipelineConfigsV1ObservabilityPipelineConfigsGetRequest`: `group` query parameter removed. **New required fields** - `chain_run_id: Nullable[str]` on all workflow and task event responses (`WorkflowExecution*`, `ActivityTask*`, `CustomTask*`, `WorkflowTask*`). - `last_heartbeat: datetime` on `DeploymentResponse`, `DeploymentDetailResponse`, `DeploymentWorkerResponse`. - `supports_mcp: bool` on `HTTPConnector` and `MCPConnector`. - `type` on `VoiceResponse`, `managed_indexes` on `Rag`. **Type changes** - `search_keys` values are now nullable on `WorkflowExecutionResponse`, `WorkflowExecutionTraceEventsResponse`, `WorkflowExecutionTraceOTelResponse`, `WorkflowExecutionTraceSummaryResponse`: `Dict[str, str]` -> `Dict[str, Nullable[str]]`. - `And` and `Or` are objects again (`type`, `matches`) after being removed in 2.10.0. They were union aliases of `FilterGroup | FilterCondition` in 2.9.x. **Deprecated** - `updated_at` on the deployment models now emits a DeprecationWarning. Use `last_heartbeat`. **Relaxed (non-breaking)** - `ListServiceAccountsV1ServiceAccountsGetRequest.workspace_id` is now optional. Publishing Completed",
+        "summary": "Mistral 发布 Python SDK v2.10.1，基于 OpenAPI 新增 managedindexes 的 create、delete、get、list、search、update 等 8 个接口，并移除 JudgeDefinition 的 model、prompt 字段、将 PipelineConfig 的 definition 改为必填的定义列表等破坏性变更。",
+        "impact_points": [
+          "Mistral AI 开放新 API / 工具后，开发者可以直接把上游能力接入现有工作流。"
+        ],
+        "watch_items": [
+          "关注新 API / 工具是否附带调用限制、权限门槛或额外工程复杂度。"
+        ],
+        "vendor_tags": [
+          "Mistral AI"
+        ],
+        "mechanism_tags": [
+          "API"
+        ],
+        "categories": [
+          "Release",
+          "SDK",
+          "API"
+        ],
+        "impact_score": 62,
+        "age_days": 7,
+        "summary_short": "Mistral 发布 Python SDK v2.10.1 新增托管索引接口",
+        "summary_generation_source": "openai",
+        "summary_prompt_version": "vendor_summary_zh_v4"
+      },
+      {
+        "title": "GPT-6 Astra: Frontier intelligence for work, now generally available in Microsoft Foundry",
+        "url": "https://azure.microsoft.com/en-us/blog/gpt-6-astra-frontier-intelligence-for-work-now-generally-available-in-microsoft-foundry/",
+        "source_name": "Microsoft Azure Blog",
+        "source_url": "https://azure.microsoft.com/en-us/blog/",
+        "published_at": "2026-09-03T18:15:00Z",
+        "event_type": "model_launch",
+        "raw_summary": "GPT-6 Astra, OpenAI's newest frontier model, begins rolling out today through the Microsoft Foundry Limited Access Program, with availability expanding to participating customers over the coming days. The post GPT-6 Astra: Frontier intelligence for work, now generally available in Microsoft Foundry appeared first on Microsoft Azure Blog .",
+        "summary": "GPT-6 Astra 是 OpenAI 的最新前沿模型，现已通过微软 Foundry 的有限访问计划正式可用，并将逐步扩展推广。",
+        "impact_points": [
+          "Microsoft / Azure AI 发布新模型后，相关应用的能力上限和产品包装空间会立刻变化。"
+        ],
+        "watch_items": [
+          "关注新模型是否真的在关键场景里带来更稳定的结果与更好的成本结构。"
+        ],
+        "vendor_tags": [
+          "Microsoft",
+          "Azure AI"
+        ],
+        "mechanism_tags": [],
+        "categories": [
+          "AI + machine learning"
+        ],
+        "impact_score": 60,
+        "age_days": 19,
+        "summary_short": "微软 Foundry 上线 GPT-6 Astra",
+        "summary_generation_source": "openai",
+        "summary_prompt_version": "vendor_summary_zh_v4"
+      },
+      {
+        "title": "An Organizational Second Brain: Building an AI That Learns From Experts",
+        "url": "https://engineering.fb.com/2026/09/02/ml-applications/organizational-second-brain-ai-learns-from-experts/",
+        "source_name": "Meta AI Research",
+        "source_url": "https://engineering.fb.com/category/ai-research/",
+        "published_at": "2026-09-02T09:00:29Z",
+        "event_type": "capability_upgrade",
+        "raw_summary": "We’ve built an AI agent that acts as a secondary expert for a given domain, making deep specialist knowledge readily available and preserved for anyone in an organization to access, share, and build upon. This is not a typical domain-specific agent. Its novelty comes from integrating two layers: A structured, auditable knowledge architecture separates what [...] Read More... The post An Organizational Second Brain: Building an AI That Learns From Experts appeared first on Engineering at Meta .",
+        "summary": "Meta AI Research 推出一种可充当领域二级专家的 AI Agent，通过集成结构化、可审计的知识架构，使组织成员能够访问、分享并基于专家知识进行构建。",
+        "impact_points": [
+          "Meta / Llama 对关键能力的升级可能改变某类产品的可行交互方式。",
+          "这类更新会优先影响 Agent 与工作流型应用的执行方式和稳定性。"
+        ],
+        "watch_items": [
+          "关注它是否能减少多步任务中的人工接管频率。"
+        ],
+        "vendor_tags": [
+          "Meta",
+          "Llama"
+        ],
+        "mechanism_tags": [
+          "Agent"
+        ],
+        "categories": [
+          "AI Research",
+          "ML Applications",
+          "Security & Privacy"
+        ],
+        "impact_score": 58,
+        "age_days": 20,
+        "summary_short": "Meta 发布专家知识型 AI Agent",
+        "summary_generation_source": "openai",
+        "summary_prompt_version": "vendor_summary_zh_v4"
+      }
+    ],
+    "source_diagnostics": {
+      "high_potential": {
+        "discovery_candidate_count": 11,
+        "revisit_candidate_count": 4,
+        "deduped_candidate_count": 15,
+        "duplicates_removed": 0,
+        "selected_count": 3,
+        "discovery_selected_count": 3,
+        "revisit_selected_count": 0,
+        "blocked_by_cluster_count": 12,
+        "max_items": 12,
+        "max_revisit_items": 4,
+        "max_per_interest": 2,
+        "max_per_mechanism": 2,
+        "copy_updated_count": 3,
+        "copy_cache_hits": 0,
+        "copy_openai_generated_count": 3,
+        "copy_fallback_count": 0,
+        "copy_prompt_version": "openai_compact_v4",
+        "history_blocked_count": 0,
+        "in_run_duplicate_count": 0,
+        "revisit_history_bypass_count": 0,
+        "layer_counts": {
+          "dev_tool": 3,
+          "knowledge": 2,
+          "product": 5
+        }
+      },
+      "observation": {
+        "social_signal_count": 30,
+        "github_interest_count": 9,
+        "product_hunt_interest_count": 1,
+        "rule_source": "social_plus_product_sources",
+        "product_hunt_history_blocked_count": 0,
+        "product_card_duplicate_count": 0,
+        "product_card_count": 3,
+        "idea_count": 3
+      },
+      "vendor_news": {
+        "source_count": 21,
+        "source_meta": [
+          {
+            "source_name": "OpenAI News",
+            "fetch_url": "https://openai.com/news/rss.xml",
+            "parser": "rss",
+            "ok": true,
+            "candidate_count": 12,
+            "error": ""
+          },
+          {
+            "source_name": "Anthropic News",
+            "fetch_url": "https://www.anthropic.com/news",
+            "parser": "anthropic_news_html",
+            "ok": true,
+            "candidate_count": 1,
+            "error": ""
+          },
+          {
+            "source_name": "Google Gemini SDK Releases",
+            "fetch_url": "https://api.github.com/repos/googleapis/python-genai/releases?per_page=12",
+            "parser": "github_releases_json",
+            "ok": true,
+            "candidate_count": 12,
+            "error": ""
+          },
+          {
+            "source_name": "Microsoft AI Blog",
+            "fetch_url": "https://blogs.microsoft.com/feed/",
+            "parser": "rss",
+            "ok": true,
+            "candidate_count": 10,
+            "error": ""
+          },
+          {
+            "source_name": "Microsoft Copilot Blog",
+            "fetch_url": "https://www.microsoft.com/en-us/microsoft-copilot/blog/feed/",
+            "parser": "rss",
+            "ok": false,
+            "candidate_count": 0,
+            "error": "not well-formed (invalid token): line 36, column 21"
+          },
+          {
+            "source_name": "Microsoft Azure Blog",
+            "fetch_url": "https://azure.microsoft.com/en-us/blog/feed/",
+            "parser": "rss",
+            "ok": true,
+            "candidate_count": 10,
+            "error": ""
+          },
+          {
+            "source_name": "Meta AI Research",
+            "fetch_url": "https://engineering.fb.com/category/ai-research/feed/",
+            "parser": "rss",
+            "ok": true,
+            "candidate_count": 9,
+            "error": ""
+          },
+          {
+            "source_name": "xAI SDK Releases",
+            "fetch_url": "https://api.github.com/repos/xai-org/xai-sdk-python/releases?per_page=12",
+            "parser": "github_releases_json",
+            "ok": true,
+            "candidate_count": 12,
+            "error": ""
+          },
+          {
+            "source_name": "Mistral SDK Releases",
+            "fetch_url": "https://api.github.com/repos/mistralai/client-python/releases?per_page=12",
+            "parser": "github_releases_json",
+            "ok": true,
+            "candidate_count": 12,
+            "error": ""
+          },
+          {
+            "source_name": "AWS Machine Learning Blog",
+            "fetch_url": "https://aws.amazon.com/blogs/machine-learning/feed/",
+            "parser": "rss",
+            "ok": true,
+            "candidate_count": 12,
+            "error": ""
+          },
+          {
+            "source_name": "NVIDIA Technical Blog",
+            "fetch_url": "https://developer.nvidia.com/blog/feed/",
+            "parser": "rss",
+            "ok": true,
+            "candidate_count": 12,
+            "error": ""
+          },
+          {
+            "source_name": "Kimi Blog",
+            "fetch_url": "https://www.kimi.com/blog/",
+            "parser": "kimi_blog_html",
+            "ok": true,
+            "candidate_count": 0,
+            "error": ""
+          },
+          {
+            "source_name": "智谱新功能发布",
+            "fetch_url": "https://docs.bigmodel.cn/cn/update/new-releases",
+            "parser": "zhipu_releases_html",
+            "ok": true,
+            "candidate_count": 12,
+            "error": ""
+          },
+          {
+            "source_name": "MiniMax News",
+            "fetch_url": "https://www.minimaxi.com/news",
+            "parser": "minimax_news_html",
+            "ok": true,
+            "candidate_count": 1,
+            "error": ""
+          },
+          {
+            "source_name": "Qwen Blog",
+            "fetch_url": "https://qwenlm.github.io/zh/blog/index.xml",
+            "parser": "rss",
+            "ok": true,
+            "candidate_count": 12,
+            "error": ""
+          },
+          {
+            "source_name": "DeepSeek API 更新",
+            "fetch_url": "https://api-docs.deepseek.com/updates",
+            "parser": "deepseek_updates_html",
+            "ok": true,
+            "candidate_count": 12,
+            "error": ""
+          },
+          {
+            "source_name": "阶跃星辰产品博客",
+            "fetch_url": "https://www.stepfun.com/",
+            "parser": "stepfun_home_html",
+            "ok": true,
+            "candidate_count": 0,
+            "error": ""
+          },
+          {
+            "source_name": "零一万物新闻动态",
+            "fetch_url": "https://www.lingyiwanwu.com/newsroom.html",
+            "parser": "01ai_newsroom_html",
+            "ok": true,
+            "candidate_count": 12,
+            "error": ""
+          },
+          {
+            "source_name": "百度智能云产品动态",
+            "fetch_url": "https://cloud.baidu.com/news/productNews",
+            "parser": "baidu_cloud_news_html",
+            "ok": true,
+            "candidate_count": 10,
+            "error": ""
+          },
+          {
+            "source_name": "腾讯混元产品动态",
+            "fetch_url": "https://cloud.tencent.com/document/product/1729/97765",
+            "parser": "tencent_hunyuan_updates_html",
+            "ok": true,
+            "candidate_count": 3,
+            "error": ""
+          },
+          {
+            "source_name": "火山引擎产品新闻",
+            "fetch_url": "https://www.volcengine.com/news",
+            "parser": "volcengine_news_html",
+            "ok": true,
+            "candidate_count": 3,
+            "error": ""
+          }
+        ],
+        "candidate_count": 27,
+        "selected_count": 8,
+        "max_age_days": 30,
+        "max_items": 8,
+        "max_per_vendor": 1,
+        "summary_cache_hits": 8,
+        "summary_openai_generated_count": 0,
+        "summary_fallback_count": 0,
+        "summary_prompt_version": "vendor_summary_zh_v4",
+        "empty_allowed": true
+      },
+      "product_hunt_blocked_key_count": 159
+    }
+  },
+  "high_potential_items": [
+    {
+      "title": "Sylinko/Everywhere",
+      "full_name": "sylinko/everywhere",
+      "url": "https://github.com/Sylinko/Everywhere",
+      "source_type": "github",
+      "source_layer": "discovery",
+      "repo_id": 971243074,
+      "owner": "sylinko",
+      "name": "everywhere",
+      "summary": "On-screen aware AI assistant for your desktop. Uses current app context, multiple LLMs, and MCP tools to help you act across apps.",
+      "interest_tags": [
+        "桌面工作台",
+        "法律科技"
+      ],
+      "domain_tags": [],
+      "tool_tags": [],
+      "mechanism_tags": [],
+      "highlight_one_liner": "读当前屏幕上下文，跨应用把事做完",
+      "highlight_keywords": [
+        "屏幕感知",
+        "多模型切换",
+        "MCP 工具调用",
+        "跨应用执行"
+      ],
+      "reuse_direction": "做垂直场景助手时，可借鉴它把「当前屏幕内容」当成免输入的隐式上下文，再用 MCP 工具链把模型输出直接落到别的应用里，而不是停在对话框里。",
+      "minimal_mvp": "第一版只做最小闭环：读取当前窗口文本作为上下文，接一个模型，挂一个 MCP 工具，让用户在当前应用里说一句指令就把结果写进目标应用。",
+      "selection_reason": "已有较强社区验证",
+      "is_revisit": false,
+      "revisit_reason": "",
+      "score": 41.25,
+      "rank_score": 26.1875,
+      "stars_total": 6286,
+      "stars_7d": null,
+      "stars_30d": null,
+      "forks_total": 389,
+      "watchers_total": null,
+      "created_at": "2025-04-23T08:19:33Z",
+      "pushed_at": "2026-09-17T12:29:32Z",
+      "updated_at": "2026-09-22T00:04:06Z",
+      "topics": [
+        "ai",
+        "ai-agents",
+        "ai-assistant",
+        "avalonia",
+        "claude",
+        "deepseek",
+        "desktop-app",
+        "flow-state",
+        "gemini",
+        "hermes-agent",
+        "mcp",
+        "on-screen-awareness",
+        "openai",
+        "openclaw",
+        "personal",
+        "skills"
+      ],
+      "semantic_bonus": 10.0,
+      "ai_noise": false,
+      "ai_match_score": 8,
+      "ai_priority": "headline",
+      "ai_rationale": "桌面级屏幕感知 AI 助手，能结合当前应用上下文与 MCP 跨应用执行任务，最贴近 AI 工作流与产品化方向。",
+      "copy_generation_source": "openai",
+      "copy_prompt_version": "openai_compact_v4"
+    },
+    {
+      "title": "browser-act/skills",
+      "full_name": "browser-act/skills",
+      "url": "https://github.com/browser-act/skills",
+      "source_type": "github",
+      "source_layer": "discovery",
+      "repo_id": 1151333143,
+      "owner": "browser-act",
+      "name": "skills",
+      "summary": "Browser automation CLI built for AI agents. Break through anti-bot walls, hand off to humans across platforms when stuck. Parallel multi-task execution, independent multi-session operation, isolated multi-account browsing.",
+      "interest_tags": [
+        "开发者工具",
+        "工作流自动化",
+        "浏览器自动化"
+      ],
+      "domain_tags": [],
+      "tool_tags": [],
+      "mechanism_tags": [],
+      "highlight_one_liner": "反爬穿透、卡住可转人工的多账号浏览器 CLI",
+      "highlight_keywords": [
+        "反爬突破",
+        "卡点转人工",
+        "多账号隔离",
+        "并行多会话"
+      ],
+      "reuse_direction": "把浏览器自动化封装成 agent 可直接调用的 CLI，并在反爬拦截、验证码等卡点处保留人工接管入口，这套「自动跑为主、人工只接手卡点」的分工方式值得做网页抓取与数据提取的 agent 产品借鉴。",
+      "minimal_mvp": "第一版先让一个 agent 会话通过 CLI 打开目标网站并抓取数据，识别到反爬或验证失败时暂停并把当前页面交给人工操作，人工处理完由同一会话继续往下跑。",
+      "selection_reason": "已有较强社区验证",
+      "is_revisit": false,
+      "revisit_reason": "",
+      "score": 28.3376,
+      "rank_score": 37.2506,
+      "stars_total": 5969,
+      "stars_7d": null,
+      "stars_30d": null,
+      "forks_total": 299,
+      "watchers_total": null,
+      "created_at": "2026-02-06T10:35:35Z",
+      "pushed_at": "2026-08-24T14:56:52Z",
+      "updated_at": "2026-09-21T12:38:36Z",
+      "topics": [
+        "agent-infrastructure",
+        "ai-agents",
+        "automation",
+        "claude-cli",
+        "claude-code",
+        "claude-code-skills",
+        "claude-skills",
+        "codex",
+        "codex-cli",
+        "codex-skill",
+        "cursor",
+        "data-extraction",
+        "no-code",
+        "openclaw",
+        "openclaw-cli",
+        "openclaw-skill",
+        "openclaw-skills",
+        "web-data-extraction",
+        "web-scraping",
+        "web-scraping-api"
+      ],
+      "semantic_bonus": 23.0,
+      "ai_noise": false,
+      "ai_match_score": 6,
+      "ai_priority": "medium",
+      "ai_rationale": "为 AI Agent 提供浏览器自动化与反爬、人机交接能力，偏底层工具，可支撑企业自动化但非直接产品方向。",
+      "copy_generation_source": "openai",
+      "copy_prompt_version": "openai_compact_v4"
+    },
+    {
+      "title": "callstack/agent-device",
+      "full_name": "callstack/agent-device",
+      "url": "https://github.com/callstack/agent-device",
+      "source_type": "github",
+      "source_layer": "discovery",
+      "repo_id": 1146193768,
+      "owner": "callstack",
+      "name": "agent-device",
+      "summary": "Mobile app automation and verification for AI coding agents. CLI, MCP server, and typed Node.js API for iOS, Android, HarmonyOS, TV, web, macOS, and Linux.",
+      "interest_tags": [
+        "开发者工具",
+        "工作流自动化",
+        "桌面工作台"
+      ],
+      "domain_tags": [],
+      "tool_tags": [],
+      "mechanism_tags": [],
+      "highlight_one_liner": "让 AI 编码代理亲手操作移动端做验证",
+      "highlight_keywords": [
+        "MCP 移动端操作层",
+        "真机与模拟器",
+        "CLI 加类型化 API"
+      ],
+      "reuse_direction": "值得借鉴的是把 CLI、MCP server 和类型化 Node.js API 打包成同一套设备操作层，让 AI 代理像调用函数一样启动模拟器、装包、点按并断言界面，这个接入形态可迁移到任何需要代理触碰真实设备或浏览器的验证场景。",
+      "minimal_mvp": "第一版只打通一条链路：用 MCP server 暴露启动 iOS 模拟器、安装应用、点按输入、截图断言四类工具，让代理独立跑通一次登录 E2E 并回传失败截图。",
+      "selection_reason": "已有较强社区验证",
+      "is_revisit": false,
+      "revisit_reason": "",
+      "score": 29.6245,
+      "rank_score": 37.4437,
+      "stars_total": 4713,
+      "stars_7d": null,
+      "stars_30d": null,
+      "forks_total": 311,
+      "watchers_total": null,
+      "created_at": "2026-01-30T18:41:54Z",
+      "pushed_at": "2026-09-21T21:05:35Z",
+      "updated_at": "2026-09-22T02:26:09Z",
+      "topics": [
+        "adb",
+        "agentic-ai",
+        "agents",
+        "ai-agents",
+        "android-emulator",
+        "automation",
+        "e2e-testing",
+        "expo",
+        "flutter",
+        "ios-simulator",
+        "mcp",
+        "mobile",
+        "mobile-testing",
+        "performance-optimization",
+        "react-native",
+        "testing",
+        "xcuitest"
+      ],
+      "semantic_bonus": 23.0,
+      "ai_noise": false,
+      "ai_match_score": 6,
+      "ai_priority": "medium",
+      "ai_rationale": "面向 AI 编程代理的移动端自动化验证工具，属于 Agent 基础设施，但与雷达关注的直接应用场景匹配度一般。",
+      "copy_generation_source": "openai",
+      "copy_prompt_version": "openai_compact_v4"
+    }
+  ],
+  "interest_sections": [
+    {
+      "title": "法律 AI 工作流",
+      "summary": "这一组信号主要来自 zhihu、GitHub，核心观察是法律 AI 的争论点已经从“能不能替代人审合同”下沉到审到什么颗粒度、依据能否被律师复核，而条文与判决公开这一数据条件正被当成可自建工作流的前提。",
+      "items": [
+        {
+          "title": "需求",
+          "paragraph": "",
+          "source": "social",
+          "url": "https://www.zhihu.com/question/606923806/answer/3392966630 ｜ https://zhuanlan.zhihu.com/p/702780746",
+          "source_labels": [
+            "知乎",
+            "社媒"
+          ],
+          "source_url_list": [
+            "https://www.zhihu.com/question/606923806/answer/3392966630",
+            "https://zhuanlan.zhihu.com/p/702780746"
+          ]
+        },
+        {
+          "title": "现状",
+          "paragraph": "现状是通用模型加现成工具混用——有人直接拿 ChatGPT 类模型处理合同，有人上 Ironclad、律己 AI、幂律智能这类已有商业产品做审查和全生命周期管理，GitHub 上也出现用 LangChain Agent 接法律数据库 API 自建咨询、审查、文书生成的项目，讨论仍集中在“AI 能不能审得准”而非具体条款颗粒度。",
+          "source": "social",
+          "url": "https://www.zhihu.com/question/606923806/answer/3392966630 ｜ https://zhuanlan.zhihu.com/p/702780746",
+          "source_labels": [
+            "知乎",
+            "社媒"
+          ],
+          "source_url_list": [
+            "https://www.zhihu.com/question/606923806/answer/3392966630",
+            "https://zhuanlan.zhihu.com/p/702780746"
+          ]
+        },
+        {
+          "title": "方向跟踪",
+          "paragraph": "值得跟踪的是把公开法律条文与裁判文书做成可检索底座，让模型对具体条款输出带引用出处、可逐条核对的判断结果，而不是只给一段笼统的修改建议。",
+          "source": "synthesis",
+          "url": "https://www.zhihu.com/question/606923806/answer/3392966630 ｜ https://zhuanlan.zhihu.com/p/702780746",
+          "source_labels": [
+            "知乎",
+            "社媒"
+          ],
+          "source_url_list": [
+            "https://www.zhihu.com/question/606923806/answer/3392966630",
+            "https://zhuanlan.zhihu.com/p/702780746"
+          ]
+        }
+      ],
+      "product_items": [
+        {
+          "title": "abaiar/-LexAI",
+          "url": "https://github.com/abaiar/-LexAI",
+          "website_url": "",
+          "summary": "",
+          "description": "",
+          "source_label": "GitHub",
+          "heat_line": "🌟31",
+          "stars_total": "31",
+          "tags": [
+            "法律 AI 工作流"
+          ],
+          "interest_tags": [
+            "法律 AI 工作流"
+          ],
+          "tool_tags": [],
+          "mechanism_tags": [],
+          "highlight_one_liner": "LLM 智能法律咨询与文书平台",
+          "reuse_direction": "把「法律 AI 工作流」封装成更明确的岗位或任务入口",
+          "minimal_mvp": "先做一个面向 法律 AI 工作流 的轻量单任务工具"
+        }
+      ]
+    },
+    {
+      "title": "AI 应用场景 / 数据",
+      "summary": "这一组信号主要来自 zhihu，核心观察是B端需求梳理的耗时集中在多组织角色访谈与流程对齐，讨论还停在方法论拆解，没有对应的结构化沉淀手段。",
+      "items": [
+        {
+          "title": "需求",
+          "paragraph": "",
+          "source": "social",
+          "url": "https://zhuanlan.zhihu.com/p/20468570 ｜ https://www.zhihu.com/question/460427762/answer/1895672636",
+          "source_labels": [
+            "社媒",
+            "知乎"
+          ],
+          "source_url_list": [
+            "https://zhuanlan.zhihu.com/p/20468570",
+            "https://www.zhihu.com/question/460427762/answer/1895672636"
+          ]
+        },
+        {
+          "title": "现状",
+          "paragraph": "目前的做法是先判断产品是标准化还是定制化，再照组织架构确定角色、逐个访谈子系统业务，最后按角色权限和界面操作影响补全场景，基本停留在人工访谈加文档整理。",
+          "source": "social",
+          "url": "https://zhuanlan.zhihu.com/p/20468570 ｜ https://www.zhihu.com/question/460427762/answer/1895672636",
+          "source_labels": [
+            "社媒",
+            "知乎"
+          ],
+          "source_url_list": [
+            "https://zhuanlan.zhihu.com/p/20468570",
+            "https://www.zhihu.com/question/460427762/answer/1895672636"
+          ]
+        },
+        {
+          "title": "方向跟踪",
+          "paragraph": "值得跟踪的方向是让访谈纪要、组织架构和既有系统字段能自动映射成角色—单据—流程—权限的依赖结构，并按标准化与定制化两条路径分别标出需求边界。",
+          "source": "synthesis",
+          "url": "https://zhuanlan.zhihu.com/p/20468570 ｜ https://www.zhihu.com/question/460427762/answer/1895672636",
+          "source_labels": [
+            "社媒",
+            "知乎"
+          ],
+          "source_url_list": [
+            "https://zhuanlan.zhihu.com/p/20468570",
+            "https://www.zhihu.com/question/460427762/answer/1895672636"
+          ]
+        }
+      ],
+      "product_items": []
+    },
+    {
+      "title": "智能旅行助手",
+      "summary": "这一组信号主要来自 zhihu、GitHub，核心观察是自由行行程规划仍依赖人工跨平台筛选攻略，而开源侧已出现用 Agent 技能串联调研与地图输出的雏形。",
+      "items": [
+        {
+          "title": "需求",
+          "paragraph": "",
+          "source": "social",
+          "url": "https://zhuanlan.zhihu.com/p/650453155 ｜ https://www.zhihu.com/question/578463082/answer/2851939264",
+          "source_labels": [
+            "社媒",
+            "知乎"
+          ],
+          "source_url_list": [
+            "https://zhuanlan.zhihu.com/p/650453155",
+            "https://www.zhihu.com/question/578463082/answer/2851939264"
+          ]
+        },
+        {
+          "title": "现状",
+          "paragraph": "当前讨论集中在按平台分级筛选攻略——专攻攻略的马蜂窝/穷游、作为种草社区的小红书/知乎/豆瓣、同质化严重的抖音，同时 GitHub 上有 trip-map-builder 用 Agent Skill 把规划、小红书调研和交互式地图串成流程。",
+          "source": "social",
+          "url": "https://zhuanlan.zhihu.com/p/650453155 ｜ https://www.zhihu.com/question/578463082/answer/2851939264",
+          "source_labels": [
+            "社媒",
+            "知乎"
+          ],
+          "source_url_list": [
+            "https://zhuanlan.zhihu.com/p/650453155",
+            "https://www.zhihu.com/question/578463082/answer/2851939264"
+          ]
+        },
+        {
+          "title": "方向跟踪",
+          "paragraph": "值得跟踪的是把多源攻略的调研、交叉验证和地理信息整合成可编辑的按天行程草稿，并直接输出交互式地图路线，而不是再做一个攻略社区或平台推荐榜。",
+          "source": "synthesis",
+          "url": "https://zhuanlan.zhihu.com/p/650453155 ｜ https://www.zhihu.com/question/578463082/answer/2851939264",
+          "source_labels": [
+            "社媒",
+            "知乎"
+          ],
+          "source_url_list": [
+            "https://zhuanlan.zhihu.com/p/650453155",
+            "https://www.zhihu.com/question/578463082/answer/2851939264"
+          ]
+        }
+      ],
+      "product_items": [
+        {
+          "title": "liangdabiao/langgraph_multi-agent-rag-customer-support",
+          "url": "https://github.com/liangdabiao/langgraph_multi-agent-rag-customer-support",
+          "website_url": "",
+          "summary": "",
+          "description": "",
+          "source_label": "GitHub",
+          "heat_line": "🌟326",
+          "stars_total": "326",
+          "tags": [
+            "智能旅行助手",
+            "知识检索/RAG",
+            "多 Agent 协作"
+          ],
+          "interest_tags": [
+            "智能旅行助手",
+            "知识检索/RAG",
+            "多 Agent 协作"
+          ],
+          "tool_tags": [],
+          "mechanism_tags": [],
+          "highlight_one_liner": "多智能体RAG客户支持系统",
+          "reuse_direction": "把「智能旅行助手 / 知识检索/RAG」封装成更明确的岗位或任务入口",
+          "minimal_mvp": "先做一个面向 智能旅行助手 的轻量单任务工具"
+        },
+        {
+          "title": "hiyeshu/trip-map-builder",
+          "url": "https://github.com/hiyeshu/trip-map-builder",
+          "website_url": "",
+          "summary": "",
+          "description": "",
+          "source_label": "GitHub",
+          "heat_line": "🌟229",
+          "stars_total": "229",
+          "tags": [
+            "智能旅行助手",
+            "知识检索/RAG",
+            "研究代理"
+          ],
+          "interest_tags": [
+            "智能旅行助手",
+            "知识检索/RAG",
+            "研究代理"
+          ],
+          "tool_tags": [],
+          "mechanism_tags": [],
+          "highlight_one_liner": "旅行行程规划与小红书交互地图生成",
+          "reuse_direction": "把「智能旅行助手 / 知识检索/RAG」封装成更明确的岗位或任务入口",
+          "minimal_mvp": "先做一个面向 智能旅行助手 的轻量单任务工具"
+        }
+      ]
+    },
+    {
+      "title": "教育 AI 辅导",
+      "summary": "这一组信号主要来自 zhihu，核心是语文老师把备课视为最耗时环节、单节新课常需数小时以上，现有讨论仍以人工硬备和压力倾诉为主，尚未出现针对该链路的 AI 辅助方案。",
+      "items": [
+        {
+          "title": "需求",
+          "paragraph": "语文老师备一节新课常要数小时以上，最明确的需求是让教案撰写和课前预演从零硬备变成可快速修改的初稿",
+          "source": "social",
+          "url": "https://zhuanlan.zhihu.com/p/5875025118 ｜ https://www.zhihu.com/question/462467120/answer/2650103697",
+          "source_labels": [
+            "社媒",
+            "知乎"
+          ],
+          "source_url_list": [
+            "https://zhuanlan.zhihu.com/p/5875025118",
+            "https://www.zhihu.com/question/462467120/answer/2650103697"
+          ]
+        },
+        {
+          "title": "现状",
+          "paragraph": "当前讨论中，老师仍靠提前多轮备课、上课前自己演习并接受备课不充分来硬扛，把耗时主要归因于语文学科特性和教案设计本身。",
+          "source": "social",
+          "url": "https://zhuanlan.zhihu.com/p/5875025118 ｜ https://www.zhihu.com/question/462467120/answer/2650103697",
+          "source_labels": [
+            "社媒",
+            "知乎"
+          ],
+          "source_url_list": [
+            "https://zhuanlan.zhihu.com/p/5875025118",
+            "https://www.zhihu.com/question/462467120/answer/2650103697"
+          ]
+        },
+        {
+          "title": "方向跟踪",
+          "paragraph": "值得跟踪的是面向语文新课备课链路，生成可核查的教案草稿与课前预演问答，让老师把时间花在判断和修改上。",
+          "source": "synthesis",
+          "url": "https://zhuanlan.zhihu.com/p/5875025118 ｜ https://www.zhihu.com/question/462467120/answer/2650103697",
+          "source_labels": [
+            "社媒",
+            "知乎"
+          ],
+          "source_url_list": [
+            "https://zhuanlan.zhihu.com/p/5875025118",
+            "https://www.zhihu.com/question/462467120/answer/2650103697"
+          ]
+        }
+      ],
+      "product_items": []
+    }
+  ],
+  "repo_url": "https://github.com/Xuanqi-Zhou/ai-product-idea-radar"
+}
