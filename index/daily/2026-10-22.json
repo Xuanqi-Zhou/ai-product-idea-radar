@@ -1,0 +1,2812 @@
+{
+  "version": "current",
+  "source": "AI-idea-rader",
+  "generated_at": "2026-10-22T17:07:23",
+  "date_key": "2026-10-22",
+  "date_title": "2026年10月22日",
+  "briefing_path": "briefings/2026-10-22.md",
+  "ideas_path": "ideas/2026-10-22.md",
+  "briefing": {
+    "version": "v5",
+    "date_key": "2026-10-22",
+    "date_title": "2026年10月22日",
+    "theme_threads": [
+      {
+        "id": "agent-交付物变成可编辑成品",
+        "label": "agent 交付物变成可编辑成品",
+        "thesis": "产出正在从一段文本变成可改、可合并、可上线的真实文件与可运行产品，评审和版本合并成了新的产品差异点，现在切入正好承接生成式工具落地时的最后一公里。",
+        "value_tag": "可迁移机制",
+        "action_hint": "重点拆解可审阅编辑与三方合并的实现方式",
+        "evidence_note": "从设计 token 抽取、文档逐条可审合并到对话改图，再到多轮迭代出可玩可预约可上线的成品，共同点是 agent 输出必须落成可交付资产。",
+        "member_count": 8,
+        "repo_count": 3,
+        "product_count": 1,
+        "practice_count": 4,
+        "score": 138.85,
+        "repos": [
+          {
+            "repo": "aiworkdeck",
+            "url": "https://github.com/AI-WorkDeck/aiworkdeck",
+            "summary": "Open-source workspace for professional document AI: reviewable agent edits, source-linked work, three-way document merges, and an extensible plugin runtime. Starting with legal work.",
+            "stars": 167,
+            "score": 31.5664,
+            "tags": [
+              "开发者工具",
+              "桌面工作台",
+              "知识检索/RAG"
+            ],
+            "one_liner": "AI 改文档，逐条可审、可三方合并",
+            "value_tag": "可迁移机制",
+            "reuse": "把 AI 对文档的每处改动做成可逐条审阅、可三方合并的补丁，这套机制可以迁移到合同、报告等所有需要 AI 修改正式文件的场景。",
+            "mvp": "第一版只做单份合同的改动审阅：agent 逐处标注修改并附上原文出处，用户逐条接受或拒绝，最后导出定稿。"
+          },
+          {
+            "repo": "design-extract",
+            "url": "https://github.com/Manavarya09/design-extract",
+            "summary": "Extract any website's complete design system with one command. DTCG tokens, semantic+primitive+composite, MCP server for Claude Code/Cursor/Windsurf, multi-platform emitters (iOS SwiftUI, Android Comp",
+            "stars": 4307,
+            "score": 34.025,
+            "tags": [
+              "开发者工具",
+              "浏览器自动化",
+              "图像/设计生成"
+            ],
+            "one_liner": "一条命令扒下整站设计系统",
+            "value_tag": "可迁移机制",
+            "reuse": "用 Playwright 抓取线上页面的真实样式后归一成 DTCG 设计令牌，再由同一份令牌同时派发到 iOS、Android、Flutter、Tailwind 和 Figma 变量，这套「抓取—归一—多端派发」的链路可以搬到任何需要复用同一份设计资产的多端项目。",
+            "mvp": "第一版只做 CLI：用 Playwright 打开一个 URL，抽取颜色、字号、间距等原始样式，去重合并后输出一份 DTCG 格式的 tokens.json，先不接 MCP、不做多端 emitter。"
+          },
+          {
+            "repo": "next-ai-draw-io",
+            "url": "https://github.com/DayuanJiang/next-ai-draw-io",
+            "summary": "Draw and edit draw.io diagrams by chatting with an AI. Web app, desktop app, and an MCP server for Claude Code, Cursor, Codex and VS Code.",
+            "stars": 36342,
+            "score": 32.45,
+            "tags": [
+              "开发者工具",
+              "桌面工作台"
+            ],
+            "one_liner": "聊天改 draw.io，MCP 接进编码工具",
+            "value_tag": "可迁移机制",
+            "reuse": "值得借鉴的是把图形编辑器的每步操作映射成对话指令，再用同一个 MCP server 把能力分发到 Claude Code、Cursor、Codex 和 VS Code，让架构图跟着代码对话一起产出。",
+            "mvp": "第一版只做 Web：用户说一句需求，AI 在 draw.io 画布生成一张可手动微调的流程图，后续修改也用对话完成。"
+          }
+        ],
+        "products": [
+          {
+            "product": "UseIt Studio",
+            "url": "https://www.producthunt.com/products/useit-studio-from-idea-to-delivery?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai-idea-radar-v4-2+%28ID%3A+294543%29",
+            "summary": "Your AI design agent for real, editable project files.",
+            "votes": 283,
+            "score": 40.812,
+            "tags": [
+              "图像/设计生成"
+            ],
+            "one_liner": "一句话生成可直接印刷的可编辑稿",
+            "value_tag": "可迁移机制",
+            "reuse": "把“生成即得可编辑、可交付生产”的做法，迁移到名片、包装等需要出血和刀模的印刷物料生成工具里。",
+            "mvp": "先只做单张名片：一句话生成含出血线的可编辑文件，支持点选元素直接改文字改颜色，再导出印刷用 PDF。"
+          }
+        ],
+        "practices": [
+          {
+            "title": "用 Claude Code 迭代开发浏览器 RTS 游戏",
+            "category": "游戏仿真",
+            "tools": [
+              "Claude Code",
+              "Claude"
+            ],
+            "url": "https://simonwillison.net/2026/Oct/20/battledrones/"
+          },
+          {
+            "title": "用 Manus 40 分钟搭出可预约应用",
+            "category": "软件研发",
+            "tools": [
+              "Manus"
+            ],
+            "url": "https://emergent.sh/learn/manus-ai-review"
+          },
+          {
+            "title": "用 Manus 规划课程并搭建部署在线培训站",
+            "category": "内容创作",
+            "tools": [
+              "Manus"
+            ],
+            "url": "https://www.joinleland.com/library/a/manus-ai-agents"
+          },
+          {
+            "title": "用 Replit Agent 做游戏攻略机器人和浏览器游戏",
+            "category": "软件研发",
+            "tools": [
+              "Replit Agent"
+            ],
+            "url": "https://www.reddit.com/r/replit/comments/1kd6wjv"
+          }
+        ]
+      },
+      {
+        "id": "多-agent-指挥台成为编码新入口",
+        "label": "多 agent 指挥台成为编码新入口",
+        "thesis": "单 agent 的边际收益在下降，能把多机、多会话、多 harness 聚到一个面板并允许人工中途接管的指挥层，正在取代单个编码助手成为入口；现在切正好卡在工具碎片化的窗口上。",
+        "value_tag": "需求已验证",
+        "action_hint": "可在自有工具里补多 agent 会话聚合与人工接管",
+        "evidence_note": "供给端在做插件市场、会话聚合台和组队界面，需求端已出现把任务拆给子 agent 并行处理的真实用法，两边指向同一个「谁管住多个 agent」的问题。",
+        "member_count": 6,
+        "repo_count": 2,
+        "product_count": 3,
+        "practice_count": 1,
+        "score": 375.11,
+        "repos": [
+          {
+            "repo": "agents",
+            "url": "https://github.com/wshobson/agents",
+            "summary": "Multi-harness agentic plugin marketplace for Claude Code, Codex, Cursor, OpenCode, GitHub Copilot, Google Antigravity, and Pi",
+            "stars": 41485,
+            "score": 240.45,
+            "tags": [
+              "开发者工具",
+              "多 Agent 协作"
+            ],
+            "one_liner": "一套 Agent 插件，七个编码工具通用",
+            "value_tag": "可迁移机制",
+            "reuse": "把 Agent 技能与 subagent 封装成一份插件源，同时输出到 Claude Code、Cursor、Codex、Copilot 等不同 harness 的配置格式，省去为每个编码工具重写规则和技能。",
+            "mvp": "先挑一个高频技能（如代码审查 subagent）写成唯一源文件，再补上 Claude Code 与 Cursor 两套适配配置，验证同一份内容在两边都能加载运行。"
+          },
+          {
+            "repo": "codeg",
+            "url": "https://github.com/spacering-net/codeg",
+            "summary": "Collaborative multi-agent AI coding workspace: aggregate sessions from Claude Code, Codex, OpenCode, Pi, Grok Build, etc. Desktop app, self-hosted server, or Docker.",
+            "stars": 4050,
+            "score": 25.225,
+            "tags": [
+              "开发者工具",
+              "桌面工作台",
+              "多 Agent 协作"
+            ],
+            "one_liner": "多个 AI 编码 Agent 会话收进一个协作台",
+            "value_tag": "可迁移机制",
+            "reuse": "把 Claude Code、Codex、OpenCode 等不同 Agent 的终端会话统一接入同一界面并支持多人共享，这套聚合方式值得迁移到团队需要并行盯多个 Agent 编码任务的场景。",
+            "mvp": "第一版只做只读聚合：把本机 Claude Code 和 Codex 的会话列表与终端输出接进一个桌面窗口，支持按 Agent 和项目切换查看，先不碰协作编辑与权限。"
+          }
+        ],
+        "products": [
+          {
+            "product": "Harness by Autonomous",
+            "url": "https://www.producthunt.com/products/harness-by-autonomous?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai-idea-radar-v4-2+%28ID%3A+294543%29",
+            "summary": "Every coding agent, every machine, one command center.",
+            "votes": 291,
+            "score": 44.938,
+            "tags": [
+              "开发者工具"
+            ],
+            "one_liner": "一个面板统管多机编程 Agent",
+            "value_tag": "可迁移机制",
+            "reuse": "把散落在多台机器上的编程 Agent 收进同一个控制层，支持远程下发指令，并按机器查看运行状态，这个方向值得迁移到自己的研发环境里。",
+            "mvp": "第一版先在每台开发机上跑一个状态上报进程，桌面端只做机器列表、当前任务状态和一键下发指令三件事，语音与移动端先不做。"
+          },
+          {
+            "product": "BAND for Developers",
+            "url": "https://www.producthunt.com/products/band?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai-idea-radar-v4-2+%28ID%3A+294543%29",
+            "summary": "Coding agents, meet teamwork",
+            "votes": 239,
+            "score": 32.363,
+            "tags": [
+              "AI 任务管理",
+              "开发者工具"
+            ],
+            "one_liner": "多个 coding agent 组队分活，人可中途接手",
+            "value_tag": "可迁移机制",
+            "reuse": "值得借鉴的是把任务分派、上下文交接和人工接管放进同一个共享工作区，这套机制可以迁移到自家多 agent 开发流程的编排里。",
+            "mvp": "第一版先做一个共享任务列表，让两个 coding agent 各自领取任务并互相交接上下文，人可以随时改派或直接接管。"
+          },
+          {
+            "product": "buddylist",
+            "url": "https://www.producthunt.com/products/buddylist-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai-idea-radar-v4-2+%28ID%3A+294543%29",
+            "summary": "Chat with your coding agents like it's 2005",
+            "votes": 125,
+            "score": 32.138,
+            "tags": [
+              "开发者工具"
+            ],
+            "one_liner": "把多个编码代理拉进一个群聊",
+            "value_tag": "可迁移机制",
+            "reuse": "把“每个编码代理独占一个 git worktree，并在同一个聊天窗口里派活和交接任务”这套协作机制，迁移到任何需要多代理并行改同一仓库的编码流程里。",
+            "mvp": "第一版先只做单仓库：为每个代理自动开一个 git worktree，用一个聊天窗口把任务指派给某个代理，并直接查看它产生的改动。"
+          }
+        ],
+        "practices": [
+          {
+            "title": "用 OpenClaw 接入邮箱日历 Notion 跑完一天工作",
+            "category": "工作运营",
+            "tools": [
+              "OpenClaw",
+              "Gmail",
+              "Google Calendar",
+              "Notion"
+            ],
+            "url": "https://medium.com/age-of-awareness/i-let-openclaw-run-my-entire-workday-d4bea6597b1c"
+          }
+        ]
+      },
+      {
+        "id": "agent-接真实账户直接代办业务",
+        "label": "agent 接真实账户直接代办业务",
+        "thesis": "agent 开始绑定真实账号与支付、日程、上架、收款流程，直接对外产生动作和结果，人退到只下指令与验收，这条线的商业闭环需求已经明显跑在体验优化前面。",
+        "value_tag": "值得拆解",
+        "action_hint": "挑一条业务闭环做端到端代办原型验证",
+        "evidence_note": "全自动销售、代提交上架、客服自助翻数据、群聊收款核对、语音叫车改日程，都是 agent 拿到账号权限后直接对外完成动作。",
+        "member_count": 6,
+        "repo_count": 2,
+        "product_count": 1,
+        "practice_count": 3,
+        "score": 289.21,
+        "repos": [
+          {
+            "repo": "harvey",
+            "url": "https://github.com/ethanplusai/harvey",
+            "summary": "Autonomous AI sales agent powered by Claude Code or Codex. Finds prospects, writes cold emails, sends campaigns, handles replies, books meetings. No API keys needed — runs on your Claude or Codex subs",
+            "stars": 2001,
+            "score": 237.625,
+            "tags": [
+              "开发者工具",
+              "工作流自动化",
+              "效率办公"
+            ],
+            "one_liner": "用 Claude 订阅跑全自动销售",
+            "value_tag": "可迁移机制",
+            "reuse": "用 Claude Code 或 Codex 的订阅额度替代 API key 来驱动 agent，这个接入方式可以迁移到其他需要长时间自主执行的多步任务工具上。",
+            "mvp": "第一版只做“读一份客户名单—生成个性化冷邮件—人工过目后发出”这一段，回复跟进和约会议先不做。"
+          },
+          {
+            "repo": "blitz-mac",
+            "url": "https://github.com/blitzdotdev/blitz-mac",
+            "summary": "Native macOS App Store Connect tool with MCP. Submit iOS apps to App Store with AI agents",
+            "stars": 1759,
+            "score": 21.1132,
+            "tags": [
+              "开发者工具",
+              "桌面工作台"
+            ],
+            "one_liner": "让 AI 代理直接提交 iOS 应用上架",
+            "value_tag": "可迁移机制",
+            "reuse": "把 App Store Connect 这类只能在网页后台点选的上架操作，封装成原生 macOS 客户端并暴露 MCP 工具，让 AI 代理替人走完提交动作，这套做法可迁移到其他封闭后台的代理化改造。",
+            "mvp": "第一版只做一件事：在 macOS 客户端里配置好一条 iOS 应用的元数据并完成提交，同时把这个提交动作暴露成 MCP 工具，让代理能用同一套参数触发它。"
+          }
+        ],
+        "products": [
+          {
+            "product": "Kai Resolve by Gleap",
+            "url": "https://www.producthunt.com/products/gleap?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai-idea-radar-v4-2+%28ID%3A+294543%29",
+            "summary": "Support that does the digging for you.",
+            "votes": 149,
+            "score": 30.475,
+            "tags": [
+              "企业自动化工作流",
+              "开发者工具"
+            ],
+            "one_liner": "客服工单自己翻数据出诊断",
+            "value_tag": "可迁移机制",
+            "reuse": "把“收到工单后自动跨系统拉数据、给出诊断结论并生成待办”的机制，迁移到内部 IT 支持或研发值班场景。",
+            "mvp": "第一版先接一个工单入口和两三个数据源（如日志、订单、知识库），让 AI 输出带证据出处的诊断结论和待办，人工确认后再回复用户。"
+          }
+        ],
+        "practices": [
+          {
+            "title": "用 OpenClaw 助手协调多人旅行报名与收款",
+            "category": "旅行预订",
+            "tools": [
+              "OpenClaw"
+            ],
+            "url": "https://news.ycombinator.com/item?id=50181184"
+          },
+          {
+            "title": "用 Alexa+ 语音叫 Uber 并比价球票",
+            "category": "旅行预订",
+            "tools": [
+              "Alexa+"
+            ],
+            "url": "https://dc.fortune.com/2025/07/26/amazon-alexa-plus-ai-agent-voice-assistant-hands-on-review-compared-chatgpt"
+          },
+          {
+            "title": "用 Gemini 语音在 Google 日历里排日程并处理冲突",
+            "category": "生活家务",
+            "tools": [
+              "Gemini",
+              "Google Calendar"
+            ],
+            "url": "https://tech.yahoo.com/ai/articles/dos-emails-really-using-gemini-131410114.html"
+          }
+        ]
+      },
+      {
+        "id": "模型与上下文供给层被工具化",
+        "label": "模型与上下文供给层被工具化",
+        "thesis": "模型来源、上下文历史、请求内容和 MCP 工具正被拆成独立可替换的底座，agent 越常用这层越值钱，谁先把它抽象出来谁就吃到多 harness 时代的复用红利。",
+        "value_tag": "工具可集成",
+        "action_hint": "优先接 MCP 托管与请求脱敏这类现成能力",
+        "evidence_note": "统一模型网关、离线检索历史、请求可观测脱敏、MCP 一站式托管，以及本地模型替换编码工具，都是在管 agent 的输入侧而非产出侧。",
+        "member_count": 6,
+        "repo_count": 2,
+        "product_count": 2,
+        "practice_count": 2,
+        "score": 149.04,
+        "repos": [
+          {
+            "repo": "OmniRoute",
+            "url": "https://github.com/cheaper-inference/OmniRoute",
+            "summary": "Never stop coding. Free MIT AI gateway: one endpoint, 375 providers (150+ free), 1,400+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cline",
+            "stars": 79458,
+            "score": 29.625,
+            "tags": [
+              "开发者工具",
+              "桌面工作台",
+              "AI 网关"
+            ],
+            "one_liner": "一个端点接 1400 模型，额度不足时自动切换来源",
+            "value_tag": "可迁移机制",
+            "reuse": "调用模型时被单一供应商额度卡住的产品，可借鉴它的配额感知路由：按剩余额度和报错自动切到免费或备用供应商，并在请求侧压缩 token，适合接进任何多模型调用链路。",
+            "mvp": "第一版只做一个统一 endpoint，接 Anthropic 与 OpenAI 两家并挂 1-2 个免费源，实现额度耗尽或报错时自动切换到下一家，先在自己的 Claude Code 或 Cursor 里跑通。"
+          },
+          {
+            "repo": "claude-code-history-viewer",
+            "url": "https://github.com/jhlee0409/claude-code-history-viewer",
+            "summary": "Desktop app and web server to browse, search and analyze your AI coding assistant history — Claude Code, Codex CLI, GitHub Copilot, Gemini CLI, Cursor, OpenCode and more. 100% offline.",
+            "stars": 2272,
+            "score": 36.6895,
+            "tags": [
+              "开发者工具",
+              "桌面工作台",
+              "知识检索/RAG"
+            ],
+            "one_liner": "离线翻遍七家 AI 编程助手的对话史",
+            "value_tag": "可迁移机制",
+            "reuse": "把散落在 Claude Code、Codex、Cursor、Copilot CLI 各自本地的会话记录统一解析成可搜索、可按项目回看的时间线，这种跨助手历史归一化的做法可以迁移到任何同时用多个 AI 编码工具的团队。",
+            "mvp": "第一版只读 Claude Code 的本地会话目录，在 Tauri 窗口里列出按项目分组的对话并支持全文搜索，先跑通「读取—分组—搜索」这一条链路，其他 CLI 之后再接。"
+          }
+        ],
+        "products": [
+          {
+            "product": "shim-cli",
+            "url": "https://www.producthunt.com/products/shim-cli?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai-idea-radar-v4-2+%28ID%3A+294543%29",
+            "summary": "See what your coding agent sends. Mask what you can.",
+            "votes": 195,
+            "score": 37.823,
+            "tags": [
+              "开发者工具"
+            ],
+            "one_liner": "看清编码助手发出的请求并脱敏",
+            "value_tag": "可迁移机制",
+            "reuse": "把本地代理放在编码助手与模型 API 之间，转发前先按规则脱敏密钥令牌并记录每次请求与花费；这套拦截层可以迁移到任何会把代码发往外部模型的开发工具。",
+            "mvp": "第一版先起一个本地代理接管编码助手的 API 出口，逐条展示请求内容与成本，命中规则的密钥或令牌替换后再转发。"
+          },
+          {
+            "product": "NitroStack",
+            "url": "https://www.producthunt.com/products/nitrostack?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai-idea-radar-v4-2+%28ID%3A+294543%29",
+            "summary": "Build, test, and deploy MCP servers in one place",
+            "votes": 240,
+            "score": 44.9,
+            "tags": [
+              "开发者工具"
+            ],
+            "one_liner": "MCP 服务器一站式构建、调试、托管",
+            "value_tag": "可迁移机制",
+            "reuse": "把 MCP 服务器的本地调试与云端托管放进同一条操作路径，开发者不用再自己写部署脚本、手动搭建联调环境；这套做法可以迁移到任何需要“本地调试 + 远程托管”的协议服务工具上。",
+            "mvp": "第一版先让用户在本地启动一个 MCP server，用可视化面板直接发请求查看返回，再一键推送到托管地址，跑通从改代码到线上可调用这整条路。"
+          }
+        ],
+        "practices": [
+          {
+            "title": "用 Claude Code 接 Ollama 本地模型搭 Java 任务管理器",
+            "category": "软件研发",
+            "tools": [
+              "Claude Code",
+              "Ollama",
+              "qwen3.5:9b",
+              "IntelliJ IDEA"
+            ],
+            "url": "https://dev.to/mohammed_sebaa_2610/running-claude-code-with-ollama-and-local-models-4c49"
+          },
+          {
+            "title": "用本地 LLM agent 整理播放列表并去掉视频广告",
+            "category": "内容创作",
+            "tools": [
+              "本地 LLM agent（消费级 GPU 自建）"
+            ],
+            "url": "https://news.ycombinator.com/item?id=50188128"
+          }
+        ]
+      },
+      {
+        "id": "agent-下探到浏览器与桌面操作层",
+        "label": "agent 下探到浏览器与桌面操作层",
+        "thesis": "agent 正从聊天框移进浏览器和桌面，直接点击、读取、提交，价值从「给答案」变成「替人把网页里的动作做完」，浏览器操作层正在成为落地最快的战场。",
+        "value_tag": "趋势信号",
+        "action_hint": "把浏览器操作层作为 agent 落地的首选接入点",
+        "evidence_note": "桌面无障碍操控、网站转 API、代做在线测验与抓名单，本质都是让 agent 操作真实界面而非只输出文本。",
+        "member_count": 4,
+        "repo_count": 1,
+        "product_count": 1,
+        "practice_count": 2,
+        "score": 72.98,
+        "repos": [
+          {
+            "repo": "Agent",
+            "url": "https://github.com/AgentiLoop/Agent",
+            "summary": "Agent! now supports macOS 14.6 or later, Apple Silicon and Intel, latest release. The Best AI agent for Mac: drives any app via Accessibility, codes/builds in Xcode, automates AppleScript, JXA, Swift",
+            "stars": 648,
+            "score": 40.8434,
+            "tags": [
+              "开发者工具",
+              "工作流自动化",
+              "桌面工作台"
+            ],
+            "one_liner": "用无障碍接口操控任意 Mac 应用",
+            "value_tag": "可迁移机制",
+            "reuse": "把 macOS Accessibility 控件树当作 agent 的统一操作层，而不是依赖各应用开放 API，这套机制可以迁移到任何需要跨应用点击、填表、跑脚本的桌面自动化产品。",
+            "mvp": "第一版只做一条链路：读取前台应用的 Accessibility 控件树交给模型，生成并执行一段 AppleScript 完成一次点击或填表，先跑通“看懂界面→动手操作”的单个动作。"
+          }
+        ],
+        "products": [
+          {
+            "product": "Pomerado",
+            "url": "https://www.producthunt.com/products/pomerado?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai-idea-radar-v4-2+%28ID%3A+294543%29",
+            "summary": "Turn any website into an API; Faster & reliable browser use",
+            "votes": 179,
+            "score": 32.14,
+            "tags": [
+              "开发者工具",
+              "浏览器自动化"
+            ],
+            "one_liner": "任意网站一键变可调用 API",
+            "value_tag": "可迁移机制",
+            "reuse": "把没有开放 API 的网站用无头浏览器封装成带鉴权、可托管的调用接口，这套机制可以迁移到任何需要把网页操作变成程序接口的场景。",
+            "mvp": "第一版先挑一个高频站点，用无头浏览器抓取并封装成带 API Key 鉴权的 HTTP 接口，部署后接入自己的 agent 或 MCP 客户端实际调用。"
+          }
+        ],
+        "practices": [
+          {
+            "title": "用 Comet 浏览器代理做 Canvas 测验与 Wordle",
+            "category": "生活家务",
+            "tools": [
+              "Perplexity Comet"
+            ],
+            "url": "https://fullstackeducator.substack.com/p/canvas-meet-comet-the-browser-that"
+          },
+          {
+            "title": "用 Operator 浏览器搜集网红名单并整理成表",
+            "category": "销售营销",
+            "tools": [
+              "ChatGPT Operator"
+            ],
+            "url": "https://www.reddit.com/r/ChatGPTPromptGenius/comments/1i8l5lf"
+          }
+        ]
+      }
+    ],
+    "practice_items": [
+      {
+        "title": "用 Claude Code 迭代开发浏览器 RTS 游戏",
+        "category": "游戏仿真",
+        "tools": [
+          "Claude Code",
+          "Claude"
+        ],
+        "what_they_did": "作者以重度 vibe coding 的方式，用 Claude Code 从零开发一款《命令与征服》风格的浏览器 RTS 游戏 Battle Drones，通过多轮提示词推动版本迭代，其中一句「Make it a LOT more fun」直接催生了玩法调整。迭代过程中逐步加入 3D 单位模型、战争迷雾、多种地形与随机地图生成器、不同的 AI 性格与 AI 对 AI 模式，最后还实现了两台邻近设备通过音频消息同步游戏状态的双人联机。",
+        "how_it_went": "经过 12 个大版本、321 次主要由编码 agent（以 Claude Code 为主）提交的 commit，做出可在手机和桌面浏览器运行的完整游戏，作者称这一版「确实好玩」；但他几乎没审阅过代码，音频联机方案后来也给他带来不少麻烦，于是他补充了在线联机。",
+        "worth_knowing": "属于高度 vibe coding：作者基本不读代码，语言（TypeScript）也不是他熟悉的，因此靠大量亲自试玩来验证。音频联机需要两台设备彼此在麦克风收音范围内，实际体验不佳，若要做正式联机得另做网络方案。",
+        "url": "https://simonwillison.net/2026/Oct/20/battledrones/",
+        "source_note": "来自 Simon Willison 个人博客 simonwillison.net 的文章《Battle Drones - a vibe coded RTS with audio-based multiplayer》。",
+        "added_at": "2026-10-21"
+      },
+      {
+        "title": "用 Comet 浏览器代理做 Canvas 测验与 Wordle",
+        "category": "生活家务",
+        "tools": [
+          "Perplexity Comet"
+        ],
+        "what_they_did": "一位教育者用 Perplexity Comet 浏览器代理做实测：先让它打开 Wordle 页面自己猜词，再让它接管屏幕登录课程平台 Canvas 逐题完成在线测验，最后还让它用 Canva 生成一份演示幻灯片。整个过程由代理在浏览器里自动点击、输入并提交。",
+        "how_it_went": "Wordle 四次猜中，Canvas 测验被完整做完；但生成的 Canva 幻灯片内容前后不连贯、无法直接使用。",
+        "worth_knowing": "浏览器代理运行时会接管屏幕并代替用户操作账号，需要在本人已登录的账号与页面上跑，涉及考试/测验类场景可能违反课程规定；开放式创作任务质量不稳定。",
+        "url": "https://fullstackeducator.substack.com/p/canvas-meet-comet-the-browser-that",
+        "source_note": "出处：Substack 通讯「Full Stack Educator」（fullstackeducator.substack.com）的实测文章，作者未署名。",
+        "added_at": "2026-10-22"
+      },
+      {
+        "title": "用 Claude Code 接 Ollama 本地模型搭 Java 任务管理器",
+        "category": "软件研发",
+        "tools": [
+          "Claude Code",
+          "Ollama",
+          "qwen3.5:9b",
+          "IntelliJ IDEA"
+        ],
+        "what_they_did": "作者先在 IntelliJ IDEA 内置终端里安装并启动 Claude Code，再通过设置 ANTHROPIC_AUTH_TOKEN=ollama 与 ANTHROPIC_BASE_URL=http://localhost:11434 把 Claude Code 指向本机 Ollama，并用 ollama pull 拉取编码模型 qwen3.5:9b，以 claude --model qwen3.5:9b 启动。随后在空的 Java 项目里给出一条自然语言需求，要求生成一个带增删改查与文本文件持久化的控制台任务管理器，并限制在 2-3 个类。Claude Code 自行规划步骤、创建文件、运行程序并修复报错，每次改动前向作者请求确认。",
+        "how_it_went": "原文只描述 Claude Code 会建文件、跑程序并自我纠错，未给出具体耗时或成功数字。",
+        "worth_knowing": "需要本机装好 Ollama 并预先拉取模型，环境变量在 Windows PowerShell 下写法不同（$env: 而非 export）；本地小模型的能力与云端 Claude 有差距，作者用一张对比表提示隐私与成本更优但效果可能下降。",
+        "url": "https://dev.to/mohammed_sebaa_2610/running-claude-code-with-ollama-and-local-models-4c49",
+        "source_note": "来自 dev.to 平台作者 SEBAA Mohammed 的教程文章《Running Claude Code with Ollama and Local Models》。",
+        "added_at": "2026-10-22"
+      },
+      {
+        "title": "用 Manus 40 分钟搭出可预约应用",
+        "category": "软件研发",
+        "tools": [
+          "Manus"
+        ],
+        "what_they_did": "让 Manus 从零构建一个可用的预约类 Web 应用：包含日历选时段、Stripe 沙盒支付和一批测试数据，并跑通下单预约流程。生成后逐项检查邮件通知和手机端页面，对布局问题手工修正。",
+        "how_it_went": "约 40 分钟就产出了可运行的预约应用，但邮件通知表现不稳定，移动端布局需要人工调整。",
+        "worth_knowing": "Stripe 处于测试/沙盒模式，未接入真实收款；移动端自适应和邮件通知等外围功能不能完全依赖生成结果，需要人工验收修改。",
+        "url": "https://emergent.sh/learn/manus-ai-review",
+        "source_note": "来自 web 平台 emergent.sh 的 Manus 评测文章（作者未署名）。",
+        "added_at": "2026-10-22"
+      },
+      {
+        "title": "用 Manus 规划课程并搭建部署在线培训站",
+        "category": "内容创作",
+        "tools": [
+          "Manus"
+        ],
+        "what_they_did": "一位教育工作者把制作在线互动培训课程的工作交给 Manus：先由它规划课程模块，再搭建课程网站并直接部署上线。上线后，他把页面截图发给 Manus，让它根据截图修复样式问题。",
+        "how_it_went": "课程网站搭建完成并已上线，样式问题也通过截图多轮修复；原文未给出耗时或具体数字。",
+        "worth_knowing": "原文只有一句话总结，未说明部署平台、所需账号和费用；截图改样式的方式需要人工提供界面截图并逐轮核对结果。",
+        "url": "https://www.joinleland.com/library/a/manus-ai-agents",
+        "source_note": "出自 Leland 图书馆（joinleland.com）关于 Manus AI agents 的用例页面，原文未署名作者。",
+        "added_at": "2026-10-22"
+      },
+      {
+        "title": "用 OpenClaw 助手协调多人旅行报名与收款",
+        "category": "旅行预订",
+        "tools": [
+          "OpenClaw"
+        ],
+        "what_they_did": "用户给 OpenClaw 助手单独配了一个邮箱和一个手机号，让它以独立身份参与群聊。助手负责在群里收集报名信息、发送付款提醒、核对谁已交钱，整个过程不接触信用卡和银行账户。",
+        "how_it_went": "原文未说明结果",
+        "worth_knowing": "助手刻意不绑定支付工具，因此只能催款、记账和核对，真正的转账仍需成员自己完成；需要先为它准备专属邮箱和手机号。",
+        "url": "https://news.ycombinator.com/item?id=50181184",
+        "source_note": "来自 Hacker News 讨论帖（news.ycombinator.com item 50181184）中提到使用 OpenClaw 的用户实践。",
+        "added_at": "2026-10-22"
+      },
+      {
+        "title": "用 Gemini 语音在 Google 日历里排日程并处理冲突",
+        "category": "生活家务",
+        "tools": [
+          "Gemini",
+          "Google Calendar"
+        ],
+        "what_they_did": "一位写作者把 Gemini 接入 Google 日历，用语音指令让它安排一段 [写作时间] 和一个会议，并让它检查已有日程是否冲突、对冲突的条目重新改期。整个过程通过口头下达指令完成，没有手动点击日历界面。",
+        "how_it_went": "日程基本能排上并完成改期，但部分写入日历的条目仍需要人工手动确认。",
+        "worth_knowing": "涉及日历写入或改动时，Gemini 会弹出确认步骤，无法完全无人值守；语音指令的准确性也依赖安静的输入环境。",
+        "url": "https://tech.yahoo.com/ai/articles/dos-emails-really-using-gemini-131410114.html",
+        "source_note": "来自 Yahoo Tech（tech.yahoo.com）一篇由写作者实测 Gemini 处理日常任务的报道，作者未署名。",
+        "added_at": "2026-10-22"
+      },
+      {
+        "title": "用 Replit Agent 做游戏攻略机器人和浏览器游戏",
+        "category": "软件研发",
+        "tools": [
+          "Replit Agent"
+        ],
+        "what_they_did": "用 Replit Agent 先后做了两个项目：一个为某款电子游戏提供攻略问答的聊天机器人应用，一个可以直接在浏览器里玩的网页小游戏。做法是向 Agent 描述需求，让它在 Replit 里生成并落地代码。",
+        "how_it_went": "两个项目都成功做出来了，但 Agent 在执行过程中加了很多没被要求的额外改动。",
+        "worth_knowing": "Replit Agent 容易擅自扩大改动范围，最好分小步提需求，并每轮检查它改了哪些文件。",
+        "url": "https://www.reddit.com/r/replit/comments/1kd6wjv",
+        "source_note": "来自 Reddit r/replit 的一则用户分享帖，作者未署名。",
+        "added_at": "2026-10-22"
+      },
+      {
+        "title": "用本地 LLM agent 整理播放列表并去掉视频广告",
+        "category": "内容创作",
+        "tools": [
+          "本地 LLM agent（消费级 GPU 自建）"
+        ],
+        "what_they_did": "作者在消费级显卡上跑一个本地 LLM agent，让它接管自己的视频订阅列表：定期抓取指定频道/播放列表的新视频并下载，再对视频做处理，剪掉片头广告和口播赞助片段。最后 agent 会按内容把值得看的条目挑出来推给他。",
+        "how_it_went": "原文未说明结果",
+        "worth_knowing": "需要一块能跑本地模型的消费级 GPU，且下载与去广告依赖自己维护的抓取和处理脚本；平台条款与版权风险需自行评估。",
+        "url": "https://news.ycombinator.com/item?id=50188128",
+        "source_note": "Hacker News 讨论帖（news.ycombinator.com，作者未署名）",
+        "added_at": "2026-10-22"
+      },
+      {
+        "title": "用 Alexa+ 语音叫 Uber 并比价球票",
+        "category": "旅行预订",
+        "tools": [
+          "Alexa+"
+        ],
+        "what_they_did": "一位评测者先把自己的 Uber 账号与 Alexa+ 绑定，随后用语音直接让 Alexa+ 代叫一辆 Uber。之后他又用语音让 Alexa+ 在[附近球场]搜索并比较最便宜的球票。全程通过语音对话完成，没有手动打开 App 操作。",
+        "how_it_went": "两项任务均成功完成：Uber 叫车下单成功，球票比价也返回了结果；原文未给出耗时或具体价格。",
+        "worth_knowing": "叫车需要事先把 [Uber 账号] 与 Alexa+ 关联授权；球票比价依赖当地有可查询的票务信息，原文未说明是否支持直接下单。",
+        "url": "https://dc.fortune.com/2025/07/26/amazon-alexa-plus-ai-agent-voice-assistant-hands-on-review-compared-chatgpt",
+        "source_note": "来源：Fortune（dc.fortune.com）关于 Amazon Alexa+ 语音助手的上手评测文章，作者未署名。",
+        "added_at": "2026-10-22"
+      },
+      {
+        "title": "用 OpenClaw 接入邮箱日历 Notion 跑完一天工作",
+        "category": "工作运营",
+        "tools": [
+          "OpenClaw",
+          "Gmail",
+          "Google Calendar",
+          "Notion"
+        ],
+        "what_they_did": "作者把 OpenClaw 接入 Gmail、Google Calendar 和 Notion 三个账号，让它读取日程中原本分散的三个会议并合并成一场，然后自动向相关人发送邀请。随后让它读取一份研究报告，把任务拆给多个子 agent 并行处理。",
+        "how_it_went": "原文只说明会议合并、邀请发送和报告拆分这三步都执行了，未给出耗时或质量评价。",
+        "worth_knowing": "需要把邮箱、日历和笔记三个账号的读写权限都授权给 agent，涉及邮件与日程的敏感访问；原文未说明失败或回滚情况。",
+        "url": "https://medium.com/age-of-awareness/i-let-openclaw-run-my-entire-workday-d4bea6597b1c",
+        "source_note": "Medium「Age of Awareness」专栏文章《I Let OpenClaw Run My Entire Workday》，作者未署名。",
+        "added_at": "2026-10-21"
+      },
+      {
+        "title": "用 Operator 浏览器搜集网红名单并整理成表",
+        "category": "销售营销",
+        "tools": [
+          "ChatGPT Operator"
+        ],
+        "what_they_did": "让 Operator 在浏览器里自动上网检索并收集一批 [influencer] 的信息，再尝试把结果整理成表格写入 Google Sheets / Excel。整个过程由浏览器 agent 自主点击和读取网页完成。",
+        "how_it_went": "任务只完成了一部分：Operator 在登录 Google Sheets 和 Excel 时被拦住，没能把收集到的信息写进表格。",
+        "worth_knowing": "浏览器 agent 遇到需要登录的站点（如 Google Sheets、Excel）容易卡住，需预先登录好账号或改用可导出的替代方式。",
+        "url": "https://www.reddit.com/r/ChatGPTPromptGenius/comments/1i8l5lf",
+        "source_note": "来自 Reddit r/ChatGPTPromptGenius 的一则用户分享帖（作者未署名）。",
+        "added_at": "2026-10-21"
+      },
+      {
+        "title": "用 Operator 浏览器代理替我做工作检索",
+        "category": "工作运营",
+        "tools": [
+          "Operator"
+        ],
+        "what_they_did": "作者把一项工作任务交给 OpenAI 的浏览器代理 Operator，让它自主打开网页、搜索并收集完成任务所需的信息，想省掉自己手动检索的步骤。整个过程由 Operator 在浏览器里自动点击和浏览，作者只负责下达任务和查看结果。",
+        "how_it_went": "Operator 在检索过程中多次出错，作者判断用它做这件事比自己手动做还费时，于是放弃了这个做法。",
+        "worth_knowing": "浏览器代理在需要准确判断和甄别信息的工作检索任务上容易跑偏，任务越依赖细节判断，返工成本越高；原文未说明具体任务内容和所用账号类型。",
+        "url": "https://www.reddit.com/r/csMajors/comments/1i8joi4/ai_agents_are_not_coming_for_your_job_my",
+        "source_note": "来自 Reddit 论坛 r/csMajors 的一则用户实测帖（作者未署名）。",
+        "added_at": "2026-10-21"
+      },
+      {
+        "title": "用 ChatGPT Agent 自动加购宝马 330Ci 零件",
+        "category": "购物跑腿",
+        "tools": [
+          "ChatGPT Agent",
+          "Operator"
+        ],
+        "what_they_did": "让 ChatGPT Agent（Operator）打开宝马零部件电商网站，按车型 330Ci 检索所需零件并逐项加入购物车；流程进行到需要登录的环节时自动暂停，等用户补上账号密码后继续操作。",
+        "how_it_went": "据评论者转述，该任务完成得不错，中途在站点要求凭据处停下等待输入，整体约节省 30 分钟。",
+        "worth_knowing": "需要目标零件网站能被浏览器代理正常操作，登录/支付等凭据环节必须由本人手动介入；该说法来自帖子下的二手评论，未列出具体零件清单与订单金额。",
+        "url": "https://www.reddit.com/r/OpenAI/comments/1m7p23s",
+        "source_note": "来自 Reddit r/OpenAI 某帖子评论区（作者未署名），评论者转述其使用 Operator/ChatGPT Agent 的经历。",
+        "added_at": "2026-10-21"
+      }
+    ],
+    "high_potential_items": [
+      {
+        "title": "ethanplusai/harvey",
+        "full_name": "ethanplusai/harvey",
+        "url": "https://github.com/ethanplusai/harvey",
+        "source_type": "github",
+        "source_layer": "discovery",
+        "repo_id": 1179388779,
+        "owner": "ethanplusai",
+        "name": "harvey",
+        "summary": "Autonomous AI sales agent powered by Claude Code or Codex. Finds prospects, writes cold emails, sends campaigns, handles replies, books meetings. No API keys needed — runs on your Claude or Codex subscriptions.",
+        "interest_tags": [
+          "开发者工具",
+          "工作流自动化",
+          "效率办公"
+        ],
+        "domain_tags": [],
+        "tool_tags": [],
+        "mechanism_tags": [],
+        "highlight_one_liner": "订阅即跑，从找客户到约会议全自动",
+        "highlight_keywords": [
+          "无需 API key",
+          "冷邮件自动撰写",
+          "潜客挖掘",
+          "自动约会议"
+        ],
+        "reuse_direction": "可以借鉴它把 Claude Code、Codex 订阅当作 agent 运行底座的做法，把「找潜客、写冷邮件、跟进回复、约会议」串成一条常驻自动化流程，不必另开 API 账号，也不必按 token 计费。",
+        "minimal_mvp": "第一版先让销售从单个渠道拉出 20 个潜客，逐人生成个性化冷邮件草稿，人工确认后发送；回复先只做意向分类和提醒，暂不接日历，也不自动回信。",
+        "selection_reason": "GitHub Trending 周榜显示本周新增热度约 1491；已有较强社区验证",
+        "is_revisit": false,
+        "revisit_reason": "",
+        "score": 237.625,
+        "rank_score": 77.8202,
+        "stars_total": 2001,
+        "stars_7d": 1491,
+        "stars_30d": null,
+        "forks_total": 400,
+        "watchers_total": null,
+        "created_at": "2026-03-12T01:24:50Z",
+        "pushed_at": "2026-10-21T15:08:03Z",
+        "updated_at": "2026-10-22T02:03:07Z",
+        "topics": [
+          "ai-agent",
+          "autonomous-agent",
+          "claude",
+          "cold-email",
+          "prospecting",
+          "python",
+          "sales-automation"
+        ],
+        "semantic_bonus": 23.0,
+        "ai_noise": false,
+        "ai_match_score": 9,
+        "ai_priority": "headline",
+        "ai_rationale": "由 Claude Code/Codex 驱动的自主销售 Agent，覆盖线索挖掘、冷邮件撰写与发送、回复跟进和约会议，直接命中邮件自动化与企业销售工作流场景，且周增约 1500 星验证了产品化需求。",
+        "value_tag": "可迁移机制",
+        "copy_generation_source": "openai",
+        "copy_prompt_version": "openai_compact_v5"
+      },
+      {
+        "title": "wshobson/agents",
+        "full_name": "wshobson/agents",
+        "url": "https://github.com/wshobson/agents",
+        "source_type": "github",
+        "source_layer": "discovery",
+        "repo_id": 1025856648,
+        "owner": "wshobson",
+        "name": "agents",
+        "summary": "Multi-harness agentic plugin marketplace for Claude Code, Codex, Cursor, OpenCode, GitHub Copilot, Google Antigravity, and Pi",
+        "interest_tags": [
+          "开发者工具",
+          "多 Agent 协作"
+        ],
+        "domain_tags": [],
+        "tool_tags": [],
+        "mechanism_tags": [],
+        "highlight_one_liner": "七种编码 Agent 共用一个插件市场",
+        "highlight_keywords": [
+          "跨工具插件分发",
+          "subagent 集合",
+          "规则与 MCP 适配"
+        ],
+        "reuse_direction": "把同一套 subagent、skill 和规则同时适配多个编码工具，做跨 harness 的插件分发层，是可直接迁移的产品方向。",
+        "minimal_mvp": "第一版先选 Claude Code 和 Cursor 两个 harness，把同一份 subagent 与规则打包成可安装插件，验证跨工具复用是否成立。",
+        "selection_reason": "GitHub Trending 周榜显示本周新增热度约 785；已有较强社区验证",
+        "is_revisit": false,
+        "revisit_reason": "",
+        "score": 240.45,
+        "rank_score": 70.85,
+        "stars_total": 41485,
+        "stars_7d": 785,
+        "stars_30d": null,
+        "forks_total": 4405,
+        "watchers_total": null,
+        "created_at": "2025-07-24T23:28:14Z",
+        "pushed_at": "2026-10-19T18:28:14Z",
+        "updated_at": "2026-10-22T01:49:33Z",
+        "topics": [
+          "agent-skills",
+          "agentic-ai",
+          "ai-agents",
+          "anthropic",
+          "antigravity",
+          "claude",
+          "claude-code",
+          "claude-code-marketplace",
+          "claude-code-plugin",
+          "claude-skills",
+          "codex",
+          "coding-agents",
+          "cursor",
+          "cursor-rules",
+          "github-copilot",
+          "mcp",
+          "multi-agent",
+          "opencode",
+          "pi-coding-agent",
+          "subagents"
+        ],
+        "semantic_bonus": 23.0,
+        "ai_noise": false,
+        "ai_match_score": 4,
+        "ai_priority": "low",
+        "ai_rationale": "面向多种编码 Agent 的插件市场，属开发者工具基础设施而非 AI 应用产品，且偏生态聚合，与雷达关注的产品化场景关联有限。",
+        "value_tag": "可迁移机制",
+        "copy_generation_source": "openai",
+        "copy_prompt_version": "openai_compact_v5"
+      }
+    ],
+    "high_potential_layers": [
+      {
+        "key": "dev_tool",
+        "title": "开发工具推荐",
+        "description": "主要服务 builder，能直接用于构建、调试、部署或编排 AI 应用",
+        "empty_text": "今日暂无新增开发工具推荐。",
+        "items": [
+          {
+            "title": "wshobson/agents",
+            "full_name": "wshobson/agents",
+            "url": "https://github.com/wshobson/agents",
+            "source_type": "github",
+            "source_layer": "discovery",
+            "repo_id": 1025856648,
+            "owner": "wshobson",
+            "name": "agents",
+            "summary": "Multi-harness agentic plugin marketplace for Claude Code, Codex, Cursor, OpenCode, GitHub Copilot, Google Antigravity, and Pi",
+            "interest_tags": [
+              "开发者工具",
+              "多 Agent 协作"
+            ],
+            "domain_tags": [],
+            "tool_tags": [],
+            "mechanism_tags": [],
+            "highlight_one_liner": "七种编码 Agent 共用一个插件市场",
+            "highlight_keywords": [
+              "跨工具插件分发",
+              "subagent 集合",
+              "规则与 MCP 适配"
+            ],
+            "reuse_direction": "把同一套 subagent、skill 和规则同时适配多个编码工具，做跨 harness 的插件分发层，是可直接迁移的产品方向。",
+            "minimal_mvp": "第一版先选 Claude Code 和 Cursor 两个 harness，把同一份 subagent 与规则打包成可安装插件，验证跨工具复用是否成立。",
+            "selection_reason": "GitHub Trending 周榜显示本周新增热度约 785；已有较强社区验证",
+            "is_revisit": false,
+            "revisit_reason": "",
+            "score": 240.45,
+            "rank_score": 70.85,
+            "stars_total": "41485",
+            "stars_7d": 785,
+            "stars_30d": null,
+            "forks_total": 4405,
+            "watchers_total": null,
+            "created_at": "2025-07-24T23:28:14Z",
+            "pushed_at": "2026-10-19T18:28:14Z",
+            "updated_at": "2026-10-22T01:49:33Z",
+            "topics": [
+              "agent-skills",
+              "agentic-ai",
+              "ai-agents",
+              "anthropic",
+              "antigravity",
+              "claude",
+              "claude-code",
+              "claude-code-marketplace",
+              "claude-code-plugin",
+              "claude-skills",
+              "codex",
+              "coding-agents",
+              "cursor",
+              "cursor-rules",
+              "github-copilot",
+              "mcp",
+              "multi-agent",
+              "opencode",
+              "pi-coding-agent",
+              "subagents"
+            ],
+            "semantic_bonus": 23.0,
+            "ai_noise": false,
+            "ai_match_score": 4,
+            "ai_priority": "low",
+            "ai_rationale": "面向多种编码 Agent 的插件市场，属开发者工具基础设施而非 AI 应用产品，且偏生态聚合，与雷达关注的产品化场景关联有限。",
+            "value_tag": "可迁移机制",
+            "copy_generation_source": "openai",
+            "copy_prompt_version": "openai_compact_v5",
+            "source_label": "GitHub",
+            "heat_line": ""
+          },
+          {
+            "id": "1278273",
+            "title": "BAND for Developers",
+            "name": "BAND for Developers",
+            "repo_name": "band-for-developers",
+            "summary": "Coding agents, meet teamwork",
+            "description": "Running multiple coding agents shouldn’t mean becoming their project manager. BAND lets them work together. Connect agents across your existing development tools and give them a shared workspace to coordinate tasks, exchange context, and hand off work without you playing middleman. See what every agent is doing, step in when decisions need your judgment, and scale agentic development across teams. Your agents stay in their existing tools while BAND handles the teamwork.",
+            "url": "https://www.producthunt.com/products/band?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai-idea-radar-v4-2+%28ID%3A+294543%29",
+            "website_url": "https://www.producthunt.com/r/LFGJP5O6OXFYLB?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai-idea-radar-v4-2+%28ID%3A+294543%29",
+            "topics": [
+              "Software Engineering",
+              "Developer Tools",
+              "Artificial Intelligence"
+            ],
+            "topic_slugs": [
+              "software-engineering",
+              "developer-tools",
+              "artificial-intelligence"
+            ],
+            "makers": [
+              "[REDACTED]",
+              "Joanna Braunold"
+            ],
+            "votes_count": 239,
+            "comments_count": 11,
+            "featured_at": "2026-10-21T07:01:00Z",
+            "created_at": "2026-10-21T07:01:00Z",
+            "top_comments": [
+              "<p>Congrats on the launch! how is context managed between different agents? is there a risk that one agent may not have the full context and incorrectly invalidate the output from another? Is reasoning also shared between agents?</p>",
+              "<p>so many coding agents?</p><p></p>",
+              "🔥🔥"
+            ],
+            "source": "Product Hunt",
+            "product_shape_score": 2.0,
+            "launch_heat_score": 10.375,
+            "interest_tags": [
+              "AI 任务管理",
+              "开发者工具"
+            ],
+            "domain_tags": [
+              "软件开发",
+              "多智能体协作",
+              "任务协调"
+            ],
+            "tool_tags": [
+              "coding agents",
+              "shared workspace",
+              "development tools"
+            ],
+            "mechanism_tags": [
+              "任务分派",
+              "上下文交换",
+              "人工介入"
+            ],
+            "author": "[REDACTED] / Joanna Braunold",
+            "score": 32.363,
+            "why": "Product Hunt 当前获得 239 票、11 条评论；仍处在近期新品验证窗口",
+            "band": "爆发新品",
+            "mechanism": "可迁移的机制在于把模型从单次回答升级成持续协作代理，强调上下文记忆与多步执行。",
+            "routing_confidence": 0.72,
+            "routing_interest": "AI 任务管理",
+            "routing_reason": "产品核心是让多个编码 agent 在同一工作区协调任务、交换上下文和交接工作，解决任务分配与跟进执行断层，符合 AI 任务管理的核心任务；并非仅因 agent 一词命中。",
+            "highlight_one_liner": "多个 coding agent 组队分活，人可中途接手",
+            "highlight_keywords": [
+              "多 agent 任务分派",
+              "上下文交换",
+              "人工介入"
+            ],
+            "reuse_direction": "值得借鉴的是把任务分派、上下文交接和人工接管放进同一个共享工作区，这套机制可以迁移到自家多 agent 开发流程的编排里。",
+            "minimal_mvp": "第一版先做一个共享任务列表，让两个 coding agent 各自领取任务并互相交接上下文，人可以随时改派或直接接管。",
+            "value_tag": "可迁移机制",
+            "copy_generation_source": "openai",
+            "copy_prompt_version": "openai_compact_v5",
+            "source_type": "product_hunt_high_potential",
+            "source_label": "Product Hunt",
+            "stars_total": "239",
+            "heat_line": "🔥PH 239票｜11评"
+          }
+        ],
+        "groups": []
+      },
+      {
+        "key": "knowledge",
+        "title": "知识内容",
+        "description": "主要提供帮助构建知识体系的 Knowledge Hub，主条目优先系统学习资源，特别新的讨论仅作 Plus 补充",
+        "empty_text": "今日暂无新增知识内容。",
+        "items": [
+          {
+            "title": "OpenAI Cookbook",
+            "url": "https://cookbook.openai.com/",
+            "summary": "通过可运行示例覆盖 agent、tool use、RAG、structured outputs 与 eval，适合把概念快速转成实践。",
+            "source_label": "OpenAI",
+            "knowledge_label": "Handbook",
+            "knowledge_variant": "main",
+            "knowledge_intro_seed": "通过可运行示例覆盖 agent、tool use、RAG、structured outputs 与 eval，适合把概念快速转成实践。",
+            "knowledge_priority": 110,
+            "knowledge_source": "knowledge_hub_config",
+            "knowledge_intro": "这是一份以可运行示例为主线的系统学习入口，覆盖 agent、tool use、RAG、structured outputs 与 eval 等核心主题，适合希望将概念快速落地为实践的开发者"
+          },
+          {
+            "title": "LangChain Academy",
+            "url": "https://academy.langchain.com/",
+            "summary": "围绕 LangGraph 与 agent workflow 提供系统课程，适合建立状态机、多 agent 与长期运行工作流认知。",
+            "source_label": "LangChain",
+            "knowledge_label": "课程",
+            "knowledge_variant": "main",
+            "knowledge_intro_seed": "围绕 LangGraph 与 agent workflow 提供系统课程，适合建立状态机、多 agent 与长期运行工作流认知。",
+            "knowledge_priority": 109,
+            "knowledge_source": "knowledge_hub_config",
+            "knowledge_intro": "围绕 LangGraph 与 agent workflow 提供系统课程，涵盖状态机、多 agent 与长期运行工作流的开发实践，适合作为构建复杂智能体应用的系统学习入口"
+          }
+        ],
+        "groups": []
+      },
+      {
+        "key": "product",
+        "title": "产品形态",
+        "description": "主要服务终端用户或业务操作者，已有明确使用场景与产品闭环",
+        "empty_text": "今日暂无新增产品型对象。",
+        "items": [
+          {
+            "title": "ethanplusai/harvey",
+            "full_name": "ethanplusai/harvey",
+            "url": "https://github.com/ethanplusai/harvey",
+            "source_type": "high_potential",
+            "source_layer": "discovery",
+            "repo_id": 1179388779,
+            "owner": "ethanplusai",
+            "name": "harvey",
+            "summary": "Autonomous AI sales agent powered by Claude Code or Codex. Finds prospects, writes cold emails, sends campaigns, handles replies, books meetings. No API keys needed — runs on your Claude or Codex subscriptions.",
+            "interest_tags": [
+              "开发者工具",
+              "工作流自动化",
+              "效率办公"
+            ],
+            "domain_tags": [],
+            "tool_tags": [],
+            "mechanism_tags": [],
+            "highlight_one_liner": "订阅即跑，从找客户到约会议全自动",
+            "highlight_keywords": [
+              "无需 API key",
+              "冷邮件自动撰写",
+              "潜客挖掘",
+              "自动约会议"
+            ],
+            "reuse_direction": "可以借鉴它把 Claude Code、Codex 订阅当作 agent 运行底座的做法，把「找潜客、写冷邮件、跟进回复、约会议」串成一条常驻自动化流程，不必另开 API 账号，也不必按 token 计费。",
+            "minimal_mvp": "第一版先让销售从单个渠道拉出 20 个潜客，逐人生成个性化冷邮件草稿，人工确认后发送；回复先只做意向分类和提醒，暂不接日历，也不自动回信。",
+            "selection_reason": "GitHub Trending 周榜显示本周新增热度约 1491；已有较强社区验证",
+            "is_revisit": false,
+            "revisit_reason": "",
+            "score": 237.625,
+            "rank_score": 77.8202,
+            "stars_total": "2001",
+            "stars_7d": 1491,
+            "stars_30d": null,
+            "forks_total": 400,
+            "watchers_total": null,
+            "created_at": "2026-03-12T01:24:50Z",
+            "pushed_at": "2026-10-21T15:08:03Z",
+            "updated_at": "2026-10-22T02:03:07Z",
+            "topics": [
+              "ai-agent",
+              "autonomous-agent",
+              "claude",
+              "cold-email",
+              "prospecting",
+              "python",
+              "sales-automation"
+            ],
+            "semantic_bonus": 23.0,
+            "ai_noise": false,
+            "ai_match_score": 9,
+            "ai_priority": "headline",
+            "ai_rationale": "由 Claude Code/Codex 驱动的自主销售 Agent，覆盖线索挖掘、冷邮件撰写与发送、回复跟进和约会议，直接命中邮件自动化与企业销售工作流场景，且周增约 1500 星验证了产品化需求。",
+            "value_tag": "可迁移机制",
+            "copy_generation_source": "openai",
+            "copy_prompt_version": "openai_compact_v5",
+            "source_label": "GitHub",
+            "heat_line": ""
+          },
+          {
+            "id": "1280279",
+            "title": "UseIt Studio",
+            "name": "UseIt Studio",
+            "repo_name": "useit-studio",
+            "summary": "Your AI design agent for real, editable project files.",
+            "description": "UseIt is an AI design studio for things you can hold. Describe what you want in one sentence. UseIt asks what a designer would ask, designs it with you, and lets you refine any detail by pointing at it. You get a real, editable design file, not a flat image, ready to print, cut and fold, with real dimensions, bleed and dielines. Make pins, stickers, gift boxes, pop-up cards, brand kits and more. Use it in your browser, or call it up anywhere on your Windows desktop.",
+            "url": "https://www.producthunt.com/products/useit-studio-from-idea-to-delivery?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai-idea-radar-v4-2+%28ID%3A+294543%29",
+            "website_url": "https://www.producthunt.com/r/YLLDQZV3DAU3ZO?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai-idea-radar-v4-2+%28ID%3A+294543%29",
+            "topics": [
+              "Design Tools",
+              "Art",
+              "Artificial Intelligence"
+            ],
+            "topic_slugs": [
+              "design-tools",
+              "art",
+              "artificial-intelligence"
+            ],
+            "makers": [
+              "Lindia Chen",
+              "Daniel Gao"
+            ],
+            "votes_count": 283,
+            "comments_count": 23,
+            "featured_at": "2026-10-21T07:01:00Z",
+            "created_at": "2026-10-21T07:01:00Z",
+            "top_comments": [
+              "<p>Hi Product Hunt! 👋</p><p></p><p>I'm Lindia, Co-founder of UseIt.</p><p></p><p>Five years ago, when I first stepped into the world of AI, I had a dream: <strong>what if AI could turn our wildest ideas into things we could actually hold in our hands?</strong></p><p>A gift for someone special, a character you dreamed up, or something that simply didn't exist anywhere else.</p><p>Back then, it felt like a distant dream. But I've held onto that idea ever since.</p><p><strong>And today, I'm incredibly excited to finally bring that dream to life with UseIt.</strong> 🥹<br></p><p>Meet <strong>UseIt, your AI-powered design studio for the physical world.</strong></p><p>With UseIt, all you need is an idea. Simply describe what you have in mind, and AI helps you figure out the rest, from shaping the design to preparing files that can actually be manufactured. You can keep experimenting, making changes, and exploring possibilities without getting lost in complicated design tools.</p><p></p><p>Huge thanks to <a href=\"https://www.producthunt.com/@zaczuo\" data-node-type=\"mention\" data-mention-type=\"user\" data-mention-id=\"zaczuo\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">@zaczuo</a> for hunting us! 🙏</p><p><br>🎁 Use code PHP-01-0002 to claim <strong>15000 credits </strong>for everyone who joins today.</p><p><strong>Let's make imagination tangible. ✨</strong></p>",
+              "<p>Great product and congratulations on the launch!<br>I've signed up and whipped up a looping animation for a static logo.<br>Very happy with the quality as of now.<br><br>This might go into my usual toolset!<br><br>One minor nitpick, it'd be great if the paid plans were mentioned on the homepage.<br>To my knowledge, they are not.<br><br>Anyway, aside from that one nitpick, I really liked useit.im!</p>",
+              "<p>Hey <a href=\"https://www.producthunt.com/@lindiac\" data-node-type=\"mention\" data-mention-type=\"user\" data-mention-id=\"lindiac\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">@lindiac</a> and team, congrats on launch. Lovely product :) </p><p></p><p>Would def love to see, how it grows further. </p><p>Congrats on launch and best wishes ahead 😄</p><p></p>"
+            ],
+            "source": "Product Hunt",
+            "product_shape_score": 6.0,
+            "launch_heat_score": 11.875,
+            "interest_tags": [
+              "图像/设计生成"
+            ],
+            "domain_tags": [
+              "设计工具",
+              "印刷制作",
+              "品牌物料"
+            ],
+            "tool_tags": [
+              "AI 设计代理",
+              "可编辑设计文件",
+              "浏览器/桌面应用"
+            ],
+            "mechanism_tags": [
+              "一句话生成设计",
+              "指向式细节修改",
+              "含出血与刀模"
+            ],
+            "author": "Lindia Chen / Daniel Gao",
+            "score": 40.812,
+            "why": "Product Hunt 当前获得 283 票、23 条评论；仍处在近期新品验证窗口；产品形态已经比较完整",
+            "band": "爆发新品",
+            "mechanism": "可迁移的机制在于把模型从单次回答升级成持续协作代理，强调上下文记忆与多步执行。",
+            "routing_confidence": 0.12,
+            "routing_interest": "",
+            "routing_reason": "产品是面向实体印刷品与可编辑项目文件的 AI 设计工作室，核心任务是设计制作，不服务给定兴趣点中的法律、供应链、教育、邮件、旅行、求职、财务等垂直工作流，也没有明显的场景数据或企业流程自动化定位。",
+            "highlight_one_liner": "一句话生成可直接印刷的可编辑稿",
+            "highlight_keywords": [
+              "可编辑源文件",
+              "指向式改稿",
+              "出血刀模",
+              "印刷级输出"
+            ],
+            "reuse_direction": "把“生成即得可编辑、可交付生产”的做法，迁移到名片、包装等需要出血和刀模的印刷物料生成工具里。",
+            "minimal_mvp": "先只做单张名片：一句话生成含出血线的可编辑文件，支持点选元素直接改文字改颜色，再导出印刷用 PDF。",
+            "value_tag": "可迁移机制",
+            "copy_generation_source": "openai",
+            "copy_prompt_version": "openai_compact_v5",
+            "source_type": "product_hunt_high_potential",
+            "source_label": "Product Hunt",
+            "stars_total": "283",
+            "heat_line": "🔥PH 283票｜23评"
+          },
+          {
+            "title": "RockeyRoc/DeepProf",
+            "url": "https://github.com/RockeyRoc/DeepProf",
+            "website_url": "",
+            "summary": "",
+            "description": "",
+            "source_label": "GitHub",
+            "heat_line": "🌟100",
+            "stars_total": "100",
+            "tags": [
+              "教育 AI 辅导"
+            ],
+            "interest_tags": [
+              "教育 AI 辅导"
+            ],
+            "tool_tags": [],
+            "mechanism_tags": [],
+            "highlight_one_liner": "面向高等教育的个性化伴学智能体",
+            "reuse_direction": "把「教育 AI 辅导」封装成更明确的岗位或任务入口",
+            "minimal_mvp": "先做一个面向 教育 AI 辅导 的轻量单任务工具",
+            "source_type": "observation_product",
+            "highlight_keywords": [
+              "教育 AI 辅导"
+            ]
+          }
+        ],
+        "groups": [
+          {
+            "key": "hot",
+            "title": "热门样本",
+            "description": "来自 GitHub Trending / Product Hunt 等高热度候选，已具备更明显的市场验证。",
+            "empty_text": "今日暂无新增热门样本。",
+            "items": [
+              {
+                "title": "ethanplusai/harvey",
+                "full_name": "ethanplusai/harvey",
+                "url": "https://github.com/ethanplusai/harvey",
+                "source_type": "high_potential",
+                "source_layer": "discovery",
+                "repo_id": 1179388779,
+                "owner": "ethanplusai",
+                "name": "harvey",
+                "summary": "Autonomous AI sales agent powered by Claude Code or Codex. Finds prospects, writes cold emails, sends campaigns, handles replies, books meetings. No API keys needed — runs on your Claude or Codex subscriptions.",
+                "interest_tags": [
+                  "开发者工具",
+                  "工作流自动化",
+                  "效率办公"
+                ],
+                "domain_tags": [],
+                "tool_tags": [],
+                "mechanism_tags": [],
+                "highlight_one_liner": "订阅即跑，从找客户到约会议全自动",
+                "highlight_keywords": [
+                  "无需 API key",
+                  "冷邮件自动撰写",
+                  "潜客挖掘",
+                  "自动约会议"
+                ],
+                "reuse_direction": "可以借鉴它把 Claude Code、Codex 订阅当作 agent 运行底座的做法，把「找潜客、写冷邮件、跟进回复、约会议」串成一条常驻自动化流程，不必另开 API 账号，也不必按 token 计费。",
+                "minimal_mvp": "第一版先让销售从单个渠道拉出 20 个潜客，逐人生成个性化冷邮件草稿，人工确认后发送；回复先只做意向分类和提醒，暂不接日历，也不自动回信。",
+                "selection_reason": "GitHub Trending 周榜显示本周新增热度约 1491；已有较强社区验证",
+                "is_revisit": false,
+                "revisit_reason": "",
+                "score": 237.625,
+                "rank_score": 77.8202,
+                "stars_total": "2001",
+                "stars_7d": 1491,
+                "stars_30d": null,
+                "forks_total": 400,
+                "watchers_total": null,
+                "created_at": "2026-03-12T01:24:50Z",
+                "pushed_at": "2026-10-21T15:08:03Z",
+                "updated_at": "2026-10-22T02:03:07Z",
+                "topics": [
+                  "ai-agent",
+                  "autonomous-agent",
+                  "claude",
+                  "cold-email",
+                  "prospecting",
+                  "python",
+                  "sales-automation"
+                ],
+                "semantic_bonus": 23.0,
+                "ai_noise": false,
+                "ai_match_score": 9,
+                "ai_priority": "headline",
+                "ai_rationale": "由 Claude Code/Codex 驱动的自主销售 Agent，覆盖线索挖掘、冷邮件撰写与发送、回复跟进和约会议，直接命中邮件自动化与企业销售工作流场景，且周增约 1500 星验证了产品化需求。",
+                "value_tag": "可迁移机制",
+                "copy_generation_source": "openai",
+                "copy_prompt_version": "openai_compact_v5",
+                "source_label": "GitHub",
+                "heat_line": ""
+              },
+              {
+                "id": "1280279",
+                "title": "UseIt Studio",
+                "name": "UseIt Studio",
+                "repo_name": "useit-studio",
+                "summary": "Your AI design agent for real, editable project files.",
+                "description": "UseIt is an AI design studio for things you can hold. Describe what you want in one sentence. UseIt asks what a designer would ask, designs it with you, and lets you refine any detail by pointing at it. You get a real, editable design file, not a flat image, ready to print, cut and fold, with real dimensions, bleed and dielines. Make pins, stickers, gift boxes, pop-up cards, brand kits and more. Use it in your browser, or call it up anywhere on your Windows desktop.",
+                "url": "https://www.producthunt.com/products/useit-studio-from-idea-to-delivery?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai-idea-radar-v4-2+%28ID%3A+294543%29",
+                "website_url": "https://www.producthunt.com/r/YLLDQZV3DAU3ZO?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai-idea-radar-v4-2+%28ID%3A+294543%29",
+                "topics": [
+                  "Design Tools",
+                  "Art",
+                  "Artificial Intelligence"
+                ],
+                "topic_slugs": [
+                  "design-tools",
+                  "art",
+                  "artificial-intelligence"
+                ],
+                "makers": [
+                  "Lindia Chen",
+                  "Daniel Gao"
+                ],
+                "votes_count": 283,
+                "comments_count": 23,
+                "featured_at": "2026-10-21T07:01:00Z",
+                "created_at": "2026-10-21T07:01:00Z",
+                "top_comments": [
+                  "<p>Hi Product Hunt! 👋</p><p></p><p>I'm Lindia, Co-founder of UseIt.</p><p></p><p>Five years ago, when I first stepped into the world of AI, I had a dream: <strong>what if AI could turn our wildest ideas into things we could actually hold in our hands?</strong></p><p>A gift for someone special, a character you dreamed up, or something that simply didn't exist anywhere else.</p><p>Back then, it felt like a distant dream. But I've held onto that idea ever since.</p><p><strong>And today, I'm incredibly excited to finally bring that dream to life with UseIt.</strong> 🥹<br></p><p>Meet <strong>UseIt, your AI-powered design studio for the physical world.</strong></p><p>With UseIt, all you need is an idea. Simply describe what you have in mind, and AI helps you figure out the rest, from shaping the design to preparing files that can actually be manufactured. You can keep experimenting, making changes, and exploring possibilities without getting lost in complicated design tools.</p><p></p><p>Huge thanks to <a href=\"https://www.producthunt.com/@zaczuo\" data-node-type=\"mention\" data-mention-type=\"user\" data-mention-id=\"zaczuo\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">@zaczuo</a> for hunting us! 🙏</p><p><br>🎁 Use code PHP-01-0002 to claim <strong>15000 credits </strong>for everyone who joins today.</p><p><strong>Let's make imagination tangible. ✨</strong></p>",
+                  "<p>Great product and congratulations on the launch!<br>I've signed up and whipped up a looping animation for a static logo.<br>Very happy with the quality as of now.<br><br>This might go into my usual toolset!<br><br>One minor nitpick, it'd be great if the paid plans were mentioned on the homepage.<br>To my knowledge, they are not.<br><br>Anyway, aside from that one nitpick, I really liked useit.im!</p>",
+                  "<p>Hey <a href=\"https://www.producthunt.com/@lindiac\" data-node-type=\"mention\" data-mention-type=\"user\" data-mention-id=\"lindiac\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">@lindiac</a> and team, congrats on launch. Lovely product :) </p><p></p><p>Would def love to see, how it grows further. </p><p>Congrats on launch and best wishes ahead 😄</p><p></p>"
+                ],
+                "source": "Product Hunt",
+                "product_shape_score": 6.0,
+                "launch_heat_score": 11.875,
+                "interest_tags": [
+                  "图像/设计生成"
+                ],
+                "domain_tags": [
+                  "设计工具",
+                  "印刷制作",
+                  "品牌物料"
+                ],
+                "tool_tags": [
+                  "AI 设计代理",
+                  "可编辑设计文件",
+                  "浏览器/桌面应用"
+                ],
+                "mechanism_tags": [
+                  "一句话生成设计",
+                  "指向式细节修改",
+                  "含出血与刀模"
+                ],
+                "author": "Lindia Chen / Daniel Gao",
+                "score": 40.812,
+                "why": "Product Hunt 当前获得 283 票、23 条评论；仍处在近期新品验证窗口；产品形态已经比较完整",
+                "band": "爆发新品",
+                "mechanism": "可迁移的机制在于把模型从单次回答升级成持续协作代理，强调上下文记忆与多步执行。",
+                "routing_confidence": 0.12,
+                "routing_interest": "",
+                "routing_reason": "产品是面向实体印刷品与可编辑项目文件的 AI 设计工作室，核心任务是设计制作，不服务给定兴趣点中的法律、供应链、教育、邮件、旅行、求职、财务等垂直工作流，也没有明显的场景数据或企业流程自动化定位。",
+                "highlight_one_liner": "一句话生成可直接印刷的可编辑稿",
+                "highlight_keywords": [
+                  "可编辑源文件",
+                  "指向式改稿",
+                  "出血刀模",
+                  "印刷级输出"
+                ],
+                "reuse_direction": "把“生成即得可编辑、可交付生产”的做法，迁移到名片、包装等需要出血和刀模的印刷物料生成工具里。",
+                "minimal_mvp": "先只做单张名片：一句话生成含出血线的可编辑文件，支持点选元素直接改文字改颜色，再导出印刷用 PDF。",
+                "value_tag": "可迁移机制",
+                "copy_generation_source": "openai",
+                "copy_prompt_version": "openai_compact_v5",
+                "source_type": "product_hunt_high_potential",
+                "source_label": "Product Hunt",
+                "stars_total": "283",
+                "heat_line": "🔥PH 283票｜23评"
+              }
+            ]
+          },
+          {
+            "key": "potential",
+            "title": "潜力样本",
+            "description": "来自长尾观察或较早期验证阶段，但方向和切口值得继续跟踪。",
+            "empty_text": "今日暂无新增潜力样本。",
+            "items": [
+              {
+                "title": "RockeyRoc/DeepProf",
+                "url": "https://github.com/RockeyRoc/DeepProf",
+                "website_url": "",
+                "summary": "",
+                "description": "",
+                "source_label": "GitHub",
+                "heat_line": "🌟100",
+                "stars_total": "100",
+                "tags": [
+                  "教育 AI 辅导"
+                ],
+                "interest_tags": [
+                  "教育 AI 辅导"
+                ],
+                "tool_tags": [],
+                "mechanism_tags": [],
+                "highlight_one_liner": "面向高等教育的个性化伴学智能体",
+                "reuse_direction": "把「教育 AI 辅导」封装成更明确的岗位或任务入口",
+                "minimal_mvp": "先做一个面向 教育 AI 辅导 的轻量单任务工具",
+                "source_type": "observation_product",
+                "highlight_keywords": [
+                  "教育 AI 辅导"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "idea_items": [
+      {
+        "title": "企业自动化工作流",
+        "need_line": "企业想推进自动化，却说不清自己卡在批量执行、告警混乱还是资产与工单断档，难以判断该从哪里入手。",
+        "status_line": "大家一边被 CRM 类产品教育，一边在运维场景用 Ansible 等脚本和编排工具先处理批量执行和重复操作，但普遍认为没有通用第一名的工具，得先判断自己的阻塞类型。",
+        "direction_line": "值得跟踪的是先诊断企业当前流程阻塞点、再按阻塞类型拼装数据整合、批量执行、告警收敛等自动化步骤的轻量流程编排产品。",
+        "source_urls": [
+          "https://zhuanlan.zhihu.com/p/31480030343",
+          "https://www.zhihu.com/question/10825485146/answer/2017984023541085305"
+        ],
+        "source_platforms": [],
+        "tags": [
+          "企业自动化工作流"
+        ]
+      },
+      {
+        "title": "邮件自动化工具",
+        "need_line": "外贸或销售人员在多客户邮件往来中，需要发信前确认邮箱有效且不进黑名单，并快速生成英文回复、按时跟进客户，避免漏跟或邮件被判垃圾。",
+        "status_line": "目前常见做法是拼凑邮箱验证、黑名单检测等零散工具，或借助 AI 邮箱客户端辅助英文回复和客户跟进；GitHub 上的 mcp_agent_mail 则代表用异步协调层管理收件箱和线程的另一条思路。",
+        "direction_line": "值得跟踪的是把发件前邮箱有效性/黑名单检查、AI 英文回复草稿和客户跟进提醒串成外贸邮件流水线，并参考 mcp_agent_mail 的线程化协调方式管理多客户往来。",
+        "source_urls": [
+          "https://zhuanlan.zhihu.com/p/1940813943007322827",
+          "https://www.zhihu.com/question/2029879302720832806/answer/2064206354961667970"
+        ],
+        "source_platforms": [],
+        "tags": [
+          "邮件自动化工具"
+        ]
+      },
+      {
+        "title": "供应链仓储 AI 应用",
+        "need_line": "中小团队在库存预测与补货分析上缺少既轻量又能支撑规模化协作的工具，业务人员被迫在 Excel 手工处理和自研、商用 BI 之间艰难权衡。",
+        "status_line": "目前主要靠 Excel 配合 VBA、PowerQuery 做预测与库存统计，规模上去后则在继续用 Excel、自研系统、换商用 BI 搭共享看板之间做选型权衡，核心顾虑是数据治理成本与跨部门协同边界。",
+        "direction_line": "值得跟踪的是夹在 Excel 与重型 BI 之间的轻量库存分析层：内置统一指标口径、支持多角色权限可控，让业务人员自助完成补货与周转分析，无需自研也不依赖数据团队。",
+        "source_urls": [
+          "https://zhuanlan.zhihu.com/p/693627895",
+          "https://zhuanlan.zhihu.com/p/2085084071491908505"
+        ],
+        "source_platforms": [],
+        "tags": [
+          "供应链仓储 AI 应用"
+        ]
+      }
+    ],
+    "interest_sections": [
+      {
+        "title": "企业自动化工作流",
+        "summary": "这一组信号主要来自 zhihu、Product Hunt，核心观察是企业自动化的需求已从买工具转向先定位流程卡点再组合自动化，产品机会在诊断加轻量编排而非全能平台。",
+        "items": [
+          {
+            "title": "需求",
+            "paragraph": "",
+            "source": "social",
+            "url": "https://zhuanlan.zhihu.com/p/31480030343 ｜ https://www.zhihu.com/question/10825485146/answer/2017984023541085305",
+            "source_labels": [
+              "社媒",
+              "知乎"
+            ],
+            "source_url_list": [
+              "https://zhuanlan.zhihu.com/p/31480030343",
+              "https://www.zhihu.com/question/10825485146/answer/2017984023541085305"
+            ]
+          },
+          {
+            "title": "现状",
+            "paragraph": "知乎讨论里，企业一边被 CRM 类产品教育，一边在运维场景用 Ansible 等脚本和编排工具先处理批量执行和重复操作，但普遍共识是没有通用第一名的工具，得先判断自己卡在批量执行、告警混乱还是资产与工单断档。",
+            "source": "social",
+            "url": "https://zhuanlan.zhihu.com/p/31480030343 ｜ https://www.zhihu.com/question/10825485146/answer/2017984023541085305",
+            "source_labels": [
+              "社媒",
+              "知乎"
+            ],
+            "source_url_list": [
+              "https://zhuanlan.zhihu.com/p/31480030343",
+              "https://www.zhihu.com/question/10825485146/answer/2017984023541085305"
+            ]
+          },
+          {
+            "title": "方向跟踪",
+            "paragraph": "值得跟踪的是能先诊断企业当前流程阻塞点，再按阻塞类型拼装自动化步骤（数据整合、批量执行、告警收敛）的轻量流程编排产品，而不是再做一个大而全的 CRM 或运维平台。",
+            "source": "synthesis",
+            "url": "https://zhuanlan.zhihu.com/p/31480030343 ｜ https://www.zhihu.com/question/10825485146/answer/2017984023541085305",
+            "source_labels": [
+              "社媒",
+              "知乎"
+            ],
+            "source_url_list": [
+              "https://zhuanlan.zhihu.com/p/31480030343",
+              "https://www.zhihu.com/question/10825485146/answer/2017984023541085305"
+            ]
+          }
+        ],
+        "product_items": [
+          {
+            "title": "Kai Resolve by Gleap",
+            "url": "https://www.producthunt.com/products/gleap?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai-idea-radar-v4-2+%28ID%3A+294543%29",
+            "website_url": "https://www.producthunt.com/r/XI7TL2X7GPY7ZR?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai-idea-radar-v4-2+%28ID%3A+294543%29",
+            "summary": "Support that does the digging for you.",
+            "description": "Kai Resolve is the AI agent for support tickets your docs can't answer. It reads the screen recording, logs, account data and your code, read-only, then answers the customer or escalates with a diagnosis. Confirmed bugs become coding tasks your team reviews.",
+            "source_label": "Product Hunt",
+            "heat_line": "▲149｜💬24",
+            "stars_total": "149",
+            "tags": [
+              "企业自动化工作流",
+              "开发者工具",
+              "客户支持",
+              "企业服务",
+              "AI agent",
+              "工单系统"
+            ],
+            "interest_tags": [
+              "企业自动化工作流",
+              "开发者工具"
+            ],
+            "tool_tags": [
+              "AI agent",
+              "工单系统",
+              "自动化"
+            ],
+            "mechanism_tags": [
+              "多源数据读取",
+              "自动诊断",
+              "任务生成"
+            ],
+            "highlight_one_liner": "AI 客服代理自动排查并解决用户问题",
+            "reuse_direction": "优先复用「多源数据读取 / 自动诊断」这条能力链，把 企业自动化工作流 做成单任务工具入口",
+            "minimal_mvp": "先做一个面向 企业自动化工作流 的轻量工具，优先覆盖「AI agent / 工单系统」"
+          }
+        ]
+      },
+      {
+        "title": "邮件自动化工具",
+        "summary": "这一组信号主要来自 zhihu、GitHub，核心观察是外贸邮件自动化需求落在回复生成与送达率保障上，但当前解法仍分散在工具清单、AI邮箱客户端和agent协调层之间。",
+        "items": [
+          {
+            "title": "需求",
+            "paragraph": "",
+            "source": "social",
+            "url": "https://zhuanlan.zhihu.com/p/1940813943007322827 ｜ https://www.zhihu.com/question/2029879302720832806/answer/2064206354961667970",
+            "source_labels": [
+              "社媒",
+              "知乎"
+            ],
+            "source_url_list": [
+              "https://zhuanlan.zhihu.com/p/1940813943007322827",
+              "https://www.zhihu.com/question/2029879302720832806/answer/2064206354961667970"
+            ]
+          },
+          {
+            "title": "现状",
+            "paragraph": "当前做法是在知乎上罗列邮箱验证、黑名单检测等零散工具，或推荐AI邮箱客户端（如WAIMAOINBOAX）辅助英文回复和客户跟进，而GitHub上的mcp_agent_mail则代表用异步协调层管理收件箱和线程的另一条技术思路。",
+            "source": "social",
+            "url": "https://zhuanlan.zhihu.com/p/1940813943007322827 ｜ https://www.zhihu.com/question/2029879302720832806/answer/2064206354961667970",
+            "source_labels": [
+              "社媒",
+              "知乎"
+            ],
+            "source_url_list": [
+              "https://zhuanlan.zhihu.com/p/1940813943007322827",
+              "https://www.zhihu.com/question/2029879302720832806/answer/2064206354961667970"
+            ]
+          },
+          {
+            "title": "方向跟踪",
+            "paragraph": "值得跟踪的是把发件前邮箱有效性/黑名单检查、AI英文回复草稿和客户跟进提醒串成一条外贸邮件流水线，并参考mcp_agent_mail的线程化协调方式管理多客户往来。",
+            "source": "synthesis",
+            "url": "https://zhuanlan.zhihu.com/p/1940813943007322827 ｜ https://www.zhihu.com/question/2029879302720832806/answer/2064206354961667970",
+            "source_labels": [
+              "社媒",
+              "知乎"
+            ],
+            "source_url_list": [
+              "https://zhuanlan.zhihu.com/p/1940813943007322827",
+              "https://www.zhihu.com/question/2029879302720832806/answer/2064206354961667970"
+            ]
+          }
+        ],
+        "product_items": [
+          {
+            "title": "Dicklesworthstone/mcp_agent_mail",
+            "url": "https://github.com/Dicklesworthstone/mcp_agent_mail",
+            "website_url": "",
+            "summary": "",
+            "description": "",
+            "source_label": "GitHub",
+            "heat_line": "🌟2217",
+            "stars_total": "2217",
+            "tags": [
+              "邮件自动化工具",
+              "开发者工具",
+              "知识检索/RAG"
+            ],
+            "interest_tags": [
+              "邮件自动化工具",
+              "开发者工具",
+              "知识检索/RAG"
+            ],
+            "tool_tags": [],
+            "mechanism_tags": [],
+            "highlight_one_liner": "AI编码代理异步协调层",
+            "reuse_direction": "把「邮件自动化工具 / 开发者工具」封装成更明确的岗位或任务入口",
+            "minimal_mvp": "先做一个面向 邮件自动化工具 的轻量单任务工具"
+          }
+        ]
+      },
+      {
+        "title": "供应链仓储 AI 应用",
+        "summary": "这一组信号主要来自 zhihu，两篇内容都没有谈模型本身，而是把供应链 AI 的落点集中在库存与补货分析的数据口径统一和工具选型成本上。",
+        "items": [
+          {
+            "title": "需求",
+            "paragraph": "",
+            "source": "social",
+            "url": "https://zhuanlan.zhihu.com/p/693627895 ｜ https://zhuanlan.zhihu.com/p/2085084071491908505",
+            "source_labels": [
+              "社媒"
+            ],
+            "source_url_list": [
+              "https://zhuanlan.zhihu.com/p/693627895",
+              "https://zhuanlan.zhihu.com/p/2085084071491908505"
+            ]
+          },
+          {
+            "title": "现状",
+            "paragraph": "中小团队普遍用 Excel 加 VBA/PowerQuery 甚至 Eviews 做预测与库存统计，规模上来后就在“继续用 Excel、自研系统、换商用 BI 搭共享看板”之间做选型权衡，讨论集中在各方案的数据治理成本和跨部门协同边界。",
+            "source": "social",
+            "url": "https://zhuanlan.zhihu.com/p/693627895 ｜ https://zhuanlan.zhihu.com/p/2085084071491908505",
+            "source_labels": [
+              "社媒"
+            ],
+            "source_url_list": [
+              "https://zhuanlan.zhihu.com/p/693627895",
+              "https://zhuanlan.zhihu.com/p/2085084071491908505"
+            ]
+          },
+          {
+            "title": "方向跟踪",
+            "paragraph": "值得跟踪的是夹在 Excel 与重型 BI 之间的一层轻量库存分析能力：多角色权限可控、指标口径内置、业务人员能自助完成补货与周转分析而无需自研或依赖数据团队。",
+            "source": "synthesis",
+            "url": "https://zhuanlan.zhihu.com/p/693627895 ｜ https://zhuanlan.zhihu.com/p/2085084071491908505",
+            "source_labels": [
+              "社媒"
+            ],
+            "source_url_list": [
+              "https://zhuanlan.zhihu.com/p/693627895",
+              "https://zhuanlan.zhihu.com/p/2085084071491908505"
+            ]
+          }
+        ],
+        "product_items": []
+      }
+    ],
+    "vendor_news_items": [
+      {
+        "title": "Scale Agentic Coding Workflows with Meta’s Muse Spark Open on NVIDIA GB300 NVL72",
+        "url": "https://developer.nvidia.com/blog/scale-agentic-coding-workflows-with-metas-muse-spark-open-on-nvidia-gb300-nvl72/",
+        "source_name": "NVIDIA Technical Blog",
+        "source_url": "https://developer.nvidia.com/blog/",
+        "published_at": "2026-10-15T18:00:01Z",
+        "event_type": "model_launch",
+        "raw_summary": "Meta launches Muse Spark Open, a coding-optimized 816B mixture-of-experts (MoE) model with 42B active parameters and a 1M token context window. Trained on...",
+        "summary": "Meta 发布编码优化 MoE 模型 Muse Spark Open，总参数 816B、激活参数 42B，上下文窗口 1M token。",
+        "impact_points": [
+          "NVIDIA 发布新模型后，相关应用的能力上限和产品包装空间会立刻变化。",
+          "这类更新会优先影响 Agent 与工作流型应用的执行方式和稳定性。"
+        ],
+        "watch_items": [
+          "关注新模型是否真的在关键场景里带来更稳定的结果与更好的成本结构。",
+          "关注它是否能减少多步任务中的人工接管频率。"
+        ],
+        "vendor_tags": [
+          "NVIDIA"
+        ],
+        "mechanism_tags": [
+          "Agent",
+          "Workflow",
+          "Memory"
+        ],
+        "categories": [],
+        "impact_score": 76,
+        "age_days": 7,
+        "summary_short": "Meta 发布 Muse Spark Open 编码模型",
+        "summary_generation_source": "openai",
+        "summary_prompt_version": "vendor_summary_zh_v4"
+      },
+      {
+        "title": "OpenAI models are coming to Google Cloud",
+        "url": "https://openai.com/index/openai-models-google-cloud",
+        "source_name": "OpenAI News",
+        "source_url": "https://openai.com/news/",
+        "published_at": "2026-10-21T12:00:00Z",
+        "event_type": "model_launch",
+        "raw_summary": "OpenAI and Google Cloud are bringing frontier models and Codex workflows to Gemini’s Model Garden, available through Google Cloud Marketplace.",
+        "summary": "OpenAI 的前沿模型与 Codex 工作流将通过 Google Cloud Marketplace 在 Gemini Model Garden 上线。",
+        "impact_points": [
+          "OpenAI 发布新模型后，相关应用的能力上限和产品包装空间会立刻变化。",
+          "这类更新会优先影响 Agent 与工作流型应用的执行方式和稳定性。"
+        ],
+        "watch_items": [
+          "关注新模型是否真的在关键场景里带来更稳定的结果与更好的成本结构。"
+        ],
+        "vendor_tags": [
+          "OpenAI"
+        ],
+        "mechanism_tags": [
+          "Workflow"
+        ],
+        "categories": [
+          "Company"
+        ],
+        "impact_score": 72,
+        "age_days": 1,
+        "summary_short": "OpenAI 模型上线 Google Cloud",
+        "summary_generation_source": "openai",
+        "summary_prompt_version": "vendor_summary_zh_v4"
+      },
+      {
+        "title": "xAI SDK v1.20.0 发布",
+        "url": "https://github.com/xai-org/xai-sdk-python/releases/tag/v1.20.0",
+        "source_name": "xAI SDK Releases",
+        "source_url": "https://github.com/xai-org/xai-sdk-python/releases",
+        "published_at": "2026-09-24T18:05:54Z",
+        "event_type": "api_tool_launch",
+        "raw_summary": "## What's Changed * Update changelog by @Omar-V2 in https://github.com/xai-org/xai-sdk-python/pull/199 * Fetch the correct version from PyPI in the release workflow by @Omar-V2 in https://github.com/xai-org/xai-sdk-python/pull/200 * Update changelog by @Omar-V2 in https://github.com/xai-org/xai-sdk-python/pull/201 * Add last frame and keyframes to video generation by @Omar-V2 in https://github.com/xai-org/xai-sdk-python/pull/218 * Prepare to release v1.20.0 of the xAI Python SDK by @Omar-V2 in https://github.com/xai-org/xai-sdk-python/pull/219 **Full Changelog**: https://github.com/xai-org/xai-sdk-python/compare/v1.19.0...v1.20.0",
+        "summary": "xAI 发布 Python SDK v1.20.0，为视频生成新增尾帧与关键帧支持。",
+        "impact_points": [
+          "xAI / Grok 开放新 API / 工具后，开发者可以直接把上游能力接入现有工作流。",
+          "这类更新会优先影响 Agent 与工作流型应用的执行方式和稳定性。"
+        ],
+        "watch_items": [
+          "关注新 API / 工具是否附带调用限制、权限门槛或额外工程复杂度。"
+        ],
+        "vendor_tags": [
+          "xAI",
+          "Grok"
+        ],
+        "mechanism_tags": [
+          "Workflow",
+          "API"
+        ],
+        "categories": [
+          "Release",
+          "SDK",
+          "API"
+        ],
+        "impact_score": 70,
+        "age_days": 28,
+        "summary_short": "xAI 发布 SDK v1.20.0 支持视频尾帧关键帧",
+        "summary_generation_source": "openai",
+        "summary_prompt_version": "vendor_summary_zh_v4"
+      },
+      {
+        "title": "Google Gen AI SDK v2.32.0 发布",
+        "url": "https://github.com/googleapis/python-genai/releases/tag/v2.32.0",
+        "source_name": "Google Gemini SDK Releases",
+        "source_url": "https://github.com/googleapis/python-genai/releases",
+        "published_at": "2026-10-21T00:26:23Z",
+        "event_type": "api_tool_launch",
+        "raw_summary": "## [2.32.0](https://github.com/googleapis/python-genai/compare/v2.31.0...v2.32.0) (2026-10-21) ### Features * Add base_voice to PromptedVoice in GAOS SDK ([5488643](https://github.com/googleapis/python-genai/commit/548864370ee9c88de0bd839b619dc05bcb7085e7)) * Add generation_output_config to GenerateContentConfig ([5c008e1](https://github.com/googleapis/python-genai/commit/5c008e14b9c9fdecbaf61eb53ad7c09f57fa5f8a)) * Add Live API in-session context updates (`send_context_update`) and types across GenAI SDKs. ([364889a](https://github.com/googleapis/python-genai/commit/364889aafe40bfa8f3b9db847ba272d299f7d632)) * **sdks:** Enable `fixes.openSingleValueEnumsOct2026` across all SDKs ([78f6d34](https://github.com/googleapis/python-genai/commit/78f6d3412caaaed44f99ce57be2d16d0b8c407cb)) * Update discovery doc ([6cd176e](https://github.com/googleapis/python-genai/commit/6cd176e135a188bbb0d0f9afca520e7d6483823d)) ### Bug Fixes * Base64-encode inline bytes in Live send_tool_response ([a7bbff6](https://github.com/googleapis/python-genai/commit/a7bbff6e73fa9444802cd9a17e8c94e30341bf5d)), refs [#3022](https://github.com/googleapis/python-genai/issues/3022) * Don't crash parsing responses with JSON objects in `Any`-typed fields ([4c1abcc](https://github.com/googleapis/python-genai/commit/4c1abccf258c9247218e66610790043893cd6950)) * **interactions:** Sync InteractionSseEventInteractionStatus enum with InteractionStatus ([ba854b2](https://github.com/googleapis/python-genai/commit/ba854b2d29a3ff0d4758da886edabb458726b210)) ### Documentation * Publish the API reference on each release ([1d12358](https://github.com/googleapis/python-genai/commit/1d12358a1398b9a510ae8ba25dd31e746d8e9be9)) * Transition docs workflow to GitHub Actions ([3b1256a](https://github.com/googleapis/python-genai/commit/3b1256ac5f4b8c49a469ca307ca765185184774d))",
+        "summary": "Google 发布 Gen AI SDK v2.32.0，为 Live API 新增会话内上下文更新接口 send_context_update，并在 GenerateContentConfig 中加入 generation_output_config。",
+        "impact_points": [
+          "Google / Gemini 开放新 API / 工具后，开发者可以直接把上游能力接入现有工作流。",
+          "多模态能力增强后，内容生成、理解和输入方式会有新的产品机会。"
+        ],
+        "watch_items": [
+          "关注新 API / 工具是否附带调用限制、权限门槛或额外工程复杂度。",
+          "关注多模态能力是否已经足够稳定到可以进入产品主链路。"
+        ],
+        "vendor_tags": [
+          "Google",
+          "Gemini"
+        ],
+        "mechanism_tags": [
+          "Multimodal",
+          "API"
+        ],
+        "categories": [
+          "Release",
+          "SDK",
+          "API"
+        ],
+        "impact_score": 66,
+        "age_days": 1,
+        "summary_short": "Google Gen AI SDK v2.32.0 新增 Live API 上下文更新",
+        "summary_generation_source": "openai",
+        "summary_prompt_version": "vendor_summary_zh_v4"
+      },
+      {
+        "title": "百度智能云：API网关专享版正式上线",
+        "url": "https://cloud.baidu.com/news/productNews_0ea55072-8153-4a57-a409-2b43a8a0adab",
+        "source_name": "百度智能云产品动态",
+        "source_url": "https://cloud.baidu.com/news/productNews",
+        "published_at": "2026-10-21T00:00:00Z",
+        "event_type": "api_tool_launch",
+        "raw_summary": "API网关专享版正式上线，统一治理传统API与AI流量，助力AI应用生产级落地！",
+        "summary": "百度智能云正式上线 API网关专享版，可统一治理传统 API 与 AI 流量。",
+        "impact_points": [
+          "百度 / 千帆 开放新 API / 工具后，开发者可以直接把上游能力接入现有工作流。"
+        ],
+        "watch_items": [
+          "关注新 API / 工具是否附带调用限制、权限门槛或额外工程复杂度。"
+        ],
+        "vendor_tags": [
+          "百度",
+          "千帆"
+        ],
+        "mechanism_tags": [
+          "API"
+        ],
+        "categories": [
+          "Product"
+        ],
+        "impact_score": 64,
+        "age_days": 1,
+        "summary_short": "百度智能云上线 API网关专享版",
+        "summary_generation_source": "openai",
+        "summary_prompt_version": "vendor_summary_zh_v4"
+      },
+      {
+        "title": "Mistral SDK Python - v3.0.0 发布",
+        "url": "https://github.com/mistralai/client-python/releases/tag/v3.0.0",
+        "source_name": "Mistral SDK Releases",
+        "source_url": "https://github.com/mistralai/client-python/releases",
+        "published_at": "2026-09-28T18:35:32Z",
+        "event_type": "api_tool_launch",
+        "raw_summary": "### Generated SDK baseline differences The published SDK or generator baseline differs from the baseline used by the OpenAPI changelog. Generated surface details #### Stable compatibility changes Removed from the stable API surface (24): - `DeploymentKoyebBackendSpec` - `UnknownDeploymentWorkerSpecResponseBackendSpec` - `DeploymentKoyebBackendSpec.build_directory` - `DeploymentKoyebBackendSpec.dockerfile_path` - `DeploymentKoyebBackendSpec.type` - `DeploymentResourceConfig.cpu_limit` - `DeploymentResourceConfig.cpu_request` - `DeploymentResourceConfig.memory_limit` - `DeploymentResourceConfig.memory_request` - `DeploymentResourceConfigUpdate.cpu_limit` - `DeploymentResourceConfigUpdate.cpu_request` - `DeploymentResourceConfigUpdate.memory_limit` - `DeploymentResourceConfigUpdate.memory_request` - `DeploymentWorkerSpecInput.entrypoint` - `DeploymentWorkerSpecInput.working_dir` - `DeploymentWorkerSpecResponse.commit_sha` - `DeploymentWorkerSpecResponse.entrypoint` - `DeploymentWorkerSpecResponse.working_dir` - `UnknownDeploymentWorkerSpecResponseBackendSpec.is_unknown` - `UnknownDeploymentWorkerSpecResponseBackendSpec.raw` - `UnknownDeploymentWorkerSpecResponseBackendSpec.type` - `WorkflowsWorkerSpecUpdate.entrypoint` - `WorkflowsWorkerSpecUpdate.working_dir` - `DeploymentKoyebBackendSpec.serialize_model` #### Stable type changes Changed types or signatures on the stable surface (143): - `ActivityTaskCompletedResponse.chain_run_id: Nullable[str] -> OptionalNullable[str]` - `ActivityTaskCompletedResponse.continued_run_id: Nullable[str] -> OptionalNullable[str]` - `ActivityTaskCompletedResponse.first_execution_run_id: Nullable[str] -> OptionalNullable[str]` - `ActivityTaskCompletedResponse.schedule_id: Nullable[str] -> OptionalNullable[str]` - `ActivityTaskCompletedResponseTypedDict.chain_run_id: Nullable[str] -> NotRequired[Nullable[str]]` - `ActivityTaskCompletedResponseTypedDict.continued_run_id: Nullable[str] -> NotRequired[Nullable[str]]` - `ActivityTaskCompletedResponseTypedDict.first_execution_run_id: Nullable[str] -> NotRequired[Nullable[str]]` - `ActivityTaskCompletedResponseTypedDict.schedule_id: Nullable[str] -> NotRequired[Nullable[str]]` - `ActivityTaskFailedResponse.chain_run_id: Nullable[str] -> OptionalNullable[str]` - `ActivityTaskFailedResponse.continued_run_id: Nullable[str] -> OptionalNullable[str]` - `ActivityTaskFailedResponse.first_execution_run_id: Nullable[str] -> OptionalNullable[str]` - `ActivityTaskFailedResponse.schedule_id: Nullable[str] -> OptionalNullable[str]` - `ActivityTaskFailedResponseTypedDict.chain_run_id: Nullable[str] -> NotRequired[Nullable[str]]` - `ActivityTaskFailedResponseTypedDict.continued_run_id: Nullable[str] -> NotRequired[Nullable[str]]` - `ActivityTaskFailedResponseTypedDict.first_execution_run_id: Nullable[str] -> NotRequired[Nullable[str]]` - `ActivityTaskFailedResponseTypedDict.schedule_id: Nullable[str] -> NotRequired[Nullable[str]]` - `ActivityTaskRetryingResponse.chain_run_id: Nullable[str] -> OptionalNullable[str]` - `ActivityTaskRetryingResponse.continued_run_id: Nullable[str] -> OptionalNullable[str]` - `ActivityTaskRetryingResponse.first_execution_run_id: Nullable[str] -> OptionalNullable[str]` - `ActivityTaskRetryingResponse.schedule_id: Nullable[str] -> OptionalNullable[str]` - `ActivityTaskRetryingResponseTypedDict.chain_run_id: Nullable[str] -> NotRequired[Nullable[str]]` - `ActivityTaskRetryingResponseTypedDict.continued_run_id: Nullable[str] -> NotRequired[Nullable[str]]` - `ActivityTaskRetryingResponseTypedDict.first_execution_run_id: Nullable[str] -> NotRequired[Nullable[str]]` - `ActivityTaskRetryingResponseTypedDict.schedule_id: Nullable[str] -> NotRequired[Nullable[str]]` - `ActivityTaskStartedResponse.chain_run_id: Nullable[str] -> OptionalNullable[str]` - ...and 118 more #### Beta surface changes Removed from the beta surface (20): - `ConnectorDeleteOrganizationCredentialsV1Request` - `ConnectorDeleteUserCredentialsV1Request` - `ConnectorDeleteWorkspaceCredentialsV1Request` - `ConnectorDeleteOrganizationCredentialsV1Request.connector_id_or_name` - `ConnectorDeleteOrganizationCredentialsV1Request.credentials_name` - `ConnectorDeleteUserCredentialsV1Request.connector_id_or_name` - `ConnectorDeleteUserCredentialsV1Request.credentials_name` - `ConnectorDeleteWorkspaceCredentialsV1Request.connector_id_or_name` - `ConnectorDeleteWorkspaceCredentialsV1Request.credentials_name` - `ConnectorGetV1Request.fetch_customer_data` - `ConnectorListToolsV1Request.page` - `ConnectorsQueryFilters.active` - `CreatePipelineConfigRequest.definitions` - `UpdatePipelineConfigRequest.definitions` - `Connectors.delete_organization_credentials` - `Connectors.delete_organization_credentials_async` - `Connectors.delete_user_credentials` - `Connectors.delete_user_credentials_async` - `Connectors.delete_workspace_credentials` - `Connectors.delete_workspace_credentials_async` Changed types or signatures in beta (10): - `PipelineConfig.definitions: List[PipelineConfigDefinition] -> Optional[List[PipelineConfigDefinition]]` - `PipelineConfigTypedDict.definitions: List[PipelineConfigDefinitionTypedDict] -> NotRequired[List[PipelineConfigDefinitionTypedDict]]` - `SearchRequest.retriever: Retriever -> SearchRequestRetriever` - `SearchRequestTypedDict.retriever: RetrieverTypedDict -> SearchRequestRetrieverTypedDict` - `UsersAPIGetIdentitySecurity.dashboard_user_context_auth: Annotated[str, FieldMetadata(security=SecurityMetadata(scheme=True, scheme_type='apiKey', sub_type='header', field_name='x-api-key'))] -> Annotated[Optional[str], FieldMetadata(security=SecurityMetadata(scheme=True, scheme_type='apiKey', sub_type='header', field_name='x-api-key'))]` - `UsersAPIGetIdentitySecurityTypedDict.dashboard_user_context_auth: str -> NotRequired[str]` - `UsersAPIListOrganizationsSecurity.dashboard_user_context_auth: Annotated[str, FieldMetadata(security=SecurityMetadata(scheme=True, scheme_type='apiKey', sub_type='header', field_name='x-api-key'))] -> Annotated[Optional[str], FieldMetadata(security=SecurityMetadata(scheme=True, scheme_type='apiKey', sub_type='header', field_name='x-api-key'))]` - `UsersAPIListOrganizationsSecurityTypedDict.dashboard_user_context_auth: str -> NotRequired[str]` - `UsersAPIListWorkspacesSecurity.dashboard_user_context_auth: Annotated[str, FieldMetadata(security=SecurityMetadata(scheme=True, scheme_type='apiKey', sub_type='header', field_name='x-api-key'))] -> Annotated[Optional[str], FieldMetadata(security=SecurityMetadata(scheme=True, scheme_type='apiKey', sub_type='header', field_name='x-api-key'))]` - `UsersAPIListWorkspacesSecurityTypedDict.dashboard_user_context_auth: str -> NotRequired[str]` Now required on an existing beta model (4): - `CreatePipelineConfigRequest.definition` - `ManagedIndexResponse.creator_id` - `PipelineConfig.definition` - `UpdatePipelineConfigRequest.definition` ### API changes #### Highlights - The SDK uses HTTPX2 instead of HTTPX, and the `mcp` and `agents` extras MCP 2.2. A client passed as `client=` or `async_client=` must be an `httpx2` client, and raw requests, responses and transport errors are `httpx2` types. See [MIGRATION.md](MIGRATION.md) for every breaking change in this release. - Chat and agents completions no longer accept the `code_interpreter`, `web_search` and `web_search_premium` tools; use them through the Conversations API or an agent. - Workflow deployments: the `koyeb` backend is now `mistral_cloud` (`DeploymentKoyebBackendSpec` is replaced by `DeploymentMistralCloudBackendSpec`), the Kubernetes backend can no longer be set, the CPU/memory, `entrypoint`, `working_dir` and `commit_sha` fields are removed, and `UnknownDeploymentWorkerSpecResponseBackendSpec` is renamed `UnknownBackendSpec`. - New: `Mistral()` authenticates from a service-account token at `MISTRAL_SA_TOKEN_PATH`; `beta.connectors.mcp_client()` and `beta.connectors.http_client()` call connectors directly through the Connectors Gateway, whose own failures raise `ConnectorsGatewayError`. #### Breaking changes - Removed fields `cpu_limit`, `cpu_request`, `memory_limit`, and `memory_request` from response `resources` across workflows deployments (6 operations). - Changed field `type` across workflows deployments (6 operations). - Removed fields `commit_sha`, `entrypoint`, and `working_dir` from response `spec` across workflows deployments (6 operations). - Removed fields `cpu_limit`, `cpu_request`, `memory_limit`, and `memory_request` from request `resources` in `sdk.workflows.deployments.update_deployment()` and `sdk.workflows.deployments.create_deployment()`. - Changed field `backend_spec` in `sdk.workflows.deployments.update_deployment()` and `sdk.workflows.deployments.create_deployment()`. - Removed fields `entrypoint` and `working_dir` from request `spec` in `sdk.workflows.deployments.update_deployment()` and `sdk.workflows.deployments.create_deployment()`. - Removed fields `cpu_limit`, `cpu_request`, `memory_limit`, and `memory_request` from response `managed.resources` in `sdk.workflows.deployments.get_deployment()`. - Changed field `type` in `sdk.workflows.deployments.get_deployment()`. - Removed fields `commit_sha`, `entrypoint`, and `working_dir` from response `managed.spec` in `sdk.workflows.deployments.get_deployment()`. - Removed fields `cpu_limit`, `cpu_request`, `memory_limit`, and `memory_request` from response `deployments[].managed.resources` in `sdk.workflows.deployments.list_deployments()`. - Changed field `type` in `sdk.workflows.deployments.list_deployments()`. - Removed fields `commit_sha`, `entrypoint`, and `working_dir` from response `deployments[].managed.spec` in `sdk.workflows.deployments.list_deployments()`. - Removed variants `code_interpreter`, `web_search`, and `web_search_premium` from request `tools[]` in `sdk.chat.complete()`, `sdk.chat.stream()`, `sdk.agents.complete()`, and `sdk.agents.stream()`. #### Beta API changes - `sdk.beta.connectors`: removed `delete_workspace_credentials()`, `delete_organization_credentials()`, and `delete_user_credentials()`; added `delete_credentials()`. - Removed field `fetch_customer_data` from request in `sdk.beta.connectors.get()`. - Added required field `definition` to request in `sdk.beta.observability.evaluations.create_pipeline_config()` and `sdk.beta.observability.evaluations.update_pipeline_config()`. - Removed field `definitions` from request in `sdk.beta.observability.evaluations.create_pipeline_config()` and `sdk.beta.observability.evaluations.update_pipeline_config()`. - Removed field `page` from request in `sdk.beta.connectors.list_tools()`. - Removed field `active` from request `query_filters` in `sdk.beta.connectors.list()`. #### Added operations Stable: - `sdk.workflows.deployments.unharden_deployment()` - `sdk.audio.voices.search()` Beta: - `sdk.beta.observability.evaluations.list_pipelines()` - `sdk.beta.observability.datasets.import_from_spans()` - `sdk.beta.rag.managed_indexes.get_chunk()` - `sdk.beta.rag.managed_indexes.grep()` - `sdk.beta.rag.managed_indexes.read()` - `sdk.beta.rag.managed_indexes.navigate()` - `sdk.beta.observability.spans.aggregate_span_evaluations()` - `sdk.beta.observability.evaluations.delete_pipeline()` - `sdk.beta.observability.evaluations.update_pipeline()` - `sdk.beta.observability.evaluations.get_pipeline()` - `sdk.beta.observability.evaluations.create_pipeline()` #### Deprecated operations Beta: - `sdk.beta.connectors.call_tool()` #### Schema changes - Added response field `definition` in `sdk.beta.observability.evaluations.create_pipeline_config()`, `sdk.beta.observability.evaluations.update_pipeline_config()`, `sdk.beta.observability.evaluations.list_pipeline_configs()`, and `sdk.beta.observability.evaluations.get_pipeline_config()`. - Changed response field `definitions` in `sdk.beta.observability.evaluations.create_pipeline_config()`, `sdk.beta.observability.evaluations.update_pipeline_config()`, `sdk.beta.observability.evaluations.list_pipeline_configs()`, and `sdk.beta.observability.evaluations.get_pipeline_config()`. - Added enum values `PIPELINE_ALREADY_EXISTS` and `PIPELINE_NOT_FOUND` across beta observability evaluations, beta observability traces, beta observability judges, beta observability datasets, beta observability datasets records, beta observability spans, beta observability logs (48 operations). - Added response fields `runtime_credential_id`, `runtime_principal_type`, and `secrets` across workflows deployments (8 operations). - Added request field `owner` in `sdk.workflows.deployments.list_deployments()`. - Added request enum value `mistral_mcp` across chat, agents, beta conversations, classifiers (7 operations). - Added response enum value `mistral_mcp` across chat, agents, beta conversations, FIM (8 operations). - Added response field `source_attribute_key` in `sdk.beta.observability.traces.get_trace_fields()`, `sdk.beta.observability.logs.list()`, `sdk.beta.observability.spans.list_span_fields()`, and `sdk.beta.observability.spans.list_span_eval_fields()`. - Added request fields `order` and `q` in `sdk.beta.service_accounts.list()`. - Added response field `result` across beta observability datasets (5 operations). - Added request field `client_scopes` in `sdk.beta.connectors.create()` and `sdk.beta.connectors.update()`. - Added request fields `creator_id`, `name`, and `status` in `sdk.beta.rag.managed_indexes.list()`. - Added response field `creator_id` in `sdk.beta.rag.managed_indexes.list()`, `sdk.beta.rag.managed_indexes.create()`, `sdk.beta.rag.managed_indexes.get()`, and `sdk.beta.rag.managed_indexes.update()`. - Added request field `max_candidates` in `sdk.beta.rag.managed_indexes.search()`. - Added request variant `rrf` in `sdk.beta.rag.managed_indexes.search()`. - Added request field `bearer_user_context_auth` in `sdk.beta.users.get_identity()`, `sdk.beta.users.list_organizations()`, and `sdk.beta.users.list_workspaces()`. - Changed request field `dashboard_user_context_auth` in `sdk.beta.users.get_identity()`, `sdk.beta.users.list_organizations()`, and `sdk.beta.users.list_workspaces()`. - Changed response fields `chain_run_id`, `continued_run_id`, `first_execution_run_id`, and `schedule_id` in `sdk.workflows.events.get_workflow_events()` and `sdk.events.get_workflow_events()`. - Added request field `log_type` in `sdk.workflows.deployments.get_deployment_logs()`. ### Changes Based on: - OpenAPI Doc - Speakeasy CLI 1.796.4 (2.935.1) https://github.com/speakeasy-api/speakeasy ### Generated - [python v3.0.0] . ### Releases - [PyPI v3.0.0] https://pypi.org/project/mistralai/3.0.0 - . Publishing Completed",
+        "summary": "Mistral 发布 Python SDK v3.0.0，从稳定 API 中移除 DeploymentKoyebBackendSpec、DeploymentResourceConfig 的 cpu/memory limit 与 request 等 24 项接口。",
+        "impact_points": [
+          "Mistral AI 开放新 API / 工具后，开发者可以直接把上游能力接入现有工作流。"
+        ],
+        "watch_items": [
+          "关注新 API / 工具是否附带调用限制、权限门槛或额外工程复杂度。"
+        ],
+        "vendor_tags": [
+          "Mistral AI"
+        ],
+        "mechanism_tags": [
+          "API"
+        ],
+        "categories": [
+          "Release",
+          "SDK",
+          "API"
+        ],
+        "impact_score": 62,
+        "age_days": 24,
+        "summary_short": "Mistral 发布 Python SDK v3.0.0",
+        "summary_generation_source": "openai",
+        "summary_prompt_version": "vendor_summary_zh_v4"
+      },
+      {
+        "title": "Introducing the new Copilot with Home, Code and Autopilot",
+        "url": "https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/",
+        "source_name": "Microsoft AI Blog",
+        "source_url": "https://news.microsoft.com/source/topics/ai/",
+        "published_at": "2026-09-25T12:03:50Z",
+        "event_type": "model_launch",
+        "raw_summary": "We’re reimagining Microsoft Copilot to enable work as it evolves and to help expand what every individual and every organization can accomplish in the flow of human ambition. Today we’re introducing the new Copilot to connect the tools people rely on with the next generation of capabilities they’ll need to build, customize and scale AI... The post Introducing the new Copilot with Home, Code and Autopilot appeared first on The Official Microsoft Blog .",
+        "summary": "微软推出新版 Copilot，包含 Home、Code 和 Autopilot 三项功能。",
+        "impact_points": [
+          "Microsoft / Azure AI / Copilot 发布新模型后，相关应用的能力上限和产品包装空间会立刻变化。"
+        ],
+        "watch_items": [
+          "关注新模型是否真的在关键场景里带来更稳定的结果与更好的成本结构。"
+        ],
+        "vendor_tags": [
+          "Microsoft",
+          "Azure AI",
+          "Copilot"
+        ],
+        "mechanism_tags": [],
+        "categories": [
+          "Featured",
+          "The Official Microsoft Blog",
+          "AI",
+          "Copilot",
+          "Frontier Transformation",
+          "Microsoft Teams"
+        ],
+        "impact_score": 60,
+        "age_days": 27,
+        "summary_short": "微软发布新版 Copilot 含三大功能",
+        "summary_generation_source": "openai",
+        "summary_prompt_version": "vendor_summary_zh_v4"
+      },
+      {
+        "title": "Discover tools at runtime with AWS Agent Registry",
+        "url": "https://aws.amazon.com/blogs/machine-learning/discover-tools-at-runtime-with-aws-agent-registry/",
+        "source_name": "AWS Machine Learning Blog",
+        "source_url": "https://aws.amazon.com/blogs/machine-learning/",
+        "published_at": "2026-10-20T16:22:24Z",
+        "event_type": "api_tool_launch",
+        "raw_summary": "Hardcoded tool wiring breaks down as an agent's catalog grows from a handful of tools to hundreds. This post walks through a runtime Discover, Instantiate, Execute loop built on AWS Agent Registry, where an orchestrator discovers MCP servers and A2A agents through semantic search at runtime instead of compiling every tool at build time.",
+        "summary": "AWS 发布 Agent Registry，让编排器在运行时通过语义搜索发现 MCP 服务器和 A2A 代理，并按 Discover、Instantiate、Execute 的循环调用工具，无需在构建时编译全部工具。",
+        "impact_points": [
+          "AWS / Bedrock 开放新 API / 工具后，开发者可以直接把上游能力接入现有工作流。",
+          "这类更新会优先影响 Agent 与工作流型应用的执行方式和稳定性。"
+        ],
+        "watch_items": [
+          "关注新 API / 工具是否附带调用限制、权限门槛或额外工程复杂度。",
+          "关注它是否能减少多步任务中的人工接管频率。"
+        ],
+        "vendor_tags": [
+          "AWS",
+          "Bedrock"
+        ],
+        "mechanism_tags": [
+          "Agent"
+        ],
+        "categories": [
+          "Amazon Bedrock AgentCore",
+          "Intermediate (200)",
+          "Technical How-to"
+        ],
+        "impact_score": 66,
+        "age_days": 2,
+        "summary_short": "AWS 上线 Agent Registry 运行时工具发现",
+        "summary_generation_source": "openai",
+        "summary_prompt_version": "vendor_summary_zh_v4"
+      }
+    ],
+    "ai_news_items": [
+      {
+        "title": "Baseten 发布决策模型 mammoth-1（27B）和 elephant-1（9B），开源并免费试用一周",
+        "url": "https://aihot.news/items/gh2z6vliymwuu811sbdc9694a",
+        "source_name": "Baseten 工程博客（网页）",
+        "source_url": "https://aihot.news/items/gh2z6vliymwuu811sbdc9694a",
+        "published_at": "2026-10-22 00:58",
+        "event_type": "aihot_news",
+        "raw_summary": "Baseten 研究实验室 Base Labs 发布开源决策模型 mammoth-1（27B）和 elephant-1（9B），基于 Qwen3.5-27B 和 Qwen3.5-9B 在 621 万决策样本上后训练而成。",
+        "summary": "Baseten 研究实验室 Base Labs 发布开源决策模型 mammoth-1（27B）和 elephant-1（9B），基于 Qwen3.5-27B 和 Qwen3.5-9B 在 621 万决策样本上后训练而成。",
+        "vendor_tags": [
+          "Baseten 工程博客（网页）"
+        ],
+        "categories": [
+          "模型发布/更新"
+        ],
+        "aihot_category": "ai-models",
+        "aihot_section_label": "模型发布/更新",
+        "aihot_backfill": false,
+        "summary_short": "Baseten 研究实验室 Base Labs 发布开源决策模型…",
+        "impact_score": 0
+      },
+      {
+        "title": "Anthropic 开启 Claude Duet 研究预览，Claude 以主动式智能体接管日常工作",
+        "url": "https://aihot.news/items/jgg0i29t3o1eycc24c3wev0fx",
+        "source_name": "Claude：Blog（网页）",
+        "source_url": "https://aihot.news/items/jgg0i29t3o1eycc24c3wev0fx",
+        "published_at": "2026-10-21 08:00",
+        "event_type": "aihot_news",
+        "raw_summary": "Anthropic 开启 Claude Duet 研究预览，一款让 Claude 作为主动式智能体工作的独立应用，已登陆 iOS、Android 和 claude.ai，面向美国 Pro 和 Max 用户开放候补名单。",
+        "summary": "Anthropic 开启 Claude Duet 研究预览，一款让 Claude 作为主动式智能体工作的独立应用，已登陆 iOS、Android 和 claude.ai，面向美国 Pro 和 Max 用户开放候补名单。",
+        "vendor_tags": [
+          "Claude：Blog（网页）"
+        ],
+        "categories": [
+          "产品发布/更新"
+        ],
+        "aihot_category": "ai-products",
+        "aihot_section_label": "产品发布/更新",
+        "aihot_backfill": false,
+        "summary_short": "Anthropic 开启 Claude Duet 研究预览，一款…",
+        "impact_score": 0
+      },
+      {
+        "title": "OpenAI API 支持 12 小时 prompt 缓存，Codex 与 Work 用户缓存永久保留",
+        "url": "https://aihot.news/items/gf3h1rt1vsjw3dnw4hxlie3fv",
+        "source_name": "X：Tibo (@thsottiaux)",
+        "source_url": "https://aihot.news/items/gf3h1rt1vsjw3dnw4hxlie3fv",
+        "published_at": "2026-10-21 09:10",
+        "event_type": "aihot_news",
+        "raw_summary": "OpenAI 开发者账号宣布 API 现已可选 12 小时 prompt 缓存，持续运行的智能体可在请求间隔数小时的情况下继续以更低的缓存输入费率复用指令、工具和上下文。Tibo 补充称，Codex 与 Work 中已登录用户的缓存会永久保留，返回旧对话或数小时后恢复会话保证命中缓存，且无额外惩罚。",
+        "summary": "OpenAI 开发者账号宣布 API 现已可选 12 小时 prompt 缓存，持续运行的智能体可在请求间隔数小时的情况下继续以更低的缓存输入费率复用指令、工具和上下文。Tibo 补充称，Codex 与 Work 中已登录用户的缓存会永久保留，返回旧对话或数小时后恢复会话保证命中缓存，且无额外惩罚。",
+        "vendor_tags": [
+          "X：Tibo (@thsottiaux)"
+        ],
+        "categories": [
+          "产品发布/更新"
+        ],
+        "aihot_category": "ai-products",
+        "aihot_section_label": "产品发布/更新",
+        "aihot_backfill": false,
+        "summary_short": "OpenAI 开发者账号宣布 API 现已可选 12 小时 pr…",
+        "impact_score": 0
+      },
+      {
+        "title": "蚂蚁集团与 vLLM 社区开源量化推理内核库 Humming",
+        "url": "https://aihot.news/items/afv7us0zbvzo789rghqkfhq5q",
+        "source_name": "vLLM 官方博客（RSS）",
+        "source_url": "https://aihot.news/items/afv7us0zbvzo789rghqkfhq5q",
+        "published_at": "2026-10-21 08:00",
+        "event_type": "aihot_news",
+        "raw_summary": "蚂蚁集团与 vLLM 社区开源通用高性能量化推理内核库 Humming，仓库为 github.com/vllm-project/humming。",
+        "summary": "蚂蚁集团与 vLLM 社区开源通用高性能量化推理内核库 Humming，仓库为 github.com/vllm-project/humming。",
+        "vendor_tags": [
+          "vLLM 官方博客（RSS）"
+        ],
+        "categories": [
+          "产品发布/更新"
+        ],
+        "aihot_category": "ai-products",
+        "aihot_section_label": "产品发布/更新",
+        "aihot_backfill": false,
+        "summary_short": "蚂蚁集团与 vLLM 社区开源通用高性能量化推理内核库 Humm…",
+        "impact_score": 0
+      },
+      {
+        "title": "NVIDIA 推出 DSX POD AI 工厂参考设计，部署时间从六个月缩短至 14 天",
+        "url": "https://aihot.news/items/jz5y4ct5xtomf83iipzc4nkvf",
+        "source_name": "NVIDIA：Newsroom（RSS）",
+        "source_url": "https://aihot.news/items/jz5y4ct5xtomf83iipzc4nkvf",
+        "published_at": "2026-10-21 17:34",
+        "event_type": "aihot_news",
+        "raw_summary": "NVIDIA 在 GTC Berlin 推出 DSX POD 参考设计，用于在模块化集装箱内由合作伙伴预集成、预验证完整的 Vera Rubin AI 工厂，交付后接入已准备好的电力、冷却与网络即可投用。",
+        "summary": "NVIDIA 在 GTC Berlin 推出 DSX POD 参考设计，用于在模块化集装箱内由合作伙伴预集成、预验证完整的 Vera Rubin AI 工厂，交付后接入已准备好的电力、冷却与网络即可投用。",
+        "vendor_tags": [
+          "NVIDIA：Newsroom（RSS）"
+        ],
+        "categories": [
+          "产品发布/更新"
+        ],
+        "aihot_category": "ai-products",
+        "aihot_section_label": "产品发布/更新",
+        "aihot_backfill": false,
+        "summary_short": "NVIDIA 在 GTC Berlin 推出 DSX POD 参…",
+        "impact_score": 0
+      },
+      {
+        "title": "Grok Bot 可生成报告与仪表盘",
+        "url": "https://aihot.news/items/rz1fbmlls8tncgbh0p5dpmkp2",
+        "source_name": "X：Grok Bot (@bot)",
+        "source_url": "https://aihot.news/items/rz1fbmlls8tncgbh0p5dpmkp2",
+        "published_at": "2026-10-22 03:42",
+        "event_type": "aihot_news",
+        "raw_summary": "Grok Bot 现在可以构建报告、备忘录和仪表盘。 向 Bot 请求一个页面，然后一起编辑，或让 Bot 持续保持更新。",
+        "summary": "Grok Bot 现在可以构建报告、备忘录和仪表盘。 向 Bot 请求一个页面，然后一起编辑，或让 Bot 持续保持更新。",
+        "vendor_tags": [
+          "X：Grok Bot (@bot)"
+        ],
+        "categories": [
+          "产品发布/更新"
+        ],
+        "aihot_category": "ai-products",
+        "aihot_section_label": "产品发布/更新",
+        "aihot_backfill": false,
+        "summary_short": "Grok Bot 现在可以构建报告、备忘录和仪表盘。 向 Bot…",
+        "impact_score": 0
+      },
+      {
+        "title": "OpenAI 披露 Patch the Planet 计划借助 GPT-5.6 Sol 发现 PHP 关键漏洞并协调全球修复",
+        "url": "https://aihot.news/items/r4saw5foxj8v0eb82f3b66cs0",
+        "source_name": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+        "source_url": "https://aihot.news/items/r4saw5foxj8v0eb82f3b66cs0",
+        "published_at": "2026-10-21 15:00",
+        "event_type": "aihot_news",
+        "raw_summary": "OpenAI 宣布在过去两个月牵头维护者、研究者与安全厂商联盟，修复 PHP 的关键漏洞，其中 Calif 用 GPT-5.6 Sol 发现一处严重缺陷，Wiz 也独立发现并报告了这两个漏洞，PHP 维护者主导修复和发布。",
+        "summary": "OpenAI 宣布在过去两个月牵头维护者、研究者与安全厂商联盟，修复 PHP 的关键漏洞，其中 Calif 用 GPT-5.6 Sol 发现一处严重缺陷，Wiz 也独立发现并报告了这两个漏洞，PHP 维护者主导修复和发布。",
+        "vendor_tags": [
+          "OpenAI：官网动态（RSS · 排除企业/客户案例）"
+        ],
+        "categories": [
+          "行业动态"
+        ],
+        "aihot_category": "industry",
+        "aihot_section_label": "行业动态",
+        "aihot_backfill": false,
+        "summary_short": "OpenAI 宣布在过去两个月牵头维护者、研究者与安全厂商联盟，…",
+        "impact_score": 0
+      },
+      {
+        "title": "Wiz 披露 LiteLLM PyPI 包供应链攻击，恶意版本 v1.107.0 窃取凭据",
+        "url": "https://aihot.news/items/rmwtbq3o8rnr9kfjbgric6qew",
+        "source_name": "Wiz：Research（安全研究）",
+        "source_url": "https://aihot.news/items/rmwtbq3o8rnr9kfjbgric6qew",
+        "published_at": "2026-10-21 21:44",
+        "event_type": "aihot_news",
+        "raw_summary": "Wiz 披露 10 月 21 日 11:39 UTC 有恶意版本 LiteLLM 1.107.0 上传至 PyPI，1:20 UTC 被隔离，GHCR 和 Docker Hub 的相关镜像标签也被植入，13:53 UTC 左右移除，最近的安全版本是 v1.106.2。",
+        "summary": "Wiz 披露 10 月 21 日 11:39 UTC 有恶意版本 LiteLLM 1.107.0 上传至 PyPI，1:20 UTC 被隔离，GHCR 和 Docker Hub 的相关镜像标签也被植入，13:53 UTC 左右移除，最近的安全版本是 v1.106.2。",
+        "vendor_tags": [
+          "Wiz：Research（安全研究）"
+        ],
+        "categories": [
+          "行业动态"
+        ],
+        "aihot_category": "industry",
+        "aihot_section_label": "行业动态",
+        "aihot_backfill": false,
+        "summary_short": "Wiz 披露 10 月 21 日 11:39 UTC 有恶意版本…",
+        "impact_score": 0
+      },
+      {
+        "title": "OpenAI 与 Google Cloud 达成合作，OpenAI 模型将进入 Model Garden",
+        "url": "https://aihot.news/items/bm4bwid4hdnitbtz7pr6gtd0r",
+        "source_name": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+        "source_url": "https://aihot.news/items/bm4bwid4hdnitbtz7pr6gtd0r",
+        "published_at": "2026-10-21 20:00",
+        "event_type": "aihot_news",
+        "raw_summary": "OpenAI 与 Google Cloud 达成合作，将把 OpenAI 前沿模型和 Codex 智能体工作流引入 Google Cloud 的 Model Garden，客户可通过 Google Cloud Marketplace 购买，并可用 GCP 消费承诺抵扣。",
+        "summary": "OpenAI 与 Google Cloud 达成合作，将把 OpenAI 前沿模型和 Codex 智能体工作流引入 Google Cloud 的 Model Garden，客户可通过 Google Cloud Marketplace 购买，并可用 GCP 消费承诺抵扣。",
+        "vendor_tags": [
+          "OpenAI：官网动态（RSS · 排除企业/客户案例）"
+        ],
+        "categories": [
+          "行业动态"
+        ],
+        "aihot_category": "industry",
+        "aihot_section_label": "行业动态",
+        "aihot_backfill": false,
+        "summary_short": "OpenAI 与 Google Cloud 达成合作，将把 Op…",
+        "impact_score": 0
+      },
+      {
+        "title": "SpaceX Q3 2026 财报电话会要点：AI 算力业务成最大收入来源",
+        "url": "https://aihot.news/items/qhvh1rm03vym5ns6ku6hjkkmq",
+        "source_name": "X：Rohan Paul (@rohanpaul_ai)",
+        "source_url": "https://aihot.news/items/qhvh1rm03vym5ns6ku6hjkkmq",
+        "published_at": "2026-10-21 12:50",
+        "event_type": "aihot_news",
+        "raw_summary": "Rohan Paul 总结 SpaceX Q3 2026 财报电话会要点：Super Intelligence 算力租赁业务（客户含 Anthropic 和 Google）收入 $7.6B，近翻三倍于 Q2 的 $2.56B，超过 Starlink 连接业务的 $5.2B 成最大收入来源，其中 $608M 来自新收购的 Cursor。",
+        "summary": "Rohan Paul 总结 SpaceX Q3 2026 财报电话会要点：Super Intelligence 算力租赁业务（客户含 Anthropic 和 Google）收入 $7.6B，近翻三倍于 Q2 的 $2.56B，超过 Starlink 连接业务的 $5.2B 成最大收入来源，其中 $608M 来自新收购的 Cursor。",
+        "vendor_tags": [
+          "X：Rohan Paul (@rohanpaul_ai)"
+        ],
+        "categories": [
+          "行业动态"
+        ],
+        "aihot_category": "industry",
+        "aihot_section_label": "行业动态",
+        "aihot_backfill": false,
+        "summary_short": "Rohan Paul 总结 SpaceX Q3 2026 财报电…",
+        "impact_score": 0
+      },
+      {
+        "title": "WSJ 披露 Anthropic IPO 草案：上半年收入 163 亿美元、纸面亏损 807 亿美元、约 4500 亿美元算力承诺",
+        "url": "https://aihot.news/items/oiqrjvmo3ausrs9j1ttttsqc5",
+        "source_name": "X：Rohan Paul (@rohanpaul_ai)",
+        "source_url": "https://aihot.news/items/oiqrjvmo3ausrs9j1ttttsqc5",
+        "published_at": "2026-10-21 12:32",
+        "event_type": "aihot_news",
+        "raw_summary": "WSJ 看到 Anthropic 的 IPO 草案文件，显示其上半年收入 $16.3B、纸面亏损 $80.7B，并承诺约 $4500 亿算力支出。",
+        "summary": "WSJ 看到 Anthropic 的 IPO 草案文件，显示其上半年收入 $16.3B、纸面亏损 $80.7B，并承诺约 $4500 亿算力支出。",
+        "vendor_tags": [
+          "X：Rohan Paul (@rohanpaul_ai)"
+        ],
+        "categories": [
+          "行业动态"
+        ],
+        "aihot_category": "industry",
+        "aihot_section_label": "行业动态",
+        "aihot_backfill": false,
+        "summary_short": "WSJ 看到 Anthropic 的 IPO 草案文件，显示其上…",
+        "impact_score": 0
+      },
+      {
+        "title": "ChinaTalk 解读商务部第48号公告对AI技术出口管制的影响",
+        "url": "https://aihot.news/items/btdpdvumudpoab4rls1j5ni8m",
+        "source_name": "ChinaTalk（RSS）",
+        "source_url": "https://aihot.news/items/btdpdvumudpoab4rls1j5ni8m",
+        "published_at": "2026-10-21 21:43",
+        "event_type": "aihot_news",
+        "raw_summary": "ChinaTalk 作者详读中国商务部与科技部10月16日发布的第48号公告草案，该草案拟向《中国禁止出口限制出口技术目录》新增40项技术（14项禁售、26项需许可），其中23项涉及AI。",
+        "summary": "ChinaTalk 作者详读中国商务部与科技部10月16日发布的第48号公告草案，该草案拟向《中国禁止出口限制出口技术目录》新增40项技术（14项禁售、26项需许可），其中23项涉及AI。",
+        "vendor_tags": [
+          "ChinaTalk（RSS）"
+        ],
+        "categories": [
+          "行业动态"
+        ],
+        "aihot_category": "industry",
+        "aihot_section_label": "行业动态",
+        "aihot_backfill": false,
+        "summary_short": "ChinaTalk 作者详读中国商务部与科技部10月16日发布的…",
+        "impact_score": 0
+      },
+      {
+        "title": "Mistral 与 NVIDIA 合作开发 AI 原生工程工作流",
+        "url": "https://aihot.news/items/jog035mzu9a3orebqeh89bzy8",
+        "source_name": "Mistral AI：News（网页）",
+        "source_url": "https://aihot.news/items/jog035mzu9a3orebqeh89bzy8",
+        "published_at": "2026-10-21 20:00",
+        "event_type": "aihot_news",
+        "raw_summary": "Mistral 与 NVIDIA 合作开发基于 NVIDIA 加速计算的 AI 原生工程工作流，将 Mistral Large 4 与 Mistral 的数据生成、物理建模管线结合，并接入 NVIDIA CUDA-X、Warp 与 Omniverse。",
+        "summary": "Mistral 与 NVIDIA 合作开发基于 NVIDIA 加速计算的 AI 原生工程工作流，将 Mistral Large 4 与 Mistral 的数据生成、物理建模管线结合，并接入 NVIDIA CUDA-X、Warp 与 Omniverse。",
+        "vendor_tags": [
+          "Mistral AI：News（网页）"
+        ],
+        "categories": [
+          "行业动态"
+        ],
+        "aihot_category": "industry",
+        "aihot_section_label": "行业动态",
+        "aihot_backfill": false,
+        "summary_short": "Mistral 与 NVIDIA 合作开发基于 NVIDIA 加…",
+        "impact_score": 0
+      },
+      {
+        "title": "Microsoft Research 与合作者证明 31 年历史的 KLS 猜想",
+        "url": "https://aihot.news/items/y1fd2c0s3ydociygdah7apvme",
+        "source_name": "Microsoft Research 博客（RSS）",
+        "source_url": "https://aihot.news/items/y1fd2c0s3ydociygdah7apvme",
+        "published_at": "2026-10-22 00:00",
+        "event_type": "aihot_news",
+        "raw_summary": "Microsoft Research 的 Xinzhi Zhang 与 Zhao Song 证明 1995 年提出的 Kannan–Lovász–Simonovits（KLS）猜想，表明对数凹分布的最优平面切割与任意形状切割的差距不随维度增长，以普适常数为界。",
+        "summary": "Microsoft Research 的 Xinzhi Zhang 与 Zhao Song 证明 1995 年提出的 Kannan–Lovász–Simonovits（KLS）猜想，表明对数凹分布的最优平面切割与任意形状切割的差距不随维度增长，以普适常数为界。",
+        "vendor_tags": [
+          "Microsoft Research 博客（RSS）"
+        ],
+        "categories": [
+          "论文研究"
+        ],
+        "aihot_category": "paper",
+        "aihot_section_label": "论文研究",
+        "aihot_backfill": false,
+        "summary_short": "Microsoft Research 的 Xinzhi Zhan…",
+        "impact_score": 0
+      },
+      {
+        "title": "OpenAI 与 PerturbAI、Scripps Research 用数千个 GPT‑Rosalind 智能体 32 分钟挖掘脑细胞数据新研究线索",
+        "url": "https://aihot.news/items/indtvl01y865vrsp81h64q7j4",
+        "source_name": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+        "source_url": "https://aihot.news/items/indtvl01y865vrsp81h64q7j4",
+        "published_at": "2026-10-21 12:50",
+        "event_type": "aihot_news",
+        "raw_summary": "OpenAI、PerturbAI 与 Scripps Research 联合发布研究，用数千个由 GPT‑Rosalind 驱动的 AI 智能体并行分析数百万小鼠脑细胞的全脑 CRISPR atlas，32 分钟内完成分析与文献解读，并称人工逐一分析需数月至一年。",
+        "summary": "OpenAI、PerturbAI 与 Scripps Research 联合发布研究，用数千个由 GPT‑Rosalind 驱动的 AI 智能体并行分析数百万小鼠脑细胞的全脑 CRISPR atlas，32 分钟内完成分析与文献解读，并称人工逐一分析需数月至一年。",
+        "vendor_tags": [
+          "OpenAI：官网动态（RSS · 排除企业/客户案例）"
+        ],
+        "categories": [
+          "论文研究"
+        ],
+        "aihot_category": "paper",
+        "aihot_section_label": "论文研究",
+        "aihot_backfill": false,
+        "summary_short": "OpenAI、PerturbAI 与 Scripps Resea…",
+        "impact_score": 0
+      },
+      {
+        "title": "Google Research 发表 AI 盲扫超声孕周评估研究，准确性与专家操作相当",
+        "url": "https://aihot.news/items/ndcmko0udqo2kgybo0kolxswj",
+        "source_name": "Google Research：Blog（网页）",
+        "source_url": "https://aihot.news/items/ndcmko0udqo2kgybo0kolxswj",
+        "published_at": "2026-10-21 08:00",
+        "event_type": "aihot_news",
+        "raw_summary": "Google Research 在 JAMA Network Open 发表前瞻性多中心研究，评估基于\"盲扫\"超声的 AI 孕周评估模型在不同临床环境和设备上的泛化能力。",
+        "summary": "Google Research 在 JAMA Network Open 发表前瞻性多中心研究，评估基于\"盲扫\"超声的 AI 孕周评估模型在不同临床环境和设备上的泛化能力。",
+        "vendor_tags": [
+          "Google Research：Blog（网页）"
+        ],
+        "categories": [
+          "论文研究"
+        ],
+        "aihot_category": "paper",
+        "aihot_section_label": "论文研究",
+        "aihot_backfill": false,
+        "summary_short": "Google Research 在 JAMA Network O…",
+        "impact_score": 0
+      },
+      {
+        "title": "编程 Agent 增长遭遇人类评审瓶颈：Tessl 博客解析信任赤字",
+        "url": "https://aihot.news/items/wz8yuzgpztob6gtdo8pxuip2j",
+        "source_name": "Tessl：产品与工程博客",
+        "source_url": "https://aihot.news/items/wz8yuzgpztob6gtdo8pxuip2j",
+        "published_at": "2026-10-21 00:00",
+        "event_type": "aihot_news",
+        "raw_summary": "Tessl 博客引用 Jellyfish 2026 年 9 月 AI Engineering Trends 数据指出，中位数公司已有 22% 的合并 PR 由自主编码 Agent 撰写（90 分位达 53%），但仅约 0.6% 的 PR 由 Agent 评审合并（前 10% 公司为 9%）。",
+        "summary": "Tessl 博客引用 Jellyfish 2026 年 9 月 AI Engineering Trends 数据指出，中位数公司已有 22% 的合并 PR 由自主编码 Agent 撰写（90 分位达 53%），但仅约 0.6% 的 PR 由 Agent 评审合并（前 10% 公司为 9%）。",
+        "vendor_tags": [
+          "Tessl：产品与工程博客"
+        ],
+        "categories": [
+          "技巧与观点"
+        ],
+        "aihot_category": "tip",
+        "aihot_section_label": "技巧与观点",
+        "aihot_backfill": false,
+        "summary_short": "Tessl 博客引用 Jellyfish 2026 年 9 月 …",
+        "impact_score": 0
+      }
+    ],
+    "source_diagnostics": {
+      "high_potential": {
+        "discovery_candidate_count": 10,
+        "revisit_candidate_count": 5,
+        "deduped_candidate_count": 14,
+        "duplicates_removed": 1,
+        "selected_count": 2,
+        "discovery_selected_count": 2,
+        "revisit_selected_count": 0,
+        "blocked_by_cluster_count": 12,
+        "max_items": 12,
+        "max_revisit_items": 4,
+        "max_per_interest": 2,
+        "max_per_mechanism": 2,
+        "copy_updated_count": 2,
+        "copy_cache_hits": 0,
+        "copy_openai_generated_count": 2,
+        "copy_fallback_count": 0,
+        "copy_prompt_version": "openai_compact_v5",
+        "history_blocked_count": 0,
+        "in_run_duplicate_count": 0,
+        "revisit_history_bypass_count": 0,
+        "layer_counts": {
+          "dev_tool": 2,
+          "knowledge": 2,
+          "product": 3
+        }
+      },
+      "observation": {
+        "social_signal_count": 30,
+        "github_interest_count": 10,
+        "product_hunt_interest_count": 2,
+        "rule_source": "social_plus_product_sources",
+        "product_hunt_history_blocked_count": 0,
+        "product_card_duplicate_count": 0,
+        "product_card_count": 2,
+        "idea_count": 3
+      },
+      "vendor_news": {
+        "source_count": 21,
+        "source_meta": [
+          {
+            "source_name": "OpenAI News",
+            "fetch_url": "https://openai.com/news/rss.xml",
+            "parser": "rss",
+            "ok": true,
+            "candidate_count": 12,
+            "error": ""
+          },
+          {
+            "source_name": "Anthropic News",
+            "fetch_url": "https://www.anthropic.com/news",
+            "parser": "anthropic_news_html",
+            "ok": true,
+            "candidate_count": 0,
+            "error": ""
+          },
+          {
+            "source_name": "Google Gemini SDK Releases",
+            "fetch_url": "https://api.github.com/repos/googleapis/python-genai/releases?per_page=12",
+            "parser": "github_releases_json",
+            "ok": true,
+            "candidate_count": 12,
+            "error": ""
+          },
+          {
+            "source_name": "Microsoft AI Blog",
+            "fetch_url": "https://blogs.microsoft.com/feed/",
+            "parser": "rss",
+            "ok": true,
+            "candidate_count": 10,
+            "error": ""
+          },
+          {
+            "source_name": "Microsoft Copilot Blog",
+            "fetch_url": "https://www.microsoft.com/en-us/microsoft-copilot/blog/feed/",
+            "parser": "rss",
+            "ok": false,
+            "candidate_count": 0,
+            "error": "not well-formed (invalid token): line 36, column 21"
+          },
+          {
+            "source_name": "Microsoft Azure Blog",
+            "fetch_url": "https://azure.microsoft.com/en-us/blog/feed/",
+            "parser": "rss",
+            "ok": true,
+            "candidate_count": 10,
+            "error": ""
+          },
+          {
+            "source_name": "Meta AI Research",
+            "fetch_url": "https://engineering.fb.com/category/ai-research/feed/",
+            "parser": "rss",
+            "ok": true,
+            "candidate_count": 9,
+            "error": ""
+          },
+          {
+            "source_name": "xAI SDK Releases",
+            "fetch_url": "https://api.github.com/repos/xai-org/xai-sdk-python/releases?per_page=12",
+            "parser": "github_releases_json",
+            "ok": true,
+            "candidate_count": 12,
+            "error": ""
+          },
+          {
+            "source_name": "Mistral SDK Releases",
+            "fetch_url": "https://api.github.com/repos/mistralai/client-python/releases?per_page=12",
+            "parser": "github_releases_json",
+            "ok": true,
+            "candidate_count": 12,
+            "error": ""
+          },
+          {
+            "source_name": "AWS Machine Learning Blog",
+            "fetch_url": "https://aws.amazon.com/blogs/machine-learning/feed/",
+            "parser": "rss",
+            "ok": true,
+            "candidate_count": 12,
+            "error": ""
+          },
+          {
+            "source_name": "NVIDIA Technical Blog",
+            "fetch_url": "https://developer.nvidia.com/blog/feed/",
+            "parser": "rss",
+            "ok": true,
+            "candidate_count": 12,
+            "error": ""
+          },
+          {
+            "source_name": "Kimi Blog",
+            "fetch_url": "https://www.kimi.com/blog/",
+            "parser": "kimi_blog_html",
+            "ok": true,
+            "candidate_count": 0,
+            "error": ""
+          },
+          {
+            "source_name": "智谱新功能发布",
+            "fetch_url": "https://docs.bigmodel.cn/cn/update/new-releases",
+            "parser": "zhipu_releases_html",
+            "ok": true,
+            "candidate_count": 12,
+            "error": ""
+          },
+          {
+            "source_name": "MiniMax News",
+            "fetch_url": "https://www.minimaxi.com/news",
+            "parser": "minimax_news_html",
+            "ok": true,
+            "candidate_count": 1,
+            "error": ""
+          },
+          {
+            "source_name": "Qwen Blog",
+            "fetch_url": "https://qwenlm.github.io/zh/blog/index.xml",
+            "parser": "rss",
+            "ok": true,
+            "candidate_count": 12,
+            "error": ""
+          },
+          {
+            "source_name": "DeepSeek API 更新",
+            "fetch_url": "https://api-docs.deepseek.com/updates",
+            "parser": "deepseek_updates_html",
+            "ok": true,
+            "candidate_count": 0,
+            "error": ""
+          },
+          {
+            "source_name": "阶跃星辰产品博客",
+            "fetch_url": "https://www.stepfun.com/",
+            "parser": "stepfun_home_html",
+            "ok": true,
+            "candidate_count": 4,
+            "error": ""
+          },
+          {
+            "source_name": "零一万物新闻动态",
+            "fetch_url": "https://www.lingyiwanwu.com/newsroom.html",
+            "parser": "01ai_newsroom_html",
+            "ok": true,
+            "candidate_count": 12,
+            "error": ""
+          },
+          {
+            "source_name": "百度智能云产品动态",
+            "fetch_url": "https://cloud.baidu.com/news/productNews",
+            "parser": "baidu_cloud_news_html",
+            "ok": true,
+            "candidate_count": 10,
+            "error": ""
+          },
+          {
+            "source_name": "腾讯混元产品动态",
+            "fetch_url": "https://cloud.tencent.com/document/product/1729/97765",
+            "parser": "tencent_hunyuan_updates_html",
+            "ok": true,
+            "candidate_count": 3,
+            "error": ""
+          },
+          {
+            "source_name": "火山引擎产品新闻",
+            "fetch_url": "https://www.volcengine.com/news",
+            "parser": "volcengine_news_html",
+            "ok": true,
+            "candidate_count": 3,
+            "error": ""
+          }
+        ],
+        "candidate_count": 31,
+        "selected_count": 8,
+        "max_age_days": 30,
+        "max_items": 8,
+        "max_per_vendor": 1,
+        "summary_cache_hits": 4,
+        "summary_openai_generated_count": 4,
+        "summary_fallback_count": 0,
+        "summary_prompt_version": "vendor_summary_zh_v4",
+        "empty_allowed": true
+      },
+      "aihot_news": {
+        "notes": [],
+        "report_date": "2026-10-22",
+        "fallback_used": false,
+        "pool_size": 594,
+        "section_counts": {
+          "模型发布/更新": 1,
+          "产品发布/更新": 5,
+          "行业动态": 7,
+          "论文研究": 3,
+          "技巧与观点": 1
+        },
+        "backfilled": [],
+        "missing_summary": 0,
+        "missing_url": 0,
+        "selected_count": 17
+      },
+      "product_hunt_blocked_key_count": 270
+    }
+  },
+  "high_potential_items": [
+    {
+      "title": "ethanplusai/harvey",
+      "full_name": "ethanplusai/harvey",
+      "url": "https://github.com/ethanplusai/harvey",
+      "source_type": "github",
+      "source_layer": "discovery",
+      "repo_id": 1179388779,
+      "owner": "ethanplusai",
+      "name": "harvey",
+      "summary": "Autonomous AI sales agent powered by Claude Code or Codex. Finds prospects, writes cold emails, sends campaigns, handles replies, books meetings. No API keys needed — runs on your Claude or Codex subscriptions.",
+      "interest_tags": [
+        "开发者工具",
+        "工作流自动化",
+        "效率办公"
+      ],
+      "domain_tags": [],
+      "tool_tags": [],
+      "mechanism_tags": [],
+      "highlight_one_liner": "订阅即跑，从找客户到约会议全自动",
+      "highlight_keywords": [
+        "无需 API key",
+        "冷邮件自动撰写",
+        "潜客挖掘",
+        "自动约会议"
+      ],
+      "reuse_direction": "可以借鉴它把 Claude Code、Codex 订阅当作 agent 运行底座的做法，把「找潜客、写冷邮件、跟进回复、约会议」串成一条常驻自动化流程，不必另开 API 账号，也不必按 token 计费。",
+      "minimal_mvp": "第一版先让销售从单个渠道拉出 20 个潜客，逐人生成个性化冷邮件草稿，人工确认后发送；回复先只做意向分类和提醒，暂不接日历，也不自动回信。",
+      "selection_reason": "GitHub Trending 周榜显示本周新增热度约 1491；已有较强社区验证",
+      "is_revisit": false,
+      "revisit_reason": "",
+      "score": 237.625,
+      "rank_score": 77.8202,
+      "stars_total": 2001,
+      "stars_7d": 1491,
+      "stars_30d": null,
+      "forks_total": 400,
+      "watchers_total": null,
+      "created_at": "2026-03-12T01:24:50Z",
+      "pushed_at": "2026-10-21T15:08:03Z",
+      "updated_at": "2026-10-22T02:03:07Z",
+      "topics": [
+        "ai-agent",
+        "autonomous-agent",
+        "claude",
+        "cold-email",
+        "prospecting",
+        "python",
+        "sales-automation"
+      ],
+      "semantic_bonus": 23.0,
+      "ai_noise": false,
+      "ai_match_score": 9,
+      "ai_priority": "headline",
+      "ai_rationale": "由 Claude Code/Codex 驱动的自主销售 Agent，覆盖线索挖掘、冷邮件撰写与发送、回复跟进和约会议，直接命中邮件自动化与企业销售工作流场景，且周增约 1500 星验证了产品化需求。",
+      "value_tag": "可迁移机制",
+      "copy_generation_source": "openai",
+      "copy_prompt_version": "openai_compact_v5"
+    },
+    {
+      "title": "wshobson/agents",
+      "full_name": "wshobson/agents",
+      "url": "https://github.com/wshobson/agents",
+      "source_type": "github",
+      "source_layer": "discovery",
+      "repo_id": 1025856648,
+      "owner": "wshobson",
+      "name": "agents",
+      "summary": "Multi-harness agentic plugin marketplace for Claude Code, Codex, Cursor, OpenCode, GitHub Copilot, Google Antigravity, and Pi",
+      "interest_tags": [
+        "开发者工具",
+        "多 Agent 协作"
+      ],
+      "domain_tags": [],
+      "tool_tags": [],
+      "mechanism_tags": [],
+      "highlight_one_liner": "七种编码 Agent 共用一个插件市场",
+      "highlight_keywords": [
+        "跨工具插件分发",
+        "subagent 集合",
+        "规则与 MCP 适配"
+      ],
+      "reuse_direction": "把同一套 subagent、skill 和规则同时适配多个编码工具，做跨 harness 的插件分发层，是可直接迁移的产品方向。",
+      "minimal_mvp": "第一版先选 Claude Code 和 Cursor 两个 harness，把同一份 subagent 与规则打包成可安装插件，验证跨工具复用是否成立。",
+      "selection_reason": "GitHub Trending 周榜显示本周新增热度约 785；已有较强社区验证",
+      "is_revisit": false,
+      "revisit_reason": "",
+      "score": 240.45,
+      "rank_score": 70.85,
+      "stars_total": 41485,
+      "stars_7d": 785,
+      "stars_30d": null,
+      "forks_total": 4405,
+      "watchers_total": null,
+      "created_at": "2025-07-24T23:28:14Z",
+      "pushed_at": "2026-10-19T18:28:14Z",
+      "updated_at": "2026-10-22T01:49:33Z",
+      "topics": [
+        "agent-skills",
+        "agentic-ai",
+        "ai-agents",
+        "anthropic",
+        "antigravity",
+        "claude",
+        "claude-code",
+        "claude-code-marketplace",
+        "claude-code-plugin",
+        "claude-skills",
+        "codex",
+        "coding-agents",
+        "cursor",
+        "cursor-rules",
+        "github-copilot",
+        "mcp",
+        "multi-agent",
+        "opencode",
+        "pi-coding-agent",
+        "subagents"
+      ],
+      "semantic_bonus": 23.0,
+      "ai_noise": false,
+      "ai_match_score": 4,
+      "ai_priority": "low",
+      "ai_rationale": "面向多种编码 Agent 的插件市场，属开发者工具基础设施而非 AI 应用产品，且偏生态聚合，与雷达关注的产品化场景关联有限。",
+      "value_tag": "可迁移机制",
+      "copy_generation_source": "openai",
+      "copy_prompt_version": "openai_compact_v5"
+    }
+  ],
+  "interest_sections": [
+    {
+      "title": "企业自动化工作流",
+      "summary": "这一组信号主要来自 zhihu、Product Hunt，核心观察是企业自动化的需求已从买工具转向先定位流程卡点再组合自动化，产品机会在诊断加轻量编排而非全能平台。",
+      "items": [
+        {
+          "title": "需求",
+          "paragraph": "",
+          "source": "social",
+          "url": "https://zhuanlan.zhihu.com/p/31480030343 ｜ https://www.zhihu.com/question/10825485146/answer/2017984023541085305",
+          "source_labels": [
+            "社媒",
+            "知乎"
+          ],
+          "source_url_list": [
+            "https://zhuanlan.zhihu.com/p/31480030343",
+            "https://www.zhihu.com/question/10825485146/answer/2017984023541085305"
+          ]
+        },
+        {
+          "title": "现状",
+          "paragraph": "知乎讨论里，企业一边被 CRM 类产品教育，一边在运维场景用 Ansible 等脚本和编排工具先处理批量执行和重复操作，但普遍共识是没有通用第一名的工具，得先判断自己卡在批量执行、告警混乱还是资产与工单断档。",
+          "source": "social",
+          "url": "https://zhuanlan.zhihu.com/p/31480030343 ｜ https://www.zhihu.com/question/10825485146/answer/2017984023541085305",
+          "source_labels": [
+            "社媒",
+            "知乎"
+          ],
+          "source_url_list": [
+            "https://zhuanlan.zhihu.com/p/31480030343",
+            "https://www.zhihu.com/question/10825485146/answer/2017984023541085305"
+          ]
+        },
+        {
+          "title": "方向跟踪",
+          "paragraph": "值得跟踪的是能先诊断企业当前流程阻塞点，再按阻塞类型拼装自动化步骤（数据整合、批量执行、告警收敛）的轻量流程编排产品，而不是再做一个大而全的 CRM 或运维平台。",
+          "source": "synthesis",
+          "url": "https://zhuanlan.zhihu.com/p/31480030343 ｜ https://www.zhihu.com/question/10825485146/answer/2017984023541085305",
+          "source_labels": [
+            "社媒",
+            "知乎"
+          ],
+          "source_url_list": [
+            "https://zhuanlan.zhihu.com/p/31480030343",
+            "https://www.zhihu.com/question/10825485146/answer/2017984023541085305"
+          ]
+        }
+      ],
+      "product_items": [
+        {
+          "title": "Kai Resolve by Gleap",
+          "url": "https://www.producthunt.com/products/gleap?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai-idea-radar-v4-2+%28ID%3A+294543%29",
+          "website_url": "https://www.producthunt.com/r/XI7TL2X7GPY7ZR?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai-idea-radar-v4-2+%28ID%3A+294543%29",
+          "summary": "Support that does the digging for you.",
+          "description": "Kai Resolve is the AI agent for support tickets your docs can't answer. It reads the screen recording, logs, account data and your code, read-only, then answers the customer or escalates with a diagnosis. Confirmed bugs become coding tasks your team reviews.",
+          "source_label": "Product Hunt",
+          "heat_line": "▲149｜💬24",
+          "stars_total": "149",
+          "tags": [
+            "企业自动化工作流",
+            "开发者工具",
+            "客户支持",
+            "企业服务",
+            "AI agent",
+            "工单系统"
+          ],
+          "interest_tags": [
+            "企业自动化工作流",
+            "开发者工具"
+          ],
+          "tool_tags": [
+            "AI agent",
+            "工单系统",
+            "自动化"
+          ],
+          "mechanism_tags": [
+            "多源数据读取",
+            "自动诊断",
+            "任务生成"
+          ],
+          "highlight_one_liner": "AI 客服代理自动排查并解决用户问题",
+          "reuse_direction": "优先复用「多源数据读取 / 自动诊断」这条能力链，把 企业自动化工作流 做成单任务工具入口",
+          "minimal_mvp": "先做一个面向 企业自动化工作流 的轻量工具，优先覆盖「AI agent / 工单系统」"
+        }
+      ]
+    },
+    {
+      "title": "邮件自动化工具",
+      "summary": "这一组信号主要来自 zhihu、GitHub，核心观察是外贸邮件自动化需求落在回复生成与送达率保障上，但当前解法仍分散在工具清单、AI邮箱客户端和agent协调层之间。",
+      "items": [
+        {
+          "title": "需求",
+          "paragraph": "",
+          "source": "social",
+          "url": "https://zhuanlan.zhihu.com/p/1940813943007322827 ｜ https://www.zhihu.com/question/2029879302720832806/answer/2064206354961667970",
+          "source_labels": [
+            "社媒",
+            "知乎"
+          ],
+          "source_url_list": [
+            "https://zhuanlan.zhihu.com/p/1940813943007322827",
+            "https://www.zhihu.com/question/2029879302720832806/answer/2064206354961667970"
+          ]
+        },
+        {
+          "title": "现状",
+          "paragraph": "当前做法是在知乎上罗列邮箱验证、黑名单检测等零散工具，或推荐AI邮箱客户端（如WAIMAOINBOAX）辅助英文回复和客户跟进，而GitHub上的mcp_agent_mail则代表用异步协调层管理收件箱和线程的另一条技术思路。",
+          "source": "social",
+          "url": "https://zhuanlan.zhihu.com/p/1940813943007322827 ｜ https://www.zhihu.com/question/2029879302720832806/answer/2064206354961667970",
+          "source_labels": [
+            "社媒",
+            "知乎"
+          ],
+          "source_url_list": [
+            "https://zhuanlan.zhihu.com/p/1940813943007322827",
+            "https://www.zhihu.com/question/2029879302720832806/answer/2064206354961667970"
+          ]
+        },
+        {
+          "title": "方向跟踪",
+          "paragraph": "值得跟踪的是把发件前邮箱有效性/黑名单检查、AI英文回复草稿和客户跟进提醒串成一条外贸邮件流水线，并参考mcp_agent_mail的线程化协调方式管理多客户往来。",
+          "source": "synthesis",
+          "url": "https://zhuanlan.zhihu.com/p/1940813943007322827 ｜ https://www.zhihu.com/question/2029879302720832806/answer/2064206354961667970",
+          "source_labels": [
+            "社媒",
+            "知乎"
+          ],
+          "source_url_list": [
+            "https://zhuanlan.zhihu.com/p/1940813943007322827",
+            "https://www.zhihu.com/question/2029879302720832806/answer/2064206354961667970"
+          ]
+        }
+      ],
+      "product_items": [
+        {
+          "title": "Dicklesworthstone/mcp_agent_mail",
+          "url": "https://github.com/Dicklesworthstone/mcp_agent_mail",
+          "website_url": "",
+          "summary": "",
+          "description": "",
+          "source_label": "GitHub",
+          "heat_line": "🌟2217",
+          "stars_total": "2217",
+          "tags": [
+            "邮件自动化工具",
+            "开发者工具",
+            "知识检索/RAG"
+          ],
+          "interest_tags": [
+            "邮件自动化工具",
+            "开发者工具",
+            "知识检索/RAG"
+          ],
+          "tool_tags": [],
+          "mechanism_tags": [],
+          "highlight_one_liner": "AI编码代理异步协调层",
+          "reuse_direction": "把「邮件自动化工具 / 开发者工具」封装成更明确的岗位或任务入口",
+          "minimal_mvp": "先做一个面向 邮件自动化工具 的轻量单任务工具"
+        }
+      ]
+    },
+    {
+      "title": "供应链仓储 AI 应用",
+      "summary": "这一组信号主要来自 zhihu，两篇内容都没有谈模型本身，而是把供应链 AI 的落点集中在库存与补货分析的数据口径统一和工具选型成本上。",
+      "items": [
+        {
+          "title": "需求",
+          "paragraph": "",
+          "source": "social",
+          "url": "https://zhuanlan.zhihu.com/p/693627895 ｜ https://zhuanlan.zhihu.com/p/2085084071491908505",
+          "source_labels": [
+            "社媒"
+          ],
+          "source_url_list": [
+            "https://zhuanlan.zhihu.com/p/693627895",
+            "https://zhuanlan.zhihu.com/p/2085084071491908505"
+          ]
+        },
+        {
+          "title": "现状",
+          "paragraph": "中小团队普遍用 Excel 加 VBA/PowerQuery 甚至 Eviews 做预测与库存统计，规模上来后就在“继续用 Excel、自研系统、换商用 BI 搭共享看板”之间做选型权衡，讨论集中在各方案的数据治理成本和跨部门协同边界。",
+          "source": "social",
+          "url": "https://zhuanlan.zhihu.com/p/693627895 ｜ https://zhuanlan.zhihu.com/p/2085084071491908505",
+          "source_labels": [
+            "社媒"
+          ],
+          "source_url_list": [
+            "https://zhuanlan.zhihu.com/p/693627895",
+            "https://zhuanlan.zhihu.com/p/2085084071491908505"
+          ]
+        },
+        {
+          "title": "方向跟踪",
+          "paragraph": "值得跟踪的是夹在 Excel 与重型 BI 之间的一层轻量库存分析能力：多角色权限可控、指标口径内置、业务人员能自助完成补货与周转分析而无需自研或依赖数据团队。",
+          "source": "synthesis",
+          "url": "https://zhuanlan.zhihu.com/p/693627895 ｜ https://zhuanlan.zhihu.com/p/2085084071491908505",
+          "source_labels": [
+            "社媒"
+          ],
+          "source_url_list": [
+            "https://zhuanlan.zhihu.com/p/693627895",
+            "https://zhuanlan.zhihu.com/p/2085084071491908505"
+          ]
+        }
+      ],
+      "product_items": []
+    }
+  ],
+  "repo_url": "https://github.com/Xuanqi-Zhou/ai-product-idea-radar"
+}
