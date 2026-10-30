@@ -1,0 +1,3776 @@
+{
+  "version": "current",
+  "source": "AI-idea-rader",
+  "generated_at": "2026-10-30T17:00:13",
+  "date_key": "2026-10-30",
+  "date_title": "2026年10月30日",
+  "briefing_path": "briefings/2026-10-30.md",
+  "ideas_path": "ideas/2026-10-30.md",
+  "briefing": {
+    "version": "v5",
+    "date_key": "2026-10-30",
+    "date_title": "2026年10月30日",
+    "theme_threads": [
+      {
+        "id": "agent-操作层扩到真机与桌面",
+        "label": "Agent 操作层扩到真机与桌面",
+        "thesis": "操作层正从打开网页扩到真机、桌面和模拟器，谁能稳定获取屏幕与输入，谁就掌握 agent 的落地入口；反爬云浏览器和真机 MCP 同时出现，说明这一层已经进入工程化竞速。",
+        "value_tag": "可迁移机制",
+        "action_hint": "可把读屏加点击的封装迁到自有设备操作层。",
+        "evidence_note": "真机驱动与浏览器例程、抗反爬云浏览器、浏览器与桌面实操，都在解决同一件事：把界面变成 agent 的输入输出。",
+        "member_count": 7,
+        "repo_count": 2,
+        "product_count": 1,
+        "practice_count": 4,
+        "score": 99.03,
+        "repos": [
+          {
+            "repo": "iphone-use",
+            "url": "https://github.com/leeguooooo/iphone-use",
+            "summary": "响应快 省Token， Let AI agents (Claude Code, Codex, any MCP client) drive a real iPhone · 让 AI agent 操作真实 iPhone：读屏、点击、输入、滑动，USB 或 Wi-Fi，自有 XCTest runner，可回放的 App flow。Open source, self-hosted on macOS.",
+            "stars": 402,
+            "score": 33.7633,
+            "tags": [
+              "开发者工具",
+              "工作流自动化",
+              "桌面工作台"
+            ],
+            "one_liner": "MCP 直控真机 iPhone：读屏、点击、输入、滑动",
+            "value_tag": "可迁移机制",
+            "reuse": "把真机操作封装成 MCP 工具、用自建 XCTest runner 稳定驱动手机，这套「agent 操作真实设备」的接法可以迁到任何需要 App 点击自动化的场景。",
+            "mvp": "第一版只跑一条链路：让 MCP 客户端连上 USB 真机，完成读屏、点击、输入三个动作，并把一次操作录成可回放的 flow。"
+          },
+          {
+            "repo": "ai-employees",
+            "url": "https://github.com/markfulton/ai-employees",
+            "summary": "Open source AI Employees. 8 scheduled business roles, 60 routines, on Claude Code and 10 other harnesses. They drive your browser the way you do and improve every run. You own the files.",
+            "stars": 817,
+            "score": 34.1972,
+            "tags": [
+              "开发者工具",
+              "工作流自动化",
+              "浏览器自动化"
+            ],
+            "one_liner": "按日程上班的8个AI业务角色",
+            "value_tag": "可迁移机制",
+            "reuse": "可迁移的是“把业务拆成角色+日程+例程清单，让 agent 像人一样操作浏览器并逐次修正”的组织方式，适合搬到自己团队的具体岗位任务上。",
+            "mvp": "先选一个高频岗位动作（如每周整理对账单），写 3-5 条固定例程，让 agent 按日程用浏览器完成并把结果存成自己持有的文件。"
+          }
+        ],
+        "products": [
+          {
+            "product": "Gologin Cloud Browser",
+            "url": "https://www.producthunt.com/products/gologin?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai-idea-radar-v4-2+%28ID%3A+294543%29",
+            "summary": "Cloud browser for AI agents and tough sites",
+            "votes": 137,
+            "score": 31.069,
+            "tags": [
+              "开发者工具",
+              "浏览器自动化"
+            ],
+            "one_liner": "给 AI Agent 的抗反爬云浏览器",
+            "value_tag": "可迁移机制",
+            "reuse": "把持久登录态、代理轮换与反爬对抗打包成远程浏览器，让 Agent 直接跑 Playwright/Puppeteer 脚本访问难抓站点，这种封装方式最值得迁移。",
+            "mvp": "先挑一个必须登录且反爬严格的站点，用云浏览器持久会话跑通 Playwright 抓取，验证登录态能跨多次任务保留。"
+          }
+        ],
+        "practices": [
+          {
+            "title": "用 ChatGPT Agent 自动发送 LinkedIn 加好友邀请",
+            "category": "销售营销",
+            "tools": [
+              "ChatGPT Agent"
+            ],
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1m34soa"
+          },
+          {
+            "title": "用 Claude 电脑操作自动玩通纸夹模拟器",
+            "category": "游戏仿真",
+            "tools": [
+              "Claude computer use"
+            ],
+            "url": "https://www.oneusefulthing.org/p/when-you-give-a-claude-a-mouse"
+          },
+          {
+            "title": "用 Claude 让 PyBoy 模拟器自动打游戏",
+            "category": "游戏仿真",
+            "tools": [
+              "Claude",
+              "PyBoy"
+            ],
+            "url": "https://github.com/jmurth1234/ClaudePlayer"
+          },
+          {
+            "title": "用 Perplexity Comet 对比竞品定价与定位",
+            "category": "研究知识",
+            "tools": [
+              "Perplexity Comet"
+            ],
+            "url": "https://sidsaladi.substack.com/p/the-20-comet-ai-browser-workflows"
+          }
+        ]
+      },
+      {
+        "id": "产品开始为-agent-而设计",
+        "label": "产品开始为 agent 而设计",
+        "thesis": "产品和网站开始为 agent 而非人设计：输出结构化 token、开放 MCP、做 agent 可用性体检、争 AI 搜索里的引用位；可被调用正在变成新的上架与获客门槛。",
+        "value_tag": "趋势信号",
+        "action_hint": "先给自有产品补 MCP 与 agent 可读性检查。",
+        "evidence_note": "两个 repo 把产物做成 agent 可调用件，SurgePix 直接标 agent-callable，Dedica 与 Notra 则度量 agent 能否读懂你，指向同一件事。",
+        "member_count": 6,
+        "repo_count": 2,
+        "product_count": 3,
+        "practice_count": 1,
+        "score": 177.63,
+        "repos": [
+          {
+            "repo": "design-extract",
+            "url": "https://github.com/Manavarya09/design-extract",
+            "summary": "Extract any website's complete design system with one command. DTCG tokens, semantic+primitive+composite, MCP server for Claude Code/Cursor/Windsurf, multi-platform emitters (iOS SwiftUI, Android Comp",
+            "stars": 4419,
+            "score": 34.025,
+            "tags": [
+              "开发者工具",
+              "浏览器自动化",
+              "图像/设计生成"
+            ],
+            "one_liner": "一条命令扒下整站设计系统",
+            "value_tag": "可迁移机制",
+            "reuse": "用 Playwright 抓取线上页面的真实样式后归一成 DTCG 设计令牌，再由同一份令牌同时派发到 iOS、Android、Flutter、Tailwind 和 Figma 变量，这套「抓取—归一—多端派发」的链路可以搬到任何需要复用同一份设计资产的多端项目。",
+            "mvp": "第一版只做 CLI：用 Playwright 打开一个 URL，抽取颜色、字号、间距等原始样式，去重合并后输出一份 DTCG 格式的 tokens.json，先不接 MCP、不做多端 emitter。"
+          },
+          {
+            "repo": "next-ai-draw-io",
+            "url": "https://github.com/DayuanJiang/next-ai-draw-io",
+            "summary": "Draw and edit draw.io diagrams by chatting with an AI. Web app, desktop app, and an MCP server for Claude Code, Cursor, Codex and VS Code.",
+            "stars": 36493,
+            "score": 32.45,
+            "tags": [
+              "开发者工具",
+              "桌面工作台"
+            ],
+            "one_liner": "聊天改 draw.io，MCP 接进编码工具",
+            "value_tag": "可迁移机制",
+            "reuse": "值得借鉴的是把图形编辑器的每步操作映射成对话指令，再用同一个 MCP server 把能力分发到 Claude Code、Cursor、Codex 和 VS Code，让架构图跟着代码对话一起产出。",
+            "mvp": "第一版只做 Web：用户说一句需求，AI 在 draw.io 画布生成一张可手动微调的流程图，后续修改也用对话完成。"
+          }
+        ],
+        "products": [
+          {
+            "product": "SurgePix",
+            "url": "https://www.producthunt.com/products/surgepix?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai-idea-radar-v4-2+%28ID%3A+294543%29",
+            "summary": "AI visuals. Edit every layer. Agent-callable.",
+            "votes": 263,
+            "score": 40.138,
+            "tags": [
+              "开发者工具",
+              "图像/设计生成"
+            ],
+            "one_liner": "AI 视觉可按图层逐层改",
+            "value_tag": "可迁移机制",
+            "reuse": "把 AI 生成结果拆成可单独重绘与换字的图层，让设计稿像文档一样被局部修改，这套机制值得迁移到任何生成式图像流程。",
+            "mvp": "第一版先做一条链路：图片进来后拆出文字层与背景层，只支持改文案和框选单区域重绘。"
+          },
+          {
+            "product": "Dedica",
+            "url": "https://www.producthunt.com/products/dedica?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai-idea-radar-v4-2+%28ID%3A+294543%29",
+            "summary": "Check if AI agents can use your website",
+            "votes": 307,
+            "score": 41.188,
+            "tags": [
+              "开发者工具"
+            ],
+            "one_liner": "给网站做一次 AI agent 可用性体检",
+            "value_tag": "可迁移机制",
+            "reuse": "把「换一个非人类使用者视角，重新审计既有资产是否可被读取和使用」的机制，迁移到 API 文档、帮助中心等任何需要被 AI agent 直接消费的内容上。",
+            "mvp": "第一版只做一件事：输入一个页面 URL，输出 agent 能否读到关键内容、在哪里被拦截，并给出逐条修复建议，先不做账号体系和批量扫描。"
+          },
+          {
+            "product": "Notra",
+            "url": "https://www.producthunt.com/products/notra-3?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai-idea-radar-v4-2+%28ID%3A+294543%29",
+            "summary": "Notra is a GEO tool that helps you rank in AI Search.",
+            "votes": 149,
+            "score": 29.825,
+            "tags": [
+              "知识检索/RAG"
+            ],
+            "one_liner": "盯住品牌在 AI 回答里的出场位置",
+            "value_tag": "可迁移机制",
+            "reuse": "把「模拟用户真实提问、抓取 AI 回答中品牌出现的位置与竞品顺序」这套监测思路，迁移到任何想在生成式搜索里争取曝光的品类上。",
+            "mvp": "第一版先列出 20 到 30 个用户真会问的问题，逐个跑主流 AI 搜索，记录品牌有没有被提到、排第几、旁边是谁，汇总成一张可见性对照表。"
+          }
+        ],
+        "practices": [
+          {
+            "title": "让 Claude 读邮件日历自动在 Todoist 建任务",
+            "category": "生活家务",
+            "tools": [
+              "Claude",
+              "Todoist"
+            ],
+            "url": "https://www.reddit.com/r/todoist/comments/1x73un7/anyone_actually_using_ai_to_manage_their_tasks"
+          }
+        ]
+      },
+      {
+        "id": "多-agent-分工接手长周期交付",
+        "label": "多 agent 分工接手长周期交付",
+        "thesis": "长任务已经撑不起单轮对话，编排层开始按角色、审稿和章节拆工，并让 agent 自我迭代；桌面指挥台和 swarm 终端同时出现，说明指挥多 agent 本身正在变成一种产品形态。",
+        "value_tag": "可迁移机制",
+        "action_hint": "可照搬指挥官加角色分工，做自有长任务编排。",
+        "evidence_note": "三个 repo 都在做指挥官加多角色编排，C 组的小说和小游戏是同一模式下跑出的真实交付，供给与需求同时出现。",
+        "member_count": 5,
+        "repo_count": 3,
+        "product_count": 0,
+        "practice_count": 2,
+        "score": 99.86,
+        "repos": [
+          {
+            "repo": "Orkas",
+            "url": "https://github.com/Orkas-AI/Orkas",
+            "summary": "Orkas is an open-source (MIT), local-first AI team for your desktop: a Commander turns your goal into to-dos and coordinates 16 built-in specialist agents plus Claude Code, Codex, OpenCode, OpenClaw a",
+            "stars": 4138,
+            "score": 42.6362,
+            "tags": [
+              "开发者工具",
+              "工作流自动化",
+              "桌面工作台"
+            ],
+            "one_liner": "指挥官拆目标，本地调度多代理与编码 CLI",
+            "value_tag": "可迁移机制",
+            "reuse": "值得借鉴的是 Commander 把用户目标拆成待办、按任务分派给多个专家代理，并接入 Claude Code、Codex 等外部编码代理的调度机制。",
+            "mvp": "先做桌面端目标输入框，Commander 拆出待办后分派给 2-3 个内置代理执行，并能在单个项目里看到任务完成。"
+          },
+          {
+            "repo": "Vibelution",
+            "url": "https://github.com/CCDawn/Vibelution",
+            "summary": "Local-first AI agent workbench: research teams that plan, build and review together, a finance agent, and virtual human companions — in one Electron desktop app.",
+            "stars": 80,
+            "score": 28.1603,
+            "tags": [
+              "桌面工作台",
+              "知识检索/RAG",
+              "多 Agent 协作"
+            ],
+            "one_liner": "多 Agent 分角色接手同一桌面任务",
+            "value_tag": "可迁移机制",
+            "reuse": "把研究流程拆成计划、构建、审查三个独立 Agent 角色，让它们在本地桌面里共用同一份知识图谱接力推进，这套角色分工与共享记忆的编排方式可直接迁移到其他复杂任务的自动化。",
+            "mvp": "第一版只做计划和审查两个 Agent 角色，让它们对同一任务前后接力，知识库先用本地 Markdown 文件承载，金融 Agent 和虚拟人模块暂不做。"
+          },
+          {
+            "repo": "frankenterm",
+            "url": "https://github.com/Dicklesworthstone/frankenterm",
+            "summary": "Swarm-native terminal platform for AI coding agents: real-time pane capture, change-point pattern detection, transactional policy-gated automation, a JSON/MCP robot API, and a fail-closed operating en",
+            "stars": 126,
+            "score": 29.0607,
+            "tags": [
+              "开发者工具",
+              "工作流自动化",
+              "多 Agent 协作"
+            ],
+            "one_liner": "给 AI agent 的事务化终端",
+            "value_tag": "可迁移机制",
+            "reuse": "把 agent 的终端操作拆成可捕获、可回滚的事务单元，并用策略门控和 MCP 接口对外暴露，这套机制值得迁移到其他让 AI 接管命令行的产品里。",
+            "mvp": "第一版先做单台 Mac 上的窗格实时捕获与变更点检测，再给一条策略门控、失败即拒的命令执行通道，并用 MCP 接口暴露给 agent 调用。"
+          }
+        ],
+        "products": [],
+        "practices": [
+          {
+            "title": "用 Claude Code 多智能体写 70 万字长篇小说",
+            "category": "内容创作",
+            "tools": [
+              "Claude Code"
+            ],
+            "url": "https://cloud.tencent.com/developer/article/2665477"
+          },
+          {
+            "title": "用 Claude Opus 5.5 不读代码做出四款好玩小游戏",
+            "category": "游戏仿真",
+            "tools": [
+              "Claude Opus 5.5",
+              "Claude 网页对话",
+              "Claude Code",
+              "three.js"
+            ],
+            "url": "https://simonwillison.net/2026/Oct/28/vibe-game-development/"
+          }
+        ]
+      },
+      {
+        "id": "agent-从助手转为跑业务闭环",
+        "label": "Agent 从助手转为跑业务闭环",
+        "thesis": "agent 正从帮你写走到替你跑：拉客、发帖、调仓、上架这些带副作用的动作被逐条接走；一旦有人敢让它无人值守跑 14 天，买点就从模型能力变成可靠性。",
+        "value_tag": "需求已验证",
+        "action_hint": "先挑一条副作用可控的业务链做无人值守试点。",
+        "evidence_note": "四条实践都在让 agent 承担真实业务后果，供给侧目前只有 blitz-mac 这类垂直上架工具，需求明显跑在前面。",
+        "member_count": 5,
+        "repo_count": 1,
+        "product_count": 0,
+        "practice_count": 4,
+        "score": 21.12,
+        "repos": [
+          {
+            "repo": "blitz-mac",
+            "url": "https://github.com/blitzdotdev/blitz-mac",
+            "summary": "Native macOS App Store Connect tool with MCP. Submit iOS apps to App Store with AI agents",
+            "stars": 1763,
+            "score": 21.1227,
+            "tags": [
+              "开发者工具",
+              "桌面工作台"
+            ],
+            "one_liner": "让 AI 代理直接提交 iOS 应用上架",
+            "value_tag": "可迁移机制",
+            "reuse": "把 App Store Connect 这类只能在网页后台点选的上架操作，封装成原生 macOS 客户端并暴露 MCP 工具，让 AI 代理替人走完提交动作，这套做法可迁移到其他封闭后台的代理化改造。",
+            "mvp": "第一版只做一件事：在 macOS 客户端里配置好一条 iOS 应用的元数据并完成提交，同时把这个提交动作暴露成 MCP 工具，让代理能用同一套参数触发它。"
+          }
+        ],
+        "products": [],
+        "practices": [
+          {
+            "title": "用自建 AI agent 自主运营在线生意 14 天",
+            "category": "销售营销",
+            "tools": [],
+            "url": "https://www.reddit.com/r/SideProject/comments/1r0o17j/i_built_an_ai_agent_that_runs_a_business"
+          },
+          {
+            "title": "用 AI agent 把一条 LinkedIn 帖拆成多条内容并代管互动",
+            "category": "内容创作",
+            "tools": [],
+            "url": "https://www.reddit.com/r/AI_Agents/comments/1uyoahi/i_have_run_a_oneperson_company_on_ai_agents_for_6"
+          },
+          {
+            "title": "用 ChatGPT 每周深度研究调仓微型市值股票组合",
+            "category": "金钱账单",
+            "tools": [
+              "ChatGPT",
+              "ChatGPT Deep Research"
+            ],
+            "url": "https://nathanbsmith729.substack.com/p/chatgpts-micro-cap-portfolio-week-9f4"
+          },
+          {
+            "title": "用 Grok Bot 当私人助理订机票查库存",
+            "category": "生活家务",
+            "tools": [
+              "Grok Bot"
+            ],
+            "url": "https://news.ycombinator.com/item?id=50295795"
+          }
+        ]
+      },
+      {
+        "id": "agent-运行轨迹成为可沉淀资产",
+        "label": "Agent 运行轨迹成为可沉淀资产",
+        "thesis": "agent 跑得越多，运行轨迹越值钱：历史检索、状态监视、工具调用榜和持续学习都在把跑过什么沉淀成资产；这类工具早于统一标准出现，说明观测层还是空位。",
+        "value_tag": "值得拆解",
+        "action_hint": "可拆它的轨迹数据结构，做自有 agent 观测面板。",
+        "evidence_note": "四者都在处理 agent 跑过什么，但目前只有供给、缺实践信号，属早期空位，需要自己补验证。",
+        "member_count": 4,
+        "repo_count": 1,
+        "product_count": 3,
+        "practice_count": 0,
+        "score": 138.92,
+        "repos": [
+          {
+            "repo": "claude-code-history-viewer",
+            "url": "https://github.com/jhlee0409/claude-code-history-viewer",
+            "summary": "Desktop app and web server to browse, search and analyze your AI coding assistant history — Claude Code, Codex CLI, GitHub Copilot, Gemini CLI, Cursor, OpenCode and more. 100% offline.",
+            "stars": 2290,
+            "score": 36.695,
+            "tags": [
+              "开发者工具",
+              "桌面工作台",
+              "知识检索/RAG"
+            ],
+            "one_liner": "离线翻遍七家 AI 编程助手的对话史",
+            "value_tag": "可迁移机制",
+            "reuse": "把散落在 Claude Code、Codex、Cursor、Copilot CLI 各自本地的会话记录统一解析成可搜索、可按项目回看的时间线，这种跨助手历史归一化的做法可以迁移到任何同时用多个 AI 编码工具的团队。",
+            "mvp": "第一版只读 Claude Code 的本地会话目录，在 Tauri 窗口里列出按项目分组的对话并支持全文搜索，先跑通「读取—分组—搜索」这一条链路，其他 CLI 之后再接。"
+          }
+        ],
+        "products": [
+          {
+            "product": "Overmind",
+            "url": "https://www.producthunt.com/products/overmind-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai-idea-radar-v4-2+%28ID%3A+294543%29",
+            "summary": "Open-source platform for continuous learning",
+            "votes": 311,
+            "score": 40.988,
+            "tags": [
+              "开发者工具",
+              "教育辅导"
+            ],
+            "one_liner": "生产轨迹驱动的持续学习",
+            "value_tag": "可迁移机制",
+            "reuse": "可借鉴把线上真实使用轨迹回收成训练与评测样本、让模型迭代不依赖人工标注的持续学习机制。",
+            "mvp": "第一版先接入一条生产调用日志，自动抽取输入输出作为训练样本，并跑一次新旧模型对比评测。"
+          },
+          {
+            "product": "AgentValley",
+            "url": "https://www.producthunt.com/products/agentvalley?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai-idea-radar-v4-2+%28ID%3A+294543%29",
+            "summary": "Every Claude Code agent, at a glance, in your Mac's notch",
+            "votes": 166,
+            "score": 31.108,
+            "tags": [
+              "开发者工具"
+            ],
+            "one_liner": "刘海屏秒看所有 Claude Code agent 状态",
+            "value_tag": "可迁移机制",
+            "reuse": "把多个并行 agent 会话的运行状态压缩进屏幕边缘常驻区域、抬眼即见的做法，迁移到构建任务、批处理或爬虫队列等需要同时盯多个长任务的场景。",
+            "mvp": "第一版只读本地 Claude Code 会话状态，在刘海区显示每个会话的运行、等待、结束三态和总数，点开可看最近一条输出，不做历史记录和远程同步。"
+          },
+          {
+            "product": "Agent Hunt",
+            "url": "https://www.producthunt.com/products/monid?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai-idea-radar-v4-2+%28ID%3A+294543%29",
+            "summary": "Live rankings of the tools AI agents use most",
+            "votes": 284,
+            "score": 30.125,
+            "tags": [
+              "开发者工具"
+            ],
+            "one_liner": "按 Agent 真实调用次数给工具排名",
+            "value_tag": "可迁移机制",
+            "reuse": "以 Agent 实际运行时的工具调用日志来为工具排名，这套做法可以迁移到任何依赖主观评测或下载量、又想做可信工具选型的场景。",
+            "mvp": "第一版先接入一两个主流 Agent 框架的调用日志，统计各工具被调用次数并自动排出前二十名榜单，只提供榜单页供查看。"
+          }
+        ],
+        "practices": []
+      },
+      {
+        "id": "模型与服务被收回自有栈",
+        "label": "模型与服务被收回自有栈",
+        "thesis": "模型接入、媒体服务、运行监控正被压成单容器或单端点的自托管件，断网写代码都已跑通；这说明 agent 底座正从绑定云厂商，退回自己机器上可替换的层面。",
+        "value_tag": "工具可集成",
+        "action_hint": "可先用网关加自托管监控替掉对外部云的硬依赖。",
+        "evidence_note": "网关、单容器媒体套件和自托管监控分别收拢接入、服务与运维，配合断网编码实践，共同指向把依赖搬回本地。",
+        "member_count": 4,
+        "repo_count": 3,
+        "product_count": 0,
+        "practice_count": 1,
+        "score": 90.29,
+        "repos": [
+          {
+            "repo": "OmniRoute",
+            "url": "https://github.com/cheaper-inference/OmniRoute",
+            "summary": "Never stop coding. Free MIT AI gateway: one endpoint, 375 providers (150+ free), 1,400+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cline",
+            "stars": 82613,
+            "score": 29.625,
+            "tags": [
+              "开发者工具",
+              "桌面工作台",
+              "AI 网关"
+            ],
+            "one_liner": "一个端点接 1400 模型，额度不足时自动切换来源",
+            "value_tag": "可迁移机制",
+            "reuse": "调用模型时被单一供应商额度卡住的产品，可借鉴它的配额感知路由：按剩余额度和报错自动切到免费或备用供应商，并在请求侧压缩 token，适合接进任何多模型调用链路。",
+            "mvp": "第一版只做一个统一 endpoint，接 Anthropic 与 OpenAI 两家并挂 1-2 个免费源，实现额度耗尽或报错时自动切换到下一家，先在自己的 Claude Code 或 Cursor 里跑通。"
+          },
+          {
+            "repo": "MovieClaw",
+            "url": "https://github.com/movieclaw/MovieClaw",
+            "summary": "Next-gen AI media server. One container replaces Sonarr, Radarr, Prowlarr, Bazarr, Jellyseerr and Jellyfin, with a web app, a native iPhone app, and an AI agent that gets things done. Free for persona",
+            "stars": 191,
+            "score": 34.8654,
+            "tags": [
+              "开发者工具",
+              "内容创作",
+              "法律科技"
+            ],
+            "one_liner": "一个容器替掉六件媒体套件",
+            "value_tag": "可迁移机制",
+            "reuse": "把 Sonarr、Radarr、Prowlarr、Bazarr、Jellyseerr、Jellyfin 六个各自需要安装一次、配置一次的自托管服务合并进一个容器，再让 AI 代理替用户执行加片、修任务这类操作；这套“多服务合并 + 代理代为操作”的做法，可以迁移到任何一套由多个零散自托管工具组成的流程里。",
+            "mvp": "第一版先用一个容器打通订阅、索引、下载、播放这条链路，AI 代理只做两件事：按用户要求加片，以及在任务失败时重试；让一个家庭能稳定运行即可，不先做多用户权限和插件体系。"
+          },
+          {
+            "repo": "Pulse",
+            "url": "https://github.com/rcourtman/Pulse",
+            "summary": "Real-time monitoring dashboard for Proxmox VE, PBS, Docker, Kubernetes, TrueNAS and vSphere. Self-hosted, with alerts for failed backups, full disks, unhealthy containers and offline nodes.",
+            "stars": 6982,
+            "score": 25.797,
+            "tags": [
+              "AI 网关",
+              "效率办公"
+            ],
+            "one_liner": "备份失败、满盘、容器异常一屏告警",
+            "value_tag": "工具可集成",
+            "reuse": "把 Proxmox、Docker、K8s、TrueNAS 各自的健康信号收进同一套告警规则，这种“按资源对象聚合、按故障类型触发”的组织方式可以迁移到任何需要盯多种基础设施的自建运维工具。",
+            "mvp": "第一版先只接 Proxmox VE 和 Docker 两个数据源，做节点离线、备份失败、磁盘将满三类告警，通过 Webhook 推到已有通知渠道。"
+          }
+        ],
+        "products": [],
+        "practices": [
+          {
+            "title": "用 OpenCode 配本地 Qwen 断网改代码",
+            "category": "软件研发",
+            "tools": [
+              "OpenCode",
+              "Ollama",
+              "Qwen"
+            ],
+            "url": "https://latent.space/p/offline-coding/"
+          }
+        ]
+      }
+    ],
+    "practice_items": [
+      {
+        "title": "用 Claude Opus 5.5 不读代码做出四款好玩小游戏",
+        "category": "游戏仿真",
+        "tools": [
+          "Claude Opus 5.5",
+          "Claude 网页对话",
+          "Claude Code",
+          "three.js"
+        ],
+        "what_they_did": "作者用自然语言提示让 Claude 直接产出纯 HTML/JavaScript 的浏览器小游戏（如 Tree Appreciator），全程不查看代码，只在 Claude 普通聊天界面里完成。他要求模型用 three.js 做 3D 表现，并明确让它先想清楚怎样既好玩又好看；当游戏不够有趣时，他又补一句「Make it a LOT more fun」让模型自行改进玩法。几周内用同样方式做了四款游戏，并与 GPT-6 Astra 做对比。",
+        "how_it_went": "四款游戏都能在浏览器中直接运行，作者称自己真的愿意玩；他认为 2026 年 10 月是「氛围游戏开发」的拐点，关键在于模型终于有了游戏设计感。",
+        "worth_knowing": "结果依赖具体模型版本（作者用的是 Claude Opus 5.5，并认为 GPT-6 Astra 能造游戏但「好玩度」不及）；这是主观体验式评测，没有量化指标，也没有完整逐轮提示记录。",
+        "url": "https://simonwillison.net/2026/Oct/28/vibe-game-development/",
+        "source_note": "来源：Simon Willison 个人博客（simonwillison.net）《The October inflection point for vibe game development》。",
+        "added_at": "2026-10-29"
+      },
+      {
+        "title": "用 OpenCode 配本地 Qwen 断网改代码",
+        "category": "软件研发",
+        "tools": [
+          "OpenCode",
+          "Ollama",
+          "Qwen"
+        ],
+        "what_they_did": "作者住在喜马拉雅山麓，网络和供电经常中断，于是想验证编码 agent 能否完全离线工作。他先用 Ollama 在 Mac 本地拉取并运行 Qwen 开源模型，再把终端里的编码 agent OpenCode 接到这个本地服务上，并提前下载好项目依赖和测试工具，然后断开网络，让 agent 读文件、解释陌生函数、排查失败测试、做小规模重构。",
+        "how_it_went": "原文未说明最终完成了多少任务；只说明只要模型、项目依赖和测试工具都已在本地，这类任务就能离线跑通。",
+        "worth_knowing": "离线只能处理已经在本地项目里的解释代码、查失败测试、小重构、补功能等；下载新依赖包或联网查资料仍需要网络。前提是机器能跑得动所选参数量的本地模型，并且 agent 的权限确认要逐条审查命令和改动。",
+        "url": "https://latent.space/p/offline-coding/",
+        "source_note": "来自 latent.space（Latent Space）文章《Coding From the Himalayas With an Offline AI Agent》，作者自述为 Thomson Reuters 首席工程师。",
+        "added_at": "2026-10-28"
+      },
+      {
+        "title": "用自建 AI agent 自主运营在线生意 14 天",
+        "category": "销售营销",
+        "tools": [],
+        "what_they_did": "发帖人自己搭建了一个 AI agent，让它从零搭建并自动运营一个在线生意，全程无人干预。agent 负责在 Reddit 上发帖推广引流，持续跑了 14 天来验证能否靠它独立运营。",
+        "how_it_went": "14 天里从 Reddit 带来 273 次访问，但没有产生任何收入。",
+        "worth_knowing": "材料未说明 agent 的具体技术栈和所用模型，也未说明商品或服务是什么；流量来源单一（仅 Reddit），变现环节尚未跑通，属于早期实验阶段。",
+        "url": "https://www.reddit.com/r/SideProject/comments/1r0o17j/i_built_an_ai_agent_that_runs_a_business",
+        "source_note": "Reddit r/SideProject 帖子《Run an online business autonomously with an AI agent》（作者未署名）",
+        "added_at": "2026-10-30"
+      },
+      {
+        "title": "用 AI agent 把一条 LinkedIn 帖拆成多条内容并代管互动",
+        "category": "内容创作",
+        "tools": [],
+        "what_they_did": "该作者在六个月里用 AI agent 以文本形式读写公司业务，其中一项做法是把单条 LinkedIn 帖子交给 agent 拆解成多条不同平台的衍生内容，并让 agent 一并负责评论区的互动回复。",
+        "how_it_went": "原文称互动环节出现反效果，产出被评价为 slop copy（低质批量文案），其余量化结果原文未说明。",
+        "worth_knowing": "让 agent 自动代写互动回复容易产生模板化、空洞的批量文案，需要人工审核或限定生成条数与语气；原文未给出具体工具名与配置细节。",
+        "url": "https://www.reddit.com/r/AI_Agents/comments/1uyoahi/i_have_run_a_oneperson_company_on_ai_agents_for_6",
+        "source_note": "来源：Reddit r/AI_Agents 帖文《I have run a one-person company on AI agents for 6 months》，作者未署名。",
+        "added_at": "2026-10-30"
+      },
+      {
+        "title": "用 Claude Code 多智能体写 70 万字长篇小说",
+        "category": "内容创作",
+        "tools": [
+          "Claude Code"
+        ],
+        "what_they_did": "作者先让 Claude Code 去番茄读书扒热门榜单，分析题材趋势、开局套路与爽点节奏，选定「动物变异末日+死亡回档」方向；再让它拆解同题材作品，产出一套写作与审稿规范提示词；接着用苏格拉底式反问对话逼自己想清人设、金手指代价和第一卷目标，定下大纲与书名；最后按章分配写作、审稿、设定校对等角色批量推进正文。",
+        "how_it_went": "一个假期内产出约 70 万字完本小说《人类末日：今天拯救地球了吗？》，原文未给出订阅量或读者反馈数据。",
+        "worth_knowing": "必须先把题材规范、审稿清单、行文风格写成固定提示词文件，并逐章检查是否水字数、是否出现 AI 式总结，否则五十章后设定容易崩盘；选题阶段依赖番茄读书、TV Tropes 等外部站点内容。",
+        "url": "https://cloud.tencent.com/developer/article/2665477",
+        "source_note": "腾讯云开发者社区文章《这个假期我用 Claude Code 写了一部 70 万字的小说》，作者白德鑫。",
+        "added_at": "2026-10-30"
+      },
+      {
+        "title": "用 Claude 让 PyBoy 模拟器自动打游戏",
+        "category": "游戏仿真",
+        "tools": [
+          "Claude",
+          "PyBoy"
+        ],
+        "what_they_did": "一名开发者搭建了一个 agent：用 PyBoy 模拟器运行 Game Boy 游戏，把每一帧画面交给 Claude 观察，由 Claude 决定下一步动作并按下对应按键。他还给 Claude 配了记忆工具和定期总结机制，让它在长局游戏中保留此前的状态与策略。",
+        "how_it_went": "原文未说明结果。",
+        "worth_knowing": "需要自行准备游戏 ROM 并配置 PyBoy 环境；逐帧调用模型对上下文长度和调用成本有要求，因此必须依赖记忆压缩与定期总结。",
+        "url": "https://github.com/jmurth1234/ClaudePlayer",
+        "source_note": "来源：GitHub 项目 jmurth1234/ClaudePlayer（经由 agentusecases.ai 收录）。",
+        "added_at": "2026-10-30"
+      },
+      {
+        "title": "用 Claude 电脑操作自动玩通纸夹模拟器",
+        "category": "游戏仿真",
+        "tools": [
+          "Claude computer use"
+        ],
+        "what_they_did": "Ethan Mollick 让 Claude 的 computer-use agent 在桌面上打开浏览器游戏 Universal Paperclips，并下达「赢下这个游戏」的目标。Agent 先靠反复点击推进游戏，在得到一句提示后自己编写代码来自动化游戏流程。",
+        "how_it_went": "过程中桌面中途崩溃中断，原文未说明最终是否通关。",
+        "worth_knowing": "需要给 agent 一个可操作的真实桌面/浏览器环境，长时间无人值守运行会遇到卡顿或崩溃，需要人工重试或加监控。",
+        "url": "https://www.oneusefulthing.org/p/when-you-give-a-claude-a-mouse",
+        "source_note": "One Useful Thing（Substack）Ethan Mollick 的文章《When You Give a Claude a Mouse》",
+        "added_at": "2026-10-30"
+      },
+      {
+        "title": "用 Grok Bot 当私人助理订机票查库存",
+        "category": "生活家务",
+        "tools": [
+          "Grok Bot"
+        ],
+        "what_they_did": "一位用户把 Grok Bot 配置成日常私人助理，接上图书馆账号抓取报纸内容、查询线下门店库存、规划航班行程，并定时推送活动与天气摘要。整套流程靠给 bot 开放对应服务的账号与权限来跑通。",
+        "how_it_went": "订机票、取报纸、查库存、发摘要这类任务基本能跑，但语音交互、权限管理和写代码三项表现较差。原文未给出具体耗时或量化结果。",
+        "worth_knowing": "需要把图书馆等第三方账号凭据交给 bot，权限配置环节本身就容易出问题；语音与编程类任务目前不稳定，不宜依赖。",
+        "url": "https://news.ycombinator.com/item?id=50295795",
+        "source_note": "Hacker News 讨论帖（item 50295795），作者未标注。",
+        "added_at": "2026-10-30"
+      },
+      {
+        "title": "用 ChatGPT Agent 自动发送 LinkedIn 加好友邀请",
+        "category": "销售营销",
+        "tools": [
+          "ChatGPT Agent"
+        ],
+        "what_they_did": "作者让 ChatGPT 的 Agent Mode 接管浏览器，登录 LinkedIn 后按目标人群批量发送添加好友邀请（connection invite）。整个流程由 agent 在浏览器里自动点击完成，并把过程录成了视频。",
+        "how_it_went": "原文只说明做完了这次尝试并附有录屏，未给出成功发送数量或失败情况。",
+        "worth_knowing": "依赖浏览器自动化的 Agent Mode，需要已登录的 LinkedIn 账号；平台对自动化批量加人有频率限制和封号风险，原文未说明具体额度。",
+        "url": "https://www.reddit.com/r/AI_Agents/comments/1m34soa",
+        "source_note": "来自 Reddit r/AI_Agents 社区的帖子，作者匿名（附有操作录屏）。",
+        "added_at": "2026-10-30"
+      },
+      {
+        "title": "用 ChatGPT 每周深度研究调仓微型市值股票组合",
+        "category": "金钱账单",
+        "tools": [
+          "ChatGPT",
+          "ChatGPT Deep Research"
+        ],
+        "what_they_did": "作者做了一个为期 6 个月的实验：每天把行情价格数据喂给 ChatGPT，让它跟踪一个真实的微型市值（micro-cap）股票组合；每周再让 ChatGPT 用 Deep Research 重新评估持仓并给出调仓建议。他按照建议在真实券商账户里下限价单买卖这些股票。",
+        "how_it_went": "到第 5 周时，大部分限价单没能成交，调仓基本没有执行到位；原文未说明整体收益结果。",
+        "worth_knowing": "微型市值股票流动性差，限价单很容易挂不上；实验需要每天手动喂价格数据、每周复盘，且动用真金白银，有实际亏损风险。",
+        "url": "https://nathanbsmith729.substack.com/p/chatgpts-micro-cap-portfolio-week-9f4",
+        "source_note": "来自 Substack 作者 nathanbsmith729 的「ChatGPT 微型市值组合」系列实验记录（第 5 周）。",
+        "added_at": "2026-10-29"
+      },
+      {
+        "title": "让 Claude 读邮件日历自动在 Todoist 建任务",
+        "category": "生活家务",
+        "tools": [
+          "Claude",
+          "Todoist"
+        ],
+        "what_they_did": "一位 Reddit 评论者把 Todoist 连同邮箱、日历、短信、通讯录和文件的访问权限一起交给 Claude，让它在浏览这些信息时识别出「承诺要做的事」并直接创建对应任务。整个流程走的是 Claude 直接调用 Todoist 的接口，而不是手动复制粘贴。",
+        "how_it_went": "原文未说明结果。",
+        "worth_knowing": "需要把邮箱、日历、短信、通讯录、文件等多个账号的访问权限交给 AI，存在隐私暴露和误建、重复建任务的风险；原文未说明具体的接入方式与配置细节。",
+        "url": "https://www.reddit.com/r/todoist/comments/1x73un7/anyone_actually_using_ai_to_manage_their_tasks",
+        "source_note": "Reddit 社区 r/todoist 一条讨论帖下的评论者分享（作者未署名）。",
+        "added_at": "2026-10-29"
+      },
+      {
+        "title": "用 Perplexity Comet 对比竞品定价与定位",
+        "category": "研究知识",
+        "tools": [
+          "Perplexity Comet"
+        ],
+        "what_they_did": "在浏览器中同时打开多个[竞品公司]的官网、定价页与新闻公告页标签，然后让 Perplexity Comet 逐个浏览这些已打开的标签页。Comet 从每个页面中抽取价值主张、价格档位和近期公告，汇总成一份竞品定位与功能差距的对比。",
+        "how_it_went": "原文未说明结果",
+        "worth_knowing": "依赖事先手动打开并整理好竞品标签页，页面需登录或强反爬时抽取可能失败；结论仍需人工核对价格是否最新。",
+        "url": "https://sidsaladi.substack.com/p/the-20-comet-ai-browser-workflows",
+        "source_note": "来自 Substack 通讯 sidsaladi.substack.com 的文章《The 20 Comet AI Browser Workflows》。",
+        "added_at": "2026-10-29"
+      },
+      {
+        "title": "用 OpenClaw 批量写小红书笔记并自动发布",
+        "category": "内容创作",
+        "tools": [
+          "OpenClaw",
+          "xiaohongshu-mcp",
+          "飞书多维表格"
+        ],
+        "what_they_did": "用 RPA 工具把小红书热门笔记批量采集进飞书表格，作为选题和素材库；再让 OpenClaw 按表格内容批量生成笔记文案，最后通过 xiaohongshu-mcp 把写好的笔记自动发布到小红书账号，形成采集—写作—发布的流水线。",
+        "how_it_went": "作者称这套流程每天大约节省 3 小时。",
+        "worth_knowing": "效果依赖 RPA 采集和 xiaohongshu-mcp 发布通道能否稳定运行，且自动发布受平台风控与账号状态限制；原文未给出更多前提说明。",
+        "url": "https://cloud.tencent.com/developer/article/2635239",
+        "source_note": "来自腾讯云开发者社区的一篇文章《Automate Xiaohongshu note collection and publishing》（作者未署名）。",
+        "added_at": "2026-10-29"
+      },
+      {
+        "title": "用 Codex 搭配本地 CAD 工具审查注塑件装配风险",
+        "category": "安全科学硬件",
+        "tools": [
+          "Codex"
+        ],
+        "what_they_did": "作者用 Codex 调用本地的 CAD 工具，读取一个真实硬件装配体的几何与配置数据，逐项检查开模前可能出现的注塑成型风险。随后把发现的问题整理成清单，为每条问题附上对应测量值和关闭标准（closure criteria）。",
+        "how_it_went": "产出包含测量数据与关闭标准的风险清单；原文未给出耗时或风险条数等具体数字。",
+        "worth_knowing": "需要本地已安装并接入 CAD 工具链，Codex 才能读取模型几何与配置；审查结论仍需工程师复核。",
+        "url": "https://github.com/SvenKunkka/3d-structure-review",
+        "source_note": "来自 GitHub 仓库 SvenKunkka/3d-structure-review（经 agentusecases.ai 收录）。",
+        "added_at": "2026-10-29"
+      }
+    ],
+    "high_potential_items": [
+      {
+        "title": "Orkas-AI/Orkas",
+        "full_name": "orkas-ai/orkas",
+        "url": "https://github.com/Orkas-AI/Orkas",
+        "source_type": "github",
+        "source_layer": "discovery",
+        "repo_id": 1224575142,
+        "owner": "orkas-ai",
+        "name": "orkas",
+        "summary": "Orkas is an open-source (MIT), local-first AI team for your desktop: a Commander turns your goal into to-dos and coordinates 16 built-in specialist agents plus Claude Code, Codex, OpenCode, OpenClaw and Hermes, with projects, scheduled automations and connectors. Free app for macOS & Windows; built-in models or your own keys.",
+        "interest_tags": [
+          "开发者工具",
+          "工作流自动化",
+          "桌面工作台"
+        ],
+        "domain_tags": [],
+        "tool_tags": [],
+        "mechanism_tags": [],
+        "highlight_one_liner": "指挥官拆目标，派给 16 个专家 agent",
+        "highlight_keywords": [
+          "本地优先",
+          "指挥官拆解任务",
+          "多 agent 分工",
+          "定时自动化"
+        ],
+        "reuse_direction": "最值得借鉴的是「Commander 把用户目标拆成待办，再按任务类型分派给不同专家 agent」这一层编排设计，可迁移到任何要把长任务拆开、交给多个 agent 分别执行的产品。",
+        "minimal_mvp": "第一版先做一条路径：用户输入一个目标，指挥官生成待办清单并依次分派给 2-3 个内置专家 agent 执行，结果在同一窗口按任务逐条回报；定时自动化和外部 agent（Claude Code、Codex 等）先不接。",
+        "selection_reason": "已有较强社区验证",
+        "is_revisit": false,
+        "revisit_reason": "",
+        "score": 42.6362,
+        "rank_score": 39.3954,
+        "stars_total": 4138,
+        "stars_7d": null,
+        "stars_30d": null,
+        "forks_total": 236,
+        "watchers_total": null,
+        "created_at": "2026-04-29T12:19:08Z",
+        "pushed_at": "2026-10-30T01:27:32Z",
+        "updated_at": "2026-10-30T02:51:24Z",
+        "topics": [
+          "agent-collaboration",
+          "agent-harness",
+          "agent-orchestration",
+          "agent-team",
+          "agent-workflow",
+          "ai-assistant",
+          "ai-automation",
+          "ai-employee",
+          "ai-productivity",
+          "ai-team",
+          "ai-workflow",
+          "autonomous-agents",
+          "claude-code-gui",
+          "claude-cowork",
+          "desktop-agent",
+          "local-first",
+          "multi-agent",
+          "multi-agent-system",
+          "self-evolving-agents",
+          "task-automation"
+        ],
+        "semantic_bonus": 23.0,
+        "ai_noise": false,
+        "ai_match_score": 8,
+        "ai_priority": "headline",
+        "ai_rationale": "开源本地优先的多 Agent 桌面工作台，Commander 自动拆解任务并调度 16 个专业 Agent，直接对应企业自动化工作流方向，4k+ star 社区验证较强，是今日最值得关注的项目。",
+        "value_tag": "可迁移机制",
+        "copy_generation_source": "openai",
+        "copy_prompt_version": "openai_compact_v5"
+      },
+      {
+        "title": "markfulton/ai-employees",
+        "full_name": "markfulton/ai-employees",
+        "url": "https://github.com/markfulton/ai-employees",
+        "source_type": "github",
+        "source_layer": "discovery",
+        "repo_id": 1355117708,
+        "owner": "markfulton",
+        "name": "ai-employees",
+        "summary": "Open source AI Employees. 8 scheduled business roles, 60 routines, on Claude Code and 10 other harnesses. They drive your browser the way you do and improve every run. You own the files.",
+        "interest_tags": [
+          "开发者工具",
+          "工作流自动化",
+          "浏览器自动化"
+        ],
+        "domain_tags": [],
+        "tool_tags": [],
+        "mechanism_tags": [],
+        "highlight_one_liner": "到点自动上班、自己开浏览器干活的 AI 员工",
+        "highlight_keywords": [
+          "定时触发",
+          "浏览器代操作",
+          "文件归你",
+          "多 harness 通用"
+        ],
+        "reuse_direction": "这里最值得借鉴的是把一类业务岗位拆成按时触发的例行任务，再让 AI 像人一样操作真实浏览器界面完成，这套思路可以直接迁移到对账、后台巡检、数据导出等重复网页工作。",
+        "minimal_mvp": "第一版先挑一个每天固定要做的网页任务，例如从某个后台导出日报；把它写成一条定时例行任务，让 AI 用浏览器跑通，并把结果文件落到你能查看的目录里，由你验收。",
+        "selection_reason": "项目仍处在较新的验证窗口；已有较强社区验证",
+        "is_revisit": false,
+        "revisit_reason": "",
+        "score": 34.1972,
+        "rank_score": 36.8821,
+        "stars_total": 817,
+        "stars_7d": null,
+        "stars_30d": null,
+        "forks_total": 236,
+        "watchers_total": null,
+        "created_at": "2026-09-02T18:47:36Z",
+        "pushed_at": "2026-10-30T02:18:41Z",
+        "updated_at": "2026-10-30T02:18:46Z",
+        "topics": [
+          "ai-agents",
+          "ai-employee",
+          "ai-employees",
+          "antigravity",
+          "automation",
+          "claude-code",
+          "claude-skill",
+          "codex",
+          "hermes-agent",
+          "openclaw",
+          "opencode",
+          "scheduled-tasks",
+          "small-business"
+        ],
+        "semantic_bonus": 23.0,
+        "ai_noise": false,
+        "ai_match_score": 7,
+        "ai_priority": "high",
+        "ai_rationale": "8 个定时业务角色、60 条例程，通过浏览器驱动实现邮件、财务等流程自动化，与邮件自动化和企业自动化工作流高度契合，值得持续观察。",
+        "value_tag": "可迁移机制",
+        "copy_generation_source": "openai",
+        "copy_prompt_version": "openai_compact_v5"
+      },
+      {
+        "title": "CCDawn/Vibelution",
+        "full_name": "ccdawn/vibelution",
+        "url": "https://github.com/CCDawn/Vibelution",
+        "source_type": "github",
+        "source_layer": "discovery",
+        "repo_id": 1196141823,
+        "owner": "ccdawn",
+        "name": "vibelution",
+        "summary": "Local-first AI agent workbench: research teams that plan, build and review together, a finance agent, and virtual human companions — in one Electron desktop app.",
+        "interest_tags": [
+          "桌面工作台",
+          "知识检索/RAG",
+          "多 Agent 协作"
+        ],
+        "domain_tags": [],
+        "tool_tags": [],
+        "mechanism_tags": [],
+        "highlight_one_liner": "本地桌面里跑多 Agent 研究小组",
+        "highlight_keywords": [
+          "本地优先",
+          "多 Agent 分工",
+          "知识图谱检索",
+          "Electron 桌面"
+        ],
+        "reuse_direction": "值得借鉴的是把「规划、构建、评审」三种角色的 Agent 放进同一个本地桌面应用协作，让研究类任务不必依赖云端服务也能分角色推进。",
+        "minimal_mvp": "第一版先只做研究场景：用户在 Electron 里输入一个研究主题，规划 Agent 拆解子问题，构建 Agent 检索本地知识图谱，评审 Agent 校验并给出带出处的结论。",
+        "selection_reason": "已经跨过最初冷启动阶段",
+        "is_revisit": false,
+        "revisit_reason": "",
+        "score": 28.1603,
+        "rank_score": 22.0868,
+        "stars_total": 80,
+        "stars_7d": null,
+        "stars_30d": null,
+        "forks_total": 10,
+        "watchers_total": null,
+        "created_at": "2026-03-30T12:13:29Z",
+        "pushed_at": "2026-10-30T02:56:08Z",
+        "updated_at": "2026-10-30T02:56:12Z",
+        "topics": [
+          "agent",
+          "ai",
+          "ai-agents",
+          "collaboration",
+          "desktop-app",
+          "devtools",
+          "electron",
+          "fastapi",
+          "knowledge-graph",
+          "llm",
+          "local-first",
+          "multi-agent",
+          "multiagent",
+          "open-source",
+          "python",
+          "react",
+          "research",
+          "workbench"
+        ],
+        "semantic_bonus": 12.0,
+        "ai_noise": false,
+        "ai_match_score": 5,
+        "ai_priority": "low",
+        "ai_rationale": "集研究协作、财务 Agent 与虚拟陪伴于一体的桌面工作台，概念贴合多个关注方向，但仅 80 star，生态尚早，先观察。",
+        "value_tag": "可迁移机制",
+        "copy_generation_source": "openai",
+        "copy_prompt_version": "openai_compact_v5"
+      },
+      {
+        "full_name": "ryancodrai/turbovec",
+        "repo_url": "https://github.com/ryancodrai/turbovec",
+        "title": "RyanCodrai/turbovec",
+        "source_type": "github",
+        "source_layer": "revisit",
+        "repo_id": 1192555574,
+        "owner": "ryancodrai",
+        "name": "turbovec",
+        "summary": "A vector index built on TurboQuant, written in Rust with Python bindings",
+        "url": "https://github.com/ryancodrai/turbovec",
+        "interest_tags": [
+          "知识检索/RAG"
+        ],
+        "domain_tags": [],
+        "tool_tags": [],
+        "mechanism_tags": [],
+        "stars_total": 17438,
+        "stars_7d": null,
+        "stars_30d": null,
+        "forks_total": 1485,
+        "watchers_total": 71,
+        "created_at": "2026-03-26T10:32:44Z",
+        "pushed_at": "2026-10-07T06:55:09Z",
+        "updated_at": "2026-10-29T23:25:20Z",
+        "homepage": "https://pypi.org/project/turbovec",
+        "topics": [
+          "ann",
+          "avx512",
+          "embedding",
+          "embeddings",
+          "faiss",
+          "nearest-neighbor",
+          "neon",
+          "python",
+          "quant",
+          "quantization",
+          "rag",
+          "rust",
+          "simd",
+          "turboquant",
+          "vector-search"
+        ],
+        "latest_release_tag": "",
+        "is_revisit": true,
+        "eligible": true,
+        "throttled": false,
+        "throttle_reasons": [],
+        "days_since_last_selected": 92,
+        "window_occurrences": 1,
+        "major_update_score": 30,
+        "major_update_signals": [
+          {
+            "signal": "stars_total_jump",
+            "points": 10,
+            "detail": "总 stars 较上次增加 2937"
+          },
+          {
+            "signal": "pushed_at_refresh",
+            "points": 10,
+            "detail": "最近代码推进较上次前进 69 天"
+          },
+          {
+            "signal": "homepage_changed",
+            "points": 6,
+            "detail": "官网地址从 空 变为 https://pypi.org/project/turbovec"
+          },
+          {
+            "signal": "multi_signal_bonus",
+            "points": 4,
+            "detail": "多类信号同时出现，值得重新进入候选池"
+          }
+        ],
+        "revisit_reason": "总 stars 较上次增加 2937；最近代码推进较上次前进 69 天；官网地址从 空 变为 https://pypi.org/project/turbovec",
+        "selection_reason": "总 stars 较上次增加 2937；最近代码推进较上次前进 69 天；官网地址从 空 变为 https://pypi.org/project/turbovec",
+        "delta_stars_total": 2937,
+        "delta_stars_7d": 0,
+        "pushed_delta_days": 69,
+        "previous_state": {
+          "last_selected_at": "2026-07-30",
+          "selection_count": 1,
+          "stars_total": 14501,
+          "stars_7d": 810,
+          "forks_total": 1284,
+          "watchers_total": null,
+          "pushed_at": "2026-07-30T02:38:37Z",
+          "updated_at": "2026-07-30T02:28:18Z",
+          "homepage": "",
+          "latest_release_tag": "",
+          "description_hash": "54d93b02b9ffedfcd8701a9501de3bbb7c6cd4d7",
+          "topics_hash": "3aab147f007f0dcd5436434e04e6153f281b71d7"
+        },
+        "current_state": {
+          "stars_total": 17438,
+          "stars_7d": null,
+          "forks_total": 1485,
+          "watchers_total": 71,
+          "pushed_at": "2026-10-07T06:55:09Z",
+          "updated_at": "2026-10-29T23:25:20Z",
+          "homepage": "https://pypi.org/project/turbovec",
+          "latest_release_tag": "",
+          "description_hash": "54d93b02b9ffedfcd8701a9501de3bbb7c6cd4d7",
+          "topics_hash": "3aab147f007f0dcd5436434e04e6153f281b71d7",
+          "snapshot_source": "github_api",
+          "momentum_source": "unavailable"
+        },
+        "fetch_error": "",
+        "rank_score": 63.0,
+        "highlight_one_liner": "Rust 写的量化向量索引，现在能 pip 装了",
+        "highlight_keywords": [
+          "TurboQuant 量",
+          "Rust 内核",
+          "SIMD 分派",
+          "Python 绑定"
+        ],
+        "reuse_direction": "把 RAG 的向量检索内核从 FAISS 换成一个 Rust 实现、按 CPU 指令集（AVX512/NEON）分派 SIMD 的量化索引，是 Python 服务降低索引内存占用和查询延迟的一条可复用路径。",
+        "minimal_mvp": "先 pip 装 turbovec，把现有 embedding 灌进去，与当前用的 FAISS 索引在同一批查询上比召回率、内存占用和 QPS，确认量化损失可接受后再替换检索层。",
+        "semantic_bonus": 3.0,
+        "ai_noise": false,
+        "ai_match_score": 4,
+        "ai_priority": "low",
+        "ai_rationale": "Rust 向量索引属于 RAG 底层检索基础设施，并非 AI 应用或产品方向，与雷达关注场景关联较弱。",
+        "value_tag": "可迁移机制",
+        "copy_generation_source": "openai",
+        "copy_prompt_version": "openai_compact_v5"
+      }
+    ],
+    "high_potential_layers": [
+      {
+        "key": "dev_tool",
+        "title": "开发工具推荐",
+        "description": "主要服务 builder，能直接用于构建、调试、部署或编排 AI 应用",
+        "empty_text": "今日暂无新增开发工具推荐。",
+        "items": [
+          {
+            "id": "1286641",
+            "title": "AgentValley",
+            "name": "AgentValley",
+            "repo_name": "agentvalley",
+            "summary": "Every Claude Code agent, at a glance, in your Mac's notch",
+            "description": "It sits in your MacBook's notch. Every Claude Code session gets a card, every sub-agent gets a row, and each one has a little pixel programmer. You see who's working, on which model, and who's waiting on you. Free and open source.",
+            "url": "https://www.producthunt.com/products/agentvalley?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai-idea-radar-v4-2+%28ID%3A+294543%29",
+            "website_url": "https://www.producthunt.com/r/FXTTULYREWAUGP?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai-idea-radar-v4-2+%28ID%3A+294543%29",
+            "topics": [
+              "Open Source",
+              "Developer Tools",
+              "GitHub",
+              "Menu Bar Apps"
+            ],
+            "topic_slugs": [
+              "open-source",
+              "developer-tools",
+              "github",
+              "menu-bar-apps"
+            ],
+            "makers": [
+              "Morse Chimwai"
+            ],
+            "votes_count": 166,
+            "comments_count": 23,
+            "featured_at": "2026-10-24T07:01:00Z",
+            "created_at": "2026-10-24T07:01:00Z",
+            "top_comments": [
+              "<p>Hi, I'm Morse. I usually have a few Claude Code windows going at the same time, a hobby project, my day job, some experiment, and I wanted one place to see which agent is doing what in which project, if one is stuck, and if one is waiting for me to answer something. So now they all live in the notch.</p><p>My favorite part is the crew. Every agent gets a little pixel character with its own look, and they feel like my employees at this point. I can watch them go through the steps while they work.</p><p>I'm not sure yet what's missing, people have to try it first. Maybe a phone app later, so I can answer from the gym or while I'm out getting food. Tell me what you'd want it to do next, and if anything is hard to read, like one of the crew's expressions, or if the UI makes you stop and think before you click.</p>",
+              "<p>would it see sessions running in a devcontainer? the status file would be inside the container i guess</p>",
+              "<p>seeing which agent is waiting on me right from the notch sounds handy! does it play a sound when one gets stuck or just change the icon?</p>"
+            ],
+            "source": "Product Hunt",
+            "product_shape_score": 2.0,
+            "launch_heat_score": 10.515,
+            "interest_tags": [
+              "开发者工具"
+            ],
+            "domain_tags": [
+              "开发者工具",
+              "AI 编程"
+            ],
+            "tool_tags": [
+              "菜单栏应用",
+              "Claude Code",
+              "开源"
+            ],
+            "mechanism_tags": [
+              "agent 会话监控",
+              "状态可视化"
+            ],
+            "author": "Morse Chimwai",
+            "score": 31.108,
+            "why": "Product Hunt 当前获得 166 票、23 条评论；仍处在近期新品验证窗口",
+            "band": "爆发新品",
+            "mechanism": "可迁移的机制在于把模型从单次回答升级成持续协作代理，强调上下文记忆与多步执行。",
+            "routing_confidence": 0.12,
+            "routing_interest": "",
+            "routing_reason": "AgentValley 是面向开发者的 macOS 刘海/菜单栏监控面板，用来观察本地 Claude Code 会话与子 agent 的运行状态和模型，属于编码 agent 的可观测性小工具而非业务任务流转。它与「AI 任务管理」中的任务分配、跟进执行等企业协作核心任务并不重合（仅“谁在等我”一处语义擦边），也不符合法律、供应链、教育、邮件、财务等任何垂直兴趣点的用户任务，因此不应纳入 observation。",
+            "highlight_one_liner": "刘海屏秒看所有 Claude Code agent 状态",
+            "highlight_keywords": [
+              "刘海屏常驻",
+              "多会话状态总览",
+              "agent 会话监控"
+            ],
+            "reuse_direction": "把多个并行 agent 会话的运行状态压缩进屏幕边缘常驻区域、抬眼即见的做法，迁移到构建任务、批处理或爬虫队列等需要同时盯多个长任务的场景。",
+            "minimal_mvp": "第一版只读本地 Claude Code 会话状态，在刘海区显示每个会话的运行、等待、结束三态和总数，点开可看最近一条输出，不做历史记录和远程同步。",
+            "value_tag": "可迁移机制",
+            "copy_generation_source": "openai",
+            "copy_prompt_version": "openai_compact_v5",
+            "source_type": "product_hunt_high_potential",
+            "source_label": "Product Hunt",
+            "stars_total": "166",
+            "heat_line": "🔥PH 166票｜23评"
+          },
+          {
+            "title": "Dicklesworthstone/mcp_agent_mail",
+            "url": "https://github.com/Dicklesworthstone/mcp_agent_mail",
+            "website_url": "",
+            "summary": "",
+            "description": "",
+            "source_label": "GitHub",
+            "heat_line": "🌟2228",
+            "stars_total": "2228",
+            "tags": [
+              "邮件自动化工具",
+              "开发者工具",
+              "知识检索/RAG"
+            ],
+            "interest_tags": [
+              "邮件自动化工具",
+              "开发者工具",
+              "知识检索/RAG"
+            ],
+            "tool_tags": [],
+            "mechanism_tags": [],
+            "highlight_one_liner": "AI编码代理异步协调层",
+            "reuse_direction": "把「邮件自动化工具 / 开发者工具」封装成更明确的岗位或任务入口",
+            "minimal_mvp": "先围绕“外贸/跨境卖家每天要处理几百封外语客户邮件，核心诉求是快速产出得体的英文回复、并让每封邮件都接得上后续的客户跟进”做单任务 MVP，优先打通输入、执行和结果回传",
+            "highlight_keywords": [
+              "邮件自动化工具",
+              "开发者工具",
+              "知识检索/RAG"
+            ],
+            "topics": [],
+            "history_repeat_fallback": true
+          }
+        ],
+        "groups": []
+      },
+      {
+        "key": "knowledge",
+        "title": "知识内容",
+        "description": "主要提供帮助构建知识体系的 Knowledge Hub，主条目优先系统学习资源，特别新的讨论仅作 Plus 补充",
+        "empty_text": "今日暂无新增知识内容。",
+        "items": [
+          {
+            "title": "OpenAI Cookbook",
+            "url": "https://cookbook.openai.com/",
+            "summary": "通过可运行示例覆盖 agent、tool use、RAG、structured outputs 与 eval，适合把概念快速转成实践。",
+            "source_label": "OpenAI",
+            "knowledge_label": "Handbook",
+            "knowledge_variant": "main",
+            "knowledge_intro_seed": "通过可运行示例覆盖 agent、tool use、RAG、structured outputs 与 eval，适合把概念快速转成实践。",
+            "knowledge_priority": 110,
+            "knowledge_source": "knowledge_hub_config",
+            "knowledge_intro": "这是一份以可运行示例为主线的系统学习入口，覆盖 agent、tool use、RAG、structured outputs 与 eval 等核心主题，适合希望将概念快速落地为实践的开发者"
+          },
+          {
+            "title": "LangChain Academy",
+            "url": "https://academy.langchain.com/",
+            "summary": "围绕 LangGraph 与 agent workflow 提供系统课程，适合建立状态机、多 agent 与长期运行工作流认知。",
+            "source_label": "LangChain",
+            "knowledge_label": "课程",
+            "knowledge_variant": "main",
+            "knowledge_intro_seed": "围绕 LangGraph 与 agent workflow 提供系统课程，适合建立状态机、多 agent 与长期运行工作流认知。",
+            "knowledge_priority": 109,
+            "knowledge_source": "knowledge_hub_config",
+            "knowledge_intro": "围绕 LangGraph 与 agent workflow 提供系统课程，涵盖状态机、多 agent 与长期运行工作流的开发实践，适合作为构建复杂智能体应用的系统学习入口"
+          },
+          {
+            "title": "Orkas-AI/Orkas",
+            "full_name": "orkas-ai/orkas",
+            "url": "https://github.com/Orkas-AI/Orkas",
+            "source_type": "github",
+            "source_layer": "discovery",
+            "repo_id": 1224575142,
+            "owner": "orkas-ai",
+            "name": "orkas",
+            "summary": "Orkas is an open-source (MIT), local-first AI team for your desktop: a Commander turns your goal into to-dos and coordinates 16 built-in specialist agents plus Claude Code, Codex, OpenCode, OpenClaw and Hermes, with projects, scheduled automations and connectors. Free app for macOS & Windows; built-in models or your own keys.",
+            "interest_tags": [
+              "开发者工具",
+              "工作流自动化",
+              "桌面工作台"
+            ],
+            "domain_tags": [],
+            "tool_tags": [],
+            "mechanism_tags": [],
+            "highlight_one_liner": "指挥官拆目标，派给 16 个专家 agent",
+            "highlight_keywords": [
+              "本地优先",
+              "指挥官拆解任务",
+              "多 agent 分工",
+              "定时自动化"
+            ],
+            "reuse_direction": "最值得借鉴的是「Commander 把用户目标拆成待办，再按任务类型分派给不同专家 agent」这一层编排设计，可迁移到任何要把长任务拆开、交给多个 agent 分别执行的产品。",
+            "minimal_mvp": "第一版先做一条路径：用户输入一个目标，指挥官生成待办清单并依次分派给 2-3 个内置专家 agent 执行，结果在同一窗口按任务逐条回报；定时自动化和外部 agent（Claude Code、Codex 等）先不接。",
+            "selection_reason": "已有较强社区验证",
+            "is_revisit": false,
+            "revisit_reason": "",
+            "score": 42.6362,
+            "rank_score": 39.3954,
+            "stars_total": 4138,
+            "stars_7d": null,
+            "stars_30d": null,
+            "forks_total": 236,
+            "watchers_total": null,
+            "created_at": "2026-04-29T12:19:08Z",
+            "pushed_at": "2026-10-30T01:27:32Z",
+            "updated_at": "2026-10-30T02:51:24Z",
+            "topics": [
+              "agent-collaboration",
+              "agent-harness",
+              "agent-orchestration",
+              "agent-team",
+              "agent-workflow",
+              "ai-assistant",
+              "ai-automation",
+              "ai-employee",
+              "ai-productivity",
+              "ai-team",
+              "ai-workflow",
+              "autonomous-agents",
+              "claude-code-gui",
+              "claude-cowork",
+              "desktop-agent",
+              "local-first",
+              "multi-agent",
+              "multi-agent-system",
+              "self-evolving-agents",
+              "task-automation"
+            ],
+            "semantic_bonus": 23.0,
+            "ai_noise": false,
+            "ai_match_score": 8,
+            "ai_priority": "headline",
+            "ai_rationale": "开源本地优先的多 Agent 桌面工作台，Commander 自动拆解任务并调度 16 个专业 Agent，直接对应企业自动化工作流方向，4k+ star 社区验证较强，是今日最值得关注的项目。",
+            "value_tag": "可迁移机制",
+            "copy_generation_source": "openai",
+            "copy_prompt_version": "openai_compact_v5",
+            "source_label": "GitHub",
+            "knowledge_type": "理念",
+            "knowledge_one_liner": "指挥官拆目标，派给 16 个专家 agent",
+            "knowledge_summary": "指挥官拆目标，派给 16 个专家 agent",
+            "knowledge_keywords": [
+              "本地优先",
+              "指挥官拆解任务",
+              "多 agent 分工",
+              "定时自动化"
+            ],
+            "knowledge_significance": "最值得借鉴的是「Commander 把用户目标拆成待办，再按任务类型分派给不同专家 agent」这一层编排设计，可迁移到任何要把长任务拆开、交给多个 agent 分别执行的产品。",
+            "knowledge_reason": "最值得借鉴的是「Commander 把用户目标拆成待办，再按任务类型分派给不同专家 agent」这一层编排设计，可迁移到任何要把长任务拆开、交给多个 agent 分别执行的产品。",
+            "knowledge_takeaway": "第一版先做一条路径：用户输入一个目标，指挥官生成待办清单并依次分派给 2-3 个内置专家 agent 执行，结果在同一窗口按任务逐条回报；定时自动化和外部 agent（Claude Code、Codex 等）先不接。",
+            "knowledge_intro_seed": "指挥官拆目标，派给 16 个专家 agent",
+            "knowledge_priority": 105,
+            "knowledge_source": "high_potential_secondary",
+            "knowledge_label": "Plus",
+            "knowledge_variant": "plus",
+            "knowledge_intro": "这份补充材料介绍了 Orkas 这款开源（MIT）、本地优先的桌面 AI 团队应用：指挥官把目标拆成待办，协调 16 个内置专家 agent 以及 Claude Code、Codex、OpenCode、OpenClaw、Hermes 等外部编码代理，并整合项目、定时自动化与连接器。它补足的是多 agent 编排与调度层面的认知，即目标如何分解、专家分工如何组织、外部代理与内置模型（或自备密钥）如何接入同一工作流"
+          }
+        ],
+        "groups": []
+      },
+      {
+        "key": "product",
+        "title": "产品形态",
+        "description": "主要服务终端用户或业务操作者，已有明确使用场景与产品闭环",
+        "empty_text": "今日暂无新增产品型对象。",
+        "items": [
+          {
+            "full_name": "ryancodrai/turbovec",
+            "repo_url": "https://github.com/ryancodrai/turbovec",
+            "title": "RyanCodrai/turbovec",
+            "source_type": "high_potential",
+            "source_layer": "revisit",
+            "repo_id": 1192555574,
+            "owner": "ryancodrai",
+            "name": "turbovec",
+            "summary": "A vector index built on TurboQuant, written in Rust with Python bindings",
+            "url": "https://github.com/ryancodrai/turbovec",
+            "interest_tags": [
+              "知识检索/RAG"
+            ],
+            "domain_tags": [],
+            "tool_tags": [],
+            "mechanism_tags": [],
+            "stars_total": "17438",
+            "stars_7d": null,
+            "stars_30d": null,
+            "forks_total": 1485,
+            "watchers_total": 71,
+            "created_at": "2026-03-26T10:32:44Z",
+            "pushed_at": "2026-10-07T06:55:09Z",
+            "updated_at": "2026-10-29T23:25:20Z",
+            "homepage": "https://pypi.org/project/turbovec",
+            "topics": [
+              "ann",
+              "avx512",
+              "embedding",
+              "embeddings",
+              "faiss",
+              "nearest-neighbor",
+              "neon",
+              "python",
+              "quant",
+              "quantization",
+              "rag",
+              "rust",
+              "simd",
+              "turboquant",
+              "vector-search"
+            ],
+            "latest_release_tag": "",
+            "is_revisit": true,
+            "eligible": true,
+            "throttled": false,
+            "throttle_reasons": [],
+            "days_since_last_selected": 92,
+            "window_occurrences": 1,
+            "major_update_score": 30,
+            "major_update_signals": [
+              {
+                "signal": "stars_total_jump",
+                "points": 10,
+                "detail": "总 stars 较上次增加 2937"
+              },
+              {
+                "signal": "pushed_at_refresh",
+                "points": 10,
+                "detail": "最近代码推进较上次前进 69 天"
+              },
+              {
+                "signal": "homepage_changed",
+                "points": 6,
+                "detail": "官网地址从 空 变为 https://pypi.org/project/turbovec"
+              },
+              {
+                "signal": "multi_signal_bonus",
+                "points": 4,
+                "detail": "多类信号同时出现，值得重新进入候选池"
+              }
+            ],
+            "revisit_reason": "总 stars 较上次增加 2937；最近代码推进较上次前进 69 天；官网地址从 空 变为 https://pypi.org/project/turbovec",
+            "selection_reason": "总 stars 较上次增加 2937；最近代码推进较上次前进 69 天；官网地址从 空 变为 https://pypi.org/project/turbovec",
+            "delta_stars_total": 2937,
+            "delta_stars_7d": 0,
+            "pushed_delta_days": 69,
+            "previous_state": {
+              "last_selected_at": "2026-07-30",
+              "selection_count": 1,
+              "stars_total": 14501,
+              "stars_7d": 810,
+              "forks_total": 1284,
+              "watchers_total": null,
+              "pushed_at": "2026-07-30T02:38:37Z",
+              "updated_at": "2026-07-30T02:28:18Z",
+              "homepage": "",
+              "latest_release_tag": "",
+              "description_hash": "54d93b02b9ffedfcd8701a9501de3bbb7c6cd4d7",
+              "topics_hash": "3aab147f007f0dcd5436434e04e6153f281b71d7"
+            },
+            "current_state": {
+              "stars_total": 17438,
+              "stars_7d": null,
+              "forks_total": 1485,
+              "watchers_total": 71,
+              "pushed_at": "2026-10-07T06:55:09Z",
+              "updated_at": "2026-10-29T23:25:20Z",
+              "homepage": "https://pypi.org/project/turbovec",
+              "latest_release_tag": "",
+              "description_hash": "54d93b02b9ffedfcd8701a9501de3bbb7c6cd4d7",
+              "topics_hash": "3aab147f007f0dcd5436434e04e6153f281b71d7",
+              "snapshot_source": "github_api",
+              "momentum_source": "unavailable"
+            },
+            "fetch_error": "",
+            "rank_score": 63.0,
+            "highlight_one_liner": "Rust 写的量化向量索引，现在能 pip 装了",
+            "highlight_keywords": [
+              "TurboQuant 量",
+              "Rust 内核",
+              "SIMD 分派",
+              "Python 绑定"
+            ],
+            "reuse_direction": "把 RAG 的向量检索内核从 FAISS 换成一个 Rust 实现、按 CPU 指令集（AVX512/NEON）分派 SIMD 的量化索引，是 Python 服务降低索引内存占用和查询延迟的一条可复用路径。",
+            "minimal_mvp": "先 pip 装 turbovec，把现有 embedding 灌进去，与当前用的 FAISS 索引在同一批查询上比召回率、内存占用和 QPS，确认量化损失可接受后再替换检索层。",
+            "semantic_bonus": 3.0,
+            "ai_noise": false,
+            "ai_match_score": 4,
+            "ai_priority": "low",
+            "ai_rationale": "Rust 向量索引属于 RAG 底层检索基础设施，并非 AI 应用或产品方向，与雷达关注场景关联较弱。",
+            "value_tag": "可迁移机制",
+            "copy_generation_source": "openai",
+            "copy_prompt_version": "openai_compact_v5",
+            "source_label": "GitHub",
+            "heat_line": ""
+          },
+          {
+            "title": "Orkas-AI/Orkas",
+            "full_name": "orkas-ai/orkas",
+            "url": "https://github.com/Orkas-AI/Orkas",
+            "source_type": "high_potential",
+            "source_layer": "discovery",
+            "repo_id": 1224575142,
+            "owner": "orkas-ai",
+            "name": "orkas",
+            "summary": "Orkas is an open-source (MIT), local-first AI team for your desktop: a Commander turns your goal into to-dos and coordinates 16 built-in specialist agents plus Claude Code, Codex, OpenCode, OpenClaw and Hermes, with projects, scheduled automations and connectors. Free app for macOS & Windows; built-in models or your own keys.",
+            "interest_tags": [
+              "开发者工具",
+              "工作流自动化",
+              "桌面工作台"
+            ],
+            "domain_tags": [],
+            "tool_tags": [],
+            "mechanism_tags": [],
+            "highlight_one_liner": "指挥官拆目标，派给 16 个专家 agent",
+            "highlight_keywords": [
+              "本地优先",
+              "指挥官拆解任务",
+              "多 agent 分工",
+              "定时自动化"
+            ],
+            "reuse_direction": "最值得借鉴的是「Commander 把用户目标拆成待办，再按任务类型分派给不同专家 agent」这一层编排设计，可迁移到任何要把长任务拆开、交给多个 agent 分别执行的产品。",
+            "minimal_mvp": "第一版先做一条路径：用户输入一个目标，指挥官生成待办清单并依次分派给 2-3 个内置专家 agent 执行，结果在同一窗口按任务逐条回报；定时自动化和外部 agent（Claude Code、Codex 等）先不接。",
+            "selection_reason": "已有较强社区验证",
+            "is_revisit": false,
+            "revisit_reason": "",
+            "score": 42.6362,
+            "rank_score": 39.3954,
+            "stars_total": "4138",
+            "stars_7d": null,
+            "stars_30d": null,
+            "forks_total": 236,
+            "watchers_total": null,
+            "created_at": "2026-04-29T12:19:08Z",
+            "pushed_at": "2026-10-30T01:27:32Z",
+            "updated_at": "2026-10-30T02:51:24Z",
+            "topics": [
+              "agent-collaboration",
+              "agent-harness",
+              "agent-orchestration",
+              "agent-team",
+              "agent-workflow",
+              "ai-assistant",
+              "ai-automation",
+              "ai-employee",
+              "ai-productivity",
+              "ai-team",
+              "ai-workflow",
+              "autonomous-agents",
+              "claude-code-gui",
+              "claude-cowork",
+              "desktop-agent",
+              "local-first",
+              "multi-agent",
+              "multi-agent-system",
+              "self-evolving-agents",
+              "task-automation"
+            ],
+            "semantic_bonus": 23.0,
+            "ai_noise": false,
+            "ai_match_score": 8,
+            "ai_priority": "headline",
+            "ai_rationale": "开源本地优先的多 Agent 桌面工作台，Commander 自动拆解任务并调度 16 个专业 Agent，直接对应企业自动化工作流方向，4k+ star 社区验证较强，是今日最值得关注的项目。",
+            "value_tag": "可迁移机制",
+            "copy_generation_source": "openai",
+            "copy_prompt_version": "openai_compact_v5",
+            "source_label": "GitHub",
+            "heat_line": ""
+          },
+          {
+            "id": "1290712",
+            "title": "Notra",
+            "name": "Notra",
+            "repo_name": "notra-5",
+            "summary": "Notra is a GEO tool that helps you rank in AI Search.",
+            "description": "Notra is a GEO tool that asks ChatGPT, Claude and Gemini the questions your buyers ask. It shows whether you appear, who appears instead and how to fix it.",
+            "url": "https://www.producthunt.com/products/notra-3?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai-idea-radar-v4-2+%28ID%3A+294543%29",
+            "website_url": "https://www.producthunt.com/r/GWXNGB4WPOXZYO?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai-idea-radar-v4-2+%28ID%3A+294543%29",
+            "topics": [
+              "Marketing",
+              "SEO",
+              "Growth Hacks"
+            ],
+            "topic_slugs": [
+              "marketing",
+              "seo",
+              "growth-hacks"
+            ],
+            "makers": [
+              "[REDACTED]",
+              "Jan Burzinski"
+            ],
+            "votes_count": 149,
+            "comments_count": 22,
+            "featured_at": "2026-10-27T07:01:00Z",
+            "created_at": "2026-10-27T07:01:00Z",
+            "top_comments": [
+              "<p>Hey Product Hunt, I'm Dominik, one of the makers of Notra.</p><p>More people now ask ChatGPT which tool to use instead of searching Google, and we built Notra GEO so teams can find out whether they show up in those answers.</p><p><strong>The problem.</strong> AI engines usually recommend two or three products per question, and if yours isn't one of them you lose the customer without ever knowing.</p><p><strong>Who it's for.</strong> Startups and developer tool teams who invest in content and want AI engines to recommend them.</p><p><strong>What Notra does.</strong></p><ul><li><p>It asks ChatGPT, Claude, Gemini, Perplexity and Grok what your customers would ask and shows which competitors get named instead of you.</p></li><li><p>Conversations and personas follow a realistic buyer through follow-up questions, so you see your visibility the way they would.</p></li><li><p>It finds the questions and cited sites where you're missing, then writes the articles to close those gaps in your brand voice.</p></li><li><p>AI Crawl Analytics shows which pages AI bots read on your site, and it's free for up to 1 million events a month.</p></li></ul><p>I'd love to hear what AI engines say about your product, and I'll be here all day to answer questions.</p>",
+              "<p>Looks great, I wonder though, how does it stick to your brand voice... a brand guide to help out... or just a set of prompts to tell what your brand voice should sound like?</p>",
+              "<p>Can I rerun the same buyer question several times and compare the answers? I'd want to know a missing mention is a pattern before changing the site's content.</p>"
+            ],
+            "source": "Product Hunt",
+            "product_shape_score": 2.0,
+            "launch_heat_score": 9.71,
+            "interest_tags": [
+              "知识检索/RAG"
+            ],
+            "domain_tags": [
+              "营销",
+              "SEO",
+              "AI 搜索"
+            ],
+            "tool_tags": [
+              "GEO 工具",
+              "AI 搜索可见性",
+              "竞品分析"
+            ],
+            "mechanism_tags": [
+              "问题模拟",
+              "品牌可见性监测",
+              "优化建议"
+            ],
+            "author": "[REDACTED] / Jan Burzinski",
+            "score": 29.825,
+            "why": "Product Hunt 当前获得 149 票、22 条评论；仍处在近期新品验证窗口",
+            "band": "爆发新品",
+            "mechanism": "可迁移的机制在于把通用模型能力封装进具体产品形态，让用户按任务而不是按模型来消费能力。",
+            "routing_confidence": 0.05,
+            "routing_interest": "",
+            "routing_reason": "Notra 是面向营销/SEO 的 GEO 工具，核心任务是监测品牌在 ChatGPT、Claude、Gemini 等 AI 搜索中的可见性并给出优化建议。它不服务给定兴趣点中的法律、供应链、教育、邮件外联、任务管理、财务等垂直核心任务；虽然涉及 AI 搜索与数据分析，但这只是泛营销场景，不能因 AI 或数据单词命中而纳入。",
+            "highlight_one_liner": "盯住品牌在 AI 回答里的出场位置",
+            "highlight_keywords": [
+              "GEO 排名",
+              "AI 搜索可见性",
+              "竞品对照",
+              "问题模拟"
+            ],
+            "reuse_direction": "把「模拟用户真实提问、抓取 AI 回答中品牌出现的位置与竞品顺序」这套监测思路，迁移到任何想在生成式搜索里争取曝光的品类上。",
+            "minimal_mvp": "第一版先列出 20 到 30 个用户真会问的问题，逐个跑主流 AI 搜索，记录品牌有没有被提到、排第几、旁边是谁，汇总成一张可见性对照表。",
+            "value_tag": "可迁移机制",
+            "copy_generation_source": "openai",
+            "copy_prompt_version": "openai_compact_v5",
+            "source_type": "product_hunt_high_potential",
+            "source_label": "Product Hunt",
+            "stars_total": "149",
+            "heat_line": "🔥PH 149票｜22评"
+          },
+          {
+            "id": "1275386",
+            "title": "Flipcorder",
+            "name": "Flipcorder",
+            "repo_name": "flipcorder",
+            "summary": "A 1991 camcorder for your iPhone, one tape a day",
+            "description": "Currently #3 in Top Paid Photo & Video on the US App Store 🎉 Flipcorder turns your iPhone into a 1991 camcorder. We have lost touch crafting perfect videos for social media, and Flipcorder encourages you to take shorter \"flips\" of 20 seconds each throughout your day to enjoy as a home video at the end of the day. No editing, just shoot and enjoy in VHS or DV style. Made for iPhone Duo, works on any iPhone. $4.99 once. No ads, no subscription, no watermark, no account.",
+            "url": "https://www.producthunt.com/products/flipcorder?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai-idea-radar-v4-2+%28ID%3A+294543%29",
+            "website_url": "https://www.producthunt.com/r/5D3YQB6LWNMKJJ?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai-idea-radar-v4-2+%28ID%3A+294543%29",
+            "topics": [
+              "iOS",
+              "Apple",
+              "Photo & Video"
+            ],
+            "topic_slugs": [
+              "ios",
+              "apple",
+              "photo-video"
+            ],
+            "makers": [
+              "Matt Brewer"
+            ],
+            "votes_count": 129,
+            "comments_count": 28,
+            "featured_at": "2026-10-26T07:01:00Z",
+            "created_at": "2026-10-26T07:01:00Z",
+            "top_comments": [
+              "<p>Hi Product Hunt! I’m Matt, and Flipcorder is the first app I’ve put on the App Store under my own name in about a decade. I’ve spent those years building apps and software for other people, so launching one of my own has me really excited. Like stupid excited!</p><p></p><p>It’s been a wild first weekend: it’s currently #3 in Top Paid, Photo &amp; Video on the US App Store and I'm so humbled and amazed!</p><p></p><p>Flipcorder is a 1991 camcorder for your iPhone. You film little moments through the day, each one a “flip” (20 seconds by default), and they all land on that day’s dated tape. There’s no editing, so the chatter, the pauses and the fumble for the stop button stay in. Tonight, you play back one raw home movie in a warm VHS or crisp MiniDV look, date stamp and all.</p><p></p><p>I really wanted a way to capture those moments and keep authentic video alive - I feel we have lost so much chasing perfection for social media, that the messiness of a camcorder is appealing and comforting. Home movies can be for anyone, and Flipcorder is for those people.</p><p></p><p>I built it around iPhone Duo, which came out on Friday. The fold is the power switch: closed, the outer screen shows a lens cap; open it and the cap comes off. Fully open, the person you’re filming sees themselves on the outer screen with a red REC light. It works on every iPhone with iOS 26 or later too, with a big glowing POWER key instead.</p><p></p><p>A few things I cared about:<br>• $4.99 once. No subscription, no ads, no watermarks, no account needed.<br>• Your tapes stay on your phone unless you share them.<br>• Never lose footage: closing the phone, a call or low storage always saves the flip.</p><p></p><p>Today launches v1.1.0 that includes earning stickers, subtle streaks for your home screen widgets, some in app events (like Halloween coming up) and more. I have a lot planned for Flipcorder!</p><p></p><p>I’d love to hear what you’d film first, and anything you’d change. I’ll be here all day answering questions.</p>",
+              "<p>Thanks for the fun launch everyone, it was great getting some feedback and engaging with everyone and hope there are some new fans!</p>",
+              "<p>A little thank-you for stopping by: here are 5 free codes for the full app, one each, no strings. If you grab one, reply with which code you took so the next person doesn't try it.</p><p></p><p>PRTHPJXJFKMH</p><p>9EKYYFR43JER</p><p>4MN7ALM6L6JL</p><p>4PFPXRNX6937</p><p>FKT7JRM6WTER</p><p></p><p>Redeem in the App Store app (your account picture → Redeem Gift Card or Code), or at <a href=\"https://apps.apple.com/redeem\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://apps.apple.com/redeem</a></p><p>I'd love to see what ends up on your first tape. 📼</p>"
+            ],
+            "source": "Product Hunt",
+            "product_shape_score": 2.0,
+            "launch_heat_score": 9.66,
+            "interest_tags": [
+              "开发者工具",
+              "内容创作"
+            ],
+            "domain_tags": [
+              "照片与视频",
+              "iOS 应用"
+            ],
+            "tool_tags": [
+              "复古摄像机",
+              "VHS/DV 滤镜"
+            ],
+            "mechanism_tags": [
+              "每日短视频记录",
+              "一次性付费无订阅"
+            ],
+            "author": "Matt Brewer",
+            "score": 29.515,
+            "why": "Product Hunt 当前获得 129 票、28 条评论；仍处在近期新品验证窗口",
+            "band": "爆发新品",
+            "mechanism": "可迁移的机制在于把通用模型能力封装进具体产品形态，让用户按任务而不是按模型来消费能力。",
+            "routing_confidence": 0.97,
+            "routing_interest": "",
+            "routing_reason": "Flipcorder 是一个把 iPhone 模拟成 1991 年摄像机的复古拍照/录像娱乐应用，核心任务是拍摄 20 秒短片留存家庭影像，不涉及法律、供应链、教育、销售外联、任务管理等任何给定兴趣点的核心任务。虽然包含“记录/每日”这类泛化词汇，但没有邮件、agent、工作流、数据分析等垂直能力，属于消费级影像娱乐工具，因此不应纳入任何兴趣点的 observation。",
+            "highlight_one_liner": "一天只给一盘带的复古摄像机",
+            "highlight_keywords": [
+              "每日一盘带",
+              "VHS 滤镜",
+              "买断无订阅"
+            ],
+            "reuse_direction": "把「每天只发一盘带」这种有限录制额度，做成记录类产品的核心机制，用稀缺感替代无限存储和无限时长。",
+            "minimal_mvp": "第一版只做「当天一盘带」的时长上限、拍摄到 VHS 滤镜导出这一段，先不做素材库、分享社区和云同步。",
+            "value_tag": "可迁移机制",
+            "copy_generation_source": "openai",
+            "copy_prompt_version": "openai_compact_v5",
+            "source_type": "product_hunt_high_potential",
+            "source_label": "Product Hunt",
+            "stars_total": "129",
+            "heat_line": "🔥PH 129票｜28评"
+          },
+          {
+            "title": "ldbumble/taskuary",
+            "url": "https://github.com/ldbumble/taskuary",
+            "website_url": "",
+            "summary": "",
+            "description": "",
+            "source_label": "GitHub",
+            "heat_line": "🌟144",
+            "stars_total": "144",
+            "tags": [
+              "邮件自动化工具",
+              "开发者工具",
+              "工作流自动化"
+            ],
+            "interest_tags": [
+              "邮件自动化工具",
+              "开发者工具",
+              "工作流自动化"
+            ],
+            "tool_tags": [],
+            "mechanism_tags": [],
+            "highlight_one_liner": "邮件聊天工单转任务的 AI 助手",
+            "reuse_direction": "把「邮件自动化工具 / 开发者工具」封装成更明确的岗位或任务入口",
+            "minimal_mvp": "先围绕“外贸/跨境卖家每天要处理几百封外语客户邮件，核心诉求是快速产出得体的英文回复、并让每封邮件都接得上后续的客户跟进”做单任务 MVP，优先打通输入、执行和结果回传",
+            "source_type": "observation_product",
+            "highlight_keywords": [
+              "邮件自动化工具",
+              "开发者工具",
+              "工作流自动化"
+            ]
+          }
+        ],
+        "groups": [
+          {
+            "key": "hot",
+            "title": "热门样本",
+            "description": "来自 GitHub Trending / Product Hunt 等高热度候选，已具备更明显的市场验证。",
+            "empty_text": "今日暂无新增热门样本。",
+            "items": [
+              {
+                "full_name": "ryancodrai/turbovec",
+                "repo_url": "https://github.com/ryancodrai/turbovec",
+                "title": "RyanCodrai/turbovec",
+                "source_type": "high_potential",
+                "source_layer": "revisit",
+                "repo_id": 1192555574,
+                "owner": "ryancodrai",
+                "name": "turbovec",
+                "summary": "A vector index built on TurboQuant, written in Rust with Python bindings",
+                "url": "https://github.com/ryancodrai/turbovec",
+                "interest_tags": [
+                  "知识检索/RAG"
+                ],
+                "domain_tags": [],
+                "tool_tags": [],
+                "mechanism_tags": [],
+                "stars_total": "17438",
+                "stars_7d": null,
+                "stars_30d": null,
+                "forks_total": 1485,
+                "watchers_total": 71,
+                "created_at": "2026-03-26T10:32:44Z",
+                "pushed_at": "2026-10-07T06:55:09Z",
+                "updated_at": "2026-10-29T23:25:20Z",
+                "homepage": "https://pypi.org/project/turbovec",
+                "topics": [
+                  "ann",
+                  "avx512",
+                  "embedding",
+                  "embeddings",
+                  "faiss",
+                  "nearest-neighbor",
+                  "neon",
+                  "python",
+                  "quant",
+                  "quantization",
+                  "rag",
+                  "rust",
+                  "simd",
+                  "turboquant",
+                  "vector-search"
+                ],
+                "latest_release_tag": "",
+                "is_revisit": true,
+                "eligible": true,
+                "throttled": false,
+                "throttle_reasons": [],
+                "days_since_last_selected": 92,
+                "window_occurrences": 1,
+                "major_update_score": 30,
+                "major_update_signals": [
+                  {
+                    "signal": "stars_total_jump",
+                    "points": 10,
+                    "detail": "总 stars 较上次增加 2937"
+                  },
+                  {
+                    "signal": "pushed_at_refresh",
+                    "points": 10,
+                    "detail": "最近代码推进较上次前进 69 天"
+                  },
+                  {
+                    "signal": "homepage_changed",
+                    "points": 6,
+                    "detail": "官网地址从 空 变为 https://pypi.org/project/turbovec"
+                  },
+                  {
+                    "signal": "multi_signal_bonus",
+                    "points": 4,
+                    "detail": "多类信号同时出现，值得重新进入候选池"
+                  }
+                ],
+                "revisit_reason": "总 stars 较上次增加 2937；最近代码推进较上次前进 69 天；官网地址从 空 变为 https://pypi.org/project/turbovec",
+                "selection_reason": "总 stars 较上次增加 2937；最近代码推进较上次前进 69 天；官网地址从 空 变为 https://pypi.org/project/turbovec",
+                "delta_stars_total": 2937,
+                "delta_stars_7d": 0,
+                "pushed_delta_days": 69,
+                "previous_state": {
+                  "last_selected_at": "2026-07-30",
+                  "selection_count": 1,
+                  "stars_total": 14501,
+                  "stars_7d": 810,
+                  "forks_total": 1284,
+                  "watchers_total": null,
+                  "pushed_at": "2026-07-30T02:38:37Z",
+                  "updated_at": "2026-07-30T02:28:18Z",
+                  "homepage": "",
+                  "latest_release_tag": "",
+                  "description_hash": "54d93b02b9ffedfcd8701a9501de3bbb7c6cd4d7",
+                  "topics_hash": "3aab147f007f0dcd5436434e04e6153f281b71d7"
+                },
+                "current_state": {
+                  "stars_total": 17438,
+                  "stars_7d": null,
+                  "forks_total": 1485,
+                  "watchers_total": 71,
+                  "pushed_at": "2026-10-07T06:55:09Z",
+                  "updated_at": "2026-10-29T23:25:20Z",
+                  "homepage": "https://pypi.org/project/turbovec",
+                  "latest_release_tag": "",
+                  "description_hash": "54d93b02b9ffedfcd8701a9501de3bbb7c6cd4d7",
+                  "topics_hash": "3aab147f007f0dcd5436434e04e6153f281b71d7",
+                  "snapshot_source": "github_api",
+                  "momentum_source": "unavailable"
+                },
+                "fetch_error": "",
+                "rank_score": 63.0,
+                "highlight_one_liner": "Rust 写的量化向量索引，现在能 pip 装了",
+                "highlight_keywords": [
+                  "TurboQuant 量",
+                  "Rust 内核",
+                  "SIMD 分派",
+                  "Python 绑定"
+                ],
+                "reuse_direction": "把 RAG 的向量检索内核从 FAISS 换成一个 Rust 实现、按 CPU 指令集（AVX512/NEON）分派 SIMD 的量化索引，是 Python 服务降低索引内存占用和查询延迟的一条可复用路径。",
+                "minimal_mvp": "先 pip 装 turbovec，把现有 embedding 灌进去，与当前用的 FAISS 索引在同一批查询上比召回率、内存占用和 QPS，确认量化损失可接受后再替换检索层。",
+                "semantic_bonus": 3.0,
+                "ai_noise": false,
+                "ai_match_score": 4,
+                "ai_priority": "low",
+                "ai_rationale": "Rust 向量索引属于 RAG 底层检索基础设施，并非 AI 应用或产品方向，与雷达关注场景关联较弱。",
+                "value_tag": "可迁移机制",
+                "copy_generation_source": "openai",
+                "copy_prompt_version": "openai_compact_v5",
+                "source_label": "GitHub",
+                "heat_line": ""
+              },
+              {
+                "title": "Orkas-AI/Orkas",
+                "full_name": "orkas-ai/orkas",
+                "url": "https://github.com/Orkas-AI/Orkas",
+                "source_type": "high_potential",
+                "source_layer": "discovery",
+                "repo_id": 1224575142,
+                "owner": "orkas-ai",
+                "name": "orkas",
+                "summary": "Orkas is an open-source (MIT), local-first AI team for your desktop: a Commander turns your goal into to-dos and coordinates 16 built-in specialist agents plus Claude Code, Codex, OpenCode, OpenClaw and Hermes, with projects, scheduled automations and connectors. Free app for macOS & Windows; built-in models or your own keys.",
+                "interest_tags": [
+                  "开发者工具",
+                  "工作流自动化",
+                  "桌面工作台"
+                ],
+                "domain_tags": [],
+                "tool_tags": [],
+                "mechanism_tags": [],
+                "highlight_one_liner": "指挥官拆目标，派给 16 个专家 agent",
+                "highlight_keywords": [
+                  "本地优先",
+                  "指挥官拆解任务",
+                  "多 agent 分工",
+                  "定时自动化"
+                ],
+                "reuse_direction": "最值得借鉴的是「Commander 把用户目标拆成待办，再按任务类型分派给不同专家 agent」这一层编排设计，可迁移到任何要把长任务拆开、交给多个 agent 分别执行的产品。",
+                "minimal_mvp": "第一版先做一条路径：用户输入一个目标，指挥官生成待办清单并依次分派给 2-3 个内置专家 agent 执行，结果在同一窗口按任务逐条回报；定时自动化和外部 agent（Claude Code、Codex 等）先不接。",
+                "selection_reason": "已有较强社区验证",
+                "is_revisit": false,
+                "revisit_reason": "",
+                "score": 42.6362,
+                "rank_score": 39.3954,
+                "stars_total": "4138",
+                "stars_7d": null,
+                "stars_30d": null,
+                "forks_total": 236,
+                "watchers_total": null,
+                "created_at": "2026-04-29T12:19:08Z",
+                "pushed_at": "2026-10-30T01:27:32Z",
+                "updated_at": "2026-10-30T02:51:24Z",
+                "topics": [
+                  "agent-collaboration",
+                  "agent-harness",
+                  "agent-orchestration",
+                  "agent-team",
+                  "agent-workflow",
+                  "ai-assistant",
+                  "ai-automation",
+                  "ai-employee",
+                  "ai-productivity",
+                  "ai-team",
+                  "ai-workflow",
+                  "autonomous-agents",
+                  "claude-code-gui",
+                  "claude-cowork",
+                  "desktop-agent",
+                  "local-first",
+                  "multi-agent",
+                  "multi-agent-system",
+                  "self-evolving-agents",
+                  "task-automation"
+                ],
+                "semantic_bonus": 23.0,
+                "ai_noise": false,
+                "ai_match_score": 8,
+                "ai_priority": "headline",
+                "ai_rationale": "开源本地优先的多 Agent 桌面工作台，Commander 自动拆解任务并调度 16 个专业 Agent，直接对应企业自动化工作流方向，4k+ star 社区验证较强，是今日最值得关注的项目。",
+                "value_tag": "可迁移机制",
+                "copy_generation_source": "openai",
+                "copy_prompt_version": "openai_compact_v5",
+                "source_label": "GitHub",
+                "heat_line": ""
+              },
+              {
+                "id": "1290712",
+                "title": "Notra",
+                "name": "Notra",
+                "repo_name": "notra-5",
+                "summary": "Notra is a GEO tool that helps you rank in AI Search.",
+                "description": "Notra is a GEO tool that asks ChatGPT, Claude and Gemini the questions your buyers ask. It shows whether you appear, who appears instead and how to fix it.",
+                "url": "https://www.producthunt.com/products/notra-3?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai-idea-radar-v4-2+%28ID%3A+294543%29",
+                "website_url": "https://www.producthunt.com/r/GWXNGB4WPOXZYO?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai-idea-radar-v4-2+%28ID%3A+294543%29",
+                "topics": [
+                  "Marketing",
+                  "SEO",
+                  "Growth Hacks"
+                ],
+                "topic_slugs": [
+                  "marketing",
+                  "seo",
+                  "growth-hacks"
+                ],
+                "makers": [
+                  "[REDACTED]",
+                  "Jan Burzinski"
+                ],
+                "votes_count": 149,
+                "comments_count": 22,
+                "featured_at": "2026-10-27T07:01:00Z",
+                "created_at": "2026-10-27T07:01:00Z",
+                "top_comments": [
+                  "<p>Hey Product Hunt, I'm Dominik, one of the makers of Notra.</p><p>More people now ask ChatGPT which tool to use instead of searching Google, and we built Notra GEO so teams can find out whether they show up in those answers.</p><p><strong>The problem.</strong> AI engines usually recommend two or three products per question, and if yours isn't one of them you lose the customer without ever knowing.</p><p><strong>Who it's for.</strong> Startups and developer tool teams who invest in content and want AI engines to recommend them.</p><p><strong>What Notra does.</strong></p><ul><li><p>It asks ChatGPT, Claude, Gemini, Perplexity and Grok what your customers would ask and shows which competitors get named instead of you.</p></li><li><p>Conversations and personas follow a realistic buyer through follow-up questions, so you see your visibility the way they would.</p></li><li><p>It finds the questions and cited sites where you're missing, then writes the articles to close those gaps in your brand voice.</p></li><li><p>AI Crawl Analytics shows which pages AI bots read on your site, and it's free for up to 1 million events a month.</p></li></ul><p>I'd love to hear what AI engines say about your product, and I'll be here all day to answer questions.</p>",
+                  "<p>Looks great, I wonder though, how does it stick to your brand voice... a brand guide to help out... or just a set of prompts to tell what your brand voice should sound like?</p>",
+                  "<p>Can I rerun the same buyer question several times and compare the answers? I'd want to know a missing mention is a pattern before changing the site's content.</p>"
+                ],
+                "source": "Product Hunt",
+                "product_shape_score": 2.0,
+                "launch_heat_score": 9.71,
+                "interest_tags": [
+                  "知识检索/RAG"
+                ],
+                "domain_tags": [
+                  "营销",
+                  "SEO",
+                  "AI 搜索"
+                ],
+                "tool_tags": [
+                  "GEO 工具",
+                  "AI 搜索可见性",
+                  "竞品分析"
+                ],
+                "mechanism_tags": [
+                  "问题模拟",
+                  "品牌可见性监测",
+                  "优化建议"
+                ],
+                "author": "[REDACTED] / Jan Burzinski",
+                "score": 29.825,
+                "why": "Product Hunt 当前获得 149 票、22 条评论；仍处在近期新品验证窗口",
+                "band": "爆发新品",
+                "mechanism": "可迁移的机制在于把通用模型能力封装进具体产品形态，让用户按任务而不是按模型来消费能力。",
+                "routing_confidence": 0.05,
+                "routing_interest": "",
+                "routing_reason": "Notra 是面向营销/SEO 的 GEO 工具，核心任务是监测品牌在 ChatGPT、Claude、Gemini 等 AI 搜索中的可见性并给出优化建议。它不服务给定兴趣点中的法律、供应链、教育、邮件外联、任务管理、财务等垂直核心任务；虽然涉及 AI 搜索与数据分析，但这只是泛营销场景，不能因 AI 或数据单词命中而纳入。",
+                "highlight_one_liner": "盯住品牌在 AI 回答里的出场位置",
+                "highlight_keywords": [
+                  "GEO 排名",
+                  "AI 搜索可见性",
+                  "竞品对照",
+                  "问题模拟"
+                ],
+                "reuse_direction": "把「模拟用户真实提问、抓取 AI 回答中品牌出现的位置与竞品顺序」这套监测思路，迁移到任何想在生成式搜索里争取曝光的品类上。",
+                "minimal_mvp": "第一版先列出 20 到 30 个用户真会问的问题，逐个跑主流 AI 搜索，记录品牌有没有被提到、排第几、旁边是谁，汇总成一张可见性对照表。",
+                "value_tag": "可迁移机制",
+                "copy_generation_source": "openai",
+                "copy_prompt_version": "openai_compact_v5",
+                "source_type": "product_hunt_high_potential",
+                "source_label": "Product Hunt",
+                "stars_total": "149",
+                "heat_line": "🔥PH 149票｜22评"
+              },
+              {
+                "id": "1275386",
+                "title": "Flipcorder",
+                "name": "Flipcorder",
+                "repo_name": "flipcorder",
+                "summary": "A 1991 camcorder for your iPhone, one tape a day",
+                "description": "Currently #3 in Top Paid Photo & Video on the US App Store 🎉 Flipcorder turns your iPhone into a 1991 camcorder. We have lost touch crafting perfect videos for social media, and Flipcorder encourages you to take shorter \"flips\" of 20 seconds each throughout your day to enjoy as a home video at the end of the day. No editing, just shoot and enjoy in VHS or DV style. Made for iPhone Duo, works on any iPhone. $4.99 once. No ads, no subscription, no watermark, no account.",
+                "url": "https://www.producthunt.com/products/flipcorder?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai-idea-radar-v4-2+%28ID%3A+294543%29",
+                "website_url": "https://www.producthunt.com/r/5D3YQB6LWNMKJJ?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+ai-idea-radar-v4-2+%28ID%3A+294543%29",
+                "topics": [
+                  "iOS",
+                  "Apple",
+                  "Photo & Video"
+                ],
+                "topic_slugs": [
+                  "ios",
+                  "apple",
+                  "photo-video"
+                ],
+                "makers": [
+                  "Matt Brewer"
+                ],
+                "votes_count": 129,
+                "comments_count": 28,
+                "featured_at": "2026-10-26T07:01:00Z",
+                "created_at": "2026-10-26T07:01:00Z",
+                "top_comments": [
+                  "<p>Hi Product Hunt! I’m Matt, and Flipcorder is the first app I’ve put on the App Store under my own name in about a decade. I’ve spent those years building apps and software for other people, so launching one of my own has me really excited. Like stupid excited!</p><p></p><p>It’s been a wild first weekend: it’s currently #3 in Top Paid, Photo &amp; Video on the US App Store and I'm so humbled and amazed!</p><p></p><p>Flipcorder is a 1991 camcorder for your iPhone. You film little moments through the day, each one a “flip” (20 seconds by default), and they all land on that day’s dated tape. There’s no editing, so the chatter, the pauses and the fumble for the stop button stay in. Tonight, you play back one raw home movie in a warm VHS or crisp MiniDV look, date stamp and all.</p><p></p><p>I really wanted a way to capture those moments and keep authentic video alive - I feel we have lost so much chasing perfection for social media, that the messiness of a camcorder is appealing and comforting. Home movies can be for anyone, and Flipcorder is for those people.</p><p></p><p>I built it around iPhone Duo, which came out on Friday. The fold is the power switch: closed, the outer screen shows a lens cap; open it and the cap comes off. Fully open, the person you’re filming sees themselves on the outer screen with a red REC light. It works on every iPhone with iOS 26 or later too, with a big glowing POWER key instead.</p><p></p><p>A few things I cared about:<br>• $4.99 once. No subscription, no ads, no watermarks, no account needed.<br>• Your tapes stay on your phone unless you share them.<br>• Never lose footage: closing the phone, a call or low storage always saves the flip.</p><p></p><p>Today launches v1.1.0 that includes earning stickers, subtle streaks for your home screen widgets, some in app events (like Halloween coming up) and more. I have a lot planned for Flipcorder!</p><p></p><p>I’d love to hear what you’d film first, and anything you’d change. I’ll be here all day answering questions.</p>",
+                  "<p>Thanks for the fun launch everyone, it was great getting some feedback and engaging with everyone and hope there are some new fans!</p>",
+                  "<p>A little thank-you for stopping by: here are 5 free codes for the full app, one each, no strings. If you grab one, reply with which code you took so the next person doesn't try it.</p><p></p><p>PRTHPJXJFKMH</p><p>9EKYYFR43JER</p><p>4MN7ALM6L6JL</p><p>4PFPXRNX6937</p><p>FKT7JRM6WTER</p><p></p><p>Redeem in the App Store app (your account picture → Redeem Gift Card or Code), or at <a href=\"https://apps.apple.com/redeem\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https://apps.apple.com/redeem</a></p><p>I'd love to see what ends up on your first tape. 📼</p>"
+                ],
+                "source": "Product Hunt",
+                "product_shape_score": 2.0,
+                "launch_heat_score": 9.66,
+                "interest_tags": [
+                  "开发者工具",
+                  "内容创作"
+                ],
+                "domain_tags": [
+                  "照片与视频",
+                  "iOS 应用"
+                ],
+                "tool_tags": [
+                  "复古摄像机",
+                  "VHS/DV 滤镜"
+                ],
+                "mechanism_tags": [
+                  "每日短视频记录",
+                  "一次性付费无订阅"
+                ],
+                "author": "Matt Brewer",
+                "score": 29.515,
+                "why": "Product Hunt 当前获得 129 票、28 条评论；仍处在近期新品验证窗口",
+                "band": "爆发新品",
+                "mechanism": "可迁移的机制在于把通用模型能力封装进具体产品形态，让用户按任务而不是按模型来消费能力。",
+                "routing_confidence": 0.97,
+                "routing_interest": "",
+                "routing_reason": "Flipcorder 是一个把 iPhone 模拟成 1991 年摄像机的复古拍照/录像娱乐应用，核心任务是拍摄 20 秒短片留存家庭影像，不涉及法律、供应链、教育、销售外联、任务管理等任何给定兴趣点的核心任务。虽然包含“记录/每日”这类泛化词汇，但没有邮件、agent、工作流、数据分析等垂直能力，属于消费级影像娱乐工具，因此不应纳入任何兴趣点的 observation。",
+                "highlight_one_liner": "一天只给一盘带的复古摄像机",
+                "highlight_keywords": [
+                  "每日一盘带",
+                  "VHS 滤镜",
+                  "买断无订阅"
+                ],
+                "reuse_direction": "把「每天只发一盘带」这种有限录制额度，做成记录类产品的核心机制，用稀缺感替代无限存储和无限时长。",
+                "minimal_mvp": "第一版只做「当天一盘带」的时长上限、拍摄到 VHS 滤镜导出这一段，先不做素材库、分享社区和云同步。",
+                "value_tag": "可迁移机制",
+                "copy_generation_source": "openai",
+                "copy_prompt_version": "openai_compact_v5",
+                "source_type": "product_hunt_high_potential",
+                "source_label": "Product Hunt",
+                "stars_total": "129",
+                "heat_line": "🔥PH 129票｜28评"
+              }
+            ]
+          },
+          {
+            "key": "potential",
+            "title": "潜力样本",
+            "description": "来自长尾观察或较早期验证阶段，但方向和切口值得继续跟踪。",
+            "empty_text": "今日暂无新增潜力样本。",
+            "items": [
+              {
+                "title": "ldbumble/taskuary",
+                "url": "https://github.com/ldbumble/taskuary",
+                "website_url": "",
+                "summary": "",
+                "description": "",
+                "source_label": "GitHub",
+                "heat_line": "🌟144",
+                "stars_total": "144",
+                "tags": [
+                  "邮件自动化工具",
+                  "开发者工具",
+                  "工作流自动化"
+                ],
+                "interest_tags": [
+                  "邮件自动化工具",
+                  "开发者工具",
+                  "工作流自动化"
+                ],
+                "tool_tags": [],
+                "mechanism_tags": [],
+                "highlight_one_liner": "邮件聊天工单转任务的 AI 助手",
+                "reuse_direction": "把「邮件自动化工具 / 开发者工具」封装成更明确的岗位或任务入口",
+                "minimal_mvp": "先围绕“外贸/跨境卖家每天要处理几百封外语客户邮件，核心诉求是快速产出得体的英文回复、并让每封邮件都接得上后续的客户跟进”做单任务 MVP，优先打通输入、执行和结果回传",
+                "source_type": "observation_product",
+                "highlight_keywords": [
+                  "邮件自动化工具",
+                  "开发者工具",
+                  "工作流自动化"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "idea_items": [
+      {
+        "title": "AI 应用场景 / 数据",
+        "need_line": "B端产品经理在梳理业务全场景时，最耗神的是要把角色、单据、业务流程、数据传递等要素完整拆出并落到需求文档，手工做慢且担心遗漏。",
+        "status_line": "当下讨论集中在用流程模板和个人方法论来兜底，很多人按标准产品/定制产品分类，再通过梳理组织架构、分角色访谈和整理业务流程来产出需求。",
+        "direction_line": "值得跟踪把角色-单据-流程-数据传递等梳理结构做成的半自动场景建模辅助，让产品经理以结构化输入快速生成全场景需求清单。",
+        "source_urls": [
+          "https://zhuanlan.zhihu.com/p/20468570",
+          "https://www.zhihu.com/question/460427762/answer/1895672636"
+        ],
+        "source_platforms": [],
+        "tags": [
+          "AI 应用场景 / 数据"
+        ]
+      },
+      {
+        "title": "法律 AI 工作流",
+        "need_line": "用户在缺少完整交易背景的情况下，需要快速判断一份合同能否签字以及有哪些关键风险。",
+        "status_line": "律师强调必须与客户确认交易模式和背景后才能实质审查，而普通用户常直接甩来合同或套用模板，双方在半小时完成“要不要签字”的预期与实际数天工作量之间存在明显落差。",
+        "direction_line": "值得跟踪的方向是把交易背景问答与合同条款风险提示结合起来，让 AI 先补齐背景再给出签字建议，而不是只做文本逐条校对。",
+        "source_urls": [
+          "https://zhuanlan.zhihu.com/p/702780746",
+          "https://www.zhihu.com/question/530439453/answer/2471635526"
+        ],
+        "source_platforms": [],
+        "tags": [
+          "法律 AI 工作流"
+        ]
+      },
+      {
+        "title": "教育 AI 辅导",
+        "need_line": "教师需要把备课、课堂提问、课后反思连贯成一条可复用的辅导流程，但现有做法多靠人工经验拼接，难以持续迭代。",
+        "status_line": "大家主要用经验帖总结的“定计划—拆知识点—设问巩固—课后记录反思”流程，配合教育资源平台、课件模板和微课工具手工拼装，AI 仅顺带承担资源推送。",
+        "direction_line": "把知识点切分、设问与巩固设计和课后反思回流串成可迭代的备课链路，让课堂上生成的学生问题与反应自动成为下一轮备课输入。",
+        "source_urls": [
+          "https://zhuanlan.zhihu.com/p/5875025118",
+          "https://www.zhihu.com/question/22281218/answer/1244497920"
+        ],
+        "source_platforms": [],
+        "tags": [
+          "教育 AI 辅导"
+        ]
+      }
+    ],
+    "interest_sections": [
+      {
+        "title": "AI 应用场景 / 数据",
+        "summary": "这一组信号主要来自 zhihu，显示B端需求梳理仍是靠个人经验拼出来的耗时活，缺少可复用并被验证的结构化支撑。",
+        "items": [
+          {
+            "title": "需求",
+            "paragraph": "B端产品经理在梳理业务全场景时，最耗神的是要把角色、单据、业务流程、数据传递等要素完整拆出并落到需求文档，手工做慢且担心遗漏",
+            "source": "social",
+            "url": "https://zhuanlan.zhihu.com/p/20468570 ｜ https://www.zhihu.com/question/460427762/answer/1895672636",
+            "source_labels": [
+              "社媒",
+              "知乎"
+            ],
+            "source_url_list": [
+              "https://zhuanlan.zhihu.com/p/20468570",
+              "https://www.zhihu.com/question/460427762/answer/1895672636"
+            ]
+          },
+          {
+            "title": "现状",
+            "paragraph": "当下讨论集中在用流程模板和个人方法论来兜底，很多人按标准产品/定制产品分类，再通过梳理组织架构、分角色访谈和整理业务流程来产出需求。",
+            "source": "social",
+            "url": "https://zhuanlan.zhihu.com/p/20468570 ｜ https://www.zhihu.com/question/460427762/answer/1895672636",
+            "source_labels": [
+              "社媒",
+              "知乎"
+            ],
+            "source_url_list": [
+              "https://zhuanlan.zhihu.com/p/20468570",
+              "https://www.zhihu.com/question/460427762/answer/1895672636"
+            ]
+          },
+          {
+            "title": "方向跟踪",
+            "paragraph": "值得跟踪把角色-单据-流程-数据传递等梳理结构做成的半自动场景建模辅助，让产品经理以结构化输入快速生成全场景需求清单。",
+            "source": "synthesis",
+            "url": "https://zhuanlan.zhihu.com/p/20468570 ｜ https://www.zhihu.com/question/460427762/answer/1895672636",
+            "source_labels": [
+              "社媒",
+              "知乎"
+            ],
+            "source_url_list": [
+              "https://zhuanlan.zhihu.com/p/20468570",
+              "https://www.zhihu.com/question/460427762/answer/1895672636"
+            ]
+          }
+        ],
+        "product_items": []
+      },
+      {
+        "title": "法律 AI 工作流",
+        "summary": "这一组信号主要来自 zhihu、GitHub；合同审查的耗时不止在读条款，更在缺少交易背景，AI 的机会在于把背景询问和风险研判嵌入审查流程，并降低非专业人士自行套用模板的隐患。",
+        "items": [
+          {
+            "title": "需求",
+            "paragraph": "用户在缺少完整交易背景的情况下，需要快速判断一份合同能否签字以及有哪些关键风险",
+            "source": "social",
+            "url": "https://zhuanlan.zhihu.com/p/702780746 ｜ https://www.zhihu.com/question/530439453/answer/2471635526",
+            "source_labels": [
+              "社媒",
+              "知乎"
+            ],
+            "source_url_list": [
+              "https://zhuanlan.zhihu.com/p/702780746",
+              "https://www.zhihu.com/question/530439453/answer/2471635526"
+            ]
+          },
+          {
+            "title": "现状",
+            "paragraph": "律师强调必须与客户确认交易模式和背景后才能实质审查，而普通用户常直接甩来合同或套用模板，双方在半小时完成“要不要签字”的预期与实际数天工作量之间存在明显落差。",
+            "source": "social",
+            "url": "https://zhuanlan.zhihu.com/p/702780746 ｜ https://www.zhihu.com/question/530439453/answer/2471635526",
+            "source_labels": [
+              "社媒",
+              "知乎"
+            ],
+            "source_url_list": [
+              "https://zhuanlan.zhihu.com/p/702780746",
+              "https://www.zhihu.com/question/530439453/answer/2471635526"
+            ]
+          },
+          {
+            "title": "方向跟踪",
+            "paragraph": "值得跟踪的方向是把交易背景问答与合同条款风险提示结合起来，让 AI 先补齐背景再给出签字建议，而不是只做文本逐条校对。",
+            "source": "synthesis",
+            "url": "https://zhuanlan.zhihu.com/p/702780746 ｜ https://www.zhihu.com/question/530439453/answer/2471635526",
+            "source_labels": [
+              "社媒",
+              "知乎"
+            ],
+            "source_url_list": [
+              "https://zhuanlan.zhihu.com/p/702780746",
+              "https://www.zhihu.com/question/530439453/answer/2471635526"
+            ]
+          }
+        ],
+        "product_items": [
+          {
+            "title": "abaiar/-LexAI",
+            "url": "https://github.com/abaiar/-LexAI",
+            "website_url": "",
+            "summary": "",
+            "description": "",
+            "source_label": "GitHub",
+            "heat_line": "🌟33",
+            "stars_total": "33",
+            "tags": [
+              "法律 AI 工作流"
+            ],
+            "interest_tags": [
+              "法律 AI 工作流"
+            ],
+            "tool_tags": [],
+            "mechanism_tags": [],
+            "highlight_one_liner": "LLM 智能法律咨询与文书平台",
+            "reuse_direction": "把「法律 AI 工作流」封装成更明确的岗位或任务入口",
+            "minimal_mvp": "先围绕“用户在缺少完整交易背景的情况下，需要快速判断一份合同能否签字以及有哪些关键风险”做单任务 MVP，优先打通输入、执行和结果回传"
+          }
+        ]
+      },
+      {
+        "title": "教育 AI 辅导",
+        "summary": "这一组信号主要来自 zhihu，两篇经验与资源整理帖把备课痛点锁定在课时多、时间紧下的内容切分与素材拼装，解法仍以人工流程加资源站和模板工具为主，AI 尚未真正介入备课的核心环节。",
+        "items": [
+          {
+            "title": "需求",
+            "paragraph": "",
+            "source": "social",
+            "url": "https://zhuanlan.zhihu.com/p/5875025118 ｜ https://www.zhihu.com/question/22281218/answer/1244497920",
+            "source_labels": [
+              "社媒",
+              "知乎"
+            ],
+            "source_url_list": [
+              "https://zhuanlan.zhihu.com/p/5875025118",
+              "https://www.zhihu.com/question/22281218/answer/1244497920"
+            ]
+          },
+          {
+            "title": "现状",
+            "paragraph": "目前的讨论集中在用经验帖总结的“定计划—拆知识点—设问巩固—课后记录反思”流程，配合国家教育资源公共服务平台、中学课件网、Focusky、万彩动画大师等资源站和模板工具拼课件、做微课，AI 只作为资源智能推送的一环被顺带提及。",
+            "source": "social",
+            "url": "https://zhuanlan.zhihu.com/p/5875025118 ｜ https://www.zhihu.com/question/22281218/answer/1244497920",
+            "source_labels": [
+              "社媒",
+              "知乎"
+            ],
+            "source_url_list": [
+              "https://zhuanlan.zhihu.com/p/5875025118",
+              "https://www.zhihu.com/question/22281218/answer/1244497920"
+            ]
+          },
+          {
+            "title": "方向跟踪",
+            "paragraph": "值得跟踪的是把知识点切分、设问与巩固设计和课后反思回流串成一条可迭代的备课链路，让课堂上生成的学生问题与反应自动成为下一轮备课的输入。",
+            "source": "synthesis",
+            "url": "https://zhuanlan.zhihu.com/p/5875025118 ｜ https://www.zhihu.com/question/22281218/answer/1244497920",
+            "source_labels": [
+              "社媒",
+              "知乎"
+            ],
+            "source_url_list": [
+              "https://zhuanlan.zhihu.com/p/5875025118",
+              "https://www.zhihu.com/question/22281218/answer/1244497920"
+            ]
+          }
+        ],
+        "product_items": []
+      },
+      {
+        "title": "AI 任务管理",
+        "summary": "这一组信号主要来自 zhihu，两个看似不相关的“任务管理”讨论都指向同一件事——功能不断膨胀后操作成本反超收益，用户绕道用重启、命令行和清单式对比文章应付，任务结束后的总结与复盘仍是空白。",
+        "items": [
+          {
+            "title": "需求",
+            "paragraph": "",
+            "source": "social",
+            "url": "https://zhuanlan.zhihu.com/p/2031709592678291398 ｜ https://www.zhihu.com/question/24247390/answer/2810526734",
+            "source_labels": [
+              "社媒",
+              "知乎"
+            ],
+            "source_url_list": [
+              "https://zhuanlan.zhihu.com/p/2031709592678291398",
+              "https://www.zhihu.com/question/24247390/answer/2810526734"
+            ]
+          },
+          {
+            "title": "现状",
+            "paragraph": "现状是卡顿时干脆重启电脑或去命令行敲命令结束进程，工具选型依赖“14 款任务管理软件对比”这类清单文章，任务拆解靠父子任务和重复模板标准化，收尾总结仍主要靠人自己整理。",
+            "source": "social",
+            "url": "https://zhuanlan.zhihu.com/p/2031709592678291398 ｜ https://www.zhihu.com/question/24247390/answer/2810526734",
+            "source_labels": [
+              "社媒",
+              "知乎"
+            ],
+            "source_url_list": [
+              "https://zhuanlan.zhihu.com/p/2031709592678291398",
+              "https://www.zhihu.com/question/24247390/answer/2810526734"
+            ]
+          },
+          {
+            "title": "方向跟踪",
+            "paragraph": "值得跟踪的是把“任务管理”从不断加功能的重管理台里拆出来：系统侧做成资源枯竭时也能秒开、只做定位与处置的轻量诊断层，个人侧做成按任务自动沉淀阶段总结的记录层，而不是继续在单一应用里堆模块。",
+            "source": "synthesis",
+            "url": "https://zhuanlan.zhihu.com/p/2031709592678291398 ｜ https://www.zhihu.com/question/24247390/answer/2810526734",
+            "source_labels": [
+              "社媒",
+              "知乎"
+            ],
+            "source_url_list": [
+              "https://zhuanlan.zhihu.com/p/2031709592678291398",
+              "https://www.zhihu.com/question/24247390/answer/2810526734"
+            ]
+          }
+        ],
+        "product_items": []
+      }
+    ],
+    "vendor_news_items": [
+      {
+        "title": "Introducing the Microsoft Copilot harness in Foundry Agent Service",
+        "url": "https://devblogs.microsoft.com/foundry/microsoft-copilot-harness-in-foundry/",
+        "source_name": "Microsoft Azure Blog",
+        "source_url": "https://azure.microsoft.com/en-us/blog/",
+        "published_at": "2026-10-28T17:40:56Z",
+        "event_type": "model_launch",
+        "raw_summary": "Today, we’re introducing the Microsoft Copilot harness in Foundry Agent Service in public preview. The post Introducing the Microsoft Copilot harness in Foundry Agent Service appeared first on Microsoft Azure Blog .",
+        "summary": "微软在 Foundry Agent Service 中推出 Microsoft Copilot harness，目前处于公开预览阶段。",
+        "impact_points": [
+          "Microsoft / Azure AI 发布新模型后，相关应用的能力上限和产品包装空间会立刻变化。",
+          "这类更新会优先影响 Agent 与工作流型应用的执行方式和稳定性。"
+        ],
+        "watch_items": [
+          "关注新模型是否真的在关键场景里带来更稳定的结果与更好的成本结构。",
+          "关注它是否能减少多步任务中的人工接管频率。"
+        ],
+        "vendor_tags": [
+          "Microsoft",
+          "Azure AI"
+        ],
+        "mechanism_tags": [
+          "Agent"
+        ],
+        "categories": [
+          "AI + machine learning",
+          "Copilot"
+        ],
+        "impact_score": 72,
+        "age_days": 2,
+        "summary_short": "微软上线 Foundry Copilot harness 公开预览",
+        "summary_generation_source": "openai",
+        "summary_prompt_version": "vendor_summary_zh_v4"
+      },
+      {
+        "title": "Google Gen AI SDK v2.32.0 发布",
+        "url": "https://github.com/googleapis/python-genai/releases/tag/v2.32.0",
+        "source_name": "Google Gemini SDK Releases",
+        "source_url": "https://github.com/googleapis/python-genai/releases",
+        "published_at": "2026-10-21T00:26:23Z",
+        "event_type": "api_tool_launch",
+        "raw_summary": "## [2.32.0](https://github.com/googleapis/python-genai/compare/v2.31.0...v2.32.0) (2026-10-21) ### Features * Add base_voice to PromptedVoice in GAOS SDK ([5488643](https://github.com/googleapis/python-genai/commit/548864370ee9c88de0bd839b619dc05bcb7085e7)) * Add generation_output_config to GenerateContentConfig ([5c008e1](https://github.com/googleapis/python-genai/commit/5c008e14b9c9fdecbaf61eb53ad7c09f57fa5f8a)) * Add Live API in-session context updates (`send_context_update`) and types across GenAI SDKs. ([364889a](https://github.com/googleapis/python-genai/commit/364889aafe40bfa8f3b9db847ba272d299f7d632)) * **sdks:** Enable `fixes.openSingleValueEnumsOct2026` across all SDKs ([78f6d34](https://github.com/googleapis/python-genai/commit/78f6d3412caaaed44f99ce57be2d16d0b8c407cb)) * Update discovery doc ([6cd176e](https://github.com/googleapis/python-genai/commit/6cd176e135a188bbb0d0f9afca520e7d6483823d)) ### Bug Fixes * Base64-encode inline bytes in Live send_tool_response ([a7bbff6](https://github.com/googleapis/python-genai/commit/a7bbff6e73fa9444802cd9a17e8c94e30341bf5d)), refs [#3022](https://github.com/googleapis/python-genai/issues/3022) * Don't crash parsing responses with JSON objects in `Any`-typed fields ([4c1abcc](https://github.com/googleapis/python-genai/commit/4c1abccf258c9247218e66610790043893cd6950)) * **interactions:** Sync InteractionSseEventInteractionStatus enum with InteractionStatus ([ba854b2](https://github.com/googleapis/python-genai/commit/ba854b2d29a3ff0d4758da886edabb458726b210)) ### Documentation * Publish the API reference on each release ([1d12358](https://github.com/googleapis/python-genai/commit/1d12358a1398b9a510ae8ba25dd31e746d8e9be9)) * Transition docs workflow to GitHub Actions ([3b1256a](https://github.com/googleapis/python-genai/commit/3b1256ac5f4b8c49a469ca307ca765185184774d))",
+        "summary": "Google 发布 Gen AI SDK v2.32.0，为 Live API 新增会话内上下文更新接口 send_context_update，并在 GenerateContentConfig 中加入 generation_output_config。",
+        "impact_points": [
+          "Google / Gemini 开放新 API / 工具后，开发者可以直接把上游能力接入现有工作流。",
+          "多模态能力增强后，内容生成、理解和输入方式会有新的产品机会。"
+        ],
+        "watch_items": [
+          "关注新 API / 工具是否附带调用限制、权限门槛或额外工程复杂度。",
+          "关注多模态能力是否已经足够稳定到可以进入产品主链路。"
+        ],
+        "vendor_tags": [
+          "Google",
+          "Gemini"
+        ],
+        "mechanism_tags": [
+          "Multimodal",
+          "API"
+        ],
+        "categories": [
+          "Release",
+          "SDK",
+          "API"
+        ],
+        "impact_score": 66,
+        "age_days": 9,
+        "summary_short": "Google Gen AI SDK v2.32.0 新增 Live API 上下文更新",
+        "summary_generation_source": "openai",
+        "summary_prompt_version": "vendor_summary_zh_v4"
+      },
+      {
+        "title": "百度智能云：API网关专享版正式上线",
+        "url": "https://cloud.baidu.com/news/productNews_0ea55072-8153-4a57-a409-2b43a8a0adab",
+        "source_name": "百度智能云产品动态",
+        "source_url": "https://cloud.baidu.com/news/productNews",
+        "published_at": "2026-10-21T00:00:00Z",
+        "event_type": "api_tool_launch",
+        "raw_summary": "API网关专享版正式上线，统一治理传统API与AI流量，助力AI应用生产级落地！",
+        "summary": "百度智能云正式上线 API网关专享版，可统一治理传统 API 与 AI 流量。",
+        "impact_points": [
+          "百度 / 千帆 开放新 API / 工具后，开发者可以直接把上游能力接入现有工作流。"
+        ],
+        "watch_items": [
+          "关注新 API / 工具是否附带调用限制、权限门槛或额外工程复杂度。"
+        ],
+        "vendor_tags": [
+          "百度",
+          "千帆"
+        ],
+        "mechanism_tags": [
+          "API"
+        ],
+        "categories": [
+          "Product"
+        ],
+        "impact_score": 64,
+        "age_days": 9,
+        "summary_short": "百度智能云上线 API网关专享版",
+        "summary_generation_source": "openai",
+        "summary_prompt_version": "vendor_summary_zh_v4"
+      },
+      {
+        "title": "Scaling NVIDIA TensorRT Performance Optimization Beyond a Single Build Route with the Global Performance Tuner, Part 2",
+        "url": "https://developer.nvidia.com/blog/scaling-nvidia-tensorrt-performance-optimization-beyond-a-single-build-route-with-the-global-performance-tuner-part-2/",
+        "source_name": "NVIDIA Technical Blog",
+        "source_url": "https://developer.nvidia.com/blog/",
+        "published_at": "2026-10-23T17:27:52Z",
+        "event_type": "model_launch",
+        "raw_summary": "The Global Performance Tuner is a feature for automatic performance tuning released in NVIDIA TensorRT 11.1. It provides automatic, accuracy-aware and...",
+        "summary": "NVIDIA 在 TensorRT 11.1 中引入 Global Performance Tuner，可自动完成精度感知的性能调优，并把优化范围扩展到单一构建路线之外。",
+        "impact_points": [
+          "NVIDIA 发布新模型后，相关应用的能力上限和产品包装空间会立刻变化。"
+        ],
+        "watch_items": [
+          "关注新模型是否真的在关键场景里带来更稳定的结果与更好的成本结构。"
+        ],
+        "vendor_tags": [
+          "NVIDIA"
+        ],
+        "mechanism_tags": [],
+        "categories": [],
+        "impact_score": 60,
+        "age_days": 7,
+        "summary_short": "NVIDIA TensorRT 11.1 上线全局性能调优器",
+        "summary_generation_source": "openai",
+        "summary_prompt_version": "vendor_summary_zh_v4"
+      },
+      {
+        "title": "xAI SDK v1.21.0 发布",
+        "url": "https://github.com/xai-org/xai-sdk-python/releases/tag/v1.21.0",
+        "source_name": "xAI SDK Releases",
+        "source_url": "https://github.com/xai-org/xai-sdk-python/releases",
+        "published_at": "2026-10-23T19:47:17Z",
+        "event_type": "api_tool_launch",
+        "raw_summary": "## What's Changed * Update changelog by @Omar-V2 in https://github.com/xai-org/xai-sdk-python/pull/220 * Add safety_identifier to chat.create by @rokujix in https://github.com/xai-org/xai-sdk-python/pull/221 * Add guidelines to chat.create by @rokujix in https://github.com/xai-org/xai-sdk-python/pull/229 * Allow protobuf 7 by @codewithfourtix in https://github.com/xai-org/xai-sdk-python/pull/223 * Prepare to release `v1.21.0` of the xAI Python SDK by @Omar-V2 in https://github.com/xai-org/xai-sdk-python/pull/237 ## New Contributors * @rokujix made their first contribution in https://github.com/xai-org/xai-sdk-python/pull/221 * @codewithfourtix made their first contribution in https://github.com/xai-org/xai-sdk-python/pull/223 **Full Changelog**: https://github.com/xai-org/xai-sdk-python/compare/v1.20.0...v1.21.0",
+        "summary": "xAI 发布 Python SDK v1.21.0，为 chat.create 接口新增 safety_identifier 与 guidelines 参数，并允许依赖 protobuf 7。",
+        "impact_points": [
+          "xAI / Grok 开放新 API / 工具后，开发者可以直接把上游能力接入现有工作流。"
+        ],
+        "watch_items": [
+          "关注新 API / 工具是否附带调用限制、权限门槛或额外工程复杂度。"
+        ],
+        "vendor_tags": [
+          "xAI",
+          "Grok"
+        ],
+        "mechanism_tags": [
+          "API"
+        ],
+        "categories": [
+          "Release",
+          "SDK",
+          "API"
+        ],
+        "impact_score": 58,
+        "age_days": 7,
+        "summary_short": "xAI 发布 Python SDK v1.21.0",
+        "summary_generation_source": "openai",
+        "summary_prompt_version": "vendor_summary_zh_v4"
+      },
+      {
+        "title": "Mistral SDK python - v3.2.0 - 2026-10-09 09:41:13 发布",
+        "url": "https://github.com/mistralai/client-python/releases/tag/v3.2.0",
+        "source_name": "Mistral SDK Releases",
+        "source_url": "https://github.com/mistralai/client-python/releases",
+        "published_at": "2026-10-09T09:41:14Z",
+        "event_type": "api_tool_launch",
+        "raw_summary": "# Generated by Speakeasy CLI ## 2026-10-09 08:29:55 ### Generated SDK baseline differences The published SDK or generator baseline differs from the baseline used by the OpenAPI changelog. Generated surface details #### Stable type changes Changed types or signatures on the stable surface (2): - `VoiceCreateRequest.sample_audio: str -> OptionalNullable[str]` - `VoiceCreateRequestTypedDict.sample_audio: str -> NotRequired[Nullable[str]]` #### Beta surface changes Removed from the beta surface (64): - `CreatePipelineConfigRequest` - `DeletePipelineConfigV1ObservabilityPipelineConfigsPipelineConfigIDDeleteRequest` - `DetectionDefinition` - `ExportDefinition` - `GetPipelineConfigV1ObservabilityPipelineConfigsPipelineConfigIDGetRequest` - `JudgeDefinition` - `ListPipelineConfigsV1ObservabilityPipelineConfigsGetRequest` - `ModerationDefinition` - `PaginatedResultPipelineConfig` - `PipelineConfigsResponse` - `UpdatePipelineConfigRequest` - `UpdatePipelineConfigV1ObservabilityPipelineConfigsPipelineConfigIDPutRequest` - `CreatePipelineConfigRequest.definition` - `CreatePipelineConfigRequest.description` - `CreatePipelineConfigRequest.enabled` - `CreatePipelineConfigRequest.name` - `CreatePipelineConfigRequest.pipeline_kind` - `CreatePipelineConfigRequest.selectors` - `DeletePipelineConfigV1ObservabilityPipelineConfigsPipelineConfigIDDeleteRequest.pipeline_config_id` - `DetectionDefinition.patterns` - `DetectionDefinition.target_attributes` - `ExportDefinition.destination` - `GetPipelineConfigV1ObservabilityPipelineConfigsPipelineConfigIDGetRequest.pipeline_config_id` - `JudgeDefinition.mapping` - `JudgeDefinition.slug` - ...and 39 more Changed types or signatures in beta (6): - `CreatePipelineRequest.definitions: List[JudgeDefinition] -> List[LlmJudgeReference]` - `CreatePipelineRequestTypedDict.definitions: List[JudgeDefinitionTypedDict] -> List[LlmJudgeReferenceTypedDict]` - `SetServiceAccountRolesRequest.role_ids: Optional[List[str]] -> List[str]` - `SetServiceAccountRolesRequestTypedDict.role_ids: NotRequired[List[str]] -> List[str]` - `UpdatePipelineRequest.definitions: Optional[List[JudgeDefinition]] -> Optional[List[LlmJudgeReference]]` - `UpdatePipelineRequestTypedDict.definitions: NotRequired[List[JudgeDefinitionTypedDict]] -> NotRequired[List[LlmJudgeReferenceTypedDict]]` Now required on an existing beta model (2): - `PipelineConfig.slug` - `SetServiceAccountRolesRequest.role_ids` ### API changes #### Beta API changes - Removed beta operations: `sdk.beta.observability.evaluations.get_pipeline_config()`, `sdk.beta.observability.evaluations.delete_pipeline_config()`, `sdk.beta.observability.evaluations.update_pipeline_config()`, `sdk.beta.observability.evaluations.create_pipeline_config()`, and `sdk.beta.observability.evaluations.list_pipeline_configs()`. - Changed field `role_ids` in `sdk.beta.service_accounts.set_roles()`. - Removed variants `DetectionDefinition`, `ExportDefinition`, `JudgeDefinition`, and `ModerationDefinition` from response `definition` in `sdk.beta.observability.evaluations.update_pipeline()`, `sdk.beta.observability.evaluations.get_pipeline()`, `sdk.beta.observability.evaluations.create_pipeline()`, and `sdk.beta.observability.evaluations.list_pipelines()`. - Added variants `DetectionDefinitionV1`, `ExportDefinitionV1`, `JudgeDefinitionV1`, and `ModerationDefinitionV1` to response `definition` in `sdk.beta.observability.evaluations.update_pipeline()`, `sdk.beta.observability.evaluations.get_pipeline()`, `sdk.beta.observability.evaluations.create_pipeline()`, and `sdk.beta.observability.evaluations.list_pipelines()`. - Removed fields `definitions` and `description` from response `pipeline_configs[]` in `sdk.beta.observability.evaluations.update_pipeline()`, `sdk.beta.observability.evaluations.get_pipeline()`, and `sdk.beta.observability.evaluations.create_pipeline()`. - Removed enum values `detection`, `export`, `judge`, and `moderation` from response `pipeline_kind` in `sdk.beta.observability.evaluations.update_pipeline()`, `sdk.beta.observability.evaluations.get_pipeline()`, `sdk.beta.observability.evaluations.create_pipeline()`, and `sdk.beta.observability.evaluations.list_pipelines()`. - Removed fields `definitions` and `description` from response `pipelines.results[].pipeline_configs[]` in `sdk.beta.observability.evaluations.list_pipelines()`. #### Added operations Beta: - `sdk.beta.observability.spans.search_pipeline_results()` - `sdk.beta.users.whoami()` #### Schema changes - Added request field `sampling` in `sdk.beta.observability.evaluations.update_pipeline()` and `sdk.beta.observability.evaluations.create_pipeline()`. - Added response enum values `detection_v1`, `export_v1`, `judge_v1`, and `moderation_v1` in `sdk.beta.observability.evaluations.update_pipeline()`, `sdk.beta.observability.evaluations.get_pipeline()`, `sdk.beta.observability.evaluations.create_pipeline()`, and `sdk.beta.observability.evaluations.list_pipelines()`. - Added response fields `sampling` and `slug` in `sdk.beta.observability.evaluations.update_pipeline()`, `sdk.beta.observability.evaluations.get_pipeline()`, `sdk.beta.observability.evaluations.create_pipeline()`, and `sdk.beta.observability.evaluations.list_pipelines()`. - Added request fields `logprobs`, `min_tokens`, `prompt_logprobs`, `repetition_penalty`, `top_k`, `top_logprobs`, and `top_prompt_logprobs` in `sdk.chat.complete()` and `sdk.agents.complete()`. - Added response fields `logprobs` and `prompt_logprobs` in `sdk.chat.complete()`, `sdk.fim.complete()`, and `sdk.agents.complete()`. - Changed request field `sample_audio` in `sdk.audio.voices.create()`. ### Changes Based on: - OpenAPI Doc - Speakeasy CLI 1.796.4 (2.935.1) https://github.com/speakeasy-api/speakeasy ### Generated - [python v3.2.0] . ### Releases - [PyPI v3.2.0] https://pypi.org/project/mistralai/3.2.0 - . Publishing Completed",
+        "summary": "Mistral 发布 Python SDK v3.2.0，将 VoiceCreateRequest.sample_audio 改为可选可空类型，并从 beta 接口移除 CreatePipelineConfigRequest 等 64 个类型。",
+        "impact_points": [
+          "Mistral AI 开放新 API / 工具后，开发者可以直接把上游能力接入现有工作流。"
+        ],
+        "watch_items": [
+          "关注新 API / 工具是否附带调用限制、权限门槛或额外工程复杂度。"
+        ],
+        "vendor_tags": [
+          "Mistral AI"
+        ],
+        "mechanism_tags": [
+          "API"
+        ],
+        "categories": [
+          "Release",
+          "SDK",
+          "API"
+        ],
+        "impact_score": 58,
+        "age_days": 21,
+        "summary_short": "Mistral 发布 Python SDK v3.2.0",
+        "summary_generation_source": "openai",
+        "summary_prompt_version": "vendor_summary_zh_v4"
+      },
+      {
+        "title": "OpenAI and ServiceNow expand partnership across enterprise workflows",
+        "url": "https://openai.com/index/openai-servicenow-partnership-expansion",
+        "source_name": "OpenAI News",
+        "source_url": "https://openai.com/news/",
+        "published_at": "2026-10-28T13:15:00Z",
+        "event_type": "model_launch",
+        "raw_summary": "OpenAI and ServiceNow expand their partnership to bring OpenAI models and agents into ServiceNow and ServiceNow workflows into ChatGPT and Codex.",
+        "summary": "OpenAI 与 ServiceNow 扩大合作，将 OpenAI 的模型和智能体接入 ServiceNow，并把 ServiceNow 工作流引入 ChatGPT 和 Codex。",
+        "impact_points": [
+          "OpenAI 发布新模型后，相关应用的能力上限和产品包装空间会立刻变化。",
+          "这类更新会优先影响 Agent 与工作流型应用的执行方式和稳定性。"
+        ],
+        "watch_items": [
+          "关注新模型是否真的在关键场景里带来更稳定的结果与更好的成本结构。",
+          "关注它是否能减少多步任务中的人工接管频率。"
+        ],
+        "vendor_tags": [
+          "OpenAI"
+        ],
+        "mechanism_tags": [
+          "Agent",
+          "Workflow"
+        ],
+        "categories": [
+          "Company"
+        ],
+        "impact_score": 76,
+        "age_days": 2,
+        "summary_short": "OpenAI 与 ServiceNow 扩大工作流合作",
+        "summary_generation_source": "openai",
+        "summary_prompt_version": "vendor_summary_zh_v4"
+      },
+      {
+        "title": "Accelerate agentic AI with NVIDIA Nemotron models on Amazon EKS and SageMaker HyperPod EKS",
+        "url": "https://aws.amazon.com/blogs/machine-learning/accelerate-agentic-ai-with-nvidia-nemotron-models-on-amazon-eks-and-sagemaker-hyperpod-eks/",
+        "source_name": "AWS Machine Learning Blog",
+        "source_url": "https://aws.amazon.com/blogs/machine-learning/",
+        "published_at": "2026-10-29T16:11:08Z",
+        "event_type": "api_tool_launch",
+        "raw_summary": "NVIDIA Nemotron 3.5 Super VL is a 120B-parameter mixture-of-experts model that pairs reasoning and tool use with multimodal understanding. This post explores its architecture and use cases, then shows how to deploy it on Amazon EKS, EKS Auto Mode, and Amazon SageMaker HyperPod EKS with NVIDIA Dynamo and vLLM.",
+        "summary": "AWS 介绍了 120B 参数、采用混合专家架构的 NVIDIA Nemotron 3.5 Super VL 模型的架构与用例，并给出通过 NVIDIA Dynamo 和 vLLM 将其部署到 Amazon EKS、EKS Auto Mode 与 SageMaker HyperPod EKS 的方法。",
+        "impact_points": [
+          "AWS / Bedrock 开放新 API / 工具后，开发者可以直接把上游能力接入现有工作流。",
+          "这类更新会优先影响 Agent 与工作流型应用的执行方式和稳定性。"
+        ],
+        "watch_items": [
+          "关注新 API / 工具是否附带调用限制、权限门槛或额外工程复杂度。",
+          "关注它是否能减少多步任务中的人工接管频率。"
+        ],
+        "vendor_tags": [
+          "AWS",
+          "Bedrock"
+        ],
+        "mechanism_tags": [
+          "Agent",
+          "Multimodal",
+          "Reasoning"
+        ],
+        "categories": [
+          "Advanced (300)",
+          "Amazon Elastic Kubernetes Service",
+          "Amazon SageMaker HyperPod",
+          "Announcements"
+        ],
+        "impact_score": 74,
+        "age_days": 1,
+        "summary_short": "AWS 支持在 EKS 与 HyperPod 部署 Nemotron",
+        "summary_generation_source": "openai",
+        "summary_prompt_version": "vendor_summary_zh_v4"
+      }
+    ],
+    "ai_news_items": [
+      {
+        "title": "Mistral Large 4（Le Chonk）登陆 Hugging Face：1T 参数 MoE 多模态开源权重模型",
+        "url": "https://aihot.news/items/upsd8u37hkkquohy3w3sjvszi",
+        "source_name": "Hugging Face 官方团队博客",
+        "source_url": "https://aihot.news/items/upsd8u37hkkquohy3w3sjvszi",
+        "published_at": "2026-10-29 08:00",
+        "event_type": "aihot_news",
+        "raw_summary": "Hugging Face 发布 Mistral Large 4（Le Chonk）的上线博客，模型为多模态多语言 MoE 架构，总参数约 1T、激活 49B、上下文窗口 1M token。",
+        "summary": "Hugging Face 发布 Mistral Large 4（Le Chonk）的上线博客，模型为多模态多语言 MoE 架构，总参数约 1T、激活 49B、上下文窗口 1M token。",
+        "vendor_tags": [
+          "Hugging Face 官方团队博客"
+        ],
+        "categories": [
+          "模型发布/更新"
+        ],
+        "aihot_category": "ai-models",
+        "aihot_section_label": "模型发布/更新",
+        "aihot_backfill": false,
+        "summary_short": "Hugging Face 发布 Mistral Large 4（…",
+        "impact_score": 0
+      },
+      {
+        "title": "Pika 基于MiniMax H3后训练并开源 Pika H3 Flex 视频生成模型",
+        "url": "https://aihot.news/items/eq47lph0rzobf8cr950saiu8r",
+        "source_name": "X：卡兹克 (@Khazix0918)",
+        "source_url": "https://aihot.news/items/eq47lph0rzobf8cr950saiu8r",
+        "published_at": "2026-10-30 04:07",
+        "event_type": "aihot_news",
+        "raw_summary": "Pika Labs 在 MiniMax H3 上做后训练，推出并开源 Pika H3 Flex，采样步数从 50 步压缩到 6 步，生成时间大幅降低且质量有所提升。",
+        "summary": "Pika Labs 在 MiniMax H3 上做后训练，推出并开源 Pika H3 Flex，采样步数从 50 步压缩到 6 步，生成时间大幅降低且质量有所提升。",
+        "vendor_tags": [
+          "X：卡兹克 (@Khazix0918)"
+        ],
+        "categories": [
+          "模型发布/更新"
+        ],
+        "aihot_category": "ai-models",
+        "aihot_section_label": "模型发布/更新",
+        "aihot_backfill": false,
+        "summary_short": "Pika Labs 在 MiniMax H3 上做后训练，推出并…",
+        "impact_score": 0
+      },
+      {
+        "title": "OpenMOSS 发布开源图像生成模型 MOSS-Image，主打长文本渲染与可编辑布局",
+        "url": "https://aihot.news/items/wykbrcxndw1zv255b9y2usj7v",
+        "source_name": "OpenMOSS / 复旦NLP / 上海创智 / MOSI（网页）",
+        "source_url": "https://aihot.news/items/wykbrcxndw1zv255b9y2usj7v",
+        "published_at": "2026-10-29 00:00",
+        "event_type": "aihot_news",
+        "raw_summary": "OpenMOSS 发布开放权重图像生成模型 MOSS-Image，采用 5B 参数单流 DiT 从零预训练，支持最长 4K token 提示词、中英文长文本渲染和可编辑的 JSON Layout。",
+        "summary": "OpenMOSS 发布开放权重图像生成模型 MOSS-Image，采用 5B 参数单流 DiT 从零预训练，支持最长 4K token 提示词、中英文长文本渲染和可编辑的 JSON Layout。",
+        "vendor_tags": [
+          "OpenMOSS / 复旦NLP / 上海创智 / MOSI（网页）"
+        ],
+        "categories": [
+          "模型发布/更新"
+        ],
+        "aihot_category": "ai-models",
+        "aihot_section_label": "模型发布/更新",
+        "aihot_backfill": false,
+        "summary_short": "OpenMOSS 发布开放权重图像生成模型 MOSS-Image…",
+        "impact_score": 0
+      },
+      {
+        "title": "Codex 宣布即日起 Pro 及 Business Premium 各档位用量上限翻倍",
+        "url": "https://aihot.news/items/funx6p4g0gju509j6n0oyxmqu",
+        "source_name": "X：Tibo (@thsottiaux)",
+        "source_url": "https://aihot.news/items/funx6p4g0gju509j6n0oyxmqu",
+        "published_at": "2026-10-30 00:56",
+        "event_type": "aihot_news",
+        "raw_summary": "Tibo 宣布即日起将 Pro 100/200/500 档位与 Business Premium 的所有用量上限翻倍。Pro 200 的上限不会下调，Work 与 Codex 用量保持不变；dots 的扩展用量上限继续提供，且仍与默认用量分开计算，后续还会通过更好的模型和效率改进提升实际可用量。",
+        "summary": "Tibo 宣布即日起将 Pro 100/200/500 档位与 Business Premium 的所有用量上限翻倍。Pro 200 的上限不会下调，Work 与 Codex 用量保持不变；dots 的扩展用量上限继续提供，且仍与默认用量分开计算，后续还会通过更好的模型和效率改进提升实际可用量。",
+        "vendor_tags": [
+          "X：Tibo (@thsottiaux)"
+        ],
+        "categories": [
+          "产品发布/更新"
+        ],
+        "aihot_category": "ai-products",
+        "aihot_section_label": "产品发布/更新",
+        "aihot_backfill": false,
+        "summary_short": "Tibo 宣布即日起将 Pro 100/200/500 档位与 …",
+        "impact_score": 0
+      },
+      {
+        "title": "Factory 发布 Droid 1.0，以程序化工具调用构建企业级 Agent harness",
+        "url": "https://aihot.news/items/gjz7lj8j6ojjyj80vkkhy786v",
+        "source_name": "Factory 研究 / 产品（RSS）",
+        "source_url": "https://aihot.news/items/gjz7lj8j6ojjyj80vkkhy786v",
+        "published_at": "2026-10-29 08:00",
+        "event_type": "aihot_news",
+        "raw_summary": "Factory 发布 Droid 1.0，一个模型无关的 agent harness，主打程序化工具调用（PTC），模型通过编写 JavaScript 程序在沙箱中一次执行数百个工具调用。",
+        "summary": "Factory 发布 Droid 1.0，一个模型无关的 agent harness，主打程序化工具调用（PTC），模型通过编写 JavaScript 程序在沙箱中一次执行数百个工具调用。",
+        "vendor_tags": [
+          "Factory 研究 / 产品（RSS）"
+        ],
+        "categories": [
+          "产品发布/更新"
+        ],
+        "aihot_category": "ai-products",
+        "aihot_section_label": "产品发布/更新",
+        "aihot_backfill": false,
+        "summary_short": "Factory 发布 Droid 1.0，一个模型无关的 age…",
+        "impact_score": 0
+      },
+      {
+        "title": "Gemini 新增文档、PDF、演示文稿和表格的直接生成、预览与编辑功能",
+        "url": "https://aihot.news/items/nfbnpnzdrebu4kbq6uqxhkc2h",
+        "source_name": "X：Gemini (@GeminiApp)",
+        "source_url": "https://aihot.news/items/nfbnpnzdrebu4kbq6uqxhkc2h",
+        "published_at": "2026-10-30 00:36",
+        "event_type": "aihot_news",
+        "raw_summary": "Google Gemini 宣布可直接在应用内生成、预览和编辑文档、PDF、演示文稿、表格等多种文件。支持把手写笔记转成 PDF 学习指南、手动调整内容、高亮部分让 Gemini 修改文字或视觉元素，并可继续追问。",
+        "summary": "Google Gemini 宣布可直接在应用内生成、预览和编辑文档、PDF、演示文稿、表格等多种文件。支持把手写笔记转成 PDF 学习指南、手动调整内容、高亮部分让 Gemini 修改文字或视觉元素，并可继续追问。",
+        "vendor_tags": [
+          "X：Gemini (@GeminiApp)"
+        ],
+        "categories": [
+          "产品发布/更新"
+        ],
+        "aihot_category": "ai-products",
+        "aihot_section_label": "产品发布/更新",
+        "aihot_backfill": false,
+        "summary_short": "Google Gemini 宣布可直接在应用内生成、预览和编辑文…",
+        "impact_score": 0
+      },
+      {
+        "title": "腾讯混元发布 Hy-Nomas 技术报告并开源 Hy-Nomas-Bench",
+        "url": "https://aihot.news/items/nb40aoihhydhoo0acp0rcyaol",
+        "source_name": "X：腾讯混元 (@TencentHunyuan)",
+        "source_url": "https://aihot.news/items/nb40aoihhydhoo0acp0rcyaol",
+        "published_at": "2026-10-30 01:00",
+        "event_type": "aihot_news",
+        "raw_summary": "腾讯混元发布 Hy-Nomas 开源交互式视频世界模型的技术报告（arXiv:2610.36729），并开源 Hy-Nomas-Bench 数据集用于可复现研究。官方还用 Hy-Nomas 重现 Genie 4 示例并放出对比视频，演示无需排队即可试用，地址为 https://hy-nomas.hy.tencent.com/。",
+        "summary": "腾讯混元发布 Hy-Nomas 开源交互式视频世界模型的技术报告（arXiv:2610.36729），并开源 Hy-Nomas-Bench 数据集用于可复现研究。官方还用 Hy-Nomas 重现 Genie 4 示例并放出对比视频，演示无需排队即可试用，地址为 https://hy-nomas.hy.tencent.com/。",
+        "vendor_tags": [
+          "X：腾讯混元 (@TencentHunyuan)"
+        ],
+        "categories": [
+          "产品发布/更新"
+        ],
+        "aihot_category": "ai-products",
+        "aihot_section_label": "产品发布/更新",
+        "aihot_backfill": false,
+        "summary_short": "腾讯混元发布 Hy-Nomas 开源交互式视频世界模型的技术报告…",
+        "impact_score": 0
+      },
+      {
+        "title": "纽约时报称中国情报人员瞄准英伟达 CEO 黄仁勋",
+        "url": "https://aihot.news/items/lq97h52ctxw2nkri4qqxj5lbx",
+        "source_name": "The Decoder：AI News（RSS）",
+        "source_url": "https://aihot.news/items/lq97h52ctxw2nkri4qqxj5lbx",
+        "published_at": "2026-10-29 21:42",
+        "event_type": "aihot_news",
+        "raw_summary": "据《纽约时报》报道，美国情报机构认为英伟达 CEO 黄仁勋身边一名高管为中国提供情报，此人是新加坡数据中心运营商 Megaspeed 的 Alice Huang（黄乐）。",
+        "summary": "据《纽约时报》报道，美国情报机构认为英伟达 CEO 黄仁勋身边一名高管为中国提供情报，此人是新加坡数据中心运营商 Megaspeed 的 Alice Huang（黄乐）。",
+        "vendor_tags": [
+          "The Decoder：AI News（RSS）"
+        ],
+        "categories": [
+          "行业动态"
+        ],
+        "aihot_category": "industry",
+        "aihot_section_label": "行业动态",
+        "aihot_backfill": false,
+        "summary_short": "据《纽约时报》报道，美国情报机构认为英伟达 CEO 黄仁勋身边一…",
+        "impact_score": 0
+      },
+      {
+        "title": "Reddit 宣布转向以登录为主的体验，以应对 AI 搜索带来的流量下滑",
+        "url": "https://aihot.news/items/op2kjf327vilvhbxkjicxg5ec",
+        "source_name": "TechCrunch：AI（RSS）",
+        "source_url": "https://aihot.news/items/op2kjf327vilvhbxkjicxg5ec",
+        "published_at": "2026-10-30 04:08",
+        "event_type": "aihot_news",
+        "raw_summary": "Reddit 在 Q3 财报中宣布将转向以登录为主的体验，以保护数据免受 AI 抓取并提升广告变现。10 月搜索流量平均每周减少超 100 万次引荐，Q3 全球日活为 1.303 亿，其中美国日活降至 5070 万，同比降 2%。Q3 收入同比增长 53% 至 8.95 亿美元，净利润 2.83 亿美元；该转变将先在美国以外市场测试，暂无全球上线时间表。",
+        "summary": "Reddit 在 Q3 财报中宣布将转向以登录为主的体验，以保护数据免受 AI 抓取并提升广告变现。10 月搜索流量平均每周减少超 100 万次引荐，Q3 全球日活为 1.303 亿，其中美国日活降至 5070 万，同比降 2%。Q3 收入同比增长 53% 至 8.95 亿美元，净利润 2.83 亿美元；该转变将先在美国以外市场测试，暂无全球上线时间表。",
+        "vendor_tags": [
+          "TechCrunch：AI（RSS）"
+        ],
+        "categories": [
+          "行业动态"
+        ],
+        "aihot_category": "industry",
+        "aihot_section_label": "行业动态",
+        "aihot_backfill": false,
+        "summary_short": "Reddit 在 Q3 财报中宣布将转向以登录为主的体验，以保护…",
+        "impact_score": 0
+      },
+      {
+        "title": "Google 三季度搜索增速不及预期，投资者担忧 AI 搜索变现拖累核心业务",
+        "url": "https://aihot.news/items/wry19y87ktlbmfwu581jjffj7",
+        "source_name": "The Decoder：AI News（RSS）",
+        "source_url": "https://aihot.news/items/wry19y87ktlbmfwu581jjffj7",
+        "published_at": "2026-10-29 18:16",
+        "event_type": "aihot_news",
+        "raw_summary": "Google 三季度搜索收入增长约 12%，低于分析师预期的 15%，市值一度缩水最多 10%。高管 Philipp Schindler 承认 AI mode 查询的强劲增长因变现率较低产生了影响，同时公司称搜索查询年增速达五年来最高，并计划在美国及国际市场扩大聊天机器人广告项目。",
+        "summary": "Google 三季度搜索收入增长约 12%，低于分析师预期的 15%，市值一度缩水最多 10%。高管 Philipp Schindler 承认 AI mode 查询的强劲增长因变现率较低产生了影响，同时公司称搜索查询年增速达五年来最高，并计划在美国及国际市场扩大聊天机器人广告项目。",
+        "vendor_tags": [
+          "The Decoder：AI News（RSS）"
+        ],
+        "categories": [
+          "行业动态"
+        ],
+        "aihot_category": "industry",
+        "aihot_section_label": "行业动态",
+        "aihot_backfill": false,
+        "summary_short": "Google 三季度搜索收入增长约 12%，低于分析师预期的 1…",
+        "impact_score": 0
+      },
+      {
+        "title": "404 Media 起底 Proton 内部 AI 转型之争：CEO Andy Yen 强推 AI 引发恐惧文化",
+        "url": "https://aihot.news/items/x7qd347blfo2409za7srbypzw",
+        "source_name": "404 Media（RSS）",
+        "source_url": "https://aihot.news/items/x7qd347blfo2409za7srbypzw",
+        "published_at": "2026-10-29 22:21",
+        "event_type": "aihot_news",
+        "raw_summary": "404 Media 采访九名现任与离职 Proton 员工并查阅内部文件，报道 CEO Andy Yen 强推 AI 转型引发的内部冲突。10 月公司 90% 代码由 AI 编写，多使用 Anthropic 的 Claude；Yen 称今年是最后一年招聘工程师，并宣布将以可能决定去留的重新面试评估员工 AI 使用情况。",
+        "summary": "404 Media 采访九名现任与离职 Proton 员工并查阅内部文件，报道 CEO Andy Yen 强推 AI 转型引发的内部冲突。10 月公司 90% 代码由 AI 编写，多使用 Anthropic 的 Claude；Yen 称今年是最后一年招聘工程师，并宣布将以可能决定去留的重新面试评估员工 AI 使用情况。",
+        "vendor_tags": [
+          "404 Media（RSS）"
+        ],
+        "categories": [
+          "行业动态"
+        ],
+        "aihot_category": "industry",
+        "aihot_section_label": "行业动态",
+        "aihot_backfill": false,
+        "summary_short": "404 Media 采访九名现任与离职 Proton 员工并查阅…",
+        "impact_score": 0
+      },
+      {
+        "title": "The Verge 解读 Anthropic S-1：约 8500 亿美元 compute 承诺押注递归自我改进",
+        "url": "https://aihot.news/items/iuma7p8unle567lzy6hp5jpw9",
+        "source_name": "The Verge：AI（RSS）",
+        "source_url": "https://aihot.news/items/iuma7p8unle567lzy6hp5jpw9",
+        "published_at": "2026-10-29 21:30",
+        "event_type": "aihot_news",
+        "raw_summary": "The Verge 作者分析 Anthropic S-1，认为其商业模式依赖高速增长：2026 上半年营收同比增长 14 倍至 $16.3 billion，净收入留存率 900%，但不可撤销采购承诺合计 $265.6 billion，加上未开始的租赁协议 $321.4 billion 及其他协议，未来 20 年承诺至少约 $850 billion。",
+        "summary": "The Verge 作者分析 Anthropic S-1，认为其商业模式依赖高速增长：2026 上半年营收同比增长 14 倍至 $16.3 billion，净收入留存率 900%，但不可撤销采购承诺合计 $265.6 billion，加上未开始的租赁协议 $321.4 billion 及其他协议，未来 20 年承诺至少约 $850 billion。",
+        "vendor_tags": [
+          "The Verge：AI（RSS）"
+        ],
+        "categories": [
+          "行业动态"
+        ],
+        "aihot_category": "industry",
+        "aihot_section_label": "行业动态",
+        "aihot_backfill": false,
+        "summary_short": "The Verge 作者分析 Anthropic S-1，认为其…",
+        "impact_score": 0
+      },
+      {
+        "title": "OpenAI 更新 Model Spec，围绕五项核心价值观重组模型行为准则",
+        "url": "https://aihot.news/items/rccreyesa3aeph7jasj5spv29",
+        "source_name": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+        "source_url": "https://aihot.news/items/rccreyesa3aeph7jasj5spv29",
+        "published_at": "2026-10-30 01:00",
+        "event_type": "aihot_news",
+        "raw_summary": "OpenAI 更新其公开的 Model Spec，将指导原则重组为五项核心价值观：忠实于人类意图、最小化伤害、诚实透明、促进人类自主和关怀。更新新增了关于上下文理解、监督和自主性的指导，调整了部分行为默认值，退出了大部分详细风格指南，并将模型称呼从 the assistant 改为 GPT。",
+        "summary": "OpenAI 更新其公开的 Model Spec，将指导原则重组为五项核心价值观：忠实于人类意图、最小化伤害、诚实透明、促进人类自主和关怀。更新新增了关于上下文理解、监督和自主性的指导，调整了部分行为默认值，退出了大部分详细风格指南，并将模型称呼从 the assistant 改为 GPT。",
+        "vendor_tags": [
+          "OpenAI：官网动态（RSS · 排除企业/客户案例）"
+        ],
+        "categories": [
+          "行业动态"
+        ],
+        "aihot_category": "industry",
+        "aihot_section_label": "行业动态",
+        "aihot_backfill": false,
+        "summary_short": "OpenAI 更新其公开的 Model Spec，将指导原则重组…",
+        "impact_score": 0
+      },
+      {
+        "title": "OpenAI 详解如何检测前沿模型失准行为",
+        "url": "https://aihot.news/items/ck2bk0ns12i2hkg4ae0eoeabv",
+        "source_name": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+        "source_url": "https://aihot.news/items/ck2bk0ns12i2hkg4ae0eoeabv",
+        "published_at": "2026-10-29 17:00",
+        "event_type": "aihot_news",
+        "raw_summary": "OpenAI 发布长文，详解其针对前沿模型失准行为的多层监测系统，包括激活探针、基于模型的审查、调查智能体和自动化调查四层架构，并对 GPT‑6 Astra 及以上模型的全部 RL 运行、评估和内部 Codex 流量进行监测。",
+        "summary": "OpenAI 发布长文，详解其针对前沿模型失准行为的多层监测系统，包括激活探针、基于模型的审查、调查智能体和自动化调查四层架构，并对 GPT‑6 Astra 及以上模型的全部 RL 运行、评估和内部 Codex 流量进行监测。",
+        "vendor_tags": [
+          "OpenAI：官网动态（RSS · 排除企业/客户案例）"
+        ],
+        "categories": [
+          "论文研究"
+        ],
+        "aihot_category": "paper",
+        "aihot_section_label": "论文研究",
+        "aihot_backfill": false,
+        "summary_short": "OpenAI 发布长文，详解其针对前沿模型失准行为的多层监测系统…",
+        "impact_score": 0
+      },
+      {
+        "title": "Wiz 分析智能体攻击的七大指纹与发展趋势",
+        "url": "https://aihot.news/items/mdcygre4ettjdbca7sq6vu7zx",
+        "source_name": "Wiz：Research（安全研究）",
+        "source_url": "https://aihot.news/items/mdcygre4ettjdbca7sq6vu7zx",
+        "published_at": "2026-10-29 22:36",
+        "event_type": "aihot_news",
+        "raw_summary": "Wiz 基于自身事件响应与公开披露案例，分析 AI 智能体参与真实入侵的现状与趋势，涉及 ARTEX、Hermes 等框架及韩国金融机构（约 67,000 人信息外泄）、泰国财政部、ConnectWise 供应链（尝试攻击超 2,250 个租户）等案例。",
+        "summary": "Wiz 基于自身事件响应与公开披露案例，分析 AI 智能体参与真实入侵的现状与趋势，涉及 ARTEX、Hermes 等框架及韩国金融机构（约 67,000 人信息外泄）、泰国财政部、ConnectWise 供应链（尝试攻击超 2,250 个租户）等案例。",
+        "vendor_tags": [
+          "Wiz：Research（安全研究）"
+        ],
+        "categories": [
+          "论文研究"
+        ],
+        "aihot_category": "paper",
+        "aihot_section_label": "论文研究",
+        "aihot_backfill": false,
+        "summary_short": "Wiz 基于自身事件响应与公开披露案例，分析 AI 智能体参与真…",
+        "impact_score": 0
+      },
+      {
+        "title": "OpenRouter 教程：用 LLM 从 PDF 中抽取表格",
+        "url": "https://aihot.news/items/l928e49lwysm0ymgmhyjrkc3z",
+        "source_name": "OpenRouter：Announcements（RSS）",
+        "source_url": "https://aihot.news/items/l928e49lwysm0ymgmhyjrkc3z",
+        "published_at": "2026-10-29 08:00",
+        "event_type": "aihot_news",
+        "raw_summary": "OpenRouter 发布教程，讲解如何把 PDF 以文件形式连同严格 JSON schema 发给能读文件的模型，让表格以带类型的行返回，括号亏损、千分位和脚注标记等清理都写进字段描述。",
+        "summary": "OpenRouter 发布教程，讲解如何把 PDF 以文件形式连同严格 JSON schema 发给能读文件的模型，让表格以带类型的行返回，括号亏损、千分位和脚注标记等清理都写进字段描述。",
+        "vendor_tags": [
+          "OpenRouter：Announcements（RSS）"
+        ],
+        "categories": [
+          "技巧与观点"
+        ],
+        "aihot_category": "tip",
+        "aihot_section_label": "技巧与观点",
+        "aihot_backfill": false,
+        "summary_short": "OpenRouter 发布教程，讲解如何把 PDF 以文件形式连…",
+        "impact_score": 0
+      },
+      {
+        "title": "Addy Osmani 谈你可能对 Claude 过度提示了",
+        "url": "https://aihot.news/items/m1cx9dfhpep0da323x3tk7vht",
+        "source_name": "X：Addy Osmani (@addyosmani)",
+        "source_url": "https://aihot.news/items/m1cx9dfhpep0da323x3tk7vht",
+        "published_at": "2026-10-29 14:13",
+        "event_type": "aihot_news",
+        "raw_summary": "Addy Osmani 撰文称新版 Claude 模型所需提示词比多数人习惯的更少，针对 Opus 5.5 建议用单一明确目标加验证条件让 Claude 自主工作，从 /effort medium 起步按需调整。",
+        "summary": "Addy Osmani 撰文称新版 Claude 模型所需提示词比多数人习惯的更少，针对 Opus 5.5 建议用单一明确目标加验证条件让 Claude 自主工作，从 /effort medium 起步按需调整。",
+        "vendor_tags": [
+          "X：Addy Osmani (@addyosmani)"
+        ],
+        "categories": [
+          "技巧与观点"
+        ],
+        "aihot_category": "tip",
+        "aihot_section_label": "技巧与观点",
+        "aihot_backfill": false,
+        "summary_short": "Addy Osmani 撰文称新版 Claude 模型所需提示词…",
+        "impact_score": 0
+      },
+      {
+        "title": "Figma 讲解如何训练专用画布编辑模型",
+        "url": "https://aihot.news/items/z9kqlhsgiz11fvlk3aodm6seg",
+        "source_name": "Figma AI / Agent / Make",
+        "source_url": "https://aihot.news/items/z9kqlhsgiz11fvlk3aodm6seg",
+        "published_at": "2026-10-30 05:00",
+        "event_type": "aihot_news",
+        "raw_summary": "Figma 介绍其为 agent 自研 Figma 编辑模型的训练方法，先用超过 25 万条合成样本做 SFT，让早期 Llama 3.3 70B 在编辑任务上接近当时顶级模型，后转向 RL 并结合确定性校验器与视觉评委做评测。",
+        "summary": "Figma 介绍其为 agent 自研 Figma 编辑模型的训练方法，先用超过 25 万条合成样本做 SFT，让早期 Llama 3.3 70B 在编辑任务上接近当时顶级模型，后转向 RL 并结合确定性校验器与视觉评委做评测。",
+        "vendor_tags": [
+          "Figma AI / Agent / Make"
+        ],
+        "categories": [
+          "技巧与观点"
+        ],
+        "aihot_category": "tip",
+        "aihot_section_label": "技巧与观点",
+        "aihot_backfill": false,
+        "summary_short": "Figma 介绍其为 agent 自研 Figma 编辑模型的训…",
+        "impact_score": 0
+      }
+    ],
+    "source_diagnostics": {
+      "high_potential": {
+        "discovery_candidate_count": 11,
+        "revisit_candidate_count": 6,
+        "deduped_candidate_count": 16,
+        "duplicates_removed": 1,
+        "selected_count": 4,
+        "discovery_selected_count": 3,
+        "revisit_selected_count": 1,
+        "blocked_by_cluster_count": 12,
+        "max_items": 12,
+        "max_revisit_items": 4,
+        "max_per_interest": 2,
+        "max_per_mechanism": 2,
+        "copy_updated_count": 4,
+        "copy_cache_hits": 0,
+        "copy_openai_generated_count": 4,
+        "copy_fallback_count": 0,
+        "copy_prompt_version": "openai_compact_v5",
+        "history_blocked_count": 0,
+        "in_run_duplicate_count": 0,
+        "revisit_history_bypass_count": 1,
+        "layer_counts": {
+          "dev_tool": 2,
+          "knowledge": 3,
+          "product": 5
+        }
+      },
+      "observation": {
+        "social_signal_count": 30,
+        "github_interest_count": 7,
+        "product_hunt_interest_count": 1,
+        "rule_source": "social_plus_product_sources",
+        "product_hunt_history_blocked_count": 0,
+        "product_card_duplicate_count": 0,
+        "product_card_count": 1,
+        "idea_count": 3
+      },
+      "vendor_news": {
+        "source_count": 21,
+        "source_meta": [
+          {
+            "source_name": "OpenAI News",
+            "fetch_url": "https://openai.com/news/rss.xml",
+            "parser": "rss",
+            "ok": true,
+            "candidate_count": 12,
+            "error": ""
+          },
+          {
+            "source_name": "Anthropic News",
+            "fetch_url": "https://www.anthropic.com/news",
+            "parser": "anthropic_news_html",
+            "ok": true,
+            "candidate_count": 0,
+            "error": ""
+          },
+          {
+            "source_name": "Google Gemini SDK Releases",
+            "fetch_url": "https://api.github.com/repos/googleapis/python-genai/releases?per_page=12",
+            "parser": "github_releases_json",
+            "ok": true,
+            "candidate_count": 12,
+            "error": ""
+          },
+          {
+            "source_name": "Microsoft AI Blog",
+            "fetch_url": "https://blogs.microsoft.com/feed/",
+            "parser": "rss",
+            "ok": true,
+            "candidate_count": 10,
+            "error": ""
+          },
+          {
+            "source_name": "Microsoft Copilot Blog",
+            "fetch_url": "https://www.microsoft.com/en-us/microsoft-copilot/blog/feed/",
+            "parser": "rss",
+            "ok": false,
+            "candidate_count": 0,
+            "error": "not well-formed (invalid token): line 36, column 21"
+          },
+          {
+            "source_name": "Microsoft Azure Blog",
+            "fetch_url": "https://azure.microsoft.com/en-us/blog/feed/",
+            "parser": "rss",
+            "ok": true,
+            "candidate_count": 10,
+            "error": ""
+          },
+          {
+            "source_name": "Meta AI Research",
+            "fetch_url": "https://engineering.fb.com/category/ai-research/feed/",
+            "parser": "rss",
+            "ok": true,
+            "candidate_count": 9,
+            "error": ""
+          },
+          {
+            "source_name": "xAI SDK Releases",
+            "fetch_url": "https://api.github.com/repos/xai-org/xai-sdk-python/releases?per_page=12",
+            "parser": "github_releases_json",
+            "ok": true,
+            "candidate_count": 12,
+            "error": ""
+          },
+          {
+            "source_name": "Mistral SDK Releases",
+            "fetch_url": "https://api.github.com/repos/mistralai/client-python/releases?per_page=12",
+            "parser": "github_releases_json",
+            "ok": true,
+            "candidate_count": 12,
+            "error": ""
+          },
+          {
+            "source_name": "AWS Machine Learning Blog",
+            "fetch_url": "https://aws.amazon.com/blogs/machine-learning/feed/",
+            "parser": "rss",
+            "ok": true,
+            "candidate_count": 12,
+            "error": ""
+          },
+          {
+            "source_name": "NVIDIA Technical Blog",
+            "fetch_url": "https://developer.nvidia.com/blog/feed/",
+            "parser": "rss",
+            "ok": true,
+            "candidate_count": 12,
+            "error": ""
+          },
+          {
+            "source_name": "Kimi Blog",
+            "fetch_url": "https://www.kimi.com/blog/",
+            "parser": "kimi_blog_html",
+            "ok": true,
+            "candidate_count": 0,
+            "error": ""
+          },
+          {
+            "source_name": "智谱新功能发布",
+            "fetch_url": "https://docs.bigmodel.cn/cn/update/new-releases",
+            "parser": "zhipu_releases_html",
+            "ok": true,
+            "candidate_count": 12,
+            "error": ""
+          },
+          {
+            "source_name": "MiniMax News",
+            "fetch_url": "https://www.minimaxi.com/news",
+            "parser": "minimax_news_html",
+            "ok": true,
+            "candidate_count": 1,
+            "error": ""
+          },
+          {
+            "source_name": "Qwen Blog",
+            "fetch_url": "https://qwenlm.github.io/zh/blog/index.xml",
+            "parser": "rss",
+            "ok": true,
+            "candidate_count": 12,
+            "error": ""
+          },
+          {
+            "source_name": "DeepSeek API 更新",
+            "fetch_url": "https://api-docs.deepseek.com/updates",
+            "parser": "deepseek_updates_html",
+            "ok": true,
+            "candidate_count": 0,
+            "error": ""
+          },
+          {
+            "source_name": "阶跃星辰产品博客",
+            "fetch_url": "https://www.stepfun.com/",
+            "parser": "stepfun_home_html",
+            "ok": true,
+            "candidate_count": 4,
+            "error": ""
+          },
+          {
+            "source_name": "零一万物新闻动态",
+            "fetch_url": "https://www.lingyiwanwu.com/newsroom.html",
+            "parser": "01ai_newsroom_html",
+            "ok": true,
+            "candidate_count": 12,
+            "error": ""
+          },
+          {
+            "source_name": "百度智能云产品动态",
+            "fetch_url": "https://cloud.baidu.com/news/productNews",
+            "parser": "baidu_cloud_news_html",
+            "ok": true,
+            "candidate_count": 10,
+            "error": ""
+          },
+          {
+            "source_name": "腾讯混元产品动态",
+            "fetch_url": "https://cloud.tencent.com/document/product/1729/97765",
+            "parser": "tencent_hunyuan_updates_html",
+            "ok": true,
+            "candidate_count": 3,
+            "error": ""
+          },
+          {
+            "source_name": "火山引擎产品新闻",
+            "fetch_url": "https://www.volcengine.com/news",
+            "parser": "volcengine_news_html",
+            "ok": true,
+            "candidate_count": 0,
+            "error": ""
+          }
+        ],
+        "candidate_count": 28,
+        "selected_count": 8,
+        "max_age_days": 30,
+        "max_items": 8,
+        "max_per_vendor": 1,
+        "summary_cache_hits": 6,
+        "summary_openai_generated_count": 2,
+        "summary_fallback_count": 0,
+        "summary_prompt_version": "vendor_summary_zh_v4",
+        "empty_allowed": true
+      },
+      "aihot_news": {
+        "notes": [],
+        "report_date": "2026-10-30",
+        "fallback_used": false,
+        "pool_size": 598,
+        "section_counts": {
+          "模型发布/更新": 3,
+          "产品发布/更新": 4,
+          "行业动态": 6,
+          "论文研究": 2,
+          "技巧与观点": 3
+        },
+        "backfilled": [],
+        "missing_summary": 0,
+        "missing_url": 0,
+        "selected_count": 18
+      },
+      "product_hunt_blocked_key_count": 309
+    }
+  },
+  "high_potential_items": [
+    {
+      "title": "Orkas-AI/Orkas",
+      "full_name": "orkas-ai/orkas",
+      "url": "https://github.com/Orkas-AI/Orkas",
+      "source_type": "github",
+      "source_layer": "discovery",
+      "repo_id": 1224575142,
+      "owner": "orkas-ai",
+      "name": "orkas",
+      "summary": "Orkas is an open-source (MIT), local-first AI team for your desktop: a Commander turns your goal into to-dos and coordinates 16 built-in specialist agents plus Claude Code, Codex, OpenCode, OpenClaw and Hermes, with projects, scheduled automations and connectors. Free app for macOS & Windows; built-in models or your own keys.",
+      "interest_tags": [
+        "开发者工具",
+        "工作流自动化",
+        "桌面工作台"
+      ],
+      "domain_tags": [],
+      "tool_tags": [],
+      "mechanism_tags": [],
+      "highlight_one_liner": "指挥官拆目标，派给 16 个专家 agent",
+      "highlight_keywords": [
+        "本地优先",
+        "指挥官拆解任务",
+        "多 agent 分工",
+        "定时自动化"
+      ],
+      "reuse_direction": "最值得借鉴的是「Commander 把用户目标拆成待办，再按任务类型分派给不同专家 agent」这一层编排设计，可迁移到任何要把长任务拆开、交给多个 agent 分别执行的产品。",
+      "minimal_mvp": "第一版先做一条路径：用户输入一个目标，指挥官生成待办清单并依次分派给 2-3 个内置专家 agent 执行，结果在同一窗口按任务逐条回报；定时自动化和外部 agent（Claude Code、Codex 等）先不接。",
+      "selection_reason": "已有较强社区验证",
+      "is_revisit": false,
+      "revisit_reason": "",
+      "score": 42.6362,
+      "rank_score": 39.3954,
+      "stars_total": 4138,
+      "stars_7d": null,
+      "stars_30d": null,
+      "forks_total": 236,
+      "watchers_total": null,
+      "created_at": "2026-04-29T12:19:08Z",
+      "pushed_at": "2026-10-30T01:27:32Z",
+      "updated_at": "2026-10-30T02:51:24Z",
+      "topics": [
+        "agent-collaboration",
+        "agent-harness",
+        "agent-orchestration",
+        "agent-team",
+        "agent-workflow",
+        "ai-assistant",
+        "ai-automation",
+        "ai-employee",
+        "ai-productivity",
+        "ai-team",
+        "ai-workflow",
+        "autonomous-agents",
+        "claude-code-gui",
+        "claude-cowork",
+        "desktop-agent",
+        "local-first",
+        "multi-agent",
+        "multi-agent-system",
+        "self-evolving-agents",
+        "task-automation"
+      ],
+      "semantic_bonus": 23.0,
+      "ai_noise": false,
+      "ai_match_score": 8,
+      "ai_priority": "headline",
+      "ai_rationale": "开源本地优先的多 Agent 桌面工作台，Commander 自动拆解任务并调度 16 个专业 Agent，直接对应企业自动化工作流方向，4k+ star 社区验证较强，是今日最值得关注的项目。",
+      "value_tag": "可迁移机制",
+      "copy_generation_source": "openai",
+      "copy_prompt_version": "openai_compact_v5"
+    },
+    {
+      "title": "markfulton/ai-employees",
+      "full_name": "markfulton/ai-employees",
+      "url": "https://github.com/markfulton/ai-employees",
+      "source_type": "github",
+      "source_layer": "discovery",
+      "repo_id": 1355117708,
+      "owner": "markfulton",
+      "name": "ai-employees",
+      "summary": "Open source AI Employees. 8 scheduled business roles, 60 routines, on Claude Code and 10 other harnesses. They drive your browser the way you do and improve every run. You own the files.",
+      "interest_tags": [
+        "开发者工具",
+        "工作流自动化",
+        "浏览器自动化"
+      ],
+      "domain_tags": [],
+      "tool_tags": [],
+      "mechanism_tags": [],
+      "highlight_one_liner": "到点自动上班、自己开浏览器干活的 AI 员工",
+      "highlight_keywords": [
+        "定时触发",
+        "浏览器代操作",
+        "文件归你",
+        "多 harness 通用"
+      ],
+      "reuse_direction": "这里最值得借鉴的是把一类业务岗位拆成按时触发的例行任务，再让 AI 像人一样操作真实浏览器界面完成，这套思路可以直接迁移到对账、后台巡检、数据导出等重复网页工作。",
+      "minimal_mvp": "第一版先挑一个每天固定要做的网页任务，例如从某个后台导出日报；把它写成一条定时例行任务，让 AI 用浏览器跑通，并把结果文件落到你能查看的目录里，由你验收。",
+      "selection_reason": "项目仍处在较新的验证窗口；已有较强社区验证",
+      "is_revisit": false,
+      "revisit_reason": "",
+      "score": 34.1972,
+      "rank_score": 36.8821,
+      "stars_total": 817,
+      "stars_7d": null,
+      "stars_30d": null,
+      "forks_total": 236,
+      "watchers_total": null,
+      "created_at": "2026-09-02T18:47:36Z",
+      "pushed_at": "2026-10-30T02:18:41Z",
+      "updated_at": "2026-10-30T02:18:46Z",
+      "topics": [
+        "ai-agents",
+        "ai-employee",
+        "ai-employees",
+        "antigravity",
+        "automation",
+        "claude-code",
+        "claude-skill",
+        "codex",
+        "hermes-agent",
+        "openclaw",
+        "opencode",
+        "scheduled-tasks",
+        "small-business"
+      ],
+      "semantic_bonus": 23.0,
+      "ai_noise": false,
+      "ai_match_score": 7,
+      "ai_priority": "high",
+      "ai_rationale": "8 个定时业务角色、60 条例程，通过浏览器驱动实现邮件、财务等流程自动化，与邮件自动化和企业自动化工作流高度契合，值得持续观察。",
+      "value_tag": "可迁移机制",
+      "copy_generation_source": "openai",
+      "copy_prompt_version": "openai_compact_v5"
+    },
+    {
+      "title": "CCDawn/Vibelution",
+      "full_name": "ccdawn/vibelution",
+      "url": "https://github.com/CCDawn/Vibelution",
+      "source_type": "github",
+      "source_layer": "discovery",
+      "repo_id": 1196141823,
+      "owner": "ccdawn",
+      "name": "vibelution",
+      "summary": "Local-first AI agent workbench: research teams that plan, build and review together, a finance agent, and virtual human companions — in one Electron desktop app.",
+      "interest_tags": [
+        "桌面工作台",
+        "知识检索/RAG",
+        "多 Agent 协作"
+      ],
+      "domain_tags": [],
+      "tool_tags": [],
+      "mechanism_tags": [],
+      "highlight_one_liner": "本地桌面里跑多 Agent 研究小组",
+      "highlight_keywords": [
+        "本地优先",
+        "多 Agent 分工",
+        "知识图谱检索",
+        "Electron 桌面"
+      ],
+      "reuse_direction": "值得借鉴的是把「规划、构建、评审」三种角色的 Agent 放进同一个本地桌面应用协作，让研究类任务不必依赖云端服务也能分角色推进。",
+      "minimal_mvp": "第一版先只做研究场景：用户在 Electron 里输入一个研究主题，规划 Agent 拆解子问题，构建 Agent 检索本地知识图谱，评审 Agent 校验并给出带出处的结论。",
+      "selection_reason": "已经跨过最初冷启动阶段",
+      "is_revisit": false,
+      "revisit_reason": "",
+      "score": 28.1603,
+      "rank_score": 22.0868,
+      "stars_total": 80,
+      "stars_7d": null,
+      "stars_30d": null,
+      "forks_total": 10,
+      "watchers_total": null,
+      "created_at": "2026-03-30T12:13:29Z",
+      "pushed_at": "2026-10-30T02:56:08Z",
+      "updated_at": "2026-10-30T02:56:12Z",
+      "topics": [
+        "agent",
+        "ai",
+        "ai-agents",
+        "collaboration",
+        "desktop-app",
+        "devtools",
+        "electron",
+        "fastapi",
+        "knowledge-graph",
+        "llm",
+        "local-first",
+        "multi-agent",
+        "multiagent",
+        "open-source",
+        "python",
+        "react",
+        "research",
+        "workbench"
+      ],
+      "semantic_bonus": 12.0,
+      "ai_noise": false,
+      "ai_match_score": 5,
+      "ai_priority": "low",
+      "ai_rationale": "集研究协作、财务 Agent 与虚拟陪伴于一体的桌面工作台，概念贴合多个关注方向，但仅 80 star，生态尚早，先观察。",
+      "value_tag": "可迁移机制",
+      "copy_generation_source": "openai",
+      "copy_prompt_version": "openai_compact_v5"
+    },
+    {
+      "full_name": "ryancodrai/turbovec",
+      "repo_url": "https://github.com/ryancodrai/turbovec",
+      "title": "RyanCodrai/turbovec",
+      "source_type": "github",
+      "source_layer": "revisit",
+      "repo_id": 1192555574,
+      "owner": "ryancodrai",
+      "name": "turbovec",
+      "summary": "A vector index built on TurboQuant, written in Rust with Python bindings",
+      "url": "https://github.com/ryancodrai/turbovec",
+      "interest_tags": [
+        "知识检索/RAG"
+      ],
+      "domain_tags": [],
+      "tool_tags": [],
+      "mechanism_tags": [],
+      "stars_total": 17438,
+      "stars_7d": null,
+      "stars_30d": null,
+      "forks_total": 1485,
+      "watchers_total": 71,
+      "created_at": "2026-03-26T10:32:44Z",
+      "pushed_at": "2026-10-07T06:55:09Z",
+      "updated_at": "2026-10-29T23:25:20Z",
+      "homepage": "https://pypi.org/project/turbovec",
+      "topics": [
+        "ann",
+        "avx512",
+        "embedding",
+        "embeddings",
+        "faiss",
+        "nearest-neighbor",
+        "neon",
+        "python",
+        "quant",
+        "quantization",
+        "rag",
+        "rust",
+        "simd",
+        "turboquant",
+        "vector-search"
+      ],
+      "latest_release_tag": "",
+      "is_revisit": true,
+      "eligible": true,
+      "throttled": false,
+      "throttle_reasons": [],
+      "days_since_last_selected": 92,
+      "window_occurrences": 1,
+      "major_update_score": 30,
+      "major_update_signals": [
+        {
+          "signal": "stars_total_jump",
+          "points": 10,
+          "detail": "总 stars 较上次增加 2937"
+        },
+        {
+          "signal": "pushed_at_refresh",
+          "points": 10,
+          "detail": "最近代码推进较上次前进 69 天"
+        },
+        {
+          "signal": "homepage_changed",
+          "points": 6,
+          "detail": "官网地址从 空 变为 https://pypi.org/project/turbovec"
+        },
+        {
+          "signal": "multi_signal_bonus",
+          "points": 4,
+          "detail": "多类信号同时出现，值得重新进入候选池"
+        }
+      ],
+      "revisit_reason": "总 stars 较上次增加 2937；最近代码推进较上次前进 69 天；官网地址从 空 变为 https://pypi.org/project/turbovec",
+      "selection_reason": "总 stars 较上次增加 2937；最近代码推进较上次前进 69 天；官网地址从 空 变为 https://pypi.org/project/turbovec",
+      "delta_stars_total": 2937,
+      "delta_stars_7d": 0,
+      "pushed_delta_days": 69,
+      "previous_state": {
+        "last_selected_at": "2026-07-30",
+        "selection_count": 1,
+        "stars_total": 14501,
+        "stars_7d": 810,
+        "forks_total": 1284,
+        "watchers_total": null,
+        "pushed_at": "2026-07-30T02:38:37Z",
+        "updated_at": "2026-07-30T02:28:18Z",
+        "homepage": "",
+        "latest_release_tag": "",
+        "description_hash": "54d93b02b9ffedfcd8701a9501de3bbb7c6cd4d7",
+        "topics_hash": "3aab147f007f0dcd5436434e04e6153f281b71d7"
+      },
+      "current_state": {
+        "stars_total": 17438,
+        "stars_7d": null,
+        "forks_total": 1485,
+        "watchers_total": 71,
+        "pushed_at": "2026-10-07T06:55:09Z",
+        "updated_at": "2026-10-29T23:25:20Z",
+        "homepage": "https://pypi.org/project/turbovec",
+        "latest_release_tag": "",
+        "description_hash": "54d93b02b9ffedfcd8701a9501de3bbb7c6cd4d7",
+        "topics_hash": "3aab147f007f0dcd5436434e04e6153f281b71d7",
+        "snapshot_source": "github_api",
+        "momentum_source": "unavailable"
+      },
+      "fetch_error": "",
+      "rank_score": 63.0,
+      "highlight_one_liner": "Rust 写的量化向量索引，现在能 pip 装了",
+      "highlight_keywords": [
+        "TurboQuant 量",
+        "Rust 内核",
+        "SIMD 分派",
+        "Python 绑定"
+      ],
+      "reuse_direction": "把 RAG 的向量检索内核从 FAISS 换成一个 Rust 实现、按 CPU 指令集（AVX512/NEON）分派 SIMD 的量化索引，是 Python 服务降低索引内存占用和查询延迟的一条可复用路径。",
+      "minimal_mvp": "先 pip 装 turbovec，把现有 embedding 灌进去，与当前用的 FAISS 索引在同一批查询上比召回率、内存占用和 QPS，确认量化损失可接受后再替换检索层。",
+      "semantic_bonus": 3.0,
+      "ai_noise": false,
+      "ai_match_score": 4,
+      "ai_priority": "low",
+      "ai_rationale": "Rust 向量索引属于 RAG 底层检索基础设施，并非 AI 应用或产品方向，与雷达关注场景关联较弱。",
+      "value_tag": "可迁移机制",
+      "copy_generation_source": "openai",
+      "copy_prompt_version": "openai_compact_v5"
+    }
+  ],
+  "interest_sections": [
+    {
+      "title": "AI 应用场景 / 数据",
+      "summary": "这一组信号主要来自 zhihu，显示B端需求梳理仍是靠个人经验拼出来的耗时活，缺少可复用并被验证的结构化支撑。",
+      "items": [
+        {
+          "title": "需求",
+          "paragraph": "B端产品经理在梳理业务全场景时，最耗神的是要把角色、单据、业务流程、数据传递等要素完整拆出并落到需求文档，手工做慢且担心遗漏",
+          "source": "social",
+          "url": "https://zhuanlan.zhihu.com/p/20468570 ｜ https://www.zhihu.com/question/460427762/answer/1895672636",
+          "source_labels": [
+            "社媒",
+            "知乎"
+          ],
+          "source_url_list": [
+            "https://zhuanlan.zhihu.com/p/20468570",
+            "https://www.zhihu.com/question/460427762/answer/1895672636"
+          ]
+        },
+        {
+          "title": "现状",
+          "paragraph": "当下讨论集中在用流程模板和个人方法论来兜底，很多人按标准产品/定制产品分类，再通过梳理组织架构、分角色访谈和整理业务流程来产出需求。",
+          "source": "social",
+          "url": "https://zhuanlan.zhihu.com/p/20468570 ｜ https://www.zhihu.com/question/460427762/answer/1895672636",
+          "source_labels": [
+            "社媒",
+            "知乎"
+          ],
+          "source_url_list": [
+            "https://zhuanlan.zhihu.com/p/20468570",
+            "https://www.zhihu.com/question/460427762/answer/1895672636"
+          ]
+        },
+        {
+          "title": "方向跟踪",
+          "paragraph": "值得跟踪把角色-单据-流程-数据传递等梳理结构做成的半自动场景建模辅助，让产品经理以结构化输入快速生成全场景需求清单。",
+          "source": "synthesis",
+          "url": "https://zhuanlan.zhihu.com/p/20468570 ｜ https://www.zhihu.com/question/460427762/answer/1895672636",
+          "source_labels": [
+            "社媒",
+            "知乎"
+          ],
+          "source_url_list": [
+            "https://zhuanlan.zhihu.com/p/20468570",
+            "https://www.zhihu.com/question/460427762/answer/1895672636"
+          ]
+        }
+      ],
+      "product_items": []
+    },
+    {
+      "title": "法律 AI 工作流",
+      "summary": "这一组信号主要来自 zhihu、GitHub；合同审查的耗时不止在读条款，更在缺少交易背景，AI 的机会在于把背景询问和风险研判嵌入审查流程，并降低非专业人士自行套用模板的隐患。",
+      "items": [
+        {
+          "title": "需求",
+          "paragraph": "用户在缺少完整交易背景的情况下，需要快速判断一份合同能否签字以及有哪些关键风险",
+          "source": "social",
+          "url": "https://zhuanlan.zhihu.com/p/702780746 ｜ https://www.zhihu.com/question/530439453/answer/2471635526",
+          "source_labels": [
+            "社媒",
+            "知乎"
+          ],
+          "source_url_list": [
+            "https://zhuanlan.zhihu.com/p/702780746",
+            "https://www.zhihu.com/question/530439453/answer/2471635526"
+          ]
+        },
+        {
+          "title": "现状",
+          "paragraph": "律师强调必须与客户确认交易模式和背景后才能实质审查，而普通用户常直接甩来合同或套用模板，双方在半小时完成“要不要签字”的预期与实际数天工作量之间存在明显落差。",
+          "source": "social",
+          "url": "https://zhuanlan.zhihu.com/p/702780746 ｜ https://www.zhihu.com/question/530439453/answer/2471635526",
+          "source_labels": [
+            "社媒",
+            "知乎"
+          ],
+          "source_url_list": [
+            "https://zhuanlan.zhihu.com/p/702780746",
+            "https://www.zhihu.com/question/530439453/answer/2471635526"
+          ]
+        },
+        {
+          "title": "方向跟踪",
+          "paragraph": "值得跟踪的方向是把交易背景问答与合同条款风险提示结合起来，让 AI 先补齐背景再给出签字建议，而不是只做文本逐条校对。",
+          "source": "synthesis",
+          "url": "https://zhuanlan.zhihu.com/p/702780746 ｜ https://www.zhihu.com/question/530439453/answer/2471635526",
+          "source_labels": [
+            "社媒",
+            "知乎"
+          ],
+          "source_url_list": [
+            "https://zhuanlan.zhihu.com/p/702780746",
+            "https://www.zhihu.com/question/530439453/answer/2471635526"
+          ]
+        }
+      ],
+      "product_items": [
+        {
+          "title": "abaiar/-LexAI",
+          "url": "https://github.com/abaiar/-LexAI",
+          "website_url": "",
+          "summary": "",
+          "description": "",
+          "source_label": "GitHub",
+          "heat_line": "🌟33",
+          "stars_total": "33",
+          "tags": [
+            "法律 AI 工作流"
+          ],
+          "interest_tags": [
+            "法律 AI 工作流"
+          ],
+          "tool_tags": [],
+          "mechanism_tags": [],
+          "highlight_one_liner": "LLM 智能法律咨询与文书平台",
+          "reuse_direction": "把「法律 AI 工作流」封装成更明确的岗位或任务入口",
+          "minimal_mvp": "先围绕“用户在缺少完整交易背景的情况下，需要快速判断一份合同能否签字以及有哪些关键风险”做单任务 MVP，优先打通输入、执行和结果回传"
+        }
+      ]
+    },
+    {
+      "title": "教育 AI 辅导",
+      "summary": "这一组信号主要来自 zhihu，两篇经验与资源整理帖把备课痛点锁定在课时多、时间紧下的内容切分与素材拼装，解法仍以人工流程加资源站和模板工具为主，AI 尚未真正介入备课的核心环节。",
+      "items": [
+        {
+          "title": "需求",
+          "paragraph": "",
+          "source": "social",
+          "url": "https://zhuanlan.zhihu.com/p/5875025118 ｜ https://www.zhihu.com/question/22281218/answer/1244497920",
+          "source_labels": [
+            "社媒",
+            "知乎"
+          ],
+          "source_url_list": [
+            "https://zhuanlan.zhihu.com/p/5875025118",
+            "https://www.zhihu.com/question/22281218/answer/1244497920"
+          ]
+        },
+        {
+          "title": "现状",
+          "paragraph": "目前的讨论集中在用经验帖总结的“定计划—拆知识点—设问巩固—课后记录反思”流程，配合国家教育资源公共服务平台、中学课件网、Focusky、万彩动画大师等资源站和模板工具拼课件、做微课，AI 只作为资源智能推送的一环被顺带提及。",
+          "source": "social",
+          "url": "https://zhuanlan.zhihu.com/p/5875025118 ｜ https://www.zhihu.com/question/22281218/answer/1244497920",
+          "source_labels": [
+            "社媒",
+            "知乎"
+          ],
+          "source_url_list": [
+            "https://zhuanlan.zhihu.com/p/5875025118",
+            "https://www.zhihu.com/question/22281218/answer/1244497920"
+          ]
+        },
+        {
+          "title": "方向跟踪",
+          "paragraph": "值得跟踪的是把知识点切分、设问与巩固设计和课后反思回流串成一条可迭代的备课链路，让课堂上生成的学生问题与反应自动成为下一轮备课的输入。",
+          "source": "synthesis",
+          "url": "https://zhuanlan.zhihu.com/p/5875025118 ｜ https://www.zhihu.com/question/22281218/answer/1244497920",
+          "source_labels": [
+            "社媒",
+            "知乎"
+          ],
+          "source_url_list": [
+            "https://zhuanlan.zhihu.com/p/5875025118",
+            "https://www.zhihu.com/question/22281218/answer/1244497920"
+          ]
+        }
+      ],
+      "product_items": []
+    },
+    {
+      "title": "AI 任务管理",
+      "summary": "这一组信号主要来自 zhihu，两个看似不相关的“任务管理”讨论都指向同一件事——功能不断膨胀后操作成本反超收益，用户绕道用重启、命令行和清单式对比文章应付，任务结束后的总结与复盘仍是空白。",
+      "items": [
+        {
+          "title": "需求",
+          "paragraph": "",
+          "source": "social",
+          "url": "https://zhuanlan.zhihu.com/p/2031709592678291398 ｜ https://www.zhihu.com/question/24247390/answer/2810526734",
+          "source_labels": [
+            "社媒",
+            "知乎"
+          ],
+          "source_url_list": [
+            "https://zhuanlan.zhihu.com/p/2031709592678291398",
+            "https://www.zhihu.com/question/24247390/answer/2810526734"
+          ]
+        },
+        {
+          "title": "现状",
+          "paragraph": "现状是卡顿时干脆重启电脑或去命令行敲命令结束进程，工具选型依赖“14 款任务管理软件对比”这类清单文章，任务拆解靠父子任务和重复模板标准化，收尾总结仍主要靠人自己整理。",
+          "source": "social",
+          "url": "https://zhuanlan.zhihu.com/p/2031709592678291398 ｜ https://www.zhihu.com/question/24247390/answer/2810526734",
+          "source_labels": [
+            "社媒",
+            "知乎"
+          ],
+          "source_url_list": [
+            "https://zhuanlan.zhihu.com/p/2031709592678291398",
+            "https://www.zhihu.com/question/24247390/answer/2810526734"
+          ]
+        },
+        {
+          "title": "方向跟踪",
+          "paragraph": "值得跟踪的是把“任务管理”从不断加功能的重管理台里拆出来：系统侧做成资源枯竭时也能秒开、只做定位与处置的轻量诊断层，个人侧做成按任务自动沉淀阶段总结的记录层，而不是继续在单一应用里堆模块。",
+          "source": "synthesis",
+          "url": "https://zhuanlan.zhihu.com/p/2031709592678291398 ｜ https://www.zhihu.com/question/24247390/answer/2810526734",
+          "source_labels": [
+            "社媒",
+            "知乎"
+          ],
+          "source_url_list": [
+            "https://zhuanlan.zhihu.com/p/2031709592678291398",
+            "https://www.zhihu.com/question/24247390/answer/2810526734"
+          ]
+        }
+      ],
+      "product_items": []
+    }
+  ],
+  "repo_url": "https://github.com/Xuanqi-Zhou/ai-product-idea-radar"
+}
